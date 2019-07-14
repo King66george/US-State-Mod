@@ -1,0 +1,32 @@
+
+NOA = {
+    color = rgb { 70 107 181 }
+	color_ui = rgb { 70 107 181 }
+}
+GCA = {
+    color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+
+MEE = {
+	color = rgb { 140 200 120 }
+	color_ui = rgb { 200 255 200 }
+}
+
+CSA = {
+	color = rgb { 145 163 176  }
+	color_ui = rgb { 186 205 219 }
+}
+
+DES = {
+	 color = rgb { 48 223 206 }
+	 color_ui = rgb{ 48 223 206 }
+}
+TTC = {
+	color = rgb { 249 83 160 }
+	color_ui = rgb { 249 83 160 }
+}
+NEC = {
+	color = rgb { 83 166 249 }
+	color_ui = rgb { 83 166 249 }
+}

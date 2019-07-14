@@ -1,0 +1,26 @@
+
+state={
+	id=802
+	name="Central Colorado"
+	state_category = town
+	manpower = 100239
+	history={
+		owner = COC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = COC
+		victory_points = {
+			1827 5 
+		}
+
+	}
+
+	provinces={
+		1827 3869 10588 12627 
+	}
+
+	buildings_max_level_factor=1.000
+}
