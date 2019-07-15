@@ -2,7 +2,7 @@ ideas = {
 	#country
 	country = {
 		VAV_idea_eboom = {
-			
+
 			allowed = {
 				always = no
 			}
@@ -12,15 +12,15 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				production_factory_max_efficiency_factor = 0.15
 				consumer_goods_factor = -0.10
 			}
 		}
-		
+
 		VAV_idea_fully_developed_roads = {
-			
+
 			allowed = {
 				always = no
 			}
@@ -30,17 +30,17 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				local_resources_factor = 0.10
 				consumer_goods_factor = -0.05
-				conscription_factor = 0.10 
-			
+				conscription_factor = 0.10
+
 			}
 		}
-		
+
 		VAV_idea_expand_industry = {
-		
+
 			allowed = {
 				always = no
 			}
@@ -50,7 +50,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 			production_speed_industrial_complex_factor = 0.15
 			production_speed_arms_factory_factor = 0.10
@@ -60,9 +60,9 @@ ideas = {
 			production_speed_synthetic_refinery_factor = 0.15
 			}
 		}
-	
+
 		VAV_idea_navy_discount = {
-			
+
 			allowed = {
 				always = no
 			}
@@ -70,9 +70,9 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
-			
+
 			equipment_bonus = {
 				ship_hull_light = {
 					build_cost_ic = -0.25 instant = yes
@@ -95,9 +95,9 @@ ideas = {
 
 			}
 		}
-		
+
 		VAV_expandindustry = {
-		
+
 			allowed = {
 				always = no
 			}
@@ -105,10 +105,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
-			
-			
+
+
 		}
 	}
 }

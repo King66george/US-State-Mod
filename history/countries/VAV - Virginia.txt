@@ -2,14 +2,14 @@
 
 oob = "VAV_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -35,7 +35,7 @@ set_technology = {
 	base_strike = 1
 }
 
-1936.1.26 = { 
+1936.1.26 = {
 create_faction = Csa
 add_to_faction = VAV
 add_to_faction = SCS
@@ -55,7 +55,7 @@ add_to_faction = AZA
 1939.1.1 = {
 
 	add_political_power = 1199
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -131,18 +131,55 @@ set_stability = 0.9
 set_politics = {
 
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 add_ideas = {
-	home_of_the_free
+
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 90
+	communism = 5
+	fascism = 5
 }
+
+create_country_leader = {
+	name = "Homer Holt"
+	#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "portrait_homer_holt_result.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		economic_reformer
+		champion_of_peace_1
+	}
+}
+
+create_country_leader = {
+	name = "Charlie Dailey"
+	#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "portrait_charlie_dailey_result.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		permanent_revolutionary
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Brandon Thomas"
+	#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "portrait_brandon_thomas_result.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		compassionate_gentleman
+		warmonger
+	}
+}
+
 1939.1.1 = {
 	set_stability = 0.9
 
@@ -221,7 +258,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-	
+
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2
