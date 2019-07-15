@@ -1,7 +1,7 @@
 # This version of the file is needed for compatibility with Steam. It would be
 # renamed to reflect this, however it cannot be due to various restrictions.
 
-name="US States Mod (DEV VERSION)"
+name="USA States (DEV VERSION)"
 archive="dus.zip"
 tags={
 	"Alternative History"
