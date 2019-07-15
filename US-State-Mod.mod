@@ -1,5 +1,5 @@
 ﻿name="USA States (DEV VERSION)"
-path="mod\US-State-Mod"
+path="mod\\US-State-Mod"
 tags={
 	"Alternative History"
 	"Gameplay"

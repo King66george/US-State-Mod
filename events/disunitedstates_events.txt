@@ -1,4 +1,4 @@
-add_namespace = disunitedstates
+﻿add_namespace = disunitedstates
 
 ##Event: North Carolina Wants Us!
 country_event = {
