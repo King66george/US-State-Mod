@@ -2,6 +2,12 @@ state={
 	id=828
 	name="South Nebraska"
 	manpower=1377962
+
+	resources={
+		chromium=6.000
+	}
+
+
 	state_category=large_town
 	history={
 		owner = NEN
@@ -12,13 +18,13 @@ state={
 		}
 		add_core_of = NEN
 		victory_points = {
-			12586 1 
+			12586 1
 		}
 
 	}
 	provinces={
-		3708 3855 4830 7852 10606 
+		3708 3855 4830 7852 10606
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

@@ -3,6 +3,12 @@ state={
 	name="West South Dakota"
 
 	manpower=692849
+
+	resources={
+		chromium=3.000
+	}
+
+
 	state_category=rural
 
 	history={
@@ -14,13 +20,13 @@ state={
 		}
 		add_core_of = SDS
 		victory_points = {
-			1747 1 
+			1747 1
 		}
 
 	}
 
 	provinces={
-		1747 1875 3750 4839 7745 
+		1747 1875 3750 4839 7745
 	}
 
 	buildings_max_level_factor=1.000

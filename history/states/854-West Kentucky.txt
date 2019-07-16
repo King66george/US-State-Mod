@@ -2,6 +2,12 @@ state={
 	id=854
 	name="West Kentucky"
 	manpower=2614588
+
+	resources={
+		chromium=7.000
+	}
+
+
 	state_category=city
 	history={
 		owner = KYK
@@ -13,13 +19,13 @@ state={
 		}
 		add_core_of = KYK
 		victory_points = {
-			6696 1 
+			6696 1
 		}
 
 	}
 	provinces={
-		4402 4988 6696 6974 10586 10727 12709 
+		4402 4988 6696 6974 10586 10727 12709
 	}
-	
+
 	buildings_max_level_factor=1.000
 }
