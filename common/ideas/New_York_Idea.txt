@@ -1,0 +1,19 @@
+ideas = {
+    #country
+    country = {
+        NYN_idea_wintersoldiers = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                winter_attrition_factor = -0.25
+            }
+        }
