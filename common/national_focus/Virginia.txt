@@ -1,4 +1,5 @@
-focus_tree = {
+#Tree Start
+ focus_tree = {
 	id = virginia_focus
 	continuous_focus_position = { x = 20 y = 1100 }
 	country = {
@@ -10,6 +11,7 @@ focus_tree = {
 		}
 	}
 
+#Navy Focus Tree
 	focus = {
 			id = VAV_revivethevirginiacompany
 			icon = GFX_goal_generic_build_navy
@@ -155,6 +157,23 @@ focus_tree = {
 	}
 
 	focus = {
+			id = VAV_vc2
+			icon = GFX_goal_generic_navy_cruiser
+			prerequisite = { focus = VAV_mships focus = VAV_cships }
+
+			x = 2
+			y = 3
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+	}
+
+#Army Focus Tree
+	focus = {
 			id = VAV_expandarmy
 			icon = GFX_goal_generic_allies_build_infantry
 
@@ -174,6 +193,112 @@ focus_tree = {
 
 	}
 
+	focus = {
+			id = VAV_doc1
+			icon = GFX_goal_generic_army_doctrines
+			prerequisite = { focus = VAV_expandarmy }
+
+			x = 5
+			y = 1
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			}
+	}
+
+	focus = {
+			id = VAV_doc2
+			icon = GFX_goal_generic_army_doctrines
+			prerequisite = { focus = VAV_doc1 }
+
+			x = 5
+			y = 2
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			}
+
+	}
+
+	focus = {
+			id = VAV_army1
+			icon = GFX_goal_generic_small_arms
+			prerequisite = { focus = VAV_expandarmy }
+
+			x = 7
+			y = 1
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+	}
+
+	focus = {
+			id = VAV_army2
+			icon = GFX_goal_generic_army_artillery
+			prerequisite = { focus = VAV_army1 }
+
+			x = 7
+			y = 2
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+	}
+
+	focus = {
+			id = VAV_armydoc1
+			icon = GFX_goal_generic_special_forces
+			prerequisite = { focus = VAV_doc2 }
+			prerequisite = { focus = VAV_army2 }
+
+			x = 6
+			y = 3
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			}
+	}
+
+#Air Force Focus Tree
 	focus = {
 			id = VAV_expandairforce
 			icon = GFX_goal_generic_build_airforce
@@ -195,6 +320,117 @@ focus_tree = {
 	}
 
 	focus = {
+			id = VAV_airdoc1
+			icon = GFX_goal_generic_demand_territory
+			prerequisite = { focus = VAV_expandairforce }
+
+			x = 3
+			y = 4
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			completion_reward = {
+				add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			}
+
+	}
+
+	focus = {
+			id = VAV_airdoc2
+			icon = GFX_goal_generic_demand_territory
+			prerequisite = { focus = VAV_airdoc1 }
+
+			x = 3
+			y = 5
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			completion_reward = {
+				add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			}
+
+	}
+
+	focus = {
+			id = VAV_airres1
+			icon = GFX_goal_generic_demand_territory
+			prerequisite = { focus = VAV_expandairforce }
+
+			x = 5
+			y = 4
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+
+
+	}
+
+	focus = {
+			id = VAV_airres2
+			icon = GFX_goal_generic_demand_territory
+			prerequisite = { focus = VAV_airres1 }
+
+			x = 5
+			y = 5
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+	}
+
+	focus = {
+			id = VAV_resdoc
+			icon = GFX_goal_generic_demand_territory
+			prerequisite = { focus = VAV_airres2 }
+			prerequisite = { focus = VAV_airdoc2 }
+
+			x = 4
+			y = 6
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			completion_reward = {
+				add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			}
+
+	}
+
+#Industrial Focus Tree
+	focus = {
 			id = VAV_expandindustry
 			icon = GFX_goal_generic_production
 
@@ -212,120 +448,6 @@ focus_tree = {
 			}
 
 	}
-
-	focus = {
-			id = VAV_politicaleffort
-			icon = GFX_goal_generic_demand_territory
-
-			x = 17
-			y = 0
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-		completion_reward = {
-		add_political_power = 300
-		}
-	}
-
-	focus = {
-			id = VAV_war
-			icon = GFX_goal_generic_political_pressure
-			prerequisite = { focus = VAV_politicaleffort }
-			mutually_exclusive = { focus = VAV_statusquo }
-
-			x = 13
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-		completion_reward = {
-		add_ideas = FRA_disjointed_government
-		add_ideas = militarism_focus
-		}
-	}
-
-	focus = {
-			id = VAV_statusquo
-			icon = GFX_goal_generic_neutrality_focus
-			prerequisite = { focus = VAV_politicaleffort }
-			mutually_exclusive = { focus = VAV_war }
-
-			x = 21
-			y = 1
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-		completion_reward = {
-		add_ideas = FRA_disjointed_government
-		}
-	}
-
-	focus = {
-			id = VAV_facist
-			icon = GFX_goal_support_fascism
-			prerequisite = { focus = VAV_war }
-			mutually_exclusive = { focus = VAV_commie }
-
-			x = 10
-			y = 2
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = nationalism
-				days = 720
-				}
-		add_popularity = {
-		ideology = fascism
-		popularity = .40
-		}
-		}
-	}
-
-	focus = {
-			id = VAV_commie
-			icon = GFX_goal_support_communism
-			prerequisite = { focus = VAV_war }
-			mutually_exclusive = { focus = VAV_facist }
-
-			x = 16
-			y = 2
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = internationalism
-				days = 720
-				}
-		add_popularity = {
-		ideology = communism
-		popularity = .40
-		}
-		}
-	}
-
 
 	focus = {
 			id = VAV_seconomy1
@@ -847,11 +969,386 @@ focus_tree = {
 	}
 
 	focus = {
+			id = VAV_industrialpowerhouse
+			icon = GFX_focus_generic_industry_3
+			prerequisite = { focus = VAV_developed }
+			prerequisite = { focus = VAV_navalpowerhouse }
+			prerequisite = { focus = VAV_economicboom }
+
+			x = 28
+			y = 6
+
+			cost = 15
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			completion_reward = {
+				remove_ideas = VAV_idea_navy_discount
+				remove_ideas = VAV_idea_fully_developed_roads
+				remove_ideas = VAV_idea_eboom
+			}
+
+
+	}
+
+#Research Slot Focus Tree
+		focus = {
+				id = VAV_researchslot1
+				icon = GFX_focus_research
+				prerequisite = { focus = VAV_followgermany focus = VAV_political_commissars2 }
+
+				x = 14
+				y = 7
+
+				cost = 10
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				completion_reward = {
+					add_research_slot = 1
+				}
+			}
+
+		focus = {
+				id = VAV_researchslot2
+				icon = GFX_focus_research
+				prerequisite = { focus = VAV_researchslot1 }
+
+				x = 14
+				y = 8
+
+				cost = 10
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				completion_reward = {
+					add_research_slot = 1
+				}
+			}
+
+#War Focus Tree
+				focus = {
+						id = VAV_calltowar
+						icon = GFX_goal_generic_secret_weapon
+
+						x = 10
+						y = 7
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+				}
+
+				focus = {
+						id = VAV_reclaimwestvirginia
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = VAV_calltowar }
+
+						x = 9
+						y = 8
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+						completion_reward = {
+							create_wargoal= {
+							type = annex_everything
+							target = WVW
+
+							}
+							add_state_core = 877
+							add_state_core = 875
+
+						}
+
+
+				}
+
+				focus = {
+						id = VAV_strikethecapital
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = VAV_calltowar }
+
+						x = 11
+						y = 8
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+						completion_reward = {
+							create_wargoal= {
+							type = annex_everything
+							target = MDM
+						}
+							add_state_core = 879
+							add_state_core = 361
+
+				}
+				}
+
+				focus = {
+						id = VAV_takethecoast
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = VAV_strikethecapital }
+
+						x = 11
+						y = 9
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+						completion_reward = {
+							create_wargoal = {
+							type = annex_everything
+							target = DED
+						}
+							add_state_core = 895
+					}
+				}
+
+				focus = {
+						id = VAV_strikenorthcarolina
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = VAV_reclaimwestvirginia }
+
+						x = 9
+						y = 9
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+						completion_reward = {
+							create_wargoal = {
+							type = annex_everything
+							target = NCN
+						}
+							add_state_core = 874
+							add_state_core = 873
+							add_state_core = 363
+					}
+				}
+
+				focus = {
+						id = VAV_strikesoutchcarolina
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = VAV_strikenorthcarolina }
+
+						x = 9
+						y = 10
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+						completion_reward = {
+							create_wargoal = {
+							type = annex_everything
+							target = SCS
+						}
+							add_state_core = 364
+							add_state_core = 872
+							add_state_core = 871
+					}
+				}
+
+				focus = {
+						id = VAV_strikepen
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = VAV_takethecoast }
+
+						x = 11
+						y = 10
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+						completion_reward = {
+							create_wargoal = {
+							type = annex_everything
+							target = PAP
+						}
+							add_state_core = 847
+							add_state_core = 881
+							add_state_core = 360
+							add_state_core = 882
+					}
+				}
+
+				focus = {
+						id = VAV_strikenewjersey
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = VAV_strikepen }
+						prerequisite = { focus = VAV_strikesoutchcarolina }
+
+
+						x = 10
+						y = 11
+
+						cost = 10
+
+						ai_will_do = {
+							factor = 1
+						}
+
+						completion_reward = {
+							create_wargoal = {
+							type = annex_everything
+							target = NJN
+						}
+							add_state_core = 359
+							add_state_core = 883
+					}
+				}
+
+#Political Focus Tree
+	focus = {
+			id = VAV_politicaleffort
+			icon = GFX_goal_generic_demand_territory
+
+			x = 17
+			y = 0
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+		completion_reward = {
+		add_political_power = 300
+		}
+	}
+
+	focus = {
+			id = VAV_war
+			icon = GFX_goal_generic_political_pressure
+			prerequisite = { focus = VAV_politicaleffort }
+			mutually_exclusive = { focus = VAV_statusquo }
+
+			x = 13
+			y = 1
+
+			cost = 5
+
+			ai_will_do = {
+				factor = 1
+			}
+
+		completion_reward = {
+		add_ideas = FRA_disjointed_government
+		add_ideas = militarism_focus
+		}
+	}
+
+	focus = {
+			id = VAV_statusquo
+			icon = GFX_goal_generic_neutrality_focus
+			prerequisite = { focus = VAV_politicaleffort }
+			mutually_exclusive = { focus = VAV_war }
+
+			x = 21
+			y = 1
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+		completion_reward = {
+		add_ideas = FRA_disjointed_government
+		}
+	}
+
+	focus = {
+			id = VAV_facist
+			icon = GFX_goal_support_fascism
+			prerequisite = { focus = VAV_war }
+			mutually_exclusive = { focus = VAV_commie }
+
+			x = 10
+			y = 2
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = nationalism
+				days = 720
+				}
+		add_popularity = {
+		ideology = fascism
+		popularity = .40
+		}
+		}
+	}
+
+	focus = {
+			id = VAV_commie
+			icon = GFX_goal_support_communism
+			prerequisite = { focus = VAV_war }
+			mutually_exclusive = { focus = VAV_facist }
+
+			x = 16
+			y = 2
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 1
+			}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = internationalism
+				days = 720
+				}
+		add_popularity = {
+		ideology = communism
+		popularity = .40
+		}
+		}
+	}
+
+
+
+
+	focus = {
 			id = VAV_stabalizegovernment
 			icon = GFX_goal_generic_demand_territory
 			prerequisite = { focus = VAV_facist }
 
-			x = 9
+			x = 11
 			y = 3
 
 			cost = 10
@@ -900,444 +1397,6 @@ focus_tree = {
 
 			completion_reward = {
 			remove_ideas = FRA_disjointed_government
-			}
-	}
-
-	focus = {
-			id = VAV_doc1
-			icon = GFX_goal_generic_army_doctrines
-			prerequisite = { focus = VAV_expandarmy }
-
-			x = 5
-			y = 1
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-			}
-	}
-
-	focus = {
-			id = VAV_doc2
-			icon = GFX_goal_generic_army_doctrines
-			prerequisite = { focus = VAV_doc1 }
-
-			x = 5
-			y = 2
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-			}
-
-	}
-
-	focus = {
-			id = VAV_army1
-			icon = GFX_goal_generic_small_arms
-			prerequisite = { focus = VAV_expandarmy }
-
-			x = 7
-			y = 1
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-	}
-
-	focus = {
-			id = VAV_army2
-			icon = GFX_goal_generic_army_artillery
-			prerequisite = { focus = VAV_army1 }
-
-			x = 7
-			y = 2
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-	}
-
-	focus = {
-			id = VAV_armydoc1
-			icon = GFX_goal_generic_special_forces
-			prerequisite = { focus = VAV_doc2 }
-			prerequisite = { focus = VAV_army2 }
-
-			x = 6
-			y = 3
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-			}
-	}
-
-	focus = {
-			id = VAV_vc2
-			icon = GFX_goal_generic_navy_cruiser
-			prerequisite = { focus = VAV_mships focus = VAV_cships }
-
-			x = 2
-			y = 3
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-	}
-
-	focus = {
-			id = VAV_airdoc1
-			icon = GFX_goal_generic_demand_territory
-			prerequisite = { focus = VAV_expandairforce }
-
-			x = 3
-			y = 4
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-			}
-
-	}
-
-	focus = {
-			id = VAV_airdoc2
-			icon = GFX_goal_generic_demand_territory
-			prerequisite = { focus = VAV_airdoc1 }
-
-			x = 3
-			y = 5
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-			}
-
-	}
-
-	focus = {
-			id = VAV_airres1
-			icon = GFX_goal_generic_demand_territory
-			prerequisite = { focus = VAV_expandairforce }
-
-			x = 5
-			y = 4
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-
-
-	}
-
-	focus = {
-			id = VAV_airres2
-			icon = GFX_goal_generic_demand_territory
-			prerequisite = { focus = VAV_airres1 }
-
-			x = 5
-			y = 5
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-	}
-
-	focus = {
-			id = VAV_resdoc
-			icon = GFX_goal_generic_demand_territory
-			prerequisite = { focus = VAV_airres2 }
-			prerequisite = { focus = VAV_airdoc2 }
-
-			x = 4
-			y = 6
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
-			}
-
-	}
-
-	focus = {
-			id = VAV_calltowar
-			icon = GFX_goal_generic_secret_weapon
-
-			x = 10
-			y = 7
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-	}
-
-	focus = {
-			id = VAV_reclaimwestvirginia
-			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = VAV_calltowar }
-
-			x = 9
-			y = 8
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				create_wargoal= {
-				type = annex_everything
-				target = WVW
-
-				}
-				add_state_core = 877
-				add_state_core = 875
-
-			}
-
-
-	}
-
-	focus = {
-			id = VAV_strikethecapital
-			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = VAV_calltowar }
-
-			x = 11
-			y = 8
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				create_wargoal= {
-				type = annex_everything
-				target = MDM
-			}
-				add_state_core = 879
-				add_state_core = 361
-
-	}
-	}
-
-	focus = {
-			id = VAV_takethecoast
-			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = VAV_strikethecapital }
-
-			x = 11
-			y = 9
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				create_wargoal = {
-				type = annex_everything
-				target = DED
-			}
-				add_state_core = 895
-		}
-	}
-
-	focus = {
-			id = VAV_strikenorthcarolina
-			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = VAV_reclaimwestvirginia }
-
-			x = 9
-			y = 9
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				create_wargoal = {
-				type = annex_everything
-				target = NCN
-			}
-				add_state_core = 874
-				add_state_core = 873
-				add_state_core = 363
-		}
-	}
-
-	focus = {
-			id = VAV_strikesoutchcarolina
-			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = VAV_strikenorthcarolina }
-
-			x = 9
-			y = 10
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				create_wargoal = {
-				type = annex_everything
-				target = SCS
-			}
-				add_state_core = 364
-				add_state_core = 872
-				add_state_core = 871
-		}
-	}
-
-	focus = {
-			id = VAV_strikepen
-			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = VAV_takethecoast }
-
-			x = 11
-			y = 10
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				create_wargoal = {
-				type = annex_everything
-				target = PAP
-			}
-				add_state_core = 847
-				add_state_core = 881
-				add_state_core = 360
-				add_state_core = 882
-		}
-	}
-
-	focus = {
-			id = VAV_strikenewjersey
-			icon = GFX_goal_generic_attack_allies
-			prerequisite = { focus = VAV_strikepen }
-			prerequisite = { focus = VAV_strikesoutchcarolina }
-
-
-			x = 10
-			y = 11
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				create_wargoal = {
-				type = annex_everything
-				target = NJN
-			}
-				add_state_core = 359
-				add_state_core = 883
-		}
-	}
-
-	focus = {
-			id = VAV_manifestdestiny
-			icon = GFX_goal_generic_secret_weapon
-
-			x = 29
-			y = 9
-
-			cost = 15
-
-			ai_will_do = {
-				factor = 1
 			}
 	}
 
@@ -1436,43 +1495,6 @@ focus_tree = {
 				}
 	}
 
-	focus = {
-			id = VAV_researchslot1
-			icon = GFX_focus_research
-
-			x = 14
-			y = 7
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				add_research_slot = 1
-			}
-		}
-
-	focus = {
-			id = VAV_researchslot2
-			icon = GFX_focus_research
-			prerequisite = { focus = VAV_researchslot1 }
-
-			x = 14
-			y = 8
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				add_research_slot = 1
-			}
-		}
-
 		focus = {
 				id = VAV_sovietrelation
 				icon = GFX_goal_support_communism
@@ -1496,8 +1518,6 @@ focus_tree = {
 				}
 				}
 
-				VAV = {
-				}
 		}
 		}
 
@@ -1521,10 +1541,10 @@ focus_tree = {
 		}
 
 		focus = {
-			id = POL_political_commissars2
+			id = VAV_political_commissars2
 			icon = GFX_goal_generic_war_with_comintern
-			prerequisite = { focus = VAV_powertoourleader }
-			prerequisite = { focus = VAV_sovietmobilization }
+			prerequisite = { focus = VAV_sovietrelation  }
+			prerequisite = { focus = VAV_powertoourleader focus = VAV_sovietmobilization }
 
 			x = 16
 			y = 6
@@ -1551,4 +1571,32 @@ focus_tree = {
 				x = 10
 				y = 4
 		}
-}
+
+		focus = {
+					id = VAV_followgermany
+					icon = GFX_goal_generic_improve_relations
+					prerequisite = { focus = VAV_promoteorder }
+
+					x = 10
+					y = 6
+
+		}
+
+#Incomplete
+			focus = {
+					id = VAV_manifestdestiny
+					icon = GFX_goal_generic_secret_weapon
+
+					x = 29
+					y = 9
+
+					cost = 15
+
+					ai_will_do = {
+						factor = 1
+					}
+			}
+
+#Tree End
+ #Closing Of Focus Tree
+ }
