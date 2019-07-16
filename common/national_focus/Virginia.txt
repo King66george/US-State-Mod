@@ -1339,7 +1339,7 @@
 		}
 		}
 	}
-	
+
 	focus = {
 			id = VAV_stabalizegovernment
 			icon = GFX_goal_generic_demand_territory
@@ -1567,6 +1567,12 @@
 
 				x = 10
 				y = 4
+
+				cost = 10
+
+				ai_will_do = {
+					factor = 1
+				}
 		}
 
 		focus = {
@@ -1576,6 +1582,12 @@
 
 					x = 10
 					y = 6
+
+					cost = 10
+
+					ai_will_do = {
+						factor = 1
+					}
 
 		}
 
