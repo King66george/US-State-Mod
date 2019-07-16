@@ -4023,4 +4023,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_industrial_concern_1.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_NYN_idea_wintersoldiers"
+		texturefile = "gfx/interface/ideas/idea_eng_imperial_conscription.dds"
+	}
+
 }
