@@ -1277,7 +1277,7 @@
 			x = 21
 			y = 1
 
-			cost = 10
+			cost = 5
 
 			ai_will_do = {
 				factor = 1
@@ -1306,7 +1306,7 @@
 		completion_reward = {
 			add_timed_idea = {
 				idea = nationalism
-				days = 720
+				days = 365
 				}
 		add_popularity = {
 		ideology = fascism
@@ -1333,7 +1333,7 @@
 		completion_reward = {
 			add_timed_idea = {
 				idea = internationalism
-				days = 720
+				days = 365
 				}
 		add_popularity = {
 		ideology = communism
@@ -1416,38 +1416,13 @@
 			completion_reward = {
 			add_timed_idea = {
 				idea = democratic_influence
-				days = 720
+				days = 365
 				}
 			add_popularity = {
 				ideology = democratic
 				popularity = .40
 			}
 		}
-
-
-	}
-
-	focus = {
-			id = VAV_industrialpowerhouse
-			icon = GFX_focus_generic_industry_3
-			prerequisite = { focus = VAV_developed }
-			prerequisite = { focus = VAV_navalpowerhouse }
-			prerequisite = { focus = VAV_economicboom }
-
-			x = 28
-			y = 6
-
-			cost = 15
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				remove_ideas = VAV_idea_navy_discount
-				remove_ideas = VAV_idea_fully_developed_roads
-				remove_ideas = VAV_idea_eboom
-			}
 
 
 	}
