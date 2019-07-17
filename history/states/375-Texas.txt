@@ -17,13 +17,10 @@ state={
 		}
 		add_core_of = TXT
 		victory_points = {
-			10337 10
+			12782 5
 		}
 		victory_points = {
-			3960 10
-		}
-		victory_points = {
-			12782 1
+			5022 30
 		}
 
 	}

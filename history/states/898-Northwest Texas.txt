@@ -11,16 +11,16 @@ history={
 		}
 		add_core_of = TXT
 		victory_points = {
-			10861 25 
+			10778 10
 		}
 		victory_points = {
-			10778 25 
+			3960 10
 		}
 
 	}
 
 	provinces={
-		805 2082 3960 4577 5001 6968 7628 9829 10778 12486 
+		805 2082 3960 4577 5001 6968 7628 9829 10778 12486
 	}
 	manpower=2215243
 	buildings_max_level_factor=1.000
