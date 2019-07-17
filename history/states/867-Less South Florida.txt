@@ -13,29 +13,17 @@ state={
 				naval_base = 2
 
 			}
-			1843 = {
-				naval_base = 5
-
-			}
-			7388 = {
-				naval_base = 3
-
-			}
-			10352 = {
-				naval_base = 1
-
-			}
 
 		}
 		add_core_of = FLF
 		victory_points = {
-			1843 5 
+			1843 5
 		}
 
 	}
 	provinces={
-		1556 1572 1584 12353 12381 12439 
+		1556 1572 1584 12353 12381 12439
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

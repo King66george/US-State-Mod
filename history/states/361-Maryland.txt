@@ -6,10 +6,10 @@ state={
 	history={
 		owner = MDM
 		victory_points = {
-			3957 40 
+			3957 40
 		}
 		victory_points = {
-			6984 5 
+			6984 5
 		}
 		buildings = {
 			infrastructure = 7
@@ -20,10 +20,6 @@ state={
 				naval_base = 2
 
 			}
-			3957 = {
-				naval_base = 1
-
-			}
 
 		}
 		add_core_of = MDM
@@ -31,7 +27,7 @@ state={
 	}
 
 	provinces={
-		6823 6892 6929 6984 9758 11892 
+		6823 6892 6929 6984 9758 11892
 	}
 	manpower=2118394
 	buildings_max_level_factor=1.000

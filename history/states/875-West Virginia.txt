@@ -10,12 +10,9 @@ state={
 			industrial_complex = 3
 			air_base = 10
 			fuel_silo = 1
-			788 = {
-
-			}
 
 		}
-		
+
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

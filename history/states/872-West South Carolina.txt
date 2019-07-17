@@ -8,21 +8,17 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			7202 = {
-				naval_base = 2
-
-			}
 
 		}
 		add_core_of = SCS
 		victory_points = {
-			7202 1 
+			7202 1
 		}
 
 	}
 
 	provinces={
-		1485 3994 4653 
+		1485 3994 4653
 	}
 	manpower=1738764
 	buildings_max_level_factor=1.000

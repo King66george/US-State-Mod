@@ -6,20 +6,16 @@ state={
 	history={
 		owner = MDM
 		victory_points = {
-			3957 40 
+			3957 40
 		}
 		victory_points = {
-			6984 5 
+			6984 5
 		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 5
 			dockyard = 1
 			air_base = 6
-			6984 = {
-				naval_base = 2
-
-			}
 			3957 = {
 				naval_base = 1
 
@@ -30,8 +26,8 @@ state={
 
 	}
 	provinces={
-		3957 
+		3957
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

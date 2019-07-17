@@ -9,15 +9,11 @@ state={
 			infrastructure = 6
 			industrial_complex = 3
 			air_base = 2
-			11975 = {
-				naval_base = 1
-
-			}
 
 		}
 		add_core_of = GAG
 		victory_points = {
-			12384 10 
+			12384 10
 		}
 		1939.1.1 = {
 			buildings = {
@@ -29,8 +25,8 @@ state={
 
 	}
 	provinces={
-		7583 10492 12325 12470 12498 
+		7583 10492 12325 12470 12498
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

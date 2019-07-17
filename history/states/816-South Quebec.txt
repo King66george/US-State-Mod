@@ -12,10 +12,6 @@ state={
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			3691 = {
-				naval_base = 1
-
-			}
 
 		}
 		add_core_of = QCQ
@@ -23,7 +19,7 @@ state={
 	}
 
 	provinces={
-		490 983 1341 1356 1764 3911 4419 4769 7435 7875 7893 10249 10700 11682 11902 12205 12223 12276 13160 
+		490 983 1341 1356 1764 3911 4419 4769 7435 7875 7893 10249 10700 11682 11902 12205 12223 12276 13160
 	}
 
 	buildings_max_level_factor=1.000

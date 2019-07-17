@@ -17,7 +17,7 @@ state={
 
 			}
 
-		}
+
 		add_core_of = VAV
 		victory_points = {
 			11841 15
@@ -30,8 +30,8 @@ state={
 
 		}
 
-	
 
+}
 	provinces={
 		951 1506 3823 3925 9931 10343 10412 10439 11841 11873
 	}

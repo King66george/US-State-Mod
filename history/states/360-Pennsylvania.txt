@@ -13,17 +13,14 @@ state={
 			infrastructure = 6
 			industrial_complex = 5
 			air_base = 2
-			6845 = {
-
-			}
 
 		}
 		add_core_of = PAP
 		victory_points = {
-			6845 20 
+			6845 20
 		}
 		victory_points = {
-			11800 15 
+			11800 15
 		}
 		1939.1.1 = {
 			buildings = {
@@ -38,7 +35,7 @@ state={
 	provinces={
 		 847 3847 3850 6872 6885 11758 11769 12405 9804
 	}
-	
+
 	buildings_max_level_factor=1.000
 
 }

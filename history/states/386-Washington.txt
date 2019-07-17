@@ -3,7 +3,7 @@ state={
 	id=386
 	name="Northeast Washington"
 	manpower=1563395
-	state_category=large_town	
+	state_category=large_town
 	history={
 		owner = WAW
 		buildings = {
@@ -11,23 +11,20 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 5
-			7315 = {
-
-			}
 
 		}
 		add_core_of = WAW
 		victory_points = {
-			1690 1 
+			1690 1
 		}
 		victory_points = {
-			7315 10 
+			7315 10
 		}
 
 	}
 
 	provinces={
-		1320 1690 10198 10327 10693 
+		1320 1690 10198 10327 10693
 	}
 
 	buildings_max_level_factor=1.000

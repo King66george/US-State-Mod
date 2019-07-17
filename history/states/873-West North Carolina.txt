@@ -9,21 +9,17 @@ state={
 			infrastructure = 6
 			industrial_complex = 3
 			air_base = 3
-			1132 = {
-				naval_base = 1
-
-			}
 
 		}
 		add_core_of = NCN
 		victory_points = {
-			7138 3 
+			7138 3
 		}
 
 	}
 	provinces={
-		7643 9967 10468 10495 
+		7643 9967 10468 10495
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

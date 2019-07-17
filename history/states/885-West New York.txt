@@ -14,17 +14,13 @@ state={
 			arms_factory = 2
 			industrial_complex = 7
 			air_base = 10
-			3878 = {
-
-			}
-
 		}
 		add_core_of = NYN
 		victory_points = {
-			3878 30.0 
+			3878 30.0
 		}
 		victory_points = {
-			11654 3 
+			11654 3
 		}
 
 	}
