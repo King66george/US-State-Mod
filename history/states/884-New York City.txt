@@ -23,15 +23,12 @@ state={
 		}
 		add_core_of = NYN
 		victory_points = {
-			3878 30.0 
-		}
-		victory_points = {
-			11654 3 
+			3878 20
 		}
 
 	}
 	provinces={
-		859 3878 
+		859 3878
 	}
 
 	buildings_max_level_factor=1.000
