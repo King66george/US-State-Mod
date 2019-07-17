@@ -1,0 +1,886 @@
+focus_tree = {
+	id = Flo
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FLF
+		}
+	}
+	#Focus for Military Expansion
+	focus = {
+		id = FLF_militaryexpansion
+		icon = GFX_goal_generic_small_arms
+		x = 16
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 15
+navy_experience= 35
+army_experience= 50
+		}
+	}
+
+	#Focus for Industrial Expansion
+	focus = {
+		id = FLF_industrialexpansion
+		icon = GFX_goal_generic_production
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_growingcivilianexports }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+		}
+	
+	}
+	}
+	}
+	
+	#Focus for Military Training
+	focus = {
+		id = FLF_militarytraining
+		icon = GFX_goal_generic_propaganda
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLF_newtactics 
+			focus = FLF_oldtactics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+			army_experience= 25
+		}
+	}
+
+	#Focus for Nationalize The Institute of Technology
+	focus = {
+		id = FLF_nationalizetheinstituteoftechnology
+		icon = GFX_goal_generic_scientific_exchange
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLF_purgetheradicals 
+			focus = FLF_economicincentives 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Combined Research Efforts
+	focus = {
+		id = FLF_combinedresearchefforts
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_acalltothepeople }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+
+	#Focus for Offensive Plans
+	focus = {
+		id = FLF_offensiveplans
+		icon = GFX_goal_generic_major_war
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_reintroduceslavery }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Offensive_Approach
+		}
+	}
+
+	#Focus for Old Tactics
+	focus = {
+		id = FLF_oldtactics
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_militaryexpansion }
+		mutually_exclusive = { focus = FLF_newtactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Old_Tactics
+		}
+	}
+
+	#Focus for New Tactics
+	focus = {
+		id = FLF_newtactics
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_militaryexpansion }
+		mutually_exclusive = { focus = FLF_oldtactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_New_Tactics
+		}
+	}
+
+	#Focus for Southern Pride
+	focus = {
+		id = FLF_southernpride
+		icon = GFX_FLF_Southern_Pride
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_promoteorder }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10
+			add_ideas = FLF_South_Pride
+		}
+	}
+
+	#Focus for Re-Introduce Slavery
+	focus = {
+		id = FLF_reintroduceslavery
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_southernpride }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Slavery_Again
+		}
+	}
+
+	#Focus for Promote Order
+	focus = {
+		id = FLF_promoteorder
+		icon = GFX_focus_ger_reichskommisariats
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_aunitedright }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10
+			add_political_power = 50
+		}
+	}
+
+	#Focus for A United Right
+	focus = {
+		id = FLF_aunitedright
+		icon = GFX_goal_generic_national_unity
+		x = 11
+		y = 1
+		cost = 
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_anewgovernment }
+		mutually_exclusive = { 
+			focus = FLF_patrioticrestoration 
+			focus = FLF_acallforsomethinggreater 
+			focus = FLF_asocialistnation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= fascism
+		}
+		completion_reward = {
+			add_popularity= { 
+				ideology = fascism 
+				popularity = 0.5 
+							}
+		}
+	}
+
+	#Focus for Purge The Radicals
+	focus = {
+		id = FLF_purgetheradicals
+		icon = GFX_FLF_Purge_Radicals
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_lessonsfromthesovietunion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.25
+			add_ideas = FLF_Purged_Radicals
+		}
+	}
+
+	#Focus for Reinforce The State
+	focus = {
+		id = FLF_reinforcethestate
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLF_promoteorder 
+			focus = FLF_promoteleninistteachings 
+		}
+	}
+
+	#Focus for A Call to the People
+	focus = {
+		id = FLF_acalltothepeople
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_restorationprojects }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 15000
+add_stability= 0.10
+add_war_support= 5
+		}
+	}
+
+	#Focus for Expanding Our Influence
+	focus = {
+		id = FLF_expandingourinfluence
+		icon = GFX_goal_demand_sudetenland
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_renouncedemocracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Expanding_Influence
+		}
+	}
+
+	#Focus for Renounce Democracy
+	focus = {
+		id = FLF_renouncedemocracy
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_reinforcethestate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+		ideology = democratic
+		popularity = -0.50 
+							}
+		}
+	}
+
+	#Focus for A Socialist Nation
+	focus = {
+		id = FLF_asocialistnation
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 5
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_anewgovernment }
+		mutually_exclusive = { 
+			focus = FLF_patrioticrestoration 
+		}
+		mutually_exclusive = { 
+			focus = FLF_ 
+			focus = FLF_acallforsomethinggreater 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= communism
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+		}
+	}
+	}
+	}
+	#Focus for Welfare Program
+	focus = {
+		id = FLF_welfareprogram
+		icon = GFX_focus_generic_military_academy
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_asocialistnation }
+		completion_reward = {
+			add_ideas = FLF_welfare_Program_idea
+		}
+	}
+
+	#Focus for Focus on The Interior
+	focus = {
+		id = FLF_focusontheinterior
+		icon = GFX_goal_generic_construction2
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = FLF_reignitetheeconomy 
+			focus = FLF_welfareprogram 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 10
+add_stability = 0.25
+		}
+	}
+
+	#Focus for Open The Borders
+	focus = {
+		id = FLF_opentheborders
+		icon = GFX_goal_generic_forceful_treaty
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_focusontheinterior }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = -0.05
+add_ideas = FLF_Open_Borders
+		}
+	}
+
+	#Focus for A Prosperous State
+	focus = {
+		id = FLF_aprosperousstate
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_opentheborders }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
+add_war_support= 8
+		}
+	}
+
+	#Focus for No Religion Over Another
+	focus = {
+		id = FLF_noreligionoveranother
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_welfareprogram }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.05
+add_popularity= { 
+ideology = communism
+popularity = 0.1 
+}
+		}
+	}
+
+	#Focus for Economic Incentives
+	focus = {
+		id = FLF_economicincentives
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_noreligionoveranother }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.05
+add_ideas = FLF_Working_Incentives
+		}
+	}
+
+	#Focus for A Call for Something Greater
+	focus = {
+		id = FLF_acallforsomethinggreater
+		icon = GFX_focus_generic_join_comintern
+		x = 9
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_anewgovernment }
+		mutually_exclusive = { 
+			focus = FLF_patrioticrestoration 
+			focus = FLF_asocialistnation 
+			focus = FLF_acallforsomethinggreater 
+			focus = FLF_aunitedright
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government= communism
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism
+popularity = 0.5 
+}
+		}
+	}
+
+	#Focus for Promote Leninist Teachings
+	focus = {
+		id = FLF_promoteleninistteachings
+		icon = GFX_focus_generic_soviet_politics
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_acallforsomethinggreater }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
+add_popularity= { 
+ideology = communism
+popularity = 0.15 
+}
+add_ideas = FLF_Lenin
+		}
+	}
+
+	#Focus for Lessons from The Soviet Union
+	focus = {
+		id = FLF_lessonsfromthesovietunion
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_promoteleninistteachings }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Left_War_Plans
+		}
+	}
+
+	#Focus for Restoration Projects
+	focus = {
+		id = FLF_restorationprojects
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_reignitetheeconomy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Restoration_Projects
+		}
+	}
+
+	#Focus for Reignite the Economy
+	focus = {
+		id = FLF_reignitetheeconomy
+		icon = GFX_focus_generic_concessions
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_patrioticrestoration }
+		completion_reward = {
+			add_ideas = FLF_Reignite_the_Republic
+		}
+	}
+
+	#Focus for A New Government
+	focus = {
+		id = FLF_anewgovernment
+		icon = GFX_focus_generic_treaty
+		x = 7
+		y = 0
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+	}
+
+	#Focus for Patriotic Restoration
+	focus = {
+		id = FLF_patrioticrestoration
+		icon = GFX_goal_support_democracy
+		x = 3
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_anewgovernment }
+		mutually_exclusive = { 
+			focus = FLF_asocialistnation 
+		}
+		mutually_exclusive = { 
+			focus = FLF_acallforsomethinggreater 
+		}
+		mutually_exclusive = { 
+			focus = FLF_patrioticrestoration 
+		}
+		mutually_exclusive = { 
+			focus = FLF_ 
+		}
+		mutually_exclusive = { 
+			focus = FLF_aunitedright 
+		}
+		available = {
+			has_government= democratic
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democratic
+popularity = 0.5 
+}
+add_political_power= 20
+		}
+	}
+
+	#Focus for Production Streamlined
+	focus = {
+		id = FLF_productionstreamlined
+		icon = GFX_focus_secret_rearmament
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_themilitaryacademy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+		}
+	}
+	}
+	}
+	
+
+	#Focus for Growing Civilian Exports
+	focus = {
+		id = FLF_growingcivilianexports
+		icon = GFX_goal_generic_production2
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_reconstructtheeconomy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+		}
+	}
+	}
+	}
+
+	#Focus for The Military Academy
+	focus = {
+		id = FLF_themilitaryacademy
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 24
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_reconstructtheeconomy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+		}
+	}
+	}
+	}
+
+
+	#Focus for Reconstruct the Economy
+	focus = {
+		id = FLF_reconstructtheeconomy
+		icon = GFX_goal_continuous_repairments
+		x = 23
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+		}
+	}
+	}
+	}
+
+	#Focus for No Trench Foot Here, Sir!
+	focus = {
+		id = FLF_notrenchfootheresir
+		icon = GFX_goal_generic_defence
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_oldtactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Trench_Foot
+		}
+	}
+
+	#Focus for Florida Machines
+	focus = {
+		id = FLF_floridamachines
+		icon = GFX_goal_rhineland
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_newtactics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Killing_Machines
+		}
+	}
+
+	#Focus for Boost the Soldier's Moods!
+	focus = {
+		id = FLF_boostthesoldiersmoods
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_militarytraining }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = FLF_Moral_Boost
+		}
+	}
+
+#End of focuses 
+ }
