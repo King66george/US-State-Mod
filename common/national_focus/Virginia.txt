@@ -997,10 +997,10 @@
 		focus = {
 				id = VAV_researchslot1
 				icon = GFX_focus_research
-				prerequisite = { focus = VAV_followgermany focus = VAV_political_commissars2 }
+				prerequisite = { focus = VAV_stabalizegovernment focus = VAV_stabalizegovernment2 }
 
-				x = 14
-				y = 7
+				x = 13
+				y = 4
 
 				cost = 10
 
@@ -1018,8 +1018,8 @@
 				icon = GFX_focus_research
 				prerequisite = { focus = VAV_researchslot1 }
 
-				x = 14
-				y = 8
+				x = 13
+				y = 5
 
 				cost = 10
 
@@ -1039,7 +1039,7 @@
             prerequisite = { focus = VAV_followgermany focus = VAV_political_commissars2 }
 
 
-						x = 10
+						x = 13
 						y = 7
 
 						cost = 10
@@ -1055,7 +1055,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_calltowar }
 
-						x = 9
+						x = 12
 						y = 8
 
 						cost = 10
@@ -1083,7 +1083,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_calltowar }
 
-						x = 11
+						x = 14
 						y = 8
 
 						cost = 10
@@ -1108,7 +1108,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_strikethecapital }
 
-						x = 11
+						x = 14
 						y = 9
 
 						cost = 10
@@ -1131,7 +1131,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_reclaimwestvirginia }
 
-						x = 9
+						x = 12
 						y = 9
 
 						cost = 10
@@ -1156,7 +1156,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_strikenorthcarolina }
 
-						x = 9
+						x = 12
 						y = 10
 
 						cost = 10
@@ -1181,7 +1181,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_takethecoast }
 
-						x = 11
+						x = 14
 						y = 10
 
 						cost = 10
@@ -1209,7 +1209,7 @@
 						prerequisite = { focus = VAV_strikesoutchcarolina }
 
 
-						x = 10
+						x = 13
 						y = 11
 
 						cost = 10
