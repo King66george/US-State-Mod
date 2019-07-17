@@ -2,6 +2,9 @@
 state={
 	id=878
 	name="West Virginia"
+	resources={
+		oil = 2
+	}
 
 	history={
 		owner = VAV
@@ -17,10 +20,10 @@ state={
 		}
 		add_core_of = VAV
 		victory_points = {
-			788 10 
+			788 10
 		}
 		victory_points = {
-			10412 15 
+			10412 15
 		}
 		1939.1.1 = {
 			buildings = {
@@ -33,7 +36,7 @@ state={
 	}
 
 	provinces={
-		7558 9779 
+		7558 9779
 	}
 	manpower=4151054
 	buildings_max_level_factor=1.000
