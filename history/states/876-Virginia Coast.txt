@@ -19,10 +19,10 @@ state={
 		}
 		add_core_of = VAV
 		victory_points = {
-			788 10 
+			788 10
 		}
 		victory_points = {
-			10412 15 
+			873 10
 		}
 		1939.1.1 = {
 			buildings = {
@@ -35,8 +35,8 @@ state={
 
 	}
 	provinces={
-		788 865 873 6846 11738 
+		788 865 873 6846 11738 3917
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

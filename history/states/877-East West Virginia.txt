@@ -16,12 +16,7 @@ state={
 
 		}
 		add_core_of = WVW
-		victory_points = {
-			788 10 
-		}
-		victory_points = {
-			10412 15 
-		}
+
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4
@@ -32,8 +27,8 @@ state={
 
 	}
 	provinces={
-		801 3941 6850 6958 9923 11888 
+		801 3941 6850 6958 9923 11888
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

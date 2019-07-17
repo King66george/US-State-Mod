@@ -15,13 +15,7 @@ state={
 			}
 
 		}
-		add_core_of = WVW
-		victory_points = {
-			788 10 
-		}
-		victory_points = {
-			10412 15 
-		}
+		
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4
@@ -33,7 +27,7 @@ state={
 	}
 
 	provinces={
-		3975 4627 6971 7466 7588 7646 10441 
+		3975 4627 6971 7466 7588 7646 10441
 	}
 	manpower=4151054
 	buildings_max_level_factor=1.000
