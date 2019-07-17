@@ -1036,6 +1036,8 @@
 				focus = {
 						id = VAV_calltowar
 						icon = GFX_goal_generic_secret_weapon
+            prerequisite = { focus = VAV_followgermany focus = VAV_political_commissars2 }
+
 
 						x = 10
 						y = 7
