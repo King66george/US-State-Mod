@@ -572,7 +572,7 @@ focus = {
                                                   }
                                                 }
 
-                                                  cost = 10
+                                                  cost = 8
 
                                                   x = 17
                                                   y = 5
@@ -589,7 +589,7 @@ focus = {
                                                   }
                                                 }
 
-                                                  cost = 10
+                                                  cost = 8
 
                                                   x = 17
                                                   y = 6
@@ -606,7 +606,7 @@ focus = {
 				                                          target = PAP
                                                   }
                                                 }
-                                                  cost = 10
+                                                  cost = 8
 
                                                   x = 19
                                                   y = 5
@@ -623,11 +623,151 @@ focus = {
                                                   target = NJN
                                                   }
                                                 }
-                                                  cost = 10
+                                                  cost = 8
 
                                                   x = 19
                                                   y = 6
                                               }
+
+
+                                              focus = {
+                                                  id = NYN_communist_war_maryland
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war4}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = MDM
+                                                  }
+                                                }
+                                                  cost = 8
+
+                                                  x = 19
+                                                  y = 7
+                                              }
+
+                                              focus = {
+                                                  id = NYN_communist_war_delaware
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war_maryland}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = DED
+                                                  }
+                                                }
+                                                  cost = 8
+
+                                                  x = 19
+                                                  y = 8
+                                              }
+
+
+                                              focus = {
+                                                  id = NYN_communist_war_ohio
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war_delaware}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = OHO
+                                                  }
+                                                }
+                                                  cost = 8
+
+                                                  x = 19
+                                                  y = 9
+                                              }
+
+
+                                              focus = {
+                                                  id = NYN_communist_war_virginia
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war_ohio}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = VAV
+                                                  }
+                                                }
+                                                  cost = 8
+
+                                                  x = 19
+                                                  y = 10
+                                              }
+
+
+
+                                              focus = {
+                                                  id = NYN_communist_war_connecticut
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war3}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = CTC
+                                                  }
+                                                }
+
+                                                  cost = 8
+
+                                                  x = 17
+                                                  y = 7
+                                              }
+
+
+                                              focus = {
+                                                  id = NYN_communist_war_massachusetts
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war_connecticut}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = MAM
+                                                  }
+                                                }
+
+                                                  cost = 8
+
+                                                  x = 17
+                                                  y = 8
+                                              }
+
+                                              focus = {
+                                                  id = NYN_communist_war_newhampshire
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war_massachusetts}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = NHN
+                                                  }
+                                                }
+
+                                                  cost = 8
+
+                                                  x = 17
+                                                  y = 9
+                                              }
+
+                                              focus = {
+                                                  id = NYN_communist_war_maine
+                                                  icon = GFX_goal_generic_attack_allies
+                                                  prerequisite = { focus = NYN_communist_war_newhampshire}
+                                                  completion_reward = {
+                                                  create_wargoal = {
+                                                   type = annex_everything
+                                                  target = MEM
+                                                  }
+                                                }
+
+                                                  cost = 8
+
+                                                  x = 17
+                                                  y = 10
+                                              }
+
+
 
 
 
