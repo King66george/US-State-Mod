@@ -182,7 +182,7 @@ army_experience= 50
 	#Focus for Re-Introduce Slavery
 	focus = {
 		id = FLF_reintroduceslavery
-		icon = GFX_focus_generic_strike_at_democracy3
+		icon = GFX_FLF_ReintroduceSlavery
 		x = 12
 		y = 4
 		cost = 10

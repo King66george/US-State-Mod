@@ -2638,3 +2638,8 @@
  NYN_idea_sovietacademy:0 "Soviet-New York Military Academy"
  NYN_idea_socalistscience:0 "Socalist Science"
  NYN_idea_socalistscience_desc:0 "Our Communist technology is superior to anyone elses."
+ FLF_PermitMonopoly:0 "Monopolies Allowed"
+ FLF_MonopoliesBanned:0 "Monopolies Banned"
+ FLF_MilitaryStrong:0 "Increased Military Spending"
+ FLF_UnionsPleased:0 "Unions over the State"
+ FLF_IntegratedEconomyIdea:0 "Integrated Economy"
