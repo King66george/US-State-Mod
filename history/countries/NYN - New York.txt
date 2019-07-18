@@ -139,9 +139,9 @@ create_country_leader = {
 					}
 
 create_country_leader = {
-			name = "Israel Amter"
+			name = "Henry A. Wallace"
 			#desc = ""
-			picture = "Israel_Amter.dds"
+			picture = "Henry_A_Wallce.dds"
 			expire = "1965.1.1"
 			ideology = marxism
 			traits = {
