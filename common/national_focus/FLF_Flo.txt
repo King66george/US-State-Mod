@@ -1197,6 +1197,10 @@ add_political_power= 20
 		}
 	}
 
+##########################
+## INDUSTRIAL EXPANSION ##
+##########################
+
 	#Focus for Industrial Expansion II
 	focus = {
 		id = FLF_industrialexpansionii
@@ -1208,8 +1212,43 @@ add_political_power= 20
 		prerequisite = { focus = FLF_industrialexpansion }
 		ai_will_do = {
 			factor = 1
+			}
+			
+					completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 		}
+	
 	}
+	}
+	}	
+	
 
 	#Focus for Military Production Increased
 	focus = {
@@ -1224,37 +1263,252 @@ add_political_power= 20
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
-limit = {
-free_building_slots = {
-building = arms_factory
-size > 0
-include_locked = yes
-}
-OR = {
-is_in_home_area = yes
-NOT = {
-owner = {
-any_owned_state = {
-free_building_slots = {
-building = arms_factory
-size > 0
-include_locked = yes
-}
-is_in_home_area = yes
-}
-}
-}
-}
-}
-add_extra_state_shared_building_slots = 3
-add_building_construction = {
-type = arms_factory
-level = 2
-instant_build = yes
-}
-}
+				random_owned_controlled_state = {
+					limit = {
+					free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+											}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+					owner = {
+					any_owned_state = {
+					free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+			}
+					is_in_home_area = yes
+							}
+								}
+									}
+										}
+											}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+	}
+	}
+	}
+	}
+	
+		#Focus for State Wide Production
+	focus = {
+		id = FLF_StateWideProduction
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_militaryproductionincreased }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				867 = {
+					limit = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+											}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+					owner = {
+					any_owned_state = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+			}
+					is_in_home_area = yes
+							}
+								}
+									}
+										}
+											}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+	}
+	}
+					866 = {
+					limit = {
+					free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+											}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+					owner = {
+					any_owned_state = {
+					free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+			}
+					is_in_home_area = yes
+							}
+								}
+									}
+										}
+											}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+	}
+	}
+					366 = {
+					limit = {
+					free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+											}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+					owner = {
+					any_owned_state = {
+					free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+			}
+					is_in_home_area = yes
+							}
+								}
+									}
+										}
+											}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+	}
+	}
+	}
+	}
+	
+			#Focus for Expansive Spending
+	focus = {
+		id = FLF_ExpansiveSpending
+		icon = GFX_goal_generic_production
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = FLF_industrialexpansionii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				867 = {
+					limit = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+											}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+					owner = {
+					any_owned_state = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+			}
+					is_in_home_area = yes
+							}
+								}
+									}
+										}
+											}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+	}
+	}
+					866 = {
+					limit = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+											}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+					owner = {
+					any_owned_state = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+			}
+					is_in_home_area = yes
+							}
+								}
+									}
+										}
+											}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+	}
+	}
+					366 = {
+					limit = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+											}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+					owner = {
+					any_owned_state = {
+					free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+			}
+					is_in_home_area = yes
+							}
+								}
+									}
+										}
+											}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+	}
+	}
+	}
+	}
+	
+	
 
-
-#End of focuses 
+	#End of focuses 
  }

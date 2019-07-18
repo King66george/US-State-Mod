@@ -275,3 +275,7 @@ FLF_cruisereffort:0 "Cruiser Effort"
 FLF_cruisereffort_desc:0 "E"\
 FLF_militaryproductionincreased:0 "Military Production Increased"
 FLF_militaryproductionincreased_desc:0 "^"
+FLF_StateWideProduction:0 "State Wide Production"
+FLF_StateWideProduction_desc:0 "Expanding Our industry State Wide!"
+FLF_ExpansiveSpending:0 "Expansive Spending"
+FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonally we need to unite our industrial programs."
