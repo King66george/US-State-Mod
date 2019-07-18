@@ -1591,4 +1591,20 @@ spriteTypes = {
 		name = "GFX_FLF_Purge_Radicals"
 		texturefile = "gfx/interface/goals/FLF_Purge_Radicals.dds"
 		}			
+		
+
+		spriteType = {
+		name = "GFX_FLF_ReintroduceSlavery"
+		texturefile = "gfx/interface/goals/FLF_ReintroduceSlavery.dds"
+		}			
+
+		spriteType = {
+		name = "GFX_FLF_Focus_On_The_Unions"
+		texturefile = "gfx/interface/goals/FLF_Focus_On_The_Unions.dds"
+		}				
+
+		spriteType = {
+		name = "GFX_FLF_Focus_On_The_Military"
+		texturefile = "gfx/interface/goals/FLF_Focus_On_The_Military.dds"
+		}									
 }

@@ -4115,12 +4115,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FLF_South_Pride.dds"
 		}
 		spriteType = {
-		name = "GFX_FLF_Southern_Pride"
-		texturefile = "gfx/interface/goals/FLF_Southern_Pride.dds"
+		name = "GFX_idea_FLF_MonopoliesBanned"
+		texturefile = "gfx/interface/goals/FLF_MonopoliesBanned.dds"
 		}
+		
+		spriteType = {
+		name = "GFX_idea_FLF_Monopolies"
+		texturefile = "gfx/interface/goals/FLF_Monopolies.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_FLF_MilitaryStrong"
+		texturefile = "gfx/interface/goals/idea_war_economy.dds"
+		}
+		spriteType = {
+		name = "GFX_FLF_UnionsPleased"
+		texturefile = "gfx/interface/goals/new_deal.dds"
+		}
+		spriteType = {
+		name = "GFX_FLF_IntegratedEconomyIdea"
+		texturefile = "gfx/interface/goals/generic_disjointed_gov.dds"
+		}		
 ##No Florida Mods##
 
 
 
 
-}
+	}
