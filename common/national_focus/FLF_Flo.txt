@@ -39,28 +39,6 @@ army_experience= 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 1
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -365,7 +343,6 @@ add_war_support= 5
 			focus = FLF_patrioticrestoration 
 		}
 		mutually_exclusive = { 
-			focus = FLF_ 
 			focus = FLF_acallforsomethinggreater 
 		}
 		ai_will_do = {
@@ -627,9 +604,6 @@ add_ideas = FLF_Lenin
 		}
 		mutually_exclusive = { 
 			focus = FLF_patrioticrestoration 
-		}
-		mutually_exclusive = { 
-			focus = FLF_ 
 		}
 		mutually_exclusive = { 
 			focus = FLF_aunitedright 
@@ -896,37 +870,22 @@ add_political_power= 20
 			factor = 1
 		}
 		completion_reward = {
+					navy_experience = 50
 		867 = {
-			limit = {
-			free_building_slots = {
-			building = dockyard
-			size > 0
-			include_locked = yes
-			}
-		}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 			type = dockyard
 			level = 2
 			instant_build = yes
 			}
-			set_state_flag = 867_Dockyard
 		}
 		866 = {
-			limit = {
-			free_building_slots = {
-			building = dockyard
-			size > 0
-			include_locked = yes
-			}
-		}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 			type = dockyard
 			level = 2
 			instant_build = yes
 			}
-			set_state_flag = 866_Dockyard
 		}			
 	}
 	}
@@ -1073,102 +1032,16 @@ add_political_power= 20
 		}
 		completion_reward = {
 			navy_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
+					366 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
 						level = 3
 						instant_build = yes
 					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}			
+				}		
 		}
-	}
+		}
 
 
 	#Focus for Capital Ship Effort
@@ -1216,28 +1089,6 @@ add_political_power= 20
 			
 					completion_reward = {
 			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 1
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1264,28 +1115,6 @@ add_political_power= 20
 		}
 		completion_reward = {
 				random_owned_controlled_state = {
-					limit = {
-					free_building_slots = {
-					building = arms_factory
-					size > 0
-					include_locked = yes
-											}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-					owner = {
-					any_owned_state = {
-					free_building_slots = {
-					building = arms_factory
-					size > 0
-					include_locked = yes
-			}
-					is_in_home_area = yes
-							}
-								}
-									}
-										}
-											}
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 			type = arms_factory
@@ -1310,28 +1139,6 @@ add_political_power= 20
 		}
 		completion_reward = {
 				867 = {
-					limit = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-											}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-					owner = {
-					any_owned_state = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-			}
-					is_in_home_area = yes
-							}
-								}
-									}
-										}
-											}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 			type = industrial_complex
@@ -1340,28 +1147,6 @@ add_political_power= 20
 	}
 	}
 					866 = {
-					limit = {
-					free_building_slots = {
-					building = arms_factory
-					size > 0
-					include_locked = yes
-											}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-					owner = {
-					any_owned_state = {
-					free_building_slots = {
-					building = arms_factory
-					size > 0
-					include_locked = yes
-			}
-					is_in_home_area = yes
-							}
-								}
-									}
-										}
-											}
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 			type = arms_factory
@@ -1370,28 +1155,6 @@ add_political_power= 20
 	}
 	}
 					366 = {
-					limit = {
-					free_building_slots = {
-					building = arms_factory
-					size > 0
-					include_locked = yes
-											}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-					owner = {
-					any_owned_state = {
-					free_building_slots = {
-					building = arms_factory
-					size > 0
-					include_locked = yes
-			}
-					is_in_home_area = yes
-							}
-								}
-									}
-										}
-											}
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 			type = arms_factory
@@ -1416,28 +1179,6 @@ add_political_power= 20
 		}
 		completion_reward = {
 				867 = {
-					limit = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-											}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-					owner = {
-					any_owned_state = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-			}
-					is_in_home_area = yes
-							}
-								}
-									}
-										}
-											}
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 			type = industrial_complex
@@ -1446,28 +1187,6 @@ add_political_power= 20
 	}
 	}
 					866 = {
-					limit = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-											}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-					owner = {
-					any_owned_state = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-			}
-					is_in_home_area = yes
-							}
-								}
-									}
-										}
-											}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 			type = industrial_complex
@@ -1476,28 +1195,6 @@ add_political_power= 20
 	}
 	}
 					366 = {
-					limit = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-											}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-					owner = {
-					any_owned_state = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-			}
-					is_in_home_area = yes
-							}
-								}
-									}
-										}
-											}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 			type = industrial_complex
