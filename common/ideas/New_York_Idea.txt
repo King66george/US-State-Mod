@@ -17,3 +17,77 @@ ideas = {
                 winter_attrition_factor = -0.25
             }
         }
+      }
+
+      country = {
+        NYN_idea_navyboost = {
+
+        allowed = {
+            always = no
+        }
+
+        allowed_civil_war = {
+            always = yes
+        }
+
+        removal_cost = -1
+
+        modifier = {
+            	industrial_capacity_dockyard = 0.2
+        }
+    }
+  }
+
+
+
+    country = {
+      NYN_idea_prepareforwar = {
+
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+      	justify_war_goal_time = -0.30
+        generate_wargoal_tension = 0.1
+      }
+    }
+  }
+
+
+
+    country = {
+      NYN_idea_sovietacademy = {
+
+
+    allowed = {
+          always = no
+    }
+
+    allowed_civil_war = {
+          always = yes
+    }
+
+    removal_cost = -1
+
+    modifier = {
+      max_planning = 0.15
+      planning_speed = 0.15
+      army_org = 10
+
+    }
+  }
+}
+
+
+
+
+
+
+}

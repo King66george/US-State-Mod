@@ -305,7 +305,7 @@ focus = {
                                     focus = {
                                             id = NYN_politicalfocus_1
                                             icon = GFX_focus_hol_abandon_the_gold_standard
-                                            cost = 10.00
+                                            cost = 5
                                             x = 25
                                             y = 0
                                             completion_reward = {
@@ -324,6 +324,7 @@ focus = {
                                             y = 2
 
 
+
                                             cost = 10
 
                                             ai_will_do = {
@@ -335,7 +336,7 @@ focus = {
                                             }
 
                                             bypass = {
-
+                                            has_government = democratic
                                             }
 
                                             cancel_if_invalid = yes
@@ -405,7 +406,7 @@ focus = {
                                                 }
 
                                                 bypass = {
-
+                                                has_government = communism
                                                 }
 
                                                 cancel_if_invalid = yes
@@ -444,7 +445,7 @@ focus = {
                                                     }
 
                                                     bypass = {
-
+                                                    has_government = fascism
                                                     }
 
                                                     cancel_if_invalid = yes
@@ -469,7 +470,7 @@ focus = {
                                                   has_government = communism
                                                   }
 
-                                                  cost = 15
+                                                  cost = 10
 
                                                   x = 18
                                                   y = 3
@@ -541,6 +542,11 @@ focus = {
                                                   cost = 10
                                                   x = 18
                                                   y = 4
+
+                                                  completion_reward = {
+                                                  add_ideas = NYN_idea_prepareforwar
+
+                                                  }
 
                                                 }
 
@@ -643,6 +649,28 @@ focus = {
                                                 }
 
 
+                                                focus = {
+                                              		id = NYN_sovietmilitaryacademy
+                                              		icon = GFX_focus_generic_military_academy
+                                              		x = 20
+                                              		y = 4
+                                              		cost = 10
+
+                                              		available_if_capitulated = yes
+                                              		prerequisite = { focus = NYN_communistfriends}
+
+                                              		ai_will_do = {
+                                              			factor = 1
+                                              		}
+
+                                              		completion_reward = {
+                                              			add_ideas = NYN_idea_sovietacademy
+                                              		}
+                                              	}
+                                              
+
+
+
 
  ################ MILITARY SECTION ##############
 
@@ -684,9 +712,9 @@ focus = {
 	                                         id = NYN_equipment2
 		                                       icon = GFX_goal_generic_army_doctrines
 		                                       prerequisite = { focus = NYN_equipment1 }
-		                                       x = 6
+		                                       x = 7
 		                                       y = 3
-                                           
+
 		                                            cost = 10
 
 		                                             available_if_capitulated = yes
@@ -750,6 +778,24 @@ focus = {
                                         }
                                       }
                                     }
+
+
+                                  focus = {
+                                        id = NYN_navyboost
+                                        icon = GFX_goal_generic_navy_anti_submarine
+                                        prerequisite = { focus = NYN_navygrowth}
+                                        x = 13
+                                        y = 2
+                                        cost = 10
+                                        ai_will_do = {
+                                        factor = 1
+                                                  }
+
+                                       completion_reward = {
+                                       add_ideas = NYN_idea_navyboost
+                                       }
+                                      }
+
 
 
                                   focus = {

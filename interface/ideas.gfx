@@ -4027,6 +4027,22 @@ spriteTypes = {
 		name = "GFX_idea_NYN_idea_wintersoldiers"
 		texturefile = "gfx/interface/ideas/idea_eng_imperial_conscription.dds"
 	}
+
+	spriteType = {
+	name = "GFX_idea_NYN_idea_navyboost"
+	texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_NYN_idea_prepareforwar"
+	texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+	}
+
+	spriteType = {
+	name = "GFX_idea_NYN_idea_sovietacademy"
+	texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+	}
+
 ## Florida Mods ##
 
 
@@ -4045,27 +4061,27 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_idea_FLF_Open_Borders"
 		texturefile = "gfx/interface/ideas/idea_prc_the_long_march2.dds"
-		}		
+		}
 		spriteType = {
 		name = "GFX_FLF_South_Pride"
 		texturefile = "gfx/interface/ideas/idea_send_attache.dds"
-		}		
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Working_Incentives"
 		texturefile = "gfx/interface/ideas/idea_send_attache.dds"
-		}		
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Slavery_Again"
 		texturefile = "gfx/interface/ideas/GFX_FLF_Slavery_Again.dds"
-		}				
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Left_War_Plans"
 		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
-		}				
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Expanding_Influence"
 		texturefile = "gfx/interface/ideas/idea_generic_constitutional_guarantee.dds"
-		}	
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Old_Tactics"
 		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament.dds"
@@ -4073,34 +4089,38 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_idea_FLF_Purged_Radicals"
 		texturefile = "gfx/interface/ideas/trotskyite_plot_purged.dds"
-		}		
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_New_Tactics"
 		texturefile = "gfx/interface/ideas/idea_hun_secret_rearmament.dds"
-		}		
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Trench_Foot"
 		texturefile = "gfx/interface/ideas/idea_ast_all_in.dds"
-		}			
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Killing_Machines"
 		texturefile = "gfx/interface/ideas/idea_chi_army_corruption3.dds"
-		}					
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Moral_Boost"
 		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
-		}				
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_Offensive_Approach"
 		texturefile = "gfx/interface/ideas/idea_generic_infantry_equipment_manufacturer_2.dds"
-		}						
+		}
 		spriteType = {
 		name = "GFX_idea_FLF_South_Pride"
 		texturefile = "gfx/interface/ideas/FLF_South_Pride.dds"
-		}						
+		}
 		spriteType = {
 		name = "GFX_FLF_Southern_Pride"
 		texturefile = "gfx/interface/goals/FLF_Southern_Pride.dds"
-		}				
+		}
 ##No Florida Mods##
+
+
+
+
 }
