@@ -529,6 +529,14 @@ focus = {
                                                   cost = 10
                                                   x = 22
                                                   y = 5
+                                                  available = {
+                                                  has_government = communism
+                                                  }
+                                                  available_if_capitulated = yes
+
+                                                  completion_reward = {
+                                                  add_ideas = NYN_idea_socalistscience
+                                                  }
 
                                                 }
 
@@ -667,7 +675,7 @@ focus = {
                                               			add_ideas = NYN_idea_sovietacademy
                                               		}
                                               	}
-                                              
+
 
 
 

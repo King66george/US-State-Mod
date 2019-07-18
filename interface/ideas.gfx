@@ -4043,6 +4043,12 @@ spriteTypes = {
 	texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
 	}
 
+	spriteType = {
+	name = "GFX_idea_NYN_idea_socalistscience"
+	texturefile = "gfx/interface/ideas/GFX_idea_generic_research_bonus"
+	}
+
+
 ## Florida Mods ##
 
 

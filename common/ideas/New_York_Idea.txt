@@ -86,8 +86,26 @@ ideas = {
 }
 
 
+    country = {
+      NYN_idea_socalistscience = {
 
+      allowed = {
+            always = no
+      }
 
+      allowed_civil_war = {
+            always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        research_speed_factor = 0.10
+        production_speed_synthetic_refinery_factor = 0.25
+        production_speed_nuclear_reactor_factor = 0.25
+      }
+    }
+  }
 
 
 }
