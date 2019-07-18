@@ -3,45 +3,7 @@
 ideas = {
 	### Country ideas
 	country = {
-		### Political Section ###
-		FLF_welfare_Program_idea = {
-			allowed = { always = no }
-			removal_cost = -1
-			picture = generic_goods_red_bonus
-			modifier = {
-				consumer_goods_factor = -0.05	
-				political_power_gain = 0.05
-			}
-		}
-		FLF_Reignite_the_Republic = {
-			allowed = { always = no }
-			removal_cost = -1
-			picture = GFX_NewRepublic
-			modifier = {
-				consumer_goods_factor = -0.05
-				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.10
-			}
-		}
-		FLF_Lenin = {
-			allowed = { always = no }
-			removal_cost = -1
-			picture = socialist_science_focus
-			modifier = {
-				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.10
-			}
-		}
-		### Democratic Section ###
-		FLF_Restoration_Projects = {
-			allowed = { always = no }
-			removal_cost = -1
-			picture = generic_research_bonus
-			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-			}
-		}
+		### Internal Section ###
 		FLF_Open_Borders = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -49,6 +11,16 @@ ideas = {
 			modifier = {
 				monthly_population = 0.25
 				stability_factor = -0.05
+			}
+		}		
+## Democratic Section ###
+		FLF_Restoration_Projects = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 		FLF_Working_Incentives = {
@@ -60,7 +32,17 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
-		### Authoritarian Section ###
+		FLF_Reignite_the_Republic = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = GFX_NewRepublic
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.10
+			}
+		}		
+		### Fascist Section ###
 		FLF_South_Pride = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -91,7 +73,7 @@ ideas = {
 				army_attack_factor = 0.1
 			}
 		}
-		### Center-Auth Section ###
+		### Authoritarian Section ###
 		FLF_Expanding_Influence = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -104,6 +86,15 @@ ideas = {
 			}
 		}
 		### Left-Auth Section ###
+		FLF_Lenin = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = socialist_science_focus
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.10
+			}
+		}
 		FLF_Left_War_Plans = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -123,6 +114,16 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
+		### LEFT ###
+		FLF_welfare_Program_idea = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05	
+				political_power_gain = 0.15
+			}
+		}		
 		### Military ###
 		FLF_Old_Tactics = {
 			allowed = { always = no }
@@ -172,7 +173,69 @@ ideas = {
 				army_core_defence_factor = 0.05
 			}
 		}
+		#############################
 		#Industry UPDATE COMING SOON#
+		#############################
 		
+		FLF_IntegratedEconomyIdea = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		FLF_UnionsPleased = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				political_power_gain = -0.2	
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15	
+				local_resources_factor = -0.15
+
+			}
+		}
+
+		FLF_MilitaryStrong = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {	
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.15
+
+
+			}
+		}
+
+		FLF_PermitMonopoly = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {	
+				consumer_goods_factor = 0.05
+				local_resources_factor = 0.25
+				industrial_capacity_factory = 0.05
+
+
+			}
+		}		
+
+		FLF_MonopoliesBanned = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = FRA_national_mobilization_focus
+			modifier = {	
+				consumer_goods_factor = 0.05
+				local_resources_factor = 0.25
+				industrial_capacity_factory = 0.05
+
+
+			}
+		}				
 	}
 	}
