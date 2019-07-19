@@ -314,73 +314,6 @@ focus = {
                                           }
 
 
-                                      focus = {
-                                            id = NYN_beaconofdemocracy
-                                            icon = GFX_goal_support_democracy
-                                            prerequisite = { focus = NYN_politicalfocus_1 }
-                                            mutually_exclusive = { focus = NYN_forthestate }
-                                            mutually_exclusive = {focus = NYN_forthepeople}
-                                            x = 25
-                                            y = 2
-
-
-
-                                            cost = 10
-
-                                            ai_will_do = {
-                                              factor = 1
-                                            }
-
-                                            available = {
-
-                                            }
-
-                                            bypass = {
-                                            has_government = democratic
-                                            }
-
-                                            cancel_if_invalid = yes
-                                            continue_if_invalid = no
-                                            available_if_capitulated = no
-
-                                            complete_tooltip = {
-
-                                            }
-
-                                            completion_reward = {
-                                            add_ideas = democratic_influence
-                                            }
-                                          }
-
-
-
-                                       focus = {
-                                              id = NYN_capitalist_economy
-                                              icon = GFX_goal_generic_consumer_goods
-                                              prerequisite = { focus = NYN_beaconofdemocracy}
-                                              cost = 10
-                                              x = 24
-                                              y = 3
-
-
-                                              }
-
-                                      focus = {
-                                          id = NYN_local_security
-                                          icon = GFX_goal_generic_defence
-                                          prerequisite = { focus = NYN_beaconofdemocracy}
-                                          cost = 10
-                                          x = 26
-                                          y = 3
-                                         completion_reward = {
-                                         set_rule = { can_send_volunteers = yes }
-                                         add_ideas = volunteer_corps_focus
-
-                                          }
-                                        }
-
-
-
 
 
 
@@ -541,14 +474,14 @@ focus = {
                                                 }
 
                                               focus = {
-                                                  id = NYN_communist_preparewar
+                                                  id = NYN_communist_war
                                                   icon = GFX_goal_generic_political_pressure
-                                                  prerequisite = { focus = NYN_communist_milita}
+                                                  prerequisite = { focus = NYN_takeourlandback}
                                                   available = {
-                                                  has_army_manpower = { size > 100000 }
+                                                  has_army_manpower = { size > 200000 }
                                                   }
                                                   cost = 10
-                                                  x = 18
+                                                  x = 25
                                                   y = 4
 
                                                   completion_reward = {
@@ -559,214 +492,238 @@ focus = {
                                                 }
 
 
-
-
-                                              focus = {
-                                                  id = NYN_communist_war1
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_preparewar}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = VTV
-                                                  }
+                                                focus = {
+                                                    id = NYN_takeourlandback
+                                                    icon = GFX_goal_generic_occupy_states_ongoing_war
+                                                    x = 25
+                                                    y = 3
+                                                    cost = 8
+                                                    prerequisite = { focus = NYN_forthepeople focus = NYN_forthestate}
                                                 }
 
-                                                  cost = 8
-
-                                                  x = 17
-                                                  y = 5
-                                              }
-
-                                              focus = {
-                                                  id = NYN_communist_war3
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war1}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = ONO
-                                                  }
-                                                }
-
-                                                  cost = 8
-
-                                                  x = 17
-                                                  y = 6
-                                              }
 
 
-                                              focus = {
-                                                  id = NYN_communist_war2
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_preparewar}
-                                                  completion_reward = {
-			                                            create_wargoal = {
-				                                           type = annex_everything
-				                                          target = PAP
-                                                  }
-                                                }
-                                                  cost = 8
+                                                	#Focus for Take Maine
+                                                	focus = {
+                                                		id = NYN_takemaine
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 11
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takenewhampshire }
+                                                		completion_reward = {
+                                                			create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = MEM
+                                                                                                  }
+                                                		}
+                                                	}
 
-                                                  x = 19
-                                                  y = 5
-                                              }
+                                                	#Focus for Take New Hampshire
+                                                	focus = {
+                                                		id = NYN_takenewhampshire
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 10
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takemassachusetts }
+                                                		completion_reward = {
 
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = NHN
+                                                                                                  }
 
-                                              focus = {
-                                                  id = NYN_communist_war4
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war2}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = NJN
-                                                  }
-                                                }
-                                                  cost = 8
+                                                		}
+                                                	}
 
-                                                  x = 19
-                                                  y = 6
-                                              }
+                                                	#Focus for Take Connecticut
+                                                	focus = {
+                                                		id = NYN_takeconnecticut
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 8
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takeontario }
+                                                		completion_reward = {
 
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = CTC
+                                                                                                  }
 
-                                              focus = {
-                                                  id = NYN_communist_war_maryland
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war4}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = MDM
-                                                  }
-                                                }
-                                                  cost = 8
+                                                		}
+                                                	}
 
-                                                  x = 19
-                                                  y = 7
-                                              }
+                                                	#Focus for Take Massachusetts
+                                                	focus = {
+                                                		id = NYN_takemassachusetts
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 9
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takeconnecticut }
+                                                		completion_reward = {
 
-                                              focus = {
-                                                  id = NYN_communist_war_delaware
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war_maryland}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = DED
-                                                  }
-                                                }
-                                                  cost = 8
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = MAM
+                                                                                                  }
 
-                                                  x = 19
-                                                  y = 8
-                                              }
+                                                		}
+                                                	}
 
+                                                	#Focus for Take Virgina
+                                                	focus = {
+                                                		id = NYN_takevirginia
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 11
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takeohio }
+                                                		completion_reward = {
 
-                                              focus = {
-                                                  id = NYN_communist_war_ohio
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war_delaware}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = OHO
-                                                  }
-                                                }
-                                                  cost = 8
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = VAV
+                                                                                                  }
 
-                                                  x = 19
-                                                  y = 9
-                                              }
+                                                		}
+                                                	}
 
+                                                	#Focus for Take Ohio
+                                                	focus = {
+                                                		id = NYN_takeohio
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 10
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takedelaware }
+                                                		completion_reward = {
 
-                                              focus = {
-                                                  id = NYN_communist_war_virginia
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war_ohio}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = VAV
-                                                  }
-                                                }
-                                                  cost = 8
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = OHO
+                                                                                                  }
 
-                                                  x = 19
-                                                  y = 10
-                                              }
+                                                		}
+                                                	}
 
+                                                	#Focus for Take Delaware
+                                                	focus = {
+                                                		id = NYN_takedelaware
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 9
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takemaryland }
+                                                		completion_reward = {
 
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = DED
+                                                                                                  }
 
-                                              focus = {
-                                                  id = NYN_communist_war_connecticut
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war3}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = CTC
-                                                  }
-                                                }
+                                                		}
+                                                	}
 
-                                                  cost = 8
+                                                	#Focus for Take Maryland
+                                                	focus = {
+                                                		id = NYN_takemaryland
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 8
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takenewjersey }
+                                                		completion_reward = {
 
-                                                  x = 17
-                                                  y = 7
-                                              }
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = MDM
+                                                                                                  }
 
+                                                		}
+                                                	}
 
-                                              focus = {
-                                                  id = NYN_communist_war_massachusetts
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war_connecticut}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = MAM
-                                                  }
-                                                }
+                                                	#Focus for Take New Jersey
+                                                	focus = {
+                                                		id = NYN_takenewjersey
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 7
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takepennsylvania }
+                                                		completion_reward = {
 
-                                                  cost = 8
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = NJN
+                                                                                                  }
 
-                                                  x = 17
-                                                  y = 8
-                                              }
+                                                		}
+                                                	}
 
-                                              focus = {
-                                                  id = NYN_communist_war_newhampshire
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war_massachusetts}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = NHN
-                                                  }
-                                                }
+                                                	#Focus for Take Pennsylvania
+                                                	focus = {
+                                                		id = NYN_takepennsylvania
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 6
+                                                		cost = 8
+                                                    prerequisite = { focus = NYN_communist_war}
+                                                		available_if_capitulated = yes
+                                                		completion_reward = {
+                                                			create_wargoal = {
+                                                                                           type = annex_everything
+                                                                                          target = PAP
+                                                                                                  }
+                                                		}
+                                                	}
 
-                                                  cost = 8
+                                                	#Focus for Take Ontario
+                                                	focus = {
+                                                		id = NYN_takeontario
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 7
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takevermont }
+                                                		completion_reward = {
 
-                                                  x = 17
-                                                  y = 9
-                                              }
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = ONO
+                                                                                                  }
 
-                                              focus = {
-                                                  id = NYN_communist_war_maine
-                                                  icon = GFX_goal_generic_attack_allies
-                                                  prerequisite = { focus = NYN_communist_war_newhampshire}
-                                                  completion_reward = {
-                                                  create_wargoal = {
-                                                   type = annex_everything
-                                                  target = MEM
-                                                  }
-                                                }
+                                                		}
+                                                	}
 
-                                                  cost = 8
-
-                                                  x = 17
-                                                  y = 10
-                                              }
-
+                                                	#Focus for Take Vermont
+                                                	focus = {
+                                                		id = NYN_takevermont
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 6
+                                                		cost = 8
+                                                    prerequisite = { focus = NYN_communist_war}
+                                                		available_if_capitulated = yes
+                                                		completion_reward = {
+                                                			create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = VTV
+                                                                                                  }
+                                                		}
+                                                	}
 
 
 
@@ -1075,3 +1032,26 @@ focus = {
 
 
     }
+
+###################################################################################################################################
+
+# EEEEEEEEEEEEEEEEEEEEEENNNNNNNN        NNNNNNNNDDDDDDDDDDDDD        #
+# E::::::::::::::::::::EN:::::::N       N::::::ND::::::::::::DDD
+# E::::::::::::::::::::EN::::::::N      N::::::ND:::::::::::::::DD
+# EE::::::EEEEEEEEE::::EN:::::::::N     N::::::NDDD:::::DDDDD:::::D
+# E:::::E       EEEEEEN::::::::::N    N::::::N  D:::::D    D:::::D
+# E:::::E             N:::::::::::N   N::::::N  D:::::D     D:::::D
+# E::::::EEEEEEEEEE   N:::::::N::::N  N::::::N  D:::::D     D:::::D
+# E:::::::::::::::E   N::::::N N::::N N::::::N  D:::::D     D:::::D
+# E:::::::::::::::E   N::::::N  N::::N:::::::N  D:::::D     D:::::D
+# E::::::EEEEEEEEEE   N::::::N   N:::::::::::N  D:::::D     D:::::D
+# E:::::E             N::::::N    N::::::::::N  D:::::D     D:::::D
+# E:::::E       EEEEEEN::::::N     N:::::::::N  D:::::D    D:::::D
+# EE::::::EEEEEEEE:::::EN::::::N      N::::::::NDDD:::::DDDDD:::::D
+# E::::::::::::::::::::EN::::::N       N:::::::ND:::::::::::::::DD
+# E::::::::::::::::::::EN::::::N        N::::::ND::::::::::::DDD
+# EEEEEEEEEEEEEEEEEEEEEENNNNNNNN         NNNNNNNDDDDDDDDDDDDD
+###################################################################################################################################
+###################################################################################################################################
+###################################################################################################################################
+###################################################################################################################################
