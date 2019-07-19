@@ -2851,6 +2851,15 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  NYN_communist_war:0 "Ready The Men"
  NYN_democracy_prevails:0 "Democracy Prevails"
  NYN_commissar:0 "Political Commissars"
+ VAV_kentucky:0 "War With Kentucky"
+ VAV_kentucky_desc:0 "War With Kentucky"
+ VAV_ohio:0 "War With Ohio"
+ VAV_ohio_desc:0 "War With Ohio"
+ VAV_tennessee:0 "Take Tennessee"
+ VAV_tennessee_desc:0 "Take Tennessee"
+ VAV_newyork:0 "Strike The Beast"
+ VAV_newyork_desc:0 "Strike The Beast"
+
 ################################################################################################################################################################
 ################################################################################################################################################################
 ################################################################################################################################################################

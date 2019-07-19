@@ -1083,7 +1083,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_calltowar }
 
-						x = 14
+						x = 16
 						y = 8
 
 						cost = 10
@@ -1108,7 +1108,7 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_strikethecapital }
 
-						x = 14
+						x = 16
 						y = 9
 
 						cost = 10
@@ -1129,10 +1129,10 @@
 				focus = {
 						id = VAV_strikenorthcarolina
 						icon = GFX_goal_generic_attack_allies
-						prerequisite = { focus = VAV_reclaimwestvirginia }
+						prerequisite = { focus = VAV_calltowar }
 
-						x = 12
-						y = 9
+						x = 10
+						y = 8
 
 						cost = 10
 
@@ -1156,8 +1156,8 @@
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_strikenorthcarolina }
 
-						x = 12
-						y = 10
+						x = 10
+						y = 9
 
 						cost = 10
 
@@ -1179,10 +1179,10 @@
 				focus = {
 						id = VAV_strikepen
 						icon = GFX_goal_generic_attack_allies
-						prerequisite = { focus = VAV_takethecoast }
+						prerequisite = { focus = VAV_calltowar }
 
 						x = 14
-						y = 10
+						y = 8
 
 						cost = 10
 
@@ -1195,7 +1195,7 @@
 							type = annex_everything
 							target = PAP
 						}
-							add_state_core = 847
+							add_state_core = 880
 							add_state_core = 881
 							add_state_core = 360
 							add_state_core = 882
@@ -1206,11 +1206,10 @@
 						id = VAV_strikenewjersey
 						icon = GFX_goal_generic_attack_allies
 						prerequisite = { focus = VAV_strikepen }
-						prerequisite = { focus = VAV_strikesoutchcarolina }
 
 
-						x = 13
-						y = 11
+						x = 14
+						y = 9
 
 						cost = 10
 
@@ -1227,6 +1226,115 @@
 							add_state_core = 883
 					}
 				}
+
+        focus = {
+            id = VAV_kentucky
+            icon = GFX_goal_generic_attack_allies
+            prerequisite = { focus = VAV_reclaimwestvirginia }
+
+
+            x = 12
+            y = 9
+
+            cost = 10
+
+            ai_will_do = {
+              factor = 1
+            }
+
+            completion_reward = {
+              create_wargoal = {
+              type = annex_everything
+              target = KYK
+            }
+              add_state_core = 854
+              add_state_core = 369
+          }
+        }
+
+        focus = {
+            id = VAV_tennessee
+            icon = GFX_goal_generic_attack_allies
+            prerequisite = { focus = VAV_kentucky }
+            prerequisite = { focus = VAV_strikesoutchcarolina }
+
+
+            x = 11
+            y = 10
+
+            cost = 10
+
+            ai_will_do = {
+              factor = 1
+            }
+
+            completion_reward = {
+              create_wargoal = {
+              type = annex_everything
+              target = TNT
+            }
+              add_state_core = 853
+              add_state_core = 368
+              add_state_core = 852
+          }
+        }
+
+        focus = {
+            id = VAV_ohio
+            icon = GFX_goal_generic_attack_allies
+            prerequisite = { focus = VAV_kentucky }
+            prerequisite = { focus = VAV_strikenewjersey }
+
+
+            x = 13
+            y = 10
+
+            cost = 10
+
+            ai_will_do = {
+              factor = 1
+            }
+
+            completion_reward = {
+              create_wargoal = {
+              type = annex_everything
+              target = OHO
+            }
+              add_state_core = 858
+              add_state_core = 859
+              add_state_core = 261
+              add_state_core = 901
+              add_state_core = 860
+          }
+        }
+
+        focus = {
+            id = VAV_newyork
+            icon = GFX_goal_generic_attack_allies
+            prerequisite = { focus = VAV_takethecoast }
+            prerequisite = { focus = VAV_strikenewjersey }
+
+
+            x = 15
+            y = 10
+
+            cost = 10
+
+            ai_will_do = {
+              factor = 1
+            }
+
+            completion_reward = {
+              create_wargoal = {
+              type = annex_everything
+              target = NYN
+            }
+              add_state_core = 358
+              add_state_core = 884
+              add_state_core = 885
+              add_state_core = 886
+          }
+        }
 
 #Political Focus Tree
 	focus = {
