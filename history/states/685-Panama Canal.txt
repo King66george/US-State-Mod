@@ -2,13 +2,13 @@ state={
 	id=685
 	name="STATE_685"
 	manpower = 39467
-	
+
 	state_category = enclave
 
-	history=
+	history = {
 		owner = PCP
 		victory_points = {
-			7617 5 
+			7617 5
 		}
 		buildings = {
 			infrastructure = 4
@@ -19,6 +19,6 @@ state={
 		}
 		add_core_of = PCP
 	}
-	
+
 	provinces={ 7617 }
 }
