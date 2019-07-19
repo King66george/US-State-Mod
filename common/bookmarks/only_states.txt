@@ -3,7 +3,7 @@ bookmarks = {
 		name = "OSS_NAME"
 		desc = "OSS_DESC"
 		date = 1936.1.3.12
-		picture = "GFX_select_date_1936"
+		picture = "GFX_select_date_1939"
 		default_country = "TXT"
 		default = yes
 
