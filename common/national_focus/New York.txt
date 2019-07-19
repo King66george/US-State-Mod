@@ -424,6 +424,26 @@ focus = {
 
                                                 }
 
+                                                focus = {
+                                                    id = NYN_commissar
+                                                    icon = GFX_focus_prc_agrarian_socialism
+                                                    prerequisite = { focus = NYN_communist_milita}
+                                                    available = {
+                                                    has_government = communism
+                                                    }
+
+                                                    cost = 10
+
+                                                    x = 18
+                                                    y = 4
+
+                                                    completion_reward = {
+                                              				add_ideas = political_commissars_focus
+                                              				#as per generic focus
+
+                                                    }
+
+                                                  }
 
 
 
