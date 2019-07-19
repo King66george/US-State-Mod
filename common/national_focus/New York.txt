@@ -304,17 +304,28 @@ focus = {
 
                                     focus = {
                                             id = NYN_politicalfocus_1
-                                            icon = GFX_focus_hol_abandon_the_gold_standard
+                                            icon = GFX_focus_generic_strike_at_democracy2
+                                            mutually_exclusive = { focus = NYN_democracy_prevails}
                                             cost = 5
                                             x = 25
                                             y = 0
                                             completion_reward = {
-                                            add_political_power = 250
+                                            add_political_power = -100
                                             }
                                           }
 
 
-
+                                          focus = {
+                                          id = NYN_democracy_prevails
+                                          icon = GFX_goal_support_democracy
+                                          mutually_exclusive = { focus = NYN_politicalfocus_1}
+                                          cost = 5
+                                          x = 40
+                                          y = 0
+                                          completion_reward = {
+                                          add_political_power = 250
+                                          }
+                                        }
 
 
 

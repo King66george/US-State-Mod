@@ -513,7 +513,8 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  NYN_beaconofdemocracy_desc:0 "§RThe Democratic path is not complete and will be done later.§"
  NYN_forthepeople:0 "For The People"
  NYN_forthestate:0 "For The State"
- NYN_politicalfocus_1:0 "Political Change"
+ NYN_politicalfocus_1:0 "Abandon Democracy"
+ NYN_politicalfocus_1_desc:0 "The Great Depression has showed us democracy does not work, far left or far right views will suit the New York State better then democracy ever could."
  NYN_communist_preparewar:0 "Prepare For War"
  NYN_communist_milita:0 "The Young Communist League"
  NYN_communist_milita_desc:0 "The Young Communist League USA (YCLUSA) was a communist youth organization in the United States. It was established in 1920, we shall incorporate our own YCLUSA into the New York Communist Party. "
@@ -557,6 +558,7 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  NYN_takevirginia:0 "Take Virginia"
  NYN_takeourlandback:0 "Take New Lands"
  NYN_communist_war:0 "Ready The Men"
+ NYN_democracy_prevails:0 "Democracy Prevails"
 ################################################################################################################################################################
 ################################################################################################################################################################
 ################################################################################################################################################################
