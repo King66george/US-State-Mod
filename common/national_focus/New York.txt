@@ -323,7 +323,6 @@ focus = {
                                                 icon = GFX_goal_support_communism
                                                 prerequisite = { focus = NYN_politicalfocus_1 }
                                                 mutually_exclusive = { focus = NYN_forthestate }
-                                                mutually_exclusive = {focus = NYN_beaconofdemocracy}
                                                 x = 20
                                                 y = 2
 
@@ -362,7 +361,6 @@ focus = {
                                                     icon = GFX_goal_support_fascism
                                                     prerequisite = { focus = NYN_politicalfocus_1 }
                                                     mutually_exclusive = { focus = NYN_forthepeople }
-                                                    mutually_exclusive = {focus = NYN_beaconofdemocracy}
                                                     x = 30
                                                     y = 2
 
