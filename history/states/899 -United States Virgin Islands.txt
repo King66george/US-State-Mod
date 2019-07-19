@@ -2,7 +2,7 @@ state={
 	id=899
 	name="STATE_940"
 	history={
-	owner = AAA
+	owner = UVU
 	buildings = {
 	
 			infrastructure = 4
