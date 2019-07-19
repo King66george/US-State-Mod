@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = FLF
 		victory_points = {
-			1843 5
+			12381 15
 		}
 
 	}
