@@ -139,9 +139,10 @@ add_ideas = {
 
 }
 set_popularities = {
-	democratic = 90
-	communism = 5
-	fascism = 5
+	democratic = 75
+	communism = 15
+	fascism = 10
+	neutrality = 5
 }
 
 create_country_leader = {
