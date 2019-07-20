@@ -2643,3 +2643,6 @@
  FLF_MilitaryStrong:0 "Increased Military Spending"
  FLF_UnionsPleased:0 "Unions over the State"
  FLF_IntegratedEconomyIdea:0 "Integrated Economy"
+ TXT_idea_purged:0 "Government Purge"
+ TXT_idea_civwar:0 "Civil War"
+ TXT_idea_rangers:0 "Texas Rangers"

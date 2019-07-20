@@ -201,6 +201,7 @@ focus = {
 		elections_allowed = no
 		}
 		set_party_name = { ideology = fascism long_name = TXT_Fascism_party_ourown_long }
+		add_ideas = TXT_idea_civwar
 		}
 	}
 
@@ -275,11 +276,8 @@ focus = {
 		}
 
 		completion_reward = {
-		add_popularity= {
-		ideology = fascism
-		popularity = 1
+		add_ideas = TXT_idea_purged
 		}
-	}
 	}
 
 	focus = {
@@ -2285,7 +2283,7 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 			}
 
 			completion_reward = {
-			add_ideas = TXT_idea_expand_industry
+			add_ideas = VAV_idea_expand_industry
 			}
 
 	}
@@ -2517,7 +2515,8 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 			icon = GFX_goal_generic_consumer_goods
 			prerequisite = { focus = TXT_meconomy4 }
 			prerequisite = { focus = TXT_seconomy4 }
-
+			mutually_exclusive = { focus = TXT_navalpowerhouse }
+			mutually_exclusive = { focus = TXT_developed }
 			x = 37
 			y = 5
 
@@ -2772,7 +2771,8 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 			id = TXT_navalpowerhouse
 			icon = GFX_goal_generic_build_navy
 			prerequisite = { focus = TXT_dockyard4 }
-
+			mutually_exclusive = { focus = TXT_ecoboom }
+			mutually_exclusive = { focus = TXT_developed }
 			x = 35
 			y = 5
 
@@ -2792,6 +2792,8 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 			id = TXT_developed
 			icon = GFX_goal_generic_construct_infrastructure
 			prerequisite = { focus = TXT_roads4 }
+			mutually_exclusive = { focus = TXT_ecoboom }
+			mutually_exclusive = { focus = TXT_navalpowerhouse }
 
 			x = 39
 			y = 5
@@ -2807,29 +2809,42 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 			}
 
 	}
-
 	focus = {
-			id = TXT_industrialpowerhouse
-			icon = GFX_focus_generic_industry_3
-			prerequisite = { focus = TXT_developed }
-			prerequisite = { focus = TXT_navalpowerhouse }
-			prerequisite = { focus = TXT_ecoboom }
+		id = TXT_purchaseconvoys
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = TXT_dockyard1 }
 
-			x = 37
-			y = 6
+		x = 32
+		y = 2
 
-			cost = 15
+		cost = 5
 
-			ai_will_do = {
-				factor = 1
-			}
+		ai_will_do = {
+			factor = 1
+		}
 
-			completion_reward = {
-				remove_ideas = VAV_idea_navy_discount
-				remove_ideas = VAV_idea_fully_developed_roads
-				remove_ideas = VAV_idea_eboom
-			}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+		type = convoy_1
+		amount = 300
+		}
+		}
+	}
+	focus = {
+		id = TXT_rangers
+		icon = GFX_goal_generic_small_arms
 
+		x = 30
+		y = 0
 
+		cost = 5
+
+		ai_will_do = {
+		factor = 1
+		}
+
+		completion_reward = {
+
+		}
 	}
 }
