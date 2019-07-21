@@ -9,13 +9,13 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				{ has_government = fascism }
+				 has_government = fascism
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				political_advisor_cost_factor = .75
+				political_advisor_cost_factor = 0.75
 			       }
 		        }
 
@@ -27,15 +27,13 @@ ideas = {
     always = no
     }
     allowed_civil_war = {
-    { has_government = fascism }
+     has_government = fascism
     }
 
     removal_cost = -1
 
     modifier = {
-    trade_laws_cost_factor = 2
     political_power_gain = -4
-    economy_cost_factor = 2
     justify_war_goal_time = 10
     enemy_justify_war_goal_time = 0.1
     fascism_acceptance = 100
