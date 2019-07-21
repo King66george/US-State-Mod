@@ -136,6 +136,8 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
+	limited_exports
+	disarmed_nation
 
 }
 set_popularities = {
