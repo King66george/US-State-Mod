@@ -126,6 +126,16 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Alf Landon"
+	desc = "POLITICS_ALF_LANDON_DESC"
+	picture = "Portrait_USA_Landon_Alfred.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		staunch_constitutionalist
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

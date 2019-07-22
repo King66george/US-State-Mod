@@ -127,6 +127,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Ralph Lawrence Carr"
+	desc = "POLITICS_RALPH_CARR_DESC"
+	picture = "Portrait_COC_Ralph_Lawrence_Carr.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

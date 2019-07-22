@@ -137,6 +137,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Robert Leroy Cochran"
+	desc = "POLITICS_ROBERT_LEROY_COCHRAN_DESC"
+	picture = "Portrait_NEN_Robert_Leroy_Cochran.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

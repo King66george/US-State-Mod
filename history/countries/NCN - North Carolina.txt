@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Clyde R. Hoey"
+	desc = "POLITICS_CLYDE_R_HOEY_DESC"
+	picture = "Portrait_NCN_Clyde_R_Hoey.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

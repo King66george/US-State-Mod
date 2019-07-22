@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "John Moses"
+	desc = "POLITICS_JOHN_MOSES_DESC"
+	picture = "Portrait_NDN_John_Moses.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

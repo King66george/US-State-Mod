@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Julius P. Heil"
+	desc = "POLITICS_JULIUS_P_HEIL_DESC"
+	picture = "Portrait_WIW_Julius_P_Heil.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

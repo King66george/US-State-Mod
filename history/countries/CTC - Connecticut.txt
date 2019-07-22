@@ -127,6 +127,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Raymond Earl Baldwin"
+	desc = "POLITICS_RAYMOND_BALDWIN_DESC"
+	picture = "Portrait_CTC_Raymond_Earl_Baldwin.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

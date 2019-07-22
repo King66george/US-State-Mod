@@ -142,6 +142,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Charles Sprague"
+	desc = "POLITICS_CHARLES_SPRAGUE_DESC"
+	picture = "Portrait_ORO_Charles_Sprague.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

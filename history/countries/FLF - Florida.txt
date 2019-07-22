@@ -127,6 +127,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "David Sholtz"
+	desc = "POLITICS_DAVID_SHOLTZ_DESC"
+	picture = "Portrait_FLF_David_Sholtz.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

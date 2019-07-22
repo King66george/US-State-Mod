@@ -142,6 +142,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Edward P. Carville"
+	desc = "POLITICS_EDWARD_P_CARVILLE_DESC"
+	picture = "Portrait_NVN_Edward_P_Carville.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "George David Aiken"
+	desc = "POLITICS_GEORGE_DAVID_AIKEN_DESC"
+	picture = "Portrait_VTV_George_David_Aiken.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

@@ -130,6 +130,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Frank Merriam"
+	desc = "POLITICS_FRANK_MERRIAM_DESC"
+	picture = "Portrait_CAC_Frank_Merriam.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

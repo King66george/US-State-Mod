@@ -142,6 +142,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Henry H. Blood"
+	desc = "POLITICS_HENRY_H_BLOOD_DESC"
+	picture = "Portrait_UTU_Henry_H_Blood.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

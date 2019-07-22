@@ -155,6 +155,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Herbert O'Conor"
+	desc = "POLITICS_HERBERT_OCONOR_DESC"
+	picture = "Portrait_MDM_Herbert_OConor.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Clarence D. Martin"
+	desc = "POLITICS_CLARENCE_D_MARTIN_DESC"
+	picture = "Portrait_WAW_Clarence_D_Martin.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

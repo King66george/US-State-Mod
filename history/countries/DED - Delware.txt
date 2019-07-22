@@ -127,6 +127,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Richard McMullen"
+	desc = "POLITICS_RICHARD_MCMULLEN_DESC"
+	picture = "Portrait_DED_Richard_McMullen.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

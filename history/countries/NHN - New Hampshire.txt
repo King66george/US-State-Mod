@@ -142,6 +142,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Francis P. Murphy"
+	desc = "POLITICS_FRANCIS_P_MURPHY_DESC"
+	picture = "Portrait_NHN_Francis_P_Murphy.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

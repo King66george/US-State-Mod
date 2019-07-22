@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Martin Davey"
+	desc = "POLITICS_MARTIN_DAVEY_DESC"
+	picture = "Portrait_OHO_Martin_Davey.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

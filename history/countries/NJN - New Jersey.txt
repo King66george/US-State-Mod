@@ -142,6 +142,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "A. Harry Moore"
+	desc = "POLITICS_A_HARRY_MOORE_DESC"
+	picture = "Portrait_NJN_A_Harry_Moore.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

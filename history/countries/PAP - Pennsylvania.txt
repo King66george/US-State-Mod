@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "George Howard Earle III"
+	desc = "POLITICS_GEORGE_HOWARD_EARLE_DESC"
+	picture = "Portrait_PAP_George_Howard_Earle.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

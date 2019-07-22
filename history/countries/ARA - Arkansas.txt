@@ -127,6 +127,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Carl Edward Bailey"
+	desc = "POLITICS_CARL_BAILEY_DESC"
+	picture = "Portrait_ARA_Carl_Bailey.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

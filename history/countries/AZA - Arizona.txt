@@ -127,6 +127,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Robert Taylor Jones"
+	desc = "POLITICS_ROBERT_JONES_DESC"
+	picture = "Portrait_AZA_Robert_Taylor_Jones.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

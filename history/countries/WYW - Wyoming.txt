@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Nels H. Smith"
+	desc = "POLITICS_NELS_H_SMITH_DESC"
+	picture = "Portrait_WYW_Nels_H_Smith.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

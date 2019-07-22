@@ -138,6 +138,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Huey Long"
+	desc = "POLITICS_HUEY_LONG_DESC"
+	picture = "Portrait_LAL_Huey_Long.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

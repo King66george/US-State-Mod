@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "James Michael Curley"
+	desc = "POLITICS_JAMES_MICHAEL_CURLEY_DESC"
+	picture = "Portrait_MAM_James_Michael_Curley.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 
