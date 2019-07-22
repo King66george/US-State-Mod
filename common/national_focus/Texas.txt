@@ -1855,9 +1855,9 @@ focus = {
 	focus = {
 		id = TXT_formtheamericancommune
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = { focus = TXT_directinfluenceii focus = TXT_peacefultakeoverii }
+		prerequisite = { focus = TXT_directinfluenceii focus = TXT_peacefultakeoverii focus = TXT_joinstalin focus = TXT_industryfocusiii}
 		mutually_exclusive = {}
-		x = 25
+		x = 27
 		y = 7
 
 		cost = 10
@@ -1880,7 +1880,7 @@ focus = {
 
 	focus = {
 		id = TXT_purgetheallies
-		icon = GFX_focus_attack_britain
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = TXT_formtheamericancommune }
 		mutually_exclusive = {}
 		x = 25
@@ -1893,23 +1893,20 @@ focus = {
 		}
 
 		bypass = {
-
+		NOT = { country_exists = NMN }
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		create_wargoal= {
-		type = puppet_wargoal_focus
-		target = ENG
-			}
+		NMN = { country_event = disunitedstates.2 }
 		}
 	}
 
 	focus = {
 		id = TXT_purgetheaxis
-		icon = GFX_focus_attack_germany
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = TXT_purgetheallies }
 		mutually_exclusive = {}
 		x = 25
@@ -1922,19 +1919,16 @@ focus = {
 		}
 
 		bypass = {
-
+		NOT = { country_exists = AZA }
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		create_wargoal= {
-		type = puppet_wargoal_focus
-		target = GER
+			AZA = { country_event = disunitedstates.2 }
 			}
 		}
-	}
 
 	focus = {
 		id = TXT_peacefultakeover
@@ -2807,5 +2801,129 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 		completion_reward = {
 		add_ideas = TXT_idea_rangers
 		}
+	}
+	focus = {
+	id = TXT_central
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_formtheamericancommune }
+	x = 27
+	y = 8
+
+	cost = 10
+	bypass = {
+	NOT = { country_exists = OKO }
+	}
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+	OKO = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_utahinv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_purgetheaxis }
+	x = 25
+	y = 10
+
+	cost = 10
+
+	bypass = {
+	NOT = { country_exists = UTU }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+	UTU = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_nevadainv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_utahinv }
+	x = 25
+	y = 11
+
+	cost = 10
+
+	bypass = {
+	NOT = { country_exists = NVN }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+	NVN = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_caliinv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_nevadainv }
+	x = 25
+	y = 12
+
+	cost = 10
+
+	bypass = {
+	NOT = { country_exists = CAC }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+	CAC = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_kansasinv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_central }
+	x = 27
+	y = 9
+
+	cost = 10
+
+	bypass = {
+	NOT = { country_exists = KSK }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+	KSK = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_coloradoinv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_kansasinv }
+	x = 27
+	y = 9
+
+	cost = 10
+
+	bypass = {
+	NOT = { country_exists = KSK }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+	KSK = { country_event = disunitedstates.2 }
+	}
 	}
 }
