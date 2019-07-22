@@ -1,0 +1,50 @@
+political_actions = {
+    thirteen_colonies = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+    available = {
+      is_subject = no
+        #virginia
+        controls_state = 362
+        controls_state = 876
+        controls_state = 878
+        #west virginia
+        controls_state = 877
+        controls_state = 875
+        #maryland
+        controls_state = 361
+        controls_state = 879
+        #delaware
+        controls_state = 895
+    }
+
+    cost = 150
+
+    fire_only_once = yes
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    complete_effect = {
+    set_cosmetic_tag = ALL_thirteen_colonies
+    set_capital = 882
+    add_stability = 0.20
+    hidden_effect = {
+      362 = { add_core_of = ROOT }
+      876 = { add_core_of = ROOT }
+      878 = { add_core_of = ROOT }
+      877 = { add_core_of = ROOT }
+      875 = { add_core_of = ROOT }
+      361 = { add_core_of = ROOT }
+      879 = { add_core_of = ROOT }
+      895 = { add_core_of = ROOT }
+      }
+     }
+    }
+   }
