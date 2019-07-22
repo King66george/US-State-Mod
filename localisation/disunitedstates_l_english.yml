@@ -1,5 +1,13 @@
-﻿l_english: 
+﻿l_english:
 disunitedstates.1.title:0 "North Carolina Wants Us!"
 disunitedstates.1.desc:0 "North Carolina is pressuring us to dissolve and be absorbed into their country!"
 disunitedstates.1.a:0 "Be Annexed"
 disunitedstates.1.b:0 "Never!"
+disunitedstates.2.t:0 "Texas Seeks our Support"
+disunitedstates.2.d:0 "Texas Seeks our support with the growing world tension, to preserve what's left of America"
+disunitedstates.3.t:0 "[From.GetName] joins our faction"
+disunitedstates.3.d:0 "[From.GetName] sees that our morals are true and has joined us to support our preservation of America"
+disunitedstates.3.a:0 "Wonderful"
+disunitedstates.4.t:0 "[From.GetName] has denied our request"
+disunitedstates.4.d:0 "[From.GetName] has not seen the high probability of American Culture being eliminated by European powers."
+disunitedstates.4.a:0 "They will soon see."
