@@ -1,0 +1,1086 @@
+############## New York FT By Lifey ##########
+
+
+
+focus_tree = {
+    id = new_york_focus
+    continuous_focus_position = { x = 20 y = 1000 }
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = NYN
+        }
+    }
+
+########### INDUSTRY SECTION ############
+
+focus = {
+            id = NYN_economicfocus1
+            icon = GFX_goal_generic_construction
+
+            x = 3
+            y = 0
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+            	884 = {
+            	add_extra_state_shared_building_slots = 2
+            	add_building_construction = {
+            	type = industrial_complex
+            	level = 2
+            	instant_build = yes
+            	}
+            }
+            }
+
+            }
+
+
+
+    focus = {
+            id = NYN_infrastructurefocus1
+            icon = GFX_goal_generic_construct_infrastructure
+            prerequisite = { focus = NYN_economicfocus1 }
+
+            x = 3
+            y = 1
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+            	358 = {
+            	add_extra_state_shared_building_slots = 1
+            	add_building_construction = {
+            	type = infrastructure
+            	level = 1
+            	instant_build = yes
+            	}
+            }
+            }
+            }
+
+    focus = {
+            id = NYN_infrastructurefocus2
+            icon = GFX_goal_generic_production
+            prerequisite = { focus = NYN_infrastructurefocus1 }
+
+            x = 3
+            y = 2
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+                884 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+                }
+                358 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+                }
+                885 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+                }
+            }
+            }
+            }
+            }
+          }
+
+    focus = {
+            id = NYN_infrastructurefocus3
+            icon = GFX_goal_generic_construct_infrastructure
+            prerequisite = { focus = NYN_infrastructurefocus2 }
+
+            x = 3
+            y = 3
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+                886 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+                }
+            }
+            }
+            }
+
+   focus = {
+            id = NYN_militaryfocus1
+            icon = GFX_goal_generic_build_tank
+            prerequisite = { focus = NYN_economicfocus1 }
+
+            x = 1
+            y = 1
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+            	358 = {
+            	add_extra_state_shared_building_slots = 1
+            	add_building_construction = {
+            	type = arms_factory
+            	level = 1
+            	instant_build = yes
+            	}
+            }
+            }
+            }
+
+    focus = {
+            id = NYN_militaryfocus2
+            icon = GFX_goal_generic_construct_mil_factory
+            prerequisite = { focus = NYN_militaryfocus1 }
+
+            x = 1
+            y = 2
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+                885 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+                }
+                }
+                }
+                 }
+
+
+    focus = {
+	        id = NYN_militaryfocus3
+			icon = GFX_goal_generic_construct_mil_factory
+			prerequisite = { focus = NYN_militaryfocus2 }
+
+			x = 1
+			y = 3
+
+			cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+                886 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+                }
+            }
+
+        }
+    }
+
+    focus = {
+            id = NYN_civilianfocus1
+            icon = GFX_goal_generic_construct_civ_factory
+            prerequisite = { focus = NYN_economicfocus1 }
+
+            x = 5
+            y = 1
+
+            cost = 10
+
+            ai_will_do = {
+                factor = 1
+            }
+
+            completion_reward = {
+                886 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+                }
+                }
+                }
+
+                }
+
+
+        focus = {
+                      id = NYN_civilianfocus2
+                      icon = GFX_goal_generic_construct_civ_factory
+                      prerequisite = { focus = NYN_civilianfocus1 }
+
+                    x = 5
+                    y = 2
+
+                    cost = 10
+
+                        ai_will_do = {
+                            factor = 1
+                        }
+
+                        completion_reward = {
+                            885 = {
+                            add_extra_state_shared_building_slots = 2
+                            add_building_construction = {
+                            type = industrial_complex
+                            level = 2
+                            instant_build = yes
+                            }
+                            }
+                            }
+                          }
+
+                              focus = {
+                                      id = NYN_civilianfocus3
+                                      icon = GFX_goal_generic_construct_civ_factory
+                                      prerequisite = { focus = NYN_civilianfocus2 }
+
+                                          x = 5
+                                          y = 3
+
+                                          cost = 10
+
+                                          ai_will_do = {
+                                         factor = 1
+                                                }
+
+                                        completion_reward = {
+                                          358 = {
+                                         add_extra_state_shared_building_slots = 2
+                                        add_building_construction = {
+                                        type = industrial_complex
+                                        level = 2
+                                      instant_build = yes
+                                                }
+                                              }
+                                            }
+                                          }
+
+
+#################### POLITICAL SECTION #########################
+
+
+                                    focus = {
+                                            id = NYN_politicalfocus_1
+                                            icon = GFX_focus_generic_strike_at_democracy2
+                                            mutually_exclusive = { focus = NYN_democracy_prevails}
+                                            cost = 5
+                                            x = 25
+                                            y = 0
+                                            completion_reward = {
+                                            add_political_power = -100
+                                            }
+                                          }
+
+
+                                          focus = {
+                                          id = NYN_democracy_prevails
+                                          icon = GFX_goal_support_democracy
+                                          mutually_exclusive = { focus = NYN_politicalfocus_1}
+                                          cost = 5
+                                          x = 40
+                                          y = 0
+                                          completion_reward = {
+                                          add_political_power = 250
+                                          }
+                                        }
+
+
+
+                                          focus = {
+                                                id = NYN_forthepeople
+                                                icon = GFX_goal_support_communism
+                                                prerequisite = { focus = NYN_politicalfocus_1 }
+                                                mutually_exclusive = { focus = NYN_forthestate }
+                                                x = 20
+                                                y = 2
+
+
+                                                cost = 10
+
+                                                ai_will_do = {
+                                                  factor = 1
+                                                }
+
+                                                available = {
+
+                                                }
+
+                                                bypass = {
+                                                has_government = communism
+                                                }
+
+                                                cancel_if_invalid = yes
+                                                continue_if_invalid = no
+                                                available_if_capitulated = no
+
+                                                complete_tooltip = {
+
+                                                }
+
+                                                completion_reward = {
+                                                add_ideas = communist_influence
+                                                }
+                                              }
+
+
+
+                                              focus = {
+                                                    id = NYN_forthestate
+                                                    icon = GFX_goal_support_fascism
+                                                    prerequisite = { focus = NYN_politicalfocus_1 }
+                                                    mutually_exclusive = { focus = NYN_forthepeople }
+                                                    x = 30
+                                                    y = 2
+
+
+                                                    cost = 10
+
+                                                    ai_will_do = {
+                                                      factor = 1
+                                                    }
+
+                                                    available = {
+
+                                                    }
+
+                                                    bypass = {
+                                                    has_government = fascism
+                                                    }
+
+                                                    cancel_if_invalid = yes
+                                                    continue_if_invalid = no
+                                                    available_if_capitulated = no
+
+                                                    complete_tooltip = {
+
+                                                    }
+
+                                                    completion_reward = {
+                                                    add_ideas = fascist_influence
+                                                    }
+                                                  }
+
+
+                                              focus = {
+                                                  id = NYN_communist_milita
+                                                  icon = GFX_focus_YUG_pan_slavic_congress
+                                                  prerequisite = { focus = NYN_forthepeople}
+                                                  available = {
+                                                  has_government = communism
+                                                  }
+
+                                                  cost = 10
+
+                                                  x = 18
+                                                  y = 3
+
+                                                  completion_reward = {
+                                                  add_manpower = 5000
+                                              		add_ideas = military_youth_focus
+                                              		}
+
+                                                }
+
+                                                focus = {
+                                                    id = NYN_commissar
+                                                    icon = GFX_focus_prc_agrarian_socialism
+                                                    prerequisite = { focus = NYN_communist_milita}
+                                                    available = {
+                                                    has_government = communism
+                                                    }
+
+                                                    cost = 10
+
+                                                    x = 18
+                                                    y = 4
+
+                                                    completion_reward = {
+                                              				add_ideas = political_commissars_focus
+                                              				#as per generic focus
+
+                                                    }
+
+                                                  }
+
+
+
+
+                                              focus = {
+                                                id = NYN_research_slot1
+                                                icon = GFX_focus_generic_socialist_science
+                                                prerequisite = { focus = NYN_forthepeople }
+                                                cost = 10
+                                                x = 22
+                                                y = 3
+                                                available = {
+                                                has_government = communism
+                                                }
+                                                available_if_capitulated = yes
+
+		                                              completion_reward = {
+			                                               add_research_slot = 1
+		                                                   }
+	                                                      }
+
+                                              focus = {
+                                                  id = NYN_research_slot2
+                                                  icon = GFX_focus_generic_socialist_science
+                                                  prerequisite = { focus = NYN_research_slot1}
+                                                  cost = 10
+                                                  x = 22
+                                                  y = 4
+                                                  available = {
+                                                  has_government = communism
+                                                  num_of_factories > 60
+			                                            amount_research_slots < 5
+                                                  }
+                                                  available_if_capitulated = yes
+
+                                                  completion_reward = {
+                                                    add_research_slot = 1
+                                                      }
+                                                       }
+
+                                              focus = {
+                                                  id = NYN_research_socalist_science
+                                                  icon = GFX_focus_generic_socialist_science
+                                                  prerequisite = { focus = NYN_research_slot2}
+                                                  cost = 10
+                                                  x = 22
+                                                  y = 5
+                                                  available = {
+                                                  has_government = communism
+                                                  }
+                                                  available_if_capitulated = yes
+
+                                                  completion_reward = {
+                                                  add_ideas = NYN_idea_socalistscience
+                                                  }
+
+                                                }
+
+                                              focus = {
+                                                  id = NYN_communist_war
+                                                  icon = GFX_goal_generic_political_pressure
+                                                  prerequisite = { focus = NYN_takeourlandback}
+                                                  available = {
+                                                  has_army_manpower = { size > 200000 }
+                                                  }
+                                                  cost = 10
+                                                  x = 25
+                                                  y = 4
+
+                                                  completion_reward = {
+                                                  add_ideas = NYN_idea_prepareforwar
+
+                                                  }
+
+                                                }
+
+
+                                                focus = {
+                                                    id = NYN_takeourlandback
+                                                    icon = GFX_goal_generic_occupy_states_ongoing_war
+                                                    x = 25
+                                                    y = 3
+                                                    cost = 8
+                                                    prerequisite = { focus = NYN_forthepeople focus = NYN_forthestate}
+                                                }
+
+
+
+                                                	#Focus for Take Maine
+                                                	focus = {
+                                                		id = NYN_takemaine
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 11
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takenewhampshire }
+                                                		completion_reward = {
+                                                			create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = MEM
+                                                                                                  }
+                                                		}
+                                                	}
+
+                                                	#Focus for Take New Hampshire
+                                                	focus = {
+                                                		id = NYN_takenewhampshire
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 10
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takemassachusetts }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = NHN
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Connecticut
+                                                	focus = {
+                                                		id = NYN_takeconnecticut
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 8
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takeontario }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = CTC
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Massachusetts
+                                                	focus = {
+                                                		id = NYN_takemassachusetts
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 9
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takeconnecticut }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = MAM
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Virgina
+                                                	focus = {
+                                                		id = NYN_takevirginia
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 11
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takeohio }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = VAV
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Ohio
+                                                	focus = {
+                                                		id = NYN_takeohio
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 10
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takedelaware }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = OHO
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Delaware
+                                                	focus = {
+                                                		id = NYN_takedelaware
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 9
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takemaryland }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = DED
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Maryland
+                                                	focus = {
+                                                		id = NYN_takemaryland
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 8
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takenewjersey }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = MDM
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take New Jersey
+                                                	focus = {
+                                                		id = NYN_takenewjersey
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 7
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takepennsylvania }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = NJN
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Pennsylvania
+                                                	focus = {
+                                                		id = NYN_takepennsylvania
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 26
+                                                		y = 6
+                                                		cost = 8
+                                                    prerequisite = { focus = NYN_communist_war}
+                                                		available_if_capitulated = yes
+                                                		completion_reward = {
+                                                			create_wargoal = {
+                                                                                           type = annex_everything
+                                                                                          target = PAP
+                                                                                                  }
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Ontario
+                                                	focus = {
+                                                		id = NYN_takeontario
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 7
+                                                		cost = 8
+                                                		available_if_capitulated = yes
+                                                		prerequisite = { focus = NYN_takevermont }
+                                                		completion_reward = {
+
+                                                                                                  create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = ONO
+                                                                                                  }
+
+                                                		}
+                                                	}
+
+                                                	#Focus for Take Vermont
+                                                	focus = {
+                                                		id = NYN_takevermont
+                                                		icon = GFX_goal_generic_attack_allies
+                                                		x = 24
+                                                		y = 6
+                                                		cost = 8
+                                                    prerequisite = { focus = NYN_communist_war}
+                                                		available_if_capitulated = yes
+                                                		completion_reward = {
+                                                			create_wargoal = {
+                                                                                                   type = annex_everything
+                                                                                                  target = VTV
+                                                                                                  }
+                                                		}
+                                                	}
+
+
+
+
+
+                                              focus = {
+                                                  id = NYN_communistfriends
+                                                  icon = GFX_goal_generic_major_alliance
+                                                  prerequisite = { focus = NYN_forthepeople}
+
+                                                  cost = 10
+                                                  x = 20
+                                                  y = 3
+
+                                                  ai_will_do = {
+                                                      factor = 1
+                                                      }
+
+                                                  completion_reward = {
+
+                                                  SOV = {
+                                                  add_opinion_modifier = {
+                                                        target = ROOT
+                                                        modifier = large_increase
+                                                      }
+                                                    }
+                                                  }
+                                                }
+
+
+                                                focus = {
+                                              		id = NYN_sovietmilitaryacademy
+                                              		icon = GFX_focus_generic_military_academy
+                                              		x = 20
+                                              		y = 4
+                                              		cost = 10
+
+                                              		available_if_capitulated = yes
+                                              		prerequisite = { focus = NYN_communistfriends}
+
+                                              		ai_will_do = {
+                                              			factor = 1
+                                              		}
+
+                                              		completion_reward = {
+                                              			add_ideas = NYN_idea_sovietacademy
+                                              		}
+                                              	}
+
+
+
+
+
+ ################ MILITARY SECTION ##############
+
+                                      focus = {
+                                          id = NYN_armygrowth1
+                                          icon = GFX_goal_generic_small_arms
+                                          prerequisite = { focus = NYN_armedforcesgrowth}
+
+                                          cost = 10
+
+                                          x = 9
+                                          y = 1
+
+                                          completion_reward = {
+                                          army_experience = 25
+                                      		add_manpower = 50000
+                                      		}
+                                      	}
+
+                                  focus = {
+                                      id = NYN_equipment1
+                                      icon = GFX_focus_generic_combined_arms
+                                      prerequisite = { focus = NYN_armygrowth1 }
+
+                                      cost = 10
+
+                                      x = 7
+                                      y = 2
+                                      completion_reward = {
+                                      add_equipment_to_stockpile = {
+                                      type = infantry_equipment_1
+                                      amount = 3000
+                                      producer = USA
+                                      }
+                                  }
+                                }
+
+                                      focus = {
+	                                         id = NYN_equipment2
+		                                       icon = GFX_goal_generic_army_doctrines
+		                                       prerequisite = { focus = NYN_equipment1 }
+		                                       x = 7
+		                                       y = 3
+
+		                                            cost = 10
+
+		                                             available_if_capitulated = yes
+
+		                                             completion_reward = {
+			                                           army_experience = 50
+			                                           add_tech_bonus = {
+				                                         name = land_doc_bonus
+				                                                           bonus = 0.75
+				                                                           uses = 2
+				                                                               category = land_doctrine
+			                                                               }
+		                                                                   }
+
+                                                                     }
+
+
+
+
+
+
+                                  focus = {
+                                        id = NYN_wintersoldiers
+                                        icon = GFX_focus_secret_rearmament
+                                        prerequisite = { focus = NYN_armygrowth1}
+                                        x = 9
+                                        y = 2
+                                        cost = 10
+
+                                          completion_reward = {
+                                          add_ideas = NYN_idea_wintersoldiers
+
+                                        }
+                                      }
+
+
+
+                                    focus = {
+                                        id = NYN_navygrowth
+                                        icon = GFX_goal_generic_construct_naval_dockyard
+                                        prerequisite = { focus = NYN_armedforcesgrowth}
+                                        x = 13
+                                        y = 1
+                                        cost = 10
+
+                                        ai_will_do = {
+                                        factor = 1
+                                                }
+
+                                         completion_reward = {
+                                            navy_experience = 25
+                                            884 = {
+                                            add_extra_state_shared_building_slots = 4
+                                            add_building_construction = {
+                                            type = dockyard
+                                            level = 4
+                                            instant_build = yes
+
+
+                                          }
+                                        }
+                                      }
+                                    }
+
+
+                                  focus = {
+                                        id = NYN_navyboost
+                                        icon = GFX_goal_generic_navy_anti_submarine
+                                        prerequisite = { focus = NYN_navygrowth}
+                                        x = 13
+                                        y = 2
+                                        cost = 10
+                                        ai_will_do = {
+                                        factor = 1
+                                                  }
+
+                                       completion_reward = {
+                                       add_ideas = NYN_idea_navyboost
+                                       }
+                                      }
+
+
+
+                                  focus = {
+                                        id = NYN_navygrowth2
+                                        icon = GFX_goal_generic_navy_cruiser
+                                        prerequisite = { focus = NYN_navygrowth}
+                                        x = 15
+                                        y = 2
+                                        cost = 10
+
+                                        ai_will_do = {
+                                        factor = 1
+                                            }
+
+                                            completion_reward = {
+                                            add_equipment_to_stockpile = {
+                                            type = convoy_1
+                                            amount = 350
+                                            producer = USA
+                                                }
+                                              }
+                                            }
+
+                                focus = {
+                                      id = NYN_armedforcesgrowth
+                                      icon = GFX_focus_generic_little_entente
+
+                                      x = 11
+                                      y = 0
+                                      cost = 10
+
+                                      completion_reward = {
+                                      army_experience = 25
+                                      add_equipment_to_stockpile = {
+                                      type = infantry_equipment_0
+                                      amount = 750
+                                      producer = USA
+                                      }
+                                    }
+                                  }
+
+                                focus = {
+                                  id = NYN_airforcegrowth1
+                                  icon = GFX_goal_generic_build_airforce
+                                  prerequisite = { focus = NYN_armedforcesgrowth}
+
+                                  x = 11
+                                  y = 2
+                                  cost = 10
+
+                                  completion_reward = {
+                                  air_experience = 25
+
+                                  }
+                                }
+
+
+                                focus = {
+                                id = NYN_airforcegrowth2
+                                icon = GFX_goal_generic_air_fighter
+                                prerequisite = { focus = NYN_airforcegrowth1}
+                                cost = 10
+                                x = 11
+                                y = 3
+
+                                completion_reward = {
+                                air_experience = 25
+                                add_equipment_to_stockpile = {
+                                type = fighter_equipment_0
+                                amount = 50
+                                producer = USA
+                                }
+                              }
+                            }
+
+                            focus = {
+                            id = NYN_airforcegrowth3
+                            icon = GFX_goal_generic_air_doctrine
+                            prerequisite = { focus = NYN_airforcegrowth2}
+                            cost = 10
+                            x = 11
+                            y = 4
+
+                            completion_reward = {
+                            air_experience = 25
+                            add_tech_bonus = {
+                            name = air_doc_bonus
+                                              bonus = 1
+                                              uses = 1
+                                                  category = air_doctrine
+                                                }
+                                              }
+                                            }
+
+                            focus = {
+                            id = NYN_navygrowth3
+                            icon = GFX_goal_generic_navy_battleship
+                            prerequisite = { focus = NYN_navygrowth2}
+                            cost = 10
+                            x = 15
+                            y = 3
+
+                            completion_reward = {
+                            navy_experience = 25
+                            add_equipment_to_stockpile = {
+                            type = convoy_1
+                            amount = 150
+                            producer = USA
+                            }
+                            add_tech_bonus = {
+                            name = navy_doc_bonus
+                                              bonus = 1
+                                              uses = 2
+                                                  category = naval_doctrine
+                                                }
+                                              }
+                                            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+###################################################################################################################################
+
+# EEEEEEEEEEEEEEEEEEEEEENNNNNNNN        NNNNNNNNDDDDDDDDDDDDD        #
+# E::::::::::::::::::::EN:::::::N       N::::::ND::::::::::::DDD
+# E::::::::::::::::::::EN::::::::N      N::::::ND:::::::::::::::DD
+# EE::::::EEEEEEEEE::::EN:::::::::N     N::::::NDDD:::::DDDDD:::::D
+# E:::::E       EEEEEEN::::::::::N    N::::::N  D:::::D    D:::::D
+# E:::::E             N:::::::::::N   N::::::N  D:::::D     D:::::D
+# E::::::EEEEEEEEEE   N:::::::N::::N  N::::::N  D:::::D     D:::::D
+# E:::::::::::::::E   N::::::N N::::N N::::::N  D:::::D     D:::::D
+# E:::::::::::::::E   N::::::N  N::::N:::::::N  D:::::D     D:::::D
+# E::::::EEEEEEEEEE   N::::::N   N:::::::::::N  D:::::D     D:::::D
+# E:::::E             N::::::N    N::::::::::N  D:::::D     D:::::D
+# E:::::E       EEEEEEN::::::N     N:::::::::N  D:::::D    D:::::D
+# EE::::::EEEEEEEE:::::EN::::::N      N::::::::NDDD:::::DDDDD:::::D
+# E::::::::::::::::::::EN::::::N       N:::::::ND:::::::::::::::DD
+# E::::::::::::::::::::EN::::::N        N::::::ND::::::::::::DDD
+# EEEEEEEEEEEEEEEEEEEEEENNNNNNNN         NNNNNNNDDDDDDDDDDDDD
+###################################################################################################################################
+###################################################################################################################################
+###################################################################################################################################
+###################################################################################################################################

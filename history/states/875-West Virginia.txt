@@ -1,0 +1,32 @@
+
+state={
+	id=875
+	name="Western West Virginia"
+
+	history={
+		owner = WVW
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 10
+			fuel_silo = 1
+
+		}
+
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		3975 4627 6971 7466 7588 7646 10441
+	}
+	manpower=4151054
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

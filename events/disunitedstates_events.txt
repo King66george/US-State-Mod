@@ -1,0 +1,28 @@
+﻿add_namespace = disunitedstates
+
+##Event: North Carolina Wants Us!
+country_event = {
+	id = disunitedstates.1
+	title = disunitedstates.1.title
+	desc = disunitedstates.1.desc
+	picture = GFX_report_event_pla_in_beijing
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = disunitedstates.1.a
+		ai_chance = { factor = 40}
+		NCN = { annex_country= {
+ target = ROOT 
+} }
+	}
+	option = {
+		name = disunitedstates.1.b
+		ai_chance = { factor = 60}
+		NCN = { 
+		create_wargoal = { 
+		type = annex_everything 
+		target = ROOT
+			} 
+		}
+	}
+}

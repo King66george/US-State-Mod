@@ -1,0 +1,25 @@
+state={
+	id=897
+	name="Rio Grande"
+
+			state_category = rural
+
+	resources={
+		oil=29 # was: 580
+	}
+
+
+	history={
+		owner = TXT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = TXT
+		}
+	provinces={
+		2019 5061 12728
+	}
+	manpower=683577
+	buildings_max_level_factor=1.000
+	}
