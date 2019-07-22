@@ -21,12 +21,18 @@ state={
 		}
 		add_core_of = LAL
 		victory_points = {
-			7552 10 
+			7552 25
+		}
+		victory_points = {
+			1453 30 
+		}
+		victory_points = {
+			4507 20
 		}
 
 	}
 	provinces={
-		1453 4507 4535 7524 7552 12313 12398 
+		1453 4507 4535 7524 7552 12313 12398
 	}
 
 	buildings_max_level_factor=1.000

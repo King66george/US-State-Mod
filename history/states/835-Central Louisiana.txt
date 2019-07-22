@@ -16,9 +16,6 @@ state={
 
 		}
 		add_core_of = LAL
-		victory_points = {
-			7552 10
-		}
 
 	}
 	provinces={
