@@ -1,4 +1,5 @@
-political_actions = {
+manifest_destiny = {
+#Thirteen Colonies
     thirteen_colonies = {
 
     icon = generic_form_nation
@@ -21,6 +22,44 @@ political_actions = {
         controls_state = 879
         #delaware
         controls_state = 895
+        #north carolina
+        controls_state = 363
+        controls_state = 874
+        controls_state = 873
+        #south carolina
+        controls_state = 871
+        controls_state = 364
+        controls_state = 872
+        #georgia
+        controls_state = 365
+        controls_state = 870
+        controls_state = 868
+        controls_state = 869
+        #pennsylvania
+        controls_state = 881
+        controls_state = 880
+        controls_state = 360
+        controls_state = 882
+        #new york
+        controls_state = 884
+        controls_state = 358
+        controls_state = 886
+        controls_state = 885
+        #new jersey
+        controls_state = 359
+        controls_state = 883
+        #rhode island
+        controls_state = 888
+        #new hampshire
+        controls_state = 891
+        #vermont
+        controls_state = 890
+        #connecticut
+        controls_state = 887
+        #massachusetts
+        controls_state = 889
+        #maine
+        controls_state = 357
     }
 
     cost = 150
@@ -44,7 +83,35 @@ political_actions = {
       361 = { add_core_of = ROOT }
       879 = { add_core_of = ROOT }
       895 = { add_core_of = ROOT }
+      363 = { add_core_of = ROOT }
+      874 = { add_core_of = ROOT }
+      873 = { add_core_of = ROOT }
+      871 = { add_core_of = ROOT }
+      364 = { add_core_of = ROOT }
+      872 = { add_core_of = ROOT }
+      365 = { add_core_of = ROOT }
+      870 = { add_core_of = ROOT }
+      868 = { add_core_of = ROOT }
+      869 = { add_core_of = ROOT }
+      881 = { add_core_of = ROOT }
+      880 = { add_core_of = ROOT }
+      360 = { add_core_of = ROOT }
+      882 = { add_core_of = ROOT }
+      884 = { add_core_of = ROOT }
+      358 = { add_core_of = ROOT }
+      886 = { add_core_of = ROOT }
+      885 = { add_core_of = ROOT }
+      359 = { add_core_of = ROOT }
+      883 = { add_core_of = ROOT }
+      888 = { add_core_of = ROOT }
+      891 = { add_core_of = ROOT }
+      890 = { add_core_of = ROOT }
+      887 = { add_core_of = ROOT }
+      889 = { add_core_of = ROOT }
+      357 = { add_core_of = ROOT }
       }
      }
     }
+#
+
    }
