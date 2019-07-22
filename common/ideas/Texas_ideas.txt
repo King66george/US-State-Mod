@@ -15,7 +15,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_advisor_cost_factor = 0.75
+				political_advisor_cost_factor = -0.25
 			       }
 		        }
 
@@ -59,5 +59,23 @@ ideas = {
     cavalry_defence_factor = 0.05
     }
     }
+		TXT_idea_permrev = {
+
+		picture = GFX_focus_YUG_pan_slavic_congress
+
+		allowed = {
+		always = no
+		}
+		allowed_civil_war = {
+	  has_government = communism
+		}
+
+		removal_cost = -1
+
+		modifier = {
+		communism_drift = 0.15
+		communism_acceptance = 250
+		}
+		}
           }
         }

@@ -592,6 +592,7 @@ focus = {
 
 		completion_reward = {
 		add_political_power = 300
+		remove_ideas = TXT_idea_civwar
 		}
 	}
 
@@ -1785,11 +1786,9 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		NMN = { add_ideas = communist_influence }
-		MEX = { add_ideas = communist_influence }
-		OKO = { add_ideas = communist_influence }
-		LAL = { add_ideas = communist_influence }
-		ARA = { add_ideas = communist_influence }
+		every_neighbor_country = {
+		add_ideas = TXT_idea_permrev
+		}
 		}
 	}
 
@@ -1894,7 +1893,7 @@ focus = {
 		}
 
 		bypass = {
-
+		
 		}
 
 		cancel_if_invalid = yes
@@ -1955,33 +1954,14 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-NMN = { add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-MEX = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-OKO = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-ARA = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-LAL = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
+		every_neighbor_country = {
+		add_popularity = {
+		ideology = communism
+		popularity = .15
 		}
-	}
+		}
+			}
+		}
 
 	focus = {
 		id = TXT_peacefultakeoverii
@@ -2005,33 +1985,14 @@ popularity = 0.15
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-NMN = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-MEX = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-OKO = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-ARA = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
-LAL = {add_popularity= {
-ideology = communism
-popularity = 0.15
-}
-}
+		every_neighbor_country = {
+		add_popularity = {
+		ideology = communism
+		popularity = .15
 		}
-	}
+		}
+			}
+		}
 
 	focus = {
 		id = TXT_followstalin
@@ -2844,7 +2805,7 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 		}
 
 		completion_reward = {
-
+		add_ideas = TXT_idea_rangers
 		}
 	}
 }

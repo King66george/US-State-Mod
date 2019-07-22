@@ -2285,6 +2285,7 @@
  ###############
  # USA States Mod Focus Tree Localizaition
  # Do Not Delete Anything Above 🦀 cough hitnos🦀
+ ## brugh no need to put me on blast
  ###############
  ###############
  ###############
@@ -2422,14 +2423,15 @@ TXT_trotskyisright:0 "Trotsky is Right"
 TXT_trotskyisright_desc:0 "Trotsky's ideals are fit for our country."
 TXT_workersrevolution:0 "Worker's revolution"
 TXT_workersrevolution_desc:0 "The democracies of the world no longer have a grasp on us. This is our chance!"
-TXT_purgetheallies:0 "Purge the Allies"
-TXT_purgetheallies_desc:0 "The democracies in the world are a threat to our ideology. We must destroy them at all costs."
+TXT_purgetheallies:0 "Focus West"
+TXT_purgetheallies_desc:0 "The West coast of North America has some allies that are full of potential. Maybe we should get a head start on gaining their favor."
 TXT_industryfocus:0 "Industry Focus"
 TXT_industryfocus_desc:0 "We need a strong industry for a strong state."
 TXT_americanpuppetry:0 "American Puppetry"
 TXT_americanpuppetry_desc:0 "Perhaps a forced puppet government would help with the spread of communism across the North American Region."
 TXT_fascism_party_ourown:0 "KKK"
 TXT_fascism_party_ourown_long:0 "Klu Klux Klan"
+TXT_rangers:0 "Texas Rangers"
 NCN_FOCUS_1:0 "Industry Of North Carolina"
 NCN_FOCUS_2:0 "Political Efforts"
 NCN_FOCUS_3:0 "Form A Navy"

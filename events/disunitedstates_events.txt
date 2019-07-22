@@ -12,17 +12,20 @@ country_event = {
 		name = disunitedstates.1.a
 		ai_chance = { factor = 40}
 		NCN = { annex_country= {
- target = ROOT 
+ target = ROOT
 } }
 	}
 	option = {
 		name = disunitedstates.1.b
 		ai_chance = { factor = 60}
-		NCN = { 
-		create_wargoal = { 
-		type = annex_everything 
+		NCN = {
+		create_wargoal = {
+		type = annex_everything
 		target = ROOT
-			} 
+			}
 		}
 	}
+
+
+
 }
