@@ -8,6 +8,7 @@ history={
 			infrastructure = 6
 			industrial_complex = 3
 			air_base = 3
+			arms_factory = 4
 		}
 		add_core_of = TXT
 		victory_points = {
