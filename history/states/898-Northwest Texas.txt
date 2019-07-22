@@ -12,10 +12,10 @@ history={
 		}
 		add_core_of = TXT
 		victory_points = {
-			10778 10
+			10778 25
 		}
 		victory_points = {
-			3960 10
+			3960 15
 		}
 
 	}
