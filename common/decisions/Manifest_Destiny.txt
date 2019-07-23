@@ -71,7 +71,8 @@ manifest_destiny = {
     }
 
     complete_effect = {
-    set_cosmetic_tag = ALL_thirteen_colonies
+    ROOT = { country_event = disunitedstates.5 }
+    set_cosmetic_tag = EUR
     set_capital = 882
     add_stability = 0.20
     hidden_effect = {

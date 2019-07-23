@@ -51,4 +51,18 @@
  DES_communsim_ADJ:0 "Deseretian"
  #####################
  TTC_fascism:0 "East Coast Empire"
+ TTC_fascism_DEF:0 "the East Coast Empire"
+ TTC_fascism_ADJ:0 "East Coaster"
+ TTC_communism:0 "East Coast Socialist Republic"
+ TTC_communism_DEF:0 "the East Coast Socialist Republic"
+ TTC_communism_ADJ:0 "East Coaster"
  TTC_democratic:0 "Thirteen Colonies"
+ TTC_democratic_DEF:0 "the Thirteen Colonies"
+ TTC_democratic_ADJ:0 "Colonist"
+ ######################################
+ NEC_fascism:0 "New England Empire"
+ NEC_fascism_DEF:0 "the New England Empire"
+ NEC_fascism_ADJ:0 "New English"
+ NEC_communism:0 "Commune of New England"
+ NEC_communism_DEF:0 "the Commune of New England"
+ 
