@@ -39,13 +39,13 @@ bookmarks = {
 							#history = "USA_GATHERING_STORM_DESC"
 							ideology = democratic
 							#ideas = {
-              #
-							 #}
-							#focuses = {
-							#	USA_war_plan_black
-							#	USA_strike_at_the_empire
-							#	USA_pearl_harbor_gambit
-							#}
+
+							 }
+							focuses = {
+									VAV_war
+									VAV_economicboom
+									VAV_calltowar
+							}
 								}
 
 
