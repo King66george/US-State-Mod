@@ -806,6 +806,39 @@ focus = {
 
 
 
+                                               focus = {
+                                               id = NYN_importfromthesoviets
+                                               icon = GFX_goal_generic_construct_civilian
+                                               prerequisite = { focus = NYN_sovietmilitaryacademy}
+                                               x = 20
+                                               y = 5
+                                               cost = 10
+
+                                               ai_will_do = {
+                                                  factor = 1
+                                               }
+
+                                               completion_reward = {
+                                               add_resource = {
+                                               type = oil
+                                               amount = 15
+                                               state = 884
+                                               }
+                                               add_resource = {
+                                               type = chromium
+                                               amount = 10
+                                               state = 884
+
+
+
+
+                                               }
+
+                                               }
+
+                                              }
+
+
  ################ MILITARY SECTION ##############
 
                                       focus = {

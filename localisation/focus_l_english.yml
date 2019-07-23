@@ -2861,6 +2861,10 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  VAV_tennessee_desc:0 "Take Tennessee"
  VAV_newyork:0 "Strike The Beast"
  VAV_newyork_desc:0 "Strike The Beast"
+ NYN_importfromthesoviets:0 "Import From The Soviets"
+ NYN_importfromthesoviets_desc:0 "The only resources we naturally have is Steel, we must import some other resources for the war machine. Our Soviet friends might be able to help us out."
+ NYN_commissar_desc:0 "Political Commissars might be able to help us out in the battlefield and with recruitment."
+
 
 ################################################################################################################################################################
 ################################################################################################################################################################
