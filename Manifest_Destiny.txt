@@ -1,4 +1,4 @@
-form_nation = {
+manifest_destiny = {
 #Thirteen Colonies
     thirteen_colonies = {
 
@@ -11,6 +11,9 @@ form_nation = {
       cancel_if_not_visible = yes
 
       visible = {
+        NOT = { has_government = fascism }
+        NOT = { has_government = communism }
+        or = {
         original_tag = VAV
         original_tag = WVW
         original_tag = MDM
@@ -28,6 +31,7 @@ form_nation = {
         original_tag = NHN
         original_tag = MEM
       }
+    }
 
     available = {
       is_subject = no
@@ -92,8 +96,9 @@ form_nation = {
     }
 
     complete_effect = {
-    set_cosmetic_tag = TTC
     set_capital = 882
+    load_focus_tree = usa_focus
+    set_cosmetic_tag = USA
     add_stability = 0.20
     custom_effect_tooltip = core_land
     hidden_effect = {
@@ -146,11 +151,15 @@ icon = generic_form_nation
   cancel_if_not_visible = yes
 
   visible = {
+    NOT = { has_government = fascism }
+    NOT = { has_government = communism }
+    or = {
     original_tag = NHN
     original_tag = RIR
     original_tag = CTC
     original_tag = MEM
   }
+}
 
 available = {
   is_subject = no
@@ -172,7 +181,7 @@ ai_will_do = {
 
 complete_effect = {
 set_capital = 889
-set_cosmetic_tag = NEC
+country_event = disunitedstates.6
 add_stability = 0.20
 custom_effect_tooltip = core_land
 hidden_effect = {
@@ -186,120 +195,7 @@ hidden_effect = {
   }
  }
 }
-confederate_states = {
 
-icon = generic_form_nation
-
-  allowed = {
-
-  }
-
-  cancel_if_not_visible = yes
-
-  visible = {
-    original_tag = SCS
-  }
-
-available = {
-  is_subject = no
-    controls_state = 878
-    controls_state = 362
-    controls_state = 876
-    controls_state = 873
-    controls_state = 363
-    controls_state = 874
-    controls_state = 874
-    controls_state = 872
-    controls_state = 364
-    controls_state = 871
-    controls_state = 870
-    controls_state = 365
-    controls_state = 868
-    controls_state = 869
-    controls_state = 366
-    controls_state = 867
-    controls_state = 866
-    controls_state = 863
-    controls_state = 864
-    controls_state = 367
-    controls_state = 865
-    controls_state = 836
-    controls_state = 370
-    controls_state = 837
-    controls_state = 834
-    controls_state = 835
-    controls_state = 371
-    controls_state = 898
-    controls_state = 790
-    controls_state = 897
-    controls_state = 789
-    controls_state = 832
-    controls_state = 833
-    controls_state = 374
-    controls_state = 838
-    controls_state = 372
-    controls_state = 852
-    controls_state = 368
-    controls_state = 853
-}
-
-cost = 150
-
-fire_only_once = yes
-
-ai_will_do = {
-  factor = 1
-}
-
-complete_effect = {
-set_capital = 362
-set_cosmetic_tag = CSA
-add_stability = 0.20
-custom_effect_tooltip = core_land
-hidden_effect = {
-878 = { add_core_of = ROOT }
-362 = { add_core_of = ROOT }
-876 = { add_core_of = ROOT }
-873 = { add_core_of = ROOT }
-363 = { add_core_of = ROOT }
-874 = { add_core_of = ROOT }
-874 = { add_core_of = ROOT }
-872 = { add_core_of = ROOT }
-364 = { add_core_of = ROOT }
-871 = { add_core_of = ROOT }
-870 = { add_core_of = ROOT }
-365 = { add_core_of = ROOT }
-868 = { add_core_of = ROOT }
-869 = { add_core_of = ROOT }
-366 = { add_core_of = ROOT }
-867 = { add_core_of = ROOT }
-866 = { add_core_of = ROOT }
-863 = { add_core_of = ROOT }
-864 = { add_core_of = ROOT }
-367 = { add_core_of = ROOT }
-865 = { add_core_of = ROOT }
-836 = { add_core_of = ROOT }
-370 = { add_core_of = ROOT }
-837 = { add_core_of = ROOT }
-834 = { add_core_of = ROOT }
-835 = { add_core_of = ROOT }
-371 = { add_core_of = ROOT }
-898 = { add_core_of = ROOT }
-790 = { add_core_of = ROOT }
-897 = { add_core_of = ROOT }
-789 = { add_core_of = ROOT }
-832 = { add_core_of = ROOT }
-833 = { add_core_of = ROOT }
-374 = { add_core_of = ROOT }
-838 = { add_core_of = ROOT }
-372 = { add_core_of = ROOT }
-852 = { add_core_of = ROOT }
-368 = { add_core_of = ROOT }
-853 = { add_core_of = ROOT }
-
-  }
- }
-}
 
 
 }

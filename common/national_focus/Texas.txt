@@ -200,7 +200,7 @@ focus = {
 		ruling_party = fascism
 		elections_allowed = no
 		}
-		set_party_name = { ideology = fascism long_name = TXT_Fascism_party_ourown_long }
+		set_party_name = { ideology = fascism long_name = TXT_Fascism_party_ourown_long name = TXT_fascism_party_ourown }
 		add_ideas = TXT_idea_civwar
 		}
 	}
@@ -1882,7 +1882,7 @@ focus = {
 		id = TXT_purgetheallies
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = TXT_formtheamericancommune }
-		mutually_exclusive = {}
+		mutually_exclusive = { focus = TXT_central }
 		x = 25
 		y = 8
 
@@ -2806,6 +2806,7 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 	id = TXT_central
 	icon = GFX_goal_generic_position_armies
 	prerequisite = { focus = TXT_formtheamericancommune }
+	mutually_exclusive = { focus = TXT_east }
 	x = 27
 	y = 8
 
@@ -2887,9 +2888,9 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 	focus = {
 	id = TXT_kansasinv
 	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_central }
+	prerequisite = { focus = TXT_wyominginv }
 	x = 27
-	y = 9
+	y = 11
 
 	cost = 10
 
@@ -2908,7 +2909,7 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 	focus = {
 	id = TXT_coloradoinv
 	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_kansasinv }
+	prerequisite = { focus = TXT_central }
 	x = 27
 	y = 9
 
@@ -2923,7 +2924,183 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 	}
 
 	completion_reward = {
-	KSK = { country_event = disunitedstates.2 }
+	COC = { country_event = disunitedstates.2 }
+	}
+	}
+
+	focus = {
+	id = TXT_wyominginv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_coloradoinv }
+	x = 27
+	y = 10
+
+	cost = 10
+
+	available = {
+
+	}
+
+	bypass = {
+	NOT = { country_exists = WYW }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+  WYW = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_nebraskainv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_kansasinv }
+	x = 27
+	y = 12
+
+	cost = 10
+
+	available = {
+
+	}
+
+	bypass = {
+	NOT = { country_exists = NEN }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+  NEN = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_east
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_formtheamericancommune }
+	x = 29
+	y = 8
+
+	cost = 10
+
+	available = {
+
+	}
+
+	bypass = {
+	NOT = { country_exists = LAL }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+  LAL = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_misiinv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_east }
+	x = 29
+	y = 9
+
+	cost = 10
+
+	available = {
+
+	}
+
+	bypass = {
+	NOT = { country_exists = MSM }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+  MSM = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_alabamainv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_misiinv }
+	x = 29
+	y = 10
+
+	cost = 10
+
+	available = {
+
+	}
+
+	bypass = {
+	NOT = { country_exists = ALA }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+  ALA = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_floridainv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_alabamainv }
+	x = 29
+	y = 11
+
+	cost = 10
+
+	available = {
+
+	}
+
+	bypass = {
+	NOT = { country_exists = FLF }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+  FLF = { country_event = disunitedstates.2 }
+	}
+	}
+	focus = {
+	id = TXT_georgiainv
+	icon = GFX_goal_generic_position_armies
+	prerequisite = { focus = TXT_floridainv }
+	x = 29
+	y = 12
+
+	cost = 10
+
+	available = {
+
+	}
+
+	bypass = {
+	NOT = { country_exists = GAG }
+	}
+
+	ai_will_do = {
+	factor = 1
+	}
+
+	completion_reward = {
+  GAG = { country_event = disunitedstates.2 }
 	}
 	}
 }

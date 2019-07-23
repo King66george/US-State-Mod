@@ -106,7 +106,18 @@ country_event = {
 		fire_only_once = yes
 		option = {
 			name = disunitedstates.5.a
-			ai_chance = { factor = 40}
 			ROOT = { set_cosmetic_tag = TTC }
+	}
+	}
+	country_event = {
+		id = disunitedstates.6
+		title = disunitedstates.6.t
+		desc = disunitedstates.6.d
+		picture = GFX_report_event_pla_in_beijing
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = disunitedstates.6.a
+			ROOT = { set_cosmetic_tag = NEC }
 	}
 	}
