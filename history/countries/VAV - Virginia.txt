@@ -138,6 +138,7 @@ set_politics = {
 add_ideas = {
 	limited_exports
 	disarmed_nation
+	VAV_idea_brokenecon
 
 }
 set_popularities = {

@@ -96,7 +96,7 @@ ideas = {
 			}
 		}
 
-		VAV_expandindustry = {
+		VAV_idea_brokenecon = {
 
 			allowed = {
 				always = no
@@ -107,6 +107,15 @@ ideas = {
 			}
 
 			removal_cost = -1
+
+			modifier = {
+			production_speed_industrial_complex_factor = 0.10
+			production_speed_arms_factory_factor = 0.10
+			production_speed_dockyard_factor = 0.10
+			production_speed_naval_base_factor = 0.10
+			production_speed_fuel_silo_factor = 0.15
+			production_speed_synthetic_refinery_factor = 0.15
+			}
 
 
 		}

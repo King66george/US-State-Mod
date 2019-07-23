@@ -1036,7 +1036,7 @@
 				focus = {
 						id = VAV_calltowar
 						icon = GFX_goal_generic_secret_weapon
-            prerequisite = { focus = VAV_followgermany focus = VAV_political_commissars2 }
+            prerequisite = { focus = VAV_promoteorder focus = VAV_political_commissars2 }
 
 
 						x = 13
@@ -1648,10 +1648,10 @@
 		focus = {
 				id = VAV_promoteorder
 				icon = GFX_focus_ger_reichskommisariats
-				prerequisite = { focus = VAV_facist }
+				prerequisite = { focus = VAV_followgermany }
 
 				x = 10
-				y = 4
+				y = 6
 
 				cost = 10
 
@@ -1663,10 +1663,10 @@
 		focus = {
 					id = VAV_followgermany
 					icon = GFX_goal_generic_improve_relations
-					prerequisite = { focus = VAV_promoteorder }
+					prerequisite = { focus = VAV_facist }
 
 					x = 10
-					y = 6
+					y = 4
 
 					cost = 5
 
