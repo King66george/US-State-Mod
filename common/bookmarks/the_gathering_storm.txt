@@ -34,7 +34,7 @@ bookmarks = {
 						}
 
 						"VAV"={
-							#history = "USA_GATHERING_STORM_DESC"
+							history = "USA_GATHERING_STORM_DESC"
 							ideology = democratic
 							ideas = {
 								home_of_the_free
@@ -48,31 +48,43 @@ bookmarks = {
 
 
 								"NCN"={
-									#history = "USA_GATHERING_STORM_DESC"
+									history = "USA_GATHERING_STORM_DESC"
 									ideology = democratic
 									ideas = {
 										home_of_the_free
 									}
-									#focuses = {
-									#	USA_war_plan_black
-									#	USA_strike_at_the_empire
-									#	USA_pearl_harbor_gambit
-									#}
+									focuses = {
+									  #
+									}
 										}
 
 
 										"FLF"={
-											#history = "USA_GATHERING_STORM_DESC"
+											history = "USA_GATHERING_STORM_DESC"
 											ideology = democratic
 											ideas = {
 												home_of_the_free
 											}
-											#focuses = {
-											#	USA_war_plan_black
-											#	USA_strike_at_the_empire
-											#	USA_pearl_harbor_gambit
-											#}
+											focuses = {
+												#
+											}
 												}
+
+
+
+
+												###########################################################################################
+												#	#		_____       _      _____ _        _                       _                    		###
+												#	#	 |  __ \     | |    / ____| |      | |                /\   | |                   		###
+												#	#	 | |__) |   _| |_  | (___ | |_ __ _| |_ ___  ___     /  \  | |__   _____   _____ 		###
+												#	#	 |  ___/ | | | __|  \___ \| __/ _` | __/ _ \/ __|   / /\ \ | '_ \ / _ \ \ / / _ \		###
+												#	#	 | |   | |_| | |_   ____) | || (_| | ||  __/\__ \  / ____ \| |_) | (_) \ V /  __/		###
+												#	#	 |_|    \__,_|\__| |_____/ \__\__,_|\__\___||___/ /_/    \_\_.__/ \___/ \_/ \___|		###
+												#	#	#######################################################################################
+
+
+
+
 
 
 		# minors from DLC ####
