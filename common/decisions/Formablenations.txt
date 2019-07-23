@@ -1,4 +1,4 @@
-manifest_destiny = {
+form_nation = {
 #Thirteen Colonies
     thirteen_colonies = {
 
