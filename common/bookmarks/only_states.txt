@@ -47,6 +47,29 @@ bookmarks = {
 							}
 								}
 
+								"NCN"={
+									history = "USA_GATHERING_STORM_DESC"
+									ideology = democratic
+									ideas = {
+										home_of_the_free
+									}
+									focuses = {
+									  #
+									}
+										}
+
+
+										"FLF"={
+											history = "USA_GATHERING_STORM_DESC"
+											ideology = democratic
+											ideas = {
+												home_of_the_free
+											}
+											focuses = {
+												#
+											}
+												}
+
 					###########################################################################################
 					#	#		_____       _      _____ _        _                       _                    		###
 					#	#	 |  __ \     | |    / ____| |      | |                /\   | |                   		###
