@@ -2877,6 +2877,11 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  NYN_importfromthesoviets:0 "Import From The Soviets"
  NYN_importfromthesoviets_desc:0 "The only resources we naturally have is Steel, we must import some other resources for the war machine. Our Soviet friends might be able to help us out."
  NYN_commissar_desc:0 "Political Commissars might be able to help us out in the battlefield and with recruitment."
+ NYN_spreadcommunism:0 "Spread Communism By Force"
+ NYN_spreadcommunism_desc:0 "Pennsylvania is our strongest neighbor as of now, we can weaken them by spreading communist ideals and possibly setting up a communist ally down south."
+ NYN_communistfriends_desc:0 "The Soviets are clearly interested in a communist ally in North America, we can uses this to our advantage."
+
+
 
 
 ################################################################################################################################################################

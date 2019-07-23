@@ -243,7 +243,34 @@ available = {
     controls_state = 853
 }
 
+<<<<<<< HEAD
 cost = 150
+=======
+greater_virginia_ALL = {
+
+icon = generic_form_nation
+
+  allowed = {
+
+  }
+
+  cancel_if_not_visible = yes
+
+  visible = {
+    or = {
+    original_tag = VAV
+    original_tag = WVW
+  }
+}
+
+available = {
+  is_subject = no
+    controls_state = 875
+    controls_state = 877
+}
+
+cost = 100
+>>>>>>> 7592598d394f0eb612c97affc8d5178115d6d57d
 
 fire_only_once = yes
 
@@ -252,6 +279,7 @@ ai_will_do = {
 }
 
 complete_effect = {
+<<<<<<< HEAD
 set_capital = 362
 set_cosmetic_tag = CSA
 add_stability = 0.20
@@ -296,10 +324,22 @@ hidden_effect = {
 852 = { add_core_of = ROOT }
 368 = { add_core_of = ROOT }
 853 = { add_core_of = ROOT }
+=======
+add_stability = 0.20
+set_cosmetic_tag = GRV
+custom_effect_tooltip = core_land
+hidden_effect = {
+  877 = { add_core_of = ROOT }
+  875 = { add_core_of = ROOT }
+>>>>>>> 7592598d394f0eb612c97affc8d5178115d6d57d
 
   }
  }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7592598d394f0eb612c97affc8d5178115d6d57d
 
 
 }
