@@ -243,7 +243,13 @@ available = {
     controls_state = 853
 }
 
+<<<<<<< HEAD
 cost = 150
+=======
+
+cost = 150
+
+>>>>>>> c2599cdd45f3533ddaffd75b1471ed1fa0af3208
 greater_virginia_ALL = {
 
 icon = generic_form_nation
