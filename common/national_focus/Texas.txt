@@ -2786,23 +2786,6 @@ random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
 		}
 	}
 	focus = {
-		id = TXT_rangers
-		icon = GFX_goal_generic_small_arms
-
-		x = 30
-		y = 0
-
-		cost = 5
-
-		ai_will_do = {
-		factor = 1
-		}
-
-		completion_reward = {
-		add_ideas = TXT_idea_rangers
-		}
-	}
-	focus = {
 	id = TXT_central
 	icon = GFX_goal_generic_position_armies
 	prerequisite = { focus = TXT_formtheamericancommune }
