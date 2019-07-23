@@ -22,7 +22,7 @@
 			cost = 10
 
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 
 			completion_reward = {
