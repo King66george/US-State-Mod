@@ -4139,6 +4139,10 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_FLF_IntegratedEconomyIdea"
 		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
-		}		
+		}
+		spriteType = {
+		name = "GFX_idea_VAV_idea_brokenecon"
+		texturefile = "gfx/interface/ideas/generic_disjointed_gov.dds"
+		}
 ##No Florida Mods##
 	}

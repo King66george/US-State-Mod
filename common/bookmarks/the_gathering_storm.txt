@@ -37,7 +37,7 @@ bookmarks = {
 							history = "USA_GATHERING_STORM_DESC"
 							ideology = democratic
 							ideas = {
-								home_of_the_free
+								VAV_idea_brokenecon
 							}
 						 focuses = {
 								VAV_war
