@@ -127,9 +127,9 @@ set_popularities = {
 	fascism = 1
 }
 create_country_leader = {
-	name = "John Moses"
-	desc = "POLITICS_JOHN_MOSES_DESC"
-	picture = "Portrait_NDN_John_Moses.dds"
+	name = "William Langer"
+	desc = "POLITICS_WILLIAM_LANGER_DESC"
+	picture = "Portrait_NDN_William_Langer.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

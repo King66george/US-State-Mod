@@ -128,9 +128,9 @@ set_popularities = {
 	fascism = 1
 }
 create_country_leader = {
-	name = "George A. Wilson"
-	desc = "POLITICS_GEORGE_WILSON_DESC"
-	picture = "Portrait_IAI_George_A_Wilson.dds"
+	name = "Nelson G. Kraschel"
+	desc = "POLITICS_NELSON_G_KRASCHEL_DESC"
+	picture = "Portrait_IAI_Nelson_G_Kraschel.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

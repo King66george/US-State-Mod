@@ -1,0 +1,84 @@
+add_namespace = kansas
+
+# Earl Browder
+country_event = {
+	id = kansas.1
+	title = kansas.1.t
+	desc = kansas.1.d
+	picture = GFX_report_event_browder_elected.dds
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = KSK
+		date > 1936.1.25
+		has_government = communism
+
+		}
+
+
+
+	mean_time_to_happen = {days = 7
+	}
+
+	option = {
+		name = kansas.1.a
+		ai_chance = { factor = 90}
+		create_country_leader = {
+				name = "Earl Browder"
+				desc = "POLITICS_EARL_BROWDER_DESC"
+				picture = "Portrait_USA_Earl_Browder.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+						triumphant_revolutionary
+				}
+		}
+	}
+	option = {
+		name = kansas.1.b
+		ai_chance = { factor = 10}
+		add_political_power = 100
+	}
+}
+
+# Bleeding Kansas
+
+country_event = {
+	id = KSK_border_war.1
+	title = KSK_border_war.1.t
+	desc = KSK_border_war.1.d
+	picture = GFX_report_event_bleeding_kansas
+
+	is_triggered_only = yes
+
+	option = {
+		name = KSK_border_war.1.a
+	}
+}
+
+# Kansas wins
+country_event = {
+	id = KSK_border_war.2
+	title = KSK_border_war.2.t
+	desc = KSK_border_war.2.d
+	picture = GFX_report_event_battle_of_kansas
+
+	is_triggered_only = yes
+
+	option = {
+		name = KSK_border_war.2.a
+		ai_chance = { factor = 75 }
+		add_army_experience = 100
+		add_political_power = 75
+	}
+	option = {
+		name = KSK_border_war.2.b
+		ai_chance = { factor = 25 }
+		declare_war_on = {
+			target = MSM
+			type = annex_everything
+		}
+	}
+}
