@@ -98,8 +98,12 @@ manifest_destiny = {
     complete_effect = {
     ROOT = { country_event = disunitedstates.5 }
     set_cosmetic_tag = EUR
+<<<<<<< HEAD
     set_capital = 879
     set_cosmetic_tag = USA
+=======
+    set_capital = 882
+>>>>>>> bd7b27e8820cc65e086493c61632de0a2f154061
     add_stability = 0.20
     custom_effect_tooltip = core_land
     hidden_effect = {
