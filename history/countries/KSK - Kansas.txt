@@ -136,6 +136,17 @@ create_country_leader = {
 		staunch_constitutionalist
 	}
 }
+create_field_marshal = {
+	name = "Dwight D. Eisenhower"
+	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	skill = 5
+	id = 602
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
 1939.1.1 = {
 	set_stability = 0.9
 
