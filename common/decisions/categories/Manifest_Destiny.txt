@@ -1,0 +1,7 @@
+manifest_destiny = {
+
+	icon = generic_formable_nations
+
+	allowed = {
+	}
+}
