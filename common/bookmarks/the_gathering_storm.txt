@@ -21,16 +21,16 @@ bookmarks = {
 				}
 
 				"NYN"={
-					#history = "USA_GATHERING_STORM_DESC"
+					history = "NYN_GATHERING_STORM_DESC"
 					ideology = democratic
 					ideas = {
 						home_of_the_free
 					}
-					#focuses = {
-					#	USA_war_plan_black
-					#	USA_strike_at_the_empire
-					#	USA_pearl_harbor_gambit
-					#}
+					focuses = {
+						NYN_politicalfocus_1
+						NYN_forthepeople
+					  NYN_communistfriends
+					}
 						}
 
 						"VAV"={
@@ -59,6 +59,20 @@ bookmarks = {
 									#	USA_pearl_harbor_gambit
 									#}
 										}
+
+
+										"FLF"={
+											#history = "USA_GATHERING_STORM_DESC"
+											ideology = democratic
+											ideas = {
+												home_of_the_free
+											}
+											#focuses = {
+											#	USA_war_plan_black
+											#	USA_strike_at_the_empire
+											#	USA_pearl_harbor_gambit
+											#}
+												}
 
 
 		# minors from DLC ####
