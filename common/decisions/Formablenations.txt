@@ -196,6 +196,49 @@ hidden_effect = {
  }
 }
 
+greater_virginia_ALL = {
+
+icon = generic_form_nation
+
+  allowed = {
+
+  }
+
+  cancel_if_not_visible = yes
+
+  visible = {
+    or = {
+    original_tag = VAV
+    original_tag = WVW
+  }
+}
+
+available = {
+  is_subject = no
+    controls_state = 875
+    controls_state = 877
+}
+
+cost = 100
+
+fire_only_once = yes
+
+ai_will_do = {
+  factor = 1
+}
+
+complete_effect = {
+add_stability = 0.20
+set_cosmetic_tag = GRV
+custom_effect_tooltip = core_land
+hidden_effect = {
+  877 = { add_core_of = ROOT }
+  875 = { add_core_of = ROOT }
+
+  }
+ }
+}
+
 
 
 }
