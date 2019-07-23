@@ -447,6 +447,26 @@ focus = {
 
 
 
+                                                focus = {
+                                                    id = NYN_spreadcommunism
+                                                    icon = GFX_goal_generic_forceful_treaty
+                                                    prerequisite = { focus = NYN_commissar}
+                                                    cost = 10
+
+                                                    x = 18
+                                                    y = 5
+
+                                                    completion_reward = {
+                                                    PAP = { start_civil_war= {
+                                                     ideology = communism
+                                                    size = 0.4
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+
+
+
 
                                               focus = {
                                                 id = NYN_research_slot1
@@ -760,7 +780,7 @@ focus = {
 
                                               focus = {
                                                   id = NYN_communistfriends
-                                                  icon = GFX_goal_generic_major_alliance
+                                                  icon = GFX_focus_chi_mission_to_the_soviet_union
                                                   prerequisite = { focus = NYN_forthepeople}
 
                                                   cost = 10
