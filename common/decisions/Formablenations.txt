@@ -83,7 +83,7 @@ form_nation = {
         controls_state = 357
     }
 
-    cost = 150
+    cost = 0
 
     fire_only_once = yes
 
@@ -93,7 +93,7 @@ form_nation = {
 
     complete_effect = {
     set_cosmetic_tag = TTC
-    set_capital = 882
+    set_capital = 884
     add_stability = 0.20
     custom_effect_tooltip = core_land
     hidden_effect = {
@@ -162,7 +162,7 @@ available = {
     controls_state = 357
 }
 
-cost = 150
+cost = 0
 
 fire_only_once = yes
 
@@ -198,6 +198,16 @@ icon = generic_form_nation
 
   visible = {
     original_tag = SCS
+    original_tag = NCN
+    original_tag = TNT
+    original_tag = VAV
+    original_tag = TXT
+    original_tag = GAG
+    original_tag = ALA
+    original_tag = MSM
+    original_tag = FLF
+    original_tag = ARA
+    original_tag = LAL
   }
 
 available = {
@@ -243,7 +253,7 @@ available = {
     controls_state = 853
 }
 
-cost = 150
+cost = 0
 
 ai_will_do = {
 factor = 50
@@ -321,7 +331,7 @@ available = {
     controls_state = 877
 }
 
-cost = 100
+cost = 0
 
 fire_only_once = yes
 
@@ -336,6 +346,60 @@ custom_effect_tooltip = core_land
 hidden_effect = {
   877 = { add_core_of = ROOT }
   875 = { add_core_of = ROOT }
+
+  }
+ }
+}
+new_deseret = {
+
+icon = generic_form_nation
+
+  allowed = {
+
+  }
+
+  cancel_if_not_visible = yes
+
+  visible = {
+    original_tag = UTU
+  }
+
+available = {
+  is_subject = no
+    controls_state = 804
+    controls_state = 805
+    controls_state = 379
+    controls_state = 795
+    controls_state = 795
+    controls_state = 796
+    controls_state = 798
+    controls_state = 803
+    controls_state = 800
+    controls_state = 824
+}
+
+cost = 0
+
+fire_only_once = yes
+
+ai_will_do = {
+  factor = 1
+}
+
+complete_effect = {
+set_cosmetic_tag = DES
+add_stability = 0.20
+custom_effect_tooltip = core_land
+hidden_effect = {
+  804 = { add_core_of = ROOT }
+  805 = { add_core_of = ROOT }
+  379 = { add_core_of = ROOT }
+  795 = { add_core_of = ROOT }
+  796 = { add_core_of = ROOT }
+  798 = { add_core_of = ROOT }
+  803 = { add_core_of = ROOT }
+  800 = { add_core_of = ROOT }
+  824 = { add_core_of = ROOT }
 
   }
  }
