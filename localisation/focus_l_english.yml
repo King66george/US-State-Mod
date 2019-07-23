@@ -2432,6 +2432,7 @@ TXT_americanpuppetry_desc:0 "Perhaps a forced puppet government would help with 
 TXT_fascism_party_ourown:0 "KKK"
 TXT_fascism_party_ourown_long:0 "Klu Klux Klan"
 TXT_rangers:0 "Texas Rangers"
+
 NCN_FOCUS_1:0 "Industry Of North Carolina"
 NCN_FOCUS_2:0 "Political Efforts"
 NCN_FOCUS_3:0 "Form A Navy"

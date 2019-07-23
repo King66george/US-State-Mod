@@ -139,103 +139,63 @@ manifest_destiny = {
       }
      }
     }
+#New England
+new_england = {
 
-#To The Mississippi
-    tothemississippi = {
+icon = generic_form_nation
 
-    icon = generic_form_nation
+  allowed = {
 
-      allowed = {
+  }
 
-      }
+  cancel_if_not_visible = yes
 
-      cancel_if_not_visible = yes
+  visible = {
+    NOT = { has_government = fascism }
+    NOT = { has_government = communism }
+    or = {
+    original_tag = NHN
+    original_tag = RIR
+    original_tag = CTC
+    original_tag = MEM
+  }
+}
 
-      visible = {
-        NOT = { has_government = fascism }
-        NOT = { has_government = communism }
-        or = {
-        original_tag = VAV
-        original_tag = WVW
-        original_tag = MDM
-        original_tag = DED
-        original_tag = NJN
-        original_tag = PAP
-        original_tag = NCN
-        original_tag = SCS
-        original_tag = GAG
-        original_tag = NYN
-        original_tag = RIR
-        original_tag = MAM
-        original_tag = CTC
-        original_tag = VTV
-        original_tag = NHN
-        original_tag = MEM
-      }
-    }
+available = {
+  is_subject = no
+    controls_state = 887
+    controls_state = 888
+    controls_state = 891
+    controls_state = 890
+    controls_state = 889
+    controls_state = 357
+}
 
-    available = {
-      is_subject = no
-        #virginia
-        controls_state = 362
-        controls_state = 876
-        controls_state = 878
-        #west virginia
-        controls_state = 877
-        controls_state = 875
-        #maryland
-        controls_state = 361
-        controls_state = 879
-        #delaware
-        controls_state = 895
-        #north carolina
-        controls_state = 363
-        controls_state = 874
-        controls_state = 873
-        #south carolina
-        controls_state = 871
-        controls_state = 364
-        controls_state = 872
-        #georgia
-        controls_state = 365
-        controls_state = 870
-        controls_state = 868
-        controls_state = 869
-        #pennsylvania
-        controls_state = 881
-        controls_state = 880
-        controls_state = 360
-        controls_state = 882
-        #new york
-        controls_state = 884
-        controls_state = 358
-        controls_state = 886
-        controls_state = 885
-        #new jersey
-        controls_state = 359
-        controls_state = 883
-        #rhode island
-        controls_state = 888
-        #new hampshire
-        controls_state = 891
-        #vermont
-        controls_state = 890
-        #connecticut
-        controls_state = 887
-        #massachusetts
-        controls_state = 889
-        #maine
-        controls_state = 357
-    }
+cost = 150
 
-    cost = 150
+fire_only_once = yes
 
-    fire_only_once = yes
+ai_will_do = {
+  factor = 1
+}
 
-    ai_will_do = {
-      factor = 1
-    }
-    }
-#
+complete_effect = {
+set_capital = 889
+country_event = disunitedstates.6
+add_stability = 0.20
+custom_effect_tooltip = core_land
+hidden_effect = {
+  887 = { add_core_of = ROOT }
+  889 = { add_core_of = ROOT }
+  888 = { add_core_of = ROOT }
+  890 = { add_core_of = ROOT }
+  891 = { add_core_of = ROOT }
+  357 = { add_core_of = ROOT }
 
-   }
+  }
+ }
+}
+
+
+
+}
