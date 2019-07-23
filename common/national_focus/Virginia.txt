@@ -1035,7 +1035,7 @@
 #War Focus Tree
 				focus = {
 						id = VAV_calltowar
-						icon = GFX_FLF_Slavery_Again
+						icon = GFX_goal_generic_secret_weapon
             prerequisite = { focus = VAV_promoteorder focus = VAV_political_commissars2 }
 
 
