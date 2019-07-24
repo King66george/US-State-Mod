@@ -321,7 +321,7 @@
 
 	focus = {
 			id = VAV_airdoc1
-			icon = GFX_goal_generic_demand_territory
+			icon = GFX_goal_generic_air_fighter
 			prerequisite = { focus = VAV_expandairforce }
 
 			x = 3
@@ -346,7 +346,7 @@
 
 	focus = {
 			id = VAV_airdoc2
-			icon = GFX_goal_generic_demand_territory
+			icon = GFX_goal_generic_air_bomber
 			prerequisite = { focus = VAV_airdoc1 }
 
 			x = 3
@@ -371,7 +371,7 @@
 
 	focus = {
 			id = VAV_airres1
-			icon = GFX_goal_generic_demand_territory
+			icon = GFX_focus_chi_flying_tigers
 			prerequisite = { focus = VAV_expandairforce }
 
 			x = 5
@@ -1038,7 +1038,7 @@
 #War Focus Tree
 				focus = {
 						id = VAV_calltowar
-						icon = GFX_focus_generic_strike_at_democracy1
+						icon = GFX_focus_generic_little_entente
             prerequisite = { focus = VAV_promoteorder focus = VAV_political_commissars2 }
 
 
@@ -1313,7 +1313,7 @@
 
         focus = {
             id = VAV_newyork
-            icon = GFX_goal_generic_attack_allies
+            icon = GFX_focus_generic_strike_at_democracy3
             prerequisite = { focus = VAV_takethecoast }
             prerequisite = { focus = VAV_strikenewjersey }
 
