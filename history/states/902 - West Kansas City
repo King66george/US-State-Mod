@@ -1,10 +1,9 @@
 state={
-	id=831
-	name="Northeast Kansas"
-	manpower=1880998
+	id=902
+	name="West Kansas City"
+	manpower=1800000
 	state_category=city
 	resources={
-		oil=30.000
 	}
 
 	history={
@@ -24,13 +23,14 @@ state={
 
 		}
 		victory_points = {
-			4740 3
-		}
+			7834 20
+    }
+
 
 	}
 
 	provinces={
-		1352 1753 4757 7892 12513 
+		7834
 	}
 
 	buildings_max_level_factor=1.000
