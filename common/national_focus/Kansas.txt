@@ -29,8 +29,8 @@ focus_tree = {
 			divisions_in_border_state = {
 				type = any
 				size > 1
-				state = 831
-				border_state = 373
+				state = 902
+				border_state = 903
 			}
 		}
 
@@ -45,16 +45,16 @@ focus_tree = {
 			start_border_war = {
 			change_state_after_war = no
 				attacker = {
-					state = 831
-					num_provinces = 2
+					state = 902
+					num_provinces = 1
 
 					on_win = KSK_border_war.2
 					on_lose = KSK_border_war.3
 				}
 
 				defender = {
-					state = 373
-					num_provinces = 4
+					state = 903
+					num_provinces = 1
 
 					on_win =
 				}
@@ -65,7 +65,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = KSK_industry
+		id = KSK_industrial_focus
 		icon = GFX_goal_generic_production
 
 		x = 1
@@ -82,25 +82,22 @@ focus_tree = {
 
 		completion_reward = {
 				add_tech_bonus = {
-				name = assembly_bonus
+				name = industrial_bonus
 				bonus = 0.75
 				uses = 2
-				technology = improved_machine_tools
-				technology = advanced_machine_tools
-				technology = assembly_line_production
-				technology = flexible_line
-				technology = streamlined_line
+				category = industry
+
 				}
 		}
 		}
 	focus = {
 		id = KSK_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = {focus = KSK_industry }
+		prerequisite = {focus = KSK_industrial_focus }
 		x = -1
 		y = 1
 
-		relative_position_id = KSK_industry
+		relative_position_id = KSK_industrial_focus
 
 		cost = 10
 		ai_will_do = {
@@ -152,11 +149,11 @@ focus_tree = {
 	focus = {
 		id = KSK_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = KSK_industry}
+		prerequisite = { focus = KSK_industrial_focus}
 		x = 1
 		y = 1
 
-		relative_position_id = KSK_industry
+		relative_position_id = KSK_industrial_focus
 		cost = 10
 		ai_will_do = {
 				factor = 1
