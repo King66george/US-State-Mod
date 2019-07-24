@@ -322,6 +322,11 @@ focus = {
                                           cost = 5
                                           x = 40
                                           y = 0
+
+                                          ai_will_do = {
+                                                factor = 0
+                                          }
+
                                           completion_reward = {
                                           add_political_power = 250
                                           }
@@ -495,7 +500,7 @@ focus = {
                                                   available = {
                                                   has_government = communism
                                                   num_of_factories > 60
-			                                            amount_research_slots < 5
+			                                            amount_research_slots < 6
                                                   }
                                                   available_if_capitulated = yes
 
@@ -857,6 +862,24 @@ focus = {
                                                }
 
                                               }
+
+
+                                          focus = {
+                                          id = NYN_stabilize_our_democracy
+                                          icon = GFX_focus_generic_treaty
+                                          prerequisite = { focus = NYN_democracy_prevails}
+                                          cost = 10
+                                          x = 38
+                                          y = 1
+
+                                          completion_reward = {
+                                          	add_stability= 0.10
+                                          }
+
+
+                                          }
+
+
 
 
  ################ MILITARY SECTION ##############
