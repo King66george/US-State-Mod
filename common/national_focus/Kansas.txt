@@ -1,0 +1,372 @@
+focus_tree = {
+	id = kansas_focus
+
+	country = {
+			factor = 0
+		modifier = {
+				add = 10
+				tag = KSK
+			}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = KSK_bleeding_kansas
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 10
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			divisions_in_border_state = {
+				type = any
+				size > 1
+				state = 831
+				border_state = 373
+			}
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			start_border_war = {
+			change_state_after_war = no
+				attacker = {
+					state = 831
+					num_provinces = 2
+
+					on_win = KSK_border_war.2
+					on_lose = KSK_border_war.3
+				}
+
+				defender = {
+					state = 373
+					num_provinces = 4
+
+					on_win =
+				}
+
+
+			}
+		}
+	}
+
+	focus = {
+		id = KSK_industry
+		icon = GFX_goal_generic_production
+
+		x = 1
+		y = 0
+
+		cost = 10
+		ai_will_do = {
+				factor = 1
+				}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+				name = assembly_bonus
+				bonus = 0.75
+				uses = 2
+				technology = improved_machine_tools
+				technology = advanced_machine_tools
+				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
+				}
+		}
+		}
+	focus = {
+		id = KSK_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = {focus = KSK_industry }
+		x = -1
+		y = 1
+
+		relative_position_id = KSK_industry
+
+		cost = 10
+		ai_will_do = {
+				factor = 1
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				831 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+					}
+				}
+				383 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+					}
+				}
+				829 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+					}
+				}
+				896 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+					}
+				}
+				830 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+					}
+				}
+		}
+	}
+
+	focus = {
+		id = KSK_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = KSK_industry}
+		x = 1
+		y = 1
+
+		relative_position_id = KSK_industry
+		cost = 10
+		ai_will_do = {
+				factor = 1
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+				831 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+					}
+				}
+				830 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+					}
+				}
+	}
+}
+	focus = {
+		id = KSK_steel_plant
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = KSK_infrastructure}
+		x = 0
+		y = 1
+		relative_position_id = KSK_infrastructure
+
+		cost = 10
+
+		ai_will_do = {
+				factor = 1
+				}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+			type = steel
+			amount = 25
+			state = 831
+				}
+			}
+
+		}
+		focus = {
+			id = KSK_sunflower_ammo
+			icon = GFX_goal_generic_construct_mil_factory
+			prerequisite = { focus = KSK_civilian_industry}
+			x = 0
+			y = 1
+
+			relative_position_id = KSK_civilian_industry
+			cost = 10
+			ai_will_do = {
+					factor = 1
+					}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward = {
+					831 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+						}
+					}
+				}
+		}
+		focus = {
+			id = KSK_infrastructure2
+			icon = GFX_goal_generic_construct_infrastructure
+			prerequisite = {focus = KSK_sunflower_ammo }
+			prerequisite = { focus = KSK_steel_plant }
+			x = -1
+			y = 1
+
+			relative_position_id = KSK_sunflower_ammo
+
+			cost = 10
+			ai_will_do = {
+					factor = 1
+					}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward = {
+					831 = {
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+						}
+					}
+					383 = {
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+						}
+					}
+					829 = {
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+						}
+					}
+					896 = {
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+						}
+					}
+					830 = {
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+						}
+					}
+			}
+		}
+			focus = {
+			id = KSK_aluminum
+			icon = GFX_focus_generic_aluminum
+			prerequisite = { focus = KSK_infrastructure2}
+			x = -1
+			y = 1
+			relative_position_id = KSK_infrastructure2
+
+			cost = 10
+
+			ai_will_do = {
+					factor = 1
+					}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+			completion_reward = {
+				add_resource = {
+				type = aluminium
+				amount = 15
+				state = 383
+					}
+				}
+
+	}
+
+			focus = {
+				id = KSK_rubber
+				icon = GFX_focus_generic_rubber
+				prerequisite = { focus = KSK_infrastructure2}
+				x = 1
+				y = 1
+				relative_position_id = KSK_infrastructure2
+
+				cost = 10
+
+				ai_will_do = {
+						factor = 1
+						}
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+
+				completion_reward = {
+				modify_building_resources = {
+					 building = synthetic_refinery
+					 resource = rubber
+					 amount = 2
+					 }
+				}
+		}
+
+			focus = {
+				id = KSK_research
+				icon = GFX_focus_research
+				prerequisite = {focus = KSK_rubber}
+				prerequisite = {focus = KSK_aluminum}
+				x = -1
+				y = 1
+				relative_position_id = KSK_rubber
+
+				cost = 10
+
+				ai_will_do = {
+						factor = 1
+						}
+				cancel_if_invalid = yes
+				continue_if_invalid = no
+				available_if_capitulated = no
+
+				completion_reward = {
+						add_research_slot = 1
+			}
+		}
+
+}
