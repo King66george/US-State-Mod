@@ -1,4 +1,4 @@
-add_namespace = kansas
+﻿add_namespace = kansas
 
 # Earl Browder
 country_event = {
