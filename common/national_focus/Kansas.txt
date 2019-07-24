@@ -1,3 +1,5 @@
+########################### KANSAS by cfc324 ###########################
+
 focus_tree = {
 	id = kansas_focus
 
@@ -12,6 +14,10 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1000 }
+
+	################################################################################
+	############################         POLITICS       ############################
+	################################################################################
 
 	focus = {
 		id = KSK_bleeding_kansas
@@ -63,6 +69,25 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = KSK_democratic1
+		icon = GFX_goal_support_democracy
+		prerequisite = {focus = KSK_bleeding_kansas}
+		x = -2
+		y = 1
+
+		relative_position_id = KSK_bleeding_kansas
+
+
+
+	}
+
+
+
+################################################################################
+############################         INDUSTRY       ############################
+################################################################################
 
 	focus = {
 		id = KSK_industrial_focus
@@ -311,7 +336,7 @@ focus_tree = {
 				add_resource = {
 				type = aluminium
 				amount = 15
-				state = 383
+				state = 829
 					}
 				}
 
