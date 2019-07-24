@@ -113,8 +113,22 @@ ideas = {
 			production_speed_arms_factory_factor = -0.15
 			production_speed_dockyard_factor = -0.15
 			production_speed_synthetic_refinery_factor = -0.20
+			consumer_goods_factor = 0.15
+			local_resources_factor = -0.10
 			}
 
+			}
+
+			VAV_idea_industrial_powerhouse = {
+
+			modifier = {
+			production_speed_industrial_complex_factor = -0.15
+			production_speed_arms_factory_factor = -0.15
+			production_speed_dockyard_factor = -0.15
+			production_speed_synthetic_refinery_factor = -0.20
+			consumer_goods_factor = 0.15
+			local_resources_factor = -0.10
+			}
 			}
 		}
 	}

@@ -4144,5 +4144,9 @@ spriteTypes = {
 		name = "GFX_idea_VAV_idea_brokenecon"
 		texturefile = "gfx/interface/ideas/idea_usa_great_depression_2.dds"
 		}
+		spriteType = {
+		name = "GFX_idea_VAV_idea_industrial_powerhouse"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+		}
 ##No Florida Mods##
 	}
