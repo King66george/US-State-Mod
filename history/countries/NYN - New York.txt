@@ -166,6 +166,7 @@ create_corps_commander = {
 					picture = "Portrait_USA_Leonard_T_Gerow.dds"
 					traits = { infantry_officer }
 					skill = 3
+					id = 1402
 					attack_skill = 3
 					defense_skill = 2
 					planning_skill = 2
