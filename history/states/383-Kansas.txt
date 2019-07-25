@@ -24,19 +24,13 @@ state={
 			}
 
 		}
-		victory_points = {
-			4740 3 
-		}
-		victory_points = {
-			7834 1 
-		}
 
 	}
 
 	provinces={
-		12024 
+		12024
 	}
-	
+
 	buildings_max_level_factor=1.000
-	
+
 }
