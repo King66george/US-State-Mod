@@ -540,4 +540,58 @@ hidden_effect = {
   }
  }
 }
+montezuma = {
+
+icon = generic_form_nation
+
+  allowed = {
+
+  }
+
+  cancel_if_not_visible = yes
+
+  visible = {
+    or = {
+    original_tag = AZA
+    original_tag = NMN
+  }
+}
+
+available = {
+  is_subject = no
+    controls_state = 376
+    controls_state = 792
+    controls_state = 791
+    controls_state = 793
+    controls_state = 794
+    controls_state = 795
+    controls_state = 796
+    controls_state = 377
+}
+
+cost = 100
+
+fire_only_once = yes
+
+ai_will_do = {
+  factor = 1
+}
+
+complete_effect = {
+add_stability = 0.20
+set_cosmetic_tag = MTZ
+custom_effect_tooltip = core_land
+hidden_effect = {
+376 = { add_core_of = ROOT }
+792 = { add_core_of = ROOT }
+791 = { add_core_of = ROOT }
+793 = { add_core_of = ROOT }
+794 = { add_core_of = ROOT }
+795 = { add_core_of = ROOT }
+796 = { add_core_of = ROOT }
+377 = { add_core_of = ROOT }
+
+  }
+ }
+}
 }
