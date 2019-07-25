@@ -11,6 +11,7 @@ form_nation = {
       cancel_if_not_visible = yes
 
       visible = {
+      or = {
         original_tag = VAV
         original_tag = WVW
         original_tag = MDM
@@ -27,6 +28,7 @@ form_nation = {
         original_tag = VTV
         original_tag = NHN
         original_tag = MEM
+        }
       }
 
     available = {
@@ -146,10 +148,12 @@ icon = generic_form_nation
   cancel_if_not_visible = yes
 
   visible = {
+  or = {
     original_tag = NHN
     original_tag = RIR
     original_tag = CTC
     original_tag = MEM
+    }
   }
 
 available = {
@@ -197,6 +201,7 @@ icon = generic_form_nation
   cancel_if_not_visible = yes
 
   visible = {
+  or = {
     original_tag = SCS
     original_tag = NCN
     original_tag = TNT
@@ -208,6 +213,7 @@ icon = generic_form_nation
     original_tag = FLF
     original_tag = ARA
     original_tag = LAL
+    }
   }
 
 available = {
