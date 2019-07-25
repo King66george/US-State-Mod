@@ -63,7 +63,7 @@ country_event = {
 									}
 						902 = { add_manpower = -25000}
 						}
-			army_experience = 40
+			army_experience = 50
 			add_tech_bonus = {
 					bonus = 0.5
 					uses = 1
@@ -85,7 +85,7 @@ country_event = {
 		option = {
 					name = kansas.3.a
 					MOM = {
-							army_experience = 40
+							army_experience = 50
 							add_tech_bonus = {
 							bonus = 0.5
 							uses = 1
