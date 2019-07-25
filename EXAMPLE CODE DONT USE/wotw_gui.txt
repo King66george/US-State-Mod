@@ -1,0 +1,662 @@
+scripted_gui = {
+	wotw_powers_gui = {
+	
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+		
+		window_name = "wotw_powers_container"
+		
+		visible = {
+			country_exists = MAR
+		}
+		
+		effects = {
+			launch_invasion_pod_click = {
+				#Save orginal owner
+				every_country = {
+					limit = { owns_state = PREV }
+					set_country_flag = invasion_pod_transfer
+				}
+			
+				ROOT = {
+					add_command_power = -100
+					sound_effect = "wotw_pod_launch_effect"
+					
+					add_to_variable = { martian_invasion_count = 1 }
+					#Transfer state so division can load
+					transfer_state = PREV
+				}
+			
+				create_unit = { 
+					division = "name = \"Assault Force\" division_template = \"Terran Invader\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"Assault Force\" division_template = \"Terran Invader\" start_experience_factor = 0.2" 
+					owner = ROOT
+				}
+				
+				#Transfer state back afterwards
+				every_country = {
+					limit = { has_country_flag = invasion_pod_transfer }
+					transfer_state = PREV
+					clr_country_flag = invasion_pod_transfer
+					
+					sound_effect = "wotw_pod_launch_effect"
+					country_event = { id = misc_alien.28 }
+				}
+			}
+			
+			trigger_human_revolt_click = {
+				#Save orginal owner
+				every_country = {
+					limit = { owns_state = PREV }
+					set_country_flag = human_revolt_transfer
+					sound_effect = "wotw_revolt_effect"
+				}
+			
+				ROOT = {
+					add_command_power = -50
+					
+					#Transfer state so division can load
+					transfer_state = PREV
+				
+					#Create Template
+					if = {
+						limit = {
+							check_variable = { created_revolt_template = 0 }
+						}
+						set_variable = { created_revolt_template = 1 }
+						division_template = {
+							name = "Revolter"
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+					
+								infantry = { x = 2 y = 0 }
+								infantry = { x = 2 y = 1 }
+								infantry = { x = 2 y = 2 }
+							}
+							priority = 0
+						}
+					}
+				}
+
+				create_unit = { 
+					division = "name = \"Human Revolt\" division_template = \"Revolter\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"Human Revolt\" division_template = \"Revolter\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"Human Revolt\" division_template = \"Revolter\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				
+				#Transfer state back afterwards
+				every_country = {
+					limit = { has_country_flag = human_revolt_transfer }
+					transfer_state = PREV
+					clr_country_flag = human_revolt_transfer
+				}
+				MAR = {
+					set_state_controller = PREV
+					sound_effect = "wotw_revolt_effect"
+					country_event = { id = misc_alien.29 }
+				}
+			}
+			
+			begin_xcom_raid_click = {
+				ROOT = {
+					add_command_power = -100
+					if ={
+						limit = {
+							OR = {
+								tag = USA
+								tag = MEX
+								tag = PHI
+							}
+						}
+						sound_effect = "wotw_us_infantry_xcom"
+					}
+					else = {
+						sound_effect = "wotw_uk_infantry_xcom"
+					}
+				}
+				
+				MAR = {
+					if ={
+						limit = {
+							ROOT = {
+								OR = {
+									tag = USA
+									tag = MEX
+									tag = PHI
+								}
+							}
+						}
+						sound_effect = "wotw_us_infantry_xcom"
+					}
+					else = {
+						sound_effect = "wotw_uk_infantry_xcom"
+					}
+				}
+				
+				random_list = {
+					60 = {
+						#Save orginal owner
+						every_country = {
+							limit = { owns_state = PREV }
+							set_country_flag = xcom_raid_transfer
+						}
+					
+						ROOT = {
+							country_event = { id = misc_alien.30 }
+							
+							#Transfer state so division can load
+							transfer_state = PREV
+						}
+						random_list = {
+							50 = {
+								create_unit = { 
+									division = "name = \"X-COM Raid\" division_template = \"X-COM Division\" start_experience_factor = 0.9" 
+									owner = ROOT
+								}
+							}
+							
+							50 = {
+								create_unit = { 
+									division = "name = \"X-COM Raid\" division_template = \"X-COM Division\" start_experience_factor = 0.7" 
+									owner = ROOT
+								}
+							}
+						}
+						
+						#Transfer state back afterwards
+						every_country = {
+							limit = { has_country_flag = xcom_raid_transfer }
+							transfer_state = PREV
+							clr_country_flag = xcom_raid_transfer
+						}
+						MAR = {
+							set_state_controller = PREV
+							country_event = { id = misc_alien.30 }
+						}
+					}
+					40 = {
+						ROOT = { country_event = { id = misc_alien.31 } }
+						MAR = { country_event = { id = misc_alien.31 } }
+					}
+				}
+			}
+		}
+		
+		triggers = {
+			launch_invasion_pod_click_enabled = {
+				custom_trigger_tooltip = {
+					tooltip = is_martian_tag
+					ROOT = { tag = MAR }
+				}
+				ROOT = {
+					command_power > 99
+					NOT = { has_completed_focus = MAR_earth_cleanup }
+				}
+				custom_trigger_tooltip = {
+					tooltip = not_controlled_by
+					NOT = { is_controlled_by = ROOT }
+					all_neighbor_state = { NOT = { is_controlled_by = ROOT } }
+				}
+				custom_trigger_tooltip = {
+					tooltip = no_nearby_martian_divisions
+					MAR = { divisions_in_state = { state = PREV size < 1 } }
+					all_neighbor_state = {
+						MAR = { divisions_in_state = { state = PREV size < 1 } }
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = no_blocking_anti_air
+					anti_air_building < 1
+					all_neighbor_state = { anti_air_building < 1 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = not_planned_invasion_location
+					any_country = {
+						owns_state = PREV
+						OR = {
+							has_country_flag = war_worlds_invasion
+							AND = {
+								NOT = { tag = USA }
+								NOT = {	tag = ENG }
+								NOT = {	tag = FRA }
+								NOT = {	tag = SOV }
+								NOT = {	tag = GER }
+								NOT = {	tag = JAP }
+							}
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = is_controlled_by_enemy
+					any_country = {
+						owns_state = PREV
+						has_war_with = MAR
+					}
+				}
+			}
+			
+			trigger_human_revolt_click_enabled = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = is_not_martian_tag
+						ROOT = { tag = MAR }
+					}
+				}
+				ROOT = {
+					has_war_with = MAR
+					command_power > 49
+					OR = {
+						has_completed_focus = MTC_launch_revolts
+						AND = {
+							custom_trigger_tooltip = {
+								tooltip = american_revolts_are_enabled
+								OR = {
+									tag = USA
+									tag = CAN
+								}
+								USA = { has_completed_focus = USA_recruit_the_free_corps }
+							}
+							if = {
+								limit = { tag = CAN }
+								PREV = { is_core_of = CAN }
+							}
+							else = {
+								PREV = { is_core_of = USA }
+							}
+						}
+						AND = {
+							custom_trigger_tooltip = {
+								tooltip = british_revolts_are_enabled
+								OR = {
+									tag = ENG
+									tag = IRE
+									tag = SCO
+									tag = WLS
+								}
+								has_country_flag = british_revolts_enabled
+							}
+							if = {
+								limit = { tag = IRE }
+								PREV = { is_core_of = IRE }
+							}
+							else_if = {
+								limit = { tag = SCO }
+								PREV = { is_core_of = SCO }
+							}
+							else_if = {
+								limit = { tag = WLS }
+								PREV = { is_core_of = WLS }
+							}
+							else = {
+								PREV = { is_core_of = ENG }
+							}
+						}
+					}
+				}
+				is_controlled_by = MAR
+				NOT = { is_core_of = MAR }
+				state_population > 75000
+				custom_trigger_tooltip = {
+					tooltip = not_controlled_by
+					NOT = { is_controlled_by = ROOT }
+					all_neighbor_state = { NOT = { is_controlled_by = ROOT } }
+				}
+				custom_trigger_tooltip = {
+					tooltip = no_nearby_divisions
+					all_country = { divisions_in_state = { state = PREV size < 1 } }
+					all_neighbor_state = {
+						all_country = { divisions_in_state = { state = PREV size < 1 } }
+					}
+				}
+			}
+			
+			begin_xcom_raid_click_enabled = {
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = is_not_martian_tag
+						ROOT = { tag = MAR }
+					}
+				}
+				ROOT = {
+					has_war_with = MAR
+					command_power > 99
+					custom_trigger_tooltip = {
+						tooltip = has_xcom_tech.tt
+						has_tech = xcom_tech
+					}
+				}
+				is_controlled_by = MAR
+				NOT = { is_core_of = MAR }
+				custom_trigger_tooltip = {
+					tooltip = not_controlled_by
+					NOT = { is_controlled_by = ROOT }
+					all_neighbor_state = { NOT = { is_controlled_by = ROOT } }
+				}
+				custom_trigger_tooltip = {
+					tooltip = no_nearby_divisions
+					all_country = { divisions_in_state = { state = PREV size < 1 } }
+					all_neighbor_state = {
+						all_country = { divisions_in_state = { state = PREV size < 1 } }
+					}
+				}
+			}
+		}
+		
+		#ai_test_parent = "fuhrer_mana_powers"
+		
+		#ai_test_scopes = test_self_controlled_states
+		
+		ai_enabled = {
+            always = no
+		}
+        
+		ai_check = {
+			
+		}
+		
+		ai_weights = {
+			launch_invasion_pod_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			trigger_human_revolt_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			begin_xcom_raid_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+	}
+	
+	wotw_welcome_credits = {
+		window_name = "wotw_wcredits_container"
+		context_type = player_context
+
+		visible = {
+			is_ai = no
+			check_variable = { wotw_welcome_open = 1 }
+		}
+
+		ai_enabled = {
+           always = no
+		}
+
+		dynamic_lists = {
+			
+		}
+
+        properties = {
+			
+		}
+		
+		effects = {
+			#close_click = {
+			#	clear_variable = wotw_welcome_open
+			#}
+			next_page_click = {
+				if = {
+					limit = { tag = MAR }
+					set_variable = { wotw_welcome_open = 2 }
+				}
+				else_if = {
+					limit = { tag = USA }
+					set_variable = { wotw_welcome_open = 3 }
+				}
+				else = {
+					set_variable = { wotw_welcome_open = 4 }
+				}
+			}
+		}
+
+		triggers = {
+			
+		}
+	}
+	
+	wotw_welcome_hints_mar = {
+		parent_window_token = wotw_whints_container
+		context_type = player_context
+	
+		window_name = "wotw_whints_mar_container"
+		
+		ai_enabled = {
+           always = no
+		}
+		
+		visible = {
+			is_ai = no
+			check_variable = { wotw_welcome_open = 2 }
+		}
+		
+		dynamic_lists = {
+			
+		}
+
+        properties = {
+			
+		}
+		
+		effects = {
+			begin_game_click = {
+				clear_variable = wotw_welcome_open
+				
+				if = {
+					limit = { NOT = { has_global_flag = wotw_starting_events } }
+					#Begin invasion in 1938 start
+					if = {
+						limit = { 
+							has_start_date > 1938.10.30
+							has_start_date < 1939.1.1
+						}
+						USA = { country_event = alien.18 }
+					}
+					set_global_flag = wotw_starting_events
+				}
+			}
+			united_fed_button_click = {
+				set_variable = { wotw_welcome_open = 5 }
+			}
+		}
+
+		triggers = {
+			
+		}
+	}
+	wotw_welcome_hints_usa = {
+		parent_window_token = wotw_whints_container
+		context_type = player_context
+		
+		window_name = "wotw_whints_usa_container"
+		
+		ai_enabled = {
+           always = no
+		}
+		
+		visible = {
+			is_ai = no
+			check_variable = { wotw_welcome_open = 3 }
+		}
+		
+		dynamic_lists = {
+			
+		}
+
+        properties = {
+			
+		}
+		
+		effects = {
+			begin_game_click = {
+				clear_variable = wotw_welcome_open
+				
+				if = {
+					limit = { NOT = { has_global_flag = wotw_starting_events } }
+					#Begin invasion in 1938 start
+					if = {
+						limit = { 
+							has_start_date > 1938.10.30
+							has_start_date < 1939.1.1
+						}
+						USA = { country_event = alien.18 }
+					}
+					set_global_flag = wotw_starting_events
+				}
+			}
+			united_fed_button_click = {
+				set_variable = { wotw_welcome_open = 5 }
+			}
+		}
+
+		triggers = {
+			
+		}
+	}
+	wotw_welcome_hints_generic = {
+		parent_window_token = wotw_whints_container
+		context_type = player_context
+		
+		window_name = "wotw_whints_generic_container"
+		
+		ai_enabled = {
+           always = no
+		}
+		
+		visible = {
+			is_ai = no
+			check_variable = { wotw_welcome_open = 4 }
+		}
+		
+		dynamic_lists = {
+			
+		}
+
+        properties = {
+			
+		}
+		
+		effects = {
+			begin_game_click = {
+				clear_variable = wotw_welcome_open
+				
+				if = {
+					limit = { NOT = { has_global_flag = wotw_starting_events } }
+					#Begin invasion in 1938 start
+					if = {
+						limit = { 
+							has_start_date > 1938.10.30
+							has_start_date < 1939.1.1
+						}
+						USA = { country_event = alien.18 }
+					}
+					set_global_flag = wotw_starting_events
+				}
+			}
+			united_fed_button_click = {
+				set_variable = { wotw_welcome_open = 5 }
+			}
+		}
+
+		triggers = {
+			
+		}
+	}
+	
+	wotw_welcome_united_fed = {
+		window_name = "wotw_wfederation_container"
+		context_type = player_context
+
+		visible = {
+			is_ai = no
+			check_variable = { wotw_welcome_open = 5 }
+		}
+
+		ai_enabled = {
+           always = no
+		}
+
+		dynamic_lists = {
+			
+		}
+
+        properties = {
+			
+		}
+		
+		effects = {
+			begin_game_click = {
+				clear_variable = wotw_welcome_open
+				
+				if = {
+					limit = { NOT = { has_global_flag = wotw_starting_events } }
+					#Begin invasion in 1938 start
+					if = {
+						limit = { 
+							has_start_date > 1938.10.30
+							has_start_date < 1939.1.1
+						}
+						USA = { country_event = alien.18 }
+					}
+					set_global_flag = wotw_starting_events
+				}
+			}
+			last_page_click = {
+				if = {
+					limit = { tag = MAR }
+					set_variable = { wotw_welcome_open = 2 }
+				}
+				else_if = {
+					limit = { tag = USA }
+					set_variable = { wotw_welcome_open = 3 }
+				}
+				else = {
+					set_variable = { wotw_welcome_open = 4 }
+				}
+			}
+		}
+
+		triggers = {
+			
+		}
+	}
+	
+	wotw_welcome_pause = {
+		parent_window_token = top_bar
+		
+		window_name = "wotw_wpause_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { wotw_welcome_open > 0 }
+		}
+
+		ai_enabled = {
+           always = no
+		}
+
+		effects = {
+			#Dummy to brute force paused state
+		}
+	}
+}
+
