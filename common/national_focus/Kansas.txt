@@ -33,7 +33,7 @@ focus_tree = {
 
 		available = {
 			divisions_in_border_state = {
-				type = all
+				type = infantry
 				size > 1
 				state = 902
 				border_state = 903
@@ -54,15 +54,14 @@ focus_tree = {
 					state = 902
 					num_provinces = 1
 
-					on_win = KSK_border_war.2
-					on_lose = KSK_border_war.3
+					on_win = kansas.2
+					on_lose = kansas.3
 				}
 
 				defender = {
 					state = 903
 					num_provinces = 1
 
-					on_win =
 				}
 
 

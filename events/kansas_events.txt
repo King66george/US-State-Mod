@@ -42,3 +42,56 @@ country_event = {
 		add_political_power = 100
 	}
 }
+
+	country_event = {
+			id = kansas.2
+			title = kansas.2.t
+			desc = kansas.2.d
+			picture = GFX_report_event_battle_of_kansas.dds
+
+			is_triggered_only = yes
+
+			option = {
+						name = kansas.2.a
+						limit = {
+						902 = {
+									OR = {
+												is_owned_by = KSK
+												is_owned_by = MOM
+									}
+									any_neighbor_state = { is_owned_by = MOM }
+									}
+						902 = { add_manpower = -25000}
+						}
+			army_experience = 40
+			add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = land_doctrine
+			}
+
+		}
+	}
+
+	country_event = {
+		id = kansas.3
+		title = kansas.3.t
+		desc = kansas.3.d
+		picture = GFX_report_event_battle_of_kansas.dds
+
+
+		is_triggered_only = yes
+
+		option = {
+					name = kansas.3.a
+					MOM = {
+							army_experience = 40
+							add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+							}
+					}
+		}
+
+	}
