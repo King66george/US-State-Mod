@@ -33,7 +33,7 @@ focus_tree = {
 
 		available = {
 			divisions_in_border_state = {
-				type = any
+				type = all
 				size > 1
 				state = 902
 				border_state = 903

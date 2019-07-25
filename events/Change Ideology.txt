@@ -3,17 +3,17 @@
 #Template
 
 #country_event = {
-#	id = 
-#	title = 
-#	desc = 
-#	picture = 
+#	id =
+#	title =
+#	desc =
+#	picture =
 #
 #	fire_only_once = yes
 #
 #	trigger = {}
 #
 #	option = {
-#	name = 
+#	name =
 #
 #	}
 #}
@@ -24,11 +24,11 @@ country_event = {
 	id = cid.0
 	title = cid.0.t
 	desc = cid.0.d
-	picture = 
+	picture =
 	fire_only_once = yes
 
 	trigger = {
-	
+
 	date > 1936.1.1
 	date < 1936.1.25
 	is_ai = yes
@@ -56,6 +56,7 @@ country_event = {
 		}
 		set_major = yes
 		set_country_flag = ideology_chosen
+		add_ideas = { ALL_idea_factions }
 	}
 	option = {
 		name = cid.0.b
@@ -77,6 +78,7 @@ country_event = {
 		}
 		set_major = yes
 		set_country_flag = ideology_chosen
+		add_ideas = { ALL_idea_factions }
 	}
 	option = {
 		name = cid.0.c
@@ -98,6 +100,7 @@ country_event = {
 		}
 		set_major = yes
 		set_country_flag = ideology_chosen
+		add_ideas = { ALL_idea_factions }
 	}
 }
 
@@ -156,7 +159,7 @@ country_event = {
 		}
 		set_major = yes
 		set_country_flag = ideology_chosen
-	} 
+	}
 	option = {
 		name = cid.1.c
 		set_politics = {
@@ -186,7 +189,7 @@ country_event = {
 	title = cid.2.t
 	desc = cid.2.d
 	picture = GFX_report_event_molotov_ribentrop_handshake
-	
+
 	trigger = {
 		date > 1936.1.1
 		is_ai = no
