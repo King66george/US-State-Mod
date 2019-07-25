@@ -1,4 +1,4 @@
-add_namespace = tex
+﻿add_namespace = tex
 
 country_event = {
   id = tex.0

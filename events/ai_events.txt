@@ -1,4 +1,4 @@
-add_namespace = ido
+﻿add_namespace = ido
 
 #O AI strat
 country_event = {
