@@ -134,7 +134,6 @@ create_country_leader = {
 	ideology = liberalism
 	traits = {
 		staunch_constitutionalist
-		economic_reformer
 	}
 }
 create_field_marshal = {

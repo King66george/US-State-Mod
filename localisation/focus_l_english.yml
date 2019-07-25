@@ -2925,6 +2925,10 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  KSK_rubber_desc:0 "Scientists have been able to revolutionize the production of rubber by utilizing the byproducts of coal liquidation."
  KSK_research:0 "Extra Research Slot"
  KSK_research_desc:0 "By recrutiing local universities to the war effort, we are able to expand our research capacity."
+ KSK_democratic1:0 "Trust In Landon"
+ KSK_democratic1_desc:0 "Alf Landon has shown to be a competent leader since the fall of the United States. The State of Kansas would love for him to continue to guide us to safety."
+ KSK_democratic2:0 "RealPolitik"
+ KSK_democratic2_desc:0 "Realpolitik is politics or diplomacy based primarily on considerations of given circumstances and factors, rather than explicit ideological notions or moral and ethical premises. In these trying times, it is our only hope to survive."
 
 ################################################################################################################################################################
 ################################################################################################################################################################

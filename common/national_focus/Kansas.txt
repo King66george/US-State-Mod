@@ -73,14 +73,88 @@ focus_tree = {
 		id = KSK_democratic1
 		icon = GFX_goal_support_democracy
 		prerequisite = {focus = KSK_bleeding_kansas}
-		x = -2
+		mutually_exclusive { focus = KSK_communist1 focus = KSK_fascist1 }
+		x = -3
 		y = 1
 
 		relative_position_id = KSK_bleeding_kansas
 
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass { }
+
+		completion_reward = {
+				add_country_leader_trait = economic_reformer
+				set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+						election_frequency = 120
+				}
+				add_popularity = {
+						ideology = democratic
+						popularity = 0.75
+				}
+				add_stability = 0.1
+
+		}
 
 	}
+
+		focus = {
+			id = KSK_democratic2
+			icon = GFX_goal_generic_demand_territory
+			prerequisite = {focus = KSK_democratic1}
+
+			x = 0
+			y = 1
+
+			relative_position_id = KSK_democratic1
+
+			cost = 10
+
+			ai_will_do = {factor = 1}
+
+			completion_reward = {
+
+				ENG = {
+					add_opinion_modifier = {
+								target = KSK
+								modifier = medium_increase
+					}
+				}
+				FRA = {
+					add_opinion_modifier = {
+								target = KSK
+								modifier = medium_increase
+					}
+				}
+				CAC = {
+					add_opinion_modifier = {
+								target = KSK
+								modifier = medium_increase
+					}
+				}
+				TXT = {
+					add_opinion_modifier = {
+								target = KSK
+								modifier = medium_increase
+					}
+				}
+				NYN = {
+					add_opinion_modifier = {
+								target = KSK
+								modifier = medium_increase
+					}
+				}
+
+					political_power_gain = 0.5
+
+			}
+			}
 
 
 
