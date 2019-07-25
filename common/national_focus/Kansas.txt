@@ -104,7 +104,7 @@ focus_tree = {
 
 	}
 
-		focus = {
+	focus = {
 			id = KSK_democratic2
 			icon = GFX_goal_generic_demand_territory
 			prerequisite = {focus = KSK_democratic1}
@@ -119,6 +119,8 @@ focus_tree = {
 			ai_will_do = {factor = 1}
 
 			completion_reward = {
+
+				add_ideas = KSK_realpolitik
 
 				ENG = {
 					add_opinion_modifier = {
@@ -150,11 +152,9 @@ focus_tree = {
 								modifier = medium_increase
 					}
 				}
-
-					political_power_gain = 0.5
-
 			}
-			}
+		}
+
 
 
 
@@ -464,4 +464,202 @@ focus_tree = {
 			}
 		}
 
+		focus = {
+			id = KSK_democratic3
+			icon = GFX_goal_generic_forceful_treaty
+			prerequisite = {focus = KSK_democratic1}
+
+			x = -2
+			y = 1
+			relative_position_id = KSK_democratic1
+
+			cost = 10
+
+			ai_will_do = {factor = 1}
+
+			completion_reward = {
+						MOM = {
+								country_event = missouri.3
+						}
+			}
+		}
+
+		focus = {
+			id = KSK_democratic4
+			icon = GFX_focus_generic_the_giant_wakes
+			prerequisite = {focus = KSK_democratic2 }
+
+			x = 0
+			y = 1
+
+			relative_position_id = KSK_democratic2
+
+			cost = 10
+
+			ai_will_do = {factor = 1}
+
+			completion_reward = {
+
+					add_ideas = KSK_beacon
+
+					MOM = {
+								add_timed_idea = {
+								idea = democratic_influence
+										days = 547
+								}
+					}
+					NEN = {
+								add_timed_idea = {
+								idea = democratic_influence
+										days = 547
+								}
+					}
+					COC = {
+								add_timed_idea = {
+								idea = democratic_influence
+										days = 547
+								}
+					}
+					OKO = {
+								add_timed_idea = {
+								idea = democratic_influence
+										days = 547
+								}
+					}
+					TXT = {
+								add_timed_idea = {
+								idea = democratic_influence
+										days = 547
+								}
+					}
+				}
+			}
+
+		focus = {
+				id = KSK_democratic5
+				icon = GFX_goal_generic_military_deal
+				prerequisite = { focus = KSK_democratic4 }
+
+				x = -2
+				y = 1
+
+				relative_position_id = KSK_democratic4
+
+				cost = 10
+
+				ai_will_do = {factor = 1}
+
+				completion_reward = {
+					MOM = {
+						start_civil_war = {
+
+								ideology = democratic
+								size = 0.8
+								ruling_party = democratic
+								only_own_territory = no
+								capital = 373
+								states = { 373 }
+
+								keep_unit_leaders = {}
+								}
+						}
+
+					NEN = {
+						start_civil_war = {
+
+								ideology = democratic
+								size = 0.8
+								ruling_party = democratic
+								only_own_territory = no
+								capital = 384
+								states = { 384 827 }
+
+						}
+				}
+				COC = {
+					start_civil_war = {
+
+							ideology = democratic
+							size = 0.8
+							ruling_party = democratic
+							only_own_territory = no
+							capital = 802
+							states = {802 803}
+
+					}
+				}
+
+				OKO = {
+				start_civil_war = {
+						ruling_party = democratic
+						ideology = democratic
+						size = 0.8
+
+						only_own_territory = no
+
+						capital = 832
+						states = { 832 833 }
+				}
+				}
+			}
+		}
+
+		focus = {
+			id = KSK_democratic6
+			icon = GFX_focus_research
+			prerequisite = { focus = KSK_democratic4 }
+
+			x = 0
+			y = 1
+
+			relative_position_id = KSK_democratic4
+
+			cost = 10
+
+			completion_reward = {
+			add_research_slot = 1
+			831 = {
+				add_manpower = 800000
+			}
+			830 = {
+				add_manpower = 700000
+			}
+			}
+		}
+
+		focus = {
+			id = KSK_democratic7
+			icon = GFX_focus_eng_the_sun_never_sets
+			prerequisite = {focus = KSK_democratic4}
+
+			x = 2
+			y = 1
+
+			relative_position_id = KSK_democratic4
+
+			cost = 10
+
+			completion_reward = {
+						ENG = { add_to_faction = KSK }
+			}
+		}
+
+		focus = {
+			id = KSK_democratic8
+			icon = GFX_focus_rocketry
+			prerequisite = { focus = KSK_democratic6 }
+
+			x = 7
+			y = 5
+
+			relative_positon_id = {KSK_democratic6}
+
+			completion_reward = {
+				add_tech_bonus = {
+				name = rocketry_bonus
+				ahead_reduction = 2.0
+				uses = 2
+				category = rocketry
+			}
+		}
 }

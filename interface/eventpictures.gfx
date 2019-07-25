@@ -2105,4 +2105,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_battle_of_kansas.dds"
 	}
 
+	spritetype = {
+		name = "GFX_report_event_kansas_city.dds"
+		texturefile = "gfx/event_pictures/report_event_kansas_city.dds"
+	}
+
 }

@@ -4148,5 +4148,13 @@ spriteTypes = {
 		name = "GFX_idea_VAV_idea_industrial_powerhouse"
 		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
 		}
+		spriteType = {
+		name = "GFX_idea_KSK_realpolitik"
+		texturefile = "gfx/interface/ideas/idea_chi_wargaming_division.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_beacon"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_drift_bonus.dds"
+		}
 ##No Florida Mods##
 	}

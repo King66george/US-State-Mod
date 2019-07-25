@@ -1,13 +1,44 @@
-Ideas = {
+ideas = {
+    #country
+    country = {
+        KSK_realpolitik = {
 
-KSK_Realpolitik = {
-  allowed = { always = no }
-  removal_cost = -1
-  picture = generic_research_bonus
-  modifier = {
-    political_power_gain = 0.5
-    political_advisor_cost_factor = -0.25
-  }
-}
+            allowed = {
+                always = no
+            }
 
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                political_power_gain = 0.5
+                political_advisor_cost_factor = -0.25
+            }
+        }
+    }
+
+    country = {
+        KSK_beacon = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                democratic_influence = 0.1
+                production_speed_industrial_complex_factor = 0.15
+                production_speed_infrastructure_factor = 0.15
+                production_speed_nuclear_reactor_factor = 0.15
+            }
+        }
+    }
 }
