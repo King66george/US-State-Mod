@@ -3,10 +3,10 @@ bookmarks = {
 		name = "CVU_NAME"
 		desc = "CVU_DESC"
 		date = 1936.1.26.12
-		picture = "GFX_select_date_1936"
+		picture = "GFX_select_date_1939"
 		default_country = "NYN"
 		default = yes
-		
+
 				"NYN"={
 			#history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -92,7 +92,7 @@ bookmarks = {
 			#	USA_pearl_harbor_gambit
 			#}
 		}
-		
+
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
