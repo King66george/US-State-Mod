@@ -494,12 +494,42 @@ ai_will_do = {
 
 complete_effect = {
 set_cosmetic_tag = GCA
+set_capital = 276
 add_stability = 0.20
 custom_effect_tooltip = core_land
 hidden_effect = {
   887 = { add_core_of = ROOT }
   888 = { add_core_of = ROOT }
   889 = { add_core_of = ROOT }
+  890 = { add_core_of = ROOT }
+  891 = { add_core_of = ROOT }
+  357 = { add_core_of = ROOT }
+  465 = { add_core_of = ROOT }
+  464 = { add_core_of = ROOT }
+  818 = { add_core_of = ROOT }
+  331 = { add_core_of = ROOT }
+  332 = { add_core_of = ROOT }
+  468 = { add_core_of = ROOT }
+  816 = { add_core_of = ROOT }
+  817 = { add_core_of = ROOT }
+  466 = { add_core_of = ROOT }
+  276 = { add_core_of = ROOT }
+  682 = { add_core_of = ROOT }
+  815 = { add_core_of = ROOT }
+  467 = { add_core_of = ROOT }
+  469 = { add_core_of = ROOT }
+  683 = { add_core_of = ROOT }
+  472 = { add_core_of = ROOT }
+  814 = { add_core_of = ROOT }
+  470 = { add_core_of = ROOT }
+  473 = { add_core_of = ROOT }
+  811 = { add_core_of = ROOT }
+  740 = { add_core_of = ROOT }
+  739 = { add_core_of = ROOT }
+  471 = { add_core_of = ROOT }
+  812 = { add_core_of = ROOT }
+  813 = { add_core_of = ROOT }
+  463 = { add_core_of = ROOT }
 
   }
  }
