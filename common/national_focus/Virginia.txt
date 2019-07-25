@@ -1053,34 +1053,23 @@
 
 				}
 
-				focus = {
-						id = VAV_reclaimwestvirginia
-						icon = GFX_goal_generic_attack_allies
-						prerequisite = { focus = VAV_calltowar }
+        focus = {
+            id = VAV_reclaimwestvirginia
+        icon = GFX_goal_generic_attack_allies
+        prerequisite = { focus = VAV_calltowar }
 
-						x = 12
-						y = 8
+        x = 12
+        y = 8
 
-						cost = 10
+        cost = 10
 
-						ai_will_do = {
-							factor = 1
-						}
+        ai_will_do = { factor = 1 }
 
-						completion_reward = {
-							create_wargoal= {
-							type = annex_everything
-							target = WVW
-
-							}
-							add_state_core = 877
-							add_state_core = 875
-
-						}
-
-
-				}
-
+        completion_reward = {
+        WVW = {
+        country_event = WVW.1 }
+      }
+    }
 				focus = {
 						id = VAV_strikethecapital
 						icon = GFX_goal_generic_attack_allies

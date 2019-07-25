@@ -1,0 +1,58 @@
+﻿add_namespace = WVW
+
+#referundum
+country_event = {
+
+  id = WVW.1
+  title = WVW.1.t
+  desc = WVW.1.d
+  #picture =
+
+  is_triggered_only = yes
+
+  option = {
+    name = WVW.1.a
+
+    ai_chance = {
+      factor = 60
+    }
+
+    VAV = {
+    add_state_core = 877
+    add_state_core = 875
+    annex_country = {
+      target = WVW
+      transfer_troops = yes
+      }
+    }
+  }
+
+  option = {
+    name = WVW.1.b
+
+    ai_chance = {
+      factor = 40
+    }
+
+    VAV = {
+    add_state_core = 877
+    add_state_core = 875
+    create_wargoal = {
+      type = annex_everything
+      target = WVW
+
+      }
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+
+}
