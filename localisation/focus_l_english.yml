@@ -2925,6 +2925,8 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  KSK_rubber_desc:0 "Scientists have been able to revolutionize the production of rubber by utilizing the byproducts of coal liquidation."
  KSK_research:0 "Extra Research Slot"
  KSK_research_desc:0 "By recrutiing local universities to the war effort, we are able to expand our research capacity."
+ NYN_takethefalls:0 "§RTake The Falls§"
+ NYN_takethefalls_desc:0 "Niagra Falls is obviously New York territory, we should take it.\n§RWe could possibly lose Buffalo if we are not careful enough!§"
 
 ################################################################################################################################################################
 ################################################################################################################################################################

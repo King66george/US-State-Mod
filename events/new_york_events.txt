@@ -1,0 +1,34 @@
+﻿ add_namespace = newyork
+
+ # New York Victory
+ country_event = {
+    id = newyork.1
+    title = newyork.1.t
+    desc = newyork.1.d
+    picture = GFX_report_event_niagara
+
+    is_triggered_only = yes
+
+    option = {
+        name = newyork.1.a
+        army_experience = 50
+    }
+  }
+
+    # New York Defeat
+    country_event = {
+       id = newyork.2
+       title = newyork.2.t
+       desc = newyork.2.d
+       picture = GFX_report_event_niagara
+
+       is_triggered_only = yes
+
+       option = {
+           name = newyork.2.a
+           army_experience = -25
+           add_manpower = -750
+           ONO = {army_experience = 50}
+       }
+
+       }

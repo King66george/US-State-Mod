@@ -1,0 +1,34 @@
+add_namespace = ontario
+
+# Ontario Victory
+country_event = {
+   id = ontario.1
+   title = ontario.1.t
+   desc = ontario.1.d
+   picture = GFX_report_event_niagara
+
+   is_triggered_only = yes
+
+   option = {
+       name = ontario.1.a
+       army_experience = 50
+   }
+ }
+
+   # Ontario Defeat
+   country_event = {
+      id = ontario.2
+      title = ontario.2.t
+      desc = ontario.2.d
+      picture = GFX_report_event_niagara
+
+      is_triggered_only = yes
+
+      option = {
+          name = ontario.2.a
+          army_experience = -25
+          add_manpower = -500
+          
+      }
+
+      }
