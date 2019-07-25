@@ -16,13 +16,10 @@ state={
 			air_base = 10
 		}
 		add_core_of = NYN
-		victory_points = {
-			11654 15
-		}
 
 	}
 	provinces={
-		734 3733 6707 9664 11654 11680
+		734 3733 6707 9664 11680
 	}
 
 	buildings_max_level_factor=1.000
