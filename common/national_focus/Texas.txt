@@ -1346,16 +1346,41 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+		divisions_in_border_state = {
+				type = infantry
+				size > 1
+				state = 788
+				border_state = 832
+		}
+		}
 		bypass = {
-
+		controls_state = 832
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		transfer_state = 832
+		start_border_war = {
+		change_state_after_war = no
+				attacker = {
+				state = 788
+				num_provinces = 2
+
+				on_win =  tex.0
+				on_lose = tex.1
+				}
+
+				defender = {
+						state = 832
+
+						num_provinces = 1
+				}
+		}
+
+
+
 		}
 	}
 
@@ -1373,7 +1398,17 @@ focus = {
 			factor = 1
 		}
 
+		available = {
+		divisions_in_border_state = {
+				type = infantry
+				size > 1
+				state = 788
+				border_state = 793
+		}
+		}
+
 		bypass = {
+
 
 		}
 
@@ -1381,8 +1416,22 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		transfer_state = 792
-		transfer_state = 793
+		start_border_war = {
+		change_state_after_war = no
+				attacker = {
+				state = 788
+				num_provinces = 2
+
+				on_win =  tex.2
+				on_lose = tex.1
+				}
+
+				defender = {
+						state = 793
+
+						num_provinces = 1
+				}
+		}
 		}
 	}
 
@@ -1408,8 +1457,22 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		transfer_state = 897
-		transfer_state = 802
+		start_border_war = {
+		change_state_after_war = no
+				attacker = {
+				state = 793
+				num_provinces = 1
+
+				on_win =  tex.3
+				on_lose = tex.1
+				}
+
+				defender = {
+						state = 802
+
+						num_provinces = 1
+				}
+		}
 		}
 	}
 
