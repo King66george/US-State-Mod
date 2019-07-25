@@ -53,16 +53,12 @@ country_event = {
 
 			option = {
 						name = kansas.2.a
-						limit = {
-						902 = {
-									OR = {
-												is_owned_by = KSK
-												is_owned_by = MOM
-									}
-									any_neighbor_state = { is_owned_by = MOM }
-									}
-						902 = { add_manpower = -25000}
-						}
+
+			902 = {
+					add_manpower = -1000}
+			903 = {
+					add_manpower = -1500 }
+
 			army_experience = 50
 			add_tech_bonus = {
 					bonus = 0.5
@@ -91,6 +87,12 @@ country_event = {
 							uses = 1
 							category = land_doctrine
 							}
+					}
+					902 = {
+							add_manpower = -1500
+					}
+					903 = {
+					add_manpower = -1000
 					}
 		}
 
