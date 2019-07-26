@@ -4156,5 +4156,25 @@ spriteTypes = {
 		name = "GFX_idea_KSK_beacon"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_drift_bonus.dds"
 		}
+		spriteType = {
+		name = "GFX_idea_KSK_integration"
+		texturefile = "gfx/interface/ideas/idea_usa_desegregation_2.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_commissars"
+		texturefile = "gfx/interface/ideas/idea_nkvd_2.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_defense"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_five_year_plan"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+		}
+		name = "GFX_idea_KSK_finished_five_year_plan"
+		texturefile = "gfx/interface/ideas/idea_eng_spirit_of_the_industrial_revolution.dds"
+		}
+
 ##No Florida Mods##
 	}

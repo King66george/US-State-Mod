@@ -2652,3 +2652,8 @@
  ALL_idea_factions:0 "Ai Modifier"
  KSK_realpolitik:0 "RealPolitik"
  KSK_beacon:0 "Beacon of Democracy"
+ KSK_integration:0 "Full Integration"
+ KSK_defense:0 "Motherland Defense"
+ KSK_commissars:0 "KCIA"
+ KSK_five_year_plan:0 "Five Year Plan"
+ KSK_finished_five_year_plan:0 "Completed the Five Year Plan"
