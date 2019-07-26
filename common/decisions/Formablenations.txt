@@ -594,4 +594,60 @@ hidden_effect = {
   }
  }
 }
+texlahoma = {
+
+icon = generic_form_nation
+
+  allowed = {
+
+  }
+
+  cancel_if_not_visible = yes
+
+  visible = {
+    or = {
+    original_tag = TXT
+    original_tag = OKO
+  }
+}
+
+available = {
+  is_subject = no
+    controls_state = 788
+    controls_state = 898
+    controls_state = 375
+    controls_state = 897
+    controls_state = 789
+    controls_state = 790
+    controls_state = 374
+    controls_state = 833
+    controls_state = 832
+}
+
+cost = 100
+
+fire_only_once = yes
+
+ai_will_do = {
+  factor = 1
+}
+
+complete_effect = {
+add_stability = 0.20
+set_cosmetic_tag = TLH
+custom_effect_tooltip = core_land
+hidden_effect = {
+  788 = { add_core_of = ROOT }
+  898 = { add_core_of = ROOT }
+  375 = { add_core_of = ROOT }
+  897 = { add_core_of = ROOT }
+  789 = { add_core_of = ROOT }
+  790 = { add_core_of = ROOT }
+  374 = { add_core_of = ROOT }
+  833 = { add_core_of = ROOT }
+  832 = { add_core_of = ROOT }
+
+  }
+ }
+}
 }

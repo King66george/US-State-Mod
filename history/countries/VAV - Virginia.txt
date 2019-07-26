@@ -126,7 +126,7 @@ add_to_faction = AZA
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.5
 
 set_politics = {
 
