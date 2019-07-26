@@ -269,9 +269,6 @@ adjacency_rule
 {
 	name = "ST_LAWRENCE_CANAL"
 
-	icon = 7433
-	offset = { 2 0 -5 }
-
 	contested =
 	{
 		army = no
@@ -302,6 +299,133 @@ adjacency_rule
 	}
 
 	required_provinces = { 6778 598 3602 3605 6625 4270 4345 9601 7291 12149 7433 10320 4417 7345 }
+
+	icon = 12149
+	offset = { 2 0 0 }
+
+}
+
+#Lake Erie Canal
+adjacency_rule
+{
+	name = "LAKE_ERIE_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	required_provinces = { 6710 9724 9711 9667 }
+
+	icon = 6710
+	offset = { 2 0 0 }
+
+}
+
+#Lake Ontario Canal
+adjacency_rule
+{
+	name = "LAKE_ONTARIO_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	required_provinces = { 749 11654 }
+
+	icon = 749
+	offset = { 2 0 0 }
+
+
+}
+
+#Lake Superior Canal
+adjacency_rule
+{
+	name = "LAKE_SUPERIOR_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	required_provinces = { 5205 12582 }
+
+	icon = 5205
+	offset = { 2 0 0 }
 
 
 }
