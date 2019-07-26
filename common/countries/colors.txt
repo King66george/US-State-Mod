@@ -658,7 +658,7 @@ VTV = {
 	color_ui = { 30 150 34 }
 }
 
-VAV = { 
+VAV = {
 	color = rgb { 255 221 0 }
 	color_ui = rgb { 255 221 0 }
 }
@@ -791,7 +791,7 @@ SKS = {
 YTY = {
 	color = rgb { 0 148 255 }
 	color_ui = rgb { 87 160 255 }
-} 
+}
 
 ONO = {
 	color = rgb { 255 221 0 }
@@ -799,6 +799,11 @@ ONO = {
 }
 
 MAN = {
+	color = rgb { 255 120 71 }
+	color_ui = rgb { 255 120 71 }
+}
+
+INS = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
