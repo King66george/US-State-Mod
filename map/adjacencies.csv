@@ -1,5 +1,5 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Commen
-8642;13157;sea;4345;-1;-1;-1;-1;ST_LAWRENCE;newfoundland sea to lake erie
+8642;13157;sea;4345;-1;-1;-1;-1;ST_LAWRENCE_CANAL;St
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
 10141;1419;sea;5267;-1;-1;-1;-1;;Moluccas
