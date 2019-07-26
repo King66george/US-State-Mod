@@ -22,7 +22,7 @@ focus_tree = {
 	focus = {
 		id = KSK_bleeding_kansas
 		icon = GFX_focus_generic_provoke_border_clashes
-		x = 10
+		x = 16
 		y = 0
 
 		cost = 1
@@ -74,12 +74,12 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = {focus = KSK_bleeding_kansas}
 		mutually_exclusive { focus = KSK_communist1 focus = KSK_fascist1 }
-		x = -3
+		x = -8
 		y = 1
 
 		relative_position_id = KSK_bleeding_kansas
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -502,34 +502,18 @@ focus_tree = {
 
 					add_ideas = KSK_beacon
 
-					MOM = {
+					every_neighbor_country = {
+
 								add_timed_idea = {
 								idea = democratic_influence
-										days = 547
+										days = 600
 								}
 					}
-					NEN = {
-								add_timed_idea = {
-								idea = democratic_influence
-										days = 547
-								}
-					}
-					COC = {
-								add_timed_idea = {
-								idea = democratic_influence
-										days = 547
-								}
-					}
-					OKO = {
-								add_timed_idea = {
-								idea = democratic_influence
-										days = 547
-								}
-					}
+
 					TXT = {
 								add_timed_idea = {
 								idea = democratic_influence
-										days = 547
+										days = 600
 								}
 					}
 				}
@@ -649,17 +633,243 @@ focus_tree = {
 			icon = GFX_focus_rocketry
 			prerequisite = { focus = KSK_democratic6 }
 
-			x = 7
+			x = 8
 			y = 5
 
-			relative_positon_id = {KSK_democratic6}
+			relative_position_id = { KSK_democratic6 }
+
+			cost = 10
 
 			completion_reward = {
 				add_tech_bonus = {
-				name = rocketry_bonus
+				name = jet_rocketry_bonus
 				ahead_reduction = 2.0
 				uses = 2
 				category = rocketry
+				category = jet_technology
 			}
 		}
+}
+		focus = {
+				id = KSK_communist1
+				icon = GFX_goal_support_communism
+				prerequisite { focus = KSK_bleeding_kansas }
+
+				x = 0
+				y = 1
+
+				relative_position_id = KSK_bleeding_kansas
+
+				cost = 5
+
+				completion_reward = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.75
+				}
+				add_stability = -0.1
+				}
+		}
+
+		focus = {
+				id = KSK_communist2
+				icon = GFX_focus_chi_mission_to_the_us
+				prerequisite { focus = KSK_communist1 }
+
+				x = 0
+				y = 1
+
+				relative_position_id = KSK_communist1
+
+				cost = 10
+
+				completion_reward = {
+				add_stability = -0.15
+				add_ideas = { KSK_integration }
+				}
+		}
+
+		focus = {
+				id = KSK_communist3
+				icon = GFX_focus_generic_military_mission
+				prerequisite = { focus = KSK_communist2 }
+
+				x = 0
+				y = 1
+
+				relative_position_id = KSK_communist2
+
+				cost = 10
+
+				completion_reward = {
+				add_ideas = { KSK_commissars }
+				}
+		}
+
+		focus = {
+				id = KSK_communist4
+				icon = GFX_goal_generic_fortify_city
+				prerequisite = { focus = KSK_communist3 }
+
+				x = 0
+				y = 1
+
+				relative_position_id = KSK_communist3
+
+				cost = 10
+
+				available = { has_defensive_war = yes }
+
+				completion_reward = {
+				add_ideas = {KSK_defense}
+				add_political_power = 100
+				}
+		}
+
+		focus = {
+				id = KSK_communist5
+				icon = GFX_focus_YUG_pan_slavic_congress
+				prerequisite = {focus = KSK_communist1 }
+
+				x = 2
+				y = 1
+
+				cost = 10
+
+				relative_position_id = KSK_communist1
+
+				completion_reward = {
+					add_timed_idea = {
+						idea = KSK_five_year_plan
+						days = 1825
+						}
+				}
+		}
+
+		focus = {
+				id = KSK_communist6
+				icon = GFX_focus_eng_crush_the_dream
+				prerequisite = {focus = KSK_communist5 }
+
+				x = 0
+				y = 1
+
+				relative_position_id = KSK_communist5
+
+				cost = 10
+
+			completion_reward = {
+					383 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+							}
+					}
+					829 = {
+						add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+							}
+					}
+				}
+		}
+
+		focus = {
+					id = KSK_communist7
+					icon = GFX_focus_chi_mission_to_the_soviet_union
+					prerequisite = { focus = KSK_communist1 }
+
+					x = -2
+					y = 1
+
+					relative_position_id = KSK_communist1
+
+					cost = 10
+
+					ai_will_do = { factor = 1}
+
+					completion_reward = {
+						SOV = {
+								add_opinion_modifier = {
+								target = KSK
+								modifier = large_increase
+								}
+						}
+
+					}
+		}
+
+		focus = {
+					id = KSK_communist8
+					icon = GFX_focus_generic_join_comintern
+					prerequisite = { focus = KSK_communist7 }
+
+					mutually_exclusive = { focus = KSK_communist9 }
+
+					x = -2
+					y = 1
+
+					relative_position_id = KSK_communist7
+
+					cost = 10
+
+					completion_reward = {
+							SOV = {
+									add_to_faction = KSK
+							}
+					}
+		}
+
+		focus = {
+					id = KSK_communist9
+					icon = GFX_focus_prc_agrarian_socialism
+					prerequisite = { focus = KSK_communist7 }
+					mutually_exclusive = { focus = KSK_communist8 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_communist7
+
+					cost = 10
+
+					completion_reward = {
+							set_rule = {
+							can_create_factions = yes
+							}
+							create_faction = "Sunflower Internationale"
+					}
+		}
+
+		focus = {
+					id = KSK_communist10
+					icon = GFX_goal_generic_soviet_construction
+					prerequisite = { focus = KSK_communist6 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_communist6
+
+					cost = 10
+
+					available = { }
+
+					completion_reward = {
+							add_political_power = 200
+							add_ideas = { KSK_finished_five_year_plan }
+							remove_ideas = { KSK_five_year_plan }
+					}
+		}
+
+
+
 }

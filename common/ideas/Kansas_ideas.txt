@@ -1,7 +1,7 @@
 ideas = {
     #country
     country = {
-        KSK_realpolitik = {
+    KSK_realpolitik = {
 
             allowed = {
                 always = no
@@ -18,17 +18,16 @@ ideas = {
                 political_advisor_cost_factor = -0.25
             }
         }
-    }
 
-    country = {
-        KSK_beacon = {
+
+    KSK_beacon = {
 
             allowed = {
                 always = no
             }
 
             allowed_civil_war = {
-                always = yes
+                always = no
             }
 
             removal_cost = -1
@@ -40,5 +39,91 @@ ideas = {
                 production_speed_nuclear_reactor_factor = 0.15
             }
         }
+
+
+
+      KSK_integration = {
+                allowed = {
+                    always = no
+                }
+
+                allowed_civil_war = {
+                    always = no
+                }
+
+                removal_cost = -1
+
+                modifier = {
+                conscription_factor = 0.30
+                conscription = 0.05
+                }
     }
+
+      KSK_commissars = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+            army_morale_factor = 0.10
+            land_reinforce_rate = 0.05
+            }
+      }
+
+      KSK_defense = {
+          allowed = {
+              always = no
+          }
+
+          allowed_civil_war = {
+                always = no
+          }
+
+          removal_cost = -1
+
+          modifier = {
+              army_core_defence_factor = 0.25
+              partisan_effect = 0.15
+          }
+      }
+
+      KSK_five_year_plan = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                  always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+            production_speed_buildings_factor = 0.2
+            }
+      }
+
+      KSK_finished_five_year_plan = {
+
+          allowed = {
+              always = no
+          }
+
+          allowed_civil_war = {
+                always = no
+          }
+
+          removal_cost = -1
+
+          modifier = {
+              production_factory_max_efficiency_factor = 0.15
+              production_factory_efficiency_gain_factor = 0.10
+          }
+      }
 }
