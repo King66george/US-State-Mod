@@ -119,7 +119,7 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-	
+
 }
 set_popularities = {
 	democratic = 98
@@ -152,15 +152,64 @@ create_country_leader = {
 	}
 }
 create_field_marshal = {
-	name = "Dwight D. Eisenhower"
-	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-	skill = 5
-	id = 11414
+	name = "Alexander Patch"
+	picture = "Portrait_TXT_Alexander_Patch.dds"
+	traits = { infantry_officer inspirational_leader }
+	skill = 3
 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Chester W. Nimitz"
+	picture = "Portrait_TXT_Chester_W_Nimitz.dds"
+	traits = { navy_career_officer crisis_magician }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+  maneuvering_skill = 3
+	coordination_skill = 5
+}
+create_corps_commander = {
+	name = "James Earl Rudder"
+	picture = "Portrait_TXT_James_Earl_Rudder.dds"
+	traits = { ambusher scavenger }
+	skill = 3
+	attack_skill = 2
 	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 5
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+name = "Lucian Truscott"
+picture = "Portrait_TXT_Lucian_Truscott.dds"
+traits = { trait_reckless }
+skill = 2
+attack_skill = 4
+defense_skill = 2
+planning_skill = 3
+logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Walton Walker"
+	picture = "Portrait_TXT_Walton_Walker.dds"
+	traits = { panzer_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "William Hood Simpson"
+	picture = "Portrait_TXT_William_Hood_Simpson.dds"
+	traits = { ranger }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
 }
 ### Ship Variants ###
 
