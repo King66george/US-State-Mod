@@ -21,7 +21,7 @@ division_template = {
 division_template = {
 	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
 
-	regiments = {						
+	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
@@ -67,29 +67,106 @@ division_template = {
 		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   
+		engineer = { x = 0 y = 0 }
 	}
 	priority = 0
 }
 units = {
 	### 1st Army -- note: Armies only paper organizations in 1936 ###
 	# I Army Corps #
-	division= {			
-		name = "1st Hawaiian National Guard"		
+	division= {
+		name = "1st Hawaiian National Guard"
 		location = 4180
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division = {			
-		name = "Hawaiian Division"		
+	division = {
+		name = "Hawaiian Division"
 		location = 4180
 		division_template = "National Guard Division"		# older equipment, less training than NG division
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	}
-	}
-	
+
+	fleet = {
+	name = "Strike Force Alpha"
+	naval_base = 10048 # HIH
+	 task_force = {
+	 name = "Strike Force Alpha"
+	 location = 10048 # HIH
+				ship = { name = "USS 1" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = HIH version_name = "New Mexico Class" } } }
+				ship = { name = "USS 1a" definition = battleship equipment = { battleship_1 = { amount = 1 owner = HIH version_name = "New Mexico Class" } } }
+				ship = { name = "USS 1b" definition = battleship equipment = { battleship_1 = { amount = 1 owner = HIH version_name = "New Mexico Class" } } }
+				ship = { name = "USS 2" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+				ship = { name = "USS 3" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+				ship = { name = "USS 4" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+				ship = { name = "USS 2a" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+				ship = { name = "USS 3b" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+				ship = { name = "USS 4c" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+				ship = { name = "USS 5" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH  } } }
+				ship = { name = "USS 6" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 7" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 8" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 9" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 10" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 31" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH  } } }
+				ship = { name = "USS 32" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 33" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 34" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 36" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 37" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 38" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH  } } }
+				ship = { name = "USS 39" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 40" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 41" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 42" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 43" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 13" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 14" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 15" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 16" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 17" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 18" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 19" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 20" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 21" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 22" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 23" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 24" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 25" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 26" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 27" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 28" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 29" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS 30" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HIH } } }
+
+				}
+
+			task_force = {
+			name = "Strike Force Bravo"
+			location = 10048 # HIH
+				ship = { name = "USS A" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS B" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS C" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS D" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS E" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS F" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS G" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS H" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS I" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS J" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS K" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS L" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS M" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS N" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				ship = { name = "USS O" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
+				}
+
+
+			}
+		}

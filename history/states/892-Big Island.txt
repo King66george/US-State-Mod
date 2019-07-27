@@ -9,10 +9,14 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			arms_factory = 1
+			dockyard = 4
+			10048 = {
+				naval_base = 8
+			}
 		}
 		add_core_of = HIH
 	}
 	provinces={
-		10048 12021 
+		10048 12021
 	}
 }
