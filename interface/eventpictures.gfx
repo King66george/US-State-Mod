@@ -2089,7 +2089,6 @@ spriteTypes = {
 		name = "GFX_news_event_eng_imperial_federation"
 		texturefile = "gfx/event_pictures/news_event_eng_imperial_federation.dds"
 	}
-
 	spriteType = {
 		name = "GFX_news_event_eng_imperial_federation_india"
 		texturefile = "gfx/event_pictures/news_event_eng_imperial_federation_india.dds"
@@ -2108,6 +2107,10 @@ spriteTypes = {
 	spritetype = {
 		name = "GFX_report_event_kansas_city.dds"
 		texturefile = "gfx/event_pictures/report_event_kansas_city.dds"
+	}
+	spritetype = {
+		name = "GFX_report_event_police_join.dds"
+		texturefile = "gfx/event_pictures/report_event_police_join.dds"
 	}
 
 }

@@ -261,7 +261,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				831 = {
+				random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
@@ -269,7 +269,7 @@ focus_tree = {
 				instant_build = yes
 					}
 				}
-				830 = {
+				random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
@@ -654,6 +654,7 @@ focus_tree = {
 				id = KSK_communist1
 				icon = GFX_goal_support_communism
 				prerequisite { focus = KSK_bleeding_kansas }
+				mutually_exclusive = { focus = KSK_democratic1 focus = KSK_fascist1 }
 
 				x = 0
 				y = 1
@@ -859,7 +860,7 @@ focus_tree = {
 
 					relative_position_id = KSK_communist6
 
-					cost = 10
+					cost = 17
 
 					available = { }
 
@@ -870,6 +871,232 @@ focus_tree = {
 					}
 		}
 
+		focus = {
+					id = KSK_fascist1
+					icon = GFX_goal_support_fascism
+					prerequisite = { focus = KSK_bleeding_kansas }
+					mutually_exclusive = { focus = KSK_democratic1 focus = KSK_communist1 }
 
+					x = 6
+					y = 1
+
+					relative_position_id = KSK_bleeding_kansas
+
+					cost = 5
+
+					completion_reward = {
+					set_politics = {
+							ruling_party = fascism
+							elections_allowed = no
+					}
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.75
+					}
+					add_stability = -0.1
+
+					create_country_leader = {
+									name = "Rev. Gerald Burton Winrod"
+									desc = POLITICS_KSK_GERALD_WINROD_DESC
+									picture = "Portrait_KSK_Gerald_Winrod.dds"
+									expire = "1965.1.1"
+									ideology = falangism
+									traits = { religious_fundamentalist }
+					}
+					}
+
+
+		}
+
+		focus = {
+					id = KSK_fascist2
+					icon = GFX_focus_chi_army_reform
+					prerequisite = { focus = KSK_fascist1 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist1
+
+					cost = 10
+
+					completion_reward = {
+								army_experience = 25
+								add_ideas = KSK_legionaires_integrated
+					}
+		}
+
+		focus = {
+					id = KSK_fascist3
+					icon = GFX_focus_generic_strike_at_democracy1
+					prerequisite = { focus = KSK_fascist2 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist2
+
+					cost = 10
+
+					completion_reward = {
+							country_event = kansas.4
+					}
+		}
+
+		focus = {
+					id = KSK_fascist4
+					icon = GFX_focus_usa_recruit_the_free_corps
+					prerequisite = { focus = KSK_fascist3 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist3
+
+					cost = 10
+
+					completion_reward = {
+								add_ideas = { KSK_boy_scouts }
+					}
+
+		}
+
+		focus = {
+					id = KSK_fascist5
+					icon = GFX_focus_ger_oppose_hitler
+					prerequisite = { focus = KSK_fascist4 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist4
+
+					cost = 10
+
+					completion_reward = {
+								add_ideas = { KSK_bund }
+					}
+		}
+
+		focus = {
+					id = KSK_fascist6
+					icon = GFX_focus_generic_treaty
+					prerequisite = { focus = KSK_fascist1 }
+
+					x = -2
+					y = 1
+
+					relative_position_id = KSK_fascist1
+
+					cost = 10
+
+					completion_reward = {
+								add_ideas = { KSK_war_readiness }
+					}
+		}
+
+		focus = {
+					id = KSK_fascist7
+					icon = GFX_goal_generic_intelligence_exchange
+					prerequisite = { focus = KSK_fascist6 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist6
+
+					cost = 10
+
+					completion_reward = {
+								add_offsite_building = {
+										type = industrial_complex
+										level = 3
+								}
+								add_ideas = { KSK_corporations }
+					}
+		}
+
+		focus = {
+					id = KSK_fascist8
+					icon = GFX_goal_generic_construct_mil_factory
+					prerequisite = { focus = KSK_fascist7 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist7
+
+					cost = 10
+
+					completion_reward = {
+						random_owned_controlled_state = {
+								add_extra_state_shared_building_slots = 3
+								add_building_construction = {
+													type = arms_factory
+													level = 3
+													instant_build = yes
+								}
+						}
+						random_owned_controlled_state = {
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+												type = arms_factory
+												level = 2
+												instant_build = yes
+								}
+					}
+				}
+		}
+
+		focus = {
+					id = KSK_fascist9
+					icon = GFX_goal_generic_propaganda
+					prerequisite = { focus = KSK_fascist1 }
+
+					x = 2
+					y = 1
+
+					relative_position_id = KSK_fascist1
+
+					cost = 10
+
+					completion_reward = {}
+		}
+
+		focus = {
+					id = KSK_fascist10
+					icon = GFX_focus_generic_support_the_left_right
+					prerequisite = { focus = KSK_fascist9 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist9
+
+					cost = 10
+
+					completion_reward = {
+							add_ideas = KSK_spiritual_awakening
+					}
+		}
+		focus = {
+					id = KSK_fascist11
+					icon = GFX_focus_mex_restore_the_army_of_christ
+					prerequisite = { focus = KSK_fascist10 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_fascist10
+
+					cost = 10
+
+					completion_reward = {
+							add_war_support = 0.1
+							set_rule = { can_create_factions = yes }
+							set_rule = { can_use_kamikaze_pilots = yes }
+							add_ideas = { KSK_spiritual_fanaticism }
+					}
+		}
 
 }
