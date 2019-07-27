@@ -19,7 +19,7 @@ state={
 		}
 		add_core_of = NYN
 		victory_points = {
-			11722 30
+			9693 30
 		}
 
 	}
