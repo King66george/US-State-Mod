@@ -380,7 +380,7 @@ adjacency_rule
 		trade = yes
 	}
 
-	required_provinces = { 749 11654 }
+	required_provinces = { 749 }
 
 	icon = 749
 	offset = { 2 0 0 }
@@ -464,7 +464,7 @@ adjacency_rule
 		trade = yes
 	}
 
-	required_provinces = { 3878 6911 3806 11722 9721 9708 3747 3733 734 11654 3894 9774 9673 9693 1436 1436 3702 }
+	required_provinces = { 3878 6911 3806 11722 9721 9708 3747 3733 734 11654 3894 9774 9673 9693 1436 3702 }
 
 	icon = 1436
 	offset = { 2 0 0 }
