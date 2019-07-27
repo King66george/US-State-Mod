@@ -4154,7 +4154,7 @@ spriteTypes = {
 		}
 		spriteType = {
 		name = "GFX_idea_KSK_beacon"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_drift_bonus.dds"
+		texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
 		}
 		spriteType = {
 		name = "GFX_idea_KSK_integration"
@@ -4162,7 +4162,7 @@ spriteTypes = {
 		}
 		spriteType = {
 		name = "GFX_idea_KSK_commissars"
-		texturefile = "gfx/interface/ideas/idea_nkvd_2.dds"
+		texturefile = "gfx/interface/ideas/nkvd_2.dds"
 		}
 		spriteType = {
 		name = "GFX_idea_KSK_defense"
@@ -4172,8 +4172,41 @@ spriteTypes = {
 		name = "GFX_idea_KSK_five_year_plan"
 		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
 		}
+		spriteType = {
 		name = "GFX_idea_KSK_finished_five_year_plan"
 		texturefile = "gfx/interface/ideas/idea_eng_spirit_of_the_industrial_revolution.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_legionaires_integrated"
+		texturefile = "gfx/interface/ideas/generic_infantry_bonus.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_police"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_boy_scouts"
+		texturefile = "gfx/interface/ideas/idea_generic_reserve_divisions.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_bund"
+		texturefile = "gfx/interface/ideas/idea_general_staff.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_war_readiness"
+		texturefile = "gfx/interface/ideas/idea_generic_central_management.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_corporations"
+		texturefile = "gfx/interface/ideas/idea_generic_foreign_capital.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_spiritual_awakening"
+		texturefile = "gfx/interface/ideas/idea_mex_church_power_4.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_KSK_spiritual_fanaticism"
+		texturefile = "gfx/interface/ideas/idea_mex_church_power_5.dds"
 		}
 
 ##No Florida Mods##

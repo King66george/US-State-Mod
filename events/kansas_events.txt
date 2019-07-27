@@ -97,3 +97,27 @@ country_event = {
 		}
 
 	}
+
+		country_event = {
+			id = kansas.4
+			title = kansas.4.t
+			desc = kansas.4.d
+			picture = GFX_report_event_police_join.dds
+
+			is_triggered_only = yes
+
+
+
+
+			option = {
+				name = kansas.4.a
+				add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 3000
+							producer = KSK
+							}
+				add_ideas = { KSK_police }
+				add_manpower = 60000
+
+			}
+		}
