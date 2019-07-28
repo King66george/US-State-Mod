@@ -147,6 +147,29 @@ create_field_marshal = {
 	planning_skill = 5
 	logistics_skill = 5
 }
+
+create_corps_commander = {
+	name = "Clarence R. Huebner"
+	picture = "Portrait_KSK_Clarence_R_Huebner.dds"
+	traits = { infantry_officer harsh_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Adna R. Chaffee"
+	picture = "Portrait_KSK_Adna_R_Chaffee.dds"
+	traits = { panzer_leader cavalry_officer trait_reckless }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
 1939.1.1 = {
 	set_stability = 0.9
 

@@ -1099,4 +1099,364 @@ focus_tree = {
 					}
 		}
 
+################################################################################
+##################################### ARMY #####################################
+
+		focus = {
+					id = KSK_eisenhower1
+					icon = GFX_focus_generic_little_entente
+					mutually_exclusive = { focus = KSK_chaffee1 }
+
+					x = 28
+					y = 0
+
+					cost = 10
+
+					completion_reward = {
+								add_tech_bonus = {
+											name = land_doctrine
+											bonus = 1.0
+											uses = 1
+											category = cat_superior_firepower
+								}
+								army_experience = 40
+					}
+		}
+
+		focus = {
+					id = KSK_eisenhower2
+					icon = GFX_goal_generic_small_arms
+					prerequisite = { focus = KSK_eisenhower1 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_eisenhower1
+
+					cost = 10
+
+					completion_reward = {
+								add_tech_bonus = {
+											name = infantry_weapons_bonus
+											bonus = 0.6
+											ahead_reduction = 2
+											uses = 1
+											technology = improved_infantry_weapons
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_eisenhower3
+					icon = GFX_goal_generic_army_artillery2
+					prerequisite = { focus = KSK_eisenhower1 }
+
+					x = -2
+					y = 1
+
+					relative_position_id = KSK_eisenhower1
+
+					cost = 10
+
+					completion_reward = {
+								add_tech_bonus = {
+										name = infantry_artillery_bonus
+										bonus = 0.5
+										uses = 2
+										category = artillery
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_eisenhower4
+					icon = GFX_goal_generic_army_artillery
+					prerequisite = { focus = KSK_eisenhower3 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_eisenhower3
+
+					cost = 10
+
+					completion_reward = {
+								add_tech_bonus = {
+										name = support_equipment
+										bonus = 0.75
+										uses = 2
+										category = support_tech
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_eisenhower5
+					icon = GFX_goal_generic_axis_build_infantry
+					prerequisite = { focus = KSK_eisenhower2 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_eisenhower2
+
+					cost = 10
+
+					completion_reward = {
+								add_tech_bonus = {
+											name = infantry_weapons_bonus
+											bonus = 0.5
+											uses = 2
+											technology = infantry_weapons
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_eisenhower6
+					icon = GFX_focus_secret_rearmament
+					prerequisite = { focus = KSK_eisenhower4 }
+					prerequisite = { focus = KSK_eisenhower5 }
+
+					x = 1
+					y = 1
+
+					relative_position_id = KSK_eisenhower4
+
+					cost = 10
+
+					completion_reward = {
+								add_ideas = { KSK_eisenhowerbonus }
+					}
+		}
+
+		focus = {
+					id = KSK_eisenhower7
+					icon = GFX_focus_generic_little_entente
+					prerequisite = { focus = KSK_eisenhower6 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_eisenhower6
+
+					cost = 10
+
+					completion_reward = {
+								remove_ideas = { KSK_eisenhowerbonus }
+								add_ideas = { KSK_eisenhowerbonus2 }
+					}
+		}
+
+		focus = {
+					id = KSK_chaffee1
+					icon = GFX_focus_generic_license_production
+					mutually_exclusive = { focus = KSK_eisenhower1 }
+
+					x = 30
+					y = 0
+
+					cost = 10
+
+					completion_reward = {
+								add_tech_bonus = {
+											name = land_doctrine
+											bonus = 1.0
+											uses = 1
+											category = cat_mobile_warfare
+								}
+								army_experience = 40
+					}
+		}
+
+		focus = {
+					id = KSK_chaffee2
+					icon = GFX_goal_generic_army_motorized
+					prerequisite = { focus = KSK_chaffee1 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_chaffee1
+
+					cost = 10
+
+					completion_reward = {
+									add_tech_bonus = {
+												name = motorized_bonus
+												bonus = 3.0
+												uses = 1
+												technology = motorised_infantry
+									}
+					}
+		}
+
+		focus = {
+					id = KSK_chaffee3
+					icon = GFX_goal_generic_production2
+					prerequisite = { focus = KSK_chaffee2 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_chaffee2
+
+					cost = 10
+
+					completion_reward = {
+									add_tech_bonus = {
+												name = mechanized_bonus
+												bonus = 0.25
+												ahead_reduction = 1.0
+												technology = mechanised_infantry
+									}
+					}
+		}
+		focus = {
+					id = KSK_chaffee4
+					icon = GFX_goal_generic_build_tank
+					prerequisite = { focus = KSK_chaffee1 }
+
+					x = 2
+					y = 1
+
+					relative_position_id = KSK_chaffee1
+
+					cost = 10
+
+					completion_reward = {
+									add_tech_bonus = {
+												name = armor_bonus
+												bonus = 1.0
+												category = armor
+									}
+					}
+		}
+		focus = {
+					id = KSK_chaffee5
+					icon = GFX_goal_generic_army_tanks
+					prerequisite = { focus = KSK_chaffee4 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_chaffee4
+
+					cost = 10
+
+					completion_reward = {
+								add_tech_bonus = {
+											name = armor_bonus
+											bonus = 1.0
+											ahead_reduction = 2.0
+											category = cat_light_armor
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_chaffee6
+					icon = GFX_focus_generic_tank_production
+					prerequisite = { focus = KSK_chaffee5 }
+					prerequisite = { focus = KSK_chaffee3 }
+
+					x = 1
+					y = 1
+
+					relative_position_id = KSK_chaffee3
+
+					cost = 10
+
+					completion_reward = {
+								add_ideas = { KSK_chaffeebonus}
+					}
+		}
+
+		focus = {
+					id = KSK_chaffee7
+					icon = GFX_focus_generic_army_tanks2
+					prerequisite = { focus = KSK_chaffee6 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_chaffee6
+
+					cost = 10
+
+					completion_reward = {
+								remove_ideas = { KSK_chaffeebonus }
+								add_ideas = { KSK_chaffeebonus2 }
+					}
+		}
+
+		focus = {
+					id = KSK_army1
+					icon = GFX_goal_generic_special_forces
+					prerequisite = { focus = KSK_eisenhower7 }
+					prerequisite = { focus = KSK_chaffee7 }
+
+					x = 2.5
+					y = 1
+
+					relative_position_id = KSK_eisenhower7
+
+					cost = 10
+
+					completion_reward = {
+									add_tech_bonus = {
+												name = special_bonus
+												bonus = 0.75
+												uses = 2
+												technology = tech_mountaineers
+												technology = tech_mountaineers2
+									}
+					}
+		}
+
+		focus = {
+					id = KSK_army2
+					icon = GFX_goal_generic_army_doctrines
+					prerequisite = { focus = KSK_army1 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_army1
+
+					cost = 10
+
+					completion_reward = {
+									add_tech_bonus = {
+												name = land_doc_bonus
+												bonus = 1.0
+												uses = 2
+												category = land_doctrine
+									}
+					}
+		}
+
+		focus = {
+					id = KSK_army3
+					icon = GFX_focus_wonderweapons
+					prerequisite = { focus = KSK_army2 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_army2
+
+					cost = 10
+
+					completion_reward = {
+									add_tech_bonus = {
+												name = nuclear_bonus
+												ahead_reduction = 3
+												bonus = 0.10
+												uses = 1
+												category = nuclear
+									}
+		}
+
+
 }

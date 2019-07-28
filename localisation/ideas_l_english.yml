@@ -2665,3 +2665,7 @@
  KSK_corporations:0 "Corporate Tax Breaks"
  KSK_spiritual_awakening:0 "Spiritual Awakening"
  KSK_spiritual_fanaticism:0 "Spritiual Fanaticism"
+ KSK_eisenhowerbonus:0 "Standardized Arms Production"
+ KSK_eisenhowerbonus2:0 "Conventional Army"
+ KSK_chaffeebonus:0 "Tank Assembly Lines"
+ KSK_chaffeebonus2:0 "Armored Blitzkrieg"

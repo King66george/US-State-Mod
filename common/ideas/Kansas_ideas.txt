@@ -273,5 +273,104 @@ ideas = {
           }
       }
 
+      KSK_eisenhowerbonus = {
+
+          allowed = {
+              always = no
+          }
+
+          allowed_civil_war = {
+              always = no
+          }
+
+          picture = idea_mex_politicised_army_2
+
+          removal_cost = -1
+
+          equipment_bonus = {
+              infantry_equipment = {
+                      build_cost_ic = -0.1 instant = yes
+              }
+              artillery = {
+                      build_cost_ic = -0.1 instant = yes
+
+              }
+          }
+      }
+
+      KSK_eisenhowerbonus2 = {
+
+          allowed = {
+              always = no
+          }
+
+          allowed_civil_war = {
+              always = no
+          }
+
+          picture = generic_infantry_bonus
+
+          removal_cost = -1
+
+          modifier = {
+              attrition = -0.1
+              experience_gain_army_factor = 0.05
+          }
+          equipment_bonus = {
+              infantry_equipment = {
+                      build_cost_ic = -0.1 instant = yes
+                      }
+              artillery = {
+                      build_cost_ic = -0.1 instant = yes
+                      }
+          }
+      }
+
+      KSK_chaffeebonus = {
+
+          allowed = {
+              always = no
+          }
+
+          allowed_civil_war = {
+              always = no
+          }
+
+          picture = FRA_factory_strikes
+
+          removal_cost = -1
+
+          equipment_bonus = {
+                light_tank_equipment = {
+                    build_cost_ic = -0.10 instant = yes
+                }
+          }
+      }
+
+      KSK_chaffeebonus2 = {
+
+          allowed = {
+              always = no
+          }
+
+          allowed_civil_war = {
+              always = no
+          }
+
+          picture = generic_acquire_tanks
+
+          removal_cost = -1
+
+          equipment_bonus = {
+                light_tank_equipment = {
+                    build_cost_ic = -0.10 instant = yes
+                }
+          }
+          modifier = {
+                army_armor_speed_factor = 0.15
+                army_armor_attack_factor = 0.05
+          }
+      }
+
   }
 }
