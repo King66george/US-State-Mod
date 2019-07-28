@@ -1051,12 +1051,17 @@
 							factor = 1
 						}
 
+            completion_reward = {
+              add_war_support = 0.15
+
+            }
+
 				}
 
         focus = {
             id = VAV_reclaimwestvirginia
-        icon = GFX_goal_generic_attack_allies
-        prerequisite = { focus = VAV_calltowar }
+            icon = GFX_goal_generic_forceful_treaty
+            prerequisite = { focus = VAV_calltowar }
 
         x = 12
         y = 8
@@ -1363,7 +1368,6 @@
 			}
 
 		completion_reward = {
-		add_ideas = FRA_disjointed_government
 		add_ideas = militarism_focus
 		}
 	}
@@ -1384,7 +1388,7 @@
 			}
 
 		completion_reward = {
-		add_ideas = FRA_disjointed_government
+		add_stability = 0.15
 		}
 	}
 
@@ -1701,6 +1705,26 @@
         ai_will_do = {
           factor = 1
         }
+    }
+
+    focus = {
+        id = VAV_pentagon
+        icon = GFX_focus_usa_build_the_pentagon
+        prerequisite = { focus = VAV_demo }
+
+        x = 21
+        y = 4
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 1
+        }
+
+        completion_reward = {
+          add_ideas = { VAV_idea_pentagon }
+        }
+
     }
 
 #Incomplete
