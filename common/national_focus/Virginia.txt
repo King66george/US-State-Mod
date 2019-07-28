@@ -1458,6 +1458,7 @@
 
 			completion_reward = {
 			remove_ideas = FRA_disjointed_government
+      add_stability = .10
 			}
 	}
 
@@ -1477,6 +1478,7 @@
 
 			completion_reward = {
 			remove_ideas = FRA_disjointed_government
+      add_stability = .10
 			}
 	}
 
@@ -1496,6 +1498,7 @@
 
 			completion_reward = {
 			remove_ideas = FRA_disjointed_government
+      add_stability = .10
 			}
 	}
 
@@ -1565,7 +1568,7 @@
 			}
 
 			completion_reward = {
-				add_ideas = limited_conscription
+				add_ideas = extensive_conscription
 				}
 	}
 
@@ -1617,8 +1620,7 @@
 		focus = {
 			id = VAV_political_commissars2
 			icon = GFX_goal_generic_war_with_comintern
-			prerequisite = { focus = VAV_sovietrelation  }
-			prerequisite = { focus = VAV_powertoourleader focus = VAV_sovietmobilization }
+			prerequisite = { focus = VAV_powertoourleader focus = VAV_sovietmobilization focus = VAV_sovietrelation }
 
 			x = 16
 			y = 6
@@ -1650,6 +1652,13 @@
 				ai_will_do = {
 					factor = 1
 				}
+
+        completion_reward = {
+          add_political_power = 100
+          add_stability = .15
+
+
+        }
 		}
 
 		focus = {
@@ -1666,7 +1675,33 @@
 						factor = 1
 					}
 
+          completion_reward = {
+            add_political_power = 200
+            GER = {
+            add_opinion_modifier = {
+              target = ROOT
+              modifier = large_increase
+            }
+            }
+
+          }
+
 		}
+
+    focus = {
+        id = VAV_mobalize
+        icon = GFX_goal_generic_improve_relations
+        prerequisite = { focus = VAV_stabalizegovernment }
+
+        x = 11
+        y = 5
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 1
+        }
+    }
 
 #Incomplete
 			focus = {

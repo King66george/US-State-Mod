@@ -11,9 +11,11 @@ state={
 		add_core_of = NVN
 
 	}
-
+	victory_points = {
+		4607 30
+	}
 	provinces={
-		4607 4736 10422 12134 
+		4607 4736 10422 12134
 	}
 	manpower=465448
 	buildings_max_level_factor=1.000
