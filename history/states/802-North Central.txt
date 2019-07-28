@@ -13,13 +13,13 @@ state={
 		}
 		add_core_of = COC
 		victory_points = {
-			1827 5 
+			1827 5
 		}
 
 	}
 
 	provinces={
-		1827 3869 10588 12627 
+		1827 10588 1809 12570
 	}
 
 	buildings_max_level_factor=1.000
