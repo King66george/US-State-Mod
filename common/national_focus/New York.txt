@@ -394,30 +394,12 @@ focus = {
                                                   }
 
 
-                                                  
 
 
 
 
-                                               focus = {
-                                                id = NYN_anewmilitary
-                                                icon = GFX_focus_generic_military_mission
-                                                prerequisite = { focus = NYN_fascistfunding}
-                                                cost = 10
-                                                x = 28
-                                                y = 4
-                                                available = {
-                                                has_government = fascism
-                                                }
 
-                                                completion_reward = {
-                                                add_manpower = 25000
-                                                add_ideas = military_youth_focus
-                                                }
-
-
-                                              }
-
+                                              
 
 
 
