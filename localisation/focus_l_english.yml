@@ -3045,6 +3045,12 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  WYW_economicfocus1_desc:0 "Wyoming hasn't been an actual state for a long time, a hidden government secret, but no more shall Wyoming be called a "Unloaded minecraft chunk" We shall rise!"
  VAV_pentagon:0 "Build The Pentagon"
  VAV_mobalize:0 "Mobilize The Army"
+ NYN_fascistfunding:0 "An Opportunity?"
+ NYN_fascistfunding_desc:0 "We've been presented an opportunity to overthrow the government."
+ NYN_anewmilitary:0 "New York Christian Army"
+ NYN_anewmilitary_desc:0 "As devout followers of Christ, it would only make sense to incorporate the religion into our army."
+
+
 ################################################################################################################################################################
 ################################################################################################################################################################
 ################################################################################################################################################################
