@@ -2669,3 +2669,5 @@
  KSK_eisenhowerbonus2:0 "Conventional Army"
  KSK_chaffeebonus:0 "Tank Assembly Lines"
  KSK_chaffeebonus2:0 "Armored Blitzkrieg"
+ KSK_fighterbonus:0 "Increased Fighter Production"
+ KSK_fighterbonus2:0 "Increased Bomber Production"
