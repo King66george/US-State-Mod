@@ -19,7 +19,7 @@ ideas = {
 			can_create_factions = yes
     }
     modifier = {
-      ai_get_ally_desire_factor = 30
+      ai_get_ally_desire_factor = 10
       ai_focus_aggressive_factor = 2
       ai_join_ally_desire_factor = -10
       ai_call_ally_desire_factor = -50
