@@ -1718,5 +1718,210 @@ focus_tree = {
 					}
 		}
 
+		focus = {
+					id = KSK_conquest1
+					icon = GFX_goal_generic_territory_or_war
+
+					available = { has_completed_focus = KSK_bleeding_kansas }
+
+					x = 45
+					y = 0
+
+					cost = 15
+
+					completion_reward = {
+								add_political_power = 200
+								add_war_support = 0.10
+								add_ideas = { KSK_war }
+					}
+		}
+
+		focus = {
+					id = KSK_conquest2
+					icon = GFX_goal_generic_construct_military
+					prerequisite = { focus = KSK_conquest1 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_conquest1
+
+					cost = 10
+
+					completion_reward = {
+							831 = {
+									add_building_construction = {
+											type = bunker
+											level = 2
+											instant_build = yes
+											province = {
+													all_provinces = yes
+													limit_to_border = yes
+										}
+								}
+						}
+						902 = {
+								add_building_construction = {
+										type = bunker
+										province = 7834
+										level = 2
+										instant_build = yes
+										}
+								}
+						830 = {
+								add_building_construction = {
+										type = bunker
+										level = 2
+										instant_build = yes
+										province = {
+												all_provinces = yes
+												limit_to_border = yes
+										}
+							}
+					}
+
+						896 = {
+								add_building_construction = {
+										type = bunker
+										level = 2
+										instant_build = yes
+										province = {
+												all_provinces = yes
+												limit_to_border = yes
+										}
+							}
+					}
+
+				}
+		}
+
+		focus = {
+					id = KSK_conquest3
+					icon = GFX_goal_generic_attack_allies
+					prerequisite = { focus = KSK_conquest2 }
+
+					x = -1
+					y = 1
+
+					relative_position_id = KSK_conquest2
+
+					cost = 10
+
+					completion_reward = {
+								add_state_claim = 903
+								create_wargoal = {
+										type = annex_everything
+										target = MOM
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_conquest4
+					icon = GFX_goal_generic_occupy_states_ongoing_war
+					prerequisite = { focus = KSK_conquest2 }
+
+					x = 1
+					y = 1
+
+					relative_position_id = KSK_conquest2
+
+					cost = 10
+
+					completion_reward = {
+								add_state_claim = 802
+								add_state_claim = 801
+								add_state_claim = 382
+								create_wargoal = {
+										type = annex_everything
+										target = COC
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_conquest5
+					icon = GFX_goal_generic_major_war
+					prerequisite = { focus = KSK_conquest3 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_conquest3
+
+					cost = 10
+
+					completion_reward = {
+								create_wargoal = {
+										type = annex_everything
+										target = OKO
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_conquest6
+					icon = GFX_goal_generic_major_war
+					prerequisite = { focus = KSK_conquest4 }
+
+					x = 0
+					y = 1
+
+					relative_position_id = KSK_conquest4
+
+					cost = 10
+
+					completion_reward = {
+								create_wargoal = {
+										type = annex_everything
+										target = NEN
+								}
+					}
+		}
+
+		focus = {
+					id = KSK_conquest7
+					icon = GFX_goal_generic_national_unity
+					prerequisite = { focus = KSK_conquest5 }
+					prerequisite = { focus = KSK_conquest6 }
+
+					x = 1
+					y = 1
+
+					relative_position_id = KSK_conquest5
+
+					cost = 10
+
+					available = {
+								controls_state = 828
+								controls_state = 384
+								controls_state = 827
+								controls_state = 802
+								controls_state = 382
+								controls_state = 801
+								controls_state = 832
+								controls_state = 833
+								controls_state = 374
+								controls_state = 903
+					}
+
+					completion_reward = {
+								add_stability = 0.30
+								add_state_core = 828
+								add_state_core = 384
+								add_state_core = 827
+								add_state_core = 802
+								add_state_core = 382
+								add_state_core = 801
+								add_state_core = 832
+								add_state_core = 833
+								add_state_core = 374
+								add_state_core = 903
+
+					}
+		}
+
+
+		}
 
 }

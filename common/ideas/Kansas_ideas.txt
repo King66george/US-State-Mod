@@ -407,7 +407,7 @@ ideas = {
               always = no
           }
 
-          picture = generic_bomber_production_diverted
+          picture = generic_air_research
 
           removal_cost = -1
 
@@ -421,6 +421,28 @@ ideas = {
           }
 
       }
+
+      KSK_war = {
+
+          allowed = {
+              always = no
+          }
+
+          allowed_civil_war = {
+              always = no
+          }
+
+          picture = FRA_scw_intervention_nationalists_focus
+
+          removal_cost = -1
+
+          modifier = {
+                justify_war_goal_time = -0.25
+                opinion_gain_monthly_factor = -0.50
+          }
+      }
+
+
 
   }
 }
