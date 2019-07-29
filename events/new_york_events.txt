@@ -34,42 +34,7 @@
        }
 
 
-       # New York Fascist Civil War
 
-       country_event = {
-        id = newyork.3
-        title = newyork.3.t
-        desc = newyork.3.d
-        picture = #
-
-        is_triggered_only = yes
-
-      option = { # Agree to a civil war
-        name = newyork.3.a
-        add_stability = -0.30
-        start_civil_war = {
-        ruling_party = fascism
-        ideology = ROOT
-        size = 0.8
-        only_own_territory = no
-        capital = 358
-        states = {
-        886 884 358 885
-        }
-        }
-
-
-
-      }
-
-      option = { #Say No
-        name = newyork.3.b
-        add_stability = 0.10
-        add_popularity = {
-    ideology = fascism
-    popularity = 0.15
-}
-      }
 
 
 

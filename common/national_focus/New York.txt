@@ -315,7 +315,7 @@ focus = {
                                           }
 
 
-                                      
+
 
 
 
@@ -394,24 +394,7 @@ focus = {
                                                   }
 
 
-                                                  focus = {
-                                                  id = NYN_fascistfunding
-                                                  icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-                                                  prerequisite = { focus = NYN_forthestate}
-                                                  cost = 10
-                                                  x = 30
-                                                  y = 3
-
-
-                                                  available = {
-                                              			fascism > 0.3
-                                                    }
-                                                  completion_reward = {
-                                                  country_event = newyork.3
-                                                  }
-
-
-                                                  }
+                                                  
 
 
 
