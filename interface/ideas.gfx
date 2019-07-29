@@ -4208,6 +4208,10 @@ spriteTypes = {
 		name = "GFX_idea_KSK_spiritual_fanaticism"
 		texturefile = "gfx/interface/ideas/idea_mex_church_power_5.dds"
 		}
+		spriteType = {
+		name = "GFX_idea_VAV_idea_pentagon"
+		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
+		}
 
 ##No Florida Mods##
 	}

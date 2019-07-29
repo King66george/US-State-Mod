@@ -18,13 +18,13 @@ state={
 		}
 		add_core_of = AZA
 		victory_points = {
-			853 3 
+			3834 20 
 		}
 
 	}
 
 	provinces={
-		3834 7920 10783 
+		3834 7920 10783
 	}
 
 	buildings_max_level_factor=1.000

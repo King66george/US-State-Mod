@@ -2758,7 +2758,7 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  VAV_cships_desc:0 "123"
  VAV_vc2:0 "Convoy Defence"
  VAV_vc2_desc:0 "123"
- VAV_reclaimwestvirginia:0 "Reclaim Western Land"
+ VAV_reclaimwestvirginia:0 "Demand A Ultimatum"
  VAV_reclaimwestvirginia_desc:0 "123"
  VAV_strikethecapital:0 "Strike The Capital"
  VAV_strikethecapital_desc:0 "123"
@@ -3043,6 +3043,8 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  NYN_takethefalls_desc:0 "Niagra Falls is obviously New York territory, we should take it.\n§RWe could possibly lose Buffalo if we are not careful enough!§"
  WYW_economicfocus1:0 "Become A Real State"
  WYW_economicfocus1_desc:0 "Wyoming hasn't been an actual state for a long time, a hidden government secret, but no more shall Wyoming be called a "Unloaded minecraft chunk" We shall rise!"
+ VAV_pentagon:0 "Build The Pentagon"
+ VAV_mobalize:0 "Mobilize The Army"
 ################################################################################################################################################################
 ################################################################################################################################################################
 ################################################################################################################################################################

@@ -15,14 +15,11 @@ state={
 
 		}
 		add_core_of = NMN
-		victory_points = {
-			4975 1 
-		}
 
 	}
 
 	provinces={
-		5044 10914 
+		5044 10914
 	}
 	manpower=423316
 	buildings_max_level_factor=1.000

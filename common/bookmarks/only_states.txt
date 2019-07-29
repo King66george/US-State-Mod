@@ -39,6 +39,7 @@ bookmarks = {
 							ideology = democratic
 							ideas = {
 								VAV_idea_brokenecon
+								FRA_disjointed_government
 							 }
 							focuses = {
 									VAV_war
