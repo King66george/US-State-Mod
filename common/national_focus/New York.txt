@@ -315,22 +315,7 @@ focus = {
                                           }
 
 
-                                          focus = {
-                                          id = NYN_democracy_prevails
-                                          icon = GFX_goal_support_democracy
-                                          mutually_exclusive = { focus = NYN_politicalfocus_1}
-                                          cost = 5
-                                          x = 40
-                                          y = 0
 
-                                          ai_will_do = {
-                                                factor = 0
-                                          }
-
-                                          completion_reward = {
-                                          add_political_power = 250
-                                          }
-                                        }
 
 
 
@@ -407,6 +392,35 @@ focus = {
                                                     add_ideas = fascist_influence
                                                     }
                                                   }
+
+
+                                                  
+
+
+
+
+                                               focus = {
+                                                id = NYN_anewmilitary
+                                                icon = GFX_focus_generic_military_mission
+                                                prerequisite = { focus = NYN_fascistfunding}
+                                                cost = 10
+                                                x = 28
+                                                y = 4
+                                                available = {
+                                                has_government = fascism
+                                                }
+
+                                                completion_reward = {
+                                                add_manpower = 25000
+                                                add_ideas = military_youth_focus
+                                                }
+
+
+                                              }
+
+
+
+
 
 
                                               focus = {
@@ -923,20 +937,7 @@ focus = {
                                               }
 
 
-                                          focus = {
-                                          id = NYN_stabilize_our_democracy
-                                          icon = GFX_focus_generic_treaty
-                                          prerequisite = { focus = NYN_democracy_prevails}
-                                          cost = 10
-                                          x = 38
-                                          y = 1
 
-                                          completion_reward = {
-                                          	add_stability= 0.10
-                                          }
-
-
-                                          }
 
 
 
