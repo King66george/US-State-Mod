@@ -143,10 +143,55 @@ ideas = {
 			modifier = {
 				planning_speed = 0.10
 				army_speed_factor = 0.05
-				mobilization_speed = 0.10
 				army_core_defence_factor = 0.10
-				army_core_attack_factor = 0.05
 		  }
 		 }
 		}
+
+		naval_manufacturer = {
+
+			designer = yes
+
+			norfolknavalyard = {
+
+
+				allowed = {
+					original_tag = VAV
+				}
+
+				research_bonus = {
+					naval_equipment = 0.15
+				}
+
+				equipment_bonus = {
+
+				}
+
+				traits = { atlantic_fleet_naval_manufacturer }
+
+			}
+
+		}
+
+		materiel_manufacturer = {
+
+			designer = yes
+
+			thetredegarironworks = {
+
+				allowed = {
+					original_tag = VAV
+				}
+
+				research_bonus = {
+					artillery = 0.15
+				}
+
+				traits = { artillery_manufacturer }
+
+				modifier = {
+					# +10% arty/at/aa research speed
+				}
+			}
+		 }
 	 }
