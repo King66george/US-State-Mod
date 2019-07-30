@@ -246,6 +246,8 @@ ideas = {
               always = no
           }
 
+          picture = idea_MEX_church_power_4
+
           removal_cost = -1
 
           modifier = {
@@ -263,6 +265,8 @@ ideas = {
           allowed_civil_war = {
               always = no
           }
+
+          picture = idea_MEX_church_power_5
 
           removal_cost = -1
 

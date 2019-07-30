@@ -114,7 +114,7 @@ focus_tree = {
 
 			relative_position_id = KSK_democratic1
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {factor = 1}
 
@@ -473,7 +473,7 @@ focus_tree = {
 			y = 1
 			relative_position_id = KSK_democratic1
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {factor = 1}
 
@@ -494,7 +494,7 @@ focus_tree = {
 
 			relative_position_id = KSK_democratic2
 
-			cost = 5
+			cost = 10
 
 			ai_will_do = {factor = 1}
 
@@ -529,7 +529,7 @@ focus_tree = {
 
 				relative_position_id = KSK_democratic4
 
-				cost = 5
+				cost = 15
 
 				ai_will_do = {factor = 1}
 
@@ -598,7 +598,7 @@ focus_tree = {
 
 			relative_position_id = KSK_democratic4
 
-			cost = 5
+			cost = 10
 
 			completion_reward = {
 			add_research_slot = 1
@@ -638,7 +638,7 @@ focus_tree = {
 
 			relative_position_id = { KSK_democratic6 }
 
-			cost = 5
+			cost = 10
 
 			completion_reward = {
 				add_tech_bonus = {
@@ -686,7 +686,7 @@ focus_tree = {
 
 				relative_position_id = KSK_communist1
 
-				cost = 5
+				cost = 10
 
 				completion_reward = {
 				add_stability = -0.15
@@ -704,7 +704,7 @@ focus_tree = {
 
 				relative_position_id = KSK_communist2
 
-				cost = 5
+				cost = 10
 
 				completion_reward = {
 				add_ideas = { KSK_commissars }
@@ -721,7 +721,7 @@ focus_tree = {
 
 				relative_position_id = KSK_communist3
 
-				cost = 5
+				cost = 10
 
 				available = { has_defensive_war = yes }
 
@@ -739,7 +739,7 @@ focus_tree = {
 				x = 2
 				y = 1
 
-				cost = 5
+				cost = 10
 
 				relative_position_id = KSK_communist1
 
@@ -761,7 +761,7 @@ focus_tree = {
 
 				relative_position_id = KSK_communist5
 
-				cost = 5
+				cost = 10
 
 			completion_reward = {
 					383 = {
@@ -820,7 +820,7 @@ focus_tree = {
 
 					relative_position_id = KSK_communist7
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 							SOV = {
@@ -840,7 +840,7 @@ focus_tree = {
 
 					relative_position_id = KSK_communist7
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 							set_rule = {
@@ -918,7 +918,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist1
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								army_experience = 25
@@ -936,7 +936,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist2
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 							country_event = kansas.4
@@ -953,7 +953,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist3
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_ideas = { KSK_boy_scouts }
@@ -971,7 +971,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist4
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_ideas = { KSK_bund }
@@ -988,7 +988,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist1
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_ideas = { KSK_war_readiness }
@@ -1005,7 +1005,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist6
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_offsite_building = {
@@ -1026,7 +1026,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist7
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 						random_owned_controlled_state = {
@@ -1058,7 +1058,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist1
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {}
 		}
@@ -1073,7 +1073,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist9
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 							add_ideas = KSK_spiritual_awakening
@@ -1089,7 +1089,7 @@ focus_tree = {
 
 					relative_position_id = KSK_fascist10
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 							add_war_support = 0.1
@@ -1110,7 +1110,7 @@ focus_tree = {
 					x = 28
 					y = 0
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_tech_bonus = {
@@ -1223,7 +1223,7 @@ focus_tree = {
 
 					relative_position_id = KSK_eisenhower4
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_ideas = { KSK_eisenhowerbonus }
@@ -1240,7 +1240,7 @@ focus_tree = {
 
 					relative_position_id = KSK_eisenhower6
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								remove_ideas = { KSK_eisenhowerbonus }
@@ -1256,7 +1256,7 @@ focus_tree = {
 					x = 30
 					y = 0
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_tech_bonus = {
@@ -1365,7 +1365,7 @@ focus_tree = {
 
 					relative_position_id = KSK_chaffee3
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								add_ideas = { KSK_chaffeebonus}
@@ -1382,7 +1382,7 @@ focus_tree = {
 
 					relative_position_id = KSK_chaffee6
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 								remove_ideas = { KSK_chaffeebonus }
@@ -1393,8 +1393,7 @@ focus_tree = {
 		focus = {
 					id = KSK_army1
 					icon = GFX_goal_generic_special_forces
-					prerequisite = { focus = KSK_eisenhower7 }
-					prerequisite = { focus = KSK_chaffee7 }
+					prerequisite = { focus = KSK_eisenhower7 focus = KSK_chaffee7 }
 
 					x = 2.5
 					y = 1
@@ -1693,7 +1692,7 @@ focus_tree = {
 
 					relative_position_id = KSK_air4
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 							add_ideas = { KSK_fighterbonus }
@@ -1711,7 +1710,7 @@ focus_tree = {
 
 					relative_position_id = KSK_air7
 
-					cost = 5
+					cost = 10
 
 					completion_reward = {
 							add_ideas = { KSK_fighterbonus2 }
