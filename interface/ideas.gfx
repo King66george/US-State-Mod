@@ -4212,6 +4212,14 @@ spriteTypes = {
 		name = "GFX_idea_VAV_idea_pentagon"
 		texturefile = "gfx/interface/ideas/idea_generic_army_war_college.dds"
 		}
+		spriteType = {
+		name = "GFX_idea_thetredegarironworks"
+		texturefile = "gfx/interface/ideas/idea_generic_artillery_manufacturer_2.dds"
+		}
+		spriteType = {
+		name = "GFX_idea_norfolknavalyard"
+		texturefile = "gfx/interface/ideas/idea_generic_naval_manufacturer_3.dds"
+		}
 
 ##No Florida Mods##
 	}
