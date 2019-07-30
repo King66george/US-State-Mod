@@ -38,9 +38,8 @@ focus = {
             	instant_build = yes
             	}
             }
-            }
-
-            }
+          }
+        }
 
 
 
@@ -399,7 +398,7 @@ focus = {
 
 
 
-                                              
+
 
 
 
@@ -564,7 +563,7 @@ focus = {
                                                       factor = 1
                                                   }
 
-                                                  avaliable = {
+                                              avaliable = {
                                                         divisions_in_border_state = {
                                                             type = infantry
                                                             size > 1
@@ -572,11 +571,6 @@ focus = {
                                                             border_state = 904
                                                             }
                                                           }
-
-                                                 bypass = {
-
-
-                                                 }
                                                  cancel_if_invalid = yes
  		                                             continue_if_invalid = no
  		                                             available_if_capitulated = no

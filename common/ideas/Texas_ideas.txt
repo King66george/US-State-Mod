@@ -61,7 +61,7 @@ ideas = {
     }
 		TXT_idea_permrev = {
 
-		picture = GFX_focus_YUG_pan_slavic_congress
+		picture = focus_YUG_pan_slavic_congress
 
 		allowed = {
 		always = no
@@ -75,6 +75,32 @@ ideas = {
 		modifier = {
 		communism_drift = 0.15
 		communism_acceptance = 250
+		}
+		}
+		TXT_idea_texandiplo = {
+		picture = idea_generic_pp_unity_bonus
+
+		allowed = {
+		always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+		opinion_gain_monthly_same_ideology_factor = 0.5
+		trade_opinion_factor = 0.15
+		 }
+		}
+		TXT_idea_tradepower = {
+		picture = idea_generic_pp_unity_bonus
+		allowed = {
+		always = no
+		}
+		removal_cost = -1
+
+		modifier = {
+		trade_laws_cost_factor = 0.25
+		trade_opinion_factor = 0.15
 		}
 		}
           }

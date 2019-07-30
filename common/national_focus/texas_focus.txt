@@ -1,21 +1,19 @@
 focus_tree = {
-    id = texas_focus
-    continuous_focus_position = { x = 20 y = 1650 }
-    country = {
-        factor = 0
-
-        modifier = {
-            add = 10
-            tag = TXT
-        }
-    }
+	id = texas_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TXT
+		}
+	}
 	default = no
 	focus = {
 		id = TXT_texaswillagainraiseitshead
 		icon = GFX_goal_generic_small_arms
 		cost = 3.00
-		x = 15
-		y = 0
+		x = 19
+		y = -1
 			ai_will_do = {
 					factor = 10
 				}
@@ -40,8 +38,8 @@ focus_tree = {
 		id = TXT_expandindustry
 		icon = GFX_goal_generic_production
 		cost = 5.00
-		x = 37
-		y = 0
+		x = 22
+		y = 13
 			ai_will_do = {
 					factor = 1
 				}
@@ -61,7 +59,7 @@ focus_tree = {
 			focus = TXT_redstar
 			focus = TXT_theoldrepublic
 		}
-		x = 4
+		x = 6
 		y = 1
 			ai_will_do = {
 					factor = 1
@@ -125,6 +123,9 @@ focus_tree = {
 							name = TXT_fascism_party_ourown
 						}
 					add_ideas = TXT_idea_civwar
+					add_ideas = ALL_idea_genderequality
+					add_ideas = ALL_idea_subsidizedfactories
+					add_ideas = ALL_idea_cheapguns
 				}
 
 	}
@@ -319,14 +320,42 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TXT_lifeelevated
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_northernneighbor
+		}
+		x = 4
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = UTU
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = UTU
+						}
+				}
+
+	}
+	focus = {
 		id = TXT_tothepacific
 		icon = GFX_goal_generic_attack_allies
 		cost = 10.00
 		prerequisite = {
-			focus = TXT_grandcanyonstate
+			focus = TXT_northernneighbor
 		}
-		x = 1
-		y = 9
+		x = 0
+		y = 8
 			ai_will_do = {
 					factor = 1
 				}
@@ -353,34 +382,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TXT_lifeelevated
-		icon = GFX_goal_generic_attack_allies
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_grandcanyonstate
-		}
-		x = 3
-		y = 9
-			ai_will_do = {
-					factor = 1
-				}
-			bypass = {
-					NOT = {
-							country_exists = UTU
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					create_wargoal = {
-							type = annex_everything
-							target = UTU
-						}
-				}
-
-	}
-	focus = {
 		id = TXT_thesilverstate
 		icon = GFX_goal_generic_attack_allies
 		cost = 10.00
@@ -391,7 +392,7 @@ focus_tree = {
 			focus = TXT_tothepacific
 		}
 		x = 2
-		y = 10
+		y = 9
 			ai_will_do = {
 					factor = 1
 				}
@@ -419,7 +420,7 @@ focus_tree = {
 			focus = TXT_thesilverstate
 		}
 		x = 2
-		y = 11
+		y = 10
 			ai_will_do = {
 					factor = 1
 				}
@@ -525,7 +526,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_forgeourownpath
 		}
-		x = 9
+		x = 10
 		y = 2
 			ai_will_do = {
 					factor = 1
@@ -551,6 +552,30 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TXT_seconomy1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_expandindustry
+		}
+		x = 18
+		y = 14
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
 		id = TXT_theoldrepublic
 		icon = GFX_goal_support_democracy
 		cost = 10.00
@@ -561,7 +586,7 @@ focus_tree = {
 			focus = TXT_lonestar
 			focus = TXT_redstar
 		}
-		x = 15
+		x = 21
 		y = 1
 			ai_will_do = {
 					factor = 1
@@ -593,7 +618,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_defensivefocus
 		}
-		x = 14
+		x = 20
 		y = 2
 			ai_will_do = {
 					factor = 1
@@ -616,7 +641,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_offensivefocus
 		}
-		x = 13
+		x = 19
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -653,6 +678,29 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TXT_outsourceoil
+		text = Outsource Oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_seconomy1
+		}
+		x = 20
+		y = 15
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = -50
+							state = 375
+						}
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
+	}
+	focus = {
 		id = TXT_defensivefocus
 		icon = GFX_goal_generic_defence
 		cost = 10.00
@@ -662,7 +710,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_offensivefocus
 		}
-		x = 16
+		x = 22
 		y = 2
 			ai_will_do = {
 					factor = 1
@@ -686,7 +734,7 @@ focus_tree = {
 			focus = TXT_offensivefocus
 			focus = TXT_defensivefocus
 		}
-		x = 15
+		x = 21
 		y = 4
 			ai_will_do = {
 					factor = 1
@@ -717,7 +765,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_premtivestrike
 		}
-		x = 15
+		x = 21
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -735,13 +783,37 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TXT_dockyard1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_expandindustry
+		}
+		x = 22
+		y = 14
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
 		id = TXT_defendtheriogrande
 		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_defensivefocus
 		}
-		x = 17
+		x = 23
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -771,7 +843,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_defendtheriogrande
 		}
-		x = 17
+		x = 23
 		y = 4
 			ai_will_do = {
 					factor = 1
@@ -817,7 +889,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_defendtheriograndeii
 		}
-		x = 17
+		x = 23
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -873,6 +945,75 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TXT_dockyard2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_dockyard1
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_dockyard1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_purchaseconvoys
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_dockyard2
+		}
+		x = 24
+		y = 16
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = convoy_1
+							amount = 300
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_meconomy1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_expandindustry
+		}
+		x = 26
+		y = 14
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
 		id = TXT_redstar
 		icon = GFX_goal_support_communism
 		cost = 10.00
@@ -883,7 +1024,7 @@ focus_tree = {
 			focus = TXT_lonestar
 			focus = TXT_theoldrepublic
 		}
-		x = 27
+		x = 33
 		y = 1
 			ai_will_do = {
 					factor = 1
@@ -912,7 +1053,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_redstar
 		}
-		x = 27
+		x = 33
 		y = 2
 			ai_will_do = {
 					factor = 1
@@ -949,7 +1090,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_followstalin
 		}
-		x = 25
+		x = 30
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -975,146 +1116,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TXT_permanentrevolution
-		icon = GFX_focus_YUG_pan_slavic_congress
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_trotskyisright
-		}
-		x = 25
-		y = 4
-			ai_will_do = {
-					factor = 1
-				}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					every_neighbor_country = {
-							add_ideas = TXT_idea_permrev
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_peacefultakeover
-		icon = GFX_focus_prc_agrarian_socialism
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_permanentrevolution
-		}
-		mutually_exclusive = {
-			focus = TXT_directinfluence
-		}
-		x = 27
-		y = 5
-			ai_will_do = {
-					factor = 1
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					every_neighbor_country = {
-							add_popularity = {
-									ideology = communism
-									popularity = .15
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_directinfluence
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_permanentrevolution
-		}
-		mutually_exclusive = {
-			focus = TXT_peacefultakeover
-		}
-		x = 23
-		y = 5
-			ai_will_do = {
-					factor = 1
-				}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					random_neighbor_country = {
-							start_civil_war = {
-									ideology = communism
-									size = 0.5
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_peacefultakeoverii
-		icon = GFX_focus_prc_agrarian_socialism
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_peacefultakeover
-		}
-		x = 27
-		y = 6
-			ai_will_do = {
-					factor = 1
-				}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					every_neighbor_country = {
-							add_popularity = {
-									ideology = communism
-									popularity = .15
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_directinfluenceii
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_directinfluence
-		}
-		x = 23
-		y = 6
-			ai_will_do = {
-					factor = 1
-				}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					random_neighbor_country = {
-							start_civil_war = {
-									ideology = communism
-									size = 0.5
-								}
-						}
-				}
-
-	}
-	focus = {
 		id = TXT_followstalin
 		icon = GFX_goal_support_fourth_int
 		cost = 10.00
@@ -1124,7 +1125,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_trotskyisright
 		}
-		x = 29
+		x = 36
 		y = 3
 			ai_will_do = {
 					factor = 1
@@ -1156,7 +1157,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_followstalin
 		}
-		x = 29
+		x = 35
 		y = 4
 			ai_will_do = {
 					factor = 1
@@ -1182,8 +1183,8 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_forcefulconversion
 		}
-		x = 29
-		y = 5
+		x = 35
+		y = 6
 			ai_will_do = {
 					factor = 1
 				}
@@ -1202,82 +1203,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TXT_joinstalin
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_forcefulconversionii
-		}
-		x = 29
-		y = 6
-			ai_will_do = {
-					factor = 1
-				}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					SOV = {
-							country_event = generic.2
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_dockyard1
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
-		prerequisite = {
-			focus = TXT_expandindustry
-		}
-		x = 34
-		y = 1
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = dockyard
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_purchaseconvoys
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
-		prerequisite = {
-			focus = TXT_dockyard1
-		}
-		x = 32
-		y = 2
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_equipment_to_stockpile = {
-							type = convoy_1
-							amount = 300
-						}
-				}
-
-	}
-	focus = {
 		id = TXT_industryfocus
 		icon = GFX_goal_generic_soviet_construction
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_followstalin
 		}
-		x = 32
+		x = 37
 		y = 4
 			ai_will_do = {
 					factor = 1
@@ -1307,7 +1239,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_industryfocus
 		}
-		x = 32
+		x = 37
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -1337,7 +1269,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_industryfocusii
 		}
-		x = 32
+		x = 37
 		y = 6
 			ai_will_do = {
 					factor = 1
@@ -1361,16 +1293,175 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TXT_joinstalin
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_forcefulconversionii
+		}
+		prerequisite = {
+			focus = TXT_industryfocusiii
+		}
+		x = 36
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					SOV = {
+							country_event = generic.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_stalin
+		text = The Stalin Way
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_joinstalin
+		}
+		mutually_exclusive = {
+			focus = TXT_quality
+		}
+		x = 34
+		y = 8
+			completion = reward
+			= = {
+					add_ideas = { limited_conscription }
+				}
+
+	}
+	focus = {
+		id = TXT_permanentrevolution
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_trotskyisright
+		}
+		x = 30
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					every_neighbor_country = {
+							add_ideas = TXT_idea_permrev
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_directinfluence
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_permanentrevolution
+		}
+		mutually_exclusive = {
+			focus = TXT_peacefultakeover
+		}
+		x = 28
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					random_neighbor_country = {
+							start_civil_war = {
+									ideology = communism
+									size = 0.5
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_peacefultakeoverii
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_peacefultakeover
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_peacefultakeover
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					every_neighbor_country = {
+							add_popularity = {
+									ideology = communism
+									popularity = .15
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_directinfluenceii
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_directinfluence
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_directinfluence
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					random_neighbor_country = {
+							start_civil_war = {
+									ideology = communism
+									size = 0.5
+								}
+						}
+				}
+
+	}
+	focus = {
 		id = TXT_formtheamericancommune
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		cost = 10.00
 		prerequisite = {
-			focus = TXT_directinfluenceii
 			focus = TXT_peacefultakeoverii
-			focus = TXT_joinstalin
-			focus = TXT_industryfocusiii
+			focus = TXT_directinfluenceii
 		}
-		x = 27
+		x = 30
 		y = 7
 			ai_will_do = {
 					factor = 1
@@ -1396,7 +1487,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_central
 		}
-		x = 29
+		x = 32
 		y = 8
 			available = {
 
@@ -1417,38 +1508,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TXT_dockyard2
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
-		prerequisite = {
-			focus = TXT_dockyard1
-		}
-		x = 34
-		y = 2
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = dockyard
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
 		id = TXT_dockyard3
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_dockyard2
 		}
-		x = 34
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = TXT_dockyard1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1471,8 +1539,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_dockyard3
 		}
-		x = 34
-		y = 4
+		x = 0
+		y = 3
+		relative_position_id = TXT_dockyard1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1495,41 +1564,13 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_dockyard4
 		}
-		mutually_exclusive = {
-			focus = TXT_ecoboom
-			focus = TXT_developed
-		}
-		x = 35
-		y = 5
+		x = 22
+		y = 18
 			ai_will_do = {
 					factor = 1
 				}
 			completion_reward = {
 					add_ideas = VAV_idea_navy_discount
-				}
-
-	}
-	focus = {
-		id = TXT_seconomy1
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5.00
-		prerequisite = {
-			focus = TXT_expandindustry
-		}
-		x = 36
-		y = 1
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
 				}
 
 	}
@@ -1540,8 +1581,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_seconomy1
 		}
-		x = 36
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = TXT_seconomy1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1564,8 +1606,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_seconomy2
 		}
-		x = 36
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = TXT_seconomy1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1588,8 +1631,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_seconomy3
 		}
-		x = 36
-		y = 4
+		x = 0
+		y = 3
+		relative_position_id = TXT_seconomy1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1606,38 +1650,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TXT_meconomy1
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5.00
-		prerequisite = {
-			focus = TXT_expandindustry
-		}
-		x = 38
-		y = 1
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
 		id = TXT_meconomy2
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
 			focus = TXT_meconomy1
 		}
-		x = 38
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = TXT_meconomy1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1660,8 +1681,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_meconomy2
 		}
-		x = 38
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = TXT_meconomy1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1684,8 +1706,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_meconomy3
 		}
-		x = 38
-		y = 4
+		x = 0
+		y = 3
+		relative_position_id = TXT_meconomy1
 			ai_will_do = {
 					factor = 1
 				}
@@ -1711,12 +1734,8 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_seconomy4
 		}
-		mutually_exclusive = {
-			focus = TXT_navalpowerhouse
-			focus = TXT_developed
-		}
-		x = 37
-		y = 5
+		x = 22
+		y = 19
 			ai_will_do = {
 					factor = 1
 				}
@@ -1876,7 +1895,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_restoretheborders
 		}
-		x = 13
+		x = 19
 		y = 4
 			ai_will_do = {
 					factor = 1
@@ -1919,7 +1938,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_restorethebordersii
 		}
-		x = 13
+		x = 19
 		y = 5
 			ai_will_do = {
 					factor = 1
@@ -1955,7 +1974,7 @@ focus_tree = {
 			focus = TXT_restorethebordersiii
 			focus = TXT_defendtheriograndeiii
 		}
-		x = 15
+		x = 21
 		y = 6
 			ai_will_do = {
 					factor = 1
@@ -1983,7 +2002,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_thesmallerthreats
 		}
-		x = 13
+		x = 19
 		y = 7
 			ai_will_do = {
 					factor = 1
@@ -2004,42 +2023,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TXT_takeknigsbergandermlandmasuren
-		icon = GFX_focus_generic_industry_1
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_topplegermany
-		}
-		x = 13
-		y = 8
-			ai_will_do = {
-					factor = 1
-				}
-			available = {
-					GER = {
-							has_capitulated = yes
-						}
-				}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			completion_reward = {
-					transfer_state = 763
-					transfer_state = 784
-				}
-
-	}
-	focus = {
 		id = TXT_toppleitaly
 		icon = GFX_focus_ger_assassinate_mussolini
 		cost = 10.00
 		prerequisite = {
-			focus = TXT_takeknigsbergandermlandmasuren
+			focus = TXT_topplegermany
 		}
-		x = 13
+		x = 19
 		y = 9
 			ai_will_do = {
 					factor = 1
@@ -2068,7 +2058,7 @@ focus_tree = {
 			focus = TXT_toppleitaly
 			focus = TXT_thethreatofromania
 		}
-		x = 15
+		x = 21
 		y = 10
 			ai_will_do = {
 					factor = 1
@@ -2098,7 +2088,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_topplegermany
 		}
-		x = 17
+		x = 23
 		y = 7
 			ai_will_do = {
 					factor = 1
@@ -2128,7 +2118,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_thethreatofyugoslavia
 		}
-		x = 17
+		x = 23
 		y = 9
 			ai_will_do = {
 					factor = 1
@@ -2158,7 +2148,7 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_thesmallerthreats
 		}
-		x = 17
+		x = 23
 		y = 8
 			ai_will_do = {
 					factor = 1
@@ -2191,7 +2181,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TXT_central
 		}
-		x = 25
+		x = 28
 		y = 8
 			ai_will_do = {
 					factor = 1
@@ -2218,8 +2208,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_purgetheallies
 		}
-		x = 25
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = TXT_purgetheallies
 			ai_will_do = {
 					factor = 1
 				}
@@ -2245,8 +2236,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_permanentrevolution
 		}
-		x = 25
-		y = 6
+		x = 0
+		y = 2
+		relative_position_id = TXT_permanentrevolution
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 1
@@ -2266,133 +2258,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TXT_roads1
-		icon = GFX_goal_generic_construct_civilian
-		cost = 5.00
-		prerequisite = {
-			focus = TXT_expandindustry
-		}
-		x = 40
-		y = 1
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_roads2
-		icon = GFX_goal_generic_construct_civilian
-		cost = 5.00
-		prerequisite = {
-			focus = TXT_roads1
-		}
-		x = 40
-		y = 2
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_roads3
-		icon = GFX_goal_generic_construct_civilian
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_roads2
-		}
-		x = 40
-		y = 3
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_building_construction = {
-									type = infrastructure
-									level = 3
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_roads4
-		icon = GFX_goal_generic_construct_civilian
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_roads3
-		}
-		x = 40
-		y = 4
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = TXT_developed
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = TXT_roads4
-		}
-		mutually_exclusive = {
-			focus = TXT_ecoboom
-			focus = TXT_navalpowerhouse
-		}
-		x = 39
-		y = 5
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_ideas = { VAV_idea_fully_developed_roads }
-				}
-
-	}
-	focus = {
 		id = TXT_central
 		icon = GFX_goal_generic_position_armies
 		cost = 10.00
@@ -2400,10 +2265,10 @@ focus_tree = {
 			focus = TXT_formtheamericancommune
 		}
 		mutually_exclusive = {
-			focus = TXT_purgetheallies
 			focus = TXT_east
+			focus = TXT_purgetheallies
 		}
-		x = 27
+		x = 30
 		y = 8
 			bypass = {
 					NOT = {
@@ -2427,8 +2292,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_purgetheaxis
 		}
-		x = 25
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = TXT_purgetheallies
 			bypass = {
 					NOT = {
 							country_exists = UTU
@@ -2451,8 +2317,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_utahinv
 		}
-		x = 25
-		y = 11
+		x = 0
+		y = 3
+		relative_position_id = TXT_purgetheallies
 			bypass = {
 					NOT = {
 							country_exists = NVN
@@ -2475,8 +2342,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_nevadainv
 		}
-		x = 25
-		y = 12
+		x = 0
+		y = 4
+		relative_position_id = TXT_purgetheallies
 			bypass = {
 					NOT = {
 							country_exists = CAC
@@ -2499,8 +2367,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_wyominginv
 		}
-		x = 27
-		y = 11
+		x = 0
+		y = 3
+		relative_position_id = TXT_central
 			bypass = {
 					NOT = {
 							country_exists = KSK
@@ -2523,8 +2392,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_central
 		}
-		x = 27
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = TXT_central
 			bypass = {
 					NOT = {
 							country_exists = KSK
@@ -2547,8 +2417,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_coloradoinv
 		}
-		x = 27
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = TXT_central
 			available = {
 
 }
@@ -2574,8 +2445,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_kansasinv
 		}
-		x = 27
-		y = 12
+		x = 0
+		y = 4
+		relative_position_id = TXT_central
 			available = {
 
 }
@@ -2601,8 +2473,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_east
 		}
-		x = 29
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = TXT_east
 			available = {
 
 }
@@ -2628,8 +2501,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_misiinv
 		}
-		x = 29
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = TXT_east
 			available = {
 
 }
@@ -2655,8 +2529,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_alabamainv
 		}
-		x = 29
-		y = 11
+		x = 0
+		y = 3
+		relative_position_id = TXT_east
 			available = {
 
 }
@@ -2682,8 +2557,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_floridainv
 		}
-		x = 29
-		y = 12
+		x = 0
+		y = 4
+		relative_position_id = TXT_east
 			available = {
 
 }
@@ -2704,7 +2580,8 @@ focus_tree = {
 	}
 	focus = {
 		id = TXT_backtonormal
-		icon = GFX_FLF_focus_Focus_On_The_Military
+		text = Back to Normal
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_strengthentheeconomy
@@ -2712,12 +2589,14 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = TXT_rebuildtheeconomy
-			completion_reward = { remove_ideas { TXT_idea_civwar } }
+			completion_reward = {
+					remove_ideas = { TXT_idea_civwar }
+				}
 
 	}
 	focus = {
 		id = TXT_strongerthanbefore
-		text = Egg
+		text = Stronger Than Before
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
 		prerequisite = {
@@ -2726,6 +2605,111 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = TXT_strengthenthemilitary
+
+	}
+	focus = {
+		id = TXT_integrate
+		text = Integrate the New Lands
+		icon = GFX_focus_mex_redeem_aztlan
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_rememberthealamo
+		}
+		x = 0
+		y = 6
+		relative_position_id = TXT_retakethemexicanempire
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = TXT
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_peacefultakeover
+		text = Peaceful Takeover
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_permanentrevolution
+		}
+		mutually_exclusive = {
+			focus = TXT_directinfluence
+		}
+		x = 32
+		y = 5
+			completion_reward = {
+					every_neighbor_country = {
+							add_ideas = { communist_influence }
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_quality
+		text = Quality Over Quantity
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_joinstalin
+		}
+		mutually_exclusive = {
+			focus = TXT_stalin
+		}
+		x = 38
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_purchaseguns
+		text = Purchase Guns
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_meconomy1
+		}
+		x = -2
+		y = 1
+		relative_position_id = TXT_meconomy1
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 3000
+							producer = USA
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_aluminium
+		text = Outsource Aluminum
+		icon = GFX_focus_generic_aluminum
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_seconomy3
+		}
+		x = 20
+		y = 17
+			completion_reward = {
+					add_resource = {
+							type = aluminium
+							amount = -25
+							state = 788
+						}
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+				}
 
 	}
 }

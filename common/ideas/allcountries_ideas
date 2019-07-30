@@ -3,7 +3,7 @@ ideas = {
   country = {
     ALL_idea_factions = {
 
-    picture = GFX_idea_generic_pp_unity_bonus
+    picture = idea_generic_pp_unity_bonus
     allowed = {
     always = yes
     }
@@ -25,6 +25,57 @@ ideas = {
       ai_call_ally_desire_factor = -50
       }
     }
+    ALL_idea_cheapguns = {
+
+    picture = idea_generic_pp_unity_bonus
+    allowed = {
+    always = yes
+    }
+
+    removal_cost  = -1
+
+    equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+        artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+        }
+    modifier = {
+    research_speed_factor = -0.10
+    }
+    }
+    ALL_idea_genderequality = {
+    picture = GFX_idea_generic_victors_of_ww1
+    allowed = {
+    always = yes
+    }
+
+    removal_cost = -1
+
+    modifier = {
+    conscription_factor = 0.2
+    }
+    }
+
+    ALL_idea_subsidizedfactories = {
+
+    picture = idea_generic_political_support
+    allowed = {
+    always = yes
+    }
+
+    removal_cost = -1
+
+    modifier = {
+    production_speed_arms_factory_factor = 0.15
+    production_speed_industrial_complex_factor = 0.15
+    }
+    }
+
+
+
 
 
   }
