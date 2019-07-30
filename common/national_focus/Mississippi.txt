@@ -576,8 +576,8 @@ focus_tree = {
 	}
 
 
-	}
-	}
+
+
 	focus = {
 		id = Economic_Independence_Act
 		icon = GFX_goal_generic_demand_territory
@@ -660,4 +660,8 @@ focus_tree = {
 				}
 			}
 		}
+	}
+
+
+#### Bracket End ####
 	}
