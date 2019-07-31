@@ -1,4 +1,4 @@
-﻿capital = 831
+﻿capital = 861
 
 oob = "KSK_1936"
 
@@ -9,7 +9,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -38,7 +38,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1199
-
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -126,55 +126,11 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
-create_country_leader = {
-	name = "Alf Landon"
-	desc = "POLITICS_ALF_LANDON_DESC"
-	picture = "Portrait_USA_Landon_Alfred.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		staunch_constitutionalist
-	}
-}
-create_field_marshal = {
-	name = "Dwight D. Eisenhower"
-	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-	skill = 5
-	id = 19999
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "Clarence R. Huebner"
-	picture = "Portrait_KSK_Clarence_R_Huebner.dds"
-	traits = { infantry_officer harsh_leader }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Adna R. Chaffee"
-	picture = "Portrait_KSK_Adna_R_Chaffee.dds"
-	traits = { panzer_leader cavalry_officer trait_reckless }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 3
-}
-
 1939.1.1 = {
 	set_stability = 0.9
 
 	set_politics = {
-
+		
 		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
@@ -248,7 +204,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-
+	
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2

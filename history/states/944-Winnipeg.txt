@@ -1,0 +1,23 @@
+
+state={
+	id=944
+	name="Winnipeg"
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = city
+	history={
+		owner = MBM
+		victory_points = {
+			4872 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = MBM
+	}
+	provinces={
+		4790 
+	}
+}

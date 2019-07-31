@@ -1,6 +1,6 @@
 state={
 	id=909
-	name="STATE_909"
+	name="Chesapeake Bay Area"
 	state_category=city
 	manpower = 1246522
 	history={

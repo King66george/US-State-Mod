@@ -1,8 +1,7 @@
+
 state={
 	id=834
 	name="Louisiana Coast"
-		manpower=2101592
-	state_category=city
 	resources={
 		oil=44.000
 	}
@@ -12,28 +11,19 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			air_base = 5
-			7552 = {
-				naval_base = 5
-
-			}
 
 		}
 		add_core_of = LAL
 		victory_points = {
-			7552 25
-		}
-		victory_points = {
-			1453 30 
-		}
-		victory_points = {
-			4507 20
+			4507 20 
 		}
 
 	}
+
 	provinces={
-		1453 4507 4535 7524 7552 12313 12398
+	 	4507 4535 12313 12398 
 	}
-
+	manpower=210159
 	buildings_max_level_factor=1.000
+	state_category=city
 }

@@ -139,7 +139,6 @@ add_ideas = {
 	limited_exports
 	disarmed_nation
 	VAV_idea_brokenecon
-	FRA_disjointed_government
 
 }
 set_popularities = {

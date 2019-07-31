@@ -1,0 +1,24 @@
+
+state={
+	id=945
+	name="Northern Saskatchewan"
+
+	history={
+		owner = SKS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = SKS
+
+	}
+
+	provinces={
+		3800 4695 6779 12682 
+	}
+	manpower=435572
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

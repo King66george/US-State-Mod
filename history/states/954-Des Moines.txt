@@ -1,0 +1,30 @@
+state={
+	id=954
+	name="Des Moines"
+	history={
+		owner = IAI
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 4
+
+		}
+		add_core_of = IAI
+		victory_points = {
+			1770 15 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 5
+
+			}
+
+		}
+
+	}
+	provinces={
+		1678 1770 
+	}
+	manpower=2470938
+	buildings_max_level_factor=1.000
+	state_category=city
+}

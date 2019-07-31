@@ -1,7 +1,7 @@
+
 state={
 	id=795
 	name="Central Arizona"
-	manpower=435572
 	resources={
 		steel=20.000
 		oil=5.000
@@ -18,15 +18,15 @@ state={
 		}
 		add_core_of = AZA
 		victory_points = {
-			853 30 
+			853 3 
 		}
 
 	}
 
 	provinces={
-		853 4796 6897 7747
+		853
 	}
-
+	manpower=435572
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

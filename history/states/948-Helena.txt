@@ -1,0 +1,30 @@
+state={
+	id=948
+	name="Helena"
+
+	resources={
+		tungsten=11.000
+		steel=15.000
+		aluminium=8.000
+	}
+
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = MTM
+		victory_points = {
+			7779 10 
+		}
+
+	}
+
+	provinces={
+		7779 
+	}
+	manpower=937605
+	buildings_max_level_factor=1.000
+	state_category=city
+}

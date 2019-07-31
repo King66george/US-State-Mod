@@ -1,22 +1,23 @@
+
 state={
 	id=839
-	name="Northwest Utah"
-	manpower = 10000
-	
-	state_category = city
-	
+	name="Salt Lake City"
 
 	history={
 		owner = UTU
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+
 		}
-		add_core_of =UTU
-	}
-	provinces={
-		1663 4865 10582 
+		add_core_of = UTU
+
 	}
 
+	provinces={
+		1663 4865 10582 13153 
+	}
+	manpower=10000
 	buildings_max_level_factor=1.000
+	state_category=city
 }

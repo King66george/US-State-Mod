@@ -1,4 +1,4 @@
-﻿capital = 470
+﻿capital = 907
 
 oob = "ABA_1936"
 

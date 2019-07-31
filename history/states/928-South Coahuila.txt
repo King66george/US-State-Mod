@@ -1,0 +1,30 @@
+state={
+	id=928
+	name="South Coahuila"
+
+	resources={
+		oil=8.000
+		rubber=8.000
+	}
+
+	history={ 1936.1.3 = {owner = COU controller = COU }
+		owner = MEX
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = MEX 
+		add_core_of = COU
+
+
+	}
+
+	provinces={
+		7973 10738 
+	}
+	manpower=827826
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,29 @@
+state={
+	id=921
+	name="Sinaloa"
+
+	history={ 1936.1.3 = {owner = SIN controller = SIN }
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			8057 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = SIN
+		add_core_of = MEX
+		victory_points = {
+			8057 10 
+		}
+
+	}
+	provinces={
+		1945 8057 10895 
+	}
+	manpower=1255094
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

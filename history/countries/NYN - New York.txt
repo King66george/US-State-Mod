@@ -1,4 +1,4 @@
-﻿capital = 358
+﻿capital = 942
 
 oob = "NYN_1936"
 
@@ -139,9 +139,9 @@ create_country_leader = {
 					}
 
 create_country_leader = {
-			name = "Henry A. Wallace"
+			name = "Israel Amter"
 			#desc = ""
-			picture = "Henry_A_Wallce.dds"
+			picture = "Israel_Amter.dds"
 			expire = "1965.1.1"
 			ideology = marxism
 			traits = {
@@ -166,12 +166,11 @@ create_corps_commander = {
 					picture = "Portrait_USA_Leonard_T_Gerow.dds"
 					traits = { infantry_officer }
 					skill = 3
-					id = 12121
 					attack_skill = 3
 					defense_skill = 2
 					planning_skill = 2
 					logistics_skill = 3
-					}
+						}
 
 
 
