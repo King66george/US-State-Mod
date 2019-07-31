@@ -1,6 +1,6 @@
 ﻿capital = 971
 
-oob = "MDM_1936"
+oob = "WDC_1936"
 
 set_research_slots = 5
 
@@ -154,10 +154,6 @@ set_popularities = {
 	democratic = 98
 	communism = 1
 	fascism = 1
-}
-set_autonomy = {
-	target = WDC
-	autonomous_state =  autonomy_puppet
 }
 1939.1.1 = {
 	set_stability = 0.9
