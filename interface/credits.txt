@@ -1,16 +1,15 @@
-﻿#USA States Mods
+﻿#USA States Mod Developer Team
 
 #Lead Developer
-FascistThanos
+FascistThanos - Original Creator of Mod / Texas Focus Tree
 
 #Mod Developers
-Ryan
-Lifey
-Devdog
-CFC324
-Wojack Herman
-Foolz
-BlAke SHeltOn
+Lifey - New York Focus Tree / California Focus Tree
+cfc324 - Kansas Focus Tree / GFX
+JRyan - Virginia Focus Tree
+Foolz - Florida Focus Tree / Lead GFX
+SergeantMurica - Map Editor
+DevDog - GitHub Management
 
 
 
