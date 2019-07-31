@@ -15,13 +15,13 @@ state={
 		}
 		add_core_of = UTU
 		victory_points = {
-			4865 1 
+			1663 1 
 		}
 
 	}
 
 	provinces={
-		10651 
+		10651 1663
 	}
 	manpower=507846
 	buildings_max_level_factor=1.000

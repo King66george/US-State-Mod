@@ -1,4 +1,3 @@
-
 state={
 	id=799
 	name="Central California"
@@ -29,9 +28,9 @@ state={
 	}
 
 	provinces={
-		941 986 1432 3784 3840 4518 6694 6861 6876 6881 7667 9637 9911 11763 11859 11876 
+		941 1432 3784 4518 6694 6861 6876 7667 9911 11763 11859 11876 
 	}
-	manpower=5677248
+	manpower=677248
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=rural
 }

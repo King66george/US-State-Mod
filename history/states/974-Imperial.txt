@@ -1,0 +1,21 @@
+state={
+	id=974
+	name="Imperial"
+	history={
+		owner = CAC
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = CAC
+		victory_points = {
+			823 10
+		}
+	}
+	provinces={
+		823 4727 7986 
+	}
+	buildings_max_level_factor=1.000
+	manpower = 71365
+	state_category = rural
+}
