@@ -1,4 +1,4 @@
-﻿capital = 799
+﻿capital = 967
 
 oob = "CAC_1936"
 
@@ -126,9 +126,10 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 60
+	communism = 30
+	fascism = 10
+}
 }
 create_country_leader = {
 	name = "Frank Merriam"

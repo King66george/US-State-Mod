@@ -1,4 +1,4 @@
-﻿capital = 907
+﻿capital = 969
 
 oob = "ABA_1936"
 
@@ -103,9 +103,9 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 87
+	communism = 4
+	fascism = 9
 }
 add_ideas = {
 		#laws

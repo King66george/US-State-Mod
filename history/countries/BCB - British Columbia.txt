@@ -1,4 +1,4 @@
-﻿capital = 908
+﻿capital = 970
 
 oob = "BCB_1936"
 
@@ -105,9 +105,9 @@ add_ideas = {
 		home_of_the_free
 	}
 set_popularities = {
-	democratic = 98
+	democratic = 84
 	communism = 1
-	fascism = 1
+	fascism = 15
 }
 set_convoys = 100
 set_stability = 0.9

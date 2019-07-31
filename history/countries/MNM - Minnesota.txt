@@ -1,4 +1,4 @@
-﻿capital = 767
+﻿capital = 955
 
 oob = "MNM_1936"
 
@@ -122,8 +122,8 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
+	democratic = 54
+	communism = 45
 	fascism = 1
 }
 1939.1.1 = {

@@ -1,4 +1,4 @@
-﻿capital = 911
+﻿capital = 957
 
 oob = "MSM_1936"
 
@@ -113,18 +113,18 @@ set_stability = 0.9
 
 set_politics = {
 
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 0
+	communism = 50
+	fascism = 50
 }
 1939.1.1 = {
 	set_stability = 0.9
