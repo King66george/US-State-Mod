@@ -1,4 +1,4 @@
-﻿capital = 799
+﻿capital = 967
 
 oob = "CAC_1936"
 
@@ -112,7 +112,7 @@ diplomatic_relation = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.6
 
 set_politics = {
 
@@ -120,15 +120,15 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 73
+	communism = 24
+	fascism = 3
 }
 create_country_leader = {
 	name = "Frank Merriam"
@@ -140,7 +140,7 @@ create_country_leader = {
 	}
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.6
 
 	set_politics = {
 
@@ -148,13 +148,13 @@ create_country_leader = {
 		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 73
+	communism = 24
+	fascism = 3
 }
 ### Ship Variants ###
 

@@ -1,0 +1,33 @@
+add_namespace = california
+
+# State Of California
+  country_event = {
+    id = california.1
+    title = california.1.t
+    desc = california.1.d
+    picture = report_event_gathering_protest.dds
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.1.a
+
+      create_country_leader = {
+			name = "Douglas MacArthur"
+			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
+			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+
+			}
+    }
+  }
+
+    option = {
+      name = california.1.b
+    }
+
+    option = {
+      name = california.1.c
+    }
