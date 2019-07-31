@@ -2,8 +2,7 @@
 state={
 	id=365
 	name="STATE_365"
-	manpower=2908504
-	state_category=city
+
 	history={
 		owner = GAG
 		buildings = {
@@ -14,7 +13,7 @@ state={
 		}
 		add_core_of = GAG
 		victory_points = {
-			12384 10
+			638 5 
 		}
 		1939.1.1 = {
 			buildings = {
@@ -27,9 +26,9 @@ state={
 	}
 
 	provinces={
-		638 7118 7612 10394 10437 10465 12384
+		638 7118 7612 10394 10437 10465 
 	}
-
+	manpower=2908504
 	buildings_max_level_factor=1.000
-
+	state_category=city
 }

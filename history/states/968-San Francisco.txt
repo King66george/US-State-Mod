@@ -1,0 +1,43 @@
+state={
+	id=968
+	name="San Francisco"
+	resources={
+		oil=20
+		aluminium=8
+	}
+
+	history={
+		owner = CAC
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 6
+			dockyard = 2
+			air_base = 10
+			9671 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = CAC
+		victory_points = {
+			9671 20 
+		}
+
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 7
+
+			}
+
+		}
+
+	}
+	provinces={
+		3677 3678 9671 
+	}
+	manpower=1677248
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

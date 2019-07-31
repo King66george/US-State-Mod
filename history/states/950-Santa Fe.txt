@@ -1,0 +1,31 @@
+state={
+	id=950
+	name="Santa Fe"
+	resources={
+		oil=14.000
+		aluminium=15.000
+		steel=12.000
+		rubber=5.000
+	}
+	history={
+		owner = NMN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = NMN
+		victory_points = {
+			4975 1 
+		}
+
+	}
+
+	provinces={
+		12552 
+	}
+
+	manpower=1233160
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

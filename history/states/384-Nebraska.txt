@@ -2,8 +2,7 @@
 state={
 	id=384
 	name="Nebraska"
-	manpower=1377962
-	state_category=large_town
+
 	history={
 		owner = NEN
 		buildings = {
@@ -19,9 +18,9 @@ state={
 	}
 
 	provinces={
-		1683 10676 12516 12586 
+		1683 12516 12586 
 	}
-	
+	manpower=377962
 	buildings_max_level_factor=1.000
-	
+	state_category=large_town
 }

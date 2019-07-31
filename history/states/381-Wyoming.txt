@@ -2,8 +2,7 @@
 state={
 	id=381
 	name="Southeast Wyoming"
-	manpower=225564
-	state_category=rural
+
 	history={
 		owner = WYW
 		buildings = {
@@ -16,9 +15,9 @@ state={
 	}
 
 	provinces={
-		4723 10640
+		12561 
 	}
-
+	manpower=225564
 	buildings_max_level_factor=1.000
-
+	state_category=rural
 }

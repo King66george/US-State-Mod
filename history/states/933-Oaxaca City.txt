@@ -1,0 +1,25 @@
+state={
+	id=933
+	name="Oaxaca City"
+
+	resources={
+		oil=8.000
+	}
+
+	history={ 1936.1.3 = {owner = OAX controller = OAX  }
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+		}
+		add_core_of = OAX
+		add_core_of = MEX
+	}
+
+	provinces={
+		10773 
+	}
+	manpower=1663331
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

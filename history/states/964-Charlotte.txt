@@ -1,0 +1,21 @@
+state={
+	id=964
+	name="Charlotte"
+	history={
+		owner = NCN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 3
+
+		}
+		add_core_of = NCN
+
+	}
+	provinces={
+		7083 7138 10051 
+	}
+	manpower=257491
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

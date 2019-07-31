@@ -1,12 +1,9 @@
-state= {
+
+state={
 	id=380
 	name="STATE_380"
-	manpower = 507846
-	
-	state_category = rural
-	
 	resources={
-		tungsten=76 # was: 106
+		tungsten=76.000
 	}
 
 	history={
@@ -14,13 +11,19 @@ state= {
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+
 		}
 		add_core_of = UTU
 		victory_points = {
 			4865 1 
 		}
+
 	}
+
 	provinces={
-	  10651 13153
+		10651 
 	}
+	manpower=507846
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

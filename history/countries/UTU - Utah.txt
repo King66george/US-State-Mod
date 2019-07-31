@@ -9,7 +9,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -38,7 +38,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1199
-
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -142,15 +142,6 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
-create_country_leader = {
-	name = "Henry H. Blood"
-	desc = "POLITICS_HENRY_H_BLOOD_DESC"
-	picture = "Portrait_UTU_Henry_H_Blood.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
 ### Ship Variants ###
 
 create_equipment_variant = {
@@ -213,7 +204,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-
+	
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2

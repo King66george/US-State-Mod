@@ -1,0 +1,23 @@
+
+state={
+	id=942
+	name="Hudson Bay"		
+	buildings_max_level_factor=1.000
+	manpower=435572
+	state_category=rural
+	history={
+		owner = MBM
+		victory_points = {
+			5239 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = MBM
+	}
+	provinces={
+		5239 6728 7185 7782 10585 10605 
+	}
+}	

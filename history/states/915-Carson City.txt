@@ -1,0 +1,19 @@
+state={
+	id=915
+	name="Carson City"
+	
+	history={
+		owner = NVN
+		buildings = {
+			infrastructure = 6
+		}	
+		add_core_of = NVN
+
+	}
+	provinces={
+		4607 
+	}
+	manpower=22179
+	buildings_max_level_factor=1.000
+	state_category = city
+}

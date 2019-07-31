@@ -18,7 +18,7 @@ set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -53,7 +53,7 @@ if = {
 	}
 }
 
-if = {
+if = { 
 	limit = { NOT = { has_dlc = "Together for Victory" } }
 	set_cosmetic_tag = CAN_ALY
 }
@@ -68,8 +68,8 @@ if = {
 
 1939.1.1 = {
 	add_political_power = 1198
-
-
+	
+	
 	if = {
 		limit = { has_dlc = "Together for Victory" }
 		complete_national_focus = CAN_army_modernization
@@ -81,7 +81,7 @@ if = {
 		complete_national_focus = CAN_rowell_sirois_commission
 		complete_national_focus = CAN_crown_corporations
 		complete_national_focus = CAN_national_housing_act
-
+		
 		else = {
 			#generic focuses
 			complete_national_focus = army_effort
@@ -102,7 +102,7 @@ if = {
 		low_economic_mobilisation
 	}
 
-
+	
 	oob = "CAN_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -118,7 +118,6 @@ if = {
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-		early_destroyer = 1
 
 		#doctrines
 		#Air
@@ -157,7 +156,6 @@ if = {
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
-		early_destroyer = 1
 		}
 	}
 	if = {
@@ -167,7 +165,6 @@ if = {
 			sonar = 1
 			improved_sonar = 1
 			improved_depth_charges = 1
-			early_destroyer = 1
 		}
 	}
 }
@@ -335,7 +332,7 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = { has_dlc = "Man the Guns" } 
 	### Ship Variants ###
 	# Destroyers #
 	create_equipment_variant = {

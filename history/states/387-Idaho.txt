@@ -2,8 +2,6 @@
 state={
 	id=387
 	name="North Idaho"
-		state_category=rural
-		manpower=445031
 	resources={
 		steel=18.000
 		chromium=3.000
@@ -18,15 +16,15 @@ state={
 		}
 		add_core_of = IDI
 		victory_points = {
-			9616 1
+			9616 1 
 		}
 
 	}
 
 	provinces={
-		1832 3781 4778 7845 9616 10602 12124
+		1832 3781 4778 9616 10602 12124 
 	}
-
+	manpower=445031
 	buildings_max_level_factor=1.000
-
+	state_category=rural
 }

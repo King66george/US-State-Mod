@@ -12,13 +12,13 @@ state={
 		}
 		add_core_of = SCS
 		victory_points = {
-			7202 1
+			4491 5
 		}
 
 	}
 
 	provinces={
-		4491 7012 7134 7527 10029
+		4491 7012 7134
 	}
 	manpower=1738764
 	buildings_max_level_factor=1.000

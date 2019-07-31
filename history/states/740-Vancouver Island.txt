@@ -2,20 +2,20 @@
 state={
 	id=740
 	name="STATE_740"
-	manpower = 259612
-	
-	state_category = rural
 
 	history={
 		owner = BCB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 7
+			industrial_complex = 1
 		}
 		add_core_of = BCB
-	}
 
-	provinces={
-		7259 1214 12259 12272 1420 
 	}
-	
+	provinces={
+		1214 1420 12259 12272 
+	}
+	manpower=259612
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

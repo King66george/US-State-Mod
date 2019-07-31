@@ -1,21 +1,22 @@
+
 state={
 	id=805
 	name="Northwest Nevada"
-	state_category=rural
+
 	history={
 		owner = NVN
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+
 		}
 		add_core_of = NVN
-	  victory_points = {
-		4607 30
+
 	}
-	}
+
 	provinces={
-		4607 4736 10422 12134
+		4736 10422 12134 
 	}
 	manpower=465448
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -1,11 +1,11 @@
+
 state={
 	id=799
 	name="Central California"
-	state_category=metropolis
-	manpower=5677248
 	resources={
-		oil=180.000
+		oil=20.000
 		aluminium=8.000
+		rubber=10.000
 	}
 
 	history={
@@ -15,19 +15,9 @@ state={
 			arms_factory = 2
 			industrial_complex = 6
 			dockyard = 2
-			air_base = 10
-			9671 = {
-				naval_base = 4
-				}
-			}
 
+		}
 		add_core_of = CAC
-		victory_points = {
-			9671 20
-		}
-		victory_points = {
-			9713 30
-		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7
@@ -35,11 +25,13 @@ state={
 			}
 
 		}
-}
 
-	provinces={
-		677 710 941 986 1432 1601 3677 3678 3784 3840 4518 6681 6694 6699 6861 6876 6881 7667 9637 9671 9713 9911 11658 11763 11859 11876
 	}
 
+	provinces={
+		941 986 1432 3784 3840 4518 6694 6861 6876 6881 7667 9637 9911 11763 11859 11876 
+	}
+	manpower=5677248
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

@@ -1,25 +1,26 @@
+
 state={
 	id=332
-	name="STATE_332"
-	
-	state_category = wasteland
+	name="Northern Labrador"
 
 	history={
-		owner = NLN
+		owner = LAB
 		buildings = {
 			infrastructure = 1
-
 			12503 = {
 				naval_base = 1
+
 			}
+
 		}
-		add_core_of = NLN
+		add_core_of = LAB
 
 	}
 
 	provinces={
-		1426 1785 4720 4787 12503 13165 13180 
+		1426 12503 13180 
 	}
 	manpower=22179
 	buildings_max_level_factor=1.000
+	state_category=rural
 }
