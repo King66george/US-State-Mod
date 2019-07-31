@@ -650,4 +650,140 @@ hidden_effect = {
   }
  }
 }
+
+
+#Pacific States Of America
+    pacific_states_of_america = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = CAC
+        original_tag = ORO
+        original_tag = WAW
+        original_tag = BCB
+        original_tag = YIY
+        original_tag = AKA
+        original_tag = HIH
+        }
+      }
+
+    available = {
+      is_subject = no
+        controls_state = 974
+        controls_state = 973
+        controls_state = 799
+        controls_state = 798
+        controls_state = 972
+        controls_state = 968
+        controls_state = 967
+        controls_state = 378
+        controls_state = 797
+        controls_state = 806
+        controls_state = 807
+        controls_state = 941
+        controls_state = 808
+        controls_state = 914
+        controls_state = 809
+        controls_state = 970
+        controls_state = 740
+        controls_state = 473
+        controls_state = 811
+        controls_state = 812
+        controls_state = 739
+        controls_state = 907
+        controls_state = 471
+        controls_state = 813
+        controls_state = 463
+        controls_state = 892
+        controls_state = 894
+
+      }
+
+    cost = 100
+
+    fire_only_once = yes
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    complete_effect = {
+    set_cosmetic_tag = PSA
+    set_capital = 968
+    add_stability = 0.20
+    custom_effect_tooltip = core_land
+    hidden_effect = {
+
+     974 = { add_core_of = ROOT }
+     973 = { add_core_of = ROOT }
+     799 = { add_core_of = ROOT }
+     798 = { add_core_of = ROOT }
+     972 = { add_core_of = ROOT }
+     968 = { add_core_of = ROOT }
+     967 = { add_core_of = ROOT }
+     378 = { add_core_of = ROOT }
+     797 = { add_core_of = ROOT }
+     806 = { add_core_of = ROOT }
+     807 = { add_core_of = ROOT }
+     941 = { add_core_of = ROOT }
+     808 = { add_core_of = ROOT }
+     914 = { add_core_of = ROOT }
+     809 = { add_core_of = ROOT }
+     970 = { add_core_of = ROOT }
+     740 = { add_core_of = ROOT }
+     473 = { add_core_of = ROOT }
+     811 = { add_core_of = ROOT }
+     812 = { add_core_of = ROOT }
+     739 = { add_core_of = ROOT }
+     907 = { add_core_of = ROOT }
+     471 = { add_core_of = ROOT }
+     813 = { add_core_of = ROOT }
+     463 = { add_core_of = ROOT }
+     892 = { add_core_of = ROOT }
+     894 = { add_core_of = ROOT }
+      }
+     }
+
+    }
+
+####
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
