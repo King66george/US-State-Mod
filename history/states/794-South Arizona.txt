@@ -1,6 +1,6 @@
 state={
 	id=794
-	name="South Arizona"
+	name="Tuscon"
 	manpower=435572
 	resources={
 		steel=20.000

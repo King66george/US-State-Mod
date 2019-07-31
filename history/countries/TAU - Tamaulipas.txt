@@ -1,4 +1,4 @@
-﻿capital =1952
+﻿capital =479
 
 oob = "TAU_1936"
 

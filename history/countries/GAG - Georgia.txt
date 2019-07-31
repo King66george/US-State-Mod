@@ -1,4 +1,4 @@
-﻿capital = 782
+﻿capital = 960
 
 oob = "GAG_1936"
 
@@ -123,9 +123,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 67
+	communism = 0
+	fascism = 33
 }
 1939.1.1 = {
 	set_stability = 0.9

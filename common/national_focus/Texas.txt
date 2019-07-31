@@ -3,3150 +3,3588 @@ focus_tree = {
 	continuous_focus_position = { x = 20 y = 1650 }
 	country = {
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = TXT
 		}
-
-		modifier = {
-			add = 10
-			original_tag = TXT
-		}
 	}
-
-focus = {
+	default = no
+	focus = {
 		id = TXT_texaswillagainraiseitshead
 		icon = GFX_goal_generic_small_arms
-
-		x = 15
+		cost = 3.00
+		x = 18
 		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
 
+}
+			bypass = {
 
-		cost = 3
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
 
-		ai_will_do = {
-			factor = 1
-		}
+}
+			completion_reward = {
+					add_political_power = 200
+				}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_political_power = 200
-		}
 	}
+	focus = {
+		id = TXT_expandindustry
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		x = 42
+		y = 0
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_ideas = VAV_idea_expand_industry
+				}
 
-focus = {
+	}
+	focus = {
+		id = TXT_rangers
+		text = TXT_rangers
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		x = 33
+		y = 0
+			completion_reward = {
+					add_ideas = TXT_idea_rangers
+				}
+
+	}
+	focus = {
+		id = TXT_armor
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = TXT_mechanized }
+		cost = 10.00
+		x = 35
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_aviation
+		text = TXT_aviation
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		x = 37
+		y = 6
+			completion_reward = {
+					air_experience = 25
+					if = {
+							limit = {
+									capital_scope = {
+											NOT = {
+													free_building_slots = {
+															building = air_base
+															size > 1
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_AB
+										}
+								}
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_AB
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
 		id = TXT_lonestar
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = TXT_texaswillagainraiseitshead }
-		mutually_exclusive = { focus = TXT_redstar }
-		mutually_exclusive = { focus = TXT_theoldrepublic }
-		x = 4
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_texaswillagainraiseitshead
+		}
+		mutually_exclusive = {
+			focus = TXT_redstar
+			focus = TXT_theoldrepublic
+		}
+		x = 6
 		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
 
+}
+			bypass = {
 
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
 
-		available = {
+}
+			completion_reward = {
+					add_ideas = fascist_influence
+				}
 
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_ideas = fascist_influence
-		}
 	}
-
-	focus = {
-		id = TXT_theoldrepublic
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = TXT_texaswillagainraiseitshead }
-		mutually_exclusive = { focus = TXT_lonestar }
-		mutually_exclusive = {focus = TXT_redstar}
-		x = 15
-		y = 1
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_ideas = democratic_influence
-		}
-	}
-
-	focus = {
-		id = TXT_redstar
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = TXT_texaswillagainraiseitshead }
-		mutually_exclusive = { focus = TXT_theoldrepublic }
-		mutually_exclusive = {focus = TXT_lonestar }
-		x = 27
-		y = 1
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_ideas = communist_influence
-		}
-	}
-
-	focus = {
-		id = TXT_forgeourownpath
-		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = TXT_lonestar }
-		mutually_exclusive = { focus = TXT_peacefullyintegrate }
-		x = 1
-		y = 2
-
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		start_civil_war= {
- 		ideology = democratic
-		size = 0.5
-		}
-		set_politics = {
-		ruling_party = fascism
-		elections_allowed = no
-		}
-		set_party_name = { ideology = fascism long_name = TXT_Fascism_party_ourown_long name = TXT_fascism_party_ourown }
-		add_ideas = TXT_idea_civwar
-		}
-	}
-
 	focus = {
 		id = TXT_peacefullyintegrate
 		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = TXT_lonestar }
-		mutually_exclusive = { focus = TXT_forgeourownpath }
-		x = 7
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_lonestar
+		}
+		mutually_exclusive = {
+			focus = TXT_forgeourownpath
+		}
+		x = 10
 		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
 
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_popularity = {
-		ideology = fascism
-		popularity = .40
-		}
-		}
-	}
-
-	focus = {
-		id = TXT_purgethepansies
-		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = TXT_forgeourownpath }
-		mutually_exclusive = { focus = TXT_theymayproveuseful }
-		x = 0
-		y = 3
-
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_ideas = TXT_idea_purged
-		}
-	}
-
-	focus = {
-		id = TXT_theymayproveuseful
-		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = TXT_forgeourownpath }
-		mutually_exclusive = { focus = TXT_purgethepansies }
-		x = 2
-		y = 3
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_ideas = TUR_mumtaz_okmen
-		}
-	}
-
-	focus = {
-		id = TXT_rebuildtheeconomy
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TXT_theymayproveuseful focus = TXT_purgethepansies }
-		mutually_exclusive = {}
-		x = 0
-		y = 4
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
-    	add_building_construction = {
-        type = industrial_complex
-        level = 3
-        instant_build = yes}
-		}
-	}
-	}
-
-	focus = {
-		id = TXT_strengthenthemilitary
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = TXT_theymayproveuseful focus = TXT_purgethepansies }
-		mutually_exclusive = {}
-		x = 2
-		y = 4
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 2
-    	add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes }
-		}
-		add_ideas = limited_conscription
-	}
 }
-	focus = {
-		id = TXT_strengthenthemilitaryii
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = TXT_strengthenthemilitary }
-		mutually_exclusive = {}
-		x = 2
-		y = 5
+			bypass = {
 
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_ideas = militarism_focus
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 2
-    	add_building_construction = {
-        type = arms_factory
-        level = 2
-        instant_build = yes }
-
-
-		}
-	}
 }
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
 
-	focus = {
-		id = TXT_nationalspeeches
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = TXT_strengthenthemilitaryii }
-		mutually_exclusive = {}
-		x = 2
-		y = 6
+}
+			completion_reward = {
+					add_popularity = {
+							ideology = fascism
+							popularity = .40
+						}
+				}
 
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_ideas = military_youth_focus
-		}
 	}
-
 	focus = {
-		id = TXT_strengthentheeconomy
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TXT_rebuildtheeconomy }
-		mutually_exclusive = {}
+		id = TXT_diplomacy
+		text = TXT_diplomacy
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_peacefullyintegrate
+		}
 		x = 0
+		y = 1
+		relative_position_id = TXT_peacefullyintegrate
+			completion_reward = {
+					every_neighbor_country = {
+							add_timed_idea = { idea = TXT_idea_texandiplo days = 120 }
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_naxis
+		text = TXT_naxis
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_diplomacy
+		}
+		x = 10
 		y = 5
+			completion_reward = {
+			create_faction = north_american_axis
+					every_neigbor_country = {
+							country_event = { tex.4 }
+						}
+				}
 
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes}
- 			}
-		}
 	}
-
 	focus = {
-		id = TXT_economicalpowerhouse
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TXT_strengthentheeconomy }
-		mutually_exclusive = {}
-		x = 0
+		id = TXT_assimilation
+		text = TXT_assimilation
+		icon = GFX_TXT_assimilate_new_mexico
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_naxis
+		}
+		x = 10
 		y = 6
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = NMN
+						}
+				}
 
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 4
-    add_building_construction = {
-        type = industrial_complex
-        level = 4
-        instant_build = yes}
- 			}
-		}
 	}
-
 	focus = {
-		id = TXT_retakethemexicanempire
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = TXT_nationalspeeches focus = TXT_economicalpowerhouse }
-		mutually_exclusive = {}
+		id = TXT_assimilate3
+		text = TXT_assimilate3
+		icon = GFX_TXT_assimilate_colorado
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_assimilation
+		}
 		x = 1
-		y = 7
+		y = 1
+		relative_position_id = TXT_assimilation
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = COC
+						}
+				}
 
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		add_political_power = 300
-		remove_ideas = TXT_idea_civwar
-		}
 	}
-
 	focus = {
-		id = TXT_westernneighbor
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = TXT_retakethemexicanempire }
-		mutually_exclusive = {}
-		x = 0
+		id = TXT_assimilate2
+		text = TXT_assimilate2
+		icon = GFX_TXT_assimilate_arizona
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_assimilation
+		}
+		x = -1
+		y = 1
+		relative_position_id = TXT_assimilation
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = NMN
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_assimilate4
+		text = TXT_assimilate4
+		icon = GFX_TXT_focus_assimilate_utah
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_assimilate3
+		}
+		prerequisite = {
+			focus = TXT_assimilate2
+		}
+		x = 10
 		y = 8
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = UTU
+						}
+				}
 
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		NOT = { country_exists = NMN }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = NMN
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_grandcanyonstate
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = TXT_westernneighbor }
-		mutually_exclusive = {}
-		x = 0
-		y = 9
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		NOT = { country_exists = AZA }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = AZA
-			}
-
-		}
-	}
-
-	focus = {
-		id = TXT_tothepacific
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = TXT_grandcanyonstate }
-		mutually_exclusive = {}
-		x = 0
-		y = 10
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-		NOT = { country_exists = CAC }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = CAC
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_northernneighbor
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = TXT_retakethemexicanempire }
-		mutually_exclusive = {}
-		x = 2
-		y = 8
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = COC }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = COC
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_lifeelevated
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = TXT_northernneighbor }
-		mutually_exclusive = {}
-		x = 2
-		y = 9
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = UTU }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = UTU
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_thesilverstate
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = TXT_lifeelevated }
-		mutually_exclusive = {}
-		x = 2
-		y = 10
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = NVN }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = NVN
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_rememberthealamo
-		icon = GFX_focus_attack_mexico
-		prerequisite = { focus = TXT_tothepacific }
-		prerequisite = { focus = TXT_thesilverstate }
-		mutually_exclusive = {}
-		x = 1
-		y = 11
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = MEX }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		declare_war_on= {
-		target = MEX
-		type = annex_everything
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_takelouisiana
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = TXT_peacefullyintegrate }
-		mutually_exclusive = {}
-		x = 8
-		y = 3
-
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		has_defensive_war_with = LAL
-		has_offensive_war_with = LAL
-		NOT = { country_exists = LAL }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = LAL
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_takeoklahoma
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = TXT_peacefullyintegrate }
-		mutually_exclusive = {}
-		x = 6
-		y = 3
-
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = OKO }
-		has_offensive_war_with= OKO
-		has_defensive_war_with= OKO
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = OKO
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_rebuildtheireconomies
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TXT_takelouisiana }
-		prerequisite = { focus = TXT_takeoklahoma }
-		mutually_exclusive = {}
-		x = 7
-		y = 4
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 4
-    	add_building_construction = {
-        type = industrial_complex
-        level = 4
-        instant_build = yes}
- 			}
-		}
-	}
-
-	focus = {
-		id = TXT_takealabama
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = TXT_rebuildtheireconomies }
-		mutually_exclusive = {}
-		x = 6
-		y = 5
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = ALA }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = ALA
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_takearkansas
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = TXT_rebuildtheireconomies }
-		mutually_exclusive = {}
-		x = 8
-		y = 5
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = ARA }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = annex_everything
-		target = ARA
-			}
-		}
-	}
-
-	focus = {
-		id = TXT_snxFEfak
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TXT_takearkansas }
-		prerequisite = { focus = TXT_takealabama }
-		mutually_exclusive = {}
-		x = 7
-		y = 6
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 4
-    	add_building_construction = {
-        type = industrial_complex
-        level = 4
-        instant_build = yes}
- 			}
-		}
-	}
-
-	focus = {
-		id = TXT_economic_boom
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TXT_rebuildtheireconomies }
-		mutually_exclusive = {}
-		x = 7
-		y = 7
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		random_owned_controlled_state = {add_extra_state_shared_building_slots = 2
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes}
- }
-
-		}
 	}
 	focus = {
-		id = TXT_jointheaxis
-		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = TXT_economic_boom }
-		mutually_exclusive = { focus = TXT_jointheconfederatestates }
-		x = 6
-		y = 8
-
-		cost = 3
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_theoldrepublic
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_texaswillagainraiseitshead
 		}
-
-		bypass = {
-		NOT = { country_exists= GER }
+		mutually_exclusive = {
+			focus = TXT_lonestar
+			focus = TXT_redstar
 		}
+		x = 18
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		GER = { country_event = generic.2 }
-		}
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					add_ideas = democratic_influence
+				}
+
 	}
-	focus = {
-		id = TXT_jointheconfederatestates
-		icon = GFX_focus_chi_mission_to_the_us
-		prerequisite = { focus = TXT_economic_boom }
-		mutually_exclusive = { focus = TXT_jointheaxis }
-		x = 8
-		y = 8
-
-		cost = 3
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		is_in_faction = yes
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		SCS = { country_event = generic.2 }
-		}
-	}
-	focus = {
-		id = TXT_americanallies
-		icon = GFX_focus_attack_britain
-		prerequisite = { focus = TXT_jointheaxis focus = TXT_jointheconfederatestates }
-		mutually_exclusive = {}
-		x = 7
-		y = 9
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		unlock_decision_tooltip = { decision = USA_execute_war_plan_red show_effect_tooltip = yes show_modifiers = yes }
-		create_wargoal = {
-		type = annex_everything
-		target = ENG
-		}
-		}
-	}
-
 	focus = {
 		id = TXT_offensivefocus
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = TXT_theoldrepublic }
-		mutually_exclusive = { focus = TXT_defensivefocus }
-		x = 14
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_theoldrepublic
+		}
+		mutually_exclusive = {
+			focus = TXT_defensivefocus
+		}
+		x = 17
 		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		add_ideas = limited_conscription
-		}
-	}
-
-	focus = {
-		id = TXT_defensivefocus
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = TXT_theoldrepublic }
-		mutually_exclusive = { focus = TXT_offensivefocus }
-		x = 16
-		y = 2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		add_ideas = BOL_enrique_finot
-		}
-	}
-
-	focus = {
-		id = TXT_defendtheriogrande
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = TXT_defensivefocus }
-		mutually_exclusive = {}
-		x = 17
-		y = 3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		790 = {
-    	add_building_construction = {
-        type = bunker
-    	province = 12369
-        level = 10
-        instant_build = yes}
-		}
-	}
-	}
-
-	focus = {
-		id = TXT_defendtheriograndeii
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = TXT_defendtheriogrande }
-		mutually_exclusive = {}
-		x = 17
-		y = 4
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-
-		897 = {
-		add_building_construction = {
-		type = bunker
-    	province = 5061
-        level = 5
-        instant_build = yes}
-		}
-
-		897 = {
-    	add_building_construction = {
-        type = bunker
-    	province = 2019
-        level = 5
-        instant_build = yes}
-		}
-
-		897 = {
-		add_building_construction = {
-        type = bunker
-    	province = 12728
-        level = 5
-        instant_build = yes}
-		}
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = limited_conscription
+				}
 
 	}
-	}
-
-
-	focus = {
-		id = TXT_defendtheriograndeiii
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = TXT_defendtheriograndeii }
-		mutually_exclusive = {}
-		x = 17
-		y = 5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			789 = {
-    	add_building_construction = {
-        type = bunker
-    	province = 12728
-        level = 5
-        instant_build = yes}
-		}
-		789 = {
-    	add_building_construction = {
-        type = bunker
-    	province = 5038
-        level = 5
-        instant_build = yes}
-		}
-		789 = {
-    	add_building_construction = {
-        type = bunker
-    	province = 1954
-        level = 5
-        instant_build = yes}
-		}
-		789 = {
-    	add_building_construction = {
-        type = bunker
-    	province = 10894
-        level = 5
-        instant_build = yes}
-		}
-		789 = {
-    	add_building_construction = {
-        type = bunker
-    	province = 10740
-        level = 5
-        instant_build = yes}
-		}
-		}
-	}
-
 	focus = {
 		id = TXT_restoretheborders
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = TXT_offensivefocus }
-		mutually_exclusive = {}
-		x = 13
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_offensivefocus
+		}
+		x = 16
 		y = 3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		divisions_in_border_state = {
-				type = infantry
-				size > 1
-				state = 788
-				border_state = 832
-		}
-		}
-		bypass = {
-		controls_state = 832
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		start_border_war = {
-		change_state_after_war = no
-				attacker = {
-				state = 788
-				num_provinces = 2
-
-				on_win =  tex.0
-				on_lose = tex.1
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					divisions_in_border_state = {
+							type = infantry
+							size > 1
+							state = 788
+							border_state = 832
+						}
+				}
+			bypass = {
+					controls_state = 832
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					start_border_war = {
+							change_state_after_war = no
+							attacker = {
+									state = 788
+									num_provinces = 2
+									on_win = tex.0
+									on_lose = tex.1
+								}
+							defender = {
+									state = 832
+									num_provinces = 1
+								}
+						}
 				}
 
-				defender = {
-						state = 832
-
-						num_provinces = 1
-				}
-		}
-
-
-
-		}
 	}
-
 	focus = {
-		id = TXT_restorethebordersii
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = TXT_restoretheborders }
-		mutually_exclusive = {}
-		x = 13
-		y = 4
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_defensivefocus
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_theoldrepublic
 		}
-
-		available = {
-		divisions_in_border_state = {
-				type = infantry
-				size > 1
-				state = 788
-				border_state = 793
+		mutually_exclusive = {
+			focus = TXT_offensivefocus
 		}
-		}
+		x = 19
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		bypass = {
-
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		start_border_war = {
-		change_state_after_war = no
-				attacker = {
-				state = 788
-				num_provinces = 2
-
-				on_win =  tex.2
-				on_lose = tex.1
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = BOL_enrique_finot
 				}
 
-				defender = {
-						state = 793
-
-						num_provinces = 1
-				}
-		}
-		}
 	}
-
 	focus = {
-		id = TXT_restorethebordersiii
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = TXT_restorethebordersii }
-		mutually_exclusive = {}
-		x = 13
-		y = 5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		start_border_war = {
-		change_state_after_war = no
-				attacker = {
-				state = 793
-				num_provinces = 1
-
-				on_win =  tex.3
-				on_lose = tex.1
-				}
-
-				defender = {
-						state = 802
-
-						num_provinces = 1
-				}
-		}
-		}
-	}
-
-focus = {
 		id = TXT_premtivestrike
 		icon = GFX_focus_attack_mexico
-		prerequisite = { focus = TXT_offensivefocus focus = TXT_defensivefocus }
-		mutually_exclusive = {}
-		x = 15
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_offensivefocus
+			focus = TXT_defensivefocus
+		}
+		x = 18
 		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = topple_government
+							target = MEX
+						}
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_green
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+				}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = topple_government
-		target = MEX
-			}
-		unlock_decision_tooltip = { decision = USA_execute_war_plan_green show_effect_tooltip = yes show_modifiers = yes }
-		}
 	}
-
 	focus = {
 		id = TXT_formthenorthamericandefensetreaty
 		icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = TXT_premtivestrike }
-		mutually_exclusive = {}
-		x = 15
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_premtivestrike
+		}
+		x = 18
 		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_faction = TXT_north_american_defense_treaty
+					add_to_faction = MEX
+				}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_faction = TXT_north_american_defense_treaty
-		add_to_faction = MEX
-		}
-	}
-
-	focus = {
-		id = TXT_jointheallies
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = TXT_restorethebordersiii focus = TXT_defendtheriograndeiii }
-		mutually_exclusive = {}
-		x = 15
-		y = 6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		ENG = { country_event = generic.2 }
-		}
-	}
-
-	focus = {
-		id = TXT_topplegermany
-		icon = GFX_focus_attack_germany
-		prerequisite = { focus = TXT_jointheallies }
-		mutually_exclusive = { focus = TXT_thesmallerthreats }
-		x = 13
-		y = 7
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
-		}
-	}
-
-	focus = {
-		id = TXT_takeknigsbergandermlandmasuren
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = TXT_topplegermany }
-		mutually_exclusive = {}
-		x = 13
-		y = 8
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		GER = { has_capitulated= yes }
- 		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		transfer_state = 763
-		transfer_state = 784
-		}
-	}
-
-	focus = {
-		id = TXT_toppleitaly
-		icon = GFX_focus_ger_assassinate_mussolini
-		prerequisite = { focus = TXT_takeknigsbergandermlandmasuren }
-		mutually_exclusive = {}
-		x = 13
-		y = 9
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = ITA }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		declare_war_on= {
-		target = ITA
-		type = topple_government
-			}
-		}
 	}
 	focus = {
-		id = TXT_theaxisgone
-		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = TXT_toppleitaly focus = TXT_thethreatofromania }
-		mutually_exclusive = {}
-		x = 15
-		y = 10
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_defendtheriogrande
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_defensivefocus
 		}
-		available = {
+		x = 20
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
- 		}
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					790 = {
+							add_building_construction = {
+									type = bunker
+									province = 12369
+									level = 10
+									instant_build = yes
+								}
+						}
+				}
 
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		transfer_state= 115
-		transfer_state= 114
-		}
 	}
-
 	focus = {
-		id = TXT_thesmallerthreats
-		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = TXT_jointheallies }
-		mutually_exclusive = { focus =  TXT_topplegermany }
-		x = 17
-		y = 7
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_defendtheriograndeii
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_defendtheriogrande
 		}
+		x = 20
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		bypass = {
-        NOT = { HUN = {has_government = fascism} }
-		}
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					897 = {
+							add_building_construction = {
+									type = bunker
+									province = 5061
+									level = 5
+									instant_build = yes
+								}
+						}
+					897 = {
+							add_building_construction = {
+									type = bunker
+									province = 2019
+									level = 5
+									instant_build = yes
+								}
+						}
+					897 = {
+							add_building_construction = {
+									type = bunker
+									province = 12728
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = topple_government
-		target = HUN
-			}
-		}
 	}
-
 	focus = {
-		id = TXT_thethreatofromania
-		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = TXT_thethreatofyugoslavia }
-		mutually_exclusive = {}
-		x = 17
-		y = 9
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_defendtheriograndeiii
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_defendtheriograndeii
 		}
+		x = 20
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		bypass = {
-		NOT = { ROM = { has_government= fascism } }
-		}
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					789 = {
+							add_building_construction = {
+									type = bunker
+									province = 12728
+									level = 5
+									instant_build = yes
+								}
+						}
+					789 = {
+							add_building_construction = {
+									type = bunker
+									province = 5038
+									level = 5
+									instant_build = yes
+								}
+						}
+					789 = {
+							add_building_construction = {
+									type = bunker
+									province = 1954
+									level = 5
+									instant_build = yes
+								}
+						}
+					789 = {
+							add_building_construction = {
+									type = bunker
+									province = 10894
+									level = 5
+									instant_build = yes
+								}
+						}
+					789 = {
+							add_building_construction = {
+									type = bunker
+									province = 10740
+									level = 5
+									instant_build = yes
+								}
+						}
+				}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = topple_government
-		target = ROM
-			}
-		}
 	}
-
 	focus = {
-		id = TXT_thethreatofyugoslavia
-		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = TXT_thesmallerthreats }
-		mutually_exclusive = {}
-		x = 17
-		y = 8
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_redstar
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_texaswillagainraiseitshead
 		}
-
-		bypass = {
-		NOT = { YUG = { has_government= fascism } }
+		mutually_exclusive = {
+			focus = TXT_lonestar
+			focus = TXT_theoldrepublic
 		}
+		x = 29
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = topple_government
-		target = YUG
-			}
-		}
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					add_ideas = communist_influence
+				}
+
 	}
-
 	focus = {
 		id = TXT_workersrevolution
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = TXT_redstar }
-		mutually_exclusive = {}
-		x = 27
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_redstar
+		}
+		x = 29
 		y = 2
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		start_civil_war= {
-		 ideology = democratic
-		size = 0.5
-			}
-		set_politics = {
-		ruling_party = communism
-		elections_allowed = no
-		}
-		diplomatic_relation = {
-		country = MEX
-		relation = non_aggression_pact
+			ai_will_do = {
+					factor = 1
 				}
-			 }
-		}
+			bypass = {
 
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					start_civil_war = {
+							ideology = democratic
+							size = 0.5
+						}
+					set_politics = {
+							ruling_party = communism
+							elections_allowed = no
+						}
+					diplomatic_relation = {
+							country = MEX
+							relation = non_aggression_pact
+						}
+				}
+
+	}
 	focus = {
 		id = TXT_trotskyisright
 		icon = GFX_focus_generic_join_comintern
-		prerequisite = { focus = TXT_workersrevolution }
-		mutually_exclusive = { focus = TXT_followstalin }
-		x = 25
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_workersrevolution
+		}
+		mutually_exclusive = {
+			focus = TXT_followstalin
+		}
+		x = 26
 		y = 3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		set_politics = {
-		ruling_party = communism
-		elections_allowed = no
-		}
-		TXT = {country_event = { days = 1 id = mexico.17 }}
-		}
-	}
-
-	focus = {
-		id = TXT_permanentrevolution
-		icon = GFX_focus_YUG_pan_slavic_congress
-		prerequisite = { focus = TXT_trotskyisright }
-		mutually_exclusive = {}
-		x = 25
-		y = 4
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		every_neighbor_country = {
-		add_ideas = TXT_idea_permrev
-		}
-		}
-	}
-
-	focus = {
-		id = TXT_directinfluence
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		prerequisite = { focus = TXT_permanentrevolution }
-		mutually_exclusive = { focus = TXT_peacefultakeover }
-		x = 23
-		y = 5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		random_neighbor_country = { start_civil_war= {
-		 ideology = communism
-		size = 0.5
+			ai_will_do = {
+					factor = 1
 				}
-			}
-		}
-	}
+			bypass = {
 
-	focus = {
-		id = TXT_directinfluenceii
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		prerequisite = { focus = TXT_directinfluence }
-		mutually_exclusive = {}
-		x = 23
-		y = 6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		random_neighbor_country = {start_civil_war= {
- 		ideology = communism
-		size = 0.5
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					set_politics = {
+							ruling_party = communism
+							elections_allowed = no
+						}
+					TXT = {
+							country_event = {
+									days = 1
+									id = mexico.17
+								}
+						}
 				}
-			}
-		}
+
 	}
-
 	focus = {
-		id = TXT_formtheamericancommune
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = { focus = TXT_directinfluenceii focus = TXT_peacefultakeoverii focus = TXT_joinstalin focus = TXT_industryfocusiii}
-		mutually_exclusive = {}
-		x = 27
-		y = 7
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_equipment
+		text = TXT_equipment
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_rangers
 		}
+		x = 31
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
 
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_faction= TXT_north_american_commune
-		}
 	}
-
 	focus = {
-		id = TXT_purgetheallies
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = TXT_formtheamericancommune }
-		mutually_exclusive = { focus = TXT_central }
-		x = 25
-		y = 8
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		id = TXT_equipment2
+		text = TXT_equipment2
+		icon = GFX_goal_generic_army_artillery
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_equipment
 		}
+		x = 31
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
 
-		bypass = {
-		NOT = { country_exists = NMN }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		NMN = { country_event = disunitedstates.2 }
-		}
 	}
-
-	focus = {
-		id = TXT_purgetheaxis
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = TXT_purgetheallies }
-		mutually_exclusive = {}
-		x = 25
-		y = 9
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-		NOT = { country_exists = AZA }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			AZA = { country_event = disunitedstates.2 }
-			}
-		}
-
-	focus = {
-		id = TXT_peacefultakeover
-		icon = GFX_focus_prc_agrarian_socialism
-		prerequisite = { focus = TXT_permanentrevolution }
-		mutually_exclusive = { focus = TXT_directinfluence }
-		x = 27
-		y = 5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		every_neighbor_country = {
-		add_popularity = {
-		ideology = communism
-		popularity = .15
-		}
-		}
-			}
-		}
-
-	focus = {
-		id = TXT_peacefultakeoverii
-		icon = GFX_focus_prc_agrarian_socialism
-		prerequisite = { focus = TXT_peacefultakeover }
-		mutually_exclusive = {}
-		x = 27
-		y = 6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		every_neighbor_country = {
-		add_popularity = {
-		ideology = communism
-		popularity = .15
-		}
-		}
-			}
-		}
-
 	focus = {
 		id = TXT_followstalin
 		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = TXT_workersrevolution }
-		mutually_exclusive = { focus = TXT_trotskyisright }
-		x = 29
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_workersrevolution
+		}
+		mutually_exclusive = {
+			focus = TXT_trotskyisright
+		}
+		x = 32
 		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 1.0
+							uses = 2
+							category = industry
+						}
+					set_politics = {
+							ruling_party = communism
+							elections_allowed = no
+						}
+				}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-
-		add_tech_bonus = {
-        name = industrial_bonus
-        bonus = 1.0
-	uses = 2
-	category = industry
-			}
-			set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-			}
- }
-		}
-
+	}
 	focus = {
 		id = TXT_forcefulconversion
 		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = TXT_followstalin }
-		mutually_exclusive = {}
-		x = 29
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_followstalin
+		}
+		x = 31
 		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = NMN
+						}
+				}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
- 		create_wargoal= {
-		type = puppet_wargoal_focus
-		target = NMN
-			}
-        }
-    }
-
+	}
 	focus = {
 		id = TXT_forcefulconversionii
 		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = TXT_forcefulconversion }
-		mutually_exclusive = {}
-		x = 29
-		y = 5
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_forcefulconversion
 		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		create_wargoal= {
-		type = puppet_wargoal_focus
-		target = LAL
-		}
-	}
-}
-
-	focus = {
-		id = TXT_joinstalin
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		prerequisite = { focus = TXT_forcefulconversionii }
-		mutually_exclusive = {}
-		x = 29
+		x = 31
 		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = LAL
+						}
+				}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		SOV = { country_event = generic.2 }
-		}
 	}
+	focus = {
+		id = TXT_doctrine
+		text = TXT_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_rangers
+		}
+		x = 33
+		y = 1
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
 
+	}
+	focus = {
+		id = TXT_doctrine2
+		text = TXT_doctrine2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_doctrine
+		}
+		x = 33
+		y = 2
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
 
+	}
 	focus = {
 		id = TXT_industryfocus
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = TXT_followstalin }
-		mutually_exclusive = {}
-		x = 32
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_followstalin
+		}
+		x = 33
 		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 3
-                    instant_build = yes
-                }}
-		}
 	}
-
 	focus = {
 		id = TXT_industryfocusii
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = TXT_industryfocus }
-		mutually_exclusive = {}
-		x = 32
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_industryfocus
+		}
+		x = 33
 		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-		cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 3
-                    instant_build = yes
-                }}
-		}
 	}
-
 	focus = {
 		id = TXT_industryfocusiii
 		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = TXT_industryfocusii }
-		mutually_exclusive = {}
-		x = 32
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_industryfocusii
+		}
+		x = 33
 		y = 6
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-random_owned_controlled_state = {add_extra_state_shared_building_slots = 3
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 3
-                    instant_build = yes
-                }
-								}
-		}
-		}
-		focus = {
-			id = TXT_americanpuppetry
-			icon = GFX_goal_generic_war_with_comintern
-			x = 25
-			y = 6
-			cost = 5
-			available_if_capitulated = yes
-			prerequisite = { focus = TXT_permanentrevolution }
 			ai_will_do = {
-				factor = 1
-			}
+					factor = 1
+				}
 			bypass = {
-				NOT = { country_exists= LAL }
-			}
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
 			completion_reward = {
-				random_neighbor_country = {
-				create_wargoal= {
-				type = puppet_wargoal_focus
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
 				}
-			}
+
+	}
+	focus = {
+		id = TXT_joinstalin
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_forcefulconversionii
 		}
-	}
-	focus = {
-			id = TXT_expandindustry
-			icon = GFX_goal_generic_production
-
-			x = 37
-			y = 0
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-			add_ideas = VAV_idea_expand_industry
-			}
-
-	}
-
-	focus = {
-			id = TXT_seconomy1
-			icon = GFX_goal_generic_construct_civ_factory
-			prerequisite = { focus = TXT_expandindustry }
-
-			x = 36
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_seconomy2
-			icon = GFX_goal_generic_construct_civ_factory
-			prerequisite = { focus = TXT_seconomy1 }
-
-			x = 36
-			y = 2
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_seconomy3
-			icon = GFX_goal_generic_construct_civ_factory
-			prerequisite = { focus = TXT_seconomy2 }
-
-			x = 36
-			y = 3
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_seconomy4
-			icon = GFX_goal_generic_construct_civ_factory
-			prerequisite = { focus = TXT_seconomy3 }
-
-			x = 36
-			y = 4
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-					}
-				}
-			}
-	}
-
-	focus = {
-			id = TXT_meconomy1
-			icon = GFX_goal_generic_construct_mil_factory
-			prerequisite = { focus = TXT_expandindustry }
-
-			x = 38
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_meconomy2
-			icon = GFX_goal_generic_construct_mil_factory
-			prerequisite = { focus = TXT_meconomy1 }
-
-			x = 38
-			y = 2
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_meconomy3
-			icon = GFX_goal_generic_construct_mil_factory
-			prerequisite = { focus = TXT_meconomy2 }
-
-			x = 38
-			y = 3
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_meconomy4
-			icon = GFX_goal_generic_construct_mil_factory
-			prerequisite = { focus = TXT_meconomy3 }
-
-			x = 38
-			y = 4
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_ecoboom
-			icon = GFX_goal_generic_consumer_goods
-			prerequisite = { focus = TXT_meconomy4 }
-			prerequisite = { focus = TXT_seconomy4 }
-			mutually_exclusive = { focus = TXT_navalpowerhouse }
-			mutually_exclusive = { focus = TXT_developed }
-			x = 37
-			y = 5
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-			add_ideas = { VAV_idea_eboom }
-			}
-
-	}
-
-	focus = {
-			id = TXT_dockyard1
-			icon = GFX_goal_generic_construct_naval_dockyard
-			prerequisite = { focus = TXT_expandindustry }
-
-			x = 34
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-
-
-	}
-
-	focus = {
-			id = TXT_dockyard2
-			icon = GFX_goal_generic_construct_naval_dockyard
-			prerequisite = { focus = TXT_dockyard1 }
-
-			x = 34
-			y = 2
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_dockyard3
-			icon = GFX_goal_generic_construct_naval_dockyard
-			prerequisite = { focus = TXT_dockyard2 }
-
-			x = 34
-			y = 3
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_dockyard4
-			icon = GFX_goal_generic_construct_naval_dockyard
-			prerequisite = { focus = TXT_dockyard3 }
-
-			x = 34
-			y = 4
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-					}
-				}
-			}
-
-	}
-
-	focus = {
-			id = TXT_roads1
-			icon = GFX_goal_generic_construct_civilian
-			prerequisite = { focus = TXT_expandindustry }
-
-			x = 40
-			y = 1
-
-			cost = 5
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				random_owned_controlled_state = {
-					add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-					}
-			}
+		prerequisite = {
+			focus = TXT_industryfocusiii
 		}
-	}
-
-	focus = {
-			id = TXT_roads2
-			icon = GFX_goal_generic_construct_civilian
-			prerequisite = { focus = TXT_roads1 }
-
-			x = 40
-			y = 2
-
-			cost = 5
-
+		x = 32
+		y = 7
 			ai_will_do = {
-				factor = 1
-			}
+					factor = 1
+				}
+			bypass = {
 
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
 			completion_reward = {
-				random_owned_controlled_state = {
-					add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-					}
-			}
+					SOV = {
+							country_event = generic.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_quality
+		text = TXT_quality
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_joinstalin
 		}
-
-	}
-
-	focus = {
-			id = TXT_roads3
-			icon = GFX_goal_generic_construct_civilian
-			prerequisite = { focus = TXT_roads2 }
-
-			x = 40
-			y = 3
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				random_owned_controlled_state = {
-					add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-					}
-			}
+		mutually_exclusive = {
+			focus = TXT_stalin
 		}
+		x = 2
+		y = 1
+		relative_position_id = TXT_joinstalin
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+							category = artillery
+						}
+				}
 
 	}
-
 	focus = {
-			id = TXT_roads4
-			icon = GFX_goal_generic_construct_civilian
-			prerequisite = { focus = TXT_roads3 }
-
-			x = 40
-			y = 4
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
-			completion_reward = {
-				random_owned_controlled_state = {
-					add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-					}
-			}
-
-
-				random_owned_controlled_state = {
-					add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-					}
-			}
-
-
-				random_owned_controlled_state = {
-					add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-					}
-			}
+		id = TXT_stalin
+		text = TXT_stalin
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_joinstalin
 		}
+		mutually_exclusive = {
+			focus = TXT_quality
+		}
+		x = 30
+		y = 8
+			completion_reward =  {
+					add_ideas = { limited_conscription }
+				}
 
 	}
-
 	focus = {
-			id = TXT_navalpowerhouse
-			icon = GFX_goal_generic_build_navy
-			prerequisite = { focus = TXT_dockyard4 }
-			mutually_exclusive = { focus = TXT_ecoboom }
-			mutually_exclusive = { focus = TXT_developed }
-			x = 35
-			y = 5
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
+		id = TXT_motoreffort
+		text = TXT_motoreffort
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_rangers
+		}
+		x = 35
+		y = 1
 			completion_reward = {
-				add_ideas = VAV_idea_navy_discount
-			}
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 3.0
+							technology = motorised_infantry
+						}
+				}
 
 	}
-
 	focus = {
-			id = TXT_developed
-			icon = GFX_goal_generic_construct_infrastructure
-			prerequisite = { focus = TXT_roads4 }
-			mutually_exclusive = { focus = TXT_ecoboom }
-			mutually_exclusive = { focus = TXT_navalpowerhouse }
-
-			x = 39
-			y = 5
-
-			cost = 10
-
-			ai_will_do = {
-				factor = 1
-			}
-
+		id = TXT_mechanized
+		text = TXT_mechinized
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_motoreffort
+		}
+		x = 35
+		y = 2
 			completion_reward = {
-			add_ideas = { VAV_idea_fully_developed_roads }
-			}
+					add_tech_bonus = {
+							name = motorized_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_fighter
+		text = TXT_fighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_aviation
+		}
+		x = 36
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 2
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_bomber
+		text = TXT_bomber
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_aviation
+		}
+		x = 38
+		y = 7
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 1.0
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_aviation2
+		text = TXT_aviation2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_bomber
+		}
+		prerequisite = {
+			focus = TXT_fighter
+		}
+		x = 37
+		y = 8
+			completion_reward = {
+					air_experience = 25
+					if = {
+							limit = {
+									capital_scope = {
+											OR = {
+													NOT = {
+															is_controlled_by = ROOT
+														}
+													NOT = {
+															free_building_slots = {
+																	building = air_base
+																	size > 1
+																}
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_2_AB
+										}
+								}
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											is_controlled_by = ROOT
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_2_AB
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_cas
+		text = TXT_cas
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_aviation2
+		}
+		x = 36
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_seconomy1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_expandindustry
+		}
+		x = 38
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_nav
+		text = TXT_nav
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_aviation2
+		}
+		x = 38
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_bomber_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_outsourceoil
+		text = TXT_outsourceoil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_seconomy1
+		}
+		x = 40
+		y = 2
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = -50
+							state = 375
+						}
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_dockyard1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_expandindustry
+		}
+		x = 42
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_dockyard2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_dockyard1
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_dockyard1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
 
 	}
 	focus = {
 		id = TXT_purchaseconvoys
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = TXT_dockyard1 }
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_dockyard2
+		}
+		x = 44
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = convoy_1
+							amount = 300
+						}
+				}
 
-		x = 32
+	}
+	focus = {
+		id = TXT_forgeourownpath
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_lonestar
+		}
+		mutually_exclusive = {
+			focus = TXT_peacefullyintegrate
+		}
+		x = 2
 		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
 
-		cost = 5
+}
+			bypass = {
 
-		ai_will_do = {
-			factor = 1
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					start_civil_war = {
+							ideology = democratic
+							size = 0.5
+						}
+					set_politics = {
+							ruling_party = fascism
+							elections_allowed = no
+						}
+					set_party_name = {
+							ideology = fascism
+							long_name = TXT_Fascism_party_ourown_long
+							name = TXT_fascism_party_ourown
+						}
+					add_ideas = TXT_idea_civwar
+				}
+
+	}
+	focus = {
+		id = TXT_purgethepansies
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_forgeourownpath
 		}
+		mutually_exclusive = {
+			focus = TXT_theymayproveuseful
+		}
+		x = 0
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
 
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					add_ideas = TXT_idea_purged
+				}
+
+	}
+	focus = {
+		id = TXT_theymayproveuseful
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_forgeourownpath
+		}
+		mutually_exclusive = {
+			focus = TXT_purgethepansies
+		}
+		x = 4
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					add_ideas = TUR_mumtaz_okmen
+				}
+
+	}
+	focus = {
+		id = TXT_retakethemexicanempire
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_purgethepansies
+			focus = TXT_theymayproveuseful
+		}
+		x = 2
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					add_political_power = 300
+				}
+
+	}
+	focus = {
+		id = TXT_westernneighbor
+		icon = GFX_TXT_assimilate_new_mexico
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_retakethemexicanempire
+		}
+		x = 2
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = NMN
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = NMN
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_northernneighbor
+		icon = GFX_TXT_assimilate_colorado
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_westernneighbor
+		}
+		x = 2
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = COC
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = COC
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_grandcanyonstate
+		icon = GFX_TXT_assimilate_arizona
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_northernneighbor
+		}
+		x = 2
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = AZA
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = AZA
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_tothepacific
+		icon = GFX_TXT_assimilate_california
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_northernneighbor
+		}
+		x = 0
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = CAC
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = CAC
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_lifeelevated
+		icon = GFX_TXT_focus_assimilate_utah
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_northernneighbor
+		}
+		x = 4
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = UTU
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = UTU
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_thesilverstate
+		icon = GFX_TXT_assimilate_nevada
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_lifeelevated
+		}
+		prerequisite = {
+			focus = TXT_tothepacific
+		}
+		x = 2
+		y = 9
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = NVN
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = annex_everything
+							target = NVN
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_rememberthealamo
+		icon = GFX_focus_attack_mexico
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_thesilverstate
+		}
+		x = 2
+		y = 10
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = MEX
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					declare_war_on = {
+							target = MEX
+							type = annex_everything
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_strengthenthemilitary
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_theymayproveuseful
+			focus = TXT_purgethepansies
+		}
+		x = 4
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					add_ideas = limited_conscription
+				}
+
+	}
+	focus = {
+		id = TXT_strengthenthemilitaryii
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_strengthenthemilitary
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_strengthenthemilitary
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					add_ideas = militarism_focus
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_permanentrevolution
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_trotskyisright
+		}
+		x = 26
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					every_neighbor_country = {
+							add_timed_idea = { idea = TXT_idea_permrev days = 120 }
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_directinfluence
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_permanentrevolution
+		}
+		mutually_exclusive = {
+			focus = TXT_peacefultakeover
+		}
+		x = 24
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					random_neighbor_country = {
+							start_civil_war = {
+									ideology = communism
+									size = 0.5
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = TXT_directinfluenceii
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_directinfluence
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_directinfluence
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					random_neighbor_country = {
+							start_civil_war = {
+									ideology = communism
+									size = 0.5
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_formtheamericancommune
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_peacefultakeoverii
+			focus = TXT_directinfluenceii
+		}
+		x = 26
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_faction = TXT_north_american_commune
+				}
+
+	}
+	focus = {
+		id = TXT_east
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_formtheamericancommune
+		}
+		mutually_exclusive = {
+			focus = TXT_central
+		}
+		x = 28
+		y = 8
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = LAL
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					LAL = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_dockyard3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_dockyard2
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_dockyard1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_dockyard4
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_dockyard3
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_dockyard1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_navalpowerhouse
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_dockyard4
+		}
+		x = 42
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_ideas = VAV_idea_navy_discount
+				}
+
+	}
+	focus = {
+		id = TXT_seconomy2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_seconomy1
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_seconomy1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_seconomy3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_seconomy2
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_seconomy1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_seconomy4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_seconomy3
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_seconomy1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_meconomy1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_expandindustry
+		}
+		x = 46
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_meconomy2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_meconomy1
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_meconomy1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_meconomy3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_meconomy2
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_meconomy1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_meconomy4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_meconomy3
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_meconomy1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_ecoboom
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_meconomy4
+		}
+		prerequisite = {
+			focus = TXT_seconomy4
+		}
+		x = 42
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_ideas = { VAV_idea_eboom }
+				}
+
+	}
+	focus = {
+		id = TXT_rebuildtheeconomy
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_theymayproveuseful
+			focus = TXT_purgethepansies
+		}
+		x = 0
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_nationalspeeches
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_strengthenthemilitaryii
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_strengthenthemilitary
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					add_ideas = military_youth_focus
+				}
+
+	}
+	focus = {
+		id = TXT_strengthentheeconomy
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_rebuildtheeconomy
+		}
+		prerequisite = {
+			focus = TXT_rebuildtheeconomy
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_rebuildtheeconomy
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_economicalpowerhouse
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_backtonormal
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_rebuildtheeconomy
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 4
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_restorethebordersii
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_restoretheborders
+		}
+		x = 16
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					divisions_in_border_state = {
+							type = infantry
+							size > 1
+							state = 788
+							border_state = 793
+						}
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					start_border_war = {
+							change_state_after_war = no
+							attacker = {
+									state = 788
+									num_provinces = 2
+									on_win = tex.2
+									on_lose = tex.1
+								}
+							defender = {
+									state = 793
+									num_provinces = 1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_restorethebordersiii
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_restorethebordersii
+		}
+		x = 16
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					start_border_war = {
+							change_state_after_war = no
+							attacker = {
+									state = 793
+									num_provinces = 1
+									on_win = tex.3
+									on_lose = tex.1
+								}
+							defender = {
+									state = 802
+									num_provinces = 1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_jointheallies
+		text = TXT_jointheallies
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_restorethebordersiii
+			focus = TXT_defendtheriograndeiii
+		}
+		x = 18
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					ENG = {
+							country_event = generic.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_topplegermany
+		icon = GFX_focus_attack_germany
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_jointheallies
+		}
+		mutually_exclusive = {
+			focus = TXT_thesmallerthreats
+		}
+		x = 16
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			create_wargoal = {
+					target = ITA
+					type = topple_government
+				}
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_black
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_toppleitaly
+		icon = GFX_focus_ger_assassinate_mussolini
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_topplegermany
+		}
+		x = 16
+		y = 9
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = ITA
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							target = ITA
+							type = topple_government
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_thesmallerthreats
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_jointheallies
+		}
+		mutually_exclusive = {
+			focus = TXT_topplegermany
+		}
+		x = 20
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							HUN = {
+									has_government = fascism
+								}
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = topple_government
+							target = HUN
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_thethreatofromania
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_thesmallerthreats
+		}
+		x = 20
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							ROM = {
+									has_government = fascism
+								}
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					create_wargoal = {
+							type = topple_government
+							target = ROM
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_purgetheallies
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_formtheamericancommune
+		}
+		mutually_exclusive = {
+			focus = TXT_central
+		}
+		x = 24
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = NMN
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					NMN = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_purgetheaxis
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_purgetheallies
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_purgetheallies
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = AZA
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					AZA = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_americanpuppetry
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = TXT_permanentrevolution
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_permanentrevolution
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = LAL
+						}
+				}
+			completion_reward = {
+					random_neighbor_country = {
+							create_wargoal = {
+									type = puppet_wargoal_focus
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_central
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_formtheamericancommune
+		}
+		mutually_exclusive = {
+			focus = TXT_east
+			focus = TXT_purgetheallies
+		}
+		x = 26
+		y = 8
+			bypass = {
+					NOT = {
+							country_exists = OKO
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					OKO = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_utahinv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_purgetheaxis
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_purgetheallies
+			bypass = {
+					NOT = {
+							country_exists = UTU
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					UTU = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_nevadainv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_utahinv
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_purgetheallies
+			bypass = {
+					NOT = {
+							country_exists = NVN
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					NVN = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_caliinv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_nevadainv
+		}
+		x = 0
+		y = 4
+		relative_position_id = TXT_purgetheallies
+			bypass = {
+					NOT = {
+							country_exists = CAC
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					CAC = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_kansasinv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_wyominginv
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_central
+			bypass = {
+					NOT = {
+							country_exists = KSK
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					KSK = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_coloradoinv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_central
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_central
+			bypass = {
+					NOT = {
+							country_exists = KSK
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					COC = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_wyominginv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_coloradoinv
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_central
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = WYW
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					WYW = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_nebraskainv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_kansasinv
+		}
+		x = 0
+		y = 4
+		relative_position_id = TXT_central
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = NEN
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					NEN = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_misiinv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_east
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_east
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = MSM
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					MSM = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_alabamainv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_misiinv
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_east
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = ALA
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					ALA = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_floridainv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_alabamainv
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_east
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = FLF
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					FLF = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_georgiainv
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_floridainv
+		}
+		x = 0
+		y = 4
+		relative_position_id = TXT_east
+			available = {
+
+}
+			bypass = {
+					NOT = {
+							country_exists = GAG
+						}
+				}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					GAG = {
+							country_event = disunitedstates.2
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_backtonormal
+		text = TXT_backtonormal
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_strengthentheeconomy
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_rebuildtheeconomy
+			completion_reward = {
+					remove_ideas = { TXT_idea_civwar }
+				}
+
+	}
+	focus = {
+		id = TXT_strongerthanbefore
+		text = TXT_strongerthanbefore
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_nationalspeeches
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_strengthenthemilitary
 		completion_reward = {
-		add_equipment_to_stockpile = {
-		type = convoy_1
-		amount = 300
+		random_owned_controlled_state = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+		type = arms_factory
+		level = 3
+		instant_build = yes
 		}
 		}
+		}
 	}
 	focus = {
-	id = TXT_central
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_formtheamericancommune }
-	mutually_exclusive = { focus = TXT_east }
-	x = 27
-	y = 8
+		id = TXT_integrate
+		text = TXT_integrate
+		icon = GFX_focus_mex_redeem_aztlan
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_rememberthealamo
+		}
+		x = 0
+		y = 6
+		relative_position_id = TXT_retakethemexicanempire
+			completion_reward = {
+					every_owned_state = {
+							add_core_of = TXT
+						}
+				}
 
-	cost = 10
-	bypass = {
-	NOT = { country_exists = OKO }
-	}
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-	OKO = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_utahinv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_purgetheaxis }
-	x = 25
-	y = 10
+		id = TXT_peacefultakeover
+		text = TXT_peacfultakeover
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_permanentrevolution
+		}
+		mutually_exclusive = {
+			focus = TXT_directinfluence
+		}
+		x = 28
+		y = 5
+			completion_reward = {
+					every_neighbor_country = {
+							add_timed_idea = { idea = communist_influence days = 120 }
+						}
+				}
 
-	cost = 10
-
-	bypass = {
-	NOT = { country_exists = UTU }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-	UTU = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_nevadainv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_utahinv }
-	x = 25
-	y = 11
+		id = TXT_peacefultakeoverii
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_peacefultakeover
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_peacefultakeover
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
 
-	cost = 10
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					every_neighbor_country = {
+							add_popularity = {
+									ideology = communism
+									popularity = .15
+								}
+						}
+				}
 
-	bypass = {
-	NOT = { country_exists = NVN }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-	NVN = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_caliinv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_nevadainv }
-	x = 25
-	y = 12
+		id = TXT_purchaseguns
+		text = TXT_purchaseguns
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_meconomy1
+		}
+		x = -2
+		y = 1
+		relative_position_id = TXT_meconomy1
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 3000
+							producer = USA
+						}
+				}
 
-	cost = 10
-
-	bypass = {
-	NOT = { country_exists = CAC }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-	CAC = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_kansasinv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_wyominginv }
-	x = 27
-	y = 11
+		id = TXT_aluminium
+		text = TXT_aluminium
+		icon = GFX_focus_generic_aluminum
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_seconomy3
+		}
+		x = 40
+		y = 4
+			completion_reward = {
+					add_resource = {
+							type = aluminium
+							amount = -25
+							state = 788
+						}
+					add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+				}
 
-	cost = 10
-
-	bypass = {
-	NOT = { country_exists = KSK }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-	KSK = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_coloradoinv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_central }
-	x = 27
-	y = 9
+		id = TXT_moremen
+		text = TXT_moremen
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_stalin
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_stalin
+			completion_reward = {
+					add_ideas = militarism_focus
+				}
 
-	cost = 10
-
-	bypass = {
-	NOT = { country_exists = KSK }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-	COC = { country_event = disunitedstates.2 }
-	}
-	}
-
-	focus = {
-	id = TXT_wyominginv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_coloradoinv }
-	x = 27
-	y = 10
-
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-	NOT = { country_exists = WYW }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-  WYW = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_nebraskainv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_kansasinv }
-	x = 27
-	y = 12
+		id = TXT_youth
+		text = TXT_youth
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_stalin
+		}
+		x = 2
+		y = 1
+		relative_position_id = TXT_stalin
+			completion_reward = {
+					add_ideas = military_youth_focus
+				}
 
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-	NOT = { country_exists = NEN }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-  NEN = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_east
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_formtheamericancommune }
-	x = 29
-	y = 8
+		id = TXT_cheapguns
+		text = txt_cheapguns
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_moremen
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_stalin
+			completion_reward = {
+					add_ideas = ALL_idea_cheapguns
+				}
 
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-	NOT = { country_exists = LAL }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-  LAL = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_misiinv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_east }
-	x = 29
-	y = 9
+		id = TXT_gequality
+		text = gender_equality
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_cheapguns
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_stalin
+			completion_reward = {
+					add_ideas = ALL_idea_genderequality
+				}
 
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-	NOT = { country_exists = MSM }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-  MSM = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_alabamainv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_misiinv }
-	x = 29
-	y = 10
+		id = TXT_moreproduct
+		text = TXT_moreproduct
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_gequality
+		}
+		x = 0
+		y = 4
+		relative_position_id = TXT_stalin
+			completion_reward = {
+					add_ideas = ALL_idea_subsidizedfactories
+				}
 
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-	NOT = { country_exists = ALA }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-  ALA = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_floridainv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_alabamainv }
-	x = 29
-	y = 11
+		id = TXT_secretguns
+		text = TXT_secretguns
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_quality
+		}
+		x = 0
+		y = 1
+		relative_position_id = TXT_quality
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_3
+							amount = 3000
+							producer = USA
+						}
+				}
 
-	cost = 10
-
-	available = {
-
-	}
-
-	bypass = {
-	NOT = { country_exists = FLF }
-	}
-
-	ai_will_do = {
-	factor = 1
-	}
-
-	completion_reward = {
-  FLF = { country_event = disunitedstates.2 }
-	}
 	}
 	focus = {
-	id = TXT_georgiainv
-	icon = GFX_goal_generic_position_armies
-	prerequisite = { focus = TXT_floridainv }
-	x = 29
-	y = 12
-
-	cost = 10
-
-	available = {
+		id = TXT_secret_weapons
+		text = TXT_secret_weapons
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_secretguns
+		}
+		x = -2
+		y = 2
+		relative_position_id = TXT_quality
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = nuclear
+						}
+				}
 
 	}
+	focus = {
+		id = TXT_boostproducts
+		text = TXT_boostproducts
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_secretguns
+		}
+		x = 0
+		y = 2
+		relative_position_id = TXT_quality
+			completion_reward = {
+					equipment_bonus = {
+							infantry_equipment = {
+									build_cost_ic = -0.05
+									instant = yes
+								}
+							artillery_equipment = {
+									build_cost_ic = -0.05
+									instant = yes
+								}
+						}
+				}
 
-	bypass = {
-	NOT = { country_exists = GAG }
 	}
+	focus = {
+		id = TXT_morecivs
+		text = TXT_morecivs
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_boostproducts
+		}
+		x = 0
+		y = 3
+		relative_position_id = TXT_quality
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
 
-	ai_will_do = {
-	factor = 1
 	}
+	focus = {
+		id = TXT_theblackthreat
+		text = TXT_theblackthreat
+		icon = GFX_focus_attack_germany
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_morecivs
+		}
+		x = 0
+		y = 4
+		relative_position_id = TXT_quality
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = GER
+						}
+				}
 
-	completion_reward = {
-  GAG = { country_event = disunitedstates.2 }
 	}
+	focus = {
+		id = TXT_tradepower
+		text = TXT_tradepower
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_diplomacy
+		}
+		x = -2
+		y = 2
+		relative_position_id = TXT_peacefullyintegrate
+			completion_reward = {
+					add_ideas = TXT_idea_tradepower
+				}
+
+	}
+	focus = {
+		id = TXT_influence
+		text = TXT_influence
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_diplomacy
+		}
+		x = 2
+		y = 1
+		relative_position_id = TXT_diplomacy
+			completion_reward = {
+					every_neighbor_country = {
+							add_timed_idea = { idea = fascist_influence days = 90 }
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_california
+		text = TXT_california
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_assimilate4
+		}
+		mutually_exclusive = {
+			focus = TXT_continueassimilation
+		}
+		x = -2
+		y = 3
+		relative_position_id = TXT_assimilation
+			completion_reward = {
+					CAC = {
+							country_event = disunitedstates.5
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_nevada
+		text = TXT_nevada
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_california
+		}
+		x = 6
+		y = 10
+			completion_reward = {
+					NVN = {
+							country_event = disunitedstates.5
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_pacificoutpost
+		text = TXT_pacificoutpost
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_california
+		}
+		x = 10
+		y = 10
+			completion_reward = {
+					HIH = {
+							country_event = disunitedstates.5
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_continueassimilation
+		text = TXT_continueassimilation
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_assimilate4
+		}
+		mutually_exclusive = {
+			focus = TXT_california
+		}
+		x = 2
+		y = 1
+		relative_position_id = TXT_assimilate4
+			completion_reward = {
+					add_ideas = { militarism_focus }
+				}
+
+	}
+	focus = {
+		id = TXT_assimilatenev
+		text = TXT_assimilatenev
+		icon = GFX_TXT_assimilate_nevada
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_continueassimilation
+		}
+		x = 12
+		y = 10
+			completion_reward = {
+							create_wargoal = {
+									type = puppet_wargoal_focus
+									target = NVN
+								}
+						}
+				}
+	focus = {
+		id = TXT_pacificoffence
+		text = TXT_pacificoffence
+		icon = GFX_TXT_assimilate_hawaii
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_continueassimilation
+		}
+		x = 14
+		y = 10
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = HIH
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_bulgaria
+		text = TXT_bulgaria
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_thethreatofromania
+		}
+		x = 20
+		y = 9
+			completion_reward = {
+			create_wargoal = {
+					target = BUL
+					type = topple_government
+				}
+				}
+
+	}
+	focus = {
+		id = TXT_research
+		text = TXT_research
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_ecoboom
+		}
+		x = 42
+		y = 7
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = TXT_research2
+		text = TXT_research2
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_research
+		}
+		x = 42
+		y = 8
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = TXT_nuclear
+		text = TXT_nuclear
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_research
+		}
+		x = 40
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 2
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_secret
+		text = TXT_secret
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_research
+		}
+		x = 44
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 1.0
+							uses = 4
+							category = electronics
+							category = nuclear
+							category = rocketry
+						}
+				}
+
 	}
 }

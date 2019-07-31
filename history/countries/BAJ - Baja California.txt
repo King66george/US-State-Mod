@@ -1,4 +1,4 @@
-﻿capital =1892
+﻿capital = 918
 
 oob = "BAJ_1936"
 
@@ -100,8 +100,8 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
+	democratic = 70
+	communism = 29
 	fascism = 1
 }
 1939.1.1 = {
@@ -116,8 +116,8 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
+	democratic = 70
+	communism = 29
 	fascism = 1
 }
 ### Ship Variants ###

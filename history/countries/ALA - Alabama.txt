@@ -1,4 +1,4 @@
-﻿capital = 982
+﻿capital = 959
 
 oob = "ALA_1936"
 
@@ -122,9 +122,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
+	democratic = 59
 	communism = 1
-	fascism = 1
+	fascism = 40
 }
 1939.1.1 = {
 	set_stability = 0.9

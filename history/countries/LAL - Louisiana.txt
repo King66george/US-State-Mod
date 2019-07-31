@@ -1,4 +1,4 @@
-﻿capital = 881
+﻿capital = 956
 
 oob = "LAL_1936"
 
@@ -114,10 +114,10 @@ set_stability = 0.9
 set_politics = {
 
 	
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 add_ideas = {
 	home_of_the_free
@@ -134,9 +134,9 @@ add_ideas = {
 	}
 }
 set_popularities = {
-	democratic = 98
+	democratic = 15
 	communism = 1
-	fascism = 1
+	fascism = 84
 }
 ### Ship Variants ###
 

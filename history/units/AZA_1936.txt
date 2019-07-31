@@ -80,6 +80,19 @@ units = {
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
+	division={
+		name = "2nd Arizonan National Guard"		
+		location = 853
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 	}
+	division={
+		name = "1st Navajo code talkers"		
+		location = 853
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}
