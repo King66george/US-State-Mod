@@ -1,7 +1,7 @@
 
 state={
 	id=377
-	name="Arizona"
+	name="Flagstaff"
 	resources={
 		steel=20.000
 		oil=5.000
@@ -18,13 +18,13 @@ state={
 		}
 		add_core_of = AZA
 		victory_points = {
-			853 3 
+			12765 10 
 		}
 
 	}
 
 	provinces={
-		850 7821 10573 
+		850 7821 10573 12765
 	}
 	manpower=435572
 	buildings_max_level_factor=1.000
