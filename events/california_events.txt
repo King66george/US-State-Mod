@@ -12,17 +12,23 @@ add_namespace = california
 
     option = {
       name = california.1.a
-
+      ai_chance = { factor = 40}
 
       create_country_leader = {
         name = "Clement C. Young"
           desc = "#"
           picture = "Portrait_CAC_Clement_C_Young.dds"
           expire = "1965.1.1"
-          ideology = conservatism
+          ideology = liberalism
           traits = {
                   #
                   }
+              }
+
+              set_party_name = {
+                  ideology = democratic
+                  long_name = CAC_democratic_party_progressive_party
+                  name = CAC_democratic_party_progressive_party
               }
 
       set_politics = {
@@ -30,21 +36,25 @@ add_namespace = california
        elections_allowed = no
         }
 
-      add_ideas = { CAC_republican }
+
 
     }
 
 
     option = {
       name = california.1.b
-      add_political_power = 100
-      add_stability = 0.1
+      ai_chance = { factor = 50}
+      add_political_power = 75
+      add_stability = 0.05
+
+      add_ideas = { CAC_republican }
 
     }
 
 
     option = {
       name = california.1.c
+      ai_chance = { factor = 10}
       add_stability = -0.10
       add_political_power = -50
 
@@ -73,7 +83,7 @@ create_country_leader = {
     }
 
 
-############# END OF EVENT ################
+############# END OF ELECTIONS EVENT ################
 
 
 

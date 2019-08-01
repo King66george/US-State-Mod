@@ -60,7 +60,7 @@ focus_tree = {
     available_if_capitulated = yes
 
     prerequisite = { focus = CAC_politicalstate}
-    mutually_exclusive = { focus = CAC_uptonsinclairsplan focus = { CAC_clementyoungsplan} }
+    mutually_exclusive = { focus = CAC_uptonsinclairsplan focus =  CAC_clementyoungsplan}
 
     available = {
     has_country_leader = { ruling_only = yes name = "Frank Merriam" }
@@ -80,7 +80,7 @@ focus_tree = {
     available_if_capitulated = yes
 
     prerequisite = { focus = CAC_politicalstate}
-    mutually_exclusive = { focus = CAC_frankmerriamsplans focus = { CAC_clementyoungsplan} }
+    mutually_exclusive = { focus = CAC_frankmerriamsplans focus =  CAC_clementyoungsplan}
 
     available = {
     has_country_leader = { ruling_only = yes name = "Upton Sinclair" }
@@ -103,11 +103,38 @@ focus_tree = {
     available_if_capitulated = yes
 
     prerequisite = { focus = CAC_politicalstate}
-    mutually_exclusive = { focus = CAC_frankmerriamsplans focus = { CAC_uptonsinclairsplan} }
+    mutually_exclusive = { focus = CAC_frankmerriamsplans  focus =  CAC_uptonsinclairsplan}
 
     available = {
     has_country_leader = { ruling_only = yes name = "Clement C. Young" }
     }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+###### Frank Merriams Path after elections
+
+
+
+  focus = {
+  id = CAC_mcga
+  icon = GFX_CAC_mcga
+  prerequisite = { focus = CAC_frankmerriamsplans }
+  text = "Make California Great Again"
+  x = 10
+  y = 3
+
+  cost = 10
+
   }
 
 
@@ -142,7 +169,104 @@ focus_tree = {
 
 
 
-################### INDUSTRY SECTION ####################################################################################################################
+
+
+
+
+
+
+
+####### Clement C Young Path after elections
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### Upton Sinclairs Path after elections
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

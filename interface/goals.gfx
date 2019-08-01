@@ -1631,4 +1631,10 @@ spriteTypes = {
 		name = "GFX_TXT_assimilate_california"
 		texturefile = "gfx/interface/goals/TXT_assimilate_california.dds"
 		}
+		spriteType = {
+		name = "GFX_CAC_mcga"
+		texturefile = "gfx/interface/goals/CAC_mcga.dds"
+		}
+
+
 }
