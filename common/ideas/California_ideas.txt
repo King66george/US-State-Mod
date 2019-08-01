@@ -1,0 +1,44 @@
+ideas = {
+    #country
+    country = {
+        CAC_unstablepolitics = {
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+              surrender_limit = -0.3
+              political_power_gain = -0.40
+            }
+        }
+      }
+
+
+      country = {
+          CAC_republican = {
+
+              allowed = {
+                  always = no
+              }
+
+              allowed_civil_war = {
+                  always = yes
+              }
+
+              removal_cost = -1
+
+              modifier = {
+                war_support_factor = 0.10
+                	economy_cost_factor = 0.10
+              }
+          }
+        }
+
+}

@@ -1,6 +1,6 @@
 add_namespace = california
 
-# State Of California
+# Election Of California
   country_event = {
     id = california.1
     title = california.1.t
@@ -12,17 +12,27 @@ add_namespace = california
     option = {
       name = california.1.a
 
-      create_country_leader = {
-			name = "Upton Sinclair"
-			desc = #
-			picture = "Upton_Sinclair.dds"
-			expire = "1965.1.1"
-			ideology =
-			traits = {
 
-			}
+      create_country_leader = {
+        name = "Clement C. Young"
+          desc = "#"
+          picture = "Portrait_CAC_Clement_C_Young.dds"
+          expire = "1965.1.1"
+          ideology = conservatism
+          traits = {
+                  #
+                  }
+              }
+
+      set_politics = {
+       ruling_party = democratic
+       elections_allowed = no
+        }
+
+      add_ideas = { CAC_republican }
+
     }
-  }
+
 
     option = {
       name = california.1.b
@@ -30,19 +40,40 @@ add_namespace = california
       add_stability = 0.1
 
     }
-  }
+
 
     option = {
       name = california.1.c
+      add_stability = -0.10
+      add_political_power = -50
 
-      create_country_leader = {
-			name = "Upton Sinclair"
-			desc = #
-			picture = "Upton_Sinclair.dds"
-			expire = "1965.1.1"
-			ideology = leninism
-			traits = {
+      set_politics = {
+       ruling_party = communism
+       elections_allowed = no
+      }
 
-			}
+      add_ideas = { CAC_unstablepolitics }
+
+
+create_country_leader = {
+    name = "Upton Sinclair"
+    desc = "#"
+    picture = "Portrait_CAC_Upton_Sinclair.dds"
+    expire = "1965.1.1"
+    ideology = leninism
+    traits = {
+        #
+    }
+ }
+}
+
+
 
     }
+  }
+}
+
+
+  ############
+
+  ############
