@@ -13,11 +13,11 @@ add_namespace = california
       name = california.1.a
 
       create_country_leader = {
-			name = "Douglas MacArthur"
-			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
-			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			name = "Upton Sinclair"
+			desc = #
+			picture = "Upton_Sinclair.dds"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology =
 			traits = {
 
 			}
@@ -26,8 +26,23 @@ add_namespace = california
 
     option = {
       name = california.1.b
+      add_political_power = 100
+      add_stability = 0.1
+
     }
+  }
 
     option = {
       name = california.1.c
+
+      create_country_leader = {
+			name = "Upton Sinclair"
+			desc = #
+			picture = "Upton_Sinclair.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+
+			}
+
     }
