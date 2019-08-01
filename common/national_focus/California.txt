@@ -46,34 +46,122 @@ focus_tree = {
   }
 
 
+ # Focus for Frank Merriams tree
+  focus = {
+    id = CAC_frankmerriamsplans
+    icon = GFX_goal_generic_neutrality_focus
+    text = "Frank Merriam's Plan"
+    x = 10
+    y = 2
 
+    cost = 3
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
 
+    prerequisite = { focus = CAC_politicalstate}
+    mutually_exclusive = { focus = CAC_uptonsinclairsplan focus = { CAC_clementyoungsplan} }
 
+    available = {
+    has_country_leader = { ruling_only = yes name = "Frank Merriam" }
+    }
+  }
 
+  focus = {
+    id = CAC_uptonsinclairsplan
+    icon = GFX_goal_support_communism
+    text = "Upton Sinclair's Plan"
+    x = 17
+    y = 2
 
+    cost = 3
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
 
+    prerequisite = { focus = CAC_politicalstate}
+    mutually_exclusive = { focus = CAC_frankmerriamsplans focus = { CAC_clementyoungsplan} }
 
+    available = {
+    has_country_leader = { ruling_only = yes name = "Upton Sinclair" }
+    }
+  }
 
-################ INDUSTRY SECTION ####################################################################################################################
 
 
 
   focus = {
-   id = CAC_industrial1
-   icon = GFX_goal_generic_production
-   text = "Modernize Our Industry"
+    id = CAC_clementyoungsplan
+    icon = GFX_goal_support_democracy
+    text = "Clement C. Young's Plan"
+    x = 3
+    y = 2
+
+    cost = 3
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = yes
+
+    prerequisite = { focus = CAC_politicalstate}
+    mutually_exclusive = { focus = CAC_frankmerriamsplans focus = { CAC_uptonsinclairsplan} }
+
+    available = {
+    has_country_leader = { ruling_only = yes name = "Clement C. Young" }
+    }
+  }
 
 
-   x = 2
-   y = 0
-   cost = 10
 
-   completion_reward = {
-       add_tech_bonus = {
-       name = industrial_bonus
-       bonus = 0.75
-       uses = 2
-       category = industry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################### INDUSTRY SECTION ####################################################################################################################
+
+
+
+  #focus = {
+#   id = CAC_industrial1
+  # icon = GFX_goal_generic_production
+#   text = "Modernize Our Industry"
+#
+
+#   x = 2
+  # y = 0
+  # cost = 10
+
+  # completion_reward = {
+    #   add_tech_bonus = {
+  #     name = industrial_bonus
+    #   bonus = 0.75
+    #   uses = 2
+    #   category = industry
 
    }
   }
