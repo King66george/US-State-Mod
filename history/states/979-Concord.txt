@@ -1,0 +1,31 @@
+state={
+	id=979
+	name="New Hampshire"
+	manpower=7404713
+	state_category=metropolis
+	resources={
+		steel=12.000
+		oil=12.000
+	}
+
+	history={
+		owner = NHN
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 5
+			dockyard = 3
+			air_base = 10
+
+		}
+		add_core_of = NHN
+		victory_points = {
+			3712 20
+		}
+	}
+	provinces={
+		3712
+	}
+
+	buildings_max_level_factor=1.000
+}

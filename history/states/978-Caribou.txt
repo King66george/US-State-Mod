@@ -1,0 +1,31 @@
+
+state={
+	id=978
+	name="Caribou"
+	manpower=404713
+	state_category=rural
+	resources={
+		steel=5.000
+		aluminium=10.000
+		rubber=7.000
+	}
+
+	history={
+		owner = MEM
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+
+		}
+		add_core_of = MEM
+
+
+	}
+
+	provinces={
+		1282 4287 10247 12221
+	}
+
+	buildings_max_level_factor=1.000
+
+}

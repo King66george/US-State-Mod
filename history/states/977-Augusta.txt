@@ -1,0 +1,35 @@
+
+state={
+	id=977
+	name="Augusta"
+	manpower=8404713
+	state_category=metropolis
+	resources={
+		steel=12.000
+		oil=25
+	}
+
+	history={
+		owner = MEM
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 10
+		}
+		add_core_of = MEM
+		victory_points = {
+			7462 20
+		}
+
+
+	}
+
+	provinces={
+		7462
+	}
+
+	buildings_max_level_factor=1.000
+
+}

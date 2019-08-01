@@ -2,7 +2,7 @@ state={
 	id=891
 	name="New Hampshire"
 	manpower=8404713
-	state_category=metropolis
+	state_category=rural
 	resources={
 		steel=12.000
 	}
@@ -19,18 +19,11 @@ state={
 		}
 		add_core_of = NHN
 		victory_points = {
-			6732 20
+			10481 5
 		}
-		victory_points = {
-			12459 1
-		}
-		victory_points = {
-			9832 1
-		}
-
 	}
 	provinces={
-		733 3712 3715 10481
+		733 3715 10481
 	}
 
 	buildings_max_level_factor=1.000

@@ -1,10 +1,10 @@
 state={
 	id=848
 	name="South Wisconsin"
-	manpower=2939004
+	manpower=939004
 	state_category=city
 	resources={
-		steel=53.000
+		steel=43.000
 	}
 
 	history={
@@ -21,7 +21,7 @@ state={
 
 	}
 	provinces={
-		926 1560 1760 9657 10341 12357 12456 
+		926 1560 1760 9657 10341 12357 
 	}
 	
 	buildings_max_level_factor=1.000

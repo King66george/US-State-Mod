@@ -1,7 +1,7 @@
 
 state={
 	id=875
-	name="Western West Virginia"
+	name="Charleston"
 
 	history={
 		owner = WVW
@@ -18,9 +18,10 @@ state={
 				industrial_complex = 4
 
 			}
-
 		}
-
+		victory_points = {
+			7138 3 
+		}
 	}
 
 	provinces={

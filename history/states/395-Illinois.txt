@@ -1,7 +1,7 @@
 
 state={
 	id=395
-	name="West Illinois"
+	name="Springfield"
 	manpower=7630651
 	state_category=megalopolis
 	history={

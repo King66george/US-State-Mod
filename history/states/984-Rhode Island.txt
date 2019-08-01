@@ -1,0 +1,29 @@
+
+state={
+	id=984
+	name="Almost Boston"
+	resources={
+		steel=12.000
+	}
+
+	history={
+		owner = RIR
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+		add_core_of = RIR
+
+		victory_points = {
+			11830 10
+		}
+
+	}
+
+	provinces={
+		11830
+	}
+	manpower=8404713
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

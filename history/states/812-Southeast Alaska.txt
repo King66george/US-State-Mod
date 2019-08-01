@@ -1,8 +1,13 @@
 state={
 	id=812
-	name="Southeast Alaska"
+	name="Hell"
 	manpower=67500
 	state_category=rural
+	resources={ 
+		oil=30
+		steel=5
+		rubber=23
+	}
 	history={
 		owner = AKA
 		buildings = {
@@ -14,13 +19,13 @@ state={
 			13090 1
 		}
 		victory_points = {
-			13091 3
+			13203 3
 		}
 
 	}
 
 	provinces={
-		10707 13202 13203
+		10707 13203
 	}
 
 	buildings_max_level_factor=1.000

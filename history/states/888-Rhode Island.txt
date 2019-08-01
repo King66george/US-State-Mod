@@ -21,20 +21,15 @@ state={
 
 		}
 		add_core_of = RIR
+
 		victory_points = {
-			6732 20
-		}
-		victory_points = {
-			12459 1
-		}
-		victory_points = {
-			9832 1
+			9832 10
 		}
 
 	}
 
 	provinces={
-		9832 11830
+		9832 
 	}
 	manpower=8404713
 	buildings_max_level_factor=1.000

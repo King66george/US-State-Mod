@@ -1,6 +1,6 @@
 state={
 	id=922
-	name="comila"
+	name="Comila"
 
 	resources={
 		tungsten=16.000
