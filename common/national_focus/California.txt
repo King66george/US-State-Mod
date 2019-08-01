@@ -1,0 +1,79 @@
+########################################################
+############ California Focus Tree By Lifey ############
+########################################################
+
+
+
+
+focus_tree = {
+    id = california_focus
+    continuous_focus_position = { x = 20 y = 1000 }
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = CAC
+        }
+    }
+
+#################### POLITICAL SECTION ################################################################################################################
+
+
+  focus = {
+  id = CAC_politicalstate
+  icon = GFX_goal_generic_national_unity
+  text = "The 1936 Election"
+  x = 10
+  y = 0
+
+  cost = 5
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = yes
+
+  available = {
+
+  date > 1936.11.06
+
+   }
+
+  completion_reward = {
+          CAC = {
+              country_event = california.1
+          }
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+
+################ INDUSTRY SECTION ####################################################################################################################
+
+
+
+  focus = {
+   id = CAC_industrial1
+   icon = GFX_goal_generic_production
+   text = "Modernize Our Industry"
+
+
+   x = 2
+   y = 0
+   cost = 10
+
+   completion_reward = {
+       add_tech_bonus = {
+       name = industrial_bonus
+       bonus = 0.75
+       uses = 2
+       category = industry
+
+  }
