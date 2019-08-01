@@ -1,4 +1,4 @@
-add_namespace = missouri
+﻿add_namespace = missouri
 
 country_event = {
   id = missouri.3

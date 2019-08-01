@@ -1,4 +1,4 @@
-add_namespace = california
+﻿add_namespace = california
 
 # Election Of California
   country_event = {

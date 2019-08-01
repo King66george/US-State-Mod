@@ -1,4 +1,4 @@
-add_namespace = ontario
+﻿add_namespace = ontario
 
 # Ontario Victory
 country_event = {

@@ -1,4 +1,4 @@
-﻿capital = 947
+﻿capital = 464
 
 oob = "NSN_1936"
 
