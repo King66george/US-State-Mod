@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-﻿capital = 795
-=======
-﻿capital = 853
->>>>>>> 6af21324d27facdbda940ff357f2c25a4999a02d
+
+capital = 795
 
 oob = "AZA_1936"
 
