@@ -126,9 +126,28 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
+<<<<<<< HEAD
 	democratic = 73
 	communism = 24
 	fascism = 3
+=======
+<<<<<<< HEAD
+	democratic = 98
+	communism = 1
+	fascism = 1
+=======
+<<<<<<< HEAD
+	democratic = 73
+	communism = 24
+	fascism = 3
+=======
+	democratic = 60
+	communism = 30
+	fascism = 10
+}
+>>>>>>> f0169a68e5e63fd27048e0693dadcae0ad01ba71
+>>>>>>> 940da57b06039c50dab087b0fb637f2c6af4129c
+>>>>>>> f841740bb3ce131b4ca4d56ec07ad16014621a30
 }
 create_country_leader = {
 	name = "Frank Merriam"
