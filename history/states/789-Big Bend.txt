@@ -2,7 +2,7 @@ state={
 	id=789
 	name="Big Bend"
 
-			state_category = metropolis
+			state_category = rural
 
 	resources={
 		oil=320 # was: 580

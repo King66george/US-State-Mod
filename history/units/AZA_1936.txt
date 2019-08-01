@@ -89,7 +89,7 @@ units = {
 		start_equipment_factor = 0.3
 	}
 	division={
-		name = "1st Navajo code talkers"		
+		name = "Nick Cage's Navajo code talkers"		
 		location = 853
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
