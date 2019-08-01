@@ -180,6 +180,10 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+set_autonomy = {
+	target = WDC
+	autonomous_state =  autonomy_puppet
+}
 ### Ship Variants ###
 
 create_equipment_variant = {
