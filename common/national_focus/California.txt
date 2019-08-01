@@ -27,15 +27,14 @@ focus_tree = {
   x = 10
   y = 0
 
-  cost = 5
+  cost = 1
   cancel_if_invalid = yes
   continue_if_invalid = no
   available_if_capitulated = yes
 
+
   available = {
-
-  date > 1936.02.23
-
+      date > 1936.02.23
    }
 
   completion_reward = {
@@ -76,4 +75,6 @@ focus_tree = {
        uses = 2
        category = industry
 
+   }
   }
+}

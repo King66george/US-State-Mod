@@ -5,8 +5,9 @@ add_namespace = california
     id = california.1
     title = california.1.t
     desc = california.1.d
-    picture = report_event_gathering_protest.dds
-
+    picture = GFX_report_event_election_vote
+#GFX_report_event_election_vote
+# GFX_report_event_gathering_protest.dds
     is_triggered_only = yes
 
     option = {
@@ -70,8 +71,25 @@ create_country_leader = {
 
 
     }
-  }
-}
+
+
+############# END OF EVENT ################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   ############
