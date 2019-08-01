@@ -5,7 +5,7 @@
     id = newyork.1
     title = newyork.1.t
     desc = newyork.1.d
-    picture = GFX_report_event_niagara
+    picture = GFX_report_event_niagara.dds
 
     is_triggered_only = yes
 
@@ -20,7 +20,7 @@
        id = newyork.2
        title = newyork.2.t
        desc = newyork.2.d
-       picture = GFX_report_event_niagara
+       picture = GFX_report_event_niagara.dds
 
        is_triggered_only = yes
 

@@ -1,0 +1,48 @@
+add_namespace = california
+
+# State Of California
+  country_event = {
+    id = california.1
+    title = california.1.t
+    desc = california.1.d
+    picture = report_event_gathering_protest.dds
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.1.a
+
+      create_country_leader = {
+			name = "Upton Sinclair"
+			desc = #
+			picture = "Upton_Sinclair.dds"
+			expire = "1965.1.1"
+			ideology =
+			traits = {
+
+			}
+    }
+  }
+
+    option = {
+      name = california.1.b
+      add_political_power = 100
+      add_stability = 0.1
+
+    }
+  }
+
+    option = {
+      name = california.1.c
+
+      create_country_leader = {
+			name = "Upton Sinclair"
+			desc = #
+			picture = "Upton_Sinclair.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+
+			}
+
+    }

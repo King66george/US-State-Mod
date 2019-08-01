@@ -9,7 +9,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -38,7 +38,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1199
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -112,7 +112,7 @@ set_convoys = 100
 set_stability = 0.9
 
 set_politics = {
-	
+
 	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
@@ -122,9 +122,18 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 54
-	communism = 45
+	democratic = 98
+	communism = 1
 	fascism = 1
+}
+create_country_leader = {
+	name = "Elmer Benson"
+	desc = "POLITICS_ELMER_BENSON_DESC"
+	picture = "Portrait_MNM_Elmer_Benson.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
 }
 1939.1.1 = {
 	set_stability = 0.9
@@ -204,7 +213,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-	
+
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2

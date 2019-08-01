@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿capital = 795
+=======
+﻿capital = 853
+>>>>>>> 6af21324d27facdbda940ff357f2c25a4999a02d
 
 oob = "AZA_1936"
 
@@ -123,9 +127,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 62
-	communism = 3
-	fascism = 35
+	democratic = 98
+	communism = 1
+	fascism = 1
 }
 create_country_leader = {
 	name = "Robert Taylor Jones"
