@@ -87,6 +87,8 @@ focus_tree = {
 
 		bypass { }
 
+		available = { has_government = democratic }
+
 		completion_reward = {
 				add_country_leader_trait = economic_reformer
 				set_politics = {
@@ -624,7 +626,7 @@ focus_tree = {
 			cost = 10
 
 			completion_reward = {
-						ENG = { add_to_faction = KSK }
+						ENG = { country_event = generic.2 }
 			}
 		}
 
