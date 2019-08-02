@@ -2,7 +2,7 @@
 state={
 	id=978
 	name="Caribou"
-	manpower=404713
+	manpower=1404713
 	state_category=town
 	resources={
 		steel=5.000

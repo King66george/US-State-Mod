@@ -20,6 +20,6 @@ state={
 	provinces={
 		2019 5061 12728
 	}
-	manpower=683577
+	manpower=83577
 	buildings_max_level_factor=1.000
 	}

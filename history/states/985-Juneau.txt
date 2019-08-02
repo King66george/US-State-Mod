@@ -1,7 +1,7 @@
 state={
 	id=985
 	name="Juneau"
-	manpower=67500
+	manpower=1067500
 	state_category=rural
 	resources={ 
 		oil=10
