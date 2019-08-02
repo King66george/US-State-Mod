@@ -13,7 +13,7 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}		
-## Democratic Section ###
+		## Democratic Section ###
 		FLF_Restoration_Projects = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -236,4 +236,4 @@ ideas = {
 			}
 		}				
 	}
-	}
+	

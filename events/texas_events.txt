@@ -57,16 +57,16 @@ country_event = {
   }
 }
 country_event = {
-<<<<<<< HEAD
-id = tex.4
-title = tex.4.t
-desc = tex.4.d
-is_triggered_only = yes
-=======
+
 	id = tex.4
 	title = tex.4.t
 	desc = tex.4.d
->>>>>>> bac73a877ba3a42c7554b29e8d8789715db47ccd
+	is_triggered_only = yes
+
+	id = tex.4
+	title = tex.4.t
+	desc = tex.4.d
+
 
 	is_triggered_only = yes
   

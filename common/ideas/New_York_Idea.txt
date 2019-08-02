@@ -17,95 +17,93 @@ ideas = {
                 winter_attrition_factor = -0.25
             }
         }
-      }
-
-      country = {
-        NYN_idea_navyboost = {
-
-        allowed = {
-            always = no
-        }
-
-        allowed_civil_war = {
-            always = yes
-        }
-
-        removal_cost = -1
-
-        modifier = {
-            	industrial_capacity_dockyard = 0.2
-        }
     }
-  }
+
+    country = {
+		NYN_idea_navyboost = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+	}  
 
 
 
     country = {
-      NYN_idea_prepareforwar = {
+		NYN_idea_prepareforwar = {
 
-      allowed = {
-          always = no
-      }
+			allowed = {
+				always = no
+			}
 
-      allowed_civil_war = {
-          always = yes
-      }
+			allowed_civil_war = {
+				always = yes
+			}
 
-      removal_cost = -1
+			removal_cost = -1
 
-      modifier = {
-      	justify_war_goal_time = -0.30
-        generate_wargoal_tension = 0.1
-      }
+			modifier = {
+				justify_war_goal_time = -0.30
+				generate_wargoal_tension = 0.1
+			} 
+		}
     }
-  }
+  
 
 
 
     country = {
-      NYN_idea_sovietacademy = {
+		NYN_idea_sovietacademy = {
+			allowed = {
+				  always = no
+			}
+			allowed_civil_war = {
+				  always = yes
+			}
 
+			removal_cost = -1
 
-    allowed = {
-          always = no
-    }
+			modifier = {
+			  max_planning = 0.15
+			  planning_speed = 0.15
+			  army_org = 10
 
-    allowed_civil_war = {
-          always = yes
-    }
-
-    removal_cost = -1
-
-    modifier = {
-      max_planning = 0.15
-      planning_speed = 0.15
-      army_org = 10
-
-    }
-  }
-}
+			}
+		}
+	}
 
 
     country = {
-      NYN_idea_socalistscience = {
+		NYN_idea_socalistscience = {
 
-      allowed = {
-            always = no
-      }
+			allowed = {
+				always = no
+			}
 
-      allowed_civil_war = {
-            always = yes
-      }
+			allowed_civil_war = {
+				always = yes
+			}
 
-      removal_cost = -1
+			removal_cost = -1
 
-      modifier = {
-        research_speed_factor = 0.10
-        production_speed_synthetic_refinery_factor = 0.25
-        production_speed_nuclear_reactor_factor = 0.25
-      }
-    }
-  }
+			modifier = {
+				research_speed_factor = 0.10
+				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_nuclear_reactor_factor = 0.25
+			}
+		}
+	}
 
 
 }
