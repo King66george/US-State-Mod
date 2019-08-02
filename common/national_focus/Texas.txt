@@ -8,7 +8,6 @@ focus_tree = {
 			tag = TXT
 		}
 	}
-	default = no
 	focus = {
 		id = TXT_texaswillagainraiseitshead
 		icon = GFX_goal_generic_small_arms
@@ -242,8 +241,8 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 			create_faction = north_american_axis
-					every_neigbor_country = {
-							country_event = { tex.4 }
+					every_neighbor_country = {
+							country_event = disunitedstates.5
 						}
 				}
 
@@ -3300,16 +3299,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = TXT_quality
 			completion_reward = {
-					equipment_bonus = {
-							infantry_equipment = {
-									build_cost_ic = -0.05
-									instant = yes
-								}
-							artillery_equipment = {
-									build_cost_ic = -0.05
-									instant = yes
-								}
-						}
+					add_timed_idea = { idea = TXT_idea_boost days = 365 }
 				}
 
 	}
