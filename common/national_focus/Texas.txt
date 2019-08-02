@@ -8,7 +8,6 @@ focus_tree = {
 			tag = TXT
 		}
 	}
-	default = no
 	focus = {
 		id = TXT_texaswillagainraiseitshead
 		icon = GFX_goal_generic_small_arms
@@ -242,8 +241,8 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 			create_faction = north_american_axis
-					every_neigbor_country = {
-							country_event = { tex.4 }
+					every_neighbor_country = {
+							country_event = disunitedstates.5
 						}
 				}
 
@@ -258,6 +257,13 @@ focus_tree = {
 		}
 		x = 10
 		y = 6
+		available = {
+
+		}
+		bypass = {
+				NMN = { is_in_faction_with = ROOT
+					     is_free_or_subject_of_root = yes}
+			}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -276,6 +282,13 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		available = {
+
+		}
+		bypass = {
+				COC = { is_in_faction_with = ROOT
+					     is_free_or_subject_of_root = yes}
+			}
 		relative_position_id = TXT_assimilation
 			completion_reward = {
 					create_wargoal = {
@@ -295,6 +308,13 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
+		available = {
+
+		}
+		bypass = {
+				AZA = { is_in_faction_with = ROOT
+					     is_free_or_subject_of_root = yes}
+			}
 		relative_position_id = TXT_assimilation
 			completion_reward = {
 					create_wargoal = {
@@ -317,6 +337,13 @@ focus_tree = {
 		}
 		x = 10
 		y = 8
+		available = {
+
+		}
+		bypass = {
+				UTU = { is_in_faction_with = ROOT
+					     is_free_or_subject_of_root = yes}
+			}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -707,10 +734,6 @@ focus_tree = {
 							ruling_party = communism
 							elections_allowed = no
 						}
-					diplomatic_relation = {
-							country = MEX
-							relation = non_aggression_pact
-						}
 				}
 
 	}
@@ -943,7 +966,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -973,7 +996,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -1003,7 +1026,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -1285,7 +1308,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -1992,10 +2015,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2017,10 +2040,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2059,10 +2082,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2084,10 +2107,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -2109,10 +2132,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -2133,10 +2156,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2158,10 +2181,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2183,10 +2206,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -2208,10 +2231,10 @@ focus_tree = {
 				}
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -2265,10 +2288,10 @@ focus_tree = {
 }
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2335,10 +2358,10 @@ focus_tree = {
 }
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2372,10 +2395,10 @@ focus_tree = {
 }
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 4
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
-									level = 4
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -2437,6 +2460,14 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+			available = {
+			divisions_in_border_state = {
+					type = infantry
+					size > 1
+					state = 788
+					border_state = 793
+				}
+			}
 			bypass = {
 
 }
@@ -3258,11 +3289,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = TXT_quality
+
 			completion_reward = {
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_3
 							amount = 3000
-							producer = USA
+							producer = TXT
 						}
 				}
 
@@ -3300,16 +3332,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = TXT_quality
 			completion_reward = {
-					equipment_bonus = {
-							infantry_equipment = {
-									build_cost_ic = -0.05
-									instant = yes
-								}
-							artillery_equipment = {
-									build_cost_ic = -0.05
-									instant = yes
-								}
-						}
+					add_timed_idea = { idea = TXT_idea_boost days = 365 }
 				}
 
 	}
@@ -3473,6 +3496,13 @@ focus_tree = {
 		}
 		x = 12
 		y = 10
+		available = {
+
+		}
+		bypass = {
+				NVN = { is_in_faction_with = ROOT
+					     is_free_or_subject_of_root = yes}
+			}
 			completion_reward = {
 							create_wargoal = {
 									type = puppet_wargoal_focus
@@ -3490,6 +3520,13 @@ focus_tree = {
 		}
 		x = 14
 		y = 10
+		available = {
+
+		}
+		bypass = {
+				HIH = { is_in_faction_with = ROOT
+					     is_free_or_subject_of_root = yes}
+			}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus

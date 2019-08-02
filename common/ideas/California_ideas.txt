@@ -36,7 +36,6 @@ ideas = {
 
               modifier = {
                 war_support_factor = 0.10
-                	economy_cost_factor = 0.10
               }
           }
         }
