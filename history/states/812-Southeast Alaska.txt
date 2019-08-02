@@ -6,7 +6,7 @@ state={
 	resources={ 
 		oil=30
 		steel=5
-		rubber=2
+		rubber=23
 	}
 	history={
 		owner = AKA

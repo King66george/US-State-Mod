@@ -2,7 +2,7 @@
 state={
 	id=463
 	name="Alaska"
-	manpower=1067500
+	manpower=67500
 	state_category=rural
 	history={
 		owner = AKA

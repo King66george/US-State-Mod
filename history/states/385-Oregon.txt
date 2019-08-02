@@ -2,7 +2,7 @@
 state={
 	id=385
 	name="East Oregon"
-	manpower=1953785
+	manpower=953785
 	state_category=town
 
 	history={

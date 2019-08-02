@@ -95,11 +95,4 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 	}
-		division={
-		name = "Military Intelligence Division"		
-		location = 853
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
 }

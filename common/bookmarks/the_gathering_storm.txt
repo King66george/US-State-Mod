@@ -98,21 +98,6 @@ bookmarks = {
 											}
 												}
 
-												"MIM"={
-													minor = yes
-													history = "USA_GATHERING_STORM_DESC"
-													ideology = democratic
-													ideas = {
-														home_of_the_free
-													}
-													focuses = {
-														#
-													}
-														}
-
-
-
-
 
 
 
@@ -126,13 +111,9 @@ bookmarks = {
 												#	#	#######################################################################################
 
 
-
-
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-
-
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

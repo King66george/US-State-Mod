@@ -2,7 +2,7 @@
 state={
 	id=468
 	name="Saint Lawrence" # Saint Lawrence
-	manpower = 1732754
+	manpower = 732754
 	
 	state_category = city
 	

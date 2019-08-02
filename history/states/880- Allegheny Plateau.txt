@@ -1,7 +1,7 @@
 state={
 	id=880
 	name="Allegheny Plateau"
-	manpower=4631346
+	manpower=9631346
 	state_category=megalopolis
 	resources={
 		steel=44.000

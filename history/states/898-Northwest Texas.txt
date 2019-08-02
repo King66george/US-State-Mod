@@ -23,6 +23,6 @@ history={
 	provinces={
 		805 2082 3960 4577 5001 6968 7628 9829 10778 12486
 	}
-	manpower=1515243
+	manpower=2215243
 	buildings_max_level_factor=1.000
 }
