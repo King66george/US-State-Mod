@@ -7,9 +7,9 @@
 
 		modifier = {
 			add = 10
-			tag = MIM
+			#tag = MIM
 		}
-	 }
+	}
 
    focus = {
         name = hire_ford
