@@ -5,6 +5,7 @@ state={
 	resources={
 		oil=25
 		tungsten=15
+		rubber=5.000
 	}
 	history={ 1936.1.3 = {owner = BAJ controller = BAJ }
 		owner = MEX

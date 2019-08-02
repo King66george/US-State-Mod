@@ -2,7 +2,7 @@
 state={
 	id=358
 	name="STATE_358"
-	manpower=12588061
+	manpower=7588061
 	state_category=megalopolis
 	resources={
 		steel=13.000

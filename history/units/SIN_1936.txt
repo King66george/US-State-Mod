@@ -1,4 +1,4 @@
-﻿##### Division Templates #####
+##### Division Templates #####
 division_template = {
 	name = "Infantry Division"  	# Standard formation for frontline divisions
 
@@ -75,31 +75,19 @@ units = {
 	### 1st Army -- note: Armies only paper organizations in 1936 ###
 	# I Army Corps #
 	division= {			
-		name = "1st Arizonan National Guard"		
-		location = 853
+		name = "1nd National Guard"		
+		location = 8057
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-	}
-	division={
-		name = "2nd Arizonan National Guard"		
-		location = 853
+
+	}			
+	division= {			
+		name = "2nd National Guard"		
+		location = 8057
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-	}
-	division={
-		name = "Nick Cage's Navajo code talkers"		
-		location = 853
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-		division={
-		name = "Military Intelligence Division"		
-		location = 853
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+
 	}
 }

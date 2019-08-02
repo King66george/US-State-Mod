@@ -8,34 +8,28 @@
     picture = GFX_report_event_election_vote
     is_triggered_only = yes
 
-    option = {
-      name = california.1.a
-      ai_chance = { factor = 40}
-
-      create_country_leader = {
-        name = "Clement C. Young"
-          desc = "#"
-          picture = "Portrait_CAC_Clement_C_Young.dds"
-          expire = "1965.1.1"
-          ideology = liberalism
-          traits = {
+    option ={
+		name = california.1.a
+		ai_chance = { factor = 40}
+		create_country_leader = {
+			name = "Clement C. Young"
+			desc = "#"
+			picture = "Portrait_CAC_Clement_C_Young.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
                   #
-                  }
-              }
-
-              set_party_name = {
-                  ideology = democratic
-                  long_name = CAC_democratic_party_progressive_party
-                  name = CAC_democratic_party_progressive_party
-              }
-
-      set_politics = {
-       ruling_party = democratic
-       elections_allowed = no
-        }
-
-
-
+                }        
+			set_party_name = {
+                ideology = democratic
+                long_name = CAC_democratic_party_progressive_party
+                name = CAC_democratic_party_progressive_party
+			}
+			set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			}
+		}
     }
 
 
@@ -51,34 +45,35 @@
 
 
     option = {
-      name = california.1.c
-      ai_chance = { factor = 10}
-      add_stability = -0.10
-      add_political_power = -50
+		name = california.1.c
+		ai_chance = { factor = 10}
+		add_stability = -0.10
+		add_political_power = -50
 
-      set_politics = {
-       ruling_party = communism
-       elections_allowed = no
-      }
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
 
-      add_ideas = { CAC_unstablepolitics }
+		add_ideas = { CAC_unstablepolitics }
 
 
-create_country_leader = {
-    name = "Upton Sinclair"
-    desc = "#"
-    picture = "Portrait_CAC_Upton_Sinclair.dds"
-    expire = "1965.1.1"
-    ideology = leninism
-    traits = {
-        #
-    }
- }
+		create_country_leader = {
+			name = "Upton Sinclair"
+			desc = "#"
+			picture = "Portrait_CAC_Upton_Sinclair.dds"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = {
+				#
+			}
+		}
+	}
 }
 
 
 
-    }
+
 
 
 ############# END OF ELECTIONS EVENT ################
@@ -92,9 +87,9 @@ country_event = {
   is_triggered_only = yes
 
     option = {
-      name = california.2.a
+		name = california.2.a
 
-      973 = {
+		973 = {
           add_building_construction = {
           type = bunker
           level = 3
@@ -102,20 +97,16 @@ country_event = {
           province = {
           all_provinces = yes
           limit_to_border = yes
-              }
-      }
-    }
-
-
-                        974 = {
-                        add_building_construction = {
-                        type = bunker
-                        level = 3
-                        instant_build = yes
-                        province = {
-                        all_provinces = yes
-                        limit_to_border = yes
-                }
+            }
+		}
+        974 = {
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = {
+            all_provinces = yes
+            limit_to_border = yes
             }
         }
     }
@@ -124,70 +115,69 @@ country_event = {
       name = california.2.b
 
       798 = {
-              add_building_construction = {
-                    type = bunker
-                    level = 2
-                    instant_build = yes
-                    province = {
-                    all_provinces = yes
-                    limit_to_border = yes
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
             }
         }
-      }
-
-      799 = {
-              add_building_construction = {
-                    type = bunker
-                    level = 2
-                    instant_build = yes
-                    province = {
-                    all_provinces = yes
-                    limit_to_border = yes
-            }
-        }
-      }
+		799 = {
+            add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
 
       967 = {
-              add_building_construction = {
-                    type = bunker
-                    level = 2
-                    instant_build = yes
-                    province = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
                     all_provinces = yes
                     limit_to_border = yes
-            }
-        }
-      }
+				}
+			}
+		}
 
 
       797 = {
-              add_building_construction = {
-                    type = bunker
-                    level = 2
-                    instant_build = yes
-                    province = {
-                    all_provinces = yes
-                    limit_to_border = yes
-            }
-        }
-      }
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
 
       378 = {
-              add_building_construction = {
-                    type = bunker
-                    level = 2
-                    instant_build = yes
-                    province = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
                     all_provinces = yes
                     limit_to_border = yes
-            }
-        }
-      }
+				}
+			}
+		}
 
 
 
     }
-  }
+}
 
 
 
@@ -195,31 +185,32 @@ country_event = {
 #Will allow NCR to declare war on nevada if they go non democratic, if NCR is democratic
 
     country_event = {
-      id = california.3
-      title = california.3.t
-      desc = california.3.d
-      picture = GFX_report_event_generic_panzer_attack
+		id = california.3
+		title = california.3.t
+		desc = california.3.d
+		picture = GFX_report_event_generic_panzer_attack
 
-      is_triggered_only = yes
+		is_triggered_only = yes
 
-  trigger = {
-      tag = CAC
-      has_government = democratic
-      NVN = { has_government = fascism has_government = communism }
-}
-  option = {
-      name = california.3.a
-      declare_war_on = {
-    target = NVN
-    type = puppet_wargoal_focus
-  }
-  add_war_support = 0.1
-  }
-  
-  option = {
-      name = california.3.b
-      add_stability = 0.1
-      add_political_power = 25
-      add_war_support = -0.1
-  }
-}
+		trigger = {
+			tag = CAC
+			has_government = democratic
+			NVN = { has_government = fascism has_government = communism }
+		}
+	
+		option = {
+			name = california.3.a
+			declare_war_on = {
+				target = NVN
+				type = puppet_wargoal_focus
+				add_war_support = 0.1
+			}
+		
+		}
+		option = {
+			name = california.3.b
+			add_stability = 0.1
+			add_political_power = 25
+			add_war_support = -0.1
+		}
+	}

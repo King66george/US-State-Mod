@@ -1,7 +1,7 @@
 state={
 	id=806
 	name="Southwest Oregon"
-	manpower=953785
+	manpower=1953785
 
 	resources={
 		chromium=3.000

@@ -2,7 +2,7 @@
 state={
 	id=395
 	name="Springfield"
-	manpower=7630651
+	manpower=4630651
 	state_category=megalopolis
 	history={
 		owner = ILI

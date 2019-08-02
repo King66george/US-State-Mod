@@ -2,7 +2,7 @@
 state={
 	id=465
 	name="New Brunswick"
-	manpower = 475020
+	manpower = 3475020
 	
 	state_category = rural
 

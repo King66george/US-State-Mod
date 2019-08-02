@@ -1,8 +1,7 @@
 state={
 	id=793
 	name="Northeast New Mexico"
-			manpower = 423316
-
+	manpower = 1423316
 	state_category = rural
 
 	resources={
