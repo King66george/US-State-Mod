@@ -51,6 +51,8 @@ country_event = {
 
   option = {
   name = tex.3.a
-  TXT = { transfer_state = 802 }
+  TXT = { transfer_state = 801 }
+  TXT = { transfer_state = 803 }
+  TXT = { transfer_state = 381 }
   }
 }

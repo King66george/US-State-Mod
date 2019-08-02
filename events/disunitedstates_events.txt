@@ -107,13 +107,13 @@ country_event = {
 
 		option = {
 			name = disunitedstates.5.a
-			ai_chance = { factor = 30
+			ai_chance = { factor = 10
 			modifier = {
-			factor = 40
+			factor = 20
 			has_government = fascism
 			}
 			modifier = {
-			factor = 30
+			factor = 20
 			strength_ratio = {tag = FROM ratio < 0.5 }
 			}
 			}

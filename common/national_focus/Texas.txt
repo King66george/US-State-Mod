@@ -2436,6 +2436,14 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+			available = {
+			divisions_in_border_state = {
+					type = infantry
+					size > 1
+					state = 788
+					border_state = 793
+				}
+			}
 			bypass = {
 
 }
