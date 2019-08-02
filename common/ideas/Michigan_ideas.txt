@@ -1,0 +1,23 @@
+ideas = {
+materiel_manufacturer = {
+
+  designer = yes
+
+  ford = {
+
+    allowed = {
+      original_tag = MIM
+    }
+
+    research_bonus = {
+      artillery = 0.15
+    }
+
+    traits = { motorized_manufacturer }
+
+    modifier = {
+      # +10% arty/at/aa research speed
+    }
+  }
+}
+}
