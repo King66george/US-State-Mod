@@ -306,7 +306,6 @@ focus = {
                                     focus = {
                                             id = NYN_politicalfocus_1
                                             icon = GFX_focus_generic_strike_at_democracy2
-                                            mutually_exclusive = { focus = NYN_democracy_prevails}
                                             cost = 5
                                             x = 25
                                             y = 0
