@@ -21,69 +21,66 @@ ideas = {
       }
 
 
-      country = {
-          CAC_republican = {
+    country = {
+        CAC_republican = {
 
-              allowed = {
-                  always = no
-              }
+            allowed = {
+                always = no
+            }
 
-              allowed_civil_war = {
-                  always = yes
-              }
+            allowed_civil_war = {
+                always = yes
+            }
 
-              removal_cost = -1
+            removal_cost = -1
 
-              modifier = {
+            modifier = {
                 war_support_factor = 0.10
-              }
-          }
+            }
         }
+    }   
 
 
-        country = {
-         CAC_lesscorptaxidea = {
+    country = {
+        CAC_lesscorptaxidea = {
 
-              allowed = {
+            allowed = {
               always = no
-              }
+            }
 
-              allowed_civil_war = {
+            allowed_civil_war = {
                   always = yes
-              }
+            }
 
-              removal_cost = -1
+            removal_cost = -1
 
-              modifier = {
+            modifier = {
               production_factory_max_efficiency_factor = 0.05
 
-              }
+            }
 
-          }
         }
+    }
 
+    country = {
+        CAC_tradepower = {
 
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
 
-        country = {
-          CAC_tradepower = {
+			removal_cost = -1
 
-          allowed = {
-          always = no
-          }
+			modifier = {
+				trade_opinion_factor = 0.25
 
-          allowed_civil_war = {
-              always = yes
-          }
-
-          removal_cost = -1
-
-          modifier = {
-          	trade_opinion_factor = 0.25
-
-          }
-          }
+			}
         }
+    }
 
 
       country = {

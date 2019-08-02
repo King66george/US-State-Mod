@@ -1,0 +1,17 @@
+#Tree Start
+ #focus_tree = {
+	#id = michigan_focus
+	#continuous_focus_position = { x = 20 y = 1000 }
+	#country = {
+	#	factor = 0
+#
+#		modifier = {
+#			add = 10
+#			tag = MIM
+#		}
+#	}
+#
+ #  focus = {
+  #      name = hire_ford
+	}
+}
