@@ -6,8 +6,6 @@
     title = california.1.t
     desc = california.1.d
     picture = GFX_report_event_election_vote
-#GFX_report_event_election_vote
-# GFX_report_event_gathering_protest.dds
     is_triggered_only = yes
 
     option = {
@@ -86,22 +84,142 @@ create_country_leader = {
 ############# END OF ELECTIONS EVENT ################
 
 
+country_event = {
+  id = california.2
+  title = california.2.t
+  desc = california.2.d
+  picture = GFX_report_event_bunker_01
+  is_triggered_only = yes
+
+    option = {
+      name = california.2.a
+
+      973 = {
+          add_building_construction = {
+          type = bunker
+          level = 3
+          instant_build = yes
+          province = {
+          all_provinces = yes
+          limit_to_border = yes
+              }
+      }
+    }
+
+
+                        974 = {
+                        add_building_construction = {
+                        type = bunker
+                        level = 3
+                        instant_build = yes
+                        province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                }
+            }
+        }
+    }
+
+    option = {
+      name = california.2.b
+
+      798 = {
+              add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+            }
+        }
+      }
+
+      799 = {
+              add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+            }
+        }
+      }
+
+      967 = {
+              add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+            }
+        }
+      }
+
+
+      797 = {
+              add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+            }
+        }
+      }
+
+      378 = {
+              add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+            }
+        }
+      }
 
 
 
+    }
+  }
 
 
 
+#NCR vs Nevada Event
+#Will allow NCR to declare war on nevada if they go non democratic, if NCR is democratic
 
+    country_event = {
+      id = california.3
+      title = california.3.t
+      desc = california.3.d
+      picture = GFX_report_event_generic_panzer_attack
 
+      is_triggered_only = yes
 
-
-
-
-
-
-
-
-  ############
-
-  ############
+  trigger = {
+      tag = CAC
+      has_government = democratic
+      NVN = { has_government = fascism has_government = communism }
+}
+  option = {
+      name = california.3.a
+      declare_war_on = {
+    target = NVN
+    type = puppet_wargoal_focus
+  }
+  add_war_support = 0.1
+  }
+  
+  option = {
+      name = california.3.b
+      add_stability = 0.1
+      add_political_power = 25
+      add_war_support = -0.1
+  }
+}

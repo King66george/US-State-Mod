@@ -41,4 +41,51 @@ ideas = {
           }
         }
 
+
+        country = {
+         CAC_lesscorptaxidea = {
+
+              allowed = {
+              always = no
+              }
+
+              allowed_civil_war = {
+                  always = yes
+              }
+
+              removal_cost = -1
+
+              modifier = {
+              production_factory_max_efficiency_factor = 0.05
+
+              }
+
+          }
+        }
+
+
+
+
+        country = {
+          CAC_tradepower = {
+
+          allowed = {
+          always = no
+          }
+
+          allowed_civil_war = {
+              always = yes
+          }
+
+          removal_cost = -1
+
+          modifier = {
+          	trade_opinion_factor = 0.25
+
+          }
+          }
+        }
+
+
+
 }

@@ -7,7 +7,7 @@
 
 focus_tree = {
     id = california_focus
-    continuous_focus_position = { x = 20 y = 1000 }
+    continuous_focus_position = { x = 20 y = 1250 }
     country = {
         factor = 0
 
@@ -124,18 +124,292 @@ focus_tree = {
 ###### Frank Merriams Path after elections
 
 
-
   focus = {
-  id = CAC_mcga
-  icon = GFX_CAC_mcga
-  prerequisite = { focus = CAC_frankmerriamsplans }
-  text = "Make California Great Again"
-  x = 10
-  y = 3
+    id = CAC_economic_initiative
+    icon = GFX_focus_generic_the_giant_wakes
+    text = "Economic Initiative"
+    prerequisite = { focus = CAC_frankmerriamsplans }
 
-  cost = 10
+    cost = 10
+    x = 8
+    y = 3
+
+    completion_reward = {
+    968 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+    }
+    }
+
+    }
 
   }
+
+
+
+
+
+  focus = {
+    id = CAC_militaryexpansionprogram
+    icon = GFX_goal_generic_construct_mil_factory
+    text = "Military Expansion Program"
+    prerequisite = { focus = CAC_frankmerriamsplans}
+
+    cost = 10
+    x = 10
+    y = 3
+
+    completion_reward = {
+    967 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = arms_factory
+    level = 1
+    instant_build = yes
+    }
+    }
+    }
+
+  }
+
+
+  focus = {
+  id = CAC_defensiveprogram
+  icon = GFX_goal_generic_construct_military
+  text = "Military Defense Program"
+  prerequisite = { focus = CAC_militaryexpansionprogram}
+  cost = 10
+  x = 10
+  y = 4
+
+  completion_reward = {
+      country_event = california.2
+  }
+  }
+
+  focus = {
+    id = CAC_militaryrnd
+    icon = GFX_focus_research
+    text = "Military R&D"
+    prerequisite = { focus = CAC_defensiveprogram }
+    cost = 10
+    x = 10
+    y = 5
+
+    completion_reward = {
+        add_research_slot = 1
+    }
+  }
+
+
+
+  focus = {
+    id = CAC_militarymodernization
+    icon = GFX_goal_generic_small_arms
+    text = "Military Modernization"
+    prerequisite = { focus = CAC_frankmerriamsplans}
+    cost = 10
+    x = 12
+    y = 3
+
+    completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
+		}
+  }
+
+
+  focus = {
+    id = CAC_dockyards1
+    icon = GFX_goal_generic_construct_naval_dockyard
+    text = "Build Northern Dockyards"
+    prerequisite = { focus = CAC_militarymodernization}
+    cost = 10
+    x = 12
+    y = 4
+
+    completion_reward = {
+    967 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = dockyard
+    level = 2
+    instant_build = yes
+    }
+    }
+    378 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = dockyard
+    level = 2
+    instant_build = yes
+    }
+    }
+  }
+}
+
+
+
+  focus = {
+    id = CAC_increasetradepower
+    icon = GFX_focus_mex_privatisation
+    text = "Increase Trade Power"
+    prerequisite = { focus = CAC_dockyards1}
+
+    cost = 10
+    x = 12
+    y = 5
+
+    completion_reward = {
+        add_ideas = { CAC_tradepower}
+        ENG = {
+                    add_opinion_modifier = {
+                                target = CAC
+                                modifier = medium_increase
+                    }
+                }
+                FRA = {
+                    add_opinion_modifier = {
+                                target = CAC
+                                modifier = medium_increase
+                    }
+                }
+                NVN = {
+                    add_opinion_modifier = {
+                                target = CAC
+                                modifier = medium_increase
+                    }
+                }
+                TXT = {
+                    add_opinion_modifier = {
+                                target = CAC
+                                modifier = medium_increase
+                    }
+                }
+                MEX = {
+                    add_opinion_modifier = {
+                                target = CAC
+                                modifier = medium_increase
+                    }
+                }
+
+                AZA = {
+                    add_opinion_modifier = {
+                                target = CAC
+                                modifier = medium_increase
+                    }
+                }
+            }
+
+    }
+
+
+
+
+
+
+  focus = {
+  id = CAC_lesscorptax
+  icon = GFX_goal_generic_positive_trade_relations
+  text = "Lessen Corporation Tax"
+  prerequisite = { focus = CAC_economic_initiative}
+
+  x = 8
+  y = 4
+  cost = 10
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = yes
+
+  completion_reward = {
+    add_ideas = CAC_lesscorptaxidea
+    798 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+    }
+  }
+}
+}
+
+
+  focus = {
+  id = CAC_oilproduction
+  icon = GFX_goal_generic_oil_refinery
+  text = "Black Gold"
+  prerequisite = { focus = CAC_lesscorptax}
+
+  x = 8
+  y = 5
+  cost = 10
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = yes
+
+  completion_reward = {
+    every_state = {
+      limit = {
+        OR = {
+          state = 974
+          state = 973
+          state = 798
+        }
+      }
+      add_resource = {
+        type = oil
+        amount = 6
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  focus = {
+#  id = CAC_mcga
+#  icon = GFX_CAC_mcga
+#  prerequisite = { focus = CAC_frankmerriamsplans }
+#  text = "Make California Great Again"
+#  x = 10
+# y = 3
+
+#  cost = 10
+
+#  }
 
 
 
@@ -289,4 +563,23 @@ focus_tree = {
 
    }
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
