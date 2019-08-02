@@ -57,20 +57,28 @@ country_event = {
   }
 }
 country_event = {
+<<<<<<< HEAD
 id = tex.4
 title = tex.4.t
 desc = tex.4.d
 is_triggered_only = yes
+=======
+	id = tex.4
+	title = tex.4.t
+	desc = tex.4.d
+>>>>>>> bac73a877ba3a42c7554b29e8d8789715db47ccd
 
-option = {
-name = tex.4.a
-create_country_leader = {
-name = "Leon Trotsky"
-desc = POLITICS_TXT_LEON_TROTSKY
-picture = "Portrait_Leon_Trotsky.dds"
-expire = "1965.1.1"
-ideology = leninism
-traits = { permanent_revolutionary }
-}
-}
+	is_triggered_only = yes
+  
+	option = {
+		name = tex.4.a
+		create_country_leader = {
+		name = "Leon Trotsky"
+		desc = POLITICS_TXT_LEON_TROTSKY
+		picture = "Portrait_Leon_Trotsky.dds"
+		expire = "1965.1.1"
+		ideology = leninism
+		traits = { permanent_revolutionary }
+		}
+	}
 }

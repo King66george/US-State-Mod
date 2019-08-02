@@ -316,10 +316,11 @@ focus_tree = {
 					     is_free_or_subject_of_root = yes}
 			}
 		relative_position_id = TXT_assimilation
+
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
-							target = NMN
+							target = AZA
 						}
 				}
 
@@ -766,7 +767,7 @@ focus_tree = {
 					TXT = {
 							country_event = {
 									days = 1
-									id = mexico.17
+									id = tex.4
 								}
 						}
 				}
