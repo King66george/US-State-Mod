@@ -14,24 +14,24 @@ focus_tree = {
 		cost = 3.00
 		x = 18
 		y = 0
-			ai_will_do = {
-					factor = 10
-				}
-			available = {
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
 
-}
-			bypass = {
+		}
+		bypass = {
 
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			complete_tooltip = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
 
-}
-			completion_reward = {
-					add_political_power = 200
-				}
+		}
+		completion_reward = {
+			add_political_power = 200
+		}
 
 	}
 	focus = {
@@ -40,12 +40,12 @@ focus_tree = {
 		cost = 5.00
 		x = 42
 		y = 0
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_ideas = VAV_idea_expand_industry
-				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = VAV_idea_expand_industry
+		}
 
 	}
 	focus = {
@@ -161,16 +161,16 @@ focus_tree = {
 				}
 			available = {
 
-}
+			}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-}
+			}
 			completion_reward = {
 					add_ideas = fascist_influence
 				}
@@ -193,16 +193,16 @@ focus_tree = {
 				}
 			available = {
 
-}
+			}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-}
+			}
 			completion_reward = {
 					add_popularity = {
 							ideology = fascism
@@ -371,16 +371,16 @@ focus_tree = {
 				}
 			available = {
 
-}
+			}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-}
+			}
 			completion_reward = {
 					add_ideas = democratic_influence
 				}
@@ -403,7 +403,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -472,7 +472,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -496,7 +496,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -527,7 +527,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -551,7 +551,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -581,7 +581,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -627,7 +627,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -693,16 +693,16 @@ focus_tree = {
 				}
 			available = {
 
-}
+			}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-}
+			}
 			completion_reward = {
 					add_ideas = communist_influence
 				}
@@ -722,7 +722,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -755,7 +755,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -832,7 +832,7 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
