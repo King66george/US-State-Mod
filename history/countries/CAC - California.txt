@@ -123,7 +123,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
-	home_of_the_free
+	#
 }
 set_popularities = {
 	democratic = 73

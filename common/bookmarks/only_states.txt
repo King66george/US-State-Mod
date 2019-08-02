@@ -25,7 +25,7 @@ bookmarks = {
 					history = "NYN_GATHERING_STORM_DESC"
 					ideology = democratic
 					ideas = {
-						home_of_the_free
+						#
 					}
 					focuses = {
 						NYN_politicalfocus_1
@@ -38,10 +38,12 @@ bookmarks = {
 							history = "USA_GATHERING_STORM_DESC"
 							ideology = democratic
 							ideas = {
-								home_of_the_free
+								#
 							}
 							focuses = {
-								#
+								CAC_frankmerriamsplans
+								CAC_clementyoungsplan
+								CAC_uptonsinclairsplan
 							}
 								}
 
