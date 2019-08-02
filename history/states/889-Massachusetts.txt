@@ -1,7 +1,7 @@
 
 state={
 	id=889
-	name="Massachusetts"
+	name="Boston"
 	resources={
 		steel=12.000
 	}
@@ -24,17 +24,11 @@ state={
 		victory_points = {
 			6732 20
 		}
-		victory_points = {
-			12459 1
-		}
-		victory_points = {
-			9832 1
-		}
 
 	}
 
 	provinces={
-		715 718 905 908 3710 3906 6732
+		715 3710 6732
 	}
 	manpower=8404713
 	buildings_max_level_factor=1.000

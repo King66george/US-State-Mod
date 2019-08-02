@@ -1,7 +1,7 @@
 state={
 	id=804
-	name="Cowboy Country"
-		state_category=rural
+	name="Ranger Country"
+		state_category=city
 	manpower=91057
 	resources={
 		steel=70.000

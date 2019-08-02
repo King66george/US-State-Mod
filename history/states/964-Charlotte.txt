@@ -1,6 +1,10 @@
 state={
 	id=964
 	name="Charlotte"
+	resources={
+		steel=25
+		aluminium=25
+	}
 	history={
 		owner = NCN
 		buildings = {

@@ -1,4 +1,4 @@
-﻿capital = 890
+﻿capital = 980
 
 oob = "VTV_1936"
 

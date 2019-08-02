@@ -7,7 +7,15 @@ state={
 		owner = MEX
 		buildings = {
 			infrastructure = 3
-
+			2069 ={
+				bunker = 1
+			}
+			8012 ={
+				bunker = 1
+			}
+			12833 ={
+				bunker = 1
+			}
 
 		}
 		add_core_of = SON

@@ -1,7 +1,10 @@
 state={
 	id=936
 	name="Quitana Roo"
-
+	resources={
+		steel=25
+		tungsten=15
+	}
 	history={ 1936.1.3 = {owner = YUC controller = YUC  }
 		owner = MEX
 		buildings = {

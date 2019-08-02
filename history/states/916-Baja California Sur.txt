@@ -2,7 +2,10 @@
 state={
 	id=916
 	name="Baja California Sur"
-
+	resources={
+		oil=25
+		tungsten=15
+	}
 	history={ 1936.1.3 = {owner = BAJ controller = BAJ }
 		owner = MEX
 		buildings = {

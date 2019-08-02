@@ -5,6 +5,11 @@ state={
 	buildings_max_level_factor=1.000
 	manpower=435572
 	state_category=city
+	resources={
+		oil=42
+		tungsten=15
+		steel=7.000
+	}
 	history={
 		owner = NUN
 		buildings = {

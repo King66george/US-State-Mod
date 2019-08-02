@@ -1,6 +1,6 @@
 state={
 	id=379
-	name="STATE_379"
+	name="Henderson"
 	resources={
 		steel=70.000
 		tungsten=22.000

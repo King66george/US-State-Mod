@@ -3,6 +3,10 @@ state={
 	name="South Mississippi"
 	manpower=2009820
 	state_category=city
+	resources={
+		oil=5
+		aluminium=5
+	}
 	history={
 		owner = MSM
 		victory_points = {

@@ -5,7 +5,7 @@ state={
 	manpower=692849
 
 	resources={
-		chromium=3.000
+		chromium=13.000
 	}
 
 

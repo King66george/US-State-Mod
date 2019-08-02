@@ -1,7 +1,11 @@
 state={
 	id=949
 	name="Cheyenne"
-
+	resources={
+		steel=25
+		tungsten=15
+		rubber=10
+	}
 	history={
 		owner = WYW
 		buildings = {
@@ -18,5 +22,5 @@ state={
 	}
 	manpower=925564
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 }

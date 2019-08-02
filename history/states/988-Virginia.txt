@@ -1,18 +1,18 @@
 
 state={
-	id=362
-	name="Virginia"
-	manpower=4151054
+	id=988
+	name="Roanoke"
+	manpower=651054
 	resources={
 		steel=14.000
+		rubber=10.000
 	}
-	state_category=metropolis
+	state_category=city
 	history={
 		owner = VAV
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
-			air_base = 6
+			industrial_complex = 1
 			fuel_silo = 2
 
 			}
@@ -33,7 +33,7 @@ state={
 
 }
 	provinces={
-		951 3823 3925 11841 11873
+		1506 9931 10343 10412 10439
 	}
 
 	buildings_max_level_factor=1.000

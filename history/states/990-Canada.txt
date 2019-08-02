@@ -1,0 +1,28 @@
+
+state={
+	id=990
+	name="Ottawa" 
+	manpower = 3117017
+
+	state_category = metropolis
+
+	history={
+		owner = ONO
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 5
+		}
+		add_core_of = ONO
+
+		victory_points = {
+			3778 20
+		}
+	}
+
+	provinces={
+		3778
+	}
+
+}

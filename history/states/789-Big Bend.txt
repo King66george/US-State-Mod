@@ -14,7 +14,7 @@ state={
 		owner = TXT
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 9
+			industrial_complex = 1
 			air_base = 3
 		}
 		add_core_of = TXT
@@ -24,6 +24,6 @@ state={
 	provinces={
 		1954 1998 4955 5038 8064 10740 10894
 	}
-	manpower=824712
+	manpower=224712
 	buildings_max_level_factor=1.000
 }

@@ -1,29 +1,31 @@
 
 state={
-	id=802
-	name="Denver"
+	id=986
+	name="Cape"
 	resources={
-		oil=25
-		tungsten=15
+		steel=12.000
+		oil=10.000
 	}
-	history={
-		owner = COC
-		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
 
+	history={
+		owner = MAM
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
 		}
-		add_core_of = COC
+		add_core_of = MAM
 		victory_points = {
-			1827 5 
+			905 10
 		}
 
 	}
 
 	provinces={
-		1827 10588 
+		905 3906
 	}
-	manpower=100239
+	manpower=704713
 	buildings_max_level_factor=1.000
 	state_category=city
 }

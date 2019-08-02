@@ -2,7 +2,10 @@
 state={
 	id=365
 	name="STATE_365"
-
+	resources={
+		steel=25
+		aluminium=15
+	}
 	history={
 		owner = GAG
 		buildings = {

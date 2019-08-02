@@ -4,7 +4,8 @@ state={
 	name="Southeast New Mexico"
 	resources={
 		oil=14.000
-		aluminium=30.000
+		aluminium=10.000
+		tungsten=10.000
 	}
 
 	history={

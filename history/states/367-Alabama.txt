@@ -4,6 +4,10 @@ state={
 	name="West Alabama"
 	manpower=2646247
 	state_category=city
+	resources={
+		steel=5
+		aluminium=5
+	}
 	history={
 		owner = ALA
 		buildings = {
