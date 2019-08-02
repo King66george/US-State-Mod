@@ -56,3 +56,20 @@ country_event = {
   TXT = { transfer_state = 381 }
   }
 }
+country_event = {
+id = tex.4
+title = tex.4.t
+desc = tex.4.d
+
+option = {
+name = tex.4.a
+create_country_leader = {
+name = "Leon Trotsky"
+desc = POLITICS_TXT_LEON_TROTSKY
+picture = "Portrait_Leon_Trotsky.dds"
+expire = "1965.1.1"
+ideology = leninism
+traits = { permanent_revolutionary }
+}
+}
+}

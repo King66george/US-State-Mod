@@ -127,3 +127,8 @@ country_event = {
 				value = 200
 			}
 		}
+		option = {
+			name = disunitedstates.5.b
+			ai_chance = { factor = 70 }
+			TXT = { country_event = disunitedstates.4 }
+		}
