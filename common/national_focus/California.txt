@@ -380,9 +380,34 @@ focus_tree = {
 
 
 
+  focus = {
+    id = CAC_localsecurity
+    icon = GFX_focus_eng_global_defense
+    text = "Local Security"
+    prerequisite = { focus = CAC_oilproduction focus = CAC_militaryrnd focus = CAC_increasetradepower }
+    cost = 10
+    x = 10
+    y = 6
+
+    completion_reward = {
+      set_rule = {
+      #can_force_government = yes
+      }
+    }
+  }
 
 
 
+  focus = {
+    id = CAC_preservehawaii
+    icon = GFX_CAC_focus_offer_hawaii
+    text = "An Offer To Hawaii"
+    prerequisite = { focus = CAC_localsecurity}
+
+    cost = 10
+    x = 10
+    y = 7
+  }
 
 
 

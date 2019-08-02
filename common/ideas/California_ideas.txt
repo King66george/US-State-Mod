@@ -86,5 +86,24 @@ ideas = {
         }
 
 
+      country = {
+        CAC_local_security
+        allowed = {
+        always = no
+
+        allowed_civil_war = {
+          always = yes
+        }
+
+        removal_cost = -1
+
+        modifier = {
+          #
+        }
+      }
+    }
+
+
+
 
 }
