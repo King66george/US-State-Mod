@@ -265,18 +265,18 @@ country_event = {
 		is_triggered_only = yes
 
 		option = {
-		name = california.6.a
+			name = california.6.a
 		}
 	}
 
 #Hawaii Refuses
   country_event = {
-      id = california.5
-      title = california.5.t
-      desc = california.5.d
-      picture = GFX_report_event_usa_destroyers
+		id = california.5
+		title = california.5.t
+		desc = california.5.d
+		picture = GFX_report_event_usa_destroyers
 
-      is_triggered_only = yes
+		is_triggered_only = yes
 
 		option = {
 			name = california.5.a
