@@ -4,12 +4,26 @@
   california.1.a:0 "Clement C. Young wins the election!"
   california.1.b:0 "The incumbent Frank Merriam wins the re-election!"
   california.1.c:0 "Upton Sinclair somehow wins the election?"
-  ####
+  #### Above, elections for 1936
+  ### Below, Defensive programs
   california.2.t:0 "Defensive Fort Program"
   california.2.d:0 "We have been brought an opportunity to build forts along our neighboring states, we have 2 options. We can either build our forts on the southern part of California on the border of Mexico and Arizona, or up north and protect our border with Nevada and Oregon, which one shall we do?"
   california.2.a:0 "The North already has mountains for defenses, Let's build the "Mexican Maginot""
   california.2.b:0 "We must defend from north-western aggression!"
+  #### Below, Unique Nevada event
   california.3.t:0 "Nevadan Security"
   california.3.d:0 "In light of Nevada's shift towards authoritarianism, one thing has become clear- Nevada poses a clear and present danger to our populace, and we cannot allow them to spread their vicious ideologies to our state. In the name of democracy, we must liberate Nevada!"
   california.3.a:0 "We must secure their resourc- err, freedom!"
   california.3.b:0 "Dangerous rhetoric or not, we cannot allow ourselves to engage in such a wasteful war!"
+  ## Hawaiian focus chain
+  california.4.t:0 "An Offer To Hawaii"
+  california.4.d:0 "A congress member has brought an important matter to our attention, Hawaii. He proposed that Hawaii should be placed a puppet under California which can provide it protection from the Japanese. Hawaii could say no but they do not have enough infantry to protect themselves from a large scale invasion, should we send an envoy?"
+  california.4.a:0 "A bad idea, why involve ourselves in such matters?"
+  california.4.b:0 "A wonderful idea, send the envoy."
+  california.6.t:0 "Hawaii Accepts"
+  california.6.d:0 "Our envoy has came back and told us the plan was successful, Hawaii is now a puppet of California."
+  california.6.a:0 "Wonderful, this opens up new possibilities."
+  california.5.t:0 "Hawaii Refuses"
+  california.5.d:0 "Our envoy has come with some disappointing words, he stated that the Hawaiians have no interest in working with the Californians what so ever."
+  california.5.a:0 "Damn those Hawaiians!"
+  california.5.b:0 "Force them to accept!"

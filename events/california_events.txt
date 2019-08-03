@@ -83,7 +83,7 @@ create_country_leader = {
 
 ############# END OF ELECTIONS EVENT ################
 
-
+#Fort focus for either arizona and mexico border or nevada and oregon
 country_event = {
   id = california.2
   title = california.2.t
@@ -215,7 +215,7 @@ country_event = {
   }
   add_war_support = 0.1
   }
-  
+
   option = {
       name = california.3.b
       add_stability = 0.1
@@ -223,3 +223,69 @@ country_event = {
       add_war_support = -0.1
   }
 }
+
+
+#Focus Tree "An Offer To Hawaii" Californian Offer To Hawaii Event
+
+  country_event = {
+    id = california.4
+    title = california.4.t
+    desc = california.4.d
+    picture = GFX_report_event_usa_heavy_cruiser
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.4.a
+      add_political_power = 75
+      add_opinion_modifier = {
+      target = JAP
+      modifier = medium_increase
+          }
+    }
+
+    option = {
+      name = california.4.b
+      HIH = {country_event = disunitedstates.6}
+    }
+  }
+
+
+
+#Hawaii Accepts
+  country_event = {
+    id = california.6
+    title = california.6.t
+    desc = california.6.d
+    picture = GFX_report_event_usa_destroyers
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.6.a
+      }
+    }
+
+
+#Hawaii Refuses
+  country_event = {
+      id = california.5
+      title = california.5.t
+      desc = california.5.d
+      picture = GFX_report_event_usa_destroyers
+
+      is_triggered_only = yes
+
+      option = {
+        name = california.5.a
+      }
+
+
+      option = {
+        name = california.5.b
+        declare_war_on = {
+        target = HIH
+        type = puppet_wargoal_focus
+        }
+      }
+  }

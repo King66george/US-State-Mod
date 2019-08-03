@@ -132,3 +132,34 @@ country_event = {
 			ai_chance = { factor = 70 }
 			TXT = { country_event = disunitedstates.4 }
 		}
+	}
+
+
+
+		#hawaii accepts or refuses from california
+
+			country_event = {
+				id = disunitedstates.6
+				title = disunitedstates.6.t
+				desc = disunitedstates.6.d
+				picture = #
+
+				is_triggered_only = yes
+
+				option = {
+					name = disunitedstates.6.a
+					ai_chance = {factor = 70}
+					CAC = {
+						country_event = california.6
+						puppet = HIH
+					}
+				}
+
+				option = {
+					name = disunitedstates.6.b
+					ai_chance = {factor = 30}
+					CAC = {
+						country_event = california.5
+					}
+				}
+			}
