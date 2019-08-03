@@ -202,14 +202,14 @@ country_event = {
 		trigger = {
 			tag = CAC
 			has_government = democratic
-			OR = {
-				NVN = {
-					has_government = fascism  
-				}
-				NVN = {
-					has_government = communism
-				}
+			
+			NVN = {
+				has_government = fascism  
 			}
+			NVN = {
+				has_government = communism
+			}
+			
 		}	
 		option = {
 			name = california.3.a
