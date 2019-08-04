@@ -1,8 +1,9 @@
+
 state={
 	id=798
 	name="STATE_801"
 	resources={
-		oil=140
+		oil=140.000
 	}
 
 	history={
@@ -15,19 +16,21 @@ state={
 			air_base = 2
 			9814 = {
 				naval_base = 5
+
 			}
+
 		}
 		add_core_of = CAC
 		victory_points = {
-			9814 20
+			9814 20 
 		}
 
 	}
 
 	provinces={
-		1651 4657 9814 9855 10387 10483 11757 11795 12303
+		1651 4657 9814 9855 10387 10483 11757 11795 12303 13233 13234 13235 13236 13237 
 	}
+	manpower=1871365
 	buildings_max_level_factor=1.000
-	manpower = 1871365
-	state_category = metropolis
+	state_category=metropolis
 }

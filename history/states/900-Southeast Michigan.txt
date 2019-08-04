@@ -1,9 +1,7 @@
+
 state={
 	id=900
 	name="Detriot"
-	manpower=3986575
-
-	state_category = metropolis
 
 	history={
 		owner = MIM
@@ -11,6 +9,7 @@ state={
 			infrastructure = 6
 			industrial_complex = 5
 			arms_factory = 5
+
 		}
 		add_core_of = MIM
 		victory_points = {
@@ -18,7 +17,11 @@ state={
 		}
 
 	}
+
 	provinces={
-		6710 11656 13224 13225 13226 13227 13228
+		6710 11656 13268 13269 13270 13271 13272 
 	}
+	manpower=3986575
+	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

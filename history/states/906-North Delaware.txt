@@ -1,8 +1,7 @@
+
 state={
 	id=906
 	name="Dover"
-	manpower=1800000
-	state_category=town
 	resources={
 		rubber=4.000
 		chromium=5.000
@@ -17,12 +16,13 @@ state={
 
 		}
 		add_core_of = DED
-		
-	}
 
+	}
 
 	provinces={
-		13222
+		13258 
 	}
+	manpower=1800000
 	buildings_max_level_factor=1.000
+	state_category=town
 }

@@ -1,9 +1,10 @@
+
 state={
 	id=968
 	name="San Francisco"
 	resources={
-		oil=20
-		aluminium=8
+		oil=20.000
+		aluminium=8.000
 	}
 
 	history={
@@ -24,7 +25,6 @@ state={
 		victory_points = {
 			9671 20 
 		}
-
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7
@@ -34,8 +34,9 @@ state={
 		}
 
 	}
+
 	provinces={
-		3677 3678 9671 
+		3677 3678 9671 13238 13240 13242 13244 13246 
 	}
 	manpower=1677248
 	buildings_max_level_factor=1.000
