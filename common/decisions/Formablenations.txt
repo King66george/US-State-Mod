@@ -34,6 +34,7 @@ form_nation = {
     available = {
       is_subject = no
         #virginia
+	controls_state = 988
         controls_state = 362
         controls_state = 876
         controls_state = 878
@@ -41,19 +42,27 @@ form_nation = {
         controls_state = 877
         controls_state = 875
         #maryland
+	controls_state = 909
+	controls_state = 908
+	controls_state = 971
         controls_state = 361
         controls_state = 879
         #delaware
+	controls_state = 906
         controls_state = 895
         #north carolina
+	controls_state = 963
+	controls_state = 964
         controls_state = 363
         controls_state = 874
         controls_state = 873
         #south carolina
+	controls_state = 962
         controls_state = 871
         controls_state = 364
         controls_state = 872
         #georgia
+	controls_state = 960
         controls_state = 365
         controls_state = 870
         controls_state = 868
@@ -72,17 +81,25 @@ form_nation = {
         controls_state = 359
         controls_state = 883
         #rhode island
+	controls_state = 984
         controls_state = 888
         #new hampshire
+	controls_state = 979
         controls_state = 891
         #vermont
+	controls_state = 980
         controls_state = 890
         #connecticut
+	controls_state = 976
         controls_state = 887
         #massachusetts
         controls_state = 889
+	controls_state = 987
+	controls_state = 986
         #maine
         controls_state = 357
+	controls_state = 978
+	controls_state = 977
     }
 
     cost = 100
@@ -133,6 +150,21 @@ form_nation = {
       887 = { add_core_of = ROOT }
       889 = { add_core_of = ROOT }
       357 = { add_core_of = ROOT }
+		984 = { add_core_of = ROOT }
+		980 = { add_core_of = ROOT }
+		977 = { add_core_of = ROOT }
+		976 = { add_core_of = ROOT }
+		988 = { add_core_of = ROOT }
+		987 = { add_core_of = ROOT }
+		986 = { add_core_of = ROOT }
+		971 = { add_core_of = ROOT }
+		964 = { add_core_of = ROOT }
+		963 = { add_core_of = ROOT }
+		962 = { add_core_of = ROOT }
+		960 = { add_core_of = ROOT }
+		909 = { add_core_of = ROOT }
+		908 = { add_core_of = ROOT }
+		906 = { add_core_of = ROOT }
       }
      }
     }
@@ -153,6 +185,8 @@ icon = generic_form_nation
     original_tag = RIR
     original_tag = CTC
     original_tag = MEM
+	original_tag = VTV
+	original_tag = MAM
     }
   }
 
@@ -164,6 +198,14 @@ available = {
     controls_state = 890
     controls_state = 889
     controls_state = 357
+	controls_state = 980
+	controls_state = 986
+	controls_state = 987
+	controls_state = 979
+	controls_state = 978
+	controls_state = 977
+	controls_state = 976
+	controls_state = 889
 }
 
 cost = 100
@@ -186,6 +228,15 @@ hidden_effect = {
   890 = { add_core_of = ROOT }
   891 = { add_core_of = ROOT }
   357 = { add_core_of = ROOT }
+  980 = { add_core_of = ROOT }
+  986 = { add_core_of = ROOT }
+  987 = { add_core_of = ROOT }
+  979 = { add_core_of = ROOT }
+  978 = { add_core_of = ROOT }
+  977 = { add_core_of = ROOT }
+  976 = { add_core_of = ROOT }
+  889 = { add_core_of = ROOT }
+  
 
   }
  }
@@ -257,6 +308,15 @@ available = {
     controls_state = 852
     controls_state = 368
     controls_state = 853
+	controls_state = 983
+	controls_state = 988
+	controls_state = 964
+	controls_state = 963
+	controls_state = 962
+	controls_state = 961
+	controls_state = 960
+	controls_state = 958
+	controls_state = 957
 }
 
 cost = 100
@@ -355,6 +415,10 @@ custom_effect_tooltip = core_land
 hidden_effect = {
   877 = { add_core_of = ROOT }
   875 = { add_core_of = ROOT }
+  362 = { add_core_of = ROOT }
+  876 = { add_core_of = ROOT }
+  878 = { add_core_of = ROOT }
+  988 = { add_core_of = ROOT }
 
   }
  }
@@ -371,6 +435,7 @@ icon = generic_form_nation
 
   visible = {
     original_tag = UTU
+	original_tag = AZA
   }
 
 available = {
@@ -379,12 +444,13 @@ available = {
     controls_state = 805
     controls_state = 379
     controls_state = 795
-    controls_state = 795
+    controls_state = 912
     controls_state = 796
     controls_state = 798
     controls_state = 803
     controls_state = 800
     controls_state = 824
+	controls_state = 913
 }
 
 cost = 100
@@ -409,6 +475,8 @@ hidden_effect = {
   803 = { add_core_of = ROOT }
   800 = { add_core_of = ROOT }
   824 = { add_core_of = ROOT }
+  912 = { add_core_of = ROOT }
+  913 = { add_core_of = ROOT }
 
   }
  }
@@ -590,6 +658,13 @@ hidden_effect = {
 795 = { add_core_of = ROOT }
 796 = { add_core_of = ROOT }
 377 = { add_core_of = ROOT }
+913 = { add_core_of = ROOT }
+912 = { add_core_of = ROOT }
+950 = { add_core_of = ROOT }
+930 = { add_core_of = ROOT }
+920 = { add_core_of = ROOT }
+919 = { add_core_of = ROOT }
+975 = { add_core_of = ROOT }
 
   }
  }
@@ -646,6 +721,7 @@ hidden_effect = {
   374 = { add_core_of = ROOT }
   833 = { add_core_of = ROOT }
   832 = { add_core_of = ROOT }
+  951 = { add_core_of = ROOT }
 
   }
  }
@@ -749,10 +825,20 @@ hidden_effect = {
      463 = { add_core_of = ROOT }
      892 = { add_core_of = ROOT }
      894 = { add_core_of = ROOT }
+	 975 = { add_core_of = ROOT }
+	 974 = { add_core_of = ROOT }
+	 973 = { add_core_of = ROOT }
+	 972 = { add_core_of = ROOT }
+	 970 = { add_core_of = ROOT }
+	 968 = { add_core_of = ROOT }
+	 967 = { add_core_of = ROOT }
+	 985 = { add_core_of = ROOT }
+	 991 = { add_core_of = ROOT }
       }
      }
 
     }
+
 
 ####
 
