@@ -2542,7 +2542,7 @@ focus_tree = {
 			available_if_capitulated = no
 			completion_reward = {
 			create_wargoal = {
-					target = ITA
+					target = GER
 					type = topple_government
 				}
 					unlock_decision_tooltip = {
