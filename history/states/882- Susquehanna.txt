@@ -1,8 +1,7 @@
+
 state={
 	id=882
 	name="Susquehanna"
-	manpower=1307012
-	state_category=megalopolis
 	resources={
 		steel=44.000
 	}
@@ -37,9 +36,11 @@ state={
 		}
 
 	}
+
 	provinces={
-		3697 862 894 3897 891 9820 822 3824 6845 11785 6869 11799
+		822 862 891 894 3697 3824 3897 6845 6869 9820 11785 11799 13260 13261 13262 13263 
 	}
-	
+	manpower=1307012
 	buildings_max_level_factor=1.000
+	state_category=megalopolis
 }

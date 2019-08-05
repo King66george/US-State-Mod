@@ -2,11 +2,10 @@
 state={
 	id=362
 	name="Virginia"
-	manpower=4151054
 	resources={
 		steel=14.000
 	}
-	state_category=metropolis
+
 	history={
 		owner = VAV
 		buildings = {
@@ -15,12 +14,10 @@ state={
 			air_base = 6
 			fuel_silo = 2
 
-			}
-
-
+		}
 		add_core_of = VAV
 		victory_points = {
-			11841 15
+			11841 15 
 		}
 		1939.1.1 = {
 			buildings = {
@@ -30,12 +27,12 @@ state={
 
 		}
 
-
-}
-	provinces={
-		951 3823 3925 11841 11873
 	}
 
+	provinces={
+		951 3823 3925 11841 11873 13239 13241 13243 13245 13247 
+	}
+	manpower=4151054
 	buildings_max_level_factor=1.000
-
+	state_category=metropolis
 }

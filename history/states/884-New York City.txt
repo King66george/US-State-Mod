@@ -1,8 +1,7 @@
+
 state={
 	id=884
 	name="New York City"
-	manpower=12588061
-	state_category=megalopolis
 	resources={
 		steel=13.000
 	}
@@ -23,13 +22,15 @@ state={
 		}
 		add_core_of = NYN
 		victory_points = {
-			3878 20
+			3878 20 
 		}
 
 	}
-	provinces={
-		859 3878
-	}
 
+	provinces={
+		859 3878 13264 13265 13266 13267 
+	}
+	manpower=12588061
 	buildings_max_level_factor=1.000
+	state_category=megalopolis
 }
