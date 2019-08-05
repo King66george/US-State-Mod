@@ -236,7 +236,7 @@ hidden_effect = {
   977 = { add_core_of = ROOT }
   976 = { add_core_of = ROOT }
   889 = { add_core_of = ROOT }
-  
+
 
   }
  }
@@ -744,10 +744,6 @@ hidden_effect = {
         original_tag = CAC
         original_tag = ORO
         original_tag = WAW
-        original_tag = BCB
-        original_tag = YIY
-        original_tag = AKA
-        original_tag = HIH
         }
       }
 
@@ -765,25 +761,16 @@ hidden_effect = {
         controls_state = 806
         controls_state = 807
         controls_state = 941
+        controls_state = 385
         controls_state = 808
         controls_state = 914
         controls_state = 809
-        controls_state = 970
-        controls_state = 740
-        controls_state = 473
-        controls_state = 811
-        controls_state = 812
-        controls_state = 739
-        controls_state = 907
-        controls_state = 471
-        controls_state = 813
-        controls_state = 463
-        controls_state = 892
-        controls_state = 894
+        controls_state = 386
+        controls_state = 810
 
       }
 
-    cost = 100
+    cost = 50
 
     fire_only_once = yes
 
@@ -793,51 +780,12 @@ hidden_effect = {
 
     complete_effect = {
     set_cosmetic_tag = PSA
-    set_capital = 968
-    add_stability = 0.20
+    set_capital = 967
+    add_stability = 0.15
     custom_effect_tooltip = core_land
     hidden_effect = {
 
      974 = { add_core_of = ROOT }
-     973 = { add_core_of = ROOT }
-     799 = { add_core_of = ROOT }
-     798 = { add_core_of = ROOT }
-     972 = { add_core_of = ROOT }
-     968 = { add_core_of = ROOT }
-     967 = { add_core_of = ROOT }
-     378 = { add_core_of = ROOT }
-     797 = { add_core_of = ROOT }
-     806 = { add_core_of = ROOT }
-     807 = { add_core_of = ROOT }
-     941 = { add_core_of = ROOT }
-     808 = { add_core_of = ROOT }
-     914 = { add_core_of = ROOT }
-     809 = { add_core_of = ROOT }
-     970 = { add_core_of = ROOT }
-     740 = { add_core_of = ROOT }
-     473 = { add_core_of = ROOT }
-     811 = { add_core_of = ROOT }
-     812 = { add_core_of = ROOT }
-     739 = { add_core_of = ROOT }
-     907 = { add_core_of = ROOT }
-     471 = { add_core_of = ROOT }
-     813 = { add_core_of = ROOT }
-     463 = { add_core_of = ROOT }
-     892 = { add_core_of = ROOT }
-     894 = { add_core_of = ROOT }
-	 975 = { add_core_of = ROOT }
-	 974 = { add_core_of = ROOT }
-	 973 = { add_core_of = ROOT }
-	 972 = { add_core_of = ROOT }
-	 970 = { add_core_of = ROOT }
-	 968 = { add_core_of = ROOT }
-	 967 = { add_core_of = ROOT }
-	 985 = { add_core_of = ROOT }
-	 991 = { add_core_of = ROOT }
-      }
-     }
-
-    }
 
 
 ####

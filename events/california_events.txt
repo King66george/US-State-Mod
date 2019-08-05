@@ -197,21 +197,26 @@ country_event = {
 		desc = california.3.d
 		picture = GFX_report_event_generic_panzer_attack
 
-		is_triggered_only = yes
+    is_triggered_only = no
+    fire_only_once = yes
 
-		trigger = {
-			tag = CAC
-			has_government = democratic
-
-			NVN = {
-				has_government = fascism
-			}
-			NVN = {
-				has_government = communism
-			}
-
+  trigger = {
+		tag = CAC
+		has_government = democratic
+    NVN = {
+      exists = yes
+    }
+    OR = {
+  		NVN = {
+    		has_government = fascism
+  		}
+  		NVN = {
+    		has_government = communism
+  		}
 		}
-		option = {
+  }
+
+	option = {
 			name = california.3.a
 
 			declare_war_on = {
@@ -220,7 +225,7 @@ country_event = {
 			}
 			add_war_support = 0.1
 		}
-		option = {
+	option = {
 			name = california.3.b
 			add_stability = 0.1
 			add_political_power = 25
@@ -292,3 +297,21 @@ country_event = {
 			}
 		}
 	}
+
+
+
+#Beginning Of PSA
+  country_event = {
+    id = california.7
+    title = california.7.t
+    desc = california.7.d
+    picture = GFX_report_event_us_panay_demands
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.7.a
+      add_political_power = 50
+      add_war_support = 0.05
+    }
+  }
