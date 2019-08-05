@@ -7,7 +7,7 @@
 
 focus_tree = {
     id = california_focus
-    continuous_focus_position = { x = 20 y = 1250 }
+    continuous_focus_position = { x = 20 y = 1500 }
     country = {
         factor = 0
 
@@ -164,10 +164,10 @@ focus_tree = {
 
     completion_reward = {
     967 = {
-    add_extra_state_shared_building_slots = 1
+    add_extra_state_shared_building_slots = 3
     add_building_construction = {
     type = arms_factory
-    level = 1
+    level = 3
     instant_build = yes
     }
     }
@@ -337,10 +337,10 @@ focus_tree = {
   completion_reward = {
     add_ideas = CAC_lesscorptaxidea
     798 = {
-    add_extra_state_shared_building_slots = 1
+    add_extra_state_shared_building_slots = 2
     add_building_construction = {
     type = industrial_complex
-    level = 1
+    level = 2
     instant_build = yes
     }
   }
@@ -380,7 +380,7 @@ focus_tree = {
 
 
 
-  focus = {
+focus = {
     id = CAC_localsecurity
     icon = GFX_focus_eng_global_defense
     text = "Local Security"
@@ -391,24 +391,131 @@ focus_tree = {
 
     completion_reward = {
         add_ideas = CAC_local_security
+        add_political_power = 120
+  			set_rule = { can_create_factions = yes }
+  			create_faction = "california_democratic_faction"
+
       }
+  }
+
+
+
+focus = {
+  id = CAC_preservehawaii
+  icon = GFX_goal_generic_improve_relations
+  text = "An Offer To Hawaii"
+  prerequisite = { focus = CAC_localsecurity}
+
+  cost = 10
+  x = 10
+  y = 7
+
+  completion_reward = {
+      country_event = california.4
+  }
+}
+
+focus = {
+  id = CAC_buildhawaii
+  icon = GFX_goal_generic_construct_mil_factory
+  text = "Economic Aid To Hawaii"
+  prerequisite = { focus = CAC_preservehawaii}
+
+  cost = 10
+  x = 8
+  y = 8
+  available = {
+  any_country = {
+      original_tag = HIH
+      is_in_faction_with = ROOT
+    }
+  }
+
+  completion_reward = {
+    892 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+    }
     }
 
-
-
-  focus = {
-    id = CAC_preservehawaii
-    icon = GFX_goal_generic_improve_relations
-    text = "An Offer To Hawaii"
-    prerequisite = { focus = CAC_localsecurity}
-
-    cost = 10
-    x = 10
-    y = 7
-
-    completion_reward = {
-        country_event = california.4
+    892 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = arms_factory
+    level = 2
+    instant_build = yes
     }
+    }
+    add_autonomy_score = {
+    value = -50
+    localization = AST_adopt_westminster
+    }
+  }
+}
+
+focus = {
+  id = CAC_buildhawaii2
+  icon = GFX_goal_generic_construct_mil_factory
+  text = "A Naval Outpost"
+  prerequisite = { focus = CAC_preservehawaii}
+
+  cost = 10
+  x = 12
+  y = 8
+  available = {
+  any_country = {
+      original_tag = HIH
+      is_in_faction_with = ROOT
+  }
+  }
+
+  completion_reward = {
+    892 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = dockyard
+    level = 2
+    instant_build = yes
+    }
+    }
+
+    894 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = dockyard
+    level = 2
+    instant_build = yes
+    }
+    }
+    add_autonomy_score = {
+    value = -25
+    localization = AST_adopt_westminster
+    }
+  }
+}
+
+
+
+focus = {
+  id = CAC_beginningofpsa
+  icon = GFX_CAC_mcga
+  text =  "Beginning Of The Pacific States Of America"
+  prerequisite = { focus = CAC_preservehawaii}
+
+  cost = 10
+  x = 10
+  y = 9
+
+  completion_reward = {
+    country_event = california.7
+  }
+}
+
+
+
 
 
 
@@ -539,56 +646,6 @@ focus_tree = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #focus = {
-#   id = CAC_industrial1
-  # icon = GFX_goal_generic_production
-#   text = "Modernize Our Industry"
-#
-
-#   x = 2
-  # y = 0
-  # cost = 10
-
-  # completion_reward = {
-    #   add_tech_bonus = {
-  #     name = industrial_bonus
-    #   bonus = 0.75
-    #   uses = 2
-    #   category = industry
-
-   }
-  }
-}
 
 
 
