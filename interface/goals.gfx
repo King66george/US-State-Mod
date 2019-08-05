@@ -1635,9 +1635,5 @@ spriteTypes = {
 		name = "GFX_CAC_mcga"
 		texturefile = "gfx/interface/goals/CAC_mcga.dds"
 		}
-		spriteType = {
-		name = "GFX_CAC_offer_hawaii"
-		texturefile = "gfx/interface/goals/CAC_offer_hawaii.dds"
-		}
 
 }

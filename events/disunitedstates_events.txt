@@ -142,7 +142,7 @@ country_event = {
 		id = disunitedstates.6
 		title = disunitedstates.6.t
 		desc = disunitedstates.6.d
-		#picture = 
+		#picture =
 		is_triggered_only = yes
 
 		option = {
@@ -162,3 +162,65 @@ country_event = {
 			}
 		}
 	}
+
+#oregon event with california
+
+	country_event = {
+		id = disunitedstates.7
+		title = disunitedstates.7.t
+		desc = disunitedstates.7.d
+		picture = GFX_report_event_molotov_ribentrop_handshake
+		is_triggered_only = yes
+
+		option = {
+			name = disunitedstates.7.a
+			ai_chance = {factor = 60}
+			CAC = { annex_country = {target = ROOT} }
+
+			CAC = {
+				country_event = california.10
+			}
+			}
+
+
+
+		option = {
+			name = disunitedstates.7.b
+			ai_chance = {factor = 40}
+			add_war_support = 0.15
+			CAC = {
+				country_Event = california.11
+			}
+		}
+	}
+
+
+
+#washington event with california
+	country_event = {
+	id = disunitedstates.8
+	title = disunitedstates.8.t
+	desc = disunitedstates.8.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+
+	option = {
+		name = disunitedstates.8.a
+		ai_chance = {factor = 60}
+		CAC = { annex_country= { target = ROOT}}
+		CAC = {
+			country_Event = california.12
+		}
+
+	}
+
+
+	option = {
+		name = disunitedstates.8.b
+		ai_chance = {factor = 40}
+		add_war_support = 0.15
+		CAC = {
+			country_Event = california.13
+		}
+	}
+}

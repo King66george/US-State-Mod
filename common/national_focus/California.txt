@@ -7,7 +7,7 @@
 
 focus_tree = {
     id = california_focus
-    continuous_focus_position = { x = 20 y = 1500 }
+    continuous_focus_position = { x = -100 y = 1500 }
     country = {
         factor = 0
 
@@ -515,6 +515,58 @@ focus = {
 }
 
 
+focus = {
+  id = CAC_oregonpsa
+  icon = GFX_goal_generic_improve_relations
+  text = "Meetings With Oregon"
+  prerequisite = { focus = CAC_beginningofpsa}
+
+  cost = 7.25
+  x = 9
+  y = 10
+
+  completion_reward = {
+    country_event = california.8
+  }
+}
+
+focus = {
+  id = CAC_washingtonpsa
+  icon = GFX_goal_generic_improve_relations
+  text = "Meetings With Washington"
+  prerequisite = { focus = CAC_beginningofpsa}
+
+  cost = 7.25
+  x = 11
+  y = 10
+
+  completion_reward = {
+    country_event = california.9
+  }
+}
+
+focus = {
+  id = CAC_formationofpsa
+  icon = GFX_goal_tripartite_pact
+  text = "Formation Of The Pacific States Of America"
+  prerequisite = {
+    focus = CAC_washingtonpsa
+  }
+  prerequisite = {
+    focus = CAC_oregonpsa
+  }
+  cost = 10
+  x = 10
+  y = 11
+
+  completion_reward = {
+  unlock_decision_tooltip = {
+      decision = pacific_states_of_america
+      show_effect_tooltip = yes
+      show_modifiers = yes
+    }
+  }
+}
 
 
 
@@ -530,18 +582,6 @@ focus = {
 
 
 
-
-#  focus = {
-#  id = CAC_mcga
-#  icon = GFX_CAC_mcga
-#  prerequisite = { focus = CAC_frankmerriamsplans }
-#  text = "Make California Great Again"
-#  x = 10
-# y = 3
-
-#  cost = 10
-
-#  }
 
 
 

@@ -737,6 +737,10 @@ hidden_effect = {
 
       }
 
+      visible = {
+			has_completed_focus = CAC_formationofpsa
+		}
+
       cancel_if_not_visible = yes
 
       visible = {
@@ -786,6 +790,24 @@ hidden_effect = {
     hidden_effect = {
 
      974 = { add_core_of = ROOT }
+     974 = { add_core_of = ROOT }
+     973 = { add_core_of = ROOT }
+     799 = { add_core_of = ROOT }
+     798 = { add_core_of = ROOT }
+     972 = { add_core_of = ROOT }
+     968 = { add_core_of = ROOT }
+     967 = { add_core_of = ROOT }
+     378 = { add_core_of = ROOT }
+     797 = { add_core_of = ROOT }
+     806 = { add_core_of = ROOT }
+     807 = { add_core_of = ROOT }
+     941 = { add_core_of = ROOT }
+     385 = { add_core_of = ROOT }
+     808 = { add_core_of = ROOT }
+     914 = { add_core_of = ROOT }
+     809 = { add_core_of = ROOT }
+     386 = { add_core_of = ROOT }
+     810 = { add_core_of = ROOT }
 
 
 ####
