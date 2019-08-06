@@ -737,10 +737,6 @@ hidden_effect = {
 
       }
 
-      visible = {
-			has_completed_focus = CAC_formationofpsa
-		}
-
       cancel_if_not_visible = yes
 
       visible = {
@@ -808,10 +804,240 @@ hidden_effect = {
      809 = { add_core_of = ROOT }
      386 = { add_core_of = ROOT }
      810 = { add_core_of = ROOT }
-
+    }
+    }
+    }
 
 ####
 
+  combined_syndicates = {
+  icon = generic_form_nation
+
+    allowed = {
+    has_government = communism
+    }
+
+    visible = {
+
+  }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+    or = {
+      original_tag = WIW
+      original_tag = MIM
+      original_tag = ILI
+      original_tag = INI
+      original_tag = ILI
+      original_tag = OHO
+      original_tag = WVW
+      original_tag = PAP
+      }
+    }
+
+  available = {
+    is_subject = no
+      controls_state = 394
+      controls_state = 848
+      controls_state = 982
+      controls_state = 861
+      controls_state = 862
+      controls_state = 393
+      controls_state = 900
+      controls_state = 849
+      controls_state = 395
+      controls_state = 851
+      controls_state = 850
+      controls_state = 857
+      controls_state = 855
+      controls_state = 396
+      controls_state = 856
+      controls_state = 860
+      controls_state = 261
+      controls_state = 901
+      controls_state = 858
+      controls_state = 859
+      controls_state = 875
+      controls_state = 877
+      controls_state = 881
+      controls_state = 880
+      controls_state = 360
+      controls_state = 882
+
+    }
+
+  cost = 50
+
+  fire_only_once = yes
+
+  ai_will_do = {
+    factor = 1
+  }
+
+  complete_effect = {
+  set_cosmetic_tag = SYA
+  set_capital = 849
+  add_stability = 0.15
+  custom_effect_tooltip = core_land
+  hidden_effect = {
+
+  394 = { add_core_of = ROOT }
+  848 = { add_core_of = ROOT }
+  982 = { add_core_of = ROOT }
+  861 = { add_core_of = ROOT }
+  862 = { add_core_of = ROOT }
+  393 = { add_core_of = ROOT }
+  900 = { add_core_of = ROOT }
+  849 = { add_core_of = ROOT }
+  395 = { add_core_of = ROOT }
+  851 = { add_core_of = ROOT }
+  850 = { add_core_of = ROOT }
+  857 = { add_core_of = ROOT }
+  855 = { add_core_of = ROOT }
+  396 = { add_core_of = ROOT }
+  856 = { add_core_of = ROOT }
+  860 = { add_core_of = ROOT }
+  261 = { add_core_of = ROOT }
+  901 = { add_core_of = ROOT }
+  858 = { add_core_of = ROOT }
+  859 = { add_core_of = ROOT }
+  875 = { add_core_of = ROOT }
+  877 = { add_core_of = ROOT }
+  881 = { add_core_of = ROOT }
+  880 = { add_core_of = ROOT }
+  360 = { add_core_of = ROOT }
+  88 =  { add_core_of = ROOT }
+        }
+      }
+    }
+
+    american_union = {
+
+    icon = generic_form_nation
+
+      allowed = {
+      has_government = fascism
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = SCS
+        original_tag = NCN
+        original_tag = TNT
+        original_tag = TXT
+        original_tag = GAG
+        original_tag = ALA
+        original_tag = MSM
+        original_tag = FLF
+        original_tag = ARA
+        original_tag = LAL
+        }
+      }
+
+    available = {
+      is_subject = no
+        controls_state = 873
+        controls_state = 363
+        controls_state = 874
+        controls_state = 874
+        controls_state = 872
+        controls_state = 364
+        controls_state = 871
+        controls_state = 870
+        controls_state = 365
+        controls_state = 868
+        controls_state = 869
+        controls_state = 366
+        controls_state = 867
+        controls_state = 866
+        controls_state = 863
+        controls_state = 864
+        controls_state = 367
+        controls_state = 865
+        controls_state = 836
+        controls_state = 370
+        controls_state = 837
+        controls_state = 834
+        controls_state = 835
+        controls_state = 371
+        controls_state = 898
+        controls_state = 790
+        controls_state = 897
+        controls_state = 789
+        controls_state = 832
+        controls_state = 833
+        controls_state = 374
+        controls_state = 838
+        controls_state = 372
+        controls_state = 852
+        controls_state = 368
+        controls_state = 853
+    	controls_state = 983
+    	controls_state = 964
+    	controls_state = 963
+    	controls_state = 962
+    	controls_state = 961
+    	controls_state = 960
+    	controls_state = 958
+    	controls_state = 957
+    }
+
+    cost = 100
+
+    ai_will_do = {
+    factor = 50
+    }
+
+    complete_effect = {
+    set_capital = 952
+    set_cosmetic_tag = ASU
+    add_stability = 0.20
+    custom_effect_tooltip = core_land
+    hidden_effect = {
+    873 = { add_core_of = ROOT }
+    363 = { add_core_of = ROOT }
+    874 = { add_core_of = ROOT }
+    874 = { add_core_of = ROOT }
+    872 = { add_core_of = ROOT }
+    364 = { add_core_of = ROOT }
+    871 = { add_core_of = ROOT }
+    870 = { add_core_of = ROOT }
+    365 = { add_core_of = ROOT }
+    868 = { add_core_of = ROOT }
+    869 = { add_core_of = ROOT }
+    366 = { add_core_of = ROOT }
+    867 = { add_core_of = ROOT }
+    866 = { add_core_of = ROOT }
+    863 = { add_core_of = ROOT }
+    864 = { add_core_of = ROOT }
+    367 = { add_core_of = ROOT }
+    865 = { add_core_of = ROOT }
+    836 = { add_core_of = ROOT }
+    370 = { add_core_of = ROOT }
+    837 = { add_core_of = ROOT }
+    834 = { add_core_of = ROOT }
+    835 = { add_core_of = ROOT }
+    371 = { add_core_of = ROOT }
+    898 = { add_core_of = ROOT }
+    790 = { add_core_of = ROOT }
+    897 = { add_core_of = ROOT }
+    789 = { add_core_of = ROOT }
+    832 = { add_core_of = ROOT }
+    833 = { add_core_of = ROOT }
+    374 = { add_core_of = ROOT }
+    838 = { add_core_of = ROOT }
+    372 = { add_core_of = ROOT }
+    852 = { add_core_of = ROOT }
+    368 = { add_core_of = ROOT }
+    853 = { add_core_of = ROOT }
+    }
+    }
+    }
+
+}
 
 
 
