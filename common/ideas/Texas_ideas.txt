@@ -118,36 +118,29 @@ ideas = {
 				}
 			}
 		}
+	}
 ##########Political Advisors###############
-political_advisor = {
+	political_advisor = {
+		robert_bobby = {
+			picture = idea_robert_bobbitt.dds
 
-	robert_bobby = {
-
-
-		allowed = {
-			original_tag = "TXT"
-		}
-
-		available = {
-			if = {
-				NOT = { has_autonomy_state = autonomy_supervised_state }
+			allowed = {
+				original_tag = TXT
 			}
-		}
+			available = {
+				if = {
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 
 		traits = { democratic_reformer }
-
-		do_effect = {
-			NOT = {
-				has_government = democratic
-			}
-		}
 
 		ai_will_do = {
 			factor = 0
 		}
-	}
-}
 
+		}
+	}
 
 	}
 }
