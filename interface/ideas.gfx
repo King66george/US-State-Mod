@@ -4220,6 +4220,10 @@ spriteTypes = {
 		name = "GFX_idea_norfolknavalyard"
 		texturefile = "gfx/interface/ideas/idea_generic_naval_manufacturer_3.dds"
 		}
+		spriteType = {
+		name = "GFX_idea_kenneth_spencer"
+		texturefile = "gfx/interface/ideas/idea_kenneth_spencer.dds"
+		}
 
 ##No Florida Mods##
 	}

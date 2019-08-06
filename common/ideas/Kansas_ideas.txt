@@ -296,13 +296,13 @@ ideas = {
 				}
 			}
             build_cost_ic = -0.1 instant = yes
-         
+
             artillery = {
                 build_cost_ic = -0.1 instant = yes
 
             }
         }
-      
+
 
 		KSK_eisenhowerbonus2 = {
 
@@ -333,7 +333,7 @@ ideas = {
                 build_cost_ic = -0.1 instant = yes
             }
         }
-      
+
 		KSK_chaffeebonus = {
 
 			allowed = {
@@ -415,7 +415,7 @@ ideas = {
 
 		}
 
-		KSK_fighterbonus2 = {
+	   KSK_fighterbonus2 = {
 
 			allowed = {
 				always = no
@@ -455,9 +455,23 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-                justify_war_goal_time = -0.25
-                opinion_gain_monthly_factor = -0.50
-			}	
+        justify_war_goal_time = -0.25
+        opinion_gain_monthly_factor = -0.50
+			}
 		}
-	}	
+  }
+
+
+  political_advisor = {
+    kenneth_a_spencer = {
+
+      picture = idea_kenneth_spencer
+
+      allowed = {
+        original_tag = KSK
+      }
+
+      traits = { war_industrialist }
+    }
+  }
 }
