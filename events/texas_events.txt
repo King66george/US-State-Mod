@@ -63,13 +63,7 @@ country_event = {
 	desc = tex.4.d
 	is_triggered_only = yes
 
-	id = tex.4
-	title = tex.4.t
-	desc = tex.4.d
 
-
-	is_triggered_only = yes
-  
 	option = {
 		name = tex.4.a
 		create_country_leader = {

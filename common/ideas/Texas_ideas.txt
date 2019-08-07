@@ -121,9 +121,8 @@ ideas = {
 	}
 ##########Political Advisors###############
 	political_advisor = {
-		robert_bobby = {
-			picture = idea_robert_bobbitt.dds
-
+		robert_bobbit = {
+			picture = idea_generic_political_advisor_europe_4
 			allowed = {
 				original_tag = TXT
 			}
@@ -133,14 +132,15 @@ ideas = {
 				}
 			}
 
-		traits = { democratic_reformer }
 
-		ai_will_do = {
+
+			traits = { war_industrialist2 }
+
+			ai_will_do = {
 			factor = 0
-		}
+			}
 
 		}
 	}
 
 	}
-}

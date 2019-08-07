@@ -41,8 +41,8 @@ PSA = {
 }
 
 ASU = {
-  color = rgb { 220 220 220 }
-  color_ui = rgb { 220 220 220 }
+  color = rgb { 60 59 110 }
+  color_ui = rgb { 60 59 110 }
 }
 
 SYA = {

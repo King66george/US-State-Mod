@@ -814,7 +814,7 @@ hidden_effect = {
   icon = generic_form_nation
 
     allowed = {
-    has_government = communism
+
     }
 
     visible = {
@@ -917,7 +917,7 @@ hidden_effect = {
     icon = generic_form_nation
 
       allowed = {
-      has_government = fascism
+
       }
 
       cancel_if_not_visible = yes
@@ -1036,36 +1036,5 @@ hidden_effect = {
     }
     }
     }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
