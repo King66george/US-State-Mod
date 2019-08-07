@@ -3402,6 +3402,7 @@ leader_traits = {
   }
 
   fascist_propagandist = {
+		sprite = 13
     random = no
     political_power_gain = 0.25
     fascism_drift = 0.10
@@ -3410,4 +3411,14 @@ leader_traits = {
       factor = 1
       }
   }
+	war_industrialist2 = {
+		random = no
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_fuel_silo_factor = 0.1
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
 }
