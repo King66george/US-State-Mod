@@ -1,7 +1,7 @@
 state={
 	id=828
 	name="South Nebraska"
-	manpower=1377962
+	manpower=2377962
 
 	resources={
 		chromium=6.000

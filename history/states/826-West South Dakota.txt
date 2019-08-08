@@ -2,7 +2,7 @@ state={
 	id=826
 	name="West South Dakota"
 
-	manpower=692849
+	manpower=1692849
 
 	resources={
 		chromium=13.000

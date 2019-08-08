@@ -1,7 +1,7 @@
 state={
 	id=822
 	name="Northwest Wyoming"
-	manpower=225564
+	manpower=2225564
 	state_category=rural
 	history={
 		owner = WYW
