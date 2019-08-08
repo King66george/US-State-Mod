@@ -1,7 +1,7 @@
 state={
 	id=886
 	name="North New York"
-	manpower=12588061
+	manpower=1588061
 	state_category=megalopolis
 	resources={
 		steel=13.000

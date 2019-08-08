@@ -1,7 +1,7 @@
 state={
 	id=890
 	name="Vermont"
-	manpower=8404713
+	manpower=6404713
 	state_category=rural
 	resources={
 		steel=12.000

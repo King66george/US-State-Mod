@@ -2,7 +2,7 @@
 state={
 	id=977
 	name="Augusta"
-	manpower=8404713
+	manpower=4404713
 	state_category=metropolis
 	resources={
 		steel=12.000
