@@ -2,7 +2,7 @@
 state={
 	id=946
 	name="Regina"
-		manpower=435572
+		manpower=2035572
 	buildings_max_level_factor=1.000
 	state_category = city
 	history={
