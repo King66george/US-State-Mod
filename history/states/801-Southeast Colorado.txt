@@ -4,6 +4,7 @@ state={
 	name="Southeast Colorado"
 	resources={
 		oil=14.000
+		chromium=3.000
 	}
 
 	history={

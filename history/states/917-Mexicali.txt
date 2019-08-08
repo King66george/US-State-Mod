@@ -1,7 +1,9 @@
 state={
 	id=917
 	name="Mexicali"
-
+	resources={
+		chromium= 6.000
+	}
 	history={ 1936.1.3 = {owner = BAJ controller = BAJ  }
 		owner = MEX
 		buildings = {

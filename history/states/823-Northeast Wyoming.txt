@@ -3,6 +3,9 @@ state={
 	name="Northeast Wyoming"
 	manpower=225564
 	state_category=rural
+	resources={
+		chromium= 2.000
+	}
 	history={
 		owner = WYW
 		buildings = {

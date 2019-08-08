@@ -4,6 +4,9 @@ state={
 	name="Alaska"
 	manpower=1067500
 	state_category=rural
+	resources={
+		chromium= 4.000
+	}
 	history={
 		owner = AKA
 		buildings = {

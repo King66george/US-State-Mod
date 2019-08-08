@@ -4,8 +4,10 @@ state={
 	name="Denver"
 	resources={
 		oil=25
-		tungsten=15
+		tungsten=15	
+		chromium= 2.000
 	}
+	
 	history={
 		owner = COC
 		buildings = {

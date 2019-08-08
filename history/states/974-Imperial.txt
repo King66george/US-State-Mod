@@ -1,6 +1,9 @@
 state={
 	id=974
 	name="Imperial"
+	resources={
+		chromium= 2.000
+	}
 	history={
 		owner = CAC
 		buildings = {

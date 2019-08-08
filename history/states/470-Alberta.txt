@@ -4,6 +4,9 @@ state={
 	name="South Alberta"
 		manpower=690800
 		state_category=town
+	resources={
+		chromium= 6.000
+	}
 	history={
 		owner = ABA
 		buildings = {

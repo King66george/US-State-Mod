@@ -1,6 +1,9 @@
 state={
 	id=963
 	name="Raleigh"
+	resources={
+		chromium= 9.000
+	}
 	history={
 		owner = NCN
 		buildings = {

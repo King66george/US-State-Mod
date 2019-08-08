@@ -1,6 +1,9 @@
 state={
 	id=953
 	name="Jefferson City"
+	resources={
+		chromium= 12.000
+	}
 	history={
 		owner = MOM
 		buildings = {

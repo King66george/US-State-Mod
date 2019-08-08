@@ -7,6 +7,7 @@ state={
 	resources={
 		oil=25
 		tungsten=15
+		chromium=3
 	}
 	history={
 		owner = AKA

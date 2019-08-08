@@ -3,6 +3,9 @@ state={
 	name="Southwest Wyoming"
 	manpower=2125564
 	state_category=rural
+	resources={
+		chromium= 2.000
+	}
 	history={
 		owner = WYW
 		buildings = {
