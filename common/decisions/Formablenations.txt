@@ -1633,7 +1633,6 @@ Maya = {
 		available = {
 			is_subject = no
 			controls_state = 474
-			controls_state = 934
 			controls_state = 475
 			
         }
@@ -1648,9 +1647,9 @@ Maya = {
 		}
 
 		complete_effect = {
-			set_cosmetic_tag = PRM
-			set_capital = 934
-			add_stability = 0.20
+			set_cosmetic_tag = MAY
+			set_capital = 475
+			add_stability = 0.10
 			custom_effect_tooltip = core_land
 			hidden_effect = {
 				474 = { add_core_of = ROOT }
@@ -1658,9 +1657,9 @@ Maya = {
 				935 = { add_core_of = ROOT }
 				934 = { add_core_of = ROOT }
 				475 = { add_core_of = ROOT }
-				992 = { add_core_of = ROOT }
+				add_war_support = 0.1
 			}	
-			add_war_support = 0.1
+			
 
 		}
     }
