@@ -139,6 +139,77 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_corps_commander = {
+	name = "George S. Patton"
+	picture = "Portrait_USA_George_S_Patton.dds"
+	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
+	skill = 5
+
+	attack_skill = 7
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Charles L. Dailey"
+	picture = ""
+	traits = { inspirational_leader fast_planner trickster }
+	skill = 4
+
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dominic Thomas"
+	picture = ""
+	traits = { trickster thorough_planner }
+	skill = 3
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jackson H. Ryan"
+	picture = ""
+	traits = { trait_reckless }
+	skill = 1
+
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Chester W. Nimitz"
+		picture = "Portrait_USA_Chester_W_Nimitz.dds"
+	traits = { gentlemanly blue_water_expert naval_lineage superior_tactician spotter }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Brandon Thomas"
+		picture = ""
+	traits = { flight_deck_manager gentlemanly navy_media_personality }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
 1939.1.1 = {
 	set_stability = 0.6
 
