@@ -1,6 +1,6 @@
 state={
 	id=853
-	name="West Tennessee"
+	name="East Tennessee"
 	manpower=2616555
 	state_category=city
 	resources={
@@ -14,7 +14,7 @@ state={
 			industrial_complex = 3
 
 		}
-		add_core_of = TNT
+		add_core_of = TNT		
 		victory_points = {
 			12501 3 
 		}

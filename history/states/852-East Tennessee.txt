@@ -1,6 +1,6 @@
 state={
 	id=852
-	name="East Tennessee"
+	name="West Tennessee"
 	manpower=2616555
 	state_category=city
 	resources={

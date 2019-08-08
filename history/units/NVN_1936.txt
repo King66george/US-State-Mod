@@ -71,3 +71,39 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {			
+		name = "Hookers"		
+		location = 4975
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division= {			
+		name = "pAWN sTARS"		
+		location = 4975
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division= {			
+		name = "1st Guard"		
+		location = 4975
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+division= {			
+		name =  "Guards of the strip"		
+		location = 4975
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	}

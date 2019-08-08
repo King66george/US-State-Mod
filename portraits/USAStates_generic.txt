@@ -1,0 +1,36 @@
+continent = {
+	name = north_america
+	political = {
+		communism = {
+			male = { 
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
+			}
+		}
+		democratic = {
+			male = { 
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
+			}
+		}
+		fascism = {
+			male = { 
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"
+				"gfx/leaders/generic/USA_portrait_fascist_1"
+				"gfx/leaders/generic/USA_portrait_fascist_2"	
+			}
+		}
+		neutrality = {
+			male = { 
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
+				"gfx/leaders/generic/USA_portrait_generic_politician_europe_3.dds"					
+			}
+		}
+	}
+
+}
