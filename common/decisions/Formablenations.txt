@@ -1613,7 +1613,7 @@ Azteca_Superior = {
 
 		}
     }
-Prophetic_Maya = {
+Maya = {
 
     icon = generic_form_nation
 
@@ -1624,11 +1624,11 @@ Prophetic_Maya = {
       cancel_if_not_visible = yes
 
       visible = {
-      or = {
-        original_tag = CHP 
-		original_tag = YUC
+		  or = {
+				original_tag = CHP 
+				original_tag = YUC
+			}
 		}
-      }
 
 		available = {
 			is_subject = no
@@ -1639,7 +1639,7 @@ Prophetic_Maya = {
         }
    
 
-		cost = 100
+		cost = 50
 
 		fire_only_once = yes
 
