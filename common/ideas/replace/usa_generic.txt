@@ -1,0 +1,803 @@
+ideas = {
+	political_advisor = {
+		generic_communist_revolutionary = {
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST} }
+				NOT = {
+					OR = {
+						has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
+					} 
+				}
+			}
+	
+			
+			traits = { communist_revolutionary }
+	
+			do_effect = {
+
+					NOT = {
+						has_government = communism
+					}
+
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		generic_democratic_reformer = {
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC tag = AST tag = RAJ tag = CAN tag = SAF tag = WHY tag = MAN tag = BEL tag = TIB tag = BHU} }
+				NOT = {
+					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
+				}
+			}
+			
+			
+			traits = { democratic_reformer }
+	
+			do_effect = {
+			
+					NOT = {
+						has_government = democratic
+					}
+				
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		generic_fascist_demagogue = {
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = WHY tag = MAN tag = CZE tag = BHU tag = BEL tag = TIB tag = BHU tag = HOL} }
+				NOT = {
+					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
+				}
+			}
+			
+			
+			traits = { fascist_demagogue }
+	
+			do_effect = {
+
+					NOT = {
+						has_government = fascism
+					}
+
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		idea_communist_central_management = {
+		
+		
+			picture = communist_central_management
+		
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                aircraft_manufacturer_cost_factor = -0.50
+				tank_manufacturer_cost_factor = -0.50
+				industrial_concern_cost_factor = -0.50
+				naval_manufacturer_cost_factor = -0.50
+				materiel_manufacturer_cost_factor = -0.50
+			}
+		}		
+		
+		idea_state_security_ministry = {
+			
+			picture = generic_secret_police
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				enemy_partisan_effect = -0.1
+				foreign_subversive_activites = -0.4
+			}
+		}
+		
+		USAgeneric_silent_workhorse = {
+		
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+	
+			}
+			
+			available = {
+			}
+			
+			traits = { silent_workhorse }
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		USAgeneric_cap = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+		
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		USAgeneric_pop = {
+
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+		
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		USAgeneric_qua = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+	
+			}
+			
+			traits = { quartermaster_general }
+		}
+	}
+
+	theorist = {
+		USAgeneric_land_theorist = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+	
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		USAgeneric_navy_theorist = {
+
+			picture = generic_navy_asia_1
+			
+			allowed = {
+	
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		USAgeneric_air_theorist = {
+
+			picture = generic_air_asia_1
+			
+			allowed = {
+		
+			}
+			
+			available = {
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		generic_military_theorist = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		generic_naval_theorist = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		generic_air_warfare_theorist = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			research_bonus = {
+				air_warfare_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	high_command = {
+
+		USAgeneric_def = {
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+			
+			}
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		USAgeneric_inf = {
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+			
+			}
+			
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		USAgeneric_log = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+			
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	USA_chief = {
+		
+		KMTgeneric_reg = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+		
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		USAgeneric_mora = {
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+		
+			}
+			
+			available = {
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		generic_air_close_air_sup = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		generic_air_chief_all_weather = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+		USAgeneric_air_chief = {
+			
+			picture = generic_air_asia_1
+			
+			allowed = {
+			
+				
+			}
+			
+			available = {
+			}
+			
+			traits = { air_chief_safety_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+
+		USAgeneric_navy_chief = {
+			
+			picture = generic_navy_asia_1
+
+			allowed = {
+			
+			}
+					
+			traits = { navy_chief_reform_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	# TECHNOLOGY
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		generic_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CHI tag = CZE tag = SWE tag = MEX tag = SWI tag = WHY tag = PRC tag = BRA tag = HOL tag = SLO tag = AUS tag = YUG original_tag = SPR tag = GRE tag = IRE tag = NIR tag = SCO tag = UKR} }
+				NOT = {
+					has_available_idea_with_traits = { idea = tank_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = AST tag = SAF tag = NZL tag = CAN }
+						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = {
+							is_literally_china = yes
+							tag = MAN
+						}
+						has_dlc = "Waking the Tiger"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+	
+		generic_naval_manufacturer = {
+			
+			picture = generic_naval_manufacturer_1
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWI tag = CHI tag = SWE tag = HUN tag = MEX tag = WHY tag = PRC tag = BRA tag = ICE tag = BEL tag = YUG original_tag = SPR tag = GRE tag = SCO} }
+				NOT = {
+					has_available_idea_with_traits = { idea = naval_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
+						has_dlc = "Together for Victory"
+					}
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = { 
+	
+		designer = yes
+	
+		generic_light_aircraft_manufacturer = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = SWE tag = MEX tag = WHY tag = PRC tag = BRA tag = BEL original_tag = SPR tag = GRE} }
+				NOT = {
+					has_available_idea_with_traits = { idea = light_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { tag = ROM } NOT = { tag = YUG }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		generic_medium_aircraft_manufacturer = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = SWE tag = ROM tag = MEX tag = WHY tag = PRC tag = CHI tag = BRA  tag = ICE tag = BEL tag = YUG original_tag = SPR tag = GRE } }
+				NOT = {
+					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		generic_heavy_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+
+					NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = SWE tag = CAN tag = SWI tag = ROM tag = MEX tag = WHY tag = PRC tag = CHI tag = BRA tag = ICE tag = BEL tag = HOL tag = YUG original_tag = SPR tag = GRE tag = IRE} }
+					NOT = {
+						has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
+					}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		generic_naval_aircraft_manufacturer = {
+			
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				
+					NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = SWI tag = ROM tag = YUG tag = CAN tag = MEX tag = WHY tag = PRC tag = BRA tag = ICE tag = BEL tag = YUG original_tag = SPR tag = GRE tag = IRE } }
+					NOT = {
+						has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+					}
+				
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+	
+		generic_industrial_concern = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+					NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = HUN tag = WHY tag = PRC tag = BRA tag = ICE tag = BEL tag = HOL tag = ARM tag = AUS tag = YUG original_tag = SPR tag = GRE tag = LAT tag = EST} }
+					NOT = {
+						has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
+					}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		generic_electronics_concern = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = WHY tag = PRC tag = BUL tag = BRA tag = BEL tag = HOL tag = ARM tag = AUS tag = YUG original_tag = SPR tag = GRE tag = LAT tag = EST tag = AST tag = SAF} }
+				NOT = {
+					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+	}
+
+	materiel_manufacturer = {
+	
+		designer = yes
+	
+		generic_motorized_equipment_manufacturer = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = MEX tag = WHY tag = PRC tag = BRA tag = BEL tag = HOL tag = ARM tag = YUG original_tag = SPR tag = GRE tag = LAT tag = CAN} }
+				NOT = {
+					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		generic_infantry_equipment_manufacturer = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = HUN tag = MEX tag = WHY tag = AUS tag = BRA tag = ICE tag = BEL tag = HOL tag = AUS tag = YUG original_tag = SPR tag = GRE tag = LAT tag = PER} }
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		generic_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = MEX tag = WHY tag = PRC tag = BUL tag = BRA tag = ICE tag = BEL tag = HOL tag = YUG original_tag = SPR tag = GRE tag = LAT tag = CAN tag = IRE tag = SAF} }
+				NOT = {
+					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+
+	political_advisor = {
+
+		generic_captain_of_industry = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB original_tag = ARM}
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		generic_fortification_engineer = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ARM}
+			}
+			
+			traits = { fortification_engineer }
+		}
+
+		generic_war_industrialist = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ARM}
+			}
+			
+			traits = { war_industrialist }
+		}
+	}
+
+	army_chief = {
+		
+		generic_army_chief_off = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		generic_army_chief_def = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+	}
+
+	navy_chief = {		
+
+		generic_navy_chief_decisive_bat = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		generic_navy_anti_submarine = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
+	}
+
+
+	high_command = {
+
+		generic_army_art = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_artillery_1 }		
+		}
+		
+		generic_army_log = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		generic_navy_fleet_log = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
+}

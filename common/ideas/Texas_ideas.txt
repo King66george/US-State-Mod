@@ -118,36 +118,29 @@ ideas = {
 				}
 			}
 		}
+	}
 ##########Political Advisors###############
-political_advisor = {
-
-	robert_bobby = {
-
-
-		allowed = {
-			original_tag = "TXT"
-		}
-
-		available = {
-			if = {
-				NOT = { has_autonomy_state = autonomy_supervised_state }
+	political_advisor = {
+		robert_bobbit = {
+			picture = idea_generic_political_advisor_europe_4
+			allowed = {
+				original_tag = TXT
 			}
-		}
-
-		traits = { democratic_reformer }
-
-		do_effect = {
-			NOT = {
-				has_government = democratic
+			available = {
+				if = {
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
-		}
 
-		ai_will_do = {
+
+
+			traits = { war_industrialist2 }
+
+			ai_will_do = {
 			factor = 0
+			}
+
 		}
 	}
-}
-
 
 	}
-}

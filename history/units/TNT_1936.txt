@@ -82,4 +82,29 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+	division= {			
+		name = "2nd Tennessean National Guard"		
+		location = 12501
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
 	}
+	division= {			
+		name = "3rd Tennessean National Guard"		
+		location = 12501
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {			
+		name = "4th Tennessean National Guard"		
+		location = 12501
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+}

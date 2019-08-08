@@ -1062,7 +1062,10 @@ focus_tree = {
 
 					cost = 10
 
-					completion_reward = {}
+					completion_reward = {
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = gordon_winrod
+					}
 		}
 
 		focus = {

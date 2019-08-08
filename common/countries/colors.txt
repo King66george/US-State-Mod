@@ -778,7 +778,7 @@ PEP = {
 	color_ui = rgb { 87 160 255 }
 }
 
-QCQ = {
+QBC = {
 	color = rgb { 0 59 111 }
 	color_ui = rgb { 87 160 255 }
 }
@@ -858,8 +858,8 @@ SON={
 	color_ui = rgb { 0 50 200 }
 }
 NAY={
-	color = { 30 150 200 }
-	color_ui = rgb { 30 150 200 }
+	color = { 30 174 200 }
+	color_ui = rgb { 30 0 200 }
 }
 VEC={
 	color = { 30 150 34 }
@@ -868,4 +868,16 @@ VEC={
 WDC={
 	color = { 178 50 255 }
 	color_ui = rgb { 178 50 255 }
+}
+SOS = {
+	color = rgb { 75 77 186 }
+	color_ui = rgb { 124 125 184 }
+}
+SOJ = {
+	color = rgb { 0 148 255 }
+	color_ui = rgb { 87 160 255 }
+}
+NNN = {
+	color = rgb { 0 38 159 }
+	color_ui = rgb { 0 38 159 }
 }

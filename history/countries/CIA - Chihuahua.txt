@@ -1,6 +1,6 @@
 ﻿capital = 929
 
-oob = "CHI_1936"
+oob = "CIA_1936"
 
 set_research_slots = 4
 

@@ -737,10 +737,6 @@ hidden_effect = {
 
       }
 
-      visible = {
-			has_completed_focus = CAC_formationofpsa
-		}
-
       cancel_if_not_visible = yes
 
       visible = {
@@ -808,38 +804,1129 @@ hidden_effect = {
      809 = { add_core_of = ROOT }
      386 = { add_core_of = ROOT }
      810 = { add_core_of = ROOT }
-
+    }
+    }
+    }
 
 ####
 
+  combined_syndicates = {
+  icon = generic_form_nation
 
+    allowed = {
 
+    }
 
+    visible = {
 
+  }
 
+    cancel_if_not_visible = yes
 
+    visible = {
+    or = {
+      original_tag = WIW
+      original_tag = MIM
+      original_tag = ILI
+      original_tag = INI
+      original_tag = ILI
+      original_tag = OHO
+      original_tag = WVW
+      original_tag = PAP
+      }
+    }
 
+  available = {
+    is_subject = no
+      controls_state = 394
+      controls_state = 848
+      controls_state = 982
+      controls_state = 861
+      controls_state = 862
+      controls_state = 393
+      controls_state = 900
+      controls_state = 849
+      controls_state = 395
+      controls_state = 851
+      controls_state = 850
+      controls_state = 857
+      controls_state = 855
+      controls_state = 396
+      controls_state = 856
+      controls_state = 860
+      controls_state = 261
+      controls_state = 901
+      controls_state = 858
+      controls_state = 859
+      controls_state = 875
+      controls_state = 877
+      controls_state = 881
+      controls_state = 880
+      controls_state = 360
+      controls_state = 882
 
+    }
 
+  cost = 50
 
+  fire_only_once = yes
 
+  ai_will_do = {
+    factor = 1
+  }
 
+  complete_effect = {
+  set_cosmetic_tag = SYA
+  set_capital = 849
+  add_stability = 0.15
+  custom_effect_tooltip = core_land
+  hidden_effect = {
 
+  394 = { add_core_of = ROOT }
+  848 = { add_core_of = ROOT }
+  982 = { add_core_of = ROOT }
+  861 = { add_core_of = ROOT }
+  862 = { add_core_of = ROOT }
+  393 = { add_core_of = ROOT }
+  900 = { add_core_of = ROOT }
+  849 = { add_core_of = ROOT }
+  395 = { add_core_of = ROOT }
+  851 = { add_core_of = ROOT }
+  850 = { add_core_of = ROOT }
+  857 = { add_core_of = ROOT }
+  855 = { add_core_of = ROOT }
+  396 = { add_core_of = ROOT }
+  856 = { add_core_of = ROOT }
+  860 = { add_core_of = ROOT }
+  261 = { add_core_of = ROOT }
+  901 = { add_core_of = ROOT }
+  858 = { add_core_of = ROOT }
+  859 = { add_core_of = ROOT }
+  875 = { add_core_of = ROOT }
+  877 = { add_core_of = ROOT }
+  881 = { add_core_of = ROOT }
+  880 = { add_core_of = ROOT }
+  360 = { add_core_of = ROOT }
+  88 =  { add_core_of = ROOT }
+        }
+      }
+    }
 
+    american_union = {
 
+    icon = generic_form_nation
 
+      allowed = {
 
+      }
 
+      cancel_if_not_visible = yes
 
+      visible = {
+      or = {
+        original_tag = SCS
+        original_tag = NCN
+        original_tag = TNT
+        original_tag = TXT
+        original_tag = GAG
+        original_tag = ALA
+        original_tag = MSM
+        original_tag = FLF
+        original_tag = ARA
+        original_tag = LAL
+        }
+      }
 
+    available = {
+      is_subject = no
+        controls_state = 873
+        controls_state = 363
+        controls_state = 874
+        controls_state = 874
+        controls_state = 872
+        controls_state = 364
+        controls_state = 871
+        controls_state = 870
+        controls_state = 365
+        controls_state = 868
+        controls_state = 869
+        controls_state = 366
+        controls_state = 867
+        controls_state = 866
+        controls_state = 863
+        controls_state = 864
+        controls_state = 367
+        controls_state = 865
+        controls_state = 836
+        controls_state = 370
+        controls_state = 837
+        controls_state = 834
+        controls_state = 835
+        controls_state = 371
+        controls_state = 898
+        controls_state = 790
+        controls_state = 897
+        controls_state = 789
+        controls_state = 832
+        controls_state = 833
+        controls_state = 374
+        controls_state = 838
+        controls_state = 372
+        controls_state = 852
+        controls_state = 368
+        controls_state = 853
+    	controls_state = 983
+    	controls_state = 964
+    	controls_state = 963
+    	controls_state = 962
+    	controls_state = 961
+    	controls_state = 960
+    	controls_state = 958
+    	controls_state = 957
+    }
 
+    cost = 100
 
+    ai_will_do = {
+    factor = 50
+    }
 
+    complete_effect = {
+    set_capital = 952
+    set_cosmetic_tag = ASU
+    add_stability = 0.20
+    custom_effect_tooltip = core_land
+    hidden_effect = {
+    873 = { add_core_of = ROOT }
+    363 = { add_core_of = ROOT }
+    874 = { add_core_of = ROOT }
+    874 = { add_core_of = ROOT }
+    872 = { add_core_of = ROOT }
+    364 = { add_core_of = ROOT }
+    871 = { add_core_of = ROOT }
+    870 = { add_core_of = ROOT }
+    365 = { add_core_of = ROOT }
+    868 = { add_core_of = ROOT }
+    869 = { add_core_of = ROOT }
+    366 = { add_core_of = ROOT }
+    867 = { add_core_of = ROOT }
+    866 = { add_core_of = ROOT }
+    863 = { add_core_of = ROOT }
+    864 = { add_core_of = ROOT }
+    367 = { add_core_of = ROOT }
+    865 = { add_core_of = ROOT }
+    836 = { add_core_of = ROOT }
+    370 = { add_core_of = ROOT }
+    837 = { add_core_of = ROOT }
+    834 = { add_core_of = ROOT }
+    835 = { add_core_of = ROOT }
+    371 = { add_core_of = ROOT }
+    898 = { add_core_of = ROOT }
+    790 = { add_core_of = ROOT }
+    897 = { add_core_of = ROOT }
+    789 = { add_core_of = ROOT }
+    832 = { add_core_of = ROOT }
+    833 = { add_core_of = ROOT }
+    374 = { add_core_of = ROOT }
+    838 = { add_core_of = ROOT }
+    372 = { add_core_of = ROOT }
+    852 = { add_core_of = ROOT }
+    368 = { add_core_of = ROOT }
+    853 = { add_core_of = ROOT }
+    }
+    }
+    }
 
+Vinland = {
 
+    icon = generic_form_nation
 
+      allowed = {
 
+      }
 
+      cancel_if_not_visible = yes
 
+      visible = {
+      or = {
+        original_tag = LAB
+
+        }
+      }
+
+		available = {
+			is_subject = no
+		 
+			controls_state = 943
+			controls_state = 332
+        }
+   
+
+		cost = 350
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = VLD
+			set_capital = 332
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+			  332 = { add_core_of = ROOT }
+			  943 = { add_core_of = ROOT }
+			}	
+			add_war_support = 0.1
+			set_politics = {
+				ruling_party = neutrality
+			}
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = VLDPARTYLONG 
+				name = VLDPARTYNAME 
+			}
+		}
+    }
+	
+Surrectionist_British_Canada = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = BCB
+		original_tag = ABA
+
+        }
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 970
+			controls_state = 969
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SBC
+			set_capital = 969
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				470 = { add_core_of = ROOT }
+				814 = { add_core_of = ROOT }
+				811 = { add_core_of = ROOT }
+				473 = { add_core_of = ROOT }
+				740 = { add_core_of = ROOT }
+				970 = { add_core_of = ROOT }
+				969 = { add_core_of = ROOT }
+
+			}	
+			add_war_support = 0.1
+
+		}
+    }
+Absaroka = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = SDS
+		original_tag = WYW
+		original_tag = NDN
+		original_tag = MTM
+
+        }
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 826
+			controls_state = 388
+			controls_state = 825
+			controls_state = 823
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ABU
+			set_capital = 388
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				826 = { add_core_of = ROOT }
+				388 = { add_core_of = ROOT }
+				825 = { add_core_of = ROOT }
+				823 = { add_core_of = ROOT }
+				940 = { add_core_of = ROOT }
+				911 = { add_core_of = ROOT }
+				390 = { add_core_of = ROOT }
+				389 = { add_core_of = ROOT }
+				821 = { add_core_of = ROOT }
+				948 = { add_core_of = ROOT }
+				820 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
+				822 = { add_core_of = ROOT }
+				824 = { add_core_of = ROOT }
+				381 = { add_core_of = ROOT }
+
+			}	
+			add_war_support = 0.1
+
+		}
+    }
+Greater_Appalachia = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = WVW
+		original_tag = VAV
+		original_tag = NCN
+		original_tag = TNT
+
+        }
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 853
+			controls_state = 873
+			controls_state = 878
+			controls_state = 988
+			controls_state = 875
+			controls_state = 877
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GEA
+			set_capital = 988
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				853 = { add_core_of = ROOT }
+				873 = { add_core_of = ROOT }
+				878 = { add_core_of = ROOT }
+				988 = { add_core_of = ROOT }
+				875 = { add_core_of = ROOT }
+				877 = { add_core_of = ROOT }
+
+			}	
+			add_war_support = 0.1
+
+		}
+    }
+The_Foundry = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = WVW
+		original_tag = NYN
+		original_tag = PAP
+		original_tag = OHO
+		original_tag = INI
+		original_tag = MIM
+
+        }
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 900
+			controls_state = 901
+			controls_state = 875
+			controls_state = 905
+			controls_state = 395
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = TFO
+			set_capital = 901
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				276 = { add_core_of = ROOT }
+				990 = { add_core_of = ROOT }
+				361 = { add_core_of = ROOT }
+				393 = { add_core_of = ROOT }
+				861 = { add_core_of = ROOT }
+				900 = { add_core_of = ROOT }
+				862 = { add_core_of = ROOT }
+				856 = { add_core_of = ROOT }
+				396 = { add_core_of = ROOT }
+				857 = { add_core_of = ROOT }
+				860 = { add_core_of = ROOT }
+				858 = { add_core_of = ROOT }
+				901 = { add_core_of = ROOT }
+				261 = { add_core_of = ROOT }
+				859 = { add_core_of = ROOT }
+				880 = { add_core_of = ROOT }
+				881 = { add_core_of = ROOT }
+				877 = { add_core_of = ROOT }
+				875 = { add_core_of = ROOT }
+				905 = { add_core_of = ROOT }
+				885 = { add_core_of = ROOT }
+				358 = { add_core_of = ROOT }
+				886 = { add_core_of = ROOT }
+			}	
+			add_war_support = 0.1
+
+		}
+    }
+Ruperts_Land = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = MBM
+		original_tag = ONO
+		original_tag = NUN
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 944
+			controls_state = 682
+			controls_state = 683
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = RUP
+			set_capital = 944
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				944 = { add_core_of = ROOT }
+				467 = { add_core_of = ROOT }
+				942 = { add_core_of = ROOT }
+				815 = { add_core_of = ROOT }
+				682 = { add_core_of = ROOT }
+				683 = { add_core_of = ROOT }
+			}	
+			add_war_support = 0.1
+
+		}
+    }
+North_Frontier = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = NUN
+		original_tag = NTN
+		original_tag = AKA
+		original_tag = YTY
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 991
+			controls_state = 907
+			controls_state = 966
+			controls_state = 683
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = NFR
+			set_capital = 991
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				991 = { add_core_of = ROOT }
+				463 = { add_core_of = ROOT }
+				813 = { add_core_of = ROOT }
+				985 = { add_core_of = ROOT }
+				471 = { add_core_of = ROOT }
+				907 = { add_core_of = ROOT }
+				472 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				683 = { add_core_of = ROOT }
+				}	
+			add_war_support = 0.1
+
+		}
+    }
+Great_Louisiana = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = LAL
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 952
+			controls_state = 951
+			controls_state = 375
+			
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GRL
+			set_capital = 956
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				951 = { add_core_of = ROOT }
+				952 = { add_core_of = ROOT }
+				375 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				898 = { add_core_of = ROOT }
+				374 = { add_core_of = ROOT }
+				371 = { add_core_of = ROOT }
+				835 = { add_core_of = ROOT }
+				834 = { add_core_of = ROOT }
+				790 = { add_core_of = ROOT }
+				956 = { add_core_of = ROOT }
+				838 = { add_core_of = ROOT }
+				
+				}	
+			add_war_support = 0.1
+
+		}
+    }
+Great_Hawaiian_Empire = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = HIH
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 892
+			controls_state = 630
+			controls_state = 727
+			controls_state = 642
+			controls_state = 631
+			
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GRH
+			set_capital = 892
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				
+				892 = { add_core_of = ROOT }
+				630 = { add_core_of = ROOT }
+				727 = { add_core_of = ROOT }
+				642 = { add_core_of = ROOT }
+				631 = { add_core_of = ROOT }
+				
+				}	
+			add_war_support = 0.1
+
+		}
+    }
+Azteca_Superior = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = OME 
+		original_tag = VEC
+		original_tag = OAX
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 277
+			controls_state = 931
+			controls_state = 933
+			
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = AZS
+			set_capital = 277
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				 
+				939 = { add_core_of = ROOT }
+				924 = { add_core_of = ROOT }
+				277 = { add_core_of = ROOT }
+				938 = { add_core_of = ROOT }
+				925 = { add_core_of = ROOT }
+				923 = { add_core_of = ROOT }
+				922 = { add_core_of = ROOT }
+				477 = { add_core_of = ROOT }
+				931 = { add_core_of = ROOT }
+				932 = { add_core_of = ROOT }
+				
+				}	
+			add_war_support = 0.1
+
+		}
+    }
+Maya = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+		  or = {
+				original_tag = CHP 
+				original_tag = YUC
+			}
+		}
+
+		available = {
+			is_subject = no
+			controls_state = 474
+			controls_state = 475
+			
+        }
+   
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = MAY
+			set_capital = 475
+			add_stability = 0.10
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				474 = { add_core_of = ROOT }
+				936 = { add_core_of = ROOT }
+				935 = { add_core_of = ROOT }
+				934 = { add_core_of = ROOT }
+				475 = { add_core_of = ROOT }
+				add_war_support = 0.1
+			}	
+			
+
+		}
+    }
+Bajan_Nation = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = BAJ 
+		original_tag = SON
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 918
+			controls_state = 917
+			controls_state = 919
+			
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = BAN
+			set_capital = 918
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				918 = { add_core_of = ROOT }
+				916 = { add_core_of = ROOT }
+				484 = { add_core_of = ROOT }
+				917 = { add_core_of = ROOT }
+				483 = { add_core_of = ROOT }
+				919 = { add_core_of = ROOT }
+				920 = { add_core_of = ROOT }
+				921 = { add_core_of = ROOT }
+				478 = { add_core_of = ROOT }
+				922 = { add_core_of = ROOT }
+				add_war_support = 0.1
+			}
+		}
+	}
+Republic_of_Lakotah = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = NEN 
+		original_tag = IAI
+		original_tag = SDS
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 911
+			controls_state = 965
+			controls_state = 954
+			
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ROL
+			set_capital = 911
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				390 = { add_core_of = ROOT }
+				911 = { add_core_of = ROOT }
+				826 = { add_core_of = ROOT }
+				965 = { add_core_of = ROOT }
+				384 = { add_core_of = ROOT }
+				845 = { add_core_of = ROOT }
+				954 = { add_core_of = ROOT }
+				392 = { add_core_of = ROOT }
+				828 = { add_core_of = ROOT }
+				827 = { add_core_of = ROOT }
+				844 = { add_core_of = ROOT }
+				
+				add_war_support = 0.1
+			}
+		}
+	}
+
+Azteca_Inferior = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = TAU 
+		original_tag = COA
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 926
+			controls_state = 927
+			controls_state = 479
+			
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = AZL
+			set_capital = 927
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				479 = { add_core_of = ROOT }
+				926 = { add_core_of = ROOT }
+				937 = { add_core_of = ROOT }
+				927 = { add_core_of = ROOT }
+				928 = { add_core_of = ROOT }
+				480 = { add_core_of = ROOT }
+				
+				add_war_support = 0.1
+			}
+		}
+	}
+
+Westsylvania = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = WVW
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 875
+			controls_state = 877
+			
+        }
+   
+
+		cost = 250
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = WES
+			set_capital = 877
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				875 = { add_core_of = ROOT }
+				877 = { add_core_of = ROOT }
+				369 = { add_core_of = ROOT }
+				881 = { add_core_of = ROOT }
+				880 = { add_core_of = ROOT }
+				361 = { add_core_of = ROOT }
+				add_war_support = 0.1
+			}
+		}
+	}
+Lincoln = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = WAW
+		original_tag = IDI
+		}
+      }
+
+		available = {
+			is_subject = no
+			controls_state = 947
+			controls_state = 914
+			
+        }
+   
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = LIN
+			set_capital = 914
+			add_stability = 0.20
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				819 = { add_core_of = ROOT }
+				387 = { add_core_of = ROOT }
+				947 = { add_core_of = ROOT }
+				810 = { add_core_of = ROOT }
+				386 = { add_core_of = ROOT }
+				809 = { add_core_of = ROOT }
+				808 = { add_core_of = ROOT }
+				914 = { add_core_of = ROOT }
+				385 = { add_core_of = ROOT }
+				820 = { add_core_of = ROOT }
+				add_war_support = 0.1
+			}
+		}
+	}
 
 }
