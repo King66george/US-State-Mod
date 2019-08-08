@@ -300,11 +300,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_resource = {
-			type = steel
-			amount = 25
-			state = 831
-				}
+				type = steel
+				amount = 25
+				state = 831
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = harry_darby
+		}
 
 		}
 		focus = {

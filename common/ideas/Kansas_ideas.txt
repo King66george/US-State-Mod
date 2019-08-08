@@ -494,5 +494,36 @@ ideas = {
         }
       }
     }
+		arthur_capper = {
+			picture = idea_arthur_capper
+
+			allowed = {
+				original_tag = KSK
+			}
+
+			traits = { silent_workhorse }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		harry_darby = {
+			picture = idea_harry_darby
+
+			allowed = {
+				original_tag = KSK
+			}
+			available = {
+				if = {
+					has_completed_focus = KSK_steel_plant
+				}
+			}
+
+			traits = { captain_of_industry }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
   }
 }
