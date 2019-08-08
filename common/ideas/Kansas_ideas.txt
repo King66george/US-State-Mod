@@ -495,7 +495,7 @@ ideas = {
       }
     }
 		arthur_capper = {
-			picture = idea_arthur_capper
+			picture = arthur_capper
 
 			allowed = {
 				original_tag = KSK
@@ -508,7 +508,7 @@ ideas = {
 			}
 		}
 		harry_darby = {
-			picture = idea_harry_darby
+			picture = harry_darby
 
 			allowed = {
 				original_tag = KSK
@@ -526,4 +526,19 @@ ideas = {
 			}
 		}
   }
+	army_chief = {
+		dwight_eisenhower = {
+			picture = dwight_eisenhower
+
+			allowed = {
+				original_tag = KSK
+			}
+
+			traits = { army_chief_offensive_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 }
