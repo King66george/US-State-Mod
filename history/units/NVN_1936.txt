@@ -76,7 +76,7 @@ units = {
 	# I Army Corps #
 	division= {			
 		name = "Hookers"		
-		location = 4975
+		location = 975
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -84,7 +84,7 @@ units = {
 	}
 division= {			
 		name = "pAWN sTARS"		
-		location = 4975
+		location = 975
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -92,7 +92,7 @@ division= {
 	}
 division= {			
 		name = "1st Guard"		
-		location = 4975
+		location = 975
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -100,7 +100,7 @@ division= {
 	}
 division= {			
 		name =  "Guards of the strip"		
-		location = 4975
+		location = 975
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
