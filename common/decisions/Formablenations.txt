@@ -1787,8 +1787,8 @@ Azteca_Inferior = {
 
       visible = {
       or = {
-        original_tag = TAU 
-		original_tag = COA
+       	original_tag = TAU 
+	original_tag = COA
 		}
       }
 
@@ -1928,5 +1928,80 @@ Lincoln = {
 			}
 		}
 	}
+Land_of_the_Nahuatl = {
 
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+			or = {
+				original_tag = CHP 
+				original_tag = YUC
+				original_tag = VEC
+				original_tag = OAX
+				original_tag = TAU 
+				original_tag = COA
+			}
+		}
+
+		available = {
+			is_subject = no
+			controls_state = 926
+			controls_state = 927
+			controls_state = 479
+			controls_state = 474
+			controls_state = 475
+			controls_state = 277
+			controls_state = 931
+			controls_state = 933
+			
+        }
+   
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+		  factor = 1
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = NAE
+			set_capital = 277
+			add_stability = 0.10
+			custom_effect_tooltip = core_land
+			hidden_effect = {
+				474 = { add_core_of = ROOT }
+				936 = { add_core_of = ROOT }
+				935 = { add_core_of = ROOT }
+				934 = { add_core_of = ROOT }
+				475 = { add_core_of = ROOT }
+				479 = { add_core_of = ROOT }
+				926 = { add_core_of = ROOT }
+				937 = { add_core_of = ROOT }
+				927 = { add_core_of = ROOT }
+				928 = { add_core_of = ROOT }
+				480 = { add_core_of = ROOT }
+				939 = { add_core_of = ROOT }
+				924 = { add_core_of = ROOT }
+				277 = { add_core_of = ROOT }
+				938 = { add_core_of = ROOT }
+				925 = { add_core_of = ROOT }
+				923 = { add_core_of = ROOT }
+				922 = { add_core_of = ROOT }
+				477 = { add_core_of = ROOT }
+				931 = { add_core_of = ROOT }
+				932 = { add_core_of = ROOT }
+				add_war_support = 0.1
+			}	
+			
+
+		}
+    }
 }

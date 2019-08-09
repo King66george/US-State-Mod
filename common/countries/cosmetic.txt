@@ -121,3 +121,7 @@ LIN = {
 	color_ui = rgb { 186 205 219 }
 }
 
+NAE = {
+  color = rgb { 60 59 110 }
+  color_ui = rgb { 60 59 110 }
+}
