@@ -16,7 +16,12 @@ state={
 
 		}
 		add_core_of = CAC
-
+		victory_points = {
+			610 3 
+		}
+		victory_points = {
+			677 2 
+		}
 	}
 
 	provinces={

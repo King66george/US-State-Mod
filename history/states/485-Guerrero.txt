@@ -16,7 +16,7 @@ state={
 		add_core_of = GUE
 		add_core_of = MEX
 		victory_points = {
-			10730 25 
+			10730 10 
 		}
 
 

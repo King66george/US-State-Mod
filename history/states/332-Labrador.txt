@@ -14,7 +14,12 @@ state={
 
 		}
 		add_core_of = LAB
-
+		victory_points = {
+			12503 15 
+		}
+		victory_points = {
+			1426 10 
+		}
 	}
 
 	provinces={

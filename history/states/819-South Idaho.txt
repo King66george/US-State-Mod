@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = IDI
 		victory_points = {
-			9616 1
+			9695 5
 		}
 
 	}

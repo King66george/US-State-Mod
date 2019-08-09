@@ -18,9 +18,14 @@ state={
 		}
 		add_core_of = BCB
 		victory_points = {
-			1408 15
+			1408 5
 		}
-
+		victory_points = {
+			1411 5 
+		}
+		victory_points = {
+			4678 5 
+		}
 	}
 
 	provinces={

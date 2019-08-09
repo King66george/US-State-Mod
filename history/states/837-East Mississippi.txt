@@ -15,7 +15,9 @@ state={
 
 		}
 		add_core_of = MSM
-
+		victory_points = {
+			8110 5
+		}
 	}
 	provinces={
 		8110 10753 11717 12429

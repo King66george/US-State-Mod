@@ -17,6 +17,9 @@ state={
 
 		}
 		add_core_of = CAC
+		victory_points = {
+			941 1 
+		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7

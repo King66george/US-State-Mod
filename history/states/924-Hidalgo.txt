@@ -12,6 +12,9 @@ state={
 		}
 		add_core_of = MEX 
 		add_core_of = OME
+		victory_points = {
+			7913 10 
+		}
 	}
 
 	provinces={

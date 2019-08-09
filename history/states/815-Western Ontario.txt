@@ -15,7 +15,12 @@ state={
 
 		}
 		add_core_of = ONO
-
+		victory_points = {
+			763 5 
+		}
+		victory_points = {
+			7899 5 
+		}
 	}
 
 	provinces={

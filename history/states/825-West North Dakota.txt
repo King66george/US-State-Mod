@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = NDN
 		victory_points = {
-			1836 1 
+			6722 1 
 		}
 
 	}

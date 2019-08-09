@@ -17,7 +17,7 @@ state={
 		}
 		add_core_of = NVN
 		victory_points = {
-			1862 20
+			7756 2
 		}
 	}
 

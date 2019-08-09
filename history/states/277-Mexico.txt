@@ -1,7 +1,7 @@
 
 state={
 	id=277
-	name="STATE_277"
+	name="Mexico City"
 	resources={
 		steel=16.000
 		oil=10.000

@@ -10,6 +10,9 @@ state={
 		}
 		add_core_of = CHP
 		add_core_of = MEX
+		victory_points = {
+			12867 10 
+		}
 	}
 
 	provinces={

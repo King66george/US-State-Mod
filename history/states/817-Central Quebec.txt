@@ -14,7 +14,9 @@ state={
 
 		}
 		add_core_of = QBC
-
+		victory_points = {
+			10715 5 
+		}
 	}
 
 	provinces={

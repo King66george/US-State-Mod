@@ -18,7 +18,7 @@ state={
 		}
 		add_core_of = OKO
 		victory_points = {
-			1806 1 
+			12624 1 
 		}
 		1939.1.1 = {
 			buildings = {

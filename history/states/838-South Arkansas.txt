@@ -15,10 +15,10 @@ state={
 
 		}
 		add_core_of = ARA
-		victory_points = {
-			12489 1 
-		}
 
+		victory_points = {
+			1503 5
+		}
 	}
 	provinces={
 		1503 7485 7543 10355 12458 

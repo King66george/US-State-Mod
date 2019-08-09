@@ -16,7 +16,9 @@ state={
 			air_base = 10
 		}
 		add_core_of = NYN
-
+		victory_points = {
+			734 5
+		}
 	}
 	provinces={
 		734 3733 6707 9664 11680

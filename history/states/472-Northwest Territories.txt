@@ -14,7 +14,9 @@ state={
 
 		}
 		add_core_of = NTN
-
+		victory_points = {
+			10703 5 
+		}
 	}
 
 	provinces={

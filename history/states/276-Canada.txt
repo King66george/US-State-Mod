@@ -16,7 +16,7 @@ state={
 		add_core_of = ONO
 
 		victory_points = {
-			3775 10
+			3763 10
 		}
 
 	}

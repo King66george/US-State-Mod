@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = ORO
 		victory_points = {
-			3513 1
+			7721 6
 		}
 
 	}

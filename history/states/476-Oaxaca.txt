@@ -15,7 +15,9 @@ state={
 		}
 		add_core_of = OAX
 		add_core_of = MEX
-
+		victory_points = {
+			8236 7 
+		}
 
 	}
 

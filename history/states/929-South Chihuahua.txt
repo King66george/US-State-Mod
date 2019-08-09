@@ -10,7 +10,9 @@ state={
 		}
 		add_core_of = CIA
 		add_core_of = MEX
-
+		victory_points = {
+			7935 10 
+		}
 
 	}
 

@@ -26,9 +26,11 @@ state={
 		}
 		add_core_of = AZA
 		victory_points = {
-			3834 20 
+			3834 10 
 		}
-
+		victory_points = {
+			10783 5 
+		}
 	}
 
 	provinces={
