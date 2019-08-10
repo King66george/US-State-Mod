@@ -1,6 +1,6 @@
 state={
 	id=379
-	name="Henderson"
+	name="Moapa Valley"
 	resources={
 		steel=70.000
 		tungsten=22.000
