@@ -18,7 +18,9 @@ state={
 
 		}
 		add_core_of = MEM
-
+		victory_points = {
+			4287 8
+		}
 
 	}
 
