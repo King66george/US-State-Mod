@@ -11,9 +11,6 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
-			10548 = {
-				naval_base = 1
-			}
 		}
 		add_core_of = YTY
 	}
@@ -21,5 +18,3 @@ state={
 		7891 
 	}
 }
-		
-
