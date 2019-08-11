@@ -1,6 +1,6 @@
 state={
 	id=941
-	name="Salem"
+	name="Portland"
 
 	history={
 		owner = ORO
@@ -21,7 +21,7 @@ state={
 
 	}
 	provinces={
-		3513 10183 12211 
+		3513 10183 12211 13292 13294 13295
 	}
 	manpower=3000000
 	buildings_max_level_factor=1.000

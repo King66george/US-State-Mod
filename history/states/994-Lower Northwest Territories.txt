@@ -1,0 +1,25 @@
+state={
+	id=994
+	name="Yellowknife"
+	resources={
+		oil=25
+		tungsten=15
+	}
+	history={
+		owner = NTN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = NTN
+
+	}
+
+	provinces={
+		2976 7901 13075 13314
+	}
+	manpower=1207681
+	buildings_max_level_factor=1.000
+	state_category=town
+}

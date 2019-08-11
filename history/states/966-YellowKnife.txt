@@ -13,11 +13,13 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = NTN
-
+		victory_points = {
+			10527 10
+		}
 	}
 
 	provinces={
-		2976 7901 10527 13075 13189 
+		10527 13319 13322 13324
 	}
 	manpower=1207681
 	buildings_max_level_factor=1.000

@@ -15,6 +15,6 @@ state={
 		add_core_of = SKS
 	}
 	provinces={
-		10611 
+		10611 13303 13304 13305 13306
 	}
 }

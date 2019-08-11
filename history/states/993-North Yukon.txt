@@ -1,0 +1,20 @@
+
+state={
+	id=993
+	name="North Yukon"
+	manpower=435572
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		owner = YTY
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = YTY
+	}
+	provinces={
+		3606 13323 13325
+	}
+}

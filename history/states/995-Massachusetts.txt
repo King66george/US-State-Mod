@@ -1,0 +1,26 @@
+
+state={
+	id=995
+	name="Central Massachusetts"
+	resources={
+		steel=12.000
+	}
+
+	history={
+		owner = MAM
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 5
+		}
+		add_core_of = MAM
+
+	}
+
+	provinces={
+		715 3710
+	}
+	manpower=404713
+	buildings_max_level_factor=1.000
+	state_category=city
+}

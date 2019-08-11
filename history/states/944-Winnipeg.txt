@@ -18,6 +18,6 @@ state={
 		add_core_of = MBM
 	}
 	provinces={
-		4790 
+		4790 13299 13300 13301 13302
 	}
 }
