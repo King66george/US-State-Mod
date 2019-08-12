@@ -125,3 +125,26 @@ NAE = {
   color = rgb { 60 59 110 }
   color_ui = rgb { 60 59 110 }
 }
+UOS = {
+    color = rgb { 70 107 181 }
+	color_ui = rgb { 70 107 181 }
+}
+ECC = {
+    color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+
+CGE = {
+	color = rgb { 140 200 120 }
+	color_ui = rgb { 200 255 200 }
+}
+
+GPN = {
+	color = rgb { 145 163 176  }
+	color_ui = rgb { 186 205 219 }
+}
+
+POF = {
+	 color = rgb { 48 223 206 }
+	 color_ui = rgb{ 48 223 206 }
+}

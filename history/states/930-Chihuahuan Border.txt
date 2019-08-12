@@ -3,7 +3,7 @@ state={
 	name="Chihuahuan Border"
 		
 	history={ 1936.1.3 = {owner = CIA controller = CIA  }
-		owner = MEX
+		owner = CIA
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 2
@@ -21,7 +21,6 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = MEX
 		add_core_of = CIA
 		victory_points = {
 			8097 10 

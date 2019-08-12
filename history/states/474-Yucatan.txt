@@ -4,14 +4,13 @@ state={
 	name="STATE_474"
 
 	history={ 1936.1.3 = {owner = YUC controller = YUC  }
-		owner = MEX
+		owner = YUC
 		buildings = {
 			infrastructure = 3
 			air_base = 1
 
 		}
 		add_core_of = YUC
-		add_core_of = MEX
 		victory_points = {
 			12715 10 
 		}

@@ -16,14 +16,14 @@ state={
 		}
 		add_core_of = NUN
 		victory_points = {
-			10721 5 
+			1712 1 
 		}
 	}
 
 	provinces={
-		1712 2947 7813 8962 10721 
+		1712 7813
 	}
-	manpower=46135
+	manpower=946135
 	buildings_max_level_factor=1.000
 	state_category=town
 }
