@@ -67,7 +67,7 @@ bookmarks = {
 			#	USA_pearl_harbor_gambit
 			#}
 		}
-		"QCQ"={
+		"QBC"={
 			#history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {

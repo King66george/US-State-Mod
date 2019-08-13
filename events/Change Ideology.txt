@@ -24,13 +24,13 @@ country_event = {
 	id = cid.0
 	title = cid.0.t
 	desc = cid.0.d
-	picture =
+	picture = GFX_report_event_molotov_ribentrop_handshake
 	fire_only_once = yes
 
 	trigger = {
 
 	date > 1936.1.1
-	date < 1936.1.25
+	date < 1936.1.28
 	is_ai = yes
 	has_idea = home_of_the_free
 
@@ -113,7 +113,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		date > 1936.1.1
-		date < 1936.1.25
+		date < 1936.1.28
 		has_idea = home_of_the_free
 		is_ai = no
 		NOT = { has_country_flag = ideology_chosen }

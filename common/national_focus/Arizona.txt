@@ -12,13 +12,17 @@ focus_tree = {
 		id = AZfocus_0
 		#text = The Death of the Nation
 		icon = GFX_focus_usa_recruit_the_free_corps
-		cost = 10.00
+		cost = 2.00
 		x = 16
 		y = 0
 			completion_reward = {
 					add_political_power = 200
 				}
 	}
+	
+	#indust Tree
+	
+	
 	focus = {
 		id = AZfocus_4
 		#text = Five C's of Arizona
@@ -26,6 +30,15 @@ focus_tree = {
 		cost = 10.00
 		x = 4
 		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 1
@@ -57,6 +70,15 @@ focus_tree = {
 		cost = 10.00
 		x = 29
 		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_manpower = 25000
 					add_ideas = YUG_tank_licenses
@@ -87,11 +109,23 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		set_building_level = {
-   			type = infrastructure
-    			level = 10
-    			instant_build = yes
-			province = 377
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -104,8 +138,16 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
-					add_ideas = militarism_focus
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
@@ -126,11 +168,23 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
-		set_building_level = {
-   			type = infrastructure
-    			level = 10
-    			instant_build = yes
-			province = 795
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -146,7 +200,17 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
+					add_ideas = militarism_focus
 					add_ideas = ALL_idea_genderequality
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_3
@@ -168,6 +232,15 @@ focus_tree = {
 		}
 		x = 4
 		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_ideas = ALL_idea_cheapguns
 				}
@@ -186,8 +259,16 @@ focus_tree = {
 		}
 		x = 2
 		y = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
-					add_ideas = militarism_focus
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
@@ -208,6 +289,15 @@ focus_tree = {
 		}
 		x = 4
 		y = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_research_slot = 1
 			}
@@ -222,6 +312,15 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 3
@@ -247,6 +346,15 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					random_owned_controlled_state = {
 							add_extra_state_shared_building_slots = 3
@@ -258,6 +366,75 @@ focus_tree = {
 						}
 				}
 	}
+		focus = {
+		id = AZfocus_15
+		#text = Fort Huahuachuca Facility
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = AZfocus_14
+		}
+		x = 3
+		y = 6
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = jet_technology
+							category = rocketry
+						}
+					add_research_slot = 1
+				}
+	}
+	focus = {
+		id = AZfocus_16
+		#text = Nevada Nuclear Treaty
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = AZfocus_14
+		}
+		x = 5
+		y = 6
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = nuclear
+						}
+					create_faction = Nuclear_pact
+					NVN = {
+							country_event = {
+									days = 1
+									id = SOVcustomevent.69
+								}
+						}
+				
+				}
+	}
+	#Fasc Tree
+	
+
 	focus = {
 		id = AZfocus_1
 		#text = Ditat Deus
@@ -271,6 +448,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_ideas = { fascist_influence }
 			
@@ -296,8 +482,17 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
-				set_building_level = {
+				add_building_construction = {
     					type = bunker
    					level = 3
    					province = {
@@ -319,6 +514,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					create_wargoal = {
 							target = NMN
@@ -336,6 +540,15 @@ focus_tree = {
 		}
 		x = 8
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_resource = {
 							type = rubber
@@ -354,6 +567,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = armor_bonus
@@ -373,12 +595,21 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					COC = {
-							country_event = disunitedstates.1
+							country_event = disunitedstates.9
 						}
 					UTU = {
-							country_event = disunitedstates.1
+							country_event = disunitedstates.9
 						}
 				}
 	}
@@ -395,10 +626,48 @@ focus_tree = {
 		}
 		x = 10
 		y = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_stability = .20
 				}
 	}
+	focus = {
+		id = AZfocus_21
+		#text = Modern Montezuma
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 10.00
+		prerequisite = {
+			focus = AZfocus_20
+		}
+		prerequisite = {
+			focus = AZfocus_18
+		}
+		x = 8
+		y = 6
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
+			completion_reward = {
+					add_stability = .20
+				}
+	}
+	#demo Tree
+	
+	
 	focus = {
 		id = AZfocus_2
 		#text = 24 years later
@@ -413,8 +682,17 @@ focus_tree = {
 		}
 		x = 16
 		y = 1
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
-					add_ideas = democracy_influence
+					add_ideas = democratic_influence
 				}
 	}
 	focus = {
@@ -427,6 +705,15 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_1
@@ -479,6 +766,15 @@ focus_tree = {
 		}
 		x = 14
 		y = 3
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_political_power = 300
 				}
@@ -493,6 +789,15 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 
 			completion_reward = {
 					create_wargoal = {
@@ -514,10 +819,24 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			ENG = { 
 				add_to_faction = AZA 
 			}
 	}
+	
+	
+	#commie
+	
+	
 	focus = {
 		id = AZfocus_3
 		#text = The Phoenix
@@ -531,10 +850,23 @@ focus_tree = {
 		}
 		x = 22
 		y = 1
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_ideas = communist_influence
 				}
 	}
+	
+	#mili tree
+	
+	
 	focus = {
 		id = AZfocus_24
 		#text = Luke AFB Revamp
@@ -545,6 +877,15 @@ focus_tree = {
 		}
 		x = 27
 		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -573,6 +914,15 @@ focus_tree = {
 		}
 		x = 29
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -597,6 +947,15 @@ focus_tree = {
 		}
 		x = 28
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -617,6 +976,15 @@ focus_tree = {
 		}
 		x = 31
 		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_manpower = 55000
 					random_owned_controlled_state = {
@@ -643,6 +1011,15 @@ focus_tree = {
 		}
 		x = 30
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+			bypass = {
+
+		}
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -654,69 +1031,6 @@ focus_tree = {
 						}
 				}
 	}
-	focus = {
-		id = AZfocus_15
-		#text = Fort Huahuachuca Facility
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 10.00
-		prerequisite = {
-			focus = AZfocus_14
-		}
-		x = 3
-		y = 6
-			completion_reward = {
-					add_tech_bonus = {
-							name = assembly_bonus
-							bonus = 0.25
-							uses = 2
-							category = jet_technology
-							category = rocketry
-						}
-					add_research_slot = 1
-				}
-	}
-	focus = {
-		id = AZfocus_16
-		#text = Nevada Nuclear Treaty
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 10.00
-		prerequisite = {
-			focus = AZfocus_14
-		}
-		x = 5
-		y = 6
-			completion_reward = {
-					add_tech_bonus = {
-							name = assembly_bonus
-							bonus = 0.25
-							uses = 2
-							category = nuclear
-						}
-					create_faction = Nuclear_pact
-					NVN = {
-							country_event = {
-									days = 1
-									id = SOVcustomevent.69
-								}
-						}
-				
-				}
-	}
-	focus = {
-		id = AZfocus_21
-		#text = Modern Montezuma
-		icon = GFX_focus_mex_restore_the_army_of_christ
-		cost = 10.00
-		prerequisite = {
-			focus = AZfocus_20
-		}
-		prerequisite = {
-			focus = AZfocus_18
-		}
-		x = 8
-		y = 6
-			completion_reward = {
-					add_stability = .20
-				}
-	}
+
+
 }
