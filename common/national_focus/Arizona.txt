@@ -828,9 +828,11 @@ focus_tree = {
 			bypass = {
 
 		}
+		completion_reward = {
 			ENG = { 
 				add_to_faction = AZA 
 			}
+		}
 	}
 	
 	
