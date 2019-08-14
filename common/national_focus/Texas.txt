@@ -227,7 +227,16 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					create_faction = north_american_axis
-					every_neighbor_country = {
+					NMN = {
+							country_event = disunitedstates.5
+						}
+					OKO = {
+							country_event = disunitedstates.5
+						}
+					LAL = {
+							country_event = disunitedstates.5
+						}
+					ARA = {
 							country_event = disunitedstates.5
 						}
 				}
