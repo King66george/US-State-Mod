@@ -527,7 +527,7 @@ ideas = {
 		}
   }
 	army_chief = {
-		dwight_eisenhower = {
+		dwight_eisenhower2 = {
 			picture = dwight_eisenhower
 
 			allowed = {
