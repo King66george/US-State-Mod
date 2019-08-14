@@ -1,0 +1,471 @@
+ideas = {
+	country = {
+	
+
+		ide_decision_break = { 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				drift_defence_factor = 0.30
+			}
+		}
+
+		generic_idea_industrial_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                industrial_capacity_factory =  0.03
+                stability_factor = 0.02
+			}
+		}
+
+		generic_idea_industrial_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                industrial_capacity_factory =  0.06
+                stability_factor = 0.04
+			}
+		}
+
+		generic_idea_industrial_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                industrial_capacity_factory =  0.09
+                stability_factor = 0.06
+			}
+		}
+
+		generic_idea_industrial_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                industrial_capacity_factory =  0.12
+                stability_factor = 0.08
+			}
+		}
+
+		generic_idea_resources_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                local_resources_factor = 0.04
+			}
+		}
+
+		generic_idea_resources_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                local_resources_factor = 0.08
+			}
+		}
+
+		generic_idea_resources_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                local_resources_factor = 0.12
+			}
+		}
+
+		generic_idea_resources_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                local_resources_factor = 0.16
+			}
+		}
+
+
+		generic_militar_school = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+                air_chief_cost_factor = -0.25
+                army_chief_cost_factor = -0.25
+                navy_chief_cost_factor = -0.25
+                planning_speed = 0.05
+			}
+		}
+
+		generic_justify_war_general = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+                justify_war_goal_time = -0.65
+			}
+		}
+
+		generic_control_soldiers = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+                experience_loss_factor = -0.5
+			}
+		}
+
+
+		ethics_for_war_generic = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                consumer_goods_factor = -0.05
+			}
+		}
+
+		generic_civil_factory_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                line_change_production_efficiency_factor = 0.05
+                production_factory_max_efficiency_factor = 0.05
+                industrial_capacity_factory = 0.05
+			}
+		}
+
+		generic_political_option = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                democratic_acceptance = 40
+            	political_power_gain = 0.1
+            	drift_defence_factor = 0.25
+			}
+		}
+
+		generic_army_effort_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+                army_org = 1.5
+                army_morale_factor = 0.04
+			}
+		}
+
+		generic_army_effort_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+                army_org = 3
+                army_morale_factor = 0.08
+			}
+		}
+
+		generic_army_effort_idea_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+                army_org = 4.5
+                army_morale_factor = 0.12
+			}
+		}
+
+		generic_army_effort_idea_4 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+                army_org = 6
+                army_morale_factor = 0.16
+			}
+		}
+
+		ideas_fighter_boost_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = air_support_focus
+			
+			modifier = {
+                air_air_superiority_attack_factor = 0.02
+                air_air_superiority_defence_factor = 0.02
+                air_air_superiority_agility_factor = 0.02
+			}
+		}
+
+		ideas_bomber_boost_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = combined_bomber_offensive
+			
+			modifier = {
+                air_strategic_bomber_attack_factor = 0.02
+                air_strategic_bomber_defence_factor = 0.02
+                air_strategic_bomber_agility_factor = 0.02
+			}
+		}
+
+		ideas_bomber_boost_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = combined_bomber_offensive
+			
+			modifier = {
+                air_strategic_bomber_attack_factor = 0.04
+                air_strategic_bomber_defence_factor = 0.04
+                air_strategic_bomber_agility_factor = 0.04
+			}
+		}
+
+		ideas_bomber_boost_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = combined_bomber_offensive
+			
+			modifier = {
+                air_strategic_bomber_attack_factor = 0.06
+                air_strategic_bomber_defence_factor = 0.06
+                air_strategic_bomber_agility_factor = 0.06
+			}
+		}
+
+
+		ideas_fighter_boost_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = combined_bomber_offensive
+			
+			modifier = {
+                air_air_superiority_attack_factor = 0.04
+                air_air_superiority_defence_factor = 0.04
+                air_air_superiority_agility_factor = 0.04
+			}
+		}
+
+		ideas_fighter_boost_3 = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = combined_bomber_offensive
+			
+			modifier = {
+                air_air_superiority_attack_factor = 0.06
+                air_air_superiority_defence_factor = 0.06
+                air_air_superiority_agility_factor = 0.06
+			}
+		}
+
+
+		generic_work_att_all = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				stability_factor = -0.06
+				production_factory_max_efficiency_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+				local_resources_factor = 0.02
+			}
+		}
+
+		generic_war_industries_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		indoctrination_focus_2_the_rule = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
