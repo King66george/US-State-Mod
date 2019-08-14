@@ -305,9 +305,44 @@ ideas = {
 				factor = 1
 			}
 		}
+				generic_army_art2 = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_artillery_1 }		
+		}
+		
+		generic_army_log2 = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		generic_navy_fleet_log2 = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer2 = {
+
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { air_air_combat_training_2 }			
+		}
 	}
 
-	USA_chief = {
+	army_chief = {
 		
 		KMTgeneric_reg2 = {
 
@@ -340,6 +375,23 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+		generic_army_chief_off2 = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		generic_army_chief_def2 = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { army_chief_defensive_1 }
 		}
 	}
 
@@ -397,6 +449,23 @@ ideas = {
 				factor = 1
 			}
 		}
+				generic_navy_chief_decisive_bat2 = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}
+
+		generic_navy_anti_submarine2 = {
+			
+			allowed = {
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
+			}
+			
+			traits = { navy_anti_submarine_2 }
+		}
 	}
 
 	
@@ -430,87 +499,4 @@ ideas = {
 			traits = { war_industrialist }
 		}
 	}
-
-	army_chief = {
-		
-		generic_army_chief_off2 = {
-			
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { army_chief_offensive_1 }
-		}
-
-		generic_army_chief_def2 = {
-			
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { army_chief_defensive_1 }
-		}
-	}
-
-	navy_chief = {		
-
-		generic_navy_chief_decisive_bat2 = {
-			
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { navy_chief_decisive_battle_2 }
-		}
-
-		generic_navy_anti_submarine2 = {
-			
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { navy_anti_submarine_2 }
-		}
-	}
-
-
-	high_command = {
-
-		generic_army_art2 = {
-			
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { army_artillery_1 }		
-		}
-		
-		generic_army_log2 = {
-
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { army_logistics_2 }			
-		}
-
-		generic_navy_fleet_log2 = {
-
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { navy_fleet_logistics_1 }			
-		}
-
-		generic_air_air_combat_trainer2 = {
-
-			allowed = {
-				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR  original_tag = LBA original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = CYP original_tag = KUR original_tag = ALB }
-			}
-			
-			traits = { air_air_combat_training_2 }			
-		}
-	}
-
 }

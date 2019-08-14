@@ -1,6 +1,5 @@
 focus_tree = {
 	id = texas_focus
-	continuous_focus_position = { x = 20 y = 1650 }
 	country = {
 		factor = 0
 		modifier = {
@@ -8,30 +7,31 @@ focus_tree = {
 			tag = TXT
 		}
 	}
+	default = no
 	focus = {
 		id = TXT_texaswillagainraiseitshead
 		icon = GFX_goal_generic_small_arms
 		cost = 3.00
 		x = 18
 		y = 0
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
 
-		}
-		bypass = {
+}
+			bypass = {
 
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		complete_tooltip = {
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
 
-		}
-		completion_reward = {
-			add_political_power = 200
-		}
+}
+			completion_reward = {
+					add_political_power = 200
+				}
 
 	}
 	focus = {
@@ -40,12 +40,12 @@ focus_tree = {
 		cost = 5.00
 		x = 42
 		y = 0
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = VAV_idea_expand_industry
-		}
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_ideas = VAV_idea_expand_industry
+				}
 
 	}
 	focus = {
@@ -57,23 +57,6 @@ focus_tree = {
 		y = 0
 			completion_reward = {
 					add_ideas = TXT_idea_rangers
-				}
-
-	}
-	focus = {
-		id = TXT_armor
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = TXT_mechanized }
-		cost = 10.00
-		x = 35
-		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1.0
-							uses = 2
-							category = armor
-						}
 				}
 
 	}
@@ -161,16 +144,16 @@ focus_tree = {
 				}
 			available = {
 
-			}
+}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-			}
+}
 			completion_reward = {
 					add_ideas = fascist_influence
 				}
@@ -193,16 +176,16 @@ focus_tree = {
 				}
 			available = {
 
-			}
+}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-			}
+}
 			completion_reward = {
 					add_popularity = {
 							ideology = fascism
@@ -224,7 +207,10 @@ focus_tree = {
 		relative_position_id = TXT_peacefullyintegrate
 			completion_reward = {
 					every_neighbor_country = {
-							add_timed_idea = { idea = TXT_idea_texandiplo days = 120 }
+							add_timed_idea = {
+									idea = TXT_idea_texandiplo
+									days = 120
+								}
 						}
 				}
 
@@ -240,7 +226,7 @@ focus_tree = {
 		x = 10
 		y = 5
 			completion_reward = {
-			create_faction = north_american_axis
+					create_faction = north_american_axis
 					every_neighbor_country = {
 							country_event = disunitedstates.5
 						}
@@ -257,13 +243,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 6
-		available = {
+			available = {
 
-		}
-		bypass = {
-				NMN = { is_in_faction_with = ROOT
-					     is_free_or_subject_of_root = yes}
-			}
+}
+			bypass = {
+					NMN = {
+							is_in_faction_with = ROOT
+							is_free_or_subject_of_root = yes
+						}
+				}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -282,14 +270,16 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		available = {
-
-		}
-		bypass = {
-				COC = { is_in_faction_with = ROOT
-					     is_free_or_subject_of_root = yes}
-			}
 		relative_position_id = TXT_assimilation
+			available = {
+
+}
+			bypass = {
+					COC = {
+							is_in_faction_with = ROOT
+							is_free_or_subject_of_root = yes
+						}
+				}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -308,15 +298,16 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		available = {
-
-		}
-		bypass = {
-				AZA = { is_in_faction_with = ROOT
-					     is_free_or_subject_of_root = yes}
-			}
 		relative_position_id = TXT_assimilation
+			available = {
 
+}
+			bypass = {
+					AZA = {
+							is_in_faction_with = ROOT
+							is_free_or_subject_of_root = yes
+						}
+				}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -338,13 +329,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 8
-		available = {
+			available = {
 
-		}
-		bypass = {
-				UTU = { is_in_faction_with = ROOT
-					     is_free_or_subject_of_root = yes}
-			}
+}
+			bypass = {
+					UTU = {
+							is_in_faction_with = ROOT
+							is_free_or_subject_of_root = yes
+						}
+				}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -371,16 +364,16 @@ focus_tree = {
 				}
 			available = {
 
-			}
+}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-			}
+}
 			completion_reward = {
 					add_ideas = democratic_influence
 				}
@@ -403,7 +396,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -472,7 +465,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -496,14 +489,15 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
 					create_wargoal = {
 							type = topple_government
-							target = MEX
+							target = COA
+							target = TAU
 						}
 					unlock_decision_tooltip = {
 							decision = USA_execute_war_plan_green
@@ -527,7 +521,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -551,7 +545,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -581,7 +575,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -627,7 +621,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -693,16 +687,16 @@ focus_tree = {
 				}
 			available = {
 
-			}
+}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			complete_tooltip = {
 
-			}
+}
 			completion_reward = {
 					add_ideas = communist_influence
 				}
@@ -722,7 +716,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -755,7 +749,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -832,7 +826,7 @@ focus_tree = {
 				}
 			bypass = {
 
-			}
+}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
@@ -1100,7 +1094,7 @@ focus_tree = {
 		}
 		x = 30
 		y = 8
-			completion_reward =  {
+			completion_reward = {
 					add_ideas = { limited_conscription }
 				}
 
@@ -1140,6 +1134,25 @@ focus_tree = {
 							ahead_reduction = 2
 							uses = 1
 							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = TXT_armor
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = TXT_mechanized
+		}
+		x = 35
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
 						}
 				}
 
@@ -1881,7 +1894,10 @@ focus_tree = {
 			available_if_capitulated = no
 			completion_reward = {
 					every_neighbor_country = {
-							add_timed_idea = { idea = TXT_idea_permrev days = 120 }
+							add_timed_idea = {
+									idea = TXT_idea_permrev
+									days = 120
+								}
 						}
 				}
 
@@ -1917,7 +1933,6 @@ focus_tree = {
 				}
 
 	}
-
 	focus = {
 		id = TXT_directinfluenceii
 		icon = GFX_focus_ger_bulwark_against_bolshevism
@@ -2462,13 +2477,13 @@ focus_tree = {
 					factor = 1
 				}
 			available = {
-			divisions_in_border_state = {
-					type = infantry
-					size > 1
-					state = 788
-					border_state = 793
+					divisions_in_border_state = {
+							type = infantry
+							size > 1
+							state = 788
+							border_state = 793
+						}
 				}
-			}
 			bypass = {
 
 }
@@ -2541,10 +2556,10 @@ focus_tree = {
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-			create_wargoal = {
-					target = GER
-					type = topple_government
-				}
+					create_wargoal = {
+							target = GER
+							type = topple_government
+						}
 					unlock_decision_tooltip = {
 							decision = USA_execute_war_plan_black
 							show_effect_tooltip = yes
@@ -3078,16 +3093,17 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = TXT_strengthenthemilitary
-		completion_reward = {
-		random_owned_controlled_state = {
-		add_extra_state_shared_building_slots = 3
-		add_building_construction = {
-		type = arms_factory
-		level = 3
-		instant_build = yes
-		}
-		}
-		}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = TXT_integrate
@@ -3122,7 +3138,10 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					every_neighbor_country = {
-							add_timed_idea = { idea = communist_influence days = 120 }
+							add_timed_idea = {
+									idea = communist_influence
+									days = 120
+								}
 						}
 				}
 
@@ -3189,7 +3208,7 @@ focus_tree = {
 			completion_reward = {
 					add_resource = {
 							type = aluminium
-							amount = -25
+							amount = 25
 							state = 788
 						}
 					add_offsite_building = {
@@ -3290,7 +3309,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = TXT_quality
-
 			completion_reward = {
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_3
@@ -3333,7 +3351,10 @@ focus_tree = {
 		y = 2
 		relative_position_id = TXT_quality
 			completion_reward = {
-					add_timed_idea = { idea = TXT_idea_boost days = 365 }
+					add_timed_idea = {
+							idea = TXT_idea_boost
+							days = 365
+						}
 				}
 
 	}
@@ -3408,7 +3429,10 @@ focus_tree = {
 		relative_position_id = TXT_diplomacy
 			completion_reward = {
 					every_neighbor_country = {
-							add_timed_idea = { idea = fascist_influence days = 90 }
+							add_timed_idea = {
+									idea = fascist_influence
+									days = 90
+								}
 						}
 				}
 
@@ -3497,20 +3521,23 @@ focus_tree = {
 		}
 		x = 12
 		y = 10
-		available = {
+			available = {
 
-		}
-		bypass = {
-				NVN = { is_in_faction_with = ROOT
-					     is_free_or_subject_of_root = yes}
-			}
-			completion_reward = {
-							create_wargoal = {
-									type = puppet_wargoal_focus
-									target = NVN
-								}
+}
+			bypass = {
+					NVN = {
+							is_in_faction_with = ROOT
+							is_free_or_subject_of_root = yes
 						}
 				}
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = NVN
+						}
+				}
+
+	}
 	focus = {
 		id = TXT_pacificoffence
 		text = TXT_pacificoffence
@@ -3521,13 +3548,15 @@ focus_tree = {
 		}
 		x = 14
 		y = 10
-		available = {
+			available = {
 
-		}
-		bypass = {
-				HIH = { is_in_faction_with = ROOT
-					     is_free_or_subject_of_root = yes}
-			}
+}
+			bypass = {
+					HIH = {
+							is_in_faction_with = ROOT
+							is_free_or_subject_of_root = yes
+						}
+				}
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -3547,10 +3576,10 @@ focus_tree = {
 		x = 20
 		y = 9
 			completion_reward = {
-			create_wargoal = {
-					target = BUL
-					type = topple_government
-				}
+					create_wargoal = {
+							target = BUL
+							type = topple_government
+						}
 				}
 
 	}

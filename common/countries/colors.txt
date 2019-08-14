@@ -814,8 +814,8 @@ LAB ={
 }
 YUC={
 
-	color = rgb { 70 255 200 }
-	color_ui = rgb { 70 255 200 }
+	color = rgb { 30 150 34 }
+	color_ui = rgb { 87 160 255 }
 }
 OAX={
 	color = rgb { 70 255 200 }
@@ -826,8 +826,8 @@ CIA={
 	color_ui = rgb { 70 255 10 }
 }
 CHP={
-	color = rgb { 200 50 0 }
-	color_ui = rgb { 200 50 0 }
+	color = rgb { 104 152 83 }
+	color_ui = rgb { 135 198 108 }
 }
 COU={
 	color = rgb { 200 50 0 }
@@ -862,8 +862,8 @@ NAY={
 	color_ui = rgb { 30 0 200 }
 }
 VEC={
-	color = { 30 150 34 }
-	color_ui = rgb { 30 150 34 }
+	color = rgb { 0 59 111 }
+	color_ui = rgb { 87 160 255 }
 }
 WDC={
 	color = { 178 50 255 }

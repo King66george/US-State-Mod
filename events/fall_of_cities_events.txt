@@ -1,4 +1,4 @@
-add_namespace = news
+﻿add_namespace = news
 
 #Fall Of Kansas City (Kansas takes over missouri)
 news_event = {
