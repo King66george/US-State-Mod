@@ -491,9 +491,10 @@ focus_tree = {
 			bypass = {
 
 		}
-			completion_reward = {
+		completion_reward = {
+			377 ={	
 				add_building_construction = {
-    					type = bunker
+    				type = bunker
    					level = 3
    					province = {
         					all_provinces = yes
@@ -501,8 +502,41 @@ focus_tree = {
         					level < 3
     					}
 				}
-			}		
-
+			}
+			794 ={	
+				add_building_construction = {
+    				type = bunker
+   					level = 3
+   					province = {
+        					all_provinces = yes
+       						limit_to_border = yes
+        					level < 3
+    					}
+				}
+			}	
+			796 ={	
+				add_building_construction = {
+    				type = bunker
+   					level = 3
+   					province = {
+        					all_provinces = yes
+       						limit_to_border = yes
+        					level < 3
+    					}
+				}
+			}	
+			913 ={	
+				add_building_construction = {
+    				type = bunker
+   					level = 3
+   					province = {
+        					all_provinces = yes
+       						limit_to_border = yes
+        					level < 3
+    					}
+				}
+			}			
+		}
 	}
 	focus = {
 		id = AZfocus_17
