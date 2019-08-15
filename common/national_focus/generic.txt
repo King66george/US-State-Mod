@@ -3,10 +3,10 @@ focus_tree = {
 	country = {
 		factor = 1
 		modifier = {
-			add = 10
+			add = 0
 		}
 	}
-	
+
 	default = yes
 	reset_on_civilwar = no
 
@@ -96,7 +96,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_resources_2
 			    remove_idea = generic_idea_resources_1
-			}    
+			}
 		}
 	}
 
@@ -119,7 +119,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_resources_3
 			    remove_idea = generic_idea_resources_2
-			}    
+			}
 		}
 	}
 
@@ -142,7 +142,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_resources_4
 			    remove_idea = generic_idea_resources_3
-			}    
+			}
 		}
 	}
 
@@ -165,7 +165,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_resources_5
 			    remove_idea = generic_idea_resources_4
-			}    
+			}
 		}
 	}
 
@@ -188,7 +188,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_resources_6
 			    remove_idea = generic_idea_resources_5
-			}    
+			}
 		}
 	}
 
@@ -211,7 +211,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_resources_7
 			    remove_idea = generic_idea_resources_6
-			}    
+			}
 		}
 	}
 
@@ -235,7 +235,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_industrial_2
 			    remove_idea = generic_idea_industrial_1
-			}    
+			}
 		}
 	}
 
@@ -259,7 +259,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_industrial_3
 			    remove_idea = generic_idea_industrial_2
-			}    
+			}
 		}
 	}
 
@@ -283,7 +283,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = generic_idea_industrial_4
 			    remove_idea = generic_idea_industrial_3
-			}    
+			}
 		}
 	}
 
@@ -556,7 +556,7 @@ focus_tree = {
 				}
 
 	}
-	
+
 
 	focus = {
 		id = construction_effort
@@ -568,7 +568,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -581,7 +581,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -592,7 +592,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -639,7 +639,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -652,7 +652,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -663,7 +663,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -710,7 +710,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -723,7 +723,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -734,7 +734,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -781,7 +781,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -794,7 +794,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -805,7 +805,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -842,7 +842,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
@@ -857,7 +857,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -919,7 +919,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -981,7 +981,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1043,7 +1043,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1091,7 +1091,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = generic_political_effort
@@ -1290,7 +1290,7 @@ focus_tree = {
 			add_ideas = nationalism
 		}
 	}
-	
+
 	focus = {
 		id = internationalism_focus
 		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
@@ -1325,7 +1325,7 @@ focus_tree = {
 					is_major = yes
 					has_government = communism
 				}
-			}			
+			}
 			modifier = {
 				factor = 0
 				AND = {
@@ -1338,7 +1338,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = internationalism
 		}
-	}	
+	}
 
 	focus = {
 		id = liberty_ethos
@@ -1504,7 +1504,7 @@ focus_tree = {
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
-			}	
+			}
 			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
 		}
@@ -1710,7 +1710,7 @@ focus_tree = {
 			swap_ideas = {
 			    add_idea = indoctrination_focus_2_the_rule
 			    remove_idea = indoctrination_focus
-			}    
+			}
 		}
 	}
 
@@ -1799,15 +1799,15 @@ focus_tree = {
 		id = why_we_fight
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = foreign_expeditions focus = generic_national_unity }
-		available = { 
-			OR = { 
-				threat > 0.75 
-				has_defensive_war = yes 
+		available = {
+			OR = {
+				threat > 0.75
+				has_defensive_war = yes
 			}
 		}
 
 		continue_if_invalid = yes
-		
+
 		x = -4
 		y = 1
 		relative_position_id = foreign_expeditions
@@ -1822,7 +1822,7 @@ focus_tree = {
 				if = {
 					limit = { NOT = { has_idea = neutrality_idea } }
 					set_rule = { can_create_factions = yes }
-				}			
+				}
 			}
 		}
 	}
@@ -1919,7 +1919,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = generic_civil_factory_idea
-		}	
+		}
 	}
 
 	focus = {
@@ -1937,7 +1937,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = generic_war_industries_idea
-		}	
+		}
 	}
 
 	focus = {
@@ -1991,7 +1991,7 @@ focus_tree = {
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
-			}			
+			}
 			add_ideas = militarism_focus
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
@@ -2013,7 +2013,7 @@ focus_tree = {
 			if = {
 				limit = { has_idea = neutrality_idea }
 				remove_ideas = neutrality_idea
-			}		
+			}
 			add_political_power = 200
 			add_ideas = idea_political_correctness
 		}
@@ -2033,7 +2033,7 @@ focus_tree = {
 					num_of_factories > 50
 				}
 			}
-		}		
+		}
 		x = 6
 		y = 1
 		relative_position_id = ideological_fanaticism
@@ -2063,15 +2063,15 @@ focus_tree = {
 					bonus = 0.5
 					uses = 1
 					category = industry
-				}	
+				}
 				add_tech_bonus = {
 					name = infantry_artillery_bonus #@#
 					bonus = 0.5
 					uses = 1
 					category = infantry_weapons
 					category = artillery
-				}				
-			}			
+				}
+			}
 		}
 	}
 
@@ -2100,7 +2100,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
-	}	
+	}
 
 	focus = {
 		id = generic_army_effort
@@ -2456,13 +2456,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 0.5
 				uses = 1
 				category = air_doctrine
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -2793,7 +2793,7 @@ focus_tree = {
 						type = air_base
 						level = 2
 						instant_build = yes
-					}				
+					}
 					ROOT = { set_country_flag = aviation_effort_2_AB }
 				}
 			}
@@ -2908,7 +2908,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
 			if = {
@@ -3004,7 +3004,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}			
+			}
 		}
 	}
 
