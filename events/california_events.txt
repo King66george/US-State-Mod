@@ -10,7 +10,7 @@ country_event = {
 
     option = {
 		name = california.1.a
-		ai_chance = { factor = 65}
+		ai_chance = { factor = 30}
 
       create_country_leader = {
         name = "Clement C. Young"
@@ -41,7 +41,7 @@ country_event = {
 
     option = {
 		name = california.1.b
-		ai_chance = { factor = 30}
+		ai_chance = { factor = 65}
 		add_political_power = 75
 		add_stability = 0.05
 
