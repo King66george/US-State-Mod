@@ -1865,7 +1865,7 @@ Westsylvania = {
 		}
 
 		complete_effect = {
-			set_cosmetic_tag = WES
+			set_cosmetic_tag = WVP
 			set_capital = 877
 			add_stability = 0.20
 			custom_effect_tooltip = core_land
@@ -1951,6 +1951,7 @@ Land_of_the_Nahuatl = {
 				original_tag = OAX
 				original_tag = TAU 
 				original_tag = COA
+				original_tag = OME
 			}
 		}
 

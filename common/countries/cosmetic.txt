@@ -111,7 +111,7 @@ AZL = {
 	color_ui = rgb { 255 0 0 }
 }
 
-WES = {
+WVP = {
 	color = rgb { 140 200 120 }
 	color_ui = rgb { 200 255 200 }
 }
