@@ -6,14 +6,13 @@ state={
 	}
 
 	history={ 1936.1.3 = {owner = OAX controller = OAX  }
-		owner = MEX
+		owner = OAX
 		buildings = {
 			infrastructure = 3
 			air_base = 2
 
 		}
 		add_core_of = OAX
-		add_core_of = MEX
 
 
 	}

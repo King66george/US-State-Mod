@@ -3,7 +3,7 @@ state={
 	name="Hermosillo"
 
 	history={ 1936.1.3 = {owner = SON controller = SON  }
-		owner = MEX
+		owner = SON
 		buildings = {
 			infrastructure = 6
 			4908 = {
@@ -13,7 +13,6 @@ state={
 
 		}
 		add_core_of = SON
-		add_core_of = MEX
 		victory_points = {
 			10765 5 
 		}

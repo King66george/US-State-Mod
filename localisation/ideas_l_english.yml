@@ -232,7 +232,7 @@
  chuichi_nagumo:0 "Chuichi Nagumo"
  douglas_macarthur:0 "Douglas MacArthur"
  george_marshall:0 "George Marshall"
- dwight_eisenhower:0 "Dwight D. Eisenhower"
+ dwight_eisenhower2:0 "Dwight D. Eisenhower"
  courtney_hodges:0 "Courtney Hodges"
  joseph_stilwell:0 "Joseph Stilwell"
  mark_clark:0 "Mark W. Clark"
@@ -2691,6 +2691,8 @@
  CAC_amilitarypowerhouse:0 "The Pacific States Armed Forces"
  CAC_psanavy:0 "The Navy Of The Pacific States Of America"
  CAC_airforceofthepsa:0 "The Airforce Of The Pacific States Of America"
+ generic_neu_wargoal:0 "For God and the Fatherland"
+ generic_neu_wargoal_desc:0 "We must secure our intrests quickly before the inevitable Second World War."
  ########################################Political Advisors###########################################
  robert_bobbit:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"
