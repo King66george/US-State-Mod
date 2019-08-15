@@ -2112,5 +2112,9 @@ spriteTypes = {
 		name = "GFX_report_event_police_join.dds"
 		texturefile = "gfx/event_pictures/report_event_police_join.dds"
 	}
+	spritetype = {
+		name = "GFX_event_kentucky_flood.dds"
+		texturefile = "gfx/event_pictures/event_kentucky_flood.dds"
+	}
 
 }

@@ -109,7 +109,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.4
 
 set_politics = {
 
@@ -122,9 +122,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 55
+	communism = 15
+	fascism = 30
 }
 create_country_leader = {
 	name = "Keen Johnson"
@@ -136,7 +136,7 @@ create_country_leader = {
 	}
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.4
 
 	set_politics = {
 
@@ -147,9 +147,9 @@ create_country_leader = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 55
+	communism = 15
+	fascism = 30
 }
 ### Ship Variants ###
 

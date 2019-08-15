@@ -1,0 +1,27 @@
+﻿add_namespace = kentucky
+
+country_event = {
+  id = kentucky.1
+  title = kentucky.1.t
+  desc = kentucky.1.d
+  picture = GFX_event_kentucky_flood.dds
+
+  is_triggered_only = no
+	fire_only_once = yes
+
+  trigger = {
+    tag = KYK
+    date > 1937.1.18
+  }
+
+  option = {
+    name = kentucky.1.a
+
+    add_stability = -0.10
+
+    damage_building = {
+      type = industrial_complex
+      damage = 1
+    }
+  }
+}

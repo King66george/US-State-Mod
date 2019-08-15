@@ -191,16 +191,16 @@
  KSK_democratic_ADJ:0 "Kansan"
  KSK_neutrality_ADJ:0 "Kansan"
  KSK_communism_ADJ:0 "Kansan"
- KYK_fascism:0 "Kentuckyian Empire"
- KYK_fascism_DEF:0 "The Kentuckyian Empire"
- KYK_democratic:0 "Commonwealth of Kentucky"
- KYK_democratic_DEF:0 "The Commonwealth of Kentucky"
+ KYK_fascism:0 "Bluegrass Empire"
+ KYK_fascism_DEF:0 "The Bluegrassian Empire"
+ KYK_democratic:0 "Bluegrass State"
+ KYK_democratic_DEF:0 "The Bluegrass State"
  KYK_neutrality:0 "Kentucky"
  KYK_neutrality_DEF:0 "Kentucky"
  KYK_communism:0 "Socialist Republic of Kentucky"
  KYK_communism_DEF:0 "The Socialist Republic of Kentucky"
- KYK_fascism_ADJ:0 "Kentuckyian"
- KYK_democratic_ADJ:0 "Kentuckyian"
+ KYK_fascism_ADJ:0 "Bluegrassian"
+ KYK_democratic_ADJ:0 "Bluegrassian"
  KYK_neutrality_ADJ:0 "Kentuckyian"
  KYK_communism_ADJ:0 "Kentuckyian"
  LAL_fascism:0 "Cajun Legion"
@@ -968,7 +968,7 @@
  PCP_neutrality_ADJ:0 "Panama Canal"
  PCP_communism_ADJ:0 "Panama Canal"
 
- 
+
 
 #cont secession
 
