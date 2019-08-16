@@ -1,0 +1,1587 @@
+focus_tree = {
+	id = north_carolina_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NCN
+		}
+	}
+	default = no
+	focus = {
+		id = NCN_FOCUS_1
+		icon = GFX_goal_generic_construction2
+		cost = 1.43
+		x = 3
+		y = 0
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_2
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		cost = 10.00
+		x = 19
+		y = 0
+			completion_reward = {
+					add_political_power = 200
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_4
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		x = 32
+		y = 0
+			completion_reward = {
+					add_manpower = 25000
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_5
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		x = 40
+		y = 1
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_building_construction = {
+									type = air_base
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		x = 40
+		y = 0
+			completion_reward = {
+					874 = {
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ncnbike_effort
+		text = "Bikes! -Tom Segura"
+		icon = GFX_goal_generic_build_tank
+		cost = 2.00
+		x = 9
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					set_technology = {
+							bicycle_infantry = 1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_6
+		icon = GFX_goal_generic_production
+		cost = 7.14
+		prerequisite = {
+			focus = NCN_FOCUS_1
+		}
+		x = 2
+		y = 1
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_7
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_6
+		}
+		x = 2
+		y = 2
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_8
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_1
+		}
+		x = 4
+		y = 1
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_9
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_8
+		}
+		x = 4
+		y = 2
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ncntung_add
+		text = "Tungsten"
+		icon = GFX_focus_generic_tungsten
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_7
+		}
+		prerequisite = {
+			focus = NCN_FOCUS_9
+		}
+		mutually_exclusive = {
+			focus = ncnchr_add
+			focus = ncnsteel_add
+		}
+		x = 1
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_resource = {
+									type = tungsten
+									amount = 8
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ncnchr_add
+		text = "Chromium"
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_9
+		}
+		prerequisite = {
+			focus = NCN_FOCUS_7
+		}
+		mutually_exclusive = {
+			focus = ncntung_add
+			focus = ncnsteel_add
+		}
+		x = 3
+		y = 3
+			available_if_capitulated = no
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 43 }
+							limit = {
+									ROOT = {
+											has_full_control_of_state = PREV
+										}
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_resource = {
+									type = chromium
+									amount = 8
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ncnsteel_add
+		text = "Steel"
+		icon = GFX_focus_generic_steel
+		cost = 15.00
+		prerequisite = {
+			focus = NCN_FOCUS_9
+		}
+		prerequisite = {
+			focus = NCN_FOCUS_7
+		}
+		mutually_exclusive = {
+			focus = ncnchr_add
+			focus = ncntung_add
+		}
+		x = 5
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_resource = {
+									type = steel
+									amount = 12
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_10
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = ncnsteel_add
+			focus = ncnchr_add
+			focus = ncntung_add
+		}
+		x = 4
+		y = 4
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = ncnref_add
+		text = "OIL!"
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = ncnchr_add
+			focus = ncntung_add
+			focus = ncnsteel_add
+		}
+		x = 2
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_36
+		icon = GFX_goal_continuous_research
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_10
+		}
+		x = 4
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_11
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_2
+		}
+		mutually_exclusive = {
+			focus = NCN_FOCUS_17
+		}
+		x = 15
+		y = 1
+			completion_reward = {
+					add_ideas = { democratic_influence }
+				}
+
+	}
+	focus = {
+		id = ncninterventionism_focus
+		text = "Raleigh Democracy"
+		icon = GFX_goal_support_democracy
+		cost = 7.00
+		prerequisite = {
+			focus = NCN_FOCUS_11
+		}
+		mutually_exclusive = {
+			focus = ncnneutrality_focus
+		}
+		x = 14
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+					set_rule = {
+							can_send_volunteers = yes
+						}
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = ncvolunteer_corps
+		text = "To Ft. Bragg"
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = ncninterventionism_focus
+		}
+		x = 14
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = volunteer_corps_focus
+					add_war_support = 0.05
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_14
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = ncvolunteer_corps
+		}
+		x = 13
+		y = 5
+			completion_reward = {
+					create_faction = vav_ncn_pact
+					VAV = {
+							country_event = {
+									days = 1
+									id = SOVcustomevent.69
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_15
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_14
+		}
+		x = 12
+		y = 6
+			completion_reward = {
+					GAG = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_12
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_14
+		}
+		x = 14
+		y = 8
+			completion_reward = {
+					add_stability = .20
+				}
+
+	}
+	focus = {
+		id = ncnneutrality_focus
+		text = "Move to Charlotte"
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 7.00
+		prerequisite = {
+			focus = NCN_FOCUS_11
+		}
+		mutually_exclusive = {
+			focus = ncninterventionism_focus
+		}
+		x = 16
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0
+							tag = AUS
+						}
+				}
+			completion_reward = {
+					if = {
+							limit = {
+									NOT = {
+											has_idea = neutrality_idea
+										}
+								}
+							add_ideas = neutrality_idea
+						}
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = ncdeterrence
+		text = "Deter Aggressors"
+		icon = GFX_goal_generic_defence
+		cost = 5.00
+		prerequisite = {
+			focus = ncnneutrality_focus
+		}
+		x = 16
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = deterrence
+				}
+
+	}
+	focus = {
+		id = ncforeign_expeditions
+		text = "Expeditionaries"
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5.00
+		prerequisite = {
+			focus = ncvolunteer_corps
+			focus = ncdeterrence
+		}
+		x = 15
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = foreign_expeditions_focus
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_16
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = ncdeterrence
+		}
+		x = 17
+		y = 5
+			completion_reward = {
+					add_stability = .2
+					add_popularity = {
+							ideology = fascism
+							popularity = -0.15
+						}
+					add_popularity = {
+							ideology = communism
+							popularity = -0.15
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_17
+		icon = GFX_goal_continuous_suppression
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_2
+		}
+		mutually_exclusive = {
+			focus = NCN_FOCUS_11
+		}
+		x = 23
+		y = 1
+			completion_reward = {
+					add_stability = -.2
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_18
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = NCN_FOCUS_17
+		}
+		x = 21
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 7
+					modifier = {
+							factor = 3
+							any_neighbor_country = {
+									is_major = yes
+									has_government = fascism
+								}
+						}
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = nationalism
+							days = 720
+						}
+					set_politics = {
+							ruling_party = fascism
+							elections_allowed = yes
+						}
+					set_political_party = {
+							ideology = democratic
+							popularity = 1
+						}
+					set_political_party = {
+							ideology = communism
+							popularity = 0
+						}
+					set_political_party = {
+							ideology = fascism
+							popularity = 99
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_22
+		icon = GFX_goal_support_communism
+		cost = 5.00
+		prerequisite = {
+			focus = NCN_FOCUS_17
+		}
+		x = 25
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 6
+					modifier = {
+							factor = 2
+							any_neighbor_country = {
+									is_major = yes
+									has_government = communism
+								}
+						}
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = internationalism
+							days = 720
+						}
+					set_politics = {
+							ruling_party = communism
+							elections_allowed = yes
+						}
+					set_political_party = {
+							ideology = democratic
+							popularity = 1
+						}
+					set_political_party = {
+							ideology = communism
+							popularity = 98
+						}
+					set_political_party = {
+							ideology = fascism
+							popularity = 1
+						}
+				}
+
+	}
+	focus = {
+		id = ncmilitarism
+		text = "Militarism"
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_18
+			focus = NCN_FOCUS_22
+		}
+		x = 21
+		y = 3
+			available = {
+
+}
+			available_if_capitulated = yes
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+					add_ideas = militarism_focus
+					army_experience = 25
+					set_rule = {
+							can_send_volunteers = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ncmil_culture
+		text = "Cadets"
+		icon = GFX_focus_generic_military_mission
+		cost = 7.00
+		prerequisite = {
+			focus = ncmilitarism
+		}
+		x = 21
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_war_support = 0.15
+				}
+
+	}
+	focus = {
+		id = ncprep_struggle
+		text = "Struggle No More"
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = ncmil_culture
+		}
+		x = 21
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = FRA_army_of_aggression_focus
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_39
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = ncprep_struggle
+		}
+		x = 20
+		y = 8
+			completion_reward = {
+					ALA = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_42
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = ncprep_struggle
+		}
+		x = 22
+		y = 8
+			completion_reward = {
+					TNT = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_19
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_42
+		}
+		x = 22
+		y = 9
+			completion_reward = {
+					SCS = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = ncpolitical_correctness
+		text = "PC Culture"
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 7.00
+		prerequisite = {
+			focus = NCN_FOCUS_22
+			focus = NCN_FOCUS_18
+		}
+		x = 25
+		y = 3
+			available = {
+
+}
+			available_if_capitulated = yes
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+					add_political_power = 200
+					add_ideas = idea_political_correctness
+				}
+
+	}
+	focus = {
+		id = ncindoctrination_focus
+		text = "Carolina Youth"
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = ncpolitical_correctness
+			focus = ncmilitarism
+		}
+		x = 23
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = indoctrination_focus
+					add_ideas = military_youth_focus
+				}
+
+	}
+	focus = {
+		id = ncpolitical_commissars
+		text = "Communist Supporters"
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = ncpolitical_correctness
+		}
+		x = 25
+		y = 5
+			available = {
+
+}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = political_commissars_focus
+					if = {
+							limit = {
+									has_government = fascism
+								}
+							add_popularity = {
+									ideology = fascism
+									popularity = 0.2
+								}
+						}
+					if = {
+							limit = {
+									has_government = communism
+								}
+							add_popularity = {
+									ideology = communism
+									popularity = 0.2
+								}
+						}
+					add_political_power = 200
+				}
+
+	}
+	focus = {
+		id = nccom_militarism
+		text = "Communist Militias"
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = ncpolitical_commissars
+		}
+		x = 25
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = YUG_idea_local_militias
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_23
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = nccom_militarism
+		}
+		x = 25
+		y = 8
+			completion_reward = {
+					TNT = {
+							country_event = disunitedstates.1
+						}
+					SCS = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = ncmonarchy_ethos
+		text = "Monarchy for Carolina"
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5.00
+		prerequisite = {
+			focus = NCN_FOCUS_17
+		}
+		x = 28
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 8
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = neutrality_influence
+							days = 720
+						}
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = yes
+						}
+					set_political_party = {
+							ideology = democratic
+							popularity = 6
+						}
+					set_political_party = {
+							ideology = communism
+							popularity = 10
+						}
+					set_political_party = {
+							ideology = fascism
+							popularity = 10
+						}
+					set_political_party = {
+							ideology = neutrality
+							popularity = 74
+						}
+				}
+
+	}
+	focus = {
+		id = ncempower_king
+		text = "For The King!"
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 7.00
+		prerequisite = {
+			focus = ncmonarchy_ethos
+		}
+		x = 28
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.15
+						}
+					add_stability = 0.05
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = ncenforce_king
+		text = "Live For The King"
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = ncempower_king
+		}
+		x = 28
+		y = 4
+			available = {
+					OR = {
+							threat > 0.10
+						}
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.05
+						}
+					set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+				}
+
+	}
+	focus = {
+		id = ncneu_militarism
+		text = "King's Forces"
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = ncenforce_king
+		}
+		x = 27
+		y = 5
+			available = {
+					OR = {
+							threat > 0.15
+						}
+				}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.10
+					add_ideas = militarism_focus
+					army_experience = 25
+				}
+
+	}
+	focus = {
+		id = ncking_and_country
+		text = "For King And Country"
+		icon = GFX_focus_eng_god_save_the_king
+		cost = 10.00
+		prerequisite = {
+			focus = ncenforce_king
+		}
+		x = 28
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					add_war_support = 0.10
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+					add_ideas = militarism_focus
+					army_experience = 25
+					set_rule = {
+							can_send_volunteers = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ncgod_given_ruler
+		text = "Preserve The Bloodline"
+		icon = GFX_focus_generic_self_management
+		cost = 2.00
+		prerequisite = {
+			focus = ncenforce_king
+		}
+		x = 29
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.10
+							add_war_support = 0.05
+							add_stability = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = ncgod_father
+		text = "God's Chosen Family"
+		icon = GFX_goal_generic_major_war
+		cost = 5.00
+		prerequisite = {
+			focus = ncgod_given_ruler
+		}
+		x = 29
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 50
+					add_ideas = generic_neu_wargoal
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_24
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_4
+		}
+		x = 31
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_25
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_24
+		}
+		mutually_exclusive = {
+			focus = NCN_FOCUS_28
+		}
+		x = 31
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 2
+							category = para_tech
+							category = recon_tech
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_26
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_25
+		}
+		x = 31
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 2
+							category = para_tech
+							category = recon_tech
+							category = cat_light_armor
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_27
+		icon = GFX_focus_generic_rubber
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_4
+		}
+		x = 33
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 2
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_28
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_27
+		}
+		mutually_exclusive = {
+			focus = NCN_FOCUS_25
+		}
+		x = 33
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 3
+							category = motorized_equipment
+							category = cat_heavy_armor
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_29
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_28
+		}
+		x = 33
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_34
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_3
+		}
+		x = 37
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_35
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_34
+		}
+		x = 35
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_30
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_5
+		}
+		x = 38
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_31
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_5
+		}
+		x = 42
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = tactical_bomber
+							category = cat_heavy_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_32
+		icon = GFX_focus_chi_flying_tigers
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_30
+			focus = NCN_FOCUS_31
+		}
+		x = 40
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_33
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_32
+		}
+		x = 40
+		y = 4
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = jet_technology
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_40
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_3
+		}
+		x = 43
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = cl_tech
+						}
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.1
+							uses = 2
+							category = bc_tech
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_13
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = ncdem_militarism
+		}
+		x = 15
+		y = 6
+			completion_reward = {
+					SCS = {
+							country_event = disunitedstates.1
+						}
+					TNT = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_38
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_15
+		}
+		x = 12
+		y = 7
+			completion_reward = {
+					ALA = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_20
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_23
+			focus = NCN_FOCUS_19
+			focus = NCN_FOCUS_21
+		}
+		x = 24
+		y = 10
+			completion_reward = {
+					create_wargoal = {
+							target = VAV
+							type = puppet_wargoal_focus
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_21
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10.00
+		prerequisite = {
+			focus = ncaristocrat_generals
+		}
+		prerequisite = {
+			focus = ncgod_father
+		}
+		x = 27
+		y = 8
+			completion_reward = {
+					GAG = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_37
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_36
+		}
+		prerequisite = {
+			focus = ncnbalanced_budget
+		}
+		x = 3
+		y = 6
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_41
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_40
+		}
+		x = 45
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.15
+							uses = 2
+							category = bc_tech
+						}
+					add_tech_bonus = {
+							name = assembly_bonus
+							bonus = 0.25
+							uses = 2
+							category = bb_tech
+						}
+				}
+	}
+
+
+	focus = {
+		id = ncdem_militarism
+		text = "Democratic Armies"
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = ncforeign_expeditions
+		}
+		x = 15
+		y = 5
+			available = {
+					OR = {
+							threat > 0.10
+						}
+				}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+					add_ideas = militarism_focus
+					army_experience = 25
+				}
+
+	}
+	focus = {
+		id = ncwhy_we_fight
+		text = "Why We Fight On"
+		icon = GFX_goal_generic_propaganda
+		cost = 7.00
+		prerequisite = {
+			focus = NCN_FOCUS_13
+		}
+		x = 15
+		y = 9
+			available = {
+					OR = {
+							threat > 0.25
+						}
+				}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = why_we_fight_focus
+					custom_effect_tooltip = why_we_fight_effect
+					hidden_effect = {
+							if = {
+									limit = {
+											NOT = {
+													has_idea = neutrality_idea
+												}
+										}
+									set_rule = {
+											can_create_factions = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = ncaristocrat_generals
+		text = "King's Court"
+		icon = GFX_focus_eng_the_kings_party
+		cost = 10.00
+		prerequisite = {
+			focus = ncneu_militarism
+		}
+		x = 27
+		y = 7
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CZE_war_college_idea
+				}
+
+	}
+	focus = {
+		id = ncideological_fanaticism
+		text = "Fanatics"
+		icon = GFX_goal_generic_demand_territory
+		cost = 7.00
+		prerequisite = {
+			focus = NCN_FOCUS_20
+		}
+		x = 24
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = ideological_fanaticism_focus
+					set_rule = {
+							can_create_factions = yes
+						}
+					hidden_effect = {
+							set_rule = {
+									can_use_kamikaze_pilots = yes
+								}
+						}
+					custom_effect_tooltip = kamikaze_focus_tooltip
+				}
+
+	}
+	focus = {
+		id = ncnbalanced_budget
+		text = "National Bank"
+		icon = GFX_focus_mex_privatisation
+		cost = 5.00
+		prerequisite = {
+			focus = ncnref_add
+		}
+		x = 2
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = YUG_idea_foreign_capital
+				}
+
+	}
+	focus = {
+		id = ncpolitical_end
+		text = "To The Future"
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		cost = 2.00
+		prerequisite = {
+			focus = ncwhy_we_fight
+			focus = ncideological_fanaticism
+		}
+		x = 20
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 200
+					add_war_support = 0.05
+					add_stability = 0.05
+				}
+
+	}
+}
