@@ -34,7 +34,6 @@ set_technology = {
 	superior_firepower = 1
 	base_strike = 1
 }
-
 1939.1.1 = {
 
 	add_political_power = 1199
