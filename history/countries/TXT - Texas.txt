@@ -163,7 +163,7 @@ create_field_marshal = {
 }
 create_navy_leader = {
 	name = "Chester W. Nimitz"
-	picture = "Portrait_TXT_Chester_W_Nimitz.dds"
+	picture = "Portrait_TXT_Chester_Nimitz.dds"
 	traits = { navy_career_officer crisis_magician }
 	skill = 4
 	attack_skill = 4

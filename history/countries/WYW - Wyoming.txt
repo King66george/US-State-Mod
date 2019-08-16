@@ -151,6 +151,18 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+
+create_corps_commander = {
+	name = "Lloyd Fredendall"
+	picture = "Portrait_USA_Lloyd_Fredendall.dds"
+	traits = { old_guard infantry_officer inflexible_strategist }
+	skill = 2
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

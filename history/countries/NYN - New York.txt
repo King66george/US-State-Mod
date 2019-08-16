@@ -162,18 +162,27 @@ create_country_leader = {
 
 
 create_corps_commander = {
-				name = "Leonard Gerow"
-					picture = "Portrait_USA_Leonard_T_Gerow.dds"
-					traits = { infantry_officer }
-					skill = 3
-					id = 12121
-					attack_skill = 3
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 3
-					}
+	name = "Leonard Gerow"
+	picture = "Portrait_USA_Leonard_T_Gerow.dds"
+	traits = { infantry_officer }
+	skill = 3
+	id = 12121
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+	}
 
-
+create_corps_commander = {
+	name = "Geoffrey Keyes"
+	picture = "Portrait_NYN_Geoffrey_Keyes.dds"
+	traits = { armor_officer career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	}
 
 
 1939.1.1 = {

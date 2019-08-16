@@ -151,6 +151,28 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_corps_commander = {
+	name = "Walter Krueger"
+	picture = "Portrait_USA_Walter_Krueger.dds"
+	traits = { armor_officer career_officer brilliant_strategist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Harold Rainsford Stark"
+		picture = "Portrait_PAP_Harold_Stark.dds"
+	traits = { cuts_corners blockade_runner spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
 ### Ship Variants ###
 
 create_equipment_variant = {

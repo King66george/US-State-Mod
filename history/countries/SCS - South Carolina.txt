@@ -151,6 +151,18 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+
+create_corps_commander = {
+	name = "Mark Clark"
+	picture = "Portrait_USA_Mark_W_Clark.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 4
+
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

@@ -151,6 +151,17 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+
+create_corps_commander = {
+	name = "Jonathan Wainwright"
+	picture = "Portrait_WAW_Jonathan_M_Wainwright.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

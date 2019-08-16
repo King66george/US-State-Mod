@@ -155,6 +155,40 @@ set_autonomy = {
 	target = WDC
 	autonomous_state =  autonomy_puppet
 }
+
+create_corps_commander = {
+	name = "Russell Hartle"
+	picture = "Portrait_MDM_Russell_P_Hartle.dds"
+	traits = { infantry_officer }
+	skill = 1
+	rank = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Arleigh Burke"
+		picture = "Portrait_MDM_Arleigh_Burke.dds"
+	traits = { bold fleet_protector old_guard_navy superior_tactician }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Frank Jack Fletcher"
+		picture = "Portrait_MDM_Frank_Fletcher.dds"
+	traits = { gunnery_expert superior_tactician spotter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

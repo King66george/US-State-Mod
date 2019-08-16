@@ -135,6 +135,18 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_corps_commander = {
+	name = "Leslie McNair"
+	picture = "Portrait_MNM_Lesley_McNair.dds"
+	traits = {  old_guard career_officer armor_officer }
+	skill = 3
+
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
 1939.1.1 = {
 	set_stability = 0.9
 

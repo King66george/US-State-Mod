@@ -136,6 +136,17 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_corps_commander = {
+	name = "Joseph Stilwell"
+	picture = "Portrait_USA_Joseph_Stilwell.dds"
+	traits = { politically_connected infantry_officer career_officer harsh_leader }
+	skill = 1
+	id = 601
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 1939.1.1 = {
 	set_stability = 0.9
 

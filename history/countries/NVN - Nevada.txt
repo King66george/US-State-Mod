@@ -151,6 +151,16 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_corps_commander = {
+	name = "Oscar Griswold"
+	picture = "Portrait_USA_Oscar_Griswold.dds"
+	traits = { infantry_officer  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

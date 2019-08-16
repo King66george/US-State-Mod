@@ -147,6 +147,16 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_corps_commander = {
+	name = "J. Lawton Collins"
+	picture = "Portrait_LAL_Joseph_Collins.dds"
+	traits = {  trickster career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

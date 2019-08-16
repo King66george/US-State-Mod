@@ -135,6 +135,18 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_corps_commander = {
+	name = "Omar Bradley"
+	picture = "Portrait_MOM_Omar_Bradley.dds"
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 5
+
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
 1939.1.1 = {
 	set_stability = 0.9
 
