@@ -4,12 +4,6 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			factor = 0
-			date < 1939.1.1
-			OR = {
-					num_of_controlled_states < 2
-				}
-			
 		}
 	}
 	default = yes
@@ -296,26 +290,6 @@ focus_tree = {
 							bonus = 1.0
 							uses = 1
 							category = electronics
-						}
-				}
-
-	}
-	focus = {
-		id = tung_add
-		icon = GFX_focus_generic_tungsten
-		cost = 10.00
-		mutually_exclusive = {
-			focus = alu_add
-		}
-		x = 9
-		y = 3
-			available_if_capitulated = yes
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_resource = {
-									type = tungsten
-									amount = 8
-								}
 						}
 				}
 
@@ -643,6 +617,29 @@ focus_tree = {
 							bonus = 3.0
 							uses = 1
 							category = synth_resources
+						}
+				}
+
+	}
+	focus = {
+		id = tung_add
+		icon = GFX_focus_generic_tungsten
+		cost = 10.00
+		prerequisite = {
+			focus = begin_digging
+		}
+		mutually_exclusive = {
+			focus = alu_add
+		}
+		x = 9
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_resource = {
+									type = tungsten
+									amount = 8
+								}
 						}
 				}
 

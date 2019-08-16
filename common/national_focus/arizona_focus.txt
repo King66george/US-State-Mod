@@ -272,7 +272,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = aztung_add
 			focus = azchr_add
-			focus = aztung_add
 		}
 		x = 24
 		y = 0
@@ -293,7 +292,6 @@ focus_tree = {
 		icon = GFX_focus_generic_tungsten
 		cost = 10.00
 		mutually_exclusive = {
-			focus = azsteel_add
 			focus = azsteel_add
 		}
 		x = 22
@@ -1183,7 +1181,7 @@ focus_tree = {
 			focus = azpolitical_correctness
 		}
 		x = 14
-		y = 5
+		y = 4
 			available = {
 
 }
@@ -1221,7 +1219,7 @@ focus_tree = {
 			focus = azpolitical_commissars
 		}
 		x = 14
-		y = 6
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = YUG_idea_local_militias
@@ -1382,7 +1380,7 @@ focus_tree = {
 			focus = AZfocus_30
 		}
 		x = 19
-		y = 5
+		y = 4
 			ai_will_do = {
 					factor = 7
 				}
@@ -1469,7 +1467,7 @@ focus_tree = {
 			focus = azvolunteer_corps
 		}
 		x = 22
-		y = 5
+		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = foreign_expeditions_focus
@@ -1485,7 +1483,7 @@ focus_tree = {
 			focus = AZfocus_31
 		}
 		x = 20
-		y = 6
+		y = 5
 			ai_will_do = {
 					factor = 7
 				}
@@ -1511,7 +1509,7 @@ focus_tree = {
 			focus = azforeign_expeditions
 		}
 		x = 22
-		y = 7
+		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = deterrence
@@ -1526,7 +1524,7 @@ focus_tree = {
 			focus = AZfocus_32
 		}
 		x = 20
-		y = 8
+		y = 6
 			ai_will_do = {
 					factor = 10
 				}
@@ -1632,7 +1630,7 @@ focus_tree = {
 			focus = azenforce_king
 		}
 		x = 25
-		y = 7
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_war_support = 0.10
@@ -1661,7 +1659,7 @@ focus_tree = {
 			focus = azdeterrence
 		}
 		x = 23
-		y = 10
+		y = 7
 			available = {
 					OR = {
 							threat > 0.25
@@ -1696,7 +1694,7 @@ focus_tree = {
 			focus = azempower_king
 		}
 		x = 27
-		y = 6
+		y = 4
 			available = {
 					OR = {
 							threat > 0.15
@@ -1741,7 +1739,7 @@ focus_tree = {
 			focus = azgod_given_ruler
 		}
 		x = 29
-		y = 7
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 50
@@ -1760,7 +1758,7 @@ focus_tree = {
 			focus = azgod_father
 		}
 		x = 28
-		y = 8
+		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = CZE_war_college_idea
@@ -2246,7 +2244,7 @@ focus_tree = {
 			focus = azdem_militarism
 		}
 		x = 17
-		y = 6
+		y = 4
 			ai_will_do = {
 					factor = 7
 				}
@@ -2305,7 +2303,7 @@ focus_tree = {
 			focus = azpolitical_end
 		}
 		x = 18
-		y = 12
+		y = 11
 			ai_will_do = {
 					factor = 10
 				}
@@ -2335,7 +2333,7 @@ focus_tree = {
 			focus = azpolitical_end
 		}
 		x = 20
-		y = 12
+		y = 11
 			ai_will_do = {
 					factor = 10
 				}
@@ -2400,7 +2398,7 @@ focus_tree = {
 			focus = azcom_militarism
 		}
 		x = 14
-		y = 10
+		y = 9
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = ideological_fanaticism_focus
@@ -2498,7 +2496,7 @@ focus_tree = {
 			focus = azideological_fanaticism
 		}
 		x = 19
-		y = 11
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 200
