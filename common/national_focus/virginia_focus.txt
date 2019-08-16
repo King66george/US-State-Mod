@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 10
 			tag = VAV
 		}
 	}
@@ -495,6 +495,9 @@ focus_tree = {
 		prerequisite = {
 			focus = VAV_war
 		}
+		mutually_exclusive = {
+			focus = VAV_commie
+		}
 		x = 12
 		y = 2
 			available_if_capitulated = yes
@@ -634,6 +637,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = VAV_war
+		}
+		mutually_exclusive = {
+			focus = VAV_facist
 		}
 		x = 16
 		y = 2

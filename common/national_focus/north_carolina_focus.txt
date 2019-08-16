@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 10
 			tag = NCN
 		}
 	}
@@ -553,6 +553,10 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_17
 		}
+		mutually_exclusive = {
+			focus = NCN_FOCUS_22
+			focus = ncmonarchy_ethos
+		}
 		x = 21
 		y = 2
 			available_if_capitulated = yes
@@ -596,6 +600,11 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = NCN_FOCUS_17
+		}
+		mutually_exclusive = {
+			focus = NCN_FOCUS_18
+			focus = ncmonarchy_ethos
+			focus = ncmonarchy_ethos
 		}
 		x = 25
 		y = 2
@@ -869,6 +878,11 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = NCN_FOCUS_17
+		}
+		mutually_exclusive = {
+			focus = NCN_FOCUS_18
+			focus = NCN_FOCUS_22
+			focus = NCN_FOCUS_22
 		}
 		x = 28
 		y = 2

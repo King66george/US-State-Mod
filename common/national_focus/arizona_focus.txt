@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 10
 			tag = AZA
 		}
 	}
@@ -823,6 +823,9 @@ focus_tree = {
 		prerequisite = {
 			focus = AZfocus_0
 		}
+		mutually_exclusive = {
+			focus = azliberty_ethos
+		}
 		x = 12
 		y = 1
 			available_if_capitulated = yes
@@ -843,6 +846,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = azcollectivist_ethos
+		}
+		mutually_exclusive = {
+			focus = AZfocus_3
 		}
 		x = 10
 		y = 2
@@ -1097,6 +1103,9 @@ focus_tree = {
 		prerequisite = {
 			focus = azcollectivist_ethos
 		}
+		mutually_exclusive = {
+			focus = AZfocus_1
+		}
 		x = 14
 		y = 2
 			ai_will_do = {
@@ -1252,6 +1261,9 @@ focus_tree = {
 		prerequisite = {
 			focus = AZfocus_0
 		}
+		mutually_exclusive = {
+			focus = azcollectivist_ethos
+		}
 		x = 20
 		y = 1
 			available = {
@@ -1288,6 +1300,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = azliberty_ethos
+		}
+		mutually_exclusive = {
+			focus = azmonarchy_ethos
 		}
 		x = 18
 		y = 2
@@ -1405,6 +1420,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = azliberty_ethos
+		}
+		mutually_exclusive = {
+			focus = AZfocus_2
 		}
 		x = 27
 		y = 2
