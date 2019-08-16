@@ -1,0 +1,829 @@
+###New Jersey Focus Tree###
+###Do not edit###
+focus_tree = {
+    id = newjersey_focus
+    continuous_focus_position = { x = 20 y = 1700 }
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = NJN
+        }
+    }
+
+    ###Diplomacy Section###
+
+    focus = {
+        id = njdiplo1
+        icon = GFX_goal_generic_attack_allies
+        text = "Our Position"
+        x = 9
+        y = 0
+        cost = 10
+        completion_reward = {
+            add_political_power = 200
+        }
+    }
+
+#Done^
+
+    focus = {
+        id = njdiplo2.1
+        icon = GFX_focus_generic_strike_at_democracy1
+        text = "Strength"
+        x = 4
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = njdiplo1 }
+mutually_exclusive = { focus = njdiplo2.2 }
+completion_reward = {
+army_experience = 20
+add_war_support = 0.05
+reverse_add_opinion_modifier = { target = PAP modifier = Buildup }
+reverse_add_opinion_modifier = { target = NYN modifier = Buildup }
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo2.2
+icon = GFX_goal_tripartite_pact
+text = "Safety"
+x = 13
+y = 1
+cost = 10
+prerequisite = { focus = njdiplo1 }
+mutually_exclusive = { focus = njdiplo2.1 }
+completion_reward = {
+add_political_power = 100
+add_stability = 0.1
+reverse_add_opinion_modifier = { target = PAP modifier = Unimposing }
+reverse_add_opinion_modifier = { target = NYN modifier = Unimposing }
+reverse_add_opinion_modifier = { target = DED modifier = Friendly }
+reverse_add_opinion_modifier = { target = MDM modifier = Friendly }
+reverse_add_opinion_modifier = { target = WVW modifier = Friendly }
+reverse_add_opinion_modifier = { target = OHO modifier = Friendly }
+reverse_add_opinion_modifier = { target = CTC modifier = Friendly }
+reverse_add_opinion_modifier = { target = MAM modifier = Friendly }
+reverse_add_opinion_modifier = { target = VTV modifier = Friendly }
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo3.1
+icon = GFX_goal_generic_axis_build_infantry
+text = "The Army of New Jersey"
+x = 3
+y = 2
+cost = 10
+prerequisite = { focus = njdiplo2.1 }
+completion_reward = {
+army_experience = 10
+add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 producer = NJN}
+add_equipment_to_stockpile = { type = artillery_equipment amount = 1000 producer = NJN}
+add_equipment_to_stockpile = { type = support_equipment amount = 1000 producer = NJN}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo3.2
+icon = GFX_goal_generic_defence
+text = "The ODEC"
+x = 9
+y = 2
+cost = 10
+prerequisite = { focus = njdiplo2.2 }
+mutually_exclusive = {focus = njdiplo3.3}
+mutually_exclusive = {focus = njdiplo3.4}
+completion_reward = {
+create_faction = ODEC
+DED = {
+country_event = newjersey.3
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo3.3
+icon = GFX_focus_CZE_german_puppet
+text = "Follow Pennsylvania"
+x = 12
+y = 2
+cost = 10
+prerequisite = {focus = njdiplo2.2}
+mutually_exclusive = {focus = njdiplo3.2}
+mutually_exclusive = {focus = njdiplo3.4}
+completion_reward = {
+PAP = {
+country_event = newjersey.1
+}
+add_political_power = -100
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo3.4
+icon = GFX_focus_CZE_german_puppet
+text = "Follow New York"
+x = 14
+y = 2
+cost = 10
+prerequisite = {focus = njdiplo2.2}
+mutually_exclusive = {focus = njdiplo3.2}
+mutually_exclusive = {focus = njdiplo3.3}
+completion_reward = {
+NYN = {
+country_event = newjersey.1
+}
+add_political_power = -100
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo5.1
+icon = GFX_goal_generic_military_sphere
+text = "Introduce Conscription Laws"
+x = 3
+y = 4
+cost = 10
+prerequisite = {focus = njdiplo3.1}
+completion_reward = {
+add_ideas = extensive_conscription
+army_experience = -10
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo4.1
+icon = GFX_goal_generic_national_unity
+text = "Delawarean Ties"
+x = 8
+y = 3
+cost = 10
+prerequisite = {focus = njdiplo3.2}
+completion_reward = {
+country_event = newjersey.2
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo4.2
+icon = GFX_goal_generic_construction
+text = "Little Brother"
+x = 13
+y = 3
+cost = 10
+prerequisite = { focus = njdiplo3.3 focus = njdiplo3.4}
+completion_reward = {
+add_political_power = 100
+add_ideas = industrial_support
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo5.2
+icon = GFX_goal_generic_construct_military
+text = "Our Own Defense"
+x = 5
+y = 4
+cost = 10
+prerequisite = { focus = njdiplo3.1 focus = njdiplo3.2 }
+completion_reward = {
+ 992 = {
+  add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = {
+      all_provinces = yes
+      limit_to_border = yes
+    }
+        }
+}
+
+883 = {
+  add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = {
+      all_provinces = yes
+      limit_to_border = yes
+    }
+        }
+}
+
+359 = {
+  add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province = {
+      all_provinces = yes
+      limit_to_border = yes
+    }
+        }
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo5.3
+icon = GFX_goal_generic_improve_relations
+text = "Invite Maryland"
+x = 7
+y = 4
+cost = 10
+prerequisite = {focus = njdiplo4.1}
+completion_reward = {
+MDM = {
+country_event = newjersey.3
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo5.4
+icon = GFX_goal_generic_improve_relations
+text = "Invite Connecticut"
+x = 9
+y = 4
+cost = 10
+prerequisite = {focus = njdiplo4.1}
+completion_reward = {
+CTC = {
+country_event = newjersey.3
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo5.5
+icon = GFX_goal_generic_fortify_city
+text = "Look to the Coasts"
+x = 13
+y = 4
+cost = 10
+prerequisite = {focus = njdiplo4.2}
+completion_reward = {
+ 992 = {
+  add_building_construction = {
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+    province = {
+      all_provinces = yes
+    }
+        }
+}
+
+883 = {
+  add_building_construction = {
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+    province = {
+      all_provinces = yes
+    }
+        }
+}
+
+359 = {
+  add_building_construction = {
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+    province = {
+      all_provinces = yes
+    }
+        }
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo6.1
+icon = GFX_goal_generic_propaganda
+text = "War Propaganda"
+x = 3
+y = 5
+cost = 10
+prerequisite = {focus = njdiplo5.1}
+completion_reward = {
+add_war_support = 0.1
+country_event = newjersey.7
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo6.2
+icon = GFX_goal_generic_fortify_city
+text = "Protect Our Skies"
+x = 5
+y = 5
+cost = 10
+prerequisite = {focus = njdiplo5.2}
+completion_reward = {
+random_owned_controlled_state = {
+add_building_construction = {
+  type = anti_air_building
+  level = 3
+  instant_build = yes
+}
+}
+
+random_owned_controlled_state = {
+add_building_construction = {
+  type = anti_air_building
+  level = 3
+  instant_build = yes
+}
+}
+
+random_owned_controlled_state = {
+add_building_construction = {
+  type = anti_air_building
+  level = 3
+  instant_build = yes
+}
+}
+
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo6.3
+icon = GFX_goal_generic_position_armies
+text = "Envelop the Threats"
+x = 8
+y = 5
+cost = 10
+prerequisite = {focus = njdiplo5.3}
+prerequisite = {focus = njdiplo5.4}
+completion_reward = {
+WVW = {
+country_event = newjersey.3
+}
+OHO = {
+country_event = newjersey.3
+}
+MAM = {
+country_event = newjersey.3
+}
+VTV = {
+country_event = newjersey.3
+}
+reverse_add_opinion_modifier = { target = PAP modifier = Threatened }
+reverse_add_opinion_modifier = { target = NYN modifier = Threatened }
+}
+}
+
+#Done^
+
+focus = {
+id =  njdiplo6.4
+icon = GFX_goal_generic_scientific_exchange
+text = "Technological Expertise"
+x = 13
+y = 5
+cost = 10
+prerequisite = {focus = njdiplo5.5}
+completion_reward = {
+add_tech_bonus = {
+bonus = 0.5
+uses = 4
+category = industry}
+add_research_slot = 1
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo7.1
+icon = GFX_goal_generic_army_doctrines
+text = "Quality First"
+x = 3
+y = 6
+cost = 10
+prerequisite = {focus = njdiplo6.1}
+completion_reward = {
+add_ideas = quality_focus
+add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+        }
+        add_manpower = -5000
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo7.2
+icon = GFX_goal_tfv_generic_tech_sharing
+text = "Unified Research"
+x = 10
+y = 6
+cost = 10
+prerequisite = {focus = njdiplo6.3}
+completion_reward = {
+NJN = { add_to_tech_sharing_group = odec_research }
+every_other_country = {
+				limit = { is_in_faction_with = NJN }
+				add_to_tech_sharing_group = odec_research
+			}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo7.3
+icon = GFX_goal_generic_improve_relations
+text = "Big Brother"
+x = 13
+y = 6
+cost = 10
+prerequisite = {focus = njdiplo6.4}
+completion_reward = {
+add_autonomy_score =
+{
+value = 1000
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo8.1
+icon = GFX_goal_generic_occupy_states_ongoing_war
+text = "War Planning"
+x = 4
+y = 7
+cost = 10
+prerequisite = {focus = njdiplo7.1 focus = njdiplo6.3}
+completion_reward = {
+add_ideas = committee_on_war
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo8.2
+icon = GFX_goal_generic_production
+text = "Joint Industrial Development"
+x = 9
+y = 7
+cost = 10
+prerequisite = {focus = njdiplo7.2}
+completion_reward = {
+NJN = { random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+        } }
+every_other_country = {
+	limit = { is_in_faction_with = NJN }
+random_owned_controlled_state = {
+
+        limit = {
+          free_building_slots = {
+            building = industrial_complex
+            size > 3
+            include_locked = yes
+          }
+        }
+        add_extra_state_shared_building_slots = 4
+        add_building_construction = {
+          type = industrial_complex
+          level = 4
+          instant_build = yes
+        }
+        }
+}
+}
+}
+#Done^
+
+focus = {
+id = njdiplo8.3
+icon = GFX_goal_generic_navy_doctrines_tactics
+text = "Joint Naval Development"
+x = 11
+y = 7
+cost = 10
+prerequisite = {focus = njdiplo7.2}
+completion_reward = {
+add_tech_bonus = {
+				name = uk_waves_focus
+				bonus = 1.0
+				uses = 3
+        category = naval_doctrine}
+every_other_country = {
+				limit = { is_in_faction_with = NJN }
+        add_tech_bonus = {
+        				name = uk_waves_focus
+        				bonus = 1.0
+        				uses = 3
+                category = naval_doctrine}
+			}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo8.4
+icon = GFX_goal_generic_position_armies
+text = "Expansion Overseas"
+x = 13
+y = 7
+cost = 10
+prerequisite = {focus = njdiplo7.3}
+completion_reward = {
+create_wargoal = { type = annex_everything target = PRP }
+create_wargoal = { type = annex_everything target = UVU }
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo9.1
+icon = GFX_goal_generic_small_arms
+text = "Prepare Against Pennsylvania"
+x = 3
+y = 8
+cost = 5
+prerequisite = {focus = njdiplo8.1}
+completion_reward = {
+add_timed_idea = { idea = p_prep days = 180}
+army_experience = 20
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo9.2
+icon = GFX_goal_generic_small_arms
+text = "Prepare Against New York"
+x = 5
+y = 8
+cost = 5
+prerequisite = {focus = njdiplo8.1}
+completion_reward = {
+add_timed_idea = { idea = ny_prep days = 180}
+army_experience = 20
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo9.3
+icon = GFX_goal_generic_demand_territory
+text = "Closer Ties"
+x = 10
+y = 8
+cost = 10
+prerequisite = {focus = njdiplo8.2}
+prerequisite = {focus = njdiplo8.3}
+completion_reward = {
+reverse_add_opinion_modifier = { target = DED modifier = Close }
+reverse_add_opinion_modifier = { target = MDM modifier = Close }
+reverse_add_opinion_modifier = { target = WVW modifier = Close }
+reverse_add_opinion_modifier = { target = OHO modifier = Close }
+reverse_add_opinion_modifier = { target = CTC modifier = Close }
+reverse_add_opinion_modifier = { target = MAM modifier = Close }
+reverse_add_opinion_modifier = { target = VTV modifier = Close }
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo9.4
+icon = GFX_goal_generic_navy_battleship
+text = "Caribbean Dominance"
+x = 13
+y = 8
+cost = 10
+prerequisite = {focus = njdiplo8.4}
+completion_reward = {
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+        }
+        random_owned_controlled_state = {
+        				limit = {
+        					free_building_slots = {
+        						building = dockyard
+        						size > 2
+        						include_locked = yes
+        					}
+        				}
+        				add_extra_state_shared_building_slots = 3
+        				add_building_construction = {
+        					type = dockyard
+        					level = 3
+        					instant_build = yes
+        				}
+                }
+                random_owned_controlled_state = {
+                				limit = {
+                					free_building_slots = {
+                						building = dockyard
+                						size > 2
+                						include_locked = yes
+                					}
+                				}
+                				add_extra_state_shared_building_slots = 3
+                				add_building_construction = {
+                					type = dockyard
+                					level = 3
+                					instant_build = yes
+                				}
+                        }
+add_ideas = trade_dominance
+}
+}
+
+#Add all^
+
+focus = {
+id = njdiplo10.1
+icon = GFX_goal_generic_territory_or_war
+text = "The Western Threat"
+x = 3
+y = 9
+cost = 5
+prerequisite =  {focus = njdiplo9.1}
+completion_reward = {
+NJN = {
+declare_war_on = { type = annex_everything    target = PAP }
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo10.2
+icon = GFX_goal_generic_territory_or_war
+text = "The Northern Colossus"
+x = 5
+y = 9
+cost = 5
+prerequisite = {focus = njdiplo9.2}
+completion_reward = {
+NJN = {
+declare_war_on = { type = annex_everything    target = NYN }
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo10.3
+icon = GFX_goal_generic_dangerous_deal
+text = "Integration"
+x = 10
+y = 9
+cost = 20
+prerequisite = {focus = njdiplo9.3}
+completion_reward = {
+every_other_country = {
+				limit = { is_in_faction_with = NJN }
+country_event = newjersey.8
+}
+}
+}
+
+#Done^
+
+focus = {
+id = njdiplo11
+icon = GFX_focus_smiling_buddha
+text = "Triumph"
+x = 4
+y = 10
+cost = 10
+prerequisite = {focus = njdiplo10.1}
+prerequisite = {focus = njdiplo10.2}
+available = {
+Or = {
+				PAP = { has_capitulated = yes }
+        OR = {
+				PAP = { is_subject_of = NJN }
+        OR = {
+				NOT = {
+					any_country = {
+						original_tag = PAP
+						exists = yes
+					}
+				}
+        OR ={
+        NYN = { has_capitulated = yes }
+        OR = {
+        NYN = { is_subject_of = NJN }
+        OR = {
+        NOT = {
+          any_country = {
+            original_tag = NYN
+            exists = yes
+          }
+        }
+		}
+    }
+    }
+    }
+    }
+    }
+    }
+completion_reward = {
+country_event = newjersey.9
+}
+}
+#Add all^
+
+focus = {
+id = njdiplo12
+icon = GFX_focus_usa_recruit_the_free_corps
+text = "American Legacy"
+x = 7
+y = 11
+cost = 10
+prerequisite = {focus = njdiplo11 focus = njdiplo10.3}
+completion_reward = {
+every_owned_state = {
+    add_core_of = NJN
+  }
+}
+}
+
+#Add all^
+
+###
+###
+###
+
+###Start of Ideological Tree###
+}

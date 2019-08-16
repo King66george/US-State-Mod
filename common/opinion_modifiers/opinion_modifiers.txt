@@ -1,0 +1,52 @@
+###Do not edit create your own###
+opinion_modifiers = {
+Buildup = {
+value = -30
+months = 24
+}
+#
+Unimposing = {
+value = 10
+months = 6
+}
+#
+Friendly = {
+value = 40
+months = 24
+}
+#
+Trustworthy = {
+value = 50
+decay = 1
+}
+#
+Dishonest = {
+value = -80
+decay = 5
+}
+#
+Scorned = {
+Value = -60
+decay = 2
+}
+#
+Hateful = {
+value = -40
+decay = 1
+}
+#
+Rejection = {
+value = -80
+decay = 4
+}
+#
+Threatened = {
+value = -100
+decay = 1
+}
+#
+Close = {
+value = 100
+decay = 1
+}
+}
