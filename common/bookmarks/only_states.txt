@@ -88,6 +88,21 @@ bookmarks = {
 										}
 
 
+
+										"NJN"={
+											history = "USA_GATHERING_STORM_DESC"
+											ideology = democratic
+											ideas = {
+												home_of_the_free
+											}
+											focuses = {
+												njndiplo1.1
+											njndiplo1.2
+											njndiplo12
+											}
+												}
+
+
 										"FLF"={
 											history = "USA_GATHERING_STORM_DESC"
 											ideology = democratic
