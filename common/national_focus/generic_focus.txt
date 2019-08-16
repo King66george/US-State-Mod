@@ -4,18 +4,9 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = GXC
 			factor = 0
 			date < 1939.1.1
 			OR = {
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
 					num_of_controlled_states < 2
 				}
 			
@@ -2295,7 +2286,7 @@ focus_tree = {
 		prerequisite = {
 			focus = aviation_effort
 		}
-		x = 37
+		x = 36
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2525,7 +2516,7 @@ focus_tree = {
 		prerequisite = {
 			focus = cruiser_effort
 		}
-		x = 39
+		x = 38
 		y = 3
 			available_if_capitulated = yes
 			ai_will_do = {
