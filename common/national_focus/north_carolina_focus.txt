@@ -268,8 +268,8 @@ focus_tree = {
 			focus = NCN_FOCUS_7
 		}
 		mutually_exclusive = {
-			focus = ncnchr_add
 			focus = ncntung_add
+			focus = ncnchr_add
 		}
 		x = 5
 		y = 3
@@ -437,20 +437,6 @@ focus_tree = {
 					GAG = {
 							country_event = disunitedstates.1
 						}
-				}
-
-	}
-	focus = {
-		id = NCN_FOCUS_12
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = NCN_FOCUS_14
-		}
-		x = 14
-		y = 8
-			completion_reward = {
-					add_stability = .20
 				}
 
 	}
@@ -687,7 +673,7 @@ focus_tree = {
 			focus = ncmilitarism
 		}
 		x = 21
-		y = 5
+		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
 					add_war_support = 0.15
@@ -703,7 +689,7 @@ focus_tree = {
 			focus = ncmil_culture
 		}
 		x = 21
-		y = 7
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = FRA_army_of_aggression_focus
@@ -718,7 +704,7 @@ focus_tree = {
 			focus = ncprep_struggle
 		}
 		x = 20
-		y = 8
+		y = 6
 			completion_reward = {
 					ALA = {
 							country_event = disunitedstates.1
@@ -734,7 +720,7 @@ focus_tree = {
 			focus = ncprep_struggle
 		}
 		x = 22
-		y = 8
+		y = 6
 			completion_reward = {
 					TNT = {
 							country_event = disunitedstates.1
@@ -750,7 +736,7 @@ focus_tree = {
 			focus = NCN_FOCUS_42
 		}
 		x = 22
-		y = 9
+		y = 7
 			completion_reward = {
 					SCS = {
 							country_event = disunitedstates.1
@@ -812,7 +798,7 @@ focus_tree = {
 			focus = ncpolitical_correctness
 		}
 		x = 25
-		y = 5
+		y = 4
 			available = {
 
 }
@@ -850,7 +836,7 @@ focus_tree = {
 			focus = ncpolitical_commissars
 		}
 		x = 25
-		y = 7
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = YUG_idea_local_militias
@@ -865,7 +851,7 @@ focus_tree = {
 			focus = nccom_militarism
 		}
 		x = 25
-		y = 8
+		y = 6
 			completion_reward = {
 					TNT = {
 							country_event = disunitedstates.1
@@ -999,8 +985,8 @@ focus_tree = {
 		prerequisite = {
 			focus = ncenforce_king
 		}
-		x = 28
-		y = 6
+		x = 29
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_war_support = 0.10
@@ -1026,7 +1012,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncenforce_king
 		}
-		x = 29
+		x = 31
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1047,8 +1033,8 @@ focus_tree = {
 		prerequisite = {
 			focus = ncgod_given_ruler
 		}
-		x = 29
-		y = 7
+		x = 30
+		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 50
@@ -1324,6 +1310,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NCN_FOCUS_12
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_14
+		}
+		x = 13
+		y = 8
+			completion_reward = {
+					add_stability = .20
+				}
+
+	}
+	focus = {
 		id = NCN_FOCUS_13
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
@@ -1368,7 +1368,7 @@ focus_tree = {
 			focus = NCN_FOCUS_21
 		}
 		x = 24
-		y = 10
+		y = 8
 			completion_reward = {
 					create_wargoal = {
 							target = VAV
@@ -1388,7 +1388,7 @@ focus_tree = {
 			focus = ncgod_father
 		}
 		x = 27
-		y = 8
+		y = 7
 			completion_reward = {
 					GAG = {
 							country_event = disunitedstates.1
@@ -1441,9 +1441,8 @@ focus_tree = {
 							category = bb_tech
 						}
 				}
+
 	}
-
-
 	focus = {
 		id = ncdem_militarism
 		text = "Democratic Armies"
@@ -1517,7 +1516,7 @@ focus_tree = {
 			focus = ncneu_militarism
 		}
 		x = 27
-		y = 7
+		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = CZE_war_college_idea
@@ -1533,7 +1532,7 @@ focus_tree = {
 			focus = NCN_FOCUS_20
 		}
 		x = 24
-		y = 11
+		y = 9
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = ideological_fanaticism_focus
@@ -1575,7 +1574,7 @@ focus_tree = {
 			focus = ncideological_fanaticism
 		}
 		x = 20
-		y = 12
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 200

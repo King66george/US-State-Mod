@@ -4,6 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
+			
 		}
 	}
 	default = yes
@@ -29,7 +30,7 @@ focus_tree = {
 		id = aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
-		x = 35
+		x = 37
 		y = 2
 			available_if_capitulated = yes
 			complete_tooltip = {
@@ -114,7 +115,7 @@ focus_tree = {
 		id = naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
-		x = 35
+		x = 37
 		y = 0
 			available_if_capitulated = yes
 			available = {
@@ -1565,7 +1566,7 @@ focus_tree = {
 			focus = mil_culture
 		}
 		x = 20
-		y = 7
+		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = FRA_army_of_aggression_focus
@@ -1722,7 +1723,7 @@ focus_tree = {
 			focus = prep_struggle
 		}
 		x = 22
-		y = 8
+		y = 7
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = ideological_fanaticism_focus
@@ -1832,7 +1833,7 @@ focus_tree = {
 		prerequisite = {
 			focus = volunteer_corps
 		}
-		x = 25
+		x = 24
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1847,7 +1848,7 @@ focus_tree = {
 		prerequisite = {
 			focus = foreign_expeditions
 		}
-		x = 25
+		x = 24
 		y = 5
 			available = {
 					OR = {
@@ -1927,7 +1928,7 @@ focus_tree = {
 			focus = collectivist_ethos
 			focus = liberty_ethos
 		}
-		x = 28
+		x = 29
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1968,7 +1969,7 @@ focus_tree = {
 		prerequisite = {
 			focus = monarchy_ethos
 		}
-		x = 28
+		x = 29
 		y = 2
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1988,7 +1989,7 @@ focus_tree = {
 		prerequisite = {
 			focus = empower_king
 		}
-		x = 28
+		x = 29
 		y = 3
 			available = {
 					OR = {
@@ -2074,8 +2075,8 @@ focus_tree = {
 		prerequisite = {
 			focus = enforce_king
 		}
-		x = 28
-		y = 5
+		x = 29
+		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
 					add_war_support = 0.10
@@ -2094,28 +2095,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = aristocrat_generals
-		icon = GFX_focus_eng_the_kings_party
-		cost = 10.00
-		prerequisite = {
-			focus = king_and_country
-		}
-		x = 28
-		y = 7
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = CZE_war_college_idea
-				}
-
-	}
-	focus = {
 		id = god_given_ruler
 		icon = GFX_focus_generic_self_management
 		cost = 2.00
 		prerequisite = {
 			focus = enforce_king
 		}
-		x = 29
+		x = 31
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2135,12 +2121,30 @@ focus_tree = {
 		prerequisite = {
 			focus = god_given_ruler
 		}
-		x = 29
-		y = 6
+		x = 31
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 50
 					add_ideas = generic_neu_wargoal
+				}
+
+	}
+	focus = {
+		id = aristocrat_generals
+		icon = GFX_focus_eng_the_kings_party
+		cost = 10.00
+		prerequisite = {
+			focus = king_and_country
+		}
+		prerequisite = {
+			focus = god_father
+		}
+		x = 29
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = CZE_war_college_idea
 				}
 
 	}
@@ -2154,7 +2158,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = large_navy
 		}
-		x = 33
+		x = 35
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2191,7 +2195,7 @@ focus_tree = {
 		prerequisite = {
 			focus = flexible_navy
 		}
-		x = 32
+		x = 34
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2224,7 +2228,7 @@ focus_tree = {
 		prerequisite = {
 			focus = submarine_effort
 		}
-		x = 32
+		x = 34
 		y = 3
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2257,7 +2261,7 @@ focus_tree = {
 		prerequisite = {
 			focus = aviation_effort
 		}
-		x = 34
+		x = 36
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2283,7 +2287,7 @@ focus_tree = {
 		prerequisite = {
 			focus = aviation_effort
 		}
-		x = 36
+		x = 38
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2307,7 +2311,7 @@ focus_tree = {
 			focus = bomber_focus
 			focus = fighter_focus
 		}
-		x = 34
+		x = 36
 		y = 4
 			available_if_capitulated = yes
 			complete_tooltip = {
@@ -2401,7 +2405,7 @@ focus_tree = {
 		prerequisite = {
 			focus = aviation_effort_2
 		}
-		x = 34
+		x = 36
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2422,7 +2426,7 @@ focus_tree = {
 		prerequisite = {
 			focus = bomber_focus
 		}
-		x = 36
+		x = 38
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2446,7 +2450,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = flexible_navy
 		}
-		x = 37
+		x = 39
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2479,7 +2483,7 @@ focus_tree = {
 		prerequisite = {
 			focus = large_navy
 		}
-		x = 38
+		x = 40
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2513,7 +2517,7 @@ focus_tree = {
 		prerequisite = {
 			focus = cruiser_effort
 		}
-		x = 38
+		x = 40
 		y = 3
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2575,9 +2579,10 @@ focus_tree = {
 		prerequisite = {
 			focus = why_we_fight
 			focus = ideological_fanaticism
+			focus = aristocrat_generals
 		}
 		x = 26
-		y = 9
+		y = 8
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 200
