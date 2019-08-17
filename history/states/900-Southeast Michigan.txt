@@ -1,7 +1,7 @@
 
 state={
 	id=900
-	name="Detriot"
+	name="Detroit"
 
 	history={
 		owner = MIM
