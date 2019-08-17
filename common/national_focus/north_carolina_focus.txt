@@ -650,7 +650,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = NCN_FOCUS_18
-			focus = NCN_FOCUS_22
 		}
 		x = 21
 		y = 3
@@ -760,7 +759,6 @@ focus_tree = {
 		cost = 7.00
 		prerequisite = {
 			focus = NCN_FOCUS_22
-			focus = NCN_FOCUS_18
 		}
 		x = 25
 		y = 3
