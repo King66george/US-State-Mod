@@ -157,7 +157,7 @@ icon = GFX_goal_generic_military_sphere
 text = "Introduce Conscription Laws"
 x = 3
 y = 4
-cost = 10
+cost = 5
 prerequisite = {focus = njdiplo3.1}
 completion_reward = {
 add_ideas = extensive_conscription
@@ -204,7 +204,7 @@ icon = GFX_goal_generic_construct_military
 text = "Our Own Defense"
 x = 5
 y = 4
-cost = 10
+cost = 5
 prerequisite = { focus = njdiplo3.1 focus = njdiplo3.2 }
 completion_reward = {
  992 = {
@@ -333,7 +333,7 @@ icon = GFX_goal_generic_propaganda
 text = "War Propaganda"
 x = 3
 y = 5
-cost = 10
+cost = 5
 prerequisite = {focus = njdiplo5.1}
 completion_reward = {
 add_war_support = 0.1
@@ -349,7 +349,7 @@ icon = GFX_goal_generic_fortify_city
 text = "Protect Our Skies"
 x = 5
 y = 5
-cost = 10
+cost = 5
 prerequisite = {focus = njdiplo5.2}
 completion_reward = {
 random_owned_controlled_state = {

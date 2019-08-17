@@ -2693,6 +2693,12 @@
  CAC_airforceofthepsa:0 "The Airforce Of The Pacific States Of America"
  generic_neu_wargoal:0 "For God and the Fatherland"
  generic_neu_wargoal_desc:0 "We must secure our intrests quickly before the inevitable Second World War."
+ industrial_support:0 "Industrial Support"
+ quality_focus:0 "Quality Oriented Army"
+ committee_on_war:0 "Committee On War"
+ ny_prep:0 "Preparation Against New York"
+ p_prep:0 "Preparation Against Pennsylvania"
+ trade_dominance:0 "Dominance of Trade"
  ########################################Political Advisors###########################################
  robert_bobbit:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"
