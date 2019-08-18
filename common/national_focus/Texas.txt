@@ -744,7 +744,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TXT_trotskyisright
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_support_fourth_int
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_workersrevolution
@@ -821,7 +821,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TXT_followstalin
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_focus_generic_join_comintern
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_workersrevolution
