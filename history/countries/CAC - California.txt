@@ -126,9 +126,9 @@ add_ideas = {
 	#
 }
 set_popularities = {
-	democratic = 73
-	communism = 24
-	fascism = 3
+	democratic = 71
+	communism = 19
+	fascism = 10
 }
 create_country_leader = {
 	name = "Frank Merriam"
@@ -234,9 +234,9 @@ create_navy_leader = {
 	}
 }
 set_popularities = {
-	democratic = 73
-	communism = 24
-	fascism = 3
+	democratic = 71
+	communism = 19
+	fascism = 10
 }
 ### Ship Variants ###
 

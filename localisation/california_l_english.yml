@@ -1,8 +1,8 @@
 ﻿l_english:
   california.1.t:0 "The 1936 Election"
-  california.1.d:0 "The New California Republic's second election is on its way! We have 3 main canidates who have a chance of winning. We have Clement C. Young, the progressive main canidate, we have the incumbent republican canidate Frank Merriam, and then we have the unpopular communist canidate Upton Sinclair. Who will lead our glorious state into prosperity?"
-  california.1.a:0 "Clement C. Young wins the election!"
-  california.1.b:0 "Merriam takes another term!"
+  california.1.d:0 "The New California Republic's second election is on its way! We have 3 main canidates who have a chance of winning. We have Charles L. McNary, a right wing politican, we have the incumbent republican canidate Frank Merriam, and then we have the unpopular communist canidate Upton Sinclair. Who will lead our glorious state into prosperity?"
+  california.1.a:0 "Charles L. McNary wins the election!"
+  california.1.b:0 "Frank Merriam takes another term!"
   california.1.c:0 "Upton Sinclair somehow wins the election?"
   #### Above, elections for 1936
   ### Below, Defensive programs
@@ -50,4 +50,3 @@
   california.13.d:0 "Washington has refused our proposal of forming the Pacific States Of America! They say that they will fight back to protect sovereignty if needed!"
   california.13.a:0 "We must have them!"
   california.13.b:0 "Damnit, we can't attack right now."
-  

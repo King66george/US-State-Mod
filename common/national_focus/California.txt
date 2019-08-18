@@ -7,7 +7,7 @@
 
 focus_tree = {
     id = california_focus
-    continuous_focus_position = { x = -100 y = 2500 }
+    continuous_focus_position = { x = -100 y = 3000 }
     country = {
         factor = 0
 
@@ -89,11 +89,11 @@ focus_tree = {
 
 
 
-
+#########Charles L
   focus = {
-    id = CAC_clementyoungsplan
-    icon = GFX_goal_support_democracy
-    text = "Clement C. Young's Plan"
+    id = CAC_CharlesLsplan
+    icon = GFX_goal_support_fascism
+    text = "Charles L. McNary's Plan"
     x = 3
     y = 2
 
@@ -106,7 +106,7 @@ focus_tree = {
     mutually_exclusive = { focus = CAC_frankmerriamsplans  focus =  CAC_uptonsinclairsplan}
 
     available = {
-    has_country_leader = { ruling_only = yes name = "Clement C. Young" }
+    has_country_leader = { ruling_only = yes name = "Charles L. McNary" }
     }
   }
 
@@ -1065,10 +1065,60 @@ focus = {
 
 
 
-####### Clement C Young Path after elections
+####### Cali Fascist after elections#
 
+focus = {
+  id = CAC_fundrightwingnews
+  icon = GFX_goal_generic_propaganda
+  text = "Fund Right Wing News Stations"
+  prerequisite = { focus = CAC_CharlesLsplan}
 
+  cost = 10
+  x = 3
+  y = 3
 
+  completion_reward = {
+    add_ideas = CAC_fundrightwingnews
+    add_stability = 0.05
+  }
+}
+
+focus = {
+  id = CAC_rapidmilitarization
+  icon = GFX_goal_generic_army_tanks
+  text = "Rapid Militarization"
+  prerequisite = { focus = CAC_CharlesLsplan }
+
+  cost = 10
+  x = 1
+  y = 3
+
+  completion_reward = {
+    967 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+      type = arms_factory
+      level = 2
+      instant_build = yes
+      }
+    }
+  }
+}
+
+focus = {
+  id = CAC_retiredisloyalofficers
+  icon = GFX_focus_generic_military_mission
+  text = "Retire Disloyal Officers"
+  prerequisite = { focus = CAC_rapidmilitarization}
+
+  cost = 10
+  x = 1
+  y = 4
+
+  completion_reward = {
+    event =
+  }
+}
 
 
 
@@ -1111,6 +1161,7 @@ focus = {
 
 
 ###### Upton Sinclairs Path after elections
+
 
 
 

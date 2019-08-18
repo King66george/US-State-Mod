@@ -13,27 +13,22 @@ country_event = {
 		ai_chance = { factor = 30}
 
       create_country_leader = {
-        name = "Clement C. Young"
-          desc = "#"
-          picture = "Portrait_CAC_Clement_C_Young.dds"
+        name = "Charles L. McNary"
+          desc = ""
+          picture = "Portrait_CAC_CharlesL.dds"
           expire = "1965.1.1"
-          ideology = liberalism
+          ideology = rexism
 			traits = {
 
             }
         }
 
-        set_party_name = {
-            ideology = democratic
-            long_name = CAC_democratic_party_progressive_party
-            name = CAC_democratic_party_progressive_party
-        }
-
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = fascism
 			elections_allowed = no
         }
 
+    add_ideas = { CAC_unstablepolitics }
 
 
     }
@@ -61,12 +56,12 @@ country_event = {
 			elections_allowed = no
 		}
 
-      add_ideas = { CAC_unstablepolitics }
+    add_ideas = { CAC_unstablepolitics }
 
 
 		create_country_leader = {
 			name = "Upton Sinclair"
-			desc = "#"
+			desc = ""
 			picture = "Portrait_CAC_Upton_Sinclair.dds"
 			expire = "1965.1.1"
 			ideology = leninism
