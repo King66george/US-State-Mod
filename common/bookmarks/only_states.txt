@@ -127,7 +127,7 @@ bookmarks = {
 
 
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "OTHER_ONLY_STATES_DESC"
 		}
 
 		effect = {
