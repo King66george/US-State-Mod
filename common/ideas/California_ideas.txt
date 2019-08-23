@@ -238,3 +238,20 @@ CAC_fundrightwingnews = {
     fascism_drift = 0.10
   }
 }
+
+CAC_policeforceempowered = {
+  allowed = {
+  always  no
+  }
+
+  allowed_civil_war = {
+  always = yes
+  }
+
+  removal_cost = -1
+
+  modifier = {
+      resistance_tick_auto = -2
+      enemy_partisan_effect = -0.1
+  }
+}

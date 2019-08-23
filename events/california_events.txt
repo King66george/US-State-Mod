@@ -13,9 +13,9 @@ country_event = {
 		ai_chance = { factor = 30}
 
       create_country_leader = {
-        name = "Charles L. McNary"
+        name = "James E. Davis"
           desc = ""
-          picture = "Portrait_CAC_CharlesL.dds"
+          picture = "Portrait_CAC_James E Davis.dds"
           expire = "1965.1.1"
           ideology = rexism
 			traits = {
@@ -422,5 +422,20 @@ country_event = {
     option = {
       name = california.13.b
       add_political_power = -50
+    }
+  }
+
+#Give The Police More Power
+  country_event = {
+    id = california.14
+    title = california.14.t
+    desc = california.14.d
+    picture = GFX_report_event_degaulle_inspect_troops
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.14.a
+      add_ideas = CAC_policeforceempowered
     }
   }

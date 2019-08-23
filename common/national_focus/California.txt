@@ -89,11 +89,11 @@ focus_tree = {
 
 
 
-#########Charles L
+#########JamesEDavis
   focus = {
-    id = CAC_CharlesLsplan
+    id = CAC_JamesEDavis
     icon = GFX_goal_support_fascism
-    text = "Charles L. McNary's Plan"
+    text = "James E. Davis's Plan"
     x = 3
     y = 2
 
@@ -106,7 +106,7 @@ focus_tree = {
     mutually_exclusive = { focus = CAC_frankmerriamsplans  focus =  CAC_uptonsinclairsplan}
 
     available = {
-    has_country_leader = { ruling_only = yes name = "Charles L. McNary" }
+    has_country_leader = { ruling_only = yes name = "James E. Davis" }
     }
   }
 
@@ -1071,7 +1071,7 @@ focus = {
   id = CAC_fundrightwingnews
   icon = GFX_goal_generic_propaganda
   text = "Fund Right Wing News Stations"
-  prerequisite = { focus = CAC_CharlesLsplan}
+  prerequisite = { focus = CAC_JamesEDavis}
 
   cost = 10
   x = 3
@@ -1087,7 +1087,7 @@ focus = {
   id = CAC_rapidmilitarization
   icon = GFX_goal_generic_army_tanks
   text = "Rapid Militarization"
-  prerequisite = { focus = CAC_CharlesLsplan }
+  prerequisite = { focus = CAC_JamesEDavis }
 
   cost = 10
   x = 1
@@ -1106,9 +1106,9 @@ focus = {
 }
 
 focus = {
-  id = CAC_retiredisloyalofficers
+  id = CAC_givethepolicemorepower
   icon = GFX_focus_generic_military_mission
-  text = "Retire Disloyal Officers"
+  text = "Give The Police More Power"
   prerequisite = { focus = CAC_rapidmilitarization}
 
   cost = 10
@@ -1116,7 +1116,7 @@ focus = {
   y = 4
 
   completion_reward = {
-    event =
+    country_event = california.14
   }
 }
 
