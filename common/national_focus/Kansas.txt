@@ -1746,190 +1746,239 @@ focus_tree = {
 					}
 		}
 
-		focus = {
-					id = KSK_conquest2
-					icon = GFX_goal_generic_construct_military
-					prerequisite = { focus = KSK_conquest1 }
+	focus = {
+		id = KSK_conquest2
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = KSK_conquest1 }
 
-					x = 0
-					y = 1
+		x = 0
+		y = 1
 
-					relative_position_id = KSK_conquest1
+		relative_position_id = KSK_conquest1
 
-					cost = 5
+		cost = 5
 
-					completion_reward = {
-							831 = {
-									add_building_construction = {
-											type = bunker
-											level = 2
-											instant_build = yes
-											province = {
-													all_provinces = yes
-													limit_to_border = yes
-										}
-								}
-						}
-						902 = {
-								add_building_construction = {
-										type = bunker
-										province = 7834
-										level = 2
-										instant_build = yes
-										}
-								}
-						830 = {
-								add_building_construction = {
-										type = bunker
-										level = 2
-										instant_build = yes
-										province = {
-												all_provinces = yes
-												limit_to_border = yes
-										}
-							}
+		completion_reward = {
+			831 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
 					}
-
-						896 = {
-								add_building_construction = {
-										type = bunker
-										level = 2
-										instant_build = yes
-										province = {
-												all_provinces = yes
-												limit_to_border = yes
-										}
-							}
-					}
-
 				}
+			}
+			902 = {
+				add_building_construction = {
+					type = bunker
+					province = 7834
+					level = 2
+					instant_build = yes
+				}
+			}
+			830 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			896 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KSK_conquest3
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = KSK_conquest2 }
+
+		x = -1
+		y = 1
+
+		relative_position_id = KSK_conquest2
+
+		cost = 10
+
+		bypass = {
+			MOM = {
+				OR = {
+					exists = no
+					is_subject = yes
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 
-		focus = {
-					id = KSK_conquest3
-					icon = GFX_goal_generic_attack_allies
-					prerequisite = { focus = KSK_conquest2 }
+		completion_reward = {
+			add_state_claim = 903
+			create_wargoal = {
+				type = annex_everything
+				target = MOM
+			}
+		}
+	}
 
-					x = -1
-					y = 1
+	focus = {
+		id = KSK_conquest4
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = KSK_conquest2 }
 
-					relative_position_id = KSK_conquest2
+		x = 1
+		y = 1
 
-					cost = 5
+		relative_position_id = KSK_conquest2
 
-					completion_reward = {
-								add_state_claim = 903
-								create_wargoal = {
-										type = annex_everything
-										target = MOM
-								}
+		cost = 10
+
+		bypass = {
+			COC = {
+				OR = {
+					exists = no
+					is_subject = yes
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
 					}
+				}
+			}
 		}
 
-		focus = {
-					id = KSK_conquest4
-					icon = GFX_goal_generic_occupy_states_ongoing_war
-					prerequisite = { focus = KSK_conquest2 }
+		completion_reward = {
+			add_state_claim = 802
+			add_state_claim = 801
+			add_state_claim = 382
+			create_wargoal = {
+				type = annex_everything
+				target = COC
+			}
+		}
+	}
 
-					x = 1
-					y = 1
+	focus = {
+		id = KSK_conquest5
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = KSK_conquest3 }
 
-					relative_position_id = KSK_conquest2
+		x = 0
+		y = 1
 
-					cost = 5
+		relative_position_id = KSK_conquest3
 
-					completion_reward = {
-								add_state_claim = 802
-								add_state_claim = 801
-								add_state_claim = 382
-								create_wargoal = {
-										type = annex_everything
-										target = COC
-								}
+		cost = 10
+
+		bypass = {
+			OKO = {
+				OR = {
+					exists = no
+					is_subject = yes
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
 					}
+				}
+			}
 		}
 
-		focus = {
-					id = KSK_conquest5
-					icon = GFX_goal_generic_major_war
-					prerequisite = { focus = KSK_conquest3 }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = OKO
+			}
+		}
+	}
 
-					x = 0
-					y = 1
+	focus = {
+		id = KSK_conquest6
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = KSK_conquest4 }
 
-					relative_position_id = KSK_conquest3
+		x = 0
+		y = 1
 
-					cost = 5
+		relative_position_id = KSK_conquest4
 
-					completion_reward = {
-								create_wargoal = {
-										type = annex_everything
-										target = OKO
-								}
+		cost = 10
+
+		bypass = {
+			NEN = {
+				OR = {
+					exists = no
+					is_subject = yes
+					AND = {
+						is_subject = no
+						is_in_faction_with = ROOT
 					}
+				}
+			}
 		}
 
-		focus = {
-					id = KSK_conquest6
-					icon = GFX_goal_generic_major_war
-					prerequisite = { focus = KSK_conquest4 }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NEN
+			}
+		}
+	}
 
-					x = 0
-					y = 1
+	focus = {
+		id = KSK_conquest7
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KSK_conquest5 }
+		prerequisite = { focus = KSK_conquest6 }
 
-					relative_position_id = KSK_conquest4
+		x = 1
+		y = 1
 
-					cost = 5
+		relative_position_id = KSK_conquest5
 
-					completion_reward = {
-								create_wargoal = {
-										type = annex_everything
-										target = NEN
-								}
-					}
+		cost = 10
+
+		available = {
+			date > 1941.01.01
+			controls_state = 828
+			controls_state = 384
+			controls_state = 827
+			controls_state = 802
+			controls_state = 382
+			controls_state = 801
+			controls_state = 832
+			controls_state = 833
+			controls_state = 374
+			controls_state = 903
 		}
 
-		focus = {
-					id = KSK_conquest7
-					icon = GFX_goal_generic_national_unity
-					prerequisite = { focus = KSK_conquest5 }
-					prerequisite = { focus = KSK_conquest6 }
+		completion_reward = {
+			add_stability = 0.30
+			add_state_core = 828
+			add_state_core = 384
+			add_state_core = 827
+			add_state_core = 802
+			add_state_core = 382
+			add_state_core = 801
+			add_state_core = 832
+			add_state_core = 833
+			add_state_core = 374
+			add_state_core = 903
 
-					x = 1
-					y = 1
-
-					relative_position_id = KSK_conquest5
-
-					cost = 5
-
-					available = {
-								controls_state = 828
-								controls_state = 384
-								controls_state = 827
-								controls_state = 802
-								controls_state = 382
-								controls_state = 801
-								controls_state = 832
-								controls_state = 833
-								controls_state = 374
-								controls_state = 903
-					}
-
-					completion_reward = {
-								add_stability = 0.30
-								add_state_core = 828
-								add_state_core = 384
-								add_state_core = 827
-								add_state_core = 802
-								add_state_core = 382
-								add_state_core = 801
-								add_state_core = 832
-								add_state_core = 833
-								add_state_core = 374
-								add_state_core = 903
-
-					}
 		}
-
-
+	}
 }
