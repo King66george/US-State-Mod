@@ -27,21 +27,42 @@ picture = GFX_report_event_molotov_ribentrop_handshake
 is_triggered_only = yes
 
 option = {
-name = newjersey.2.a
-ai_chance = {factor = 80}
-reverse_add_opinion_modifier = {target = DED modifier = Trustworthy}
+  name = newjersey.2.a
+  ai_chance = {factor = 80}
+  reverse_add_opinion_modifier = {
+    target = DED
+    modifier = medium_increase
+  }
 }
 
 option = {
-name= newjersey.2.b
-ai_chance = {factor = 20}
-puppet = DED
-reverse_add_opinion_modifier = { target = MDM modifier = Dishonest }
-reverse_add_opinion_modifier = { target = WVW modifier = Dishonest}
-reverse_add_opinion_modifier = { target = OHO modifier = Dishonest}
-reverse_add_opinion_modifier = { target = CTC modifier = Dishonest}
-reverse_add_opinion_modifier = { target = MAM modifier = Dishonest}
-reverse_add_opinion_modifier = { target = VTV modifier = Dishonest}
+  name= newjersey.2.b
+  ai_chance = {factor = 20}
+  puppet = DED
+  reverse_add_opinion_modifier = {
+    target = MDM
+    modifier = medium_decrease
+  }
+  reverse_add_opinion_modifier = {
+    target = WVW
+    modifier = medium_decrease
+  }
+  reverse_add_opinion_modifier = {
+  target = OHO
+  modifier = medium_decrease
+  }
+reverse_add_opinion_modifier = {
+target = CTC
+modifier = medium_decrease
+}
+reverse_add_opinion_modifier = {
+target = MAM
+modifier = medium_decrease
+}
+reverse_add_opinion_modifier = {
+target = VTV
+modifier = medium_decrease
+}
 }
 }
 
@@ -54,20 +75,25 @@ desc = newjersey.3.d
 picture = GFX_report_event_hitler_croatia_handshake
 is_triggered_only = yes
 
-option = {
-name = newjersey.3.a
-ai_chance = {factor = 60}
-modifier = {
-factor = 20
-strength_ratio = {tag = NJN ratio < 0.5}
-}
-modifier = {
-factor = 10
-strength_ratio = {tag = NJN ratio < 0.9}
-}
-modifier = {
-factor = 20
-{ROOT = { has_opinion = {target = NJN value > 30}}}
+  option = {
+    name = newjersey.3.a
+    ai_chance = { factor = 60
+  modifier = {
+      factor = 20
+      strength_ratio = {tag = NJN ratio < 0.5}
+      }
+  modifier = {
+      factor = 10
+      strength_ratio = {tag = NJN ratio < 0.9}
+      }
+  modifier = {
+      factor = 20
+     ROOT = {
+      has_opinion = {
+      target = NJN value > 30
+      }
+    }
+  }
 }
 NJN = {add_to_faction = ROOT}
 NJN = {
@@ -85,14 +111,14 @@ country_event = newjersey.5
 }
 option = {
 name = newjersey.3.c
-ai_chance = {factor = 30}
+ai_chance = {factor = 30
 modifier = {
 factor = 30
 strength_ratio = {tag = NJN ratio > 1.2}
 }
 modifier = {
 factor = 40
-{ROOT = { has_opinion = { target = NJN value < = 9}}}
+ROOT = { has_opinion = { target = NJN value < = 9}}
 }
 NJN = {
 country_event = newjersey.6
@@ -128,7 +154,7 @@ ai_chance = { factor = 90}
 }
 option = {
 name = newjersey.5.b
-ai_chance = {factor = 10}
+ai_chance = {factor = 10
 modifier = {
 factor = 40
 strength_ratio = {FROM = NJN ratio < 0.5}
@@ -204,7 +230,7 @@ is_triggered_only = yes
 
 option = {
 name = newjersey.8.a
-ai_chance = {factor = 30}
+ai_chance = {factor = 30
 modifier = {
 factor = 100
 strength_ratio = {tag = NJN ratio < 0.5}
