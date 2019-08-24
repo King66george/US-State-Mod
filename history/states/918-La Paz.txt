@@ -2,14 +2,15 @@ state={
 	id=918
 	name="La Paz"
 
-	history={ 1936.1.3 = {owner = BAJ controller = BAJ }
-		owner = BAJ
+	history={
+		owner = MEX
 		buildings = {
 			infrastructure = 5
 	
 
 		}
 		add_core_of = BAJ
+		add_core_of = MEX
 		victory_points = {
 			12736 25 
 		}
