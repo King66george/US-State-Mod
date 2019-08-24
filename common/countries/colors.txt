@@ -734,7 +734,7 @@ PCP = {
 }
 
 BCB = {
-	color = rgb { 0 38 159 }
+	color = rgb { 255  0  0 }
 	color_ui = rgb { 87 160 255 }
 }
 
@@ -764,7 +764,7 @@ NSN = {
 }
 
 NTN = {
-	color = rgb { 255 0 0 }
+	color = rgb { 64  160  167 }
 	color_ui = rgb { 87 160 255 }
 }
 
@@ -807,7 +807,7 @@ INS = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
-LAB ={ 
+LAB ={
 
 	color = rgb { 255 10 50 }
 	color_ui = rgb { 255 10 50 }
@@ -845,7 +845,7 @@ TAU={
 	color = { 100 200 100 }
 	color_ui = rgb { 100 200 100 }
 }
-SIN={	
+SIN={
 	color = { 0 200 0 }
 	color_ui = rgb { 0 200 0 }
 }
