@@ -1120,6 +1120,21 @@ focus = {
   }
 }
 
+focus = {
+  id = CAC_baja
+  icon = GFX_goal_generic_occupy_states_ongoing_war
+  text = "The Baja Problem"
+  prerequisite = { focus = CAC_fundrightwingnews }
+
+  cost = 10
+  x = 3
+  y = 4
+
+  completion_reward = {
+    country_event = california.15
+  }
+}
+
 
 
 

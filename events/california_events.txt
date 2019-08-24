@@ -439,3 +439,16 @@ country_event = {
       add_ideas = CAC_policeforceempowered
     }
   }
+
+#TheBajaProblem
+  country_event = {
+    id = california.15
+    title = california.15.t
+    desc = california.15.d
+    picture = GFX_report_event_generic_sign_treaty1
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.15.a
+    }
