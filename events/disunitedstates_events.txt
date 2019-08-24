@@ -13,6 +13,7 @@ country_event = {
 		ai_chance = { factor = 40}
 		NCN = { annex_country= {
  target = ROOT
+ transfer_troops = yes
 } }
 	}
 	option = {
@@ -46,7 +47,7 @@ country_event = {
 			}
 			modifier = {
 			factor = 30
-			strength_ratio = {tag = FROM ratio < 0.5 }
+			strength_ratio = {tag = FROM ratio > 0.5 }
 			}
 			}
 			TXT = {
@@ -114,7 +115,7 @@ country_event = {
 			}
 			modifier = {
 			factor = 10
-			strength_ratio = {tag = FROM ratio < 0.5 }
+			strength_ratio = {tag = FROM ratio > 0.5 }
 			}
 			}
 			TXT = {
@@ -147,7 +148,16 @@ country_event = {
 
 		option = {
 			name = disunitedstates.6.a
-			ai_chance = {factor = 70}
+			ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 30
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.5
+				}
+			}
+			}
 			CAC = {
 				country_event = california.6
 				puppet = HIH
@@ -156,7 +166,7 @@ country_event = {
 
 		option = {
 			name = disunitedstates.6.b
-			ai_chance = {factor = 30}
+			ai_chance = {factor = 70}
 			CAC = {
 				country_event = california.5
 			}
@@ -174,19 +184,33 @@ country_event = {
 
 		option = {
 			name = disunitedstates.7.a
-			ai_chance = {factor = 60}
-			CAC = { annex_country = {target = ROOT} }
+			ai_chance = {
+				factor = 40
+				modifier = {
+					factor = 30
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.5
+					}
+				}
+			}
+			CAC = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
 
 			CAC = {
 				country_event = california.10
 			}
-			}
-
-
+		}
 
 		option = {
 			name = disunitedstates.7.b
-			ai_chance = {factor = 40}
+			ai_chance = {
+				factor = 60
+			}
 			add_war_support = 0.15
 			CAC = {
 				country_Event = california.11
@@ -198,32 +222,47 @@ country_event = {
 
 #washington event with california
 	country_event = {
-	id = disunitedstates.8
-	title = disunitedstates.8.t
-	desc = disunitedstates.8.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
-	is_triggered_only = yes
+		id = disunitedstates.8
+		title = disunitedstates.8.t
+		desc = disunitedstates.8.d
+		picture = GFX_report_event_molotov_ribentrop_handshake
+		is_triggered_only = yes
 
-	option = {
-		name = disunitedstates.8.a
-		ai_chance = {factor = 60}
-		CAC = { annex_country= { target = ROOT}}
-		CAC = {
-			country_Event = california.12
+		option = {
+			name = disunitedstates.8.a
+			ai_chance = {
+				factor = 60
+				modifier = {
+					factor = 30
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.5
+					}
+				}
+			}
+			CAC = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+			CAC = {
+				country_Event = california.12
+			}
 		}
 
-	}
 
-
-	option = {
-		name = disunitedstates.8.b
-		ai_chance = {factor = 40}
-		add_war_support = 0.15
-		CAC = {
-			country_Event = california.13
+		option = {
+			name = disunitedstates.8.b
+			ai_chance = {
+				factor = 40
+			}
+			add_war_support = 0.15
+			CAC = {
+				country_Event = california.13
+			}
 		}
 	}
-}
 
 #AZ
 country_event = {
@@ -235,19 +274,25 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = disunitedstates.9.a
-		ai_chance = { factor = 40}
-		NCN = { annex_country= {
- target = ROOT
-} }
+		ai_chance = {
+			factor = 40
+		}
+		NCN = {
+			annex_country = {
+ 				target = ROOT
+ 				transfer_troops = yes
+			}
+		}
 	}
 	option = {
 		name = disunitedstates.9.b
 		ai_chance = { factor = 60}
+
 		NCN = {
-		create_wargoal = {
-		type = annex_everything
-		target = ROOT
+			create_wargoal = {
+				type = annex_everything
+				target = ROOT
 			}
 		}
 	}
-	}
+}
