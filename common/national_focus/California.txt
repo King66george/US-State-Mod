@@ -445,7 +445,7 @@ focus = {
 
 focus = {
   id = CAC_preservehawaii
-  icon = GFX_goal_generic_improve_relations
+  icon = GFX_CAC_deal_hawaii
   text = "An Offer To Hawaii"
   prerequisite = { focus = CAC_localsecurity}
 
@@ -560,7 +560,7 @@ focus = {
 
 focus = {
   id = CAC_oregonpsa
-  icon = GFX_goal_generic_improve_relations
+  icon = GFX_CAC_deal_oregon
   text = "Meetings With Oregon"
   prerequisite = { focus = CAC_beginningofpsa}
 

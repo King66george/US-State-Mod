@@ -1634,6 +1634,14 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_CAC_mcga"
 		texturefile = "gfx/interface/goals/CAC_mcga.dds"
+		}1
+		spriteType = {
+		name = "GFX_CAC_deal_hawaii"
+		texturefile = "gfx/interface/goals/CAC_deal_hawaii.dds"
+		}
+		spriteType = {
+		name = "GFX_CAC_deal_oregon"
+		texturefile = "gfx/interface/goals/CAC_oregon.dds"
 		}
 
 }

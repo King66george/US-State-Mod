@@ -4,12 +4,12 @@
 FascistThanos - Original Creator of Mod / Texas Focus Tree
 
 #Mod Developers
-SergeantMurica - Map Editor
+SergeantMurica - Map Editor / Virginia/Generic Focus Tree
 cfc324 - Kansas Focus Tree / GFX
 Lifey - New York Focus Tree / California Focus Tree
 DevDog - GitHub Management
 Crusadey Boi- New Jersey Focus Tree
-JRyan - Virginia Focus Tree / Map Editor / GFX
+JRyan - Kentucky Focus Tree / Map Editor / GFX
 Foolz - Florida Focus Tree / Lead GFX
 
 #Hearts of Iron IV: Man the Guns

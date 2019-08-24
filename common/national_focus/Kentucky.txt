@@ -1,0 +1,34 @@
+############################ Kentucky By JRyan ############################
+
+focus_tree = {
+  id = kentucky_focus
+
+    country = {
+    factor = 0
+
+    modifier = {
+    add = 10
+    tag = KYK
+    }
+  }
+
+default = no
+
+continuous_focus_position = { x = 50 y = 1000 }
+
+focus = {
+  id =
+  icon =
+  cost = 10
+  x = 8
+  y = 0
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+
+}
