@@ -1651,5 +1651,9 @@ spriteTypes = {
 		name = "GFX_CAC_FPSA"
 		texturefile = "gfx/interface/goals/CAC_FPSA.dds"
 		}
+		spriteType = {
+		name = "GFX_CAC_frankmerriamsplans"
+		texturefile = "gfx/interface/goals/CAC_frankmerriamsplans.dds"
+		}
 
 }
