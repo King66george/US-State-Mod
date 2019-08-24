@@ -7,8 +7,8 @@ state={
 		rubber=8.000
 	}
 
-	history={ 1936.1.3 = {owner = COU controller = COU }
-		owner = COU
+	history={ 
+		owner = MEX
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -16,6 +16,7 @@ state={
 
 		}
 		add_core_of = COU
+		add_core_of = MEX
 		victory_points = {
 			12811 10 
 		}

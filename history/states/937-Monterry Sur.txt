@@ -8,14 +8,15 @@ state={
 		tungsten=25.000
 	}
 
-	history={ 1936.1.3 = {owner = TAU controller = TAU  }
-		owner = TAU
+	history={
+		owner = MEX
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 
 		}
 		add_core_of = TAU
+		add_core_of = MEX
 	}
 
 	provinces={
