@@ -4232,5 +4232,9 @@ spriteTypes = {
 		name = "GFX_idea_OHO_worse_depression"
 		texturefile = "gfx/interface/ideas/worse_depression.dds"
 		}
+		spriteType = {
+		name = "GFX_idea_CAC_republican"
+		texturefile = "gfx/interface/ideas/CAC_republican.dds"
+		}
 ##No Florida Mods##
 	}
