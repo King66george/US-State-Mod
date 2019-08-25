@@ -4228,6 +4228,9 @@ spriteTypes = {
 		name = "idea_robert_bobbitt"
 		texturefile = "gfx/interface/ideas/idea_robert_bobbitt.dds"
 		}
-
+		spriteType = {
+		name = "OHO_worse_depression"
+		texturefile = "gfx/interface/ideas/worse_depression.dds"
+		}
 ##No Florida Mods##
 	}
