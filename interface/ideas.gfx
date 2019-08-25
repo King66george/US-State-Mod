@@ -4225,11 +4225,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_kenneth_spencer.dds"
 		}
 		spriteType = {
-		name = "idea_robert_bobbitt"
+		name = "GFX_idea_robert_bobbitt"
 		texturefile = "gfx/interface/ideas/idea_robert_bobbitt.dds"
 		}
 		spriteType = {
-		name = "OHO_worse_depression"
+		name = "GFX_idea_OHO_worse_depression"
 		texturefile = "gfx/interface/ideas/worse_depression.dds"
 		}
 ##No Florida Mods##

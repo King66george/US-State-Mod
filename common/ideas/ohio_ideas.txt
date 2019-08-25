@@ -1,7 +1,7 @@
 ideas = {
   country = {
     OHO_worse_depression = {
-      picture = OHO_worse_depression
+      picture = GFX_OHO_worse_depression
       allowed = {
         always = no
       }

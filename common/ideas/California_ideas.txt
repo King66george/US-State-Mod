@@ -24,6 +24,8 @@ ideas = {
 
         CAC_republican = {
 
+            picture = CAC_republican.dds
+
             allowed = {
                 always = no
             }
