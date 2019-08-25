@@ -1881,7 +1881,7 @@ Westsylvania = {
 			}
 		}
 	}
-Lincoln = {
+NationLincoln = {
 
     icon = generic_form_nation
 

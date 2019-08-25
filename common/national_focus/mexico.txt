@@ -1,11 +1,14 @@
-﻿focus_tree = {
+focus_tree = {
 	id = mexico_focus_tree
 	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			original_tag = MEX
+			OR = {
+				original_tag = OME
+				original_tag = MEX
+			}
 			has_dlc = "Man the Guns"
 		}
 	}
