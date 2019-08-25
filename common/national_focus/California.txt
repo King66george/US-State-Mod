@@ -49,7 +49,7 @@ focus_tree = {
  # Focus for Frank Merriams tree
   focus = {
     id = CAC_frankmerriamsplans
-    icon = GFX_goal_generic_neutrality_focus
+    icon = GFX_CAC_frankmerriamsplans
     text = "Frank Merriam's Plan"
     x = 10
     y = 2
