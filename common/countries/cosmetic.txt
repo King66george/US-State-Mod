@@ -36,14 +36,9 @@ GOL = {
 }
 
 PSA = {
-  color = rgb { 52 51 154 }
+  color = rgb { 242 205 94 }
   color_ui = rgb {255 255 122}
 }
-
-#PSA = {
-#  color = rgb { 242 205 94 }
-#  color_ui = rgb {255 255 122}
-#}
 
 ASU = {
   color = rgb { 60 59 110 }
