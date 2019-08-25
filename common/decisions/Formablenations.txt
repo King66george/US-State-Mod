@@ -1061,11 +1061,11 @@ Vinland = {
 
 		available = {
 			is_subject = no
-		 
+
 			controls_state = 943
 			controls_state = 332
         }
-   
+
 
 		cost = 350
 
@@ -1083,19 +1083,19 @@ Vinland = {
 			hidden_effect = {
 			  332 = { add_core_of = ROOT }
 			  943 = { add_core_of = ROOT }
-			}	
+			}
 			add_war_support = 0.1
 			set_politics = {
 				ruling_party = neutrality
 			}
-			set_party_name = { 
-				ideology = neutrality 
-				long_name = VLDPARTYLONG 
-				name = VLDPARTYNAME 
+			set_party_name = {
+				ideology = neutrality
+				long_name = VLDPARTYLONG
+				name = VLDPARTYNAME
 			}
 		}
     }
-	
+
 Surrectionist_British_Canada = {
 
     icon = generic_form_nation
@@ -1119,7 +1119,7 @@ Surrectionist_British_Canada = {
 			controls_state = 970
 			controls_state = 969
         }
-   
+
 
 		cost = 100
 
@@ -1143,7 +1143,7 @@ Surrectionist_British_Canada = {
 				970 = { add_core_of = ROOT }
 				969 = { add_core_of = ROOT }
 
-			}	
+			}
 			add_war_support = 0.1
 
 		}
@@ -1175,7 +1175,7 @@ Absaroka = {
 			controls_state = 825
 			controls_state = 823
         }
-   
+
 
 		cost = 100
 
@@ -1207,7 +1207,7 @@ Absaroka = {
 				824 = { add_core_of = ROOT }
 				381 = { add_core_of = ROOT }
 
-			}	
+			}
 			add_war_support = 0.1
 
 		}
@@ -1241,7 +1241,7 @@ Greater_Appalachia = {
 			controls_state = 875
 			controls_state = 877
         }
-   
+
 
 		cost = 100
 
@@ -1264,7 +1264,7 @@ Greater_Appalachia = {
 				875 = { add_core_of = ROOT }
 				877 = { add_core_of = ROOT }
 
-			}	
+			}
 			add_war_support = 0.1
 
 		}
@@ -1299,7 +1299,7 @@ The_Foundry = {
 			controls_state = 905
 			controls_state = 395
         }
-   
+
 
 		cost = 100
 
@@ -1338,7 +1338,7 @@ The_Foundry = {
 				885 = { add_core_of = ROOT }
 				358 = { add_core_of = ROOT }
 				886 = { add_core_of = ROOT }
-			}	
+			}
 			add_war_support = 0.1
 
 		}
@@ -1367,7 +1367,7 @@ Ruperts_Land = {
 			controls_state = 682
 			controls_state = 683
         }
-   
+
 
 		cost = 100
 
@@ -1389,7 +1389,7 @@ Ruperts_Land = {
 				815 = { add_core_of = ROOT }
 				682 = { add_core_of = ROOT }
 				683 = { add_core_of = ROOT }
-			}	
+			}
 			add_war_support = 0.1
 
 		}
@@ -1420,7 +1420,7 @@ North_Frontier = {
 			controls_state = 966
 			controls_state = 683
         }
-   
+
 
 		cost = 100
 
@@ -1445,7 +1445,7 @@ North_Frontier = {
 				472 = { add_core_of = ROOT }
 				966 = { add_core_of = ROOT }
 				683 = { add_core_of = ROOT }
-				}	
+				}
 			add_war_support = 0.1
 
 		}
@@ -1471,9 +1471,9 @@ Great_Louisiana = {
 			controls_state = 952
 			controls_state = 951
 			controls_state = 375
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -1501,8 +1501,8 @@ Great_Louisiana = {
 				790 = { add_core_of = ROOT }
 				956 = { add_core_of = ROOT }
 				838 = { add_core_of = ROOT }
-				
-				}	
+
+				}
 			add_war_support = 0.1
 
 		}
@@ -1530,9 +1530,9 @@ Great_Hawaiian_Empire = {
 			controls_state = 727
 			controls_state = 642
 			controls_state = 631
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -1548,14 +1548,14 @@ Great_Hawaiian_Empire = {
 			add_stability = 0.20
 			custom_effect_tooltip = core_land
 			hidden_effect = {
-				
+
 				892 = { add_core_of = ROOT }
 				630 = { add_core_of = ROOT }
 				727 = { add_core_of = ROOT }
 				642 = { add_core_of = ROOT }
 				631 = { add_core_of = ROOT }
-				
-				}	
+
+				}
 			add_war_support = 0.1
 
 		}
@@ -1572,7 +1572,7 @@ Azteca_Superior = {
 
       visible = {
       or = {
-        original_tag = OME 
+        original_tag = OME
 		original_tag = VEC
 		original_tag = OAX
 		}
@@ -1583,9 +1583,9 @@ Azteca_Superior = {
 			controls_state = 277
 			controls_state = 931
 			controls_state = 933
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -1601,7 +1601,7 @@ Azteca_Superior = {
 			add_stability = 0.20
 			custom_effect_tooltip = core_land
 			hidden_effect = {
-				 
+
 				939 = { add_core_of = ROOT }
 				924 = { add_core_of = ROOT }
 				277 = { add_core_of = ROOT }
@@ -1612,8 +1612,8 @@ Azteca_Superior = {
 				477 = { add_core_of = ROOT }
 				931 = { add_core_of = ROOT }
 				932 = { add_core_of = ROOT }
-				
-				}	
+
+				}
 			add_war_support = 0.1
 
 		}
@@ -1630,7 +1630,7 @@ Maya = {
 
       visible = {
 		  or = {
-				original_tag = CHP 
+				original_tag = CHP
 				original_tag = YUC
 			}
 		}
@@ -1639,9 +1639,9 @@ Maya = {
 			is_subject = no
 			controls_state = 474
 			controls_state = 475
-			
+
         }
-   
+
 
 		cost = 50
 
@@ -1663,8 +1663,8 @@ Maya = {
 				934 = { add_core_of = ROOT }
 				475 = { add_core_of = ROOT }
 				add_war_support = 0.1
-			}	
-			
+			}
+
 
 		}
     }
@@ -1680,7 +1680,7 @@ Bajan_Nation = {
 
       visible = {
       or = {
-        original_tag = BAJ 
+        original_tag = BAJ
 		original_tag = SON
 		}
       }
@@ -1690,9 +1690,9 @@ Bajan_Nation = {
 			controls_state = 918
 			controls_state = 917
 			controls_state = 919
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -1734,7 +1734,7 @@ Republic_of_Lakotah = {
 
       visible = {
       or = {
-        original_tag = NEN 
+        original_tag = NEN
 		original_tag = IAI
 		original_tag = SDS
 		}
@@ -1745,9 +1745,9 @@ Republic_of_Lakotah = {
 			controls_state = 911
 			controls_state = 965
 			controls_state = 954
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -1774,7 +1774,7 @@ Republic_of_Lakotah = {
 				828 = { add_core_of = ROOT }
 				827 = { add_core_of = ROOT }
 				844 = { add_core_of = ROOT }
-				
+
 				add_war_support = 0.1
 			}
 		}
@@ -1792,7 +1792,7 @@ Azteca_Inferior = {
 
       visible = {
       or = {
-       	original_tag = TAU 
+       	original_tag = TAU
 	original_tag = COA
 		}
       }
@@ -1802,9 +1802,9 @@ Azteca_Inferior = {
 			controls_state = 926
 			controls_state = 927
 			controls_state = 479
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -1826,7 +1826,7 @@ Azteca_Inferior = {
 				927 = { add_core_of = ROOT }
 				928 = { add_core_of = ROOT }
 				480 = { add_core_of = ROOT }
-				
+
 				add_war_support = 0.1
 			}
 		}
@@ -1852,9 +1852,9 @@ Westsylvania = {
 			is_subject = no
 			controls_state = 875
 			controls_state = 877
-			
+
         }
-   
+
 
 		cost = 250
 
@@ -1901,9 +1901,9 @@ Lincoln = {
 			is_subject = no
 			controls_state = 947
 			controls_state = 914
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -1945,11 +1945,11 @@ Land_of_the_Nahuatl = {
 
       visible = {
 			or = {
-				original_tag = CHP 
+				original_tag = CHP
 				original_tag = YUC
 				original_tag = VEC
 				original_tag = OAX
-				original_tag = TAU 
+				original_tag = TAU
 				original_tag = COA
 				original_tag = OME
 			}
@@ -1965,9 +1965,9 @@ Land_of_the_Nahuatl = {
 			controls_state = 277
 			controls_state = 931
 			controls_state = 933
-			
+
         }
-   
+
 
 		cost = 50
 
@@ -2005,12 +2005,12 @@ Land_of_the_Nahuatl = {
 				931 = { add_core_of = ROOT }
 				932 = { add_core_of = ROOT }
 				add_war_support = 0.1
-			}	
-			
+			}
+
 
 		}
     }
-	
+
 Union_of_Superior = {
 
     icon = generic_form_nation
@@ -2023,7 +2023,7 @@ Union_of_Superior = {
 
       visible = {
 			or = {
-				original_tag = WIW 
+				original_tag = WIW
 				original_tag = MIM
 				original_tag = MNM
 			}
@@ -2039,9 +2039,9 @@ Union_of_Superior = {
 			controls_state = 847
 			controls_state = 846
 			controls_state = 391
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -2068,8 +2068,8 @@ Union_of_Superior = {
 				393 = { add_core_of = ROOT }
 				862 = { add_core_of = ROOT }
 				add_war_support = 0.1
-			}	
-			
+			}
+
 
 		}
     }
@@ -2085,7 +2085,7 @@ Colonial_Carolina = {
 
       visible = {
 			or = {
-				original_tag = NCN 
+				original_tag = NCN
 				original_tag = SCS
 			}
 		}
@@ -2096,9 +2096,9 @@ Colonial_Carolina = {
 			controls_state = 962
 			controls_state = 958
 			controls_state = 853
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -2128,8 +2128,8 @@ Colonial_Carolina = {
 				958 = { add_core_of = ROOT }
 				852 = { add_core_of = ROOT }
 				add_war_support = 0.1
-			}	
-			
+			}
+
 
 		}
     }
@@ -2145,7 +2145,7 @@ Colonial_Georgia = {
 
       visible = {
 			or = {
-				original_tag = GAG 
+				original_tag = GAG
 			}
 		}
 
@@ -2156,7 +2156,7 @@ Colonial_Georgia = {
 			controls_state = 957
 			controls_state = 863
         }
-   
+
 
 		cost = 100
 
@@ -2187,8 +2187,8 @@ Colonial_Georgia = {
 				957 = { add_core_of = ROOT }
 				370 = { add_core_of = ROOT }
 				add_war_support = 0.1
-			}	
-			
+			}
+
 
 		}
     }
@@ -2204,17 +2204,17 @@ Nation_of_Great_Plains = {
 
       visible = {
 			or = {
-				original_tag = OKO 
+				original_tag = OKO
 				original_tag = KSK
-				original_tag = NEN 
+				original_tag = NEN
 				original_tag = COC
-				original_tag = NMN 
+				original_tag = NMN
 				original_tag = WYW
-				original_tag = MTM 
+				original_tag = MTM
 				original_tag = NDN
-				original_tag = SDS 
+				original_tag = SDS
 				original_tag = MNM
-				original_tag = IAI 
+				original_tag = IAI
 				original_tag = MOM
 			}
 		}
@@ -2237,9 +2237,9 @@ Nation_of_Great_Plains = {
 			controls_state = 944
 			controls_state = 946
 			controls_state = 969
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -2316,8 +2316,8 @@ Nation_of_Great_Plains = {
 				788 = { add_core_of = ROOT }
 				789 = { add_core_of = ROOT }
 				add_war_support = 0.1
-			}	
-			
+			}
+
 
 		}
     }
@@ -2333,9 +2333,9 @@ The_Pact_of_the_Four = {
 
       visible = {
 			or = {
-				original_tag = AZA 
+				original_tag = AZA
 				original_tag = NMN
-				original_tag = UTU 
+				original_tag = UTU
 				original_tag = COC
 			}
 		}
@@ -2346,9 +2346,9 @@ The_Pact_of_the_Four = {
 			controls_state = 950
 			controls_state = 795
 			controls_state = 839
-			
+
         }
-   
+
 
 		cost = 100
 
@@ -2385,9 +2385,269 @@ The_Pact_of_the_Four = {
 				839 = { add_core_of = ROOT }
 				380 = { add_core_of = ROOT }
 				add_war_support = 0.1
-			}	
-			
+			}
+
 
 		}
     }
+    east_coast = {
+
+    icon = generic_form_nation
+
+      allowed = {
+
+      }
+
+      cancel_if_not_visible = yes
+
+      visible = {
+      or = {
+        original_tag = VAV
+        original_tag = WVW
+        original_tag = MDM
+        original_tag = DED
+        original_tag = NJN
+        original_tag = PAP
+        original_tag = NCN
+        original_tag = SCS
+        original_tag = GAG
+        original_tag = NYN
+        original_tag = RIR
+        original_tag = MAM
+        original_tag = CTC
+        original_tag = VTV
+        original_tag = NHN
+        original_tag = MEM
+        original_tag = FLF
+        }
+      }
+
+    available = {
+      is_subject = no
+        #virginia
+    controls_state = 988
+        controls_state = 362
+        controls_state = 876
+        controls_state = 878
+        #west virginia
+        controls_state = 877
+        controls_state = 875
+        #maryland
+    controls_state = 909
+    controls_state = 908
+    controls_state = 971
+        controls_state = 361
+        controls_state = 879
+        #delaware
+    controls_state = 906
+        controls_state = 895
+        #north carolina
+    controls_state = 963
+    controls_state = 964
+        controls_state = 363
+        controls_state = 874
+        controls_state = 873
+        #south carolina
+    controls_state = 962
+        controls_state = 871
+        controls_state = 364
+        controls_state = 872
+        #georgia
+    controls_state = 960
+        controls_state = 365
+        controls_state = 870
+        controls_state = 868
+        controls_state = 869
+        #pennsylvania
+        controls_state = 881
+        controls_state = 880
+        controls_state = 360
+        controls_state = 882
+        #new york
+        controls_state = 884
+        controls_state = 358
+        controls_state = 886
+        controls_state = 885
+        #new jersey
+        controls_state = 359
+        controls_state = 883
+        #rhode island
+    controls_state = 984
+        controls_state = 888
+        #new hampshire
+    controls_state = 979
+        controls_state = 891
+        #vermont
+    controls_state = 980
+        controls_state = 890
+        #connecticut
+    controls_state = 976
+        controls_state = 887
+        #massachusetts
+        controls_state = 889
+    controls_state = 987
+    controls_state = 986
+        #maine
+        controls_state = 357
+    controls_state = 978
+    controls_state = 977
+    controls_state = 866
+    controls_state = 961
+    controls_state = 867
+    controls_state = 366
+    controls_state = 983
+    }
+
+    cost = 100
+
+    fire_only_once = yes
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    complete_effect = {
+    set_cosmetic_tag = ECU
+    set_capital = 884
+    add_stability = 0.20
+    custom_effect_tooltip = core_land
+    hidden_effect = {
+      362 = { add_core_of = ROOT }
+      876 = { add_core_of = ROOT }
+      878 = { add_core_of = ROOT }
+      877 = { add_core_of = ROOT }
+      875 = { add_core_of = ROOT }
+      361 = { add_core_of = ROOT }
+      879 = { add_core_of = ROOT }
+      895 = { add_core_of = ROOT }
+      363 = { add_core_of = ROOT }
+      874 = { add_core_of = ROOT }
+      873 = { add_core_of = ROOT }
+      871 = { add_core_of = ROOT }
+      364 = { add_core_of = ROOT }
+      872 = { add_core_of = ROOT }
+      365 = { add_core_of = ROOT }
+      870 = { add_core_of = ROOT }
+      868 = { add_core_of = ROOT }
+      869 = { add_core_of = ROOT }
+      881 = { add_core_of = ROOT }
+      880 = { add_core_of = ROOT }
+      360 = { add_core_of = ROOT }
+      882 = { add_core_of = ROOT }
+      884 = { add_core_of = ROOT }
+      358 = { add_core_of = ROOT }
+      886 = { add_core_of = ROOT }
+      885 = { add_core_of = ROOT }
+      359 = { add_core_of = ROOT }
+      883 = { add_core_of = ROOT }
+      888 = { add_core_of = ROOT }
+      891 = { add_core_of = ROOT }
+      890 = { add_core_of = ROOT }
+      887 = { add_core_of = ROOT }
+      889 = { add_core_of = ROOT }
+      357 = { add_core_of = ROOT }
+    984 = { add_core_of = ROOT }
+    980 = { add_core_of = ROOT }
+    977 = { add_core_of = ROOT }
+    976 = { add_core_of = ROOT }
+    988 = { add_core_of = ROOT }
+    987 = { add_core_of = ROOT }
+    986 = { add_core_of = ROOT }
+    971 = { add_core_of = ROOT }
+    964 = { add_core_of = ROOT }
+    963 = { add_core_of = ROOT }
+    962 = { add_core_of = ROOT }
+    960 = { add_core_of = ROOT }
+    909 = { add_core_of = ROOT }
+    908 = { add_core_of = ROOT }
+    906 = { add_core_of = ROOT }
+    866 = { add_core_of = ROOT }
+    961 = { add_core_of = ROOT }
+    867 = { add_core_of = ROOT }
+    366 = { add_core_of = ROOT }
+    983 = { add_core_of = ROOT }
+      }
+     }
+    }
+    great_lakes = {
+
+      icon = generic_form_nation
+
+        allowed = {
+
+        }
+
+        cancel_if_not_visible = yes
+
+        visible = {
+    			or = {
+    				original_tag = OHO
+    			}
+    		}
+
+    		available = {
+    			is_subject = no
+          controls_state = 860
+          controls_state = 858
+          controls_state = 880
+          controls_state = 885
+          controls_state = 905
+          controls_state = 358
+          controls_state = 886
+          controls_state = 276
+          controls_state = 904
+          controls_state = 900
+          controls_state = 393
+          controls_state = 862
+          controls_state = 861
+          controls_state = 856
+          controls_state = 857
+          controls_state = 849
+          controls_state = 848
+          controls_state = 394
+          controls_state = 391
+          controls_state = 815
+          controls_state = 682
+        }
+
+
+    		cost = 100
+
+    		fire_only_once = yes
+
+    		ai_will_do = {
+    		  factor = 1
+    		}
+
+    		complete_effect = {
+    			set_cosmetic_tag = GLN
+    			add_stability = 0.10
+    			hidden_effect = {
+            860 = { add_core_of = ROOT }
+            858 = { add_core_of = ROOT }
+            880 = { add_core_of = ROOT }
+            885 = { add_core_of = ROOT }
+            905 = { add_core_of = ROOT }
+            358 = { add_core_of = ROOT }
+            886 = { add_core_of = ROOT }
+            276 = { add_core_of = ROOT }
+            904 = { add_core_of = ROOT }
+            900 = { add_core_of = ROOT }
+            393 = { add_core_of = ROOT }
+            862 = { add_core_of = ROOT }
+            861 = { add_core_of = ROOT }
+            856 = { add_core_of = ROOT }
+            857 = { add_core_of = ROOT }
+            849 = { add_core_of = ROOT }
+            848 = { add_core_of = ROOT }
+            394 = { add_core_of = ROOT }
+            391 = { add_core_of = ROOT }
+            815 = { add_core_of = ROOT }
+            682 = { add_core_of = ROOT }
+    				add_war_support = 0.1
+    			}
+
+
+    		}
+        }
 }

@@ -148,3 +148,12 @@ POF = {
 	 color = rgb { 48 223 206 }
 	 color_ui = rgb{ 48 223 206 }
 }
+GLN = {
+  color = rgb { 39 178 242 }
+  color_ui = rgb { 59 198 252 }
+}
+
+ECU ={
+  color = rgb { 18 29 227 }
+  color_ui = rgb { 28 39 237 }
+}

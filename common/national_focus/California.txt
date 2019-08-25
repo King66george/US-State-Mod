@@ -575,7 +575,7 @@ focus = {
 
 focus = {
   id = CAC_washingtonpsa
-  icon = GFX_goal_generic_improve_relations
+  icon = GFX_CAC_deal_washington
   text = "Meetings With Washington"
   prerequisite = { focus = CAC_beginningofpsa}
 
@@ -590,7 +590,7 @@ focus = {
 
 focus = {
   id = CAC_formationofpsa
-  icon = GFX_goal_tripartite_pact
+  icon = GFX_CAC_FPSA
   text = "Formation Of The Pacific States Of America"
   prerequisite = {
     focus = CAC_washingtonpsa
