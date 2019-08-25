@@ -1,25 +1,29 @@
+
 state={
 	id=966
 	name="Yellowknife"
 	resources={
-		oil=25
-		tungsten=15
+		oil=25.000
+		tungsten=15.000
 	}
+
 	history={
 		owner = NTN
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
 		add_core_of = NTN
 		victory_points = {
-			10527 10
+			10527 10 
 		}
+
 	}
 
 	provinces={
-		10527 13319 13322 13324
+		10527 13321 13324 13326 
 	}
 	manpower=1207681
 	buildings_max_level_factor=1.000

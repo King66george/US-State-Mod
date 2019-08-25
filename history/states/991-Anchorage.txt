@@ -2,13 +2,12 @@
 state={
 	id=991
 	name="Alaska"
-	manpower=5067500
-	state_category=city
 	resources={
-		oil=25
-		tungsten=15
-		chromium=3
+		oil=25.000
+		tungsten=15.000
+		chromium=3.000
 	}
+
 	history={
 		owner = AKA
 		buildings = {
@@ -27,9 +26,9 @@ state={
 	}
 
 	provinces={
-		4833 13091 13315 13316 13318 13320 13321 
+		4833 13091 13317 13318 13320 13322 13323 
 	}
-
+	manpower=5067500
 	buildings_max_level_factor=1.000
-	
+	state_category=city
 }

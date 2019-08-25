@@ -3,8 +3,9 @@ state={
 	id=472
 	name="Northwest Territories"
 	resources={
-		chromium= 5.000
+		chromium=5.000
 	}
+
 	history={
 		owner = NTN
 		buildings = {
@@ -17,10 +18,11 @@ state={
 		victory_points = {
 			10703 5 
 		}
+
 	}
 
 	provinces={
-		4272 7696 8653 10703 
+		4272 7696 8653 10703 13316 
 	}
 	manpower=2027681
 	buildings_max_level_factor=1.000

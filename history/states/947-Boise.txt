@@ -1,7 +1,7 @@
+
 state={
 	id=947
 	name="Boise"
-
 	resources={
 		steel=12.000
 		chromium=5.000
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		7845 13289 13290 13291 13293
+		7845 13291 13292 13293 13295 
 	}
 	manpower=2945031
 	buildings_max_level_factor=1.000

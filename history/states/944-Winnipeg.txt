@@ -2,9 +2,7 @@
 state={
 	id=944
 	name="Winnipeg"
-	manpower=1200000
-	buildings_max_level_factor=1.000
-	state_category = city
+
 	history={
 		owner = MBM
 		victory_points = {
@@ -14,10 +12,16 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
 		add_core_of = MBM
+
 	}
+
 	provinces={
-		4790 13299 13300 13301 13302
+		4790 13301 13302 13303 13304 
 	}
+	manpower=1200000
+	buildings_max_level_factor=1.000
+	state_category=city
 }

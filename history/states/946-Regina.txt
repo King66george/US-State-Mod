@@ -2,19 +2,23 @@
 state={
 	id=946
 	name="Regina"
-		manpower=2035572
-	buildings_max_level_factor=1.000
-	state_category = city
+
 	history={
 		owner = SKS
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
+
 		}
 		add_core_of = SKS
+
 	}
+
 	provinces={
-		10611 13303 13304 13305 13306
+		10611 13305 13306 13307 13307 13308 
 	}
+	manpower=2035572
+	buildings_max_level_factor=1.000
+	state_category=city
 }

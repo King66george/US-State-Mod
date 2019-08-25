@@ -1,19 +1,22 @@
+
 state={
 	id=914
 	name="Olympia"
-	
+
 	history={
 		owner = WAW
 		buildings = {
 			infrastructure = 8
-		}	
+
+		}
 		add_core_of = WAW
 
 	}
+
 	provinces={
-		7386 13296 13297 13298
+		7386 13298 13299 13300 
 	}
 	manpower=2534786
 	buildings_max_level_factor=1.000
-	state_category = large_city
+	state_category=large_city
 }

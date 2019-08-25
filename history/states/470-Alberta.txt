@@ -2,11 +2,10 @@
 state={
 	id=470
 	name="South Alberta"
-		manpower=690800
-		state_category=town
 	resources={
-		chromium= 6.000
+		chromium=6.000
 	}
+
 	history={
 		owner = ABA
 		buildings = {
@@ -22,9 +21,9 @@ state={
 	}
 
 	provinces={
-		515 1262 1347 3706 4765 6726 6754 7718 7787 10684 
+		515 1262 1347 3706 4765 6726 6754 7718 7787 10684 13309 13310 
 	}
-	
+	manpower=690800
 	buildings_max_level_factor=1.000
-	
+	state_category=town
 }

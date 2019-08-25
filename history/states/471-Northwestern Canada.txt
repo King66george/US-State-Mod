@@ -3,25 +3,26 @@ state={
 	id=471
 	name="STATE_471"
 	resources={
-		oil=25
+		oil=25.000
 	}
+
 	history={
 		owner = YTY
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 1
-			
 
 		}
 		add_core_of = YTY
 		victory_points = {
 			7869 5 
 		}
+
 	}
 
 	provinces={
-		7869 13311 13312 13317
+		7869 13319 13327 
 	}
 	manpower=2700681
 	buildings_max_level_factor=1.000
