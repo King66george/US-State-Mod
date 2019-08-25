@@ -2014,10 +2014,9 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
 		prerequisite = {
-			focus = enforce_king
 			focus = deterrence
 		}
-		x = 27
+		x = 26
 		y = 4
 			available = {
 					OR = {
