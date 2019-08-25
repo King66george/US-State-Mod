@@ -590,7 +590,7 @@ focus = {
 
 focus = {
   id = CAC_formationofpsa
-  icon = GFX_CAC_FPSA
+  icon = GFX_goal_tripartite_pact
   text = "Formation Of The Pacific States Of America"
   prerequisite = {
     focus = CAC_washingtonpsa
