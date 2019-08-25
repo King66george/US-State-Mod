@@ -1655,5 +1655,17 @@ spriteTypes = {
 		name = "GFX_CAC_frankmerriamsplans"
 		texturefile = "gfx/interface/goals/CAC_frankmerriamsplans.dds"
 		}
+		spriteType = {
+		name = "GFX_CAC_JamesEDavis"
+		texturefile = "gfx/interface/goals/CAC_JamesEDavis.dds"
+		}
+		spriteType = {
+		name = "GFX_CAC_uptonsinclairsplan"
+		texturefile = "gfx/interface/goals/CAC_uptonsinclairsplan.dds"
+		}
+		spriteType = {
+		name = "GFX_CAC_politicalstate"
+		texturefile = "gfx/interface/goals/CAC_politicalstate.dds"
+		}
 
 }

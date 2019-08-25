@@ -69,7 +69,7 @@ focus_tree = {
 
   focus = {
     id = CAC_uptonsinclairsplan
-    icon = GFX_goal_support_communism
+    icon = GFX_CAC_uptonsinclairsplan
     text = "Upton Sinclair's Plan"
     x = 17
     y = 2
@@ -80,7 +80,7 @@ focus_tree = {
     available_if_capitulated = yes
 
     prerequisite = { focus = CAC_politicalstate}
-    mutually_exclusive = { focus = CAC_frankmerriamsplans focus =  CAC_clementyoungsplan}
+    mutually_exclusive = { focus = CAC_frankmerriamsplans focus =  CAC_JamesEDavis}
 
     available = {
     has_country_leader = { ruling_only = yes name = "Upton Sinclair" }
@@ -92,7 +92,7 @@ focus_tree = {
 #########JamesEDavis
   focus = {
     id = CAC_JamesEDavis
-    icon = GFX_goal_support_fascism
+    icon = GFX_CAC_JamesEDavis
     text = "James E. Davis's Plan"
     x = 3
     y = 2
