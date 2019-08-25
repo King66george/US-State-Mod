@@ -1,7 +1,6 @@
 ideas = {
   country = {
-    OHO_worse_depression = {
-      picture = GFX_OHO_worse_depression
+    worse_depression = {
       allowed = {
         always = no
       }
@@ -13,15 +12,36 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        political_power_gain = -0.25
+        political_power_gain = -0.50
         political_advisor_cost_factor = 0.30
         consumer_goods_factor = 0.15
         production_speed_arms_factory_factor = -0.25
         production_speed_industrial_complex_factor = -0.25
       }
     }
+    agricultural__industry = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        monthly_population = 0.05
+        trade_opinion_factor = 0.25
+        production_factory_efficiency_gain_factor = -0.05
+        production_speed_arms_factory_factor = -0.15
+        production_speed_industrial_complex_factor = -0.15
+      }
+    }
+
+
+
+
+
   }
-
-
-
 }

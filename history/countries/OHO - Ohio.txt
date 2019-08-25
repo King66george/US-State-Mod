@@ -119,7 +119,8 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-	home_of_the_free
+	agricultural__industry
+	worse_depression
 }
 set_popularities = {
 	democratic = 98

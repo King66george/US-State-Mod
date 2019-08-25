@@ -4229,7 +4229,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_robert_bobbitt.dds"
 		}
 		spriteType = {
-		name = "GFX_idea_OHO_worse_depression"
+		name = "GFX_idea_worse_depression"
 		texturefile = "gfx/interface/ideas/worse_depression.dds"
 		}
 		spriteType = {

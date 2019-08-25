@@ -370,6 +370,10 @@ country_event = {
 			transfer_state = 928
 			transfer_state = 927
 		}
+		NAY = {
+			transfer_state = 922
+			transfer_state = 478
+		}
 	}
 	option = {
 		name = disunitedstates.10.b
