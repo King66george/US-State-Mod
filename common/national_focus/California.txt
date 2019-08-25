@@ -575,7 +575,7 @@ focus = {
 
 focus = {
   id = CAC_washingtonpsa
-  icon = GFX_CAC_deal_washington
+  icon = GFX_goal_generic_improve_relations
   text = "Meetings With Washington"
   prerequisite = { focus = CAC_beginningofpsa}
 
