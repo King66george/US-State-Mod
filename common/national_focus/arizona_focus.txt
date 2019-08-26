@@ -539,7 +539,6 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_ideas = militarism_focus
 					add_ideas = ALL_idea_genderequality
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_3
