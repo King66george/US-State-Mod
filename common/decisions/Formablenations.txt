@@ -2651,4 +2651,55 @@ The_Pact_of_the_Four = {
 
     		}
         }
+
+        United_Dakota = {
+
+            icon = generic_form_nation
+
+              allowed = {
+
+              }
+
+              cancel_if_not_visible = yes
+
+              visible = {
+        			or = {
+        				original_tag = SDS
+                original_tag = NDN
+        			}
+        		}
+
+        		available = {
+        			is_subject = no
+        			controls_state = 390
+        			controls_state = 826
+        			controls_state = 825
+        			controls_state = 940
+                }
+
+
+        		cost = 100
+
+        		fire_only_once = yes
+
+        		ai_will_do = {
+        		  factor = 1
+        		}
+
+        		complete_effect = {
+        			set_cosmetic_tag = UDU
+        			set_capital = 911
+        			add_stability = 0.10
+        			custom_effect_tooltip = core_land
+        			hidden_effect = {
+        				390 = { add_core_of = ROOT }
+        				826 = { add_core_of = ROOT }
+        				825 = { add_core_of = ROOT }
+        				940 = { add_core_of = ROOT }
+        				add_war_support = 0.1
+        			}
+
+
+        		}
+            }
 }
