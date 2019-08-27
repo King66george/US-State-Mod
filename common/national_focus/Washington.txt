@@ -1,14 +1,14 @@
-############################ Kentucky By JRyan ############################
+############################ Washington By JRyan ############################
 
 focus_tree = {
-  id = kentucky_focus
+  id = washington_focus
 
     country = {
     factor = 0
 
     modifier = {
     add = 10
-    tag = KYK
+    tag = WAW
     }
   }
 
@@ -16,9 +16,10 @@ default = no
 
 continuous_focus_position = { x = 50 y = 1000 }
 
+#Air Force Tree
 focus = {
-  id =
-  icon =
+  id = WAW_fund_the_boeing_company
+  icon = WAW_fund_the_boeing_company
   cost = 10
   x = 8
   y = 0
