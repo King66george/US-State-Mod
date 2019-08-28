@@ -4260,5 +4260,8 @@ spriteTypes = {
 		name = "GFX_idea_CAC_newnavy"
 		texturefile = "gfx/interface/ideas/CAC_newnavy.dds"
 		}
-##No Florida Mods##
+		spriteType = {
+		name = "GFX_idea_agricultural__industry"
+		texturefile = "gfx/interface/ideas/largeagriculture.dds"
+		}
 	}
