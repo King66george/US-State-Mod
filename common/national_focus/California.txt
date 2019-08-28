@@ -378,7 +378,6 @@ focus_tree = {
 focus = {
     id = CAC_localsecurity
     icon = GFX_focus_eng_global_defense
-    text = "Local Security"
     prerequisite = { focus = CAC_oilproduction focus = CAC_militaryrnd focus = CAC_increasetradepower }
     cost = 10
     x = 10
@@ -396,7 +395,6 @@ focus = {
 focus = {
   id = CAC_militaryexpansion1
   icon = GFX_goal_generic_construct_mil_factory
-  text = "Expand Military Power"
   prerequisite = { focus = CAC_localsecurity}
   cost = 7.25
   x = 8
@@ -418,7 +416,6 @@ focus = {
 focus = {
   id = CAC_civilianexpansion1
   icon = GFX_goal_generic_construct_civilian
-  text = "Invest In Hollywood"
   prerequisite = { focus = CAC_localsecurity}
   cost = 7.25
   x = 12
@@ -441,7 +438,6 @@ focus = {
 focus = {
   id = CAC_preservehawaii
   icon = GFX_CAC_deal_hawaii
-  text = "An Offer To Hawaii"
   prerequisite = { focus = CAC_localsecurity}
 
   cost = 10
@@ -1176,6 +1172,126 @@ focus = {
 
 
 
+#not political path or whatever lol
+
+focus = {
+  id = CAC_genericindustry1
+  icon = GFX_goal_generic_construct_civ_factory
+
+  cost = 7.25
+
+  x = -2
+  y = 0
+
+  completion_reward = {
+    967 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+      type = industrial_complex
+      level = 2
+      instant_build = yes
+      }
+    }
+  }
+}
+
+focus = {
+  id = CAC_genericindustry2
+  icon = GFX_goal_generic_construct_mil_factory
+  prerequisite = { focus = CAC_genericindustry1}
+
+  cost = 7.25
+
+  x = -2
+  y = 1
+
+  completion_reward = {
+    967 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+      type = arms_factory
+      level = 1
+      instant_build = yes
+      }
+    }
+  }
+}
+
+focus = {
+  id = CAC_genericindustry3
+  icon = GFX_goal_generic_construct_civilian
+  prerequisite = { focus = CAC_genericindustry1}
+
+  cost = 10
+
+  x = -4
+  y = 1
+
+  completion_reward = {
+    974 = {
+    add_extra_state_shared_building_slots = 1
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+    add_resource = {
+      type = tungsten
+      amount = 25
+      state = 974
+    }
+  }
+}
+
+focus = {
+  id = CAC_genericindustry4
+  icon = GFX_goal_generic_construct_infrastructure
+  prerequisite = { focus = CAC_genericindustry1}
+
+  cost = 10
+
+  x = 0
+  y = 1
+
+  completion_reward = {
+      378 = {
+      add_building_construction = {
+      type = infrastructure
+      level = 1
+      instant_build = yes
+        }
+      }
+      797 = {
+      add_building_construction = {
+      type = infrastructure
+      level = 1
+      instant_build = yes
+        }
+      }
+      967 = {
+      add_building_construction = {
+      type = infrastructure
+      level = 2
+      instant_build = yes
+        }
+      }
+      799 = {
+      add_building_construction = {
+      type = infrastructure
+      level = 1
+      instant_build = yes
+        }
+      }
+      798 = {
+      add_building_construction = {
+      type = infrastructure
+      level = 1
+      instant_build = yes
+        }
+      }
+  }
+  }
 
 
 

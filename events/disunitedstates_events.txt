@@ -149,14 +149,18 @@ country_event = {
 		option = {
 			name = disunitedstates.6.a
 			ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 30
-				strength_ratio = {
-					tag = FROM
-					ratio > 0.5
+				factor = 40
+				modifier = {
+					factor = 40
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.4
+					}
 				}
-			}
+				modifier = {
+					factor = 70
+					has_government = democratic
+				}
 			}
 			CAC = {
 				country_event = california.6
@@ -166,7 +170,7 @@ country_event = {
 
 		option = {
 			name = disunitedstates.6.b
-			ai_chance = {factor = 70}
+			ai_chance = {factor = 60}
 			CAC = {
 				country_event = california.5
 			}
