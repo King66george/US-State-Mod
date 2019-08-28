@@ -23,7 +23,6 @@ focus_tree = {
   focus = {
   id = CAC_politicalstate
   icon = GFX_goal_generic_national_unity
-  text = "The 1936 Election"
   x = 10
   y = 0
 
@@ -50,7 +49,6 @@ focus_tree = {
   focus = {
     id = CAC_frankmerriamsplans
     icon = GFX_CAC_frankmerriamsplans
-    text = "Frank Merriam's Plan"
     x = 10
     y = 2
 
@@ -60,17 +58,20 @@ focus_tree = {
     available_if_capitulated = yes
 
     prerequisite = { focus = CAC_politicalstate}
-    mutually_exclusive = { focus = CAC_uptonsinclairsplan focus =  CAC_clementyoungsplan}
+    mutually_exclusive = { focus = CAC_uptonsinclairsplan focus =  CAC_JamesEDavis}
 
     available = {
     has_country_leader = { ruling_only = yes name = "Frank Merriam" }
+    }
+
+    completion_reward = {
+      add_stability = 0.05
     }
   }
 
   focus = {
     id = CAC_uptonsinclairsplan
     icon = GFX_CAC_uptonsinclairsplan
-    text = "Upton Sinclair's Plan"
     x = 17
     y = 2
 
@@ -80,7 +81,7 @@ focus_tree = {
     available_if_capitulated = yes
 
     prerequisite = { focus = CAC_politicalstate}
-    mutually_exclusive = { focus = CAC_frankmerriamsplans focus =  CAC_JamesEDavis}
+    mutually_exclusive = { focus = CAC_frankmerriamsplans focus = CAC_JamesEDavis}
 
     available = {
     has_country_leader = { ruling_only = yes name = "Upton Sinclair" }
@@ -93,7 +94,6 @@ focus_tree = {
   focus = {
     id = CAC_JamesEDavis
     icon = GFX_CAC_JamesEDavis
-    text = "James E. Davis's Plan"
     x = 3
     y = 2
 
@@ -107,6 +107,10 @@ focus_tree = {
 
     available = {
     has_country_leader = { ruling_only = yes name = "James E. Davis" }
+    }
+
+    completion_reward = {
+      add_stability = -0.1
     }
   }
 
@@ -127,7 +131,6 @@ focus_tree = {
   focus = {
     id = CAC_economic_initiative
     icon = GFX_focus_generic_the_giant_wakes
-    text = "Economic Initiative"
     prerequisite = { focus = CAC_frankmerriamsplans }
 
     cost = 10
@@ -155,7 +158,6 @@ focus_tree = {
   focus = {
     id = CAC_militaryexpansionprogram
     icon = GFX_goal_generic_construct_mil_factory
-    text = "Military Expansion Program"
     prerequisite = { focus = CAC_frankmerriamsplans}
 
     cost = 10
@@ -179,7 +181,6 @@ focus_tree = {
   focus = {
   id = CAC_defensiveprogram
   icon = GFX_goal_generic_construct_military
-  text = "Military Defense Program"
   prerequisite = { focus = CAC_militaryexpansionprogram}
   cost = 10
   x = 10
@@ -193,7 +194,6 @@ focus_tree = {
   focus = {
     id = CAC_militaryrnd
     icon = GFX_focus_research
-    text = "Military R&D"
     prerequisite = { focus = CAC_defensiveprogram }
     cost = 10
     x = 10
@@ -209,7 +209,6 @@ focus_tree = {
   focus = {
     id = CAC_militarymodernization
     icon = GFX_goal_generic_small_arms
-    text = "Military Modernization"
     prerequisite = { focus = CAC_frankmerriamsplans}
     cost = 10
     x = 12
@@ -235,7 +234,6 @@ focus_tree = {
   focus = {
     id = CAC_dockyards1
     icon = GFX_goal_generic_construct_naval_dockyard
-    text = "Build Northern Dockyards"
     prerequisite = { focus = CAC_militarymodernization}
     cost = 10
     x = 12
@@ -266,7 +264,6 @@ focus_tree = {
   focus = {
     id = CAC_increasetradepower
     icon = GFX_focus_mex_privatisation
-    text = "Increase Trade Power"
     prerequisite = { focus = CAC_dockyards1}
 
     cost = 10
@@ -324,7 +321,6 @@ focus_tree = {
   focus = {
   id = CAC_lesscorptax
   icon = GFX_goal_generic_positive_trade_relations
-  text = "Lessen Corporation Tax"
   prerequisite = { focus = CAC_economic_initiative}
 
   x = 8
@@ -351,7 +347,6 @@ focus_tree = {
   focus = {
   id = CAC_oilproduction
   icon = GFX_goal_generic_oil_refinery
-  text = "Black Gold"
   prerequisite = { focus = CAC_lesscorptax}
 
   x = 8
@@ -1117,21 +1112,6 @@ focus = {
 
   completion_reward = {
     country_event = california.14
-  }
-}
-
-focus = {
-  id = CAC_baja
-  icon = GFX_goal_generic_occupy_states_ongoing_war
-  text = "The Baja Problem"
-  prerequisite = { focus = CAC_fundrightwingnews }
-
-  cost = 10
-  x = 3
-  y = 4
-
-  completion_reward = {
-    country_event = california.15
   }
 }
 

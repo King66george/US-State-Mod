@@ -1,0 +1,15 @@
+﻿l_english:
+
+#This file is meant for all California focus and description localization.
+
+CAC_politicalstate:0 "The 1936 Election"
+CAC_politicalstate_desc:0 "The 1936 Election has been heated so far, with the 3 main leaders being Frank Merriam, a Republican who supports making the Pacific States of America and uniting Oregon and Washington State. Upton Sinclair, a communist who had some populist movements in recent weeks, but still failing with few votes. James E. Davis, a LA Police officer who is popular with the Conservative voters. Who will lead our nation?"
+CAC_frankmerriamsplans:0 "Frank Merriam's Plan"
+CAC_frankmerriamsplans_desc:0 "If we are to survive the coming storm, we must trust in our leadership. Governor Merriam has proven time and time again that he is a capable leader with a pragmatic approach to governing. Though many around us have abandoned democracy, the New California Republic will continue to be a shining example of what democracy can offer the world."
+CAC_JamesEDavis:0 "James E. Davis's Plan"
+CAC_JamesEDavis_desc:0 "§RThis path is not complete.§"
+CAC_uptonsinclairsplan:0 "Upton Sinclair's Plan"
+CAC_uptonsinclairsplan_desc:0 "In the aftermath of the Longshoreman's strike and Merriam's crackdown on unions, one thing has become clear- The workers of California are under attack, and the only thing that will save it is a political revolution. Merriam stands for the evils of capitalism, and Davis is a corrupt fascist. As Sinclair once wrote, "one of the necessary accompaniments of capitalism in a democracy is political corruption.""
+CAC_militaryexpansionprogram:0 "Military Expansion Program"
+CAC_militaryexpansionprogram_desc:0 "We are simply not able to produce enough equipment to even beat the Navajo! We need to ramp our production of military equipment, and the only way of doing so is by building new factories!"
+CAC_economic_initiative:0 "Economic Initiative"
