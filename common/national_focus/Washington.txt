@@ -19,8 +19,25 @@ continuous_focus_position = { x = 50 y = 1000 }
 #Air Force Tree
 focus = {
   id = WAW_fund_the_boeing_company
-  icon = WAW_fund_the_boeing_company
+  icon = GFX_WAW_fund_the_boeing_company
   cost = 10
+  x = 20
+  y = 0
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+#Politics Tree
+focus = {
+  id = WAW_political_rivalry
+  icon = GFX_goal_unknown114
+  cost = 3
   x = 8
   y = 0
 
@@ -31,5 +48,62 @@ focus = {
   completion_reward = {
 
   }
+}
+
+focus = {
+  id = WAW_follow_martin
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_political_rivalry  }
+  relative_position_id = WAW_political_rivalry
+  cost = 5
+  x = 0
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_wagen_plan
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_political_rivalry  }
+  relative_position_id = WAW_political_rivalry
+  cost = 5
+  x = -6
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_fascist_path
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_political_rivalry  }
+  relative_position_id = WAW_political_rivalry
+  mutually_exclusive = { focus = WAW_follow_martin }
+  cost = 5
+  x = 6
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
 
 }
