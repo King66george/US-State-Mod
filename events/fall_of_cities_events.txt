@@ -13,7 +13,12 @@ news_event = {
     903 = { is_controlled_by = KSK}
     903 = { is_owned_by = MOM }
     KSK = { has_war_with = MOM}
+    NOT = { has_global_flag = fall_of_kc_kansas }
   }
+
+  immediate = {
+		set_global_flag = fall_of_kc_kansas
+	}
 
   mean_time_to_happen = {
 		days = 2
