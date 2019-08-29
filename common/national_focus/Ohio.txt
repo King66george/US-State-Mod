@@ -1,0 +1,86 @@
+focus_tree = {
+	id = Ohio
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OHO
+		}
+	}
+	default = no
+	focus = {
+		id = OHO_politicalbell
+		text = OHO_politicalbell
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		x = 13
+		y = 0
+			completion_reward = {
+					add_political_power = 150
+					country_event = ohio.1
+				}
+
+	}
+	focus = {
+		id = OHO_greatdepression
+		text = OHO_greatdepression
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		x = 36
+		y = 0
+			completion_reward = {
+					unlock_decision_category_tooltip = OHO_depression_recovery
+				}
+
+	}
+	focus = {
+		id = OHO_nationalunitygov
+		text = OHO_nationalunitygov
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_politicalbell
+		}
+		x = 0
+		y = 1
+		relative_position_id = OHO_politicalbell
+			completion_reward = {
+					add_political_power = 50
+					add_stability = .15
+				}
+
+	}
+	focus = {
+		id = OHO_coughlin
+		text = OHO_coughlin
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_politicalbell
+		}
+		x = -10
+		y = 1
+		relative_position_id = OHO_politicalbell
+			completion_reward = {
+					country_event = ohio.2
+				}
+
+	}
+	focus = {
+		id = OHO_wagenknecht
+		text = OHO_wagenknecht
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_politicalbell
+		}
+		x = 9
+		y = 1
+		relative_position_id = OHO_politicalbell
+			completion_reward = {
+					add_stability = -0.15
+					add_ideas = rising_communism
+				}
+
+	}
+}

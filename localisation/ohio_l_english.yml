@@ -1,9 +1,28 @@
-l_english:
+﻿l_english:
 ##Focuses##
-
+OHO_politicalbell:0 "Political Bellwether"
+OHO_politicalbell_desc:0 "Ohio is regarded as the number one bellwether for determining the politics of the rest of the states. Out of every presidential election when the states were united, not a single time have we voted against the winner. Regardless of the future we decide, it is a safe bet than many follow the same way."
+OHO_nationalunitygov:0 "National Unity Government"
+OHO_nationalunitygov_desc:0 "With these trying times, it is only safe to unite the two closely contested parties as one United Political Front to ensure our national liberty and sovereignty."
+OHO_greatdepression:0 "The Great Depression"
+OHO_greatdepression_desc:0 "The Great Depression which ultimately was bad enough to dissolve the states hit Ohio especially bad, with upwards of approximately 65% of construction workers losing their jobs. We must formulate a series of policies to resolve the issue."
+OHO_coughlin:0 "Begin Undermining with Coughlin"
+OHO_coughlin_desc:0 "Father Charles Coughlin has always been very influencial and would be a great header to our fascist government."
+OHO_wagenknecht:0 "United Under Wagenknecht"
+OHO_wagenknecht_desc:0 "Alfred Wagenknecht has suffered many political defeats. With the new political turmoil he may be able to win the election this time around."
 
 ##Ideas##
 worse_depression:0 "§RHard Hitting Depression§!"
 agricultural__industry:0 "§GAgricultural Industry§!"
+rising_communism:0 "§YRising Communism§!"
+##Events\/
 
-##Events##
+#Political Bellwether - Choose ideology drift
+ohio.1.t:0 "Political Bellwether"
+ohio.1.d:0 "Ohio is in a state of dispair. With the collapse of the United States and the ongoing great depression, we need to find out what we do next."
+ohio.1.a:0 "We need to be the true bastion of democracy!"
+ohio.1.b:0 "With the ideas of shared wealth Ohio can rise above all other states."
+ohio.1.c:0 "Mussolini, even with all his falures, cannot be disregarded as incorrect."
+ohio.2.t:0 "Coughlin Gains Traction"
+ohio.2.d:0 "Charles Coughlin has hosted many public gatherings and he seems to have amassed a decent sized following. He's gone all across Ohio making public speakings and rallies to get people on his antisemetist ideas."
+ohio.2.a:0 "We should follow this development."

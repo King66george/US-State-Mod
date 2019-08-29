@@ -4264,4 +4264,16 @@ spriteTypes = {
 		name = "GFX_idea_agricultural__industry"
 		texturefile = "gfx/interface/ideas/largeagriculture.dds"
 		}
+		spriteType = {
+			name = "GFX_idea_ALL_idea_fascist"
+			texturefile = "gfx/interface/ideas/generic_fascism_drift_bonus.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_ALL_idea_communist"
+			texturefile = "gfx/interface/ideas/generic_communism_drift_bonus.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_ALL_idea_democratic"
+			texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
+		}
 	}

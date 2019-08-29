@@ -25,7 +25,7 @@ ideas = {
 				ai_call_ally_desire_factor = -50
 			}
 		}
-	
+
 		ALL_idea_cheapguns = {
 
 			picture = idea_generic_pp_unity_bonus
@@ -42,7 +42,7 @@ ideas = {
 				}
 			}
 		}
-    
+
 		ALL_idea_genderequality = {
 			picture = GFX_idea_generic_victors_of_ww1
 			allowed = {
@@ -54,7 +54,7 @@ ideas = {
 			modifier = {
 				conscription_factor = 0.2
 			}
-			
+
 		}
 		ALL_idea_subsidizedfactories = {
 
@@ -70,10 +70,37 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.15
 			}
 		}
+    ALL_idea_democratic = {
+      allowed = {
+        always = yes
+      }
+      removal_cost = -1
 
+      modifier = {
+        democratic_drift = 0.02
+      }
+    }
+    ALL_idea_fascist = {
+      allowed = {
+        always = yes
+      }
+      removal_cost = -1
 
+      modifier = {
+        fascism_drift = 0.02
+      }
+    }
+    ALL_idea_communist = {
+      allowed = {
+        always = yes
+      }
+      removal_cost = -1
+
+      modifier = {
+        communism_drift = 0.02
+      }
+    }
 
 
 
 	}
-  

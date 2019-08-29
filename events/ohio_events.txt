@@ -1,0 +1,63 @@
+add_namespace = ohio
+
+#country_event = {
+#  id = ohio.0
+#  title = ohio.0.t
+#  desc = ohio.0.d
+#  picture = GFX_report_event_molotov_ribentrop_handshake
+#
+#  is_triggered_only = yes
+#
+#  option = {
+#  name = ohio.0.a
+#  OHO = {  }
+#  }
+#}
+country_event = {
+  id = ohio.1
+  title = ohio.1.t
+  desc = ohio.1.d
+  picture = GFX_report_event_molotov_ribentrop_handshake
+
+  is_triggered_only = yes
+
+  option = {
+    name = ohio.1.a
+    OHO = {
+      add_ideas = democratic_influence
+    }
+    every_neighbor_country = {
+      add_ideas = ALL_idea_democratic
+    }
+  }
+  option = {
+    name = ohio.1.b
+    OHO = {
+      add_ideas = communist_influence
+    }
+    every_neighbor_country = {
+      add_ideas = ALL_idea_communist
+    }
+  }
+  option = {
+    name = ohio.1.c
+    OHO = {
+      add_ideas = fascist_influence
+    }
+    every_neighbor_country = {
+      add_ideas = ALL_idea_fascist
+    }
+  }
+}
+country_event = {
+  id = ohio.2
+  title = ohio.2.t
+  desc = ohio.2.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = ohio.2.a
+    add_stability = -0.03
+  }
+}

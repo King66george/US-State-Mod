@@ -2701,6 +2701,9 @@
  trade_dominance:0 "Dominance of Trade"
  CAC_fundrightwingnews:0 "Fund Right Wing News Stations"
  CAC_policeforceempowered:0 "Police Force Empowered"
+ ALL_idea_democratic:0 "Democratic Influence"
+ ALL_idea_fascist:0 "Fascist Influence"
+ ALL_idea_communist:0 "Communist Influence"
  ########################################Political Advisors###########################################
  robert_bobbit:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"
