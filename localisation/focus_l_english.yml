@@ -3078,6 +3078,12 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  KSK_democratic7_desc:0 "Our best chance of survival would be to enter ourselves onto the world stage, joining the Allies in their fight against fascism. Let's send a petition to the Allies, and gain much needed support from foreign allies."
  KSK_democratic8:0 "Ad Astra Per Aspera"
  KSK_democratic8_desc:0 ""Through the Stars through difficulties", the state motto of Kansas, has never been more true than right now. Through the constant difficulties our new nation faces, we will continue to the stars!""
+ KSK_democratic9:0 "Protect the Status Quo"
+ KSK_democratic9_desc:0 "Many of our fellow democratic nations are under threat from radical ideological changes. In order to secure the peace and maintain the status quo of democracy and order, we must be ready to send our armies to defend liberty abroad."
+ KSK_democratic10:0 "Pass Agricultural Reforms"
+ KSK_democratic10_desc:0 "Kansas is currently recovering from the Dust Bowl, one of the largest environmental disasters to affect our state. In order to aid in the recovery of our great farmers, Governor Landon must pass legislation to give aid to suffering farmers."
+ KSK_democratic11:0 "Continental Soldiarity"
+ KSK_democratic11_desc:0 "Our best chance at surviving these trying times is to ally ourselves with like-minded states. Preserving our democracy should be our highest priority, and what better way than defending our fellow democracies?"
  KSK_communist1:0 "Browder's Revolution"
  KSK_communist1_desc:0 "Earl Browder, former leader of the Communist Party USA, has been advocating for a radical regime change in the wake of the collapse."
  KSK_communist2:0 "Full Integration"
@@ -3283,7 +3289,7 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  njdiplo5.5:0 "Look to the Coasts"
  njdiplo6.1:0 "War Propaganda"
  njdiplo6.2:0 "Protect Our Skies"
- njdiplo6.3:0 "Envelop the Threats" 
+ njdiplo6.3:0 "Envelop the Threats"
  njdiplo6.4:0 "Technological Expertise"
  njdiplo7.1:0 "Quality First"
  njdiplo7.2:0 "Unified Research"
@@ -3294,15 +3300,15 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  njdiplo8.4:0 "Expansion Overseas"
  njdiplo9.1:0 "Prepare Against Pennsylvania"
  njdiplo9.2:0 "Prepare Against New York"
- njdiplo9.3:0 "Closer Ties" 
- njdiplo9.4:0 "Caribbean Dominance" 
+ njdiplo9.3:0 "Closer Ties"
+ njdiplo9.4:0 "Caribbean Dominance"
  njdiplo10.1:0 "The Western Threat"
- njdiplo10.2:0 "The Northern Colossus" 
- njdiplo10.3:0 "Integration" 
- njdiplo11:0 "Triumph" 
+ njdiplo10.2:0 "The Northern Colossus"
+ njdiplo10.3:0 "Integration"
+ njdiplo11:0 "Triumph"
  njdiplo12:0 "American Legacy"
- 
- 
+
+
  #Generic Focus Rework Start Political#
 
 

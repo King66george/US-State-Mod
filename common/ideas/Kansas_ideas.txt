@@ -455,6 +455,42 @@ ideas = {
         opinion_gain_monthly_factor = -0.50
 			}
 		}
+		KSK_expeditionary_force = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_volunteer_expedition_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 1
+			}
+		}
+		KSK_agricultural_reform = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = idea_generic_agrarian_society
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = 0.10
+			}
+		}
   }
 
  #########################POLITICAL ADVISORS####################################

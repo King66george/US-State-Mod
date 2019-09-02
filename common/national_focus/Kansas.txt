@@ -473,11 +473,11 @@ focus_tree = {
 		focus = {
 			id = KSK_democratic3
 			icon = GFX_goal_generic_forceful_treaty
-			prerequisite = {focus = KSK_democratic1}
+			prerequisite = {focus = KSK_democratic4 }
 
-			x = -2
+			x = -3
 			y = 1
-			relative_position_id = KSK_democratic1
+			relative_position_id = KSK_democratic4
 
 			cost = 10
 
@@ -528,12 +528,12 @@ focus_tree = {
 		focus = {
 				id = KSK_democratic5
 				icon = GFX_goal_generic_military_deal
-				prerequisite = { focus = KSK_democratic4 }
+				prerequisite = { focus = KSK_democratic3 }
 
-				x = -2
+				x = 0
 				y = 1
 
-				relative_position_id = KSK_democratic4
+				relative_position_id = KSK_democratic3
 
 				cost = 15
 
@@ -599,7 +599,7 @@ focus_tree = {
 			icon = GFX_focus_research
 			prerequisite = { focus = KSK_democratic4 }
 
-			x = 0
+			x = 3
 			y = 1
 
 			relative_position_id = KSK_democratic4
@@ -621,8 +621,9 @@ focus_tree = {
 			id = KSK_democratic7
 			icon = GFX_focus_eng_the_sun_never_sets
 			prerequisite = {focus = KSK_democratic4}
+			mutually_exclusive = { focus = KSK_democratic11 }
 
-			x = 2
+			x = -1
 			y = 1
 
 			relative_position_id = KSK_democratic4
@@ -639,7 +640,7 @@ focus_tree = {
 			icon = GFX_focus_rocketry
 			prerequisite = { focus = KSK_democratic6 }
 
-			x = 8
+			x = 11
 			y = 5
 
 			relative_position_id = { KSK_democratic6 }
@@ -653,9 +654,57 @@ focus_tree = {
 				uses = 2
 				category = rocketry
 				category = jet_technology
+				}
 			}
 		}
-}
+		focus = {
+			id = KSK_democratic9
+			icon = GFX_goal_generic_military_sphere
+			prerequisite = { focus = KSK_democratic1 }
+
+			x = 6
+			y = 2
+
+			relative_position_id = { KSK_democratic1}
+
+			cost = 10
+
+			completion_reward = {
+				add_ideas = KSK_expeditionary_force
+			}
+		}
+		focus = {
+			id = KSK_democratic10
+			icon = GFX_goal_generic_construct_civilian
+			prerequisite = { focus = KSK_democratic1 }
+
+			x = 10
+			y = 2
+
+			cost = 10
+
+			completion_reward = {
+				add_ideas = KSK_agricultural_reform
+			}
+		}
+		focus = {
+			id = KSK_democratic11
+			icon = GFX_goal_generic_major_alliance
+			prerequisite = { focus = KSK_democratic4 }
+			mutually_exclusive = { focus = KSK_democratic7 }
+
+			x = 9
+			y = 4
+
+			cost = 10
+
+			completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = "American Federation of Free States"
+			}
+		}
 		focus = {
 				id = KSK_communist1
 				icon = GFX_goal_support_communism

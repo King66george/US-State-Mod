@@ -2672,6 +2672,8 @@
  KSK_fighterbonus:0 "Increased Fighter Production"
  KSK_fighterbonus2:0 "Increased Bomber Production"
  KSK_war:0 "Aggressive Foreign Policy"
+ KSK_agricultural_reform:0 "Agricultural Reforms"
+ KSK_expeditionary_force:0 "Kansan Expeditionary Force"
  VAV_idea_pentagon:0 "The Pentagon"
  thetredegarironworks:0 "The Tredegar Iron Works"
  norfolknavalyard:0 "Norfolk Naval Yard"
