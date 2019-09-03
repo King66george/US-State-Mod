@@ -1,9 +1,4 @@
-completion_reward = {
-
-}
-}
-
-#Add all^id = njpolindusreeid = njpolindusreeid = njpolindusree###New Jersey Focus Tree###
+###New Jersey Focus Tree###
 ###Do not edit###
 focus_tree = {
     id = newjersey_focus
@@ -1694,6 +1689,10 @@ completion_reward = {
 }
 }
 
+###
+###
+###
+
 #Add all^###Navy Airforce###
 
 
@@ -2023,3 +2022,4 @@ completion_reward = {
 
 #Add all^
 }
+###End###
