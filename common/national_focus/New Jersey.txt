@@ -799,7 +799,7 @@ icon = GFX_goal_generic_secret_weapon
 x = 23
 y = 0
 cost = 5
-mutually_exclusive = njpolindusree1.2
+mutually_exclusive = { focus = njpolindusree1.2 }
 completion_reward = {
 add_popularity = {
 ideology = communism
@@ -819,7 +819,7 @@ icon = GFX_goal_generic_support_democracy
 x = 32
 y = 0
 cost = 5
-mutually_exclusive = njpolindusree1.1
+mutually_exclusive = { focus = njpolindusree1.1 }
 completion_reward = {
 add_stability = 0.1
 }
@@ -844,8 +844,8 @@ icon = GFX_goal_generic_support_communism
 x = 18
 y = 1
 cost = 5
-prerequisite = njpolindusree1.1
-mutually_exclusive = njpolindusree2.2
+prerequisite = { focus = njpolindusree1.1 }
+mutually_exclusive = { focus = njpolindusree2.2 }
 completion_reward = {
 add_popularity = {
 ideology = communism
@@ -862,8 +862,8 @@ icon = GFX_goal_generic_support_fascism
 x = 25
 y = 1
 cost = 5
-prerequisite = njpolindusree1.1
-mutually_exclusive = njpolindusree2.1
+prerequisite = { focus = njpolindusree1.1 }
+mutually_exclusive = { focus = njpolindusree2.1 }
 completion_reward = {
 add_popularity = {
 ideology = fascism
@@ -880,8 +880,8 @@ icon = GFX_focus_rom_royal_dictatorship
 x = 30
 y = 1
 cost = 5
-prerequisite = njpolindusree1.2
-mutually_exclusive = njpolindusree2.4
+prerequisite = { focus = njpolindusree1.2 }
+mutually_exclusive = { focus = njpolindusree2.4 }
 completion_reward = {
 add_popularity = {
 ideology = neutrality
@@ -898,8 +898,8 @@ icon = GFX_focus_rom_handle_king
 x = 32
 y = 1
 cost = 5
-prerequisite = njpolindusree1.2
-mutually_exclusive = njpolindusree2.3
+prerequisite = { focus = njpolindusree1.2 }
+mutually_exclusive = { focus = njpolindusree2.3 }
 completion_reward = {
 add_popularity = {
 ideology = democratic
