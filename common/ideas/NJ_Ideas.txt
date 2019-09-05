@@ -174,5 +174,25 @@ consumer_goods_factor = -0.1
 construction_speed_factor = 1.1
 }
 }
+
+###American Way##
+
+american_way = {
+
+allowed = {
+always = no
+}
+
+allowed_civil_war = {
+always = yes
+}
+removal_cost = -1
+
+modifier = {
+trade_opinion_factor = 0.1
+surrender_limit = 0.9
+justify_war_goal_time = -0.2
+}
+}
 }
 }

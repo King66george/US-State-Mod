@@ -841,12 +841,17 @@ add_ideas = dept_eco_infra
 focus = {
 id = njpolindusree2.1
 icon = GFX_goal_generic_support_communism
-x =
-y =
-cost =
-prerequisite =
+x = 18
+y = 1
+cost = 5
+prerequisite = njpolindusree1.1
+mutually_exclusive = njpolindusree2.2
 completion_reward = {
-
+add_popularity = {
+ideology = communism
+popularity = 0.4
+}
+set_politics = communism
 }
 }
 
@@ -854,12 +859,17 @@ completion_reward = {
 focus = {
 id = njpolindusree2.2
 icon = GFX_goal_generic_support_fascism
-x =
-y =
-cost =
-prerequisite =
+x = 25
+y = 1
+cost = 5
+prerequisite = njpolindusree1.1
+mutually_exclusive = njpolindusree2.1
 completion_reward = {
-
+add_popularity = {
+ideology = fascism
+popularity = 0.4
+}
+set_politics = fascism
 }
 }
 
@@ -867,12 +877,17 @@ completion_reward = {
 focus = {
 id = njpolindusree2.3
 icon = GFX_focus_rom_royal_dictatorship
-x =
-y =
-cost =
-prerequisite =
+x = 30
+y = 1
+cost = 5
+prerequisite = njpolindusree1.2
+mutually_exclusive = njpolindusree2.4
 completion_reward = {
-
+add_popularity = {
+ideology = neutrality
+popularity = 0.6
+}
+neutrality_drift = 0.05
 }
 }
 
@@ -880,12 +895,17 @@ completion_reward = {
 focus = {
 id = njpolindusree2.4
 icon = GFX_focus_rom_handle_king
-x =
-y =
-cost =
-prerequisite =
+x = 32
+y = 1
+cost = 5
+prerequisite = njpolindusree1.2
+mutually_exclusive = njpolindusree2.3
 completion_reward = {
-
+add_popularity = {
+ideology = democratic
+popularity = 1
+}
+add_ideas = american_way
 }
 }
 
