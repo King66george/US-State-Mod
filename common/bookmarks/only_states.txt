@@ -95,7 +95,7 @@ bookmarks = {
 
 		"NJN" = {
 			minor = yes
-			history = "USA_GATHERING_STORM_DESC"
+			history = "NJN_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				home_of_the_free
