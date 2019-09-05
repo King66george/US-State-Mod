@@ -795,46 +795,52 @@ every_owned_state = {
 
 focus = {
 id = njpolindusree1.1
-icon =
-x =
-y =
-cost =
-prerequisite =
+icon = GFX_goal_generic_secret_weapon
+x = 23
+y = 0
+cost = 5
+mutually_exclusive = njpolindusree1.2
 completion_reward = {
-
+add_popularity = {
+ideology = communism
+popularity = 0.2
+}
+add_popularity = {
+ideology = fascism
+popularity - 0.2
+}
 }
 }
 
 #Add all^
 focus = {
 id = njpolindusree1.2
-icon =
-x =
-y =
-cost =
-prerequisite =
+icon = GFX_goal_generic_support_democracy
+x = 32
+y = 0
+cost = 5
+mutually_exclusive = njpolindusree1.1
 completion_reward = {
-
+add_stability = 0.1
 }
 }
 
 #Add all^
 focus = {
 id = njpolindusree1.3
-icon =
-x =
-y =
-cost =
-prerequisite =
+icon = GFX_goal_generic_construct_civilian
+x = 42
+y = 0
+cost = 5
 completion_reward = {
-
+add_ideas = dept_eco_infra
 }
 }
 
 #Add all^
 focus = {
 id = njpolindusree2.1
-icon =
+icon = GFX_goal_generic_support_communism
 x =
 y =
 cost =
@@ -847,7 +853,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree2.2
-icon =
+icon = GFX_goal_generic_support_fascism
 x =
 y =
 cost =
@@ -860,7 +866,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree2.3
-icon =
+icon = GFX_focus_rom_royal_dictatorship
 x =
 y =
 cost =
@@ -873,7 +879,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree2.4
-icon =
+icon = GFX_focus_rom_handle_king
 x =
 y =
 cost =
@@ -886,7 +892,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree2.5
-icon =
+icon = GFX_focus_mex_privatisation
 x =
 y =
 cost =
@@ -899,7 +905,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree2.6
-icon =
+icon = GFX_goal_generic_construct_civilian
 x =
 y =
 cost =
@@ -912,7 +918,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.1
-icon =
+icon = GFX_goal_generic_war_with_comintern
 x =
 y =
 cost =
@@ -925,7 +931,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.2
-icon =
+icon = GFX_focus_generic_soviet_politics
 x =
 y =
 cost =
@@ -938,7 +944,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.3
-icon =
+icon = GFX_goal_molotov_ribbentrop_pact
 x =
 y =
 cost =
@@ -951,7 +957,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.4
-icon =
+icon = GFX_focus_generic_home_defense
 x =
 y =
 cost =
@@ -964,7 +970,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.5
-icon =
+icon = GFX_goal_continuous_boost_freedom
 x =
 y =
 cost =
@@ -977,7 +983,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.6
-icon =
+icon = GFX_goal_generic_construct_mil_factory
 x =
 y =
 cost =
@@ -990,7 +996,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.7
-icon =
+icon = GFX_goal_generic_construct_civ_factory
 x =
 y =
 cost =
@@ -1003,7 +1009,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree3.8
-icon =
+icon = GFX_goal_generic_construct_infrastructure
 x =
 y =
 cost =
@@ -1016,7 +1022,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.1
-icon =
+icon = GFX_focus_chi_mission_to_the_soviet_union
 x =
 y =
 cost =
@@ -1029,7 +1035,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.2
-icon =
+icon = GFX_focus_prc_agrarian_socialism
 x =
 y =
 cost =
@@ -1042,7 +1048,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.3
-icon =
+icon = GFX_focus_generic_join_comintern
 x =
 y =
 cost =
@@ -1055,7 +1061,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.4
-icon =
+icon = GFX_focus_generic_support_the_left_right
 x =
 y =
 cost =
@@ -1068,7 +1074,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.5
-icon =
+icon = GFX_goal_demand_sudetenland
 x =
 y =
 cost =
@@ -1081,7 +1087,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.6
-icon =
+icon = GFX_goal_generic_army_doctrines
 x =
 y =
 cost =
@@ -1094,7 +1100,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.7
-icon =
+icon = GFX_focus_generic_support_the_left_right
 x =
 y =
 cost =
@@ -1107,7 +1113,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.8
-icon =
+icon = GFX_goal_generic_consumer_goods
 x =
 y =
 cost =
@@ -1120,7 +1126,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.9
-icon =
+icon = GFX_focus_generic_treaty
 x =
 y =
 cost =
@@ -1133,7 +1139,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree4.10
-icon =
+icon = GFX_goal_generic_construct_civilian
 x =
 y =
 cost =
@@ -1146,7 +1152,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.1
-icon =
+icon = GFX_goal_generic_trade
 x =
 y =
 cost =
@@ -1159,7 +1165,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.2
-icon =
+icon = GFX_goal_generic_consumer_goods
 x =
 y =
 cost =
@@ -1172,7 +1178,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.3
-icon =
+icon = GFX_focus_yug_pan_slavic_congress
 x =
 y =
 cost =
@@ -1185,7 +1191,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.4
-icon =
+icon = GFX_goal_generic_major_war
 x =
 y =
 cost =
@@ -1198,7 +1204,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.5
-icon =
+icon = GFX_focus_generic_italy_first
 x =
 y =
 cost =
@@ -1211,7 +1217,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.6
-icon =
+icon = GFX_goal_generic_army_artillery2
 x =
 y =
 cost =
@@ -1224,7 +1230,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.7
-icon =
+icon = GFX_focus_hol_the_foundations_of_defense
 x =
 y =
 cost =
@@ -1237,7 +1243,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.8
-icon =
+icon = GFX_goal_generic_radar
 x =
 y =
 cost =
@@ -1250,7 +1256,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.9
-icon =
+icon = GFX_goal_generic_support_democracy
 x =
 y =
 cost =
@@ -1263,7 +1269,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.10
-icon =
+icon = GFX_focus_generic_the_giant_wakes
 x =
 y =
 cost =
@@ -1276,7 +1282,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.11
-icon =
+icon = GFX_goal_generic_intelligence_exchange
 x =
 y =
 cost =
@@ -1289,7 +1295,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.12
-icon =
+icon = GFX_focus_usa_reestablish_the_gold_standard
 x =
 y =
 cost =
@@ -1302,7 +1308,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.13
-icon =
+icon = GFX_goal_generic_construct_mil_factory
 x =
 y =
 cost =
@@ -1315,7 +1321,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.14
-icon =
+icon = GFX_goal_generic_construct_civ_factory
 x =
 y =
 cost =
@@ -1328,7 +1334,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree5.15
-icon =
+icon = GFX_goal_generic_construct_infrastructure
 x =
 y =
 cost =
@@ -1341,7 +1347,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.1
-icon =
+icon = GFX_goal_generic_forceful_treaty
 x =
 y =
 cost =
@@ -1354,7 +1360,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.2
-icon =
+icon = GFX_goal_generic_soviet_construction
 x =
 y =
 cost =
@@ -1367,7 +1373,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.3
-icon =
+icon = GFX_focus_renounce_the_treaty_of_triannon
 x =
 y =
 cost =
@@ -1380,7 +1386,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.4
-icon =
+icon = GFX_focus_generic_tank_production
 x =
 y =
 cost =
@@ -1393,7 +1399,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.5
-icon =
+icon = GFX_focus_generic_little_entente
 x =
 y =
 cost =
@@ -1406,7 +1412,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.6
-icon =
+icon = GFX_focus_eng_chiefs_of_staff_committee
 x =
 y =
 cost =
@@ -1419,7 +1425,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.7
-icon =
+icon = GFX_focus_generic_cryptologic_bomb
 x =
 y =
 cost =
@@ -1432,7 +1438,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.8
-icon =
+icon = GFX_goal_generic_defence
 x =
 y =
 cost =
@@ -1445,7 +1451,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.9
-icon =
+icon = GFX_goal_generic_small_arms
 x =
 y =
 cost =
@@ -1458,7 +1464,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.10
-icon =
+icon = GFX_focus_generic_treaty
 x =
 y =
 cost =
@@ -1471,7 +1477,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.11
-icon =
+icon = GFX_focus_generic_self_management
 x =
 y =
 cost =
@@ -1484,7 +1490,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree6.12
-icon =
+icon = GFX_focus_research
 x =
 y =
 cost =
@@ -1497,7 +1503,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree7.1
-icon =
+icon = GFX_focus_generic_military_academy
 x =
 y =
 cost =
@@ -1510,7 +1516,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree7.2
-icon =
+icon = GFX_focus_eng_organise_the_blackshirts
 x =
 y =
 cost =
@@ -1523,7 +1529,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree7.3
-icon =
+icon = GFX_focus_generic_combined_arms
 x =
 y =
 cost =
@@ -1536,7 +1542,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree7.4
-icon =
+icon = GFX_goal_generic_small_arms
 x =
 y =
 cost =
@@ -1549,7 +1555,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree7.5
-icon =
+icon = GFX_goal_generic_trade
 x =
 y =
 cost =
@@ -1562,7 +1568,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree8.1
-icon =
+icon = GFX_focus_generic_military_mission
 x =
 y =
 cost =
@@ -1575,7 +1581,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree8.2
-icon =
+icon = GFX_goal_generic_military_deal
 x =
 y =
 cost =
@@ -1588,7 +1594,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree8.3
-icon =
+icon = GFX_goal_generic_fortify_city
 x =
 y =
 cost =
@@ -1601,7 +1607,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree8.4
-icon =
+icon = GFX_focus_research2
 x =
 y =
 cost =
@@ -1614,7 +1620,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree8.5
-icon =
+icon = GFX_goal_generic_positive_trade_relations
 x =
 y =
 cost =
@@ -1627,7 +1633,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree9.1
-icon =
+icon = GFX_goal_generic_defence
 x =
 y =
 cost =
@@ -1640,7 +1646,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree9.2
-icon =
+icon = GFX_focus_rom_parties_end
 x =
 y =
 cost =
@@ -1653,7 +1659,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree9.3
-icon =
+icon = GFX_goal_generic_major_war
 x =
 y =
 cost =
@@ -1666,7 +1672,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree9.4
-icon =
+icon = GFX_focus_chi_mission_to_the_us
 x =
 y =
 cost =
@@ -1679,7 +1685,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njpolindusree10
-icon =
+icon = GFX_focus_wonderweapons
 x =
 y =
 cost =
@@ -1693,16 +1699,16 @@ completion_reward = {
 ###
 ###
 
-#Add all^###Navy Airforce###
+#Add all^
 
+###Navy Airforce###
 
 focus = {
 id = njspecop1.1
-icon =
+icon = GFX_goal_generic_air_fighter2
 x =
 y =
 cost =
-prerequisite =
 completion_reward = {
 
 }
@@ -1711,11 +1717,10 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop1.2
-icon =
+icon = GFX_goal_generic_construct_naval_dockyard
 x =
 y =
 cost =
-prerequisite =
 completion_reward = {
 
 }
@@ -1724,7 +1729,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop2.1
-icon =
+icon = GFX_goal_generic_production
 x =
 y =
 cost =
@@ -1737,7 +1742,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop2.2
-icon =
+icon = GFX_goal_generic_air_production
 x =
 y =
 cost =
@@ -1750,7 +1755,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop2.3
-icon =
+icon = GFX_goal_generic_construct_naval_dockyard
 x =
 y =
 cost =
@@ -1763,7 +1768,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop3.1
-icon =
+icon = GFX_goal_generic_air_bomber
 x =
 y =
 cost =
@@ -1776,7 +1781,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop3.2
-icon =
+icon = GFX_goal_generic_air_fighter
 x =
 y =
 cost =
@@ -1789,7 +1794,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop3.3
-icon =
+icon = GFX_goal_generic_amphibious_assault
 x =
 y =
 cost =
@@ -1802,7 +1807,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop3.4
-icon =
+icon = GFX_goal_generic_construct_naval_dockyard
 x =
 y =
 cost =
@@ -1815,7 +1820,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop4.1
-icon =
+icon = GFX_focus_usa_escort_fighters
 x =
 y =
 cost =
@@ -1828,7 +1833,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop4.2
-icon =
+icon = GFX_goal_generic_build_airforce
 x =
 y =
 cost =
@@ -1841,7 +1846,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop4.3
-icon =
+icon = GFX_goal_generic_air_fighter
 x =
 y =
 cost =
@@ -1854,7 +1859,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop4.4
-icon =
+icon = GFX_goal_generic_navy_carrier
 x =
 y =
 cost =
@@ -1867,7 +1872,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop4.5
-icon =
+icon = GFX_focus_generic_destroyer
 x =
 y =
 cost =
@@ -1880,7 +1885,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop4.6
-icon =
+icon = GFX_focus_generic_navy_battleship2
 x =
 y =
 cost =
@@ -1893,7 +1898,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop5.1
-icon =
+icon = GFX_focus_generic_paratrooper
 x =
 y =
 cost =
@@ -1906,7 +1911,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop5.2
-icon =
+icon = GFX_goal_generic_navy_carrier
 x =
 y =
 cost =
@@ -1919,7 +1924,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop5.3
-icon =
+icon = GFX_goal_generic_navy_submarine
 x =
 y =
 cost =
@@ -1932,7 +1937,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop5.4
-icon =
+icon = GFX_goal_generic_navy_cruiser
 x =
 y =
 cost =
@@ -1945,7 +1950,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop5.5
-icon =
+icon = GFX_goal_generic_navy_battleship
 x =
 y =
 cost =
@@ -1958,7 +1963,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop5.6
-icon =
+icon = GFX_goal_generic_navy_carriergoal_generic_navy_anti_submarine
 x =
 y =
 cost =
@@ -1971,7 +1976,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop6.1
-icon =
+icon = GFX_goal_generic_navy_anti_submarine
 x =
 y =
 cost =
@@ -1984,7 +1989,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop6.2
-icon =
+icon = GFX_focus_generic_cruiser2
 x =
 y =
 cost =
@@ -1997,7 +2002,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop6.3
-icon =
+icon = GFX_goal_generic_navy_doctrines_tactics
 x =
 y =
 cost =
@@ -2010,7 +2015,7 @@ completion_reward = {
 #Add all^
 focus = {
 id = njspecop6.4
-icon =
+icon = GFX_goal_generic_navy_carrier
 x =
 y =
 cost =
@@ -2022,4 +2027,5 @@ completion_reward = {
 
 #Add all^
 }
+
 ###End###
