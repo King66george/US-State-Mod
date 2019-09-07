@@ -11,8 +11,7 @@ state={
 		owner = NYN
 		buildings = {
 			infrastructure = 8
-			arms_factory = 2
-			industrial_complex = 7
+			industrial_complex = 1
 			air_base = 10
 
 		}

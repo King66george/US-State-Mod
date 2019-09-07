@@ -9,8 +9,7 @@ state={
 		owner = NCN
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
-			arms_factory = 3
+			arms_factory = 1
 
 		}
 		add_core_of = NCN

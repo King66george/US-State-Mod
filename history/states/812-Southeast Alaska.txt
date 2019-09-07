@@ -2,7 +2,7 @@ state={
 	id=812
 	name="Hell"
 	manpower=1067500
-	state_category=rural
+	state_category=town
 	resources={ 
 		oil=30
 		steel=5
@@ -12,6 +12,8 @@ state={
 		owner = AKA
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
 			air_base = 1
 
 		}

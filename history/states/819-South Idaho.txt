@@ -1,7 +1,7 @@
 state={
 	id=819
 	name="South Idaho"
-	state_category=rural
+	state_category= town
 		manpower=1445031
 	resources={
 		steel=18.000
@@ -13,7 +13,8 @@ state={
 		owner = IDI
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 1
 
 		}
 		add_core_of = IDI

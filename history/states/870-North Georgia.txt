@@ -7,7 +7,8 @@ state={
 		owner = GAG
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 1
+			arms_factory = 2
 			air_base = 2
 
 		}

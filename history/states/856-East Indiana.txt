@@ -7,7 +7,7 @@ state={
 		owner = INI
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 5
+			industrial_complex = 3
 
 		}
 		add_core_of = INI

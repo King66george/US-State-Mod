@@ -10,12 +10,12 @@ state={
 		owner = MOM
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 5
+			arms_factory = 2
 
 		}
 		add_core_of = MOM
 		victory_points = {
-			4569 5 
+			4569 10 
 		}
 		victory_points = {
 			10717 5 

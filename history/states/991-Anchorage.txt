@@ -1,7 +1,7 @@
 
 state={
 	id=991
-	name="Alaska"
+	name="Anchorage"
 	resources={
 		oil=25.000
 		tungsten=15.000
@@ -12,8 +12,9 @@ state={
 		owner = AKA
 		buildings = {
 			infrastructure = 5
-			air_base = 1
+			air_base = 1	
 			industrial_complex = 2
+			arms_factory = 1
 			13091 = {
 				naval_base = 1
 

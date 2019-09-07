@@ -1,7 +1,7 @@
 state={
 	id=976
 	name="Hartford"
-	manpower=1004713
+	manpower=3004713
 	state_category=metropolis
 	resources={
 		steel=12.000

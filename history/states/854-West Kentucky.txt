@@ -13,7 +13,8 @@ state={
 		owner = KYK
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 3
+			industrial_complex = 1
+			arms_factory = 2
 			air_base = 4
 
 		}
