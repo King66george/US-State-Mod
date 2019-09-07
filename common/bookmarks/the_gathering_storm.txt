@@ -47,27 +47,15 @@ bookmarks = {
 			}
 		}
 
-		"NYN" = {
-			history = "NYN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				#
-			}
-			focuses = {
-				NYN_politicalfocus_1
-				NYN_forthepeople
-				NYN_communistfriends
-			}
-		}
-
 		"KSK"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
 			}
 			focuses = {
-				#
+				KSK_conquest3
+				KSK_democratic1
+				KSK_steel_plant
 			}
 		}
 
@@ -78,7 +66,22 @@ bookmarks = {
 				home_of_the_free
 			}
 			focuses = {
+				FLF_anewgovernment
+				FLF_southernpride
+				FLF_boostthesoldiersmoods
+			}
+		}
+
+		"AZA" = {
+			history = "NYN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
 				#
+			}
+			focuses = {
+				AZfocus_0
+				AZfocus_7
+				AZfocus_22
 			}
 		}
 
@@ -89,7 +92,9 @@ bookmarks = {
 				home_of_the_free
 			}
 			focuses = {
-				#
+				NCN_FOCUS_17
+				ncking_and_country
+				NCN_FOCUS_11
 			}
 		}
 
@@ -101,7 +106,9 @@ bookmarks = {
 				home_of_the_free
 			}
 			focuses = {
-				#
+				njdiplo3.2
+				njdiplo1
+				njdiplo12
 			}
 		}
 
