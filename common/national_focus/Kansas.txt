@@ -483,6 +483,19 @@ focus_tree = {
 
 			ai_will_do = {factor = 1}
 
+			bypass = {
+				MOM = {
+					OR = {
+						exists = no
+						is_subject = yes
+						AND = {
+							is_subject = no
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+			}
+			
 			completion_reward = {
 						MOM = {
 								country_event = missouri.3
@@ -672,7 +685,7 @@ focus_tree = {
 			completion_reward = {
 				add_ideas = KSK_expeditionary_force
 				set_rule = {
-					can_send_volunteers = yes 
+					can_send_volunteers = yes
 				}
 			}
 		}
