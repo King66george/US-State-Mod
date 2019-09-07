@@ -3,10 +3,11 @@ state={
 	name="South Chihuahua"
 
 	history={ 
-		owner = MEX
+		owner = CIA
 		buildings = {
 			infrastructure = 3
-
+			arms_factory = 1
+			industrial_complex = 2
 		}
 		add_core_of = CIA
 		add_core_of = MEX

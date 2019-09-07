@@ -7,7 +7,7 @@ state={
 		tungsten=15
 	}
 	history = {
-		owner = MEX
+		owner = BAJ
 		buildings = {
 			infrastructure = 3
 			air_base = 3

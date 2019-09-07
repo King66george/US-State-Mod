@@ -4,16 +4,18 @@ state={
 	resources={
 		steel=25
 		tungsten=15
+		rubber= 10
 	}
 	history={
-		owner = MEX
+		owner = YUC
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			air_base = 1
+			industrial_complex = 2
 			
 		}
-		add_core_of = YUC
 		add_core_of = MEX
+		add_core_of = YUC
 		victory_points = {
 			4965 10 
 		}

@@ -3,11 +3,11 @@ state={
 	name="Que"
 
 	history={
-		owner = MEX
+		owner = OME
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 3
 			
 
 		}

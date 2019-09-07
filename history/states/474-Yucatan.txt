@@ -4,7 +4,7 @@ state={
 	name="STATE_474"
 
 	history={
-		owner = MEX
+		owner = YUC
 		buildings = {
 			infrastructure = 3
 			air_base = 1

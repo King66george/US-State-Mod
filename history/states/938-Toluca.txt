@@ -1,9 +1,12 @@
 state={
 	id=938
 	name="Toluca"
-
+	resources={
+		steel=5.000
+		rubber=7.000
+	}
 	history={ 
-		owner = MEX
+		owner = OME
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
@@ -11,8 +14,8 @@ state={
 			air_base = 3
 
 		}
-		add_core_of = OME
 		add_core_of = MEX
+		add_core_of = OME
 		victory_points = {
 			1965 25 
 		}

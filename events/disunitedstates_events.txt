@@ -311,70 +311,70 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_ai = no
-		country_exists = MEX
+		country_exists = OME
 	}
 	option = {
 		name = disunitedstates.10.a
-		SON = {
+		MEX = {
 			transfer_state = 920
 			transfer_state = 483
 			transfer_state = 919
 		}
-		BAJ = {
+		MEX = {
 			transfer_state = 916
 			transfer_state = 484
 			transfer_state = 917
 			transfer_state = 918
 		}
-		CHP = {
+		MEX = {
 			transfer_state = 475
 			transfer_state = 934
 		}
-		CIA = {
+		MEX = {
 			transfer_state = 930
 			transfer_state = 482
 			transfer_state = 929
 		}
-		SIN = {
+		MEX = {
 			transfer_state = 481
 			transfer_state = 921
 		}
-		TAU = {
+		MEX = {
 			transfer_state = 479
 			transfer_state = 926
 			transfer_state = 937
 		}
-		YUC = {
+		MEX = {
 			transfer_state = 474
 			transfer_state = 935
 			transfer_state = 936
 		}
-		VEC = {
+		MEX = {
 			transfer_state = 477
 			transfer_state = 931
 		}
-		OME = {
+		MEX = {
 			transfer_state = 939
 			transfer_state = 277
 			transfer_state = 924
 			transfer_state = 925
 			transfer_state = 938
 		}
-		OAX = {
+		MEX = {
 			transfer_state = 933
 			transfer_state = 476
 			transfer_state = 932
 		}
-		GUE = {
+		MEX = {
 			transfer_state = 923
 			transfer_state = 485
 		}
-		COU = {
+		MEX = {
 			transfer_state = 480
 			transfer_state = 928
 			transfer_state = 927
 		}
-		NAY = {
+		MEX = {
 			transfer_state = 922
 			transfer_state = 478
 		}

@@ -3,9 +3,11 @@ state={
 	name="Hermosillo"
 
 	history={ 
-		owner = MEX
+		owner = SON
 		buildings = {
 			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
 			4908 = {
 				naval_base = 3
 

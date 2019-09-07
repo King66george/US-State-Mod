@@ -61,7 +61,7 @@ focus_tree = {
 	}
 	focus = {
 		id = azaviation_effort
-		text = "Luke AFB Is Designed"
+		
 		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
 		x = 35
@@ -147,7 +147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = aznaval_effort
-		text = "Well...."
+		
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 35
@@ -266,7 +266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = azsteel_add
-		text = "Steel Foundries"
+		
 		icon = GFX_focus_generic_steel
 		cost = 15.00
 		mutually_exclusive = {
@@ -288,7 +288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = aztung_add
-		text = "Tungsten For Us"
+		
 		icon = GFX_focus_generic_tungsten
 		cost = 10.00
 		mutually_exclusive = {
@@ -309,7 +309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = azchr_add
-		text = "Chromium"
+		
 		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		mutually_exclusive = {
@@ -430,7 +430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = production_effort_az
-		text = "Full Production capacity"
+		
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
@@ -681,11 +681,10 @@ focus_tree = {
 							uses = 2
 							category = nuclear
 						}
-					create_faction = Nuclear_pact
 					NVN = {
 							country_event = {
 									days = 1
-									id = SOVcustomevent.69
+									id = disunitedstates.9
 								}
 						}
 				}
@@ -753,7 +752,6 @@ focus_tree = {
 	}
 	focus = {
 		id = construction_effort_az
-		text = "Full Construction Capacity"
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 7.00
 		prerequisite = {
@@ -816,7 +814,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azcollectivist_ethos
-		text = "Arizona's Unification"
 		icon = GFX_goal_generic_national_unity
 		cost = 5.00
 		prerequisite = {
@@ -886,7 +883,6 @@ focus_tree = {
 	}
 	focus = {
 		id = AZmilitarism
-		text = "Arizona Needs You"
 		icon = GFX_goal_generic_political_pressure
 		cost = 10.00
 		prerequisite = {
@@ -1010,7 +1006,6 @@ focus_tree = {
 	}
 	focus = {
 		id = arm_our_borders
-		text = "Arm Our Borders"
 		icon = GFX_goal_generic_construct_military
 		cost = 10.00
 		prerequisite = {
@@ -1138,7 +1133,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azpolitical_correctness
-		text = "Anti-Fascist Union"
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 7.00
 		prerequisite = {
@@ -1164,7 +1158,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azindoctrination_focus
-		text = "Phoenix Youth Groups"
 		icon = GFX_focus_generic_military_academy
 		cost = 10.00
 		prerequisite = {
@@ -1182,7 +1175,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azpolitical_commissars
-		text = "Political Commisars"
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 5.00
 		prerequisite = {
@@ -1220,7 +1212,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azcom_militarism
-		text = "Communist Militias"
 		icon = GFX_focus_prc_agrarian_socialism
 		cost = 10.00
 		prerequisite = {
@@ -1236,7 +1227,6 @@ focus_tree = {
 	}
 	focus = {
 		id = AZbike_effort
-		text = "Navajo Bike Brigades"
 		icon = GFX_goal_generic_build_tank
 		cost = 2.00
 		prerequisite = {
@@ -1254,7 +1244,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azliberty_ethos
-		text = "Arizona Remains Free"
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 5.00
 		prerequisite = {
@@ -1336,7 +1325,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azdem_militarism
-		text = "Volunteer Military"
 		icon = GFX_focus_secret_rearmament
 		cost = 10.00
 		prerequisite = {
@@ -1414,7 +1402,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azmonarchy_ethos
-		text = "Return To Montezuma"
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 5.00
 		prerequisite = {
@@ -1459,7 +1446,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azvolunteer_corps
-		text = "Push Volunteers"
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		prerequisite = {
@@ -1477,7 +1463,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azforeign_expeditions
-		text = "Expeditions"
 		icon = GFX_goal_generic_more_territorial_claims
 		cost = 5.00
 		prerequisite = {
@@ -1519,7 +1504,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azdeterrence
-		text = "Deterence"
 		icon = GFX_goal_generic_defence
 		cost = 5.00
 		prerequisite = {
@@ -1566,7 +1550,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azref_add
-		text = "Strike Black Gold"
 		icon = GFX_goal_generic_oil_refinery
 		cost = 10.00
 		prerequisite = {
@@ -1591,7 +1574,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azempower_king
-		text = "Montezuma's Desendant"
 		icon = GFX_focus_rom_royal_dictatorship
 		cost = 7.00
 		prerequisite = {
@@ -1612,7 +1594,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azenforce_king
-		text = "Force Taxation"
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
@@ -1640,7 +1621,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azking_and_country
-		text = "For King And Country!"
 		icon = GFX_focus_eng_god_save_the_king
 		cost = 10.00
 		prerequisite = {
@@ -1667,7 +1647,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azwhy_we_fight
-		text = "Why Arizona Fights"
 		icon = GFX_goal_generic_propaganda
 		cost = 7.00
 		prerequisite = {
@@ -1704,7 +1683,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azneu_militarism
-		text = "Militancy"
 		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
 		prerequisite = {
@@ -1728,7 +1706,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azgod_given_ruler
-		text = "Arizona's David"
 		icon = GFX_focus_generic_self_management
 		cost = 2.00
 		prerequisite = {
@@ -1749,7 +1726,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azgod_father
-		text = "New Montezuma"
 		icon = GFX_goal_generic_major_war
 		cost = 5.00
 		prerequisite = {
@@ -1766,7 +1742,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azaristocrat_generals
-		text = "Give Aristocrats Titles"
 		icon = GFX_focus_eng_the_kings_party
 		cost = 10.00
 		prerequisite = {
@@ -1784,7 +1759,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azflexible_navy
-		text = "Definitely Flexible"
 		icon = GFX_goal_generic_build_navy
 		cost = 5.00
 		prerequisite = {
@@ -1825,7 +1799,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azsubmarine_effort
-		text = "Water Where?"
 		icon = GFX_goal_generic_navy_submarine
 		cost = 7.00
 		prerequisite = {
@@ -1859,7 +1832,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azdestroyer_effort
-		text = "You Did It?"
 		icon = GFX_goal_generic_wolf_pack
 		cost = 10.00
 		prerequisite = {
@@ -1893,7 +1865,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azfighter_focus
-		text = "AZ-40 Phoenix"
 		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
@@ -1923,7 +1894,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azaviation_effort_2
-		text = "AZ-50 Rattlesnake"
 		icon = GFX_goal_generic_air_doctrine
 		cost = 10.00
 		prerequisite = {
@@ -2018,7 +1988,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azCAS_effort
-		text = "CAS Birds"
 		icon = GFX_goal_generic_CAS
 		cost = 10.00
 		prerequisite = {
@@ -2040,7 +2009,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azbomber_focus
-		text = "Boomers"
 		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
@@ -2067,7 +2035,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azNAV_effort
-		text = "AZ-39 Mokasan"
 		icon = GFX_focus_usa_escort_fighters
 		cost = 10.00
 		prerequisite = {
@@ -2127,7 +2094,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azlarge_navy
-		text = "Dingys In The Colorado"
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
 		prerequisite = {
@@ -2374,7 +2340,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azprep_struggle
-		text = "Safeguard The Future"
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 10.00
 		prerequisite = {
@@ -2390,7 +2355,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azmil_culture
-		text = "Navajo War Training"
 		icon = GFX_focus_generic_military_mission
 		cost = 7.00
 		prerequisite = {
@@ -2406,7 +2370,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azideological_fanaticism
-		text = "Arizona Radicalizes More"
 		icon = GFX_goal_generic_demand_territory
 		cost = 7.00
 		prerequisite = {
@@ -2433,7 +2396,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azcruiser_effort
-		text = "Better Have Wheels"
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 7.00
 		prerequisite = {
@@ -2468,7 +2430,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azcapital_ships_effort
-		text = "How?"
 		icon = GFX_goal_generic_navy_battleship
 		cost = 10.00
 		prerequisite = {
@@ -2505,7 +2466,6 @@ focus_tree = {
 	}
 	focus = {
 		id = azpolitical_end
-		text = "Til the Sun Sets"
 		icon = GFX_focus_hol_united_netherlands
 		cost = 2.00
 		prerequisite = {

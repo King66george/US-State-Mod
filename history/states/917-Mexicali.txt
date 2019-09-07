@@ -5,7 +5,7 @@ state={
 		chromium= 6.000
 	}
 	history = {
-		owner = MEX
+		owner = BAJ
 		buildings = {
 			infrastructure = 8
 			air_base = 3

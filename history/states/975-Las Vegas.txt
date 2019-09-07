@@ -5,7 +5,7 @@ state={
 		owner = NVN
 		buildings = {
 			infrastructure = 8
-
+			industrial_complex = 2
 		}
 		add_core_of = NVN
 		victory_points = {
