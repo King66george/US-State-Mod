@@ -439,3 +439,24 @@ country_event = {
       add_ideas = CAC_policeforceempowered
     }
   }
+
+#Army Debate
+  country_event = {
+    id = california.16
+    title = california.16.t
+    desc = california.16.d
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.16.a
+      custom_effect_tooltip = lloydsway
+      set_country_flag = lloydsway
+    }
+    option = {
+      name = california.16.b
+      custom_effect_tooltip = pattonsway
+      set_country_flag = pattonsway
+    }
+  }

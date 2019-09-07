@@ -153,27 +153,27 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "Lloyd Fredendall"
+	picture = "Portrait_USA_Lloyd_Fredendall.dds"
+	traits = { old_guard infantry_officer inflexible_strategist }
+	skill = 4
+
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
 	name = "Charles L. Dailey"
 	picture = ""
 	traits = { inspirational_leader fast_planner trickster }
-	skill = 4
+	skill = 3
 
 	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Dominic Thomas"
-	picture = ""
-	traits = { trickster thorough_planner }
-	skill = 3
-
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 5
-	logistics_skill = 3
 }
 
 create_corps_commander = {

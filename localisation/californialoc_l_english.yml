@@ -1,5 +1,10 @@
 ﻿l_english:
 
+#Pattons Way Lloyds Way Focus
+
+lloydsway:0 "This will choose Lloyd's army model."
+pattonsway:0 "This will choose Patton's army model."
+
 #This file is meant for all California focus and description localization.
 
 CAC_politicalstate:0 "The 1936 Election"
@@ -51,3 +56,7 @@ CAC_genericindustry8_desc:0 "Arizona and Mexico are possible threats to Californ
 CAC_genericindustry5_desc:0 "The city of Los Angeles is growing and expanding at a fast rate, we should expand LA.."
 CAC_genericindustry6_desc:0 "With the large surplus of oil in California, we could trade it for steel which we have low stockpiles of.."
 CAC_genericindustry9_desc:0 "New research efforts could greatly help us in the long run, we should look into this."
+CAC_army1:0 "The Army Of The New Republic of California"
+CAC_army2:0 "The Army Debate"
+CAC_armylloydsway1:0 "Lloyd's Way"
+CAC_armypattonsway1:0 "Patton's Way"

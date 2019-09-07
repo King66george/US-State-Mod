@@ -2,7 +2,7 @@
 
 oob = "WDC_1936"
 
-set_research_slots = 5
+set_research_slots = 4
 
 # Starting tech
 set_technology = {
@@ -138,12 +138,12 @@ add_to_faction = CAC
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.6
 
 set_politics = {
 
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1936.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -155,8 +155,21 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+
+create_country_leader = {
+ 		name = "Franklin D. Roosevelt"
+		#desc = ""
+		picture = "Portrait_WDC_Franklin_Roosevelt.dds"
+		expire = "1945.4.12"
+		ideology = liberalism
+		traits = {
+				exiled
+						}
+					}
+
+
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.6
 
 	set_politics = {
 

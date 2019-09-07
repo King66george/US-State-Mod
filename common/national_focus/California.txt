@@ -1406,6 +1406,80 @@ focus = {
 
 
 
+  focus = {
+    id = CAC_army1
+    icon = GFX_goal_generic_small_arms
+    cost = 10
+
+    x = -2
+    y = 6
+
+    completion_reward = {
+      add_war_support = 0.05
+      add_command_power = 10.00
+    }
+  }
+
+  focus = {
+    id = CAC_army2
+    icon = GFX_goal_generic_defence
+    cost = 10
+    prerequisite = { focus = CAC_army1}
+
+    x = -2
+    y = 7
+
+    completion_reward = {
+      country_event = california.16
+    }
+  }
+
+  focus = {
+  id = CAC_armylloydsway1
+  icon = GFX_goal_generic_army_artillery
+  cost = 10
+  prerequisite = { focus = CAC_army2}
+  mutually_exclusive = { focus = CAC_armypattonsway1}
+
+  x = -5
+  y = 8
+
+  available = {
+    has_country_flag = lloydsway
+  }
+
+    completion_reward = {
+      add_war_support = 0.05
+    }
+
+  }
+
+  focus = {
+  id = CAC_armypattonsway1
+  icon = GFX_goal_generic_army_tanks
+  cost = 10
+  prerequisite = { focus = CAC_army2}
+  mutually_exclusive = { focus = CAC_armypattonsway1}
+
+  x = 1
+  y = 8
+
+  available = {
+    has_country_flag = pattonsway
+  }
+
+  completion_reward = {
+    add_war_support = 0.05
+  }
+
+  }
+
+
+
+
+
+
+
 
 
 
