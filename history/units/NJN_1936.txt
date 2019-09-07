@@ -81,7 +81,7 @@ units = {
 		name = "1st New Jersey National Unit"
 		location = 6882
 		division_template = "National Guard Unit"
-		start_experience_factor = 1
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
@@ -89,7 +89,7 @@ units = {
 		name = "2nd New Jersey National Unit"
 		location = 6882
 		division_template = "National Guard Unit"
-		start_experience_factor = 1
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
@@ -97,7 +97,7 @@ units = {
 		name = "3rd New Jersey National Unit"
 		location = 6882
 		division_template = "National Guard Unit"
-		start_experience_factor = 1
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}
@@ -105,7 +105,7 @@ units = {
 		name = "4th New Jersey National Unit"
 		location = 6882
 		division_template = "National Guard Unit"
-		start_experience_factor = 1
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 
 	}

@@ -165,7 +165,7 @@ removal_cost = -1
 
 modifier = {
 trade_opinion_factor = 0.1
-surrender_limit = 0.9
+surrender_limit = 0.1
 justify_war_goal_time = -0.2
 }
 }
