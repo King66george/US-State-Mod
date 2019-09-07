@@ -13,7 +13,7 @@ state={
 		owner = MIM
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 5
+			industrial_complex = 4
 		}
 		add_core_of = MIM
 		victory_points = {

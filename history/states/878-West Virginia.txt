@@ -10,9 +10,8 @@ state={
 		owner = VAV
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
-			arms_factory = 3
-			fuel_silo = 1
+			industrial_complex = 5
+			arms_factory = 2
 
 		}
 		add_core_of = VAV

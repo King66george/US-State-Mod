@@ -13,8 +13,8 @@ state={
 		owner = VAV
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 5
-			fuel_silo = 2
+			industrial_complex = 3
+			fuel_silo = 1
 
 			}
 

@@ -76,7 +76,7 @@ units = {
 	# I Army Corps #
 	division= {			
 		name = "1nd National Guard"		
-		location = 2021
+		location = 8236
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -84,7 +84,7 @@ units = {
 	}			
 	division= {			
 		name = "2nd National Guard"		
-		location = 2021
+		location = 8236
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
