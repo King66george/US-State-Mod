@@ -564,7 +564,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									province = 12369
-									level = 10
+									level = 7
 									instant_build = yes
 								}
 						}
@@ -640,7 +640,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									province = 12728
-									level = 5
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -648,7 +648,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									province = 5038
-									level = 5
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -656,7 +656,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									province = 1954
-									level = 5
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -664,7 +664,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									province = 10894
-									level = 5
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -672,7 +672,7 @@ focus_tree = {
 							add_building_construction = {
 									type = bunker
 									province = 10740
-									level = 5
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -731,6 +731,7 @@ focus_tree = {
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
+				  add_ideas = TXT_idea_civwar
 					start_civil_war = {
 							ideology = democratic
 							size = 0.5
@@ -1027,12 +1028,13 @@ focus_tree = {
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
+				remove_ideas = TXT_idea_civwar
+				random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
 								}
 						}
 				}
@@ -1993,6 +1995,7 @@ focus_tree = {
 			available_if_capitulated = no
 			completion_reward = {
 					create_faction = TXT_north_american_commune
+					remove_ideas = TXT_idea_civwar
 				}
 
 	}
@@ -2510,7 +2513,7 @@ focus_tree = {
 									on_lose = tex.1
 								}
 							defender = {
-									state = 802
+									state = 801
 									num_provinces = 1
 								}
 						}
@@ -3127,11 +3130,103 @@ focus_tree = {
 		y = 6
 		relative_position_id = TXT_retakethemexicanempire
 			completion_reward = {
-					every_owned_state = {
+					792 = {
 							add_core_of = TXT
-						}
+					}
+					793 = {
+							add_core_of = TXT
+					}
+					791 = {
+							add_core_of = TXT
+					}
+					376 = {
+							add_core_of = TXT
+					}
+					950 = {
+							add_core_of = TXT
+					}
+					794 = {
+							add_core_of = TXT
+					}
+					796 = {
+							add_core_of = TXT
+					}
+					795 = {
+							add_core_of = TXT
+					}
+					912 = {
+						add_core_of = TXT
+					}
+					913 = {
+						add_core_of = TXT
+					}
+					377 = {
+						add_core_of = TXT
+					}
+					974 = {
+						add_core_of = TXT
+					}
+					973 = {
+						add_core_of = TXT
+					}
+					978 = {
+						add_core_of = TXT
+					}
+					799 = {
+						add_core_of = TXT
+					}
+					972 = {
+						add_core_of = TXT
+					}
+					378 = {
+						add_core_of = TXT
+					}
+					797 = {
+						add_core_of = TXT
+					}
+					915 = {
+						add_core_of = TXT
+					}
+					379 = {
+						add_core_of = TXT
+					}
+					975 = {
+						add_core_of = TXT
+					}
+					804 = {
+						add_core_of = TXT
+					}
+					805 = {
+						add_core_of = TXT
+					}
+					380 = {
+						add_core_of = TXT
+					}
+					840 = {
+						add_core_of = TXT
+					}
+					839 = {
+						add_core_of = TXT
+					}
+					841 = {
+						add_core_of = TXT
+					}
+					800 = {
+						add_core_of = TXT
+					}
+					803 = {
+						add_core_of = TXT
+					}
+					801 = {
+						add_core_of = TXT
+					}
+					802 = {
+						add_core_of = TXT
+					}
+					382 = {
+						add_core_of = TXT
+					}
 				}
-
 	}
 	focus = {
 		id = TXT_peacefultakeover
@@ -3171,19 +3266,18 @@ focus_tree = {
 				}
 			bypass = {
 
-}
+			}
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
 			completion_reward = {
-					every_neighbor_country = {
-							add_popularity = {
-									ideology = communism
-									popularity = .15
-								}
+				random_neighbor_country = {
+						add_popularity = {
+								ideology = communism
+								popularity = .15
 						}
 				}
-
+			}
 	}
 	focus = {
 		id = TXT_purchaseguns
@@ -3321,9 +3415,9 @@ focus_tree = {
 		relative_position_id = TXT_quality
 			completion_reward = {
 					add_equipment_to_stockpile = {
-							type = infantry_equipment_3
+							type = infantry_equipment_1
 							amount = 3000
-							producer = TXT
+							producer = USA
 						}
 				}
 
