@@ -23,29 +23,6 @@ country = {
 			}
 		}
 
-###Militarism###
-
-    militarism_focus = {
-
-
-    			allowed = {
-    				always = no
-    			}
-
-    			allowed_civil_war = {
-    				always = yes
-    			}
-
-    			removal_cost = -1
-
-    			picture = generic_manpower_bonus
-
-    			modifier = {
-    				conscription = 0.05
-    				enemy_partisan_effect = -0.1
-    			}
-    		}
-
 ###High Quality Army###
 
 quality_focus = {
@@ -168,10 +145,8 @@ always = no
 removal_cost = -1
 
 modifier = {
-economy_cost_factor = 0.5
-trade_laws_cost_factor = 0.5
 consumer_goods_factor = -0.1
-construction_speed_factor = 1.1
+production_speed_buildings_factor = 0.1
 }
 }
 
