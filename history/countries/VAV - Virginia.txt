@@ -149,9 +149,9 @@ neutrality = 7.5
 }
 
 create_country_leader = {
-	name = "Homer Holt"
-	#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "portrait_homer_holt_result.dds"
+	name = "George C. Peery"
+	#desc = "POLITICS_GEORGE_C_PEERY_DESC"
+	picture = "Portrait_VAV_George_C_Peery.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

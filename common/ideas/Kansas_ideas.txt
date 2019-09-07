@@ -485,7 +485,7 @@ ideas = {
 				always = no
 			}
 
-			picture = idea_generic_agrarian_society
+			picture = generic_agrarian_society
 
 			modifier = {
 				consumer_goods_factor = -0.05
