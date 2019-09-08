@@ -1,12 +1,13 @@
 state={
 	id=915
 	name="Carson City"
-	
+
 	history={
 		owner = NVN
+		victory_points = { 4607 30 }
 		buildings = {
 			infrastructure = 6
-		}	
+		}
 		add_core_of = NVN
 
 	}
