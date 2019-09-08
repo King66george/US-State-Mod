@@ -23,6 +23,17 @@ ohio.1.d:0 "Ohio is in a state of dispair. With the collapse of the United State
 ohio.1.a:0 "We need to be the true bastion of democracy!"
 ohio.1.b:0 "With the ideas of shared wealth Ohio can rise above all other states."
 ohio.1.c:0 "Mussolini, even with all his falures, cannot be disregarded as incorrect."
+ohiodemocratic:0 "This will enable you to choose the democratic path."
+ohiocommunist:0 "This will enable you to choose the communist path."
+ohiofascist:0 "This will enable you to choose the fascist path."
+ohiofascism:0 "Ohio Fascism"
+ohiodemocracy:0 "Ohio Democracy"
+ohiocommunism:0 "Ohio Communism"
+#Charles Coughlin Gains Traction
 ohio.2.t:0 "Coughlin Gains Traction"
 ohio.2.d:0 "Charles Coughlin has hosted many public gatherings and he seems to have amassed a decent sized following. He's gone all across Ohio making public speakings and rallies to get people on his antisemetist ideas."
 ohio.2.a:0 "We should follow this development."
+#Jesse Owens Wins 4 Gold
+ohio.3.t:0 "Jesse Owens Comes Home with 4 Gold Medals!"
+ohio.3.d:0 "At the 1936 Berlin Games, Owens won four gold medals, in the 100m, 200m, 4x100m relay and the long jump. He managed to break or equal nine Olympic records and also set three world records. Hitler hosted the Olympics to show the superiority of the Aryan Race, but this shows otherwise. Perhaps we should revise our racial standings."
+ohio.3.a:0 "A hero to all!"

@@ -27,8 +27,13 @@ country_event = {
       add_ideas = democratic_influence
     }
     every_neighbor_country = {
-      add_ideas = ALL_idea_democratic
+    add_timed_idea = {
+      idea = ALL_idea_democratic
+      days = 120
     }
+    }
+    set_country_flag = ohiodemocracy
+    custom_effect_tooltip = ohiodemocratic
   }
   option = {
     name = ohio.1.b
@@ -36,8 +41,13 @@ country_event = {
       add_ideas = communist_influence
     }
     every_neighbor_country = {
-      add_ideas = ALL_idea_communist
+      add_timed_idea = {
+        idea = ALL_idea_communist
+        days = 120
+      }
     }
+    set_country_flag = ohiocommunism
+    custom_effect_tooltip = ohiocommunist
   }
   option = {
     name = ohio.1.c
@@ -45,8 +55,13 @@ country_event = {
       add_ideas = fascist_influence
     }
     every_neighbor_country = {
-      add_ideas = ALL_idea_fascist
+    add_timed_idea = {
+      idea = ALL_idea_fascist
+      days = 120
     }
+    }
+    set_country_flag = ohiofascism
+    custom_effect_tooltip = ohiofascist
   }
 }
 country_event = {
@@ -59,5 +74,20 @@ country_event = {
   option = {
     name = ohio.2.a
     add_stability = -0.03
+  }
+country_event = { ##IT WONT FIRE IM ANGRY
+  id = ohio.3
+  title = ohio.3.t
+  desc = ohio.3.d
+
+  trigger = {
+    date > 1936.1.5
+    date < 1936.1.25
+  }
+
+  mean_time_to_happen = { days = 1 }
+  option = {
+    name = ohio.3.a
+    add_stability = 0.02
   }
 }

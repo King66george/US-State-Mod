@@ -2745,28 +2745,26 @@ focus_tree = {
 					factor = 1
 				}
 			bypass = {
-					NOT = {
-							country_exists = LAL
-						}
+
 				}
-			completion_reward = {
-				random_neighbor_country = {
-					limit = {
-						not = {
-							is_guaranteed_by = ROOT
-							is_in_faction_with = ROOT
-							has_non_aggression_pact_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-					ROOT = { 
-						create_wargoal  = { 
-							target = PREV 
-							type = annex_everything
-						}
-					}
-				}
+		completion_reward = {
+			random_neighbor_country = {
+			   limit = {
+			       not = {
+			           is_guaranteed_by = ROOT
+			           is_in_faction_with = ROOT
+			           has_non_aggression_pact_with = ROOT
+			           is_subject_of = ROOT
+			       }
+			   }
+				 ROOT = {
+			   	create_wargoal = {
+			       target = PREV
+			       type = puppet_wargoal_focus
+			    }
+			  }
 			}
+		}
 	}
 	focus = {
 		id = TXT_central

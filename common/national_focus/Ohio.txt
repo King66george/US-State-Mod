@@ -41,6 +41,9 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_politicalbell
 		}
+		available = {
+			has_country_flag = ohiodemocracy
+		}
 		x = 0
 		y = 1
 		relative_position_id = OHO_politicalbell
@@ -58,6 +61,9 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_politicalbell
 		}
+		available = {
+			has_country_flag = ohiofascism
+		}
 		x = -10
 		y = 1
 		relative_position_id = OHO_politicalbell
@@ -73,6 +79,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_politicalbell
+		}
+		available = {
+			has_country_flag = ohiocommunism
 		}
 		x = 9
 		y = 1
