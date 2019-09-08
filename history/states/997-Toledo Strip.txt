@@ -11,7 +11,7 @@ state={
 	}
 
 	provinces={
-		13284 13285 
+		13287 13288 
 	}
 	manpower=364521
 	state_category=town

@@ -1,7 +1,7 @@
 
 state={
 	id=994
-	name="Yellowknife"
+	name="Lower Territories"
 	resources={
 		oil=25.000
 		tungsten=15.000

@@ -6,7 +6,7 @@ state={
 	history={
 		owner = MBM
 		victory_points = {
-			4872 5 
+			4870 15 
 		}
 		buildings = {
 			infrastructure = 4
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		4790 13301 13302 13303 13304 
+		4790 13304 13305 13306 13307 
 	}
 	manpower=1200000
 	buildings_max_level_factor=1.000

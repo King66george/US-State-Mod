@@ -10,11 +10,14 @@ state={
 
 		}
 		add_core_of = WAW
+		victory_points = {
+			7386 15 
+		}
 
 	}
 
 	provinces={
-		7386 13298 13299 13300 
+		7386 13301 13302 13303 
 	}
 	manpower=2534786
 	buildings_max_level_factor=1.000
