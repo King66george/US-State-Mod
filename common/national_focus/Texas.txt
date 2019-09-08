@@ -2750,13 +2750,23 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					random_neighbor_country = {
-							create_wargoal = {
-									type = puppet_wargoal_focus
-								}
+				random_neighbor_country = {
+					limit = {
+						not = {
+							is_guaranteed_by = ROOT
+							is_in_faction_with = ROOT
+							has_non_aggression_pact_with = ROOT
+							is_subject_of = ROOT
 						}
+					}
+					ROOT = { 
+						declare_war_on  = { 
+							target = PREV 
+							type = annex_everything
+						}
+					}
 				}
-
+			}
 	}
 	focus = {
 		id = TXT_central

@@ -2590,4 +2590,62 @@ focus_tree = {
 				}
 
 	}
+	focus = {
+		id = Collective_goal
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		prerequisite = {
+			focus = com_militarism
+			focus = prep_struggle
+		}
+		x = 21
+		y = 8
+			completion_reward = {
+				random_neighbor_country = {
+					limit = {
+						not = {
+							is_guaranteed_by = ROOT
+							is_in_faction_with = ROOT
+							has_non_aggression_pact_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					ROOT = { 
+						declare_war_on  = { 
+							target = PREV 
+							type = annex_everything
+						}
+					}
+				}
+			}
+
+	}
+	focus = {
+		id = Monarchy_Goal
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		prerequisite = {
+			focus = king_and_country
+		}
+		x = 28
+		y = 5
+			completion_reward = {
+				random_neighbor_country = {
+					limit = {
+						not = {
+							is_guaranteed_by = ROOT
+							is_in_faction_with = ROOT
+							has_non_aggression_pact_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					ROOT = { 
+						declare_war_on  = { 
+							target = PREV 
+							type = annex_everything
+						}
+					}
+				}
+			}
+	}
 }
