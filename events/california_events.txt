@@ -211,6 +211,10 @@ country_event = {
 		}
   }
 
+  mean_time_to_happen = {
+    days = 160
+  }
+
 	option = {
 			name = california.3.a
 

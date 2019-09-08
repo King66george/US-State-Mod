@@ -43,3 +43,47 @@ news_event = {
     trigger = { TAG = MOM}
   }
 }
+
+#Fall Of Las Vegas (Cali takes Las Vegas)
+news_event = {
+  id = news.501
+  title = news.501.t
+  desc = news.501.d
+  picture = GFX_news_event_polish_resistance_warsaw
+
+  major = yes
+
+  trigger = {
+    975 = { is_controlled_by = CAC}
+    975 = { is_owned_by = NVN }
+    CAC = { has_war_with = NVN}
+    NOT = { has_global_flag = fall_of_las_vegas }
+  }
+
+  immediate = {
+		set_global_flag = fall_of_las_vegas
+	}
+
+  mean_time_to_happen = {
+		days = 2
+	}
+
+
+  option = {
+    name = news.501.a
+    trigger = {
+      NOT = {
+        TAG = CAC
+        TAG = NVN
+      }
+    }
+  }
+  option = {
+    name = news.501.b
+    trigger = { TAG = CAC }
+  }
+  option = {
+    name = news.501.c
+    trigger = { TAG = NVN}
+  }
+}
