@@ -5,7 +5,7 @@ bookmarks = {
 		date = 1936.1.3.12
 		picture = GFX_select_date_1939
 		default_country = "TXT"
-		defualt = yes
+		default = yes
 
 		"TXT" = {
 			history = "USA_GATHERING_STORM_DESC"
@@ -80,14 +80,14 @@ bookmarks = {
 				#
 			}
 			focuses = {
-				AZA_focus0
+				AZfocus_0
 				AZfocus_7
 				AZfocus_22
 			}
 		}
 
 		"NCN" = {
-			hisotry = "USA_GATHERING_STORM_DESC"
+			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				home_of_the_free
