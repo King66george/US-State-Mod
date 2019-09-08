@@ -3306,7 +3306,10 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  prep_struggle_desc:0 "We must condition our people for the wars of agression we will soon wage over this earth."
  political_end:0 "One Nation, United and Ready"
  political_end_desc:0 "The full extent of our political ambitions have been realized. May God have mercy on our enemies, because we won't."
-
+ Monarchy_Goal:0 "Land for the Royal Family"
+ Monarchy_Goal_desc:0 "We need to take The land from our less fortunate Neighbors"
+ Collective_goal:0 "Our Weakest Neighbor"
+ Collective_goal_desc:0 "While they look to build lets remove them from the equation"
 
 
  #Generic Focus Rework Start Army Focuses#
