@@ -69,12 +69,15 @@ country_event = {
     }
     set_country_flag = ohiofascism
     custom_effect_tooltip = ohiofascist
+  }
 }
 #Charles Coughlin Gains Traction
 country_event = {
   id = ohio.2
   title = ohio.2.t
   desc = ohio.2.d
+
+  picture = GFX_event_charles_gains_traction.dds
 
   is_triggered_only = yes
 
@@ -83,10 +86,13 @@ country_event = {
     add_stability = -0.03
   }
 }
+#Jesse Owens Wins 4 Gold
 country_event = {
   id = ohio.3
   title = ohio.3.t
   desc = ohio.3.d
+
+  picture = GFX_event_jesse_owens.dds
 
   trigger = {
     OHO = {
@@ -100,6 +106,7 @@ country_event = {
     add_stability = 0.02
   }
 }
+#Fascist Sympathizers Visit Ohio
 country_event = {
   id = ohio.4
   title = ohio.4.t

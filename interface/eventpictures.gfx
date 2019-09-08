@@ -2116,5 +2116,13 @@ spriteTypes = {
 		name = "GFX_event_kentucky_flood.dds"
 		texturefile = "gfx/event_pictures/event_kentucky_flood.dds"
 	}
+	spritetype = {
+		name = "GFX_event_charles_gains_traction.dds"
+		texturefile = "gfx/event_pictures/event_charles_gains_traction.dds"
+	}
+	spritetype = {
+		name = "GFX_event_jesse_owens.dds"
+		texturefile = "gfx/event_pictures/event_jesse_owens.dds"
+	}
 
 }

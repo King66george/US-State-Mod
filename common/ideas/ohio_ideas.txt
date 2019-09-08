@@ -134,7 +134,6 @@ ideas = {
         justify_war_goal_time = 2
       }
     }
-  }
   ####Advisors###
   political_advisor = {
     OHO_ford = {
@@ -154,4 +153,5 @@ ideas = {
       }
     }
   }
+}
 }
