@@ -15,6 +15,14 @@ OHO_wagenknecht_desc:0 "Alfred Wagenknecht has suffered many political defeats. 
 worse_depression:0 "§RHard Hitting Depression§!"
 agricultural__industry:0 "§GAgricultural Industry§!"
 rising_communism:0 "§YRising Communism§!"
+OHO_natsj:0 "National Union for Social Justice"
+OHO_sympathizers:0 "Far Right Sympathizers"
+OHO_coughlinbroadcasts:0 "Coughlin's Broadcasts"
+OHO_antisemeticviews:0 "Antisemetic Views"
+OHO_isolationism:0 "Isolationism"
+OHO_shiftextremeright:0 "Shift Towards the Extreme Right"
+####Advisors#####
+OHO_ford:0 "Henry Ford"
 ##Events\/
 
 #Political Bellwether - Choose ideology drift
@@ -37,3 +45,7 @@ ohio.2.a:0 "We should follow this development."
 ohio.3.t:0 "Jesse Owens Comes Home with 4 Gold Medals!"
 ohio.3.d:0 "At the 1936 Berlin Games, Owens won four gold medals, in the 100m, 200m, 4x100m relay and the long jump. He managed to break or equal nine Olympic records and also set three world records. Hitler hosted the Olympics to show the superiority of the Aryan Race, but this shows otherwise. Perhaps we should revise our racial standings."
 ohio.3.a:0 "A hero to all!"
+#Fascist Sympathizers Visit Ohio
+ohio.4.t:0 "Fascist Sympathizers Visit Ohio"
+ohio.4.d:0 "A few days ago, Father Charles Coughlin invited his symathizers from around the globe to Ohio. Not many made an appearance, but there were some notable figures. Among the most influencial were: Sir Oswald Mosley, Dennis Fahey, and Ezra Pound. Currently, it is not known what was discussed during the meeting, but hopefully some good will come out of it."
+ohio.4.a:0 "Was it to influence the people?"

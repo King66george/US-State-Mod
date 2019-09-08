@@ -13,6 +13,7 @@ add_namespace = ohio
 #  OHO = {  }
 #  }
 #}
+#Political Bellwether
 country_event = {
   id = ohio.1
   title = ohio.1.t
@@ -23,27 +24,31 @@ country_event = {
 
   option = {
     name = ohio.1.a
-    OHO = {
-      add_ideas = democratic_influence
-    }
-    every_neighbor_country = {
-    add_timed_idea = {
-      idea = ALL_idea_democratic
-      days = 120
-    }
+    hidden_effect = {
+      OHO = {
+        add_ideas = democratic_influence
+      }
+      every_neighbor_country = {
+        add_timed_idea = {
+          idea = ALL_idea_democratic
+          days = 120
+        }
+      }
     }
     set_country_flag = ohiodemocracy
     custom_effect_tooltip = ohiodemocratic
   }
   option = {
     name = ohio.1.b
-    OHO = {
-      add_ideas = communist_influence
-    }
-    every_neighbor_country = {
-      add_timed_idea = {
-        idea = ALL_idea_communist
-        days = 120
+    hidden_effect = {
+      OHO = {
+        add_ideas = communist_influence
+      }
+      every_neighbor_country = {
+        add_timed_idea = {
+          idea = ALL_idea_communist
+          days = 120
+        }
       }
     }
     set_country_flag = ohiocommunism
@@ -51,19 +56,21 @@ country_event = {
   }
   option = {
     name = ohio.1.c
-    OHO = {
-      add_ideas = fascist_influence
-    }
-    every_neighbor_country = {
-    add_timed_idea = {
-      idea = ALL_idea_fascist
-      days = 120
-    }
+    hidden_effect = {
+      OHO = {
+        add_ideas = fascist_influence
+        }
+        every_neighbor_country = {
+          add_timed_idea = {
+            idea = ALL_idea_fascist
+            days = 120
+          }
+        }
     }
     set_country_flag = ohiofascism
     custom_effect_tooltip = ohiofascist
-  }
 }
+#Charles Coughlin Gains Traction
 country_event = {
   id = ohio.2
   title = ohio.2.t
@@ -75,19 +82,33 @@ country_event = {
     name = ohio.2.a
     add_stability = -0.03
   }
-country_event = { ##IT WONT FIRE IM ANGRY
+}
+country_event = {
   id = ohio.3
   title = ohio.3.t
   desc = ohio.3.d
 
   trigger = {
-    date > 1936.1.5
-    date < 1936.1.25
+    OHO = {
+      country_exists = OHO
+    }
   }
 
-  mean_time_to_happen = { days = 1 }
+  mean_time_to_happen = { days = 201 }
   option = {
     name = ohio.3.a
     add_stability = 0.02
+  }
+}
+country_event = {
+  id = ohio.4
+  title = ohio.4.t
+  desc = ohio.4.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = ohio.4.a
+    add_ideas = OHO_sympathizers
   }
 }

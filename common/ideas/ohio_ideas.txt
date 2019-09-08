@@ -55,9 +55,103 @@ ideas = {
         high_command_cost_factor = 0.25
       }
     }
+    OHO_natsj = {
+      allowed = {
+        always = no
+      }
 
+      allowed_civil_war = {
+        always = yes
+      }
 
+      removal_cost = -1
 
+      modifier = {
+        conscription = 0.015
+        local_resources_factor = 0.05
+        consumer_goods_factor	= -0.02
+      }
+    }
+    OHO_antisemeticviews = {
+      allowed = {
+      always = no
+      }
 
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        conscription = -0.025
+      }
+    }
+    OHO_shiftextremeright = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.04
+        democratic_drift = -0.02
+        communism_drift = -0.02
+      }
+    }
+    OHO_coughlinbroadcasts = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.02
+      }
+    }
+    OHO_isolationism = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        justify_war_goal_time = 2
+      }
+    }
+  }
+  ####Advisors###
+  political_advisor = {
+    OHO_ford = {
+      allowed = {
+        has_completed_focus = OHO_henryford
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = 0.05
+        production_speed_infrastructure_factor = 1.25
+      }
+    }
   }
 }
