@@ -2706,6 +2706,7 @@
  ALL_idea_democratic:0 "Democratic Influence"
  ALL_idea_fascist:0 "Fascist Influence"
  ALL_idea_communist:0 "Communist Influence"
+ CAC_combinedarms:0 "Combined Arms"
  ########################################Political Advisors###########################################
  robert_bobbit:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"
