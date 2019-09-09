@@ -1409,7 +1409,7 @@ focus = {
   focus = {
     id = CAC_army1
     icon = GFX_goal_generic_small_arms
-    cost = 10
+    cost = 5
 
     x = -2
     y = 6
@@ -1423,7 +1423,7 @@ focus = {
   focus = {
     id = CAC_army2
     icon = GFX_goal_generic_defence
-    cost = 10
+    cost = 1
     prerequisite = { focus = CAC_army1}
 
     x = -2
@@ -1431,13 +1431,14 @@ focus = {
 
     completion_reward = {
       country_event = california.16
+      army_experience = 10
     }
   }
 
   focus = {
   id = CAC_armylloydsway1
   icon = GFX_goal_generic_army_artillery
-  cost = 10
+  cost = 1
   prerequisite = { focus = CAC_army2}
   mutually_exclusive = { focus = CAC_armypattonsway1}
 
@@ -1448,8 +1449,10 @@ focus = {
     has_country_flag = lloydsway
   }
 
+  bypass = {has_country_flag = lloydsway}
+
     completion_reward = {
-      add_war_support = 0.05
+      army_experience = 5
     }
 
   }
@@ -1457,7 +1460,7 @@ focus = {
   focus = {
   id = CAC_armypattonsway1
   icon = GFX_goal_generic_army_tanks
-  cost = 10
+  cost = 1
   prerequisite = { focus = CAC_army2}
   mutually_exclusive = { focus = CAC_armypattonsway1}
 
@@ -1468,14 +1471,82 @@ focus = {
     has_country_flag = pattonsway
   }
 
+  bypass = { has_country_flag = pattonsway}
+
   completion_reward = {
-    add_war_support = 0.05
+    army_experience = 5
   }
+}
 
+focus = {
+id = CAC_armypattonsway2
+icon = GFX_goal_generic_army_motorized
+cost = 10
+prerequisite = { focus = CAC_armypattonsway1}
+
+x = 1
+y = 9
+
+completion_reward = {
+  add_tech_bonus = {
+    name = motorized_bonus
+    bonus = 3.0
+    uses = 1
+    technology = motorised_infantry
   }
+}
+}
 
+focus = {
+id = CAC_armypattonsway3
+icon = GFX_goal_generic_build_tank
+cost = 10
+prerequisite = { focus = CAC_armypattonsway2}
 
+x = 1
+y = 10
 
+completion_reward = {
+  add_tech_bonus = {
+    name = armor_bonus
+    bonus = 1.5
+    category = armor
+  }
+}
+}
+
+focus = {
+id = CAC_armypattonsway4
+icon = GFX_goal_generic_army_doctrines
+cost = 10
+prerequisite = { focus = CAC_armypattonsway3}
+
+x = 1
+y = 11
+
+completion_reward = {
+  add_tech_bonus = {
+    name = land_doctrine
+    bonus = 1.0
+    uses = 2.0
+    category = cat_mobile_warfare
+  }
+}
+}
+
+focus = {
+id = CAC_armypattonsway5
+icon = GFX_goal_generic_air_doctrine
+cost = 10
+prerequisite = { focus = CAC_armypattonsway4}
+
+x = 1
+y = 12
+
+completion_reward = {
+  add_ideas = CAC_combinedarms
+}
+}
 
 
 

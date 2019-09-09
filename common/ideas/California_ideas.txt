@@ -257,3 +257,21 @@ CAC_policeforceempowered = {
       enemy_partisan_effect = -0.1
   }
 }
+
+CAC_combinedarms = {
+  allowed = {
+  always = no
+  }
+
+  allowed_civil_war = {
+  always = yes
+  }
+
+  removal_cost = -1
+
+  modifier = {
+    air_close_air_support_attack_factor = 0.03
+    army_armor_attack_factor = 0.05
+    army_armor_speed_factor = 0.08
+  }
+}

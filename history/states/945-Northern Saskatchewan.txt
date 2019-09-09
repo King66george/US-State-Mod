@@ -13,6 +13,9 @@ state={
 		}
 		add_core_of = SKS
 
+		victory_points = {
+			6779 4 
+		}
 	}
 
 	provinces={

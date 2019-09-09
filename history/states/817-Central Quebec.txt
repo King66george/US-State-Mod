@@ -9,13 +9,19 @@ state={
 	history={
 		owner = QBC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 2
 
 		}
 		add_core_of = QBC
 		victory_points = {
 			10715 5 
+		}
+		victory_points = {
+			4666 4 
+		}
+		victory_points = {
+			1657 4 
 		}
 	}
 

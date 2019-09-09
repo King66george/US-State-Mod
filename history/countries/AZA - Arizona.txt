@@ -3,7 +3,7 @@ capital = 795
 
 oob = "AZA_1936"
 
-set_research_slots = 4
+set_research_slots = 5
 
 # Starting tech
 set_technology = {

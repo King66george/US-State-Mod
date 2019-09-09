@@ -15,7 +15,13 @@ state={
 		}
 		add_core_of = SKS
 		victory_points = {
-			3498 7 
+			3498 6 
+		}
+		victory_points = {
+			736 10 
+		}
+		victory_points = {
+			11440 4 
 		}
 	}
 

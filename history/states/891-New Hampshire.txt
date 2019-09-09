@@ -16,7 +16,10 @@ state={
 		}
 		add_core_of = NHN
 		victory_points = {
-			10481 5
+			10481 3
+		}
+		victory_points = {
+			733 3
 		}
 	}
 	provinces={
