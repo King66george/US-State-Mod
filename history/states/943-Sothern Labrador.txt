@@ -14,6 +14,12 @@ state={
 			air_base = 2
 		}	
 		add_core_of = LAB
+		victory_points = {
+			4787 4 
+		}
+		victory_points = {
+			1785 4 
+		}
 	}
 	provinces={
 		1785 4720 4787 

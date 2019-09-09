@@ -16,13 +16,15 @@ state={
 
 		}
 		add_core_of = NTN
-
+		victory_points = {
+			13075 2 
+		}
 	}
 
 	provinces={
 		2976 7901 13075 
 	}
-	manpower=1207681
+	manpower=107681
 	buildings_max_level_factor=1.000
 	state_category=town
 }
