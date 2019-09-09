@@ -212,7 +212,7 @@ country_event = {
   }
 
   mean_time_to_happen = {
-    days = 160
+    days = 120
   }
 
 	option = {
@@ -243,10 +243,10 @@ country_event = {
 
 		option = {
 			name = california.4.a
-			add_political_power = 75
+			add_political_power = 50
 			add_opinion_modifier = {
 				target = JAP
-				modifier = medium_increase
+				modifier = large_increase
 			}
 		}
 

@@ -40,6 +40,7 @@ focus_tree = {
           CAC = {
               country_event = california.1
           }
+          set_country_flag = CAC_electedpresident
   }
 
   }
@@ -452,7 +453,6 @@ focus = {
 focus = {
   id = CAC_buildhawaii
   icon = GFX_goal_generic_construct_mil_factory
-  text = "Economic Aid To Hawaii"
   prerequisite = { focus = CAC_preservehawaii}
 
   cost = 10
@@ -492,8 +492,7 @@ focus = {
 
 focus = {
   id = CAC_buildhawaii2
-  icon = GFX_goal_generic_construct_mil_factory
-  text = "A Naval Outpost"
+  icon = GFX_goal_generic_construct_naval_dockyard
   prerequisite = { focus = CAC_preservehawaii}
 
   cost = 10
@@ -536,7 +535,6 @@ focus = {
 focus = {
   id = CAC_beginningofpsa
   icon = GFX_CAC_mcga
-  text =  "Beginning Of The Pacific States Of America"
   prerequisite = { focus = CAC_preservehawaii}
 
   cost = 10
@@ -552,7 +550,6 @@ focus = {
 focus = {
   id = CAC_oregonpsa
   icon = GFX_CAC_deal_oregon
-  text = "Meetings With Oregon"
   prerequisite = { focus = CAC_beginningofpsa}
 
   cost = 7.25
@@ -567,7 +564,6 @@ focus = {
 focus = {
   id = CAC_washingtonpsa
   icon = GFX_CAC_deal_washington
-  text = "Meetings With Washington"
   prerequisite = { focus = CAC_beginningofpsa}
 
   cost = 7.25
@@ -582,13 +578,25 @@ focus = {
 focus = {
   id = CAC_formationofpsa
   icon = GFX_CAC_FPSA
-  text = "Formation Of The Pacific States Of America"
   prerequisite = {
     focus = CAC_washingtonpsa
   }
   prerequisite = {
     focus = CAC_oregonpsa
   }
+
+  available = {
+    controls_state = 806
+    controls_state = 385
+    controls_state = 807
+    controls_state = 941
+    controls_state = 808
+    controls_state = 914
+    controls_state = 810
+    controls_state = 386
+    controls_state = 809
+  }
+
   cost = 10
   x = 10
   y = 11
@@ -611,7 +619,6 @@ focus = {
 focus = {
   id = CAC_psadepartmentofdefense
   icon = GFX_focus_usa_recruit_the_free_corps
-  text = "Form A Department Of Defense"
 
   available = {
   has_completed_focus = CAC_formationofpsa
@@ -636,7 +643,6 @@ focus = {
 focus = {
   id = CAC_reformarmedforces
   icon = GFX_goal_generic_small_arms
-  text = "Establish The Pacific State Armed Forces"
   prerequisite = { focus = CAC_psadepartmentofdefense }
 
   cost = 7.25
@@ -652,7 +658,6 @@ focus = {
 focus = {
   id = CAC_researchartillery
   icon = GFX_goal_generic_army_artillery2
-  text = "Research New Artillery Weapons"
   prerequisite = { focus = CAC_reformarmedforces}
 
   cost = 7.25
@@ -672,7 +677,6 @@ focus = {
 focus = {
   id = CAC_army_tactics
   icon = GFX_goal_generic_army_doctrines
-  text = "New Army Tactics"
   prerequisite = { focus = CAC_reformarmedforces}
 
   cost = 7.25
@@ -691,7 +695,6 @@ focus = {
 focus = {
   id = CAC_motorized_focus
   icon = GFX_goal_generic_army_motorized
-  text = "Motorized Focus"
   prerequisite = { focus = CAC_researchartillery}
 
   cost = 7.25
@@ -708,7 +711,6 @@ focus = {
 focus = {
   id = CAC_license_production
   icon = GFX_focus_generic_license_production
-  text = "Buy Tank Licenses"
   prerequisite = { focus = CAC_army_tactics}
 
   cost = 7.25
@@ -738,7 +740,6 @@ focus = {
 focus = {
   id = CAC_amilitarypowerhouse
   icon = GFX_goal_generic_army_tanks
-  text = "The Pacific States Armed Forces"
   prerequisite = { focus = CAC_motorized_focus focus = CAC_license_production}
 
   cost = 7.25
@@ -759,7 +760,6 @@ focus = {
 focus = {
   id = CAC_newnavy
   icon = GFX_goal_generic_navy_battleship
-  text = "Establish The Navy Of The Pacific States Of America"
   prerequisite = { focus = CAC_psadepartmentofdefense}
 
   cost = 7.25
@@ -776,7 +776,6 @@ focus = {
 focus = {
   id = CAC_navalrearmament
   icon = GFX_goal_generic_construct_naval_dockyard
-  text = "Naval Rearmament"
   prerequisite = { focus = CAC_newnavy}
 
   cost = 7.25
@@ -798,7 +797,6 @@ focus = {
 focus = {
   id = CAC_destroyer_focus
   icon = GFX_focus_generic_destroyer
-  text = "New Destroyers"
   prerequisite = { focus = CAC_newnavy }
 
   cost = 7.25
@@ -818,7 +816,6 @@ focus = {
 focus = {
   id = CAC_naval_doctrine
   icon = GFX_goal_generic_navy_doctrines_tactics
-  text = "New Naval Tactics"
   prerequisite = { focus = CAC_navalrearmament }
 
   cost = 7.25
@@ -839,7 +836,6 @@ focus = {
 focus = {
   id = CAC_expand_the_refit_yards
   icon = GFX_goal_generic_production
-  text = "Expanding Our Dockyards"
   prerequisite = { focus = CAC_destroyer_focus}
   cost = 7.25
   x = 11
@@ -884,7 +880,6 @@ focus = {
 focus = {
   id = CAC_psanavy
   icon = GFX_goal_generic_navy_carrier
-  text = "The Navy Of The Pacific States Of America"
   prerequisite = { focus = CAC_naval_doctrine focus = CAC_expand_the_refit_yards }
 
   cost = 7.25
@@ -905,7 +900,6 @@ focus = {
 focus = {
   id = CAC_reformedairforce
   icon = GFX_goal_generic_build_airforce
-  text = "Establish The Pacific States Airforce"
   prerequisite = { focus = CAC_psadepartmentofdefense}
 
   cost = 7.25
@@ -921,7 +915,6 @@ focus = {
 focus = {
   id = CAC_strategic_bomber_effort
   icon = GFX_goal_generic_air_bomber
-  text = "Strategic Bomber Effort"
   prerequisite = { focus = CAC_reformedairforce}
 
   cost = 7.25
@@ -948,7 +941,6 @@ focus = {
 focus = {
   id = CAC_naval_air
   icon = GFX_goal_generic_air_naval_bomber
-  text = "Naval Air Research"
   prerequisite = { focus = CAC_reformedairforce}
 
   cost = 7.25
@@ -968,7 +960,6 @@ focus = {
 focus = {
   id = CAC_buyairplanes
   icon = GFX_goal_generic_air_fighter
-  text = "Buy Planes"
   prerequisite = { focus = CAC_strategic_bomber_effort}
 
   cost = 7.25
@@ -987,7 +978,6 @@ focus = {
 focus = {
   id = CAC_aircraftproductioneffort
   icon = GFX_goal_generic_air_production
-  text = "Fighter Production Effort"
   prerequisite = { focus = CAC_naval_air  }
 
   cost = 7.25
@@ -1002,7 +992,6 @@ focus = {
 focus = {
   id = CAC_newairforce
   icon = GFX_goal_generic_air_fighter2
-  text = "Airforce Of The Pacific States Of America"
   prerequisite = { focus = CAC_aircraftproductioneffort focus = CAC_buyairplanes }
 
   cost = 7.25
@@ -1059,9 +1048,8 @@ focus = {
 ####### Cali Fascist after elections#
 
 focus = {
-  id = CAC_fundrightwingnews
+  id = CAC_statecontrolledmedia
   icon = GFX_goal_generic_propaganda
-  text = "Fund Right Wing News Stations"
   prerequisite = { focus = CAC_JamesEDavis}
 
   cost = 10
@@ -1077,7 +1065,6 @@ focus = {
 focus = {
   id = CAC_rapidmilitarization
   icon = GFX_goal_generic_army_tanks
-  text = "Rapid Militarization"
   prerequisite = { focus = CAC_JamesEDavis }
 
   cost = 10
@@ -1099,7 +1086,6 @@ focus = {
 focus = {
   id = CAC_givethepolicemorepower
   icon = GFX_focus_generic_military_mission
-  text = "Give The Police More Power"
   prerequisite = { focus = CAC_rapidmilitarization}
 
   cost = 10
@@ -1316,6 +1302,26 @@ focus = {
   }
 
   focus = {
+    id = CAC_genericindustry10
+    icon = GFX_goal_generic_construct_civ_factory
+    prerequisite = { focus = CAC_genericindustry5}
+
+    cost = 10
+
+    x = -6
+    y = 3
+
+    completion_reward = {
+      797 = {
+      add_extra_state_shared_building_slots = 3
+      }
+      974 = {
+      add_extra_state_shared_building_slots = 3
+      }
+    }
+  }
+
+  focus = {
     id = CAC_genericindustry6
     icon = GFX_goal_generic_construct_civilian
     prerequisite = { focus = CAC_genericindustry5}
@@ -1354,7 +1360,7 @@ focus = {
         add_building_construction = {
           type = bunker
           province = 1562
-          level = 3
+          level = 2
           instant_build = yes
         }
       }
@@ -1362,7 +1368,7 @@ focus = {
         add_building_construction = {
           type = bunker
           province = 12374
-          level = 3
+          level = 2
           instant_build = yes
         }
       }
@@ -1370,7 +1376,7 @@ focus = {
         add_building_construction = {
           type = bunker
           province = 7986
-          level = 3
+          level = 2
           instant_build = yes
         }
       }
@@ -1378,7 +1384,7 @@ focus = {
         add_building_construction = {
           type = bunker
           province = 4727
-          level = 3
+          level = 2
           instant_build = yes
         }
       }
@@ -1414,6 +1420,10 @@ focus = {
     x = -2
     y = 6
 
+    available = {
+    has_country_flag = CAC_electedpresident
+    }
+
     completion_reward = {
       add_war_support = 0.05
       add_command_power = 10.00
@@ -1437,10 +1447,9 @@ focus = {
 
   focus = {
   id = CAC_armylloydsway1
-  icon = GFX_goal_generic_army_artillery
+  icon = GFX_goal_generic_allies_build_infantry
   cost = 1
   prerequisite = { focus = CAC_army2}
-  mutually_exclusive = { focus = CAC_armypattonsway1}
 
   x = -5
   y = 8
@@ -1454,7 +1463,91 @@ focus = {
     completion_reward = {
       army_experience = 5
     }
+  }
 
+  focus = {
+    id = CAC_armylloydsway2
+    icon = GFX_goal_generic_small_arms
+    cost = 10
+    prerequisite = { focus = CAC_armylloydsway1}
+
+    x = -6
+    y = 9
+
+    completion_reward = {
+      add_tech_bonus = {
+          name = infantry_weapons_bonus
+          bonus = 1
+          uses = 1
+          technology = infantry_weapons
+      }
+    }
+  }
+
+  focus = {
+    id = CAC_armylloydsway3
+    icon = GFX_goal_generic_army_artillery
+    cost = 10
+    prerequisite = { focus = CAC_armylloydsway1}
+
+    x = -4
+    y = 9
+
+    completion_reward = {
+      add_tech_bonus = {
+        name = artillery
+        bonus = 0.75
+        uses = 2
+        category = support_tech
+      }
+    }
+  }
+
+  focus = {
+    id = CAC_armylloydsway4
+    icon = GFX_goal_generic_construct_military
+    cost = 10
+    prerequisite = { focus = CAC_armylloydsway2 focus = CAC_armylloydsway3}
+
+    x = -5
+    y = 10
+
+    completion_reward = {
+      add_tech_bonus = {
+        name = land_doc_bonus
+        bonus = 1.0
+        uses = 2
+        category = land_doctrine
+      }
+    }
+  }
+
+  focus = {
+    id = CAC_armylloydsway5
+    icon = GFX_goal_generic_special_forces
+    cost = 10
+    prerequisite = { focus = CAC_armylloydsway4}
+
+    x = -6
+    y = 11
+
+    completion_reward = {
+      add_ideas = CAC_specialforcesenviromentaltraining
+    }
+  }
+
+  focus = {
+    id = CAC_armylloydsway6
+    icon = GFX_goal_generic_army_artillery2
+    cost = 10
+    prerequisite = { focus = CAC_armylloydsway4}
+
+    x = -4
+    y = 11
+
+    completion_reward = {
+      add_ideas = CAC_advancedartillery
+    }
   }
 
   focus = {
@@ -1462,7 +1555,6 @@ focus = {
   icon = GFX_goal_generic_army_tanks
   cost = 1
   prerequisite = { focus = CAC_army2}
-  mutually_exclusive = { focus = CAC_armypattonsway1}
 
   x = 1
   y = 8
@@ -1484,7 +1576,7 @@ icon = GFX_goal_generic_army_motorized
 cost = 10
 prerequisite = { focus = CAC_armypattonsway1}
 
-x = 1
+x = 0
 y = 9
 
 completion_reward = {
@@ -1501,10 +1593,10 @@ focus = {
 id = CAC_armypattonsway3
 icon = GFX_goal_generic_build_tank
 cost = 10
-prerequisite = { focus = CAC_armypattonsway2}
+prerequisite = { focus = CAC_armypattonsway1}
 
-x = 1
-y = 10
+x = 2
+y = 9
 
 completion_reward = {
   add_tech_bonus = {
@@ -1519,10 +1611,10 @@ focus = {
 id = CAC_armypattonsway4
 icon = GFX_goal_generic_army_doctrines
 cost = 10
-prerequisite = { focus = CAC_armypattonsway3}
+prerequisite = { focus = CAC_armypattonsway3 focus = CAC_armypattonsway2}
 
 x = 1
-y = 11
+y = 10
 
 completion_reward = {
   add_tech_bonus = {
@@ -1540,11 +1632,25 @@ icon = GFX_goal_generic_air_doctrine
 cost = 10
 prerequisite = { focus = CAC_armypattonsway4}
 
-x = 1
-y = 12
+x = 0
+y = 11
 
 completion_reward = {
   add_ideas = CAC_combinedarms
+}
+}
+
+focus = {
+id = CAC_armypattonsway6
+icon = GFX_goal_generic_air_production
+cost = 10
+prerequisite = { focus = CAC_armypattonsway4}
+
+x = 2
+y = 11
+
+completion_reward = {
+  add_ideas = CAC_combinedarmsproduction
 }
 }
 
