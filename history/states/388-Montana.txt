@@ -14,7 +14,10 @@ state={
 		}
 		add_core_of = MTM
 		victory_points = {
-			4860 1 
+			1767 2 
+		}
+		victory_points = {
+			7883 3 
 		}
 
 	}

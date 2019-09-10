@@ -4276,4 +4276,28 @@ spriteTypes = {
 			name = "GFX_idea_ALL_idea_democratic"
 			texturefile = "gfx/interface/ideas/generic_democratic_drift_bonus.dds"
 		}
+		spriteType = {
+			name = "GFX_idea_OHO_ford"
+			texturefile = "gfx/interface/ideas/henry_ford.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_OHO_natsj"
+			texturefile = "gfx/interface/ideas/OHO_natsj.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_OHO_antisemeticviews"
+			texturefile = "gfx/interface/ideas/OHO_antisemeticviews.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_OHO_shiftextremeright"
+			texturefile = "gfx/interface/ideas/OHO_shiftextremeright.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_OHO_coughlinbroadcasts"
+			texturefile = "gfx/interface/ideas/OHO_coughlinbroadcasts.dds"
+		}
+		spriteType = {
+			name = "GFX_idea_OHO_isolationism"
+			texturefile = "gfx/interface/ideas/OHO_isolationism.dds"
+		}
 	}

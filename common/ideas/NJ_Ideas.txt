@@ -169,5 +169,27 @@ surrender_limit = 0.1
 justify_war_goal_time = -0.2
 }
 }
+
+###Monarchist Influence###
+
+nj_monarchy = {
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		has_government = neutrality
+	}
+
+	removal_cost = -1
+
+	picture = generic_pp_unity_bonus
+
+	modifier = {
+		neutrality_drift = 0.2
+		neutrality_acceptance = 100
+	}
+}
+
 }
 }

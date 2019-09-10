@@ -134,24 +134,20 @@ ideas = {
         justify_war_goal_time = 2
       }
     }
+  }
   ####Advisors###
   political_advisor = {
-    OHO_ford = {
-      allowed = {
-        has_completed_focus = OHO_henryford
-      }
+		OHO_ford = {
+			allowed = {
+				original_tag = OHO
+			}
 
-      allowed_civil_war = {
-      always = yes
-      }
+			traits = { henry_ford }
 
-      removal_cost = -1
+			ai_will_do = {
+			factor = 0
+			}
 
-      modifier = {
-        consumer_goods_factor = 0.05
-        production_speed_infrastructure_factor = 1.25
-      }
-    }
-  }
-}
+		}
+	}
 }

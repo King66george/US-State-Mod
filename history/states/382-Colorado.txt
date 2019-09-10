@@ -17,7 +17,13 @@ state={
 		}
 		add_core_of = COC
 		victory_points = {
-			1827 5 
+			1809 5 
+		}
+		victory_points = {
+			7780 3 
+		}
+		victory_points = {
+			12642 5 
 		}
 
 	}

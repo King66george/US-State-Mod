@@ -15,11 +15,9 @@ state={
 		}
 		add_core_of = WAW
 		victory_points = {
-			1690 1
+			10693 3
 		}
-		victory_points = {
-			7315 10
-		}
+
 
 	}
 

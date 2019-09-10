@@ -11,6 +11,18 @@ state={
 
 		}
 		add_core_of = MDM
+		victory_points = {
+			13271 5
+		}
+		victory_points = {
+			3957 20 
+		}
+		victory_points = {
+			13275 1
+		}
+		victory_points = {
+			13268 3 
+		}
 
 	}
 

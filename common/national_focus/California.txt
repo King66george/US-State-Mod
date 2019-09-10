@@ -1494,7 +1494,7 @@ focus = {
 
   focus = {
     id = CAC_army1
-    icon = GFX_goal_generic_small_arms
+    icon = GFX_CAC_roar
     cost = 5
 
     x = -2
@@ -1632,7 +1632,7 @@ focus = {
 
   focus = {
   id = CAC_armypattonsway1
-  icon = GFX_goal_generic_army_tanks
+  icon = GFX_CAC_patton
   cost = 1
   prerequisite = { focus = CAC_army2}
 
