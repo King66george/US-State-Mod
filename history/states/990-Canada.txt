@@ -2,7 +2,7 @@
 state={
 	id=990
 	name="Ottawa" 
-	manpower = 3117017
+	manpower = 2517017
 
 	state_category = metropolis
 

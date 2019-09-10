@@ -2,7 +2,7 @@
 state={
 	id=992
 	name="South Jersey"
-	manpower= 4567345
+	manpower= 867345
 	state_category=large_town
 	history={
 		owner = NJN

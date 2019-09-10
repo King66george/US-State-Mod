@@ -1,7 +1,7 @@
 state={
 	id=903
 	name="East Kansas City"
-	manpower=1800000
+	manpower=1200000
 	state_category=city
 	resources={
 	}

@@ -2,7 +2,7 @@
 state={
 	id=988
 	name="Roanoke"
-	manpower=651054
+	manpower=351054
 	resources={
 		steel=14.000
 		rubber=10.000

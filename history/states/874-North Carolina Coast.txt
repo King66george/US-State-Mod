@@ -1,7 +1,7 @@
 state={
 	id=874
 	name="Outer Banks"
-	manpower=3170274
+	manpower=2470274
 	state_category=city
 	history={
 		owner = NCN

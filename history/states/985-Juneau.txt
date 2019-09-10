@@ -1,7 +1,7 @@
 state={
 	id=985
 	name="CONUS Alaska"
-	manpower=167500
+	manpower=767500
 	state_category=rural
 	resources={ 
 		oil=10

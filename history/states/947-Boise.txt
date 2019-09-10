@@ -16,13 +16,13 @@ state={
 		}
 		add_core_of = IDI
 		victory_points = {
-			7845 10 
+			7845 1 
 		}
 		victory_points = {
 			13294 3 
 		}
 		victory_points = {
-			13295 3 
+			13295 10 
 		}
 		victory_points = {
 			13296 3 
@@ -33,7 +33,7 @@ state={
 	provinces={
 		7845 13294 13296 13298 13295 
 	}
-	manpower=2945031
+	manpower=1445031
 	buildings_max_level_factor=1.000
 	state_category=city
 }

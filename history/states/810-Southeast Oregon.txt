@@ -1,7 +1,7 @@
 state={
 	id=810
 	name="Southeast Washington"
-	manpower=2563395
+	manpower=1063395
 	state_category=large_town
 	history={
 		owner = WAW

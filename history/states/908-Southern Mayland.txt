@@ -1,7 +1,7 @@
 state={
 	id=908
 	name="Charles"
-	manpower = 1294632
+	manpower = 994632
 	state_category=city
 	history={
 		owner = MDM

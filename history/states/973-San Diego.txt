@@ -25,6 +25,6 @@ state={
 		1562 7517 12374 
 	}
 	buildings_max_level_factor=1.000
-	manpower = 3271365
+	manpower = 2171365
 	state_category = metropolis	
 }

@@ -1,7 +1,7 @@
 state={
 	id=904
 	name="Niagara Falls"
-	manpower=500000
+	manpower=50140
 	state_category=city
 	resources={
 	}

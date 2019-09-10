@@ -1,7 +1,7 @@
 state={
 	id=837
 	name="East Mississippi"
-	manpower=2009820
+	manpower=809820
 	state_category=city
 	history={
 		owner = MSM

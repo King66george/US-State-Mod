@@ -1,7 +1,7 @@
 state={
 	id=844
 	name="East Iowa"
-	manpower=2470938
+	manpower=1470938
 	state_category=city
 	history={
 		owner = IAI

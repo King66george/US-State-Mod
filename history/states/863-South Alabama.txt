@@ -1,7 +1,7 @@
 state={
 	id=863
 	name="South Alabama"
-	manpower=2646247
+	manpower=1246247
 	state_category=city
 	history={
 		owner = ALA

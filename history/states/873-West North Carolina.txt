@@ -1,7 +1,7 @@
 state={
 	id=873
 	name="West North Carolina"
-	manpower=3170274
+	manpower=1070274
 	state_category=city
 	history={
 		owner = NCN

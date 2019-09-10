@@ -1,7 +1,7 @@
 state={
 	id=981
 	name="Frankfort"
-	manpower=2614588
+	manpower=1614588
 	resources={
 		chromium=7.000
 	}

@@ -1,7 +1,7 @@
 state={
 	id=982
 	name="Madison"
-	manpower=2939004
+	manpower=1339004
 	state_category=large_city
 	resources={
 		steel=3.000

@@ -1,7 +1,7 @@
 state={
 	id=830
 	name="South Kansas"
-	manpower=1880998
+	manpower=880998
 	state_category=city
 	resources={
 		oil=30.000

@@ -2,7 +2,7 @@
 state={
 	id=463
 	name="Alaska"
-	manpower=1067500
+	manpower=767500
 	state_category=rural
 	resources={
 		chromium= 4.000

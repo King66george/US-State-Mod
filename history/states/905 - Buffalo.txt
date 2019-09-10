@@ -1,7 +1,7 @@
 state={
 	id=905
 	name="Buffalo"
-	manpower=500000
+	manpower=575482
 	state_category=city
 	resources={
 	}

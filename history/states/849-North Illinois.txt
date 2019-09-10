@@ -1,7 +1,7 @@
 state={
 	id=849
 	name="North Illinois"
-	manpower=7630651
+	manpower=630651
 	state_category=megalopolis
 	history={
 		owner = ILI
