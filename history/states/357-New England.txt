@@ -2,7 +2,7 @@
 state={
 	id=357
 	name="Maine"
-	manpower=8404713
+	manpower=4404713
 	state_category=rural
 	resources={
 		steel=12.000

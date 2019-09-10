@@ -1,7 +1,7 @@
 state={
 	id=841
 	name="East Utah"
-	manpower = 1000000
+	manpower = 900000
 	
 	state_category = rural
 	

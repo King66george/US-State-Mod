@@ -1,13 +1,13 @@
 state={
 	id=844
 	name="East Iowa"
-	manpower=1470938
+	manpower=870938
 	state_category=city
 	history={
 		owner = IAI
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 4
+			industrial_complex = 5
 
 		}
 		add_core_of = IAI

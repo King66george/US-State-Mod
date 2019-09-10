@@ -1,7 +1,7 @@
 state={
 	id=869
 	name="Georgia Coast"
-	manpower=1708504
+	manpower=908504
 	state_category=city
 	history={
 		owner = GAG

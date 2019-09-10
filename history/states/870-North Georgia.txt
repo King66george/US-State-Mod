@@ -1,7 +1,7 @@
 state={
 	id=870
 	name="North Georgia"
-	manpower=2008504
+	manpower=1508504
 	state_category=city
 	history={
 		owner = GAG

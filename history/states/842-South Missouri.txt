@@ -2,7 +2,7 @@ state={
 	id=842
 	name="South Missouri"
 	state_category=large_city
-	manpower = 820455
+	manpower = 520455
 	resources={
 		aluminium=12.000
 	}

@@ -275,7 +275,7 @@ focus_tree = {
 					add_political_power = 150
 				}
 			ai_will_do = {
-					factor = 7
+					factor = 10
 				}
 
 	}
@@ -398,7 +398,7 @@ focus_tree = {
 					add_ideas = paramilitarism_focus
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_0
-							amount = 500
+							amount = 1000
 							producer = GER
 						}
 				}
@@ -1482,7 +1482,7 @@ focus_tree = {
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 7
+					factor = 10
 					modifier = {
 							factor = 3
 							any_neighbor_country = {
@@ -1587,7 +1587,7 @@ focus_tree = {
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 7
+					factor = 10
 					modifier = {
 							factor = 2
 							any_neighbor_country = {
@@ -1932,7 +1932,7 @@ focus_tree = {
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 35
+					factor = 10
 				}
 			completion_reward = {
 					add_timed_idea = {

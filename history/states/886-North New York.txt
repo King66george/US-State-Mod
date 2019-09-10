@@ -2,7 +2,7 @@ state={
 	id=886
 	name="North New York"
 	manpower=1588061
-	state_category=megalopolis
+	state_category= rural
 	resources={
 		steel=13.000
 	}
@@ -10,7 +10,7 @@ state={
 	history={
 		owner = NYN
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			industrial_complex = 1
 			air_base = 10
 

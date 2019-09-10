@@ -2,7 +2,7 @@
 state={
 	id=373
 	name="West Missouri"
-	manpower=3629365
+	manpower=2029365
 	state_category=large_city
 	resources={
 		aluminium=12.000

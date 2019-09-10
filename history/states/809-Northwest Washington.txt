@@ -1,7 +1,7 @@
 state={
 	id=809
 	name="Northwest Washington"
-	manpower=1063395
+	manpower=863395
 
 	resources={
 		chromium=15.000
