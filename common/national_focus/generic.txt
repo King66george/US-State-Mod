@@ -2600,6 +2600,7 @@ focus_tree = {
 		}
 		x = 21
 		y = 8
+			available_if_capitulated = no
 			completion_reward = {
 				random_neighbor_country = {
 					limit = {
@@ -2629,6 +2630,7 @@ focus_tree = {
 		}
 		x = 28
 		y = 5
+			available_if_capitulated = no
 			completion_reward = {
 				random_neighbor_country = {
 					limit = {
