@@ -18,6 +18,12 @@ state_category= town
 		victory_points = {
 			4860 1 
 		}
+		victory_points = {
+			4741 3 
+		}
+		victory_points = {
+			10593 1 
+		}
 
 	}
 

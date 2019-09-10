@@ -15,6 +15,12 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of =UTU
+		victory_points = {
+			10662 4 
+		}
+		victory_points = {
+			12699 3 
+		}
 	}
 	provinces={
 		1740 10662 12573 12699 
