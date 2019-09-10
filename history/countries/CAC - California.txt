@@ -177,10 +177,10 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Jackson H. Ryan"
+	name = "Lee Oliver"
 	picture = ""
 	traits = { trait_reckless }
-	skill = 1
+	skill = 2
 
 	attack_skill = 2
 	defense_skill = 1
