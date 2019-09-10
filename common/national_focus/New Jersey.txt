@@ -894,6 +894,7 @@ ideology = neutrality
 popularity = 0.6
 }
 }
+}
 
 #Add all^
 focus = {
