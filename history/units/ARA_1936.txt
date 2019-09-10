@@ -75,7 +75,7 @@ units = {
 	### 1st Army -- note: Armies only paper organizations in 1936 ###
 	# I Army Corps #
 	division= {			
-		name = "1st Alabamian National Guard"		
+		name = "1st Arkansas National Guard"		
 		location = 12489
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
