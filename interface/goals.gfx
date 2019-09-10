@@ -1671,5 +1671,13 @@ spriteTypes = {
 		name = "GFX_WAW_fund_the_boeing_company"
 		texturefile = "gfx/interface/goals/WAW_fund_the_boeing_company.dds"
 		}
+		spriteType = {
+		name = "GFX_CAC_patton"
+		texturefile = "gfx/interface/goals/CAC_patton.dds"
+		}
+		spriteType = {
+		name = "GFX_CAC_roar"
+		texturefile = "gfx/interface/goals/CAC_roar.dds"
+		}
 
 }
