@@ -691,8 +691,43 @@ focus = {
 }
 
 
+focus = {
+  id = CAC_bajaexpedition
+  icon = GFX_goal_generic_occupy_states_ongoing_war
+  prerequisite = { focus = CAC_formationofpsa}
 
+  cost = 7.25
+  x = 8
+  y = 12
 
+  completion_reward = {
+      create_wargoal = {
+          type = puppet_wargoal_focus
+          target = BAJ
+        }
+    }
+}
+
+focus = {
+  id = CAC_arizonawargoal
+  icon = GFX_goal_generic_occupy_states_ongoing_war
+  prerequisite = { focus = CAC_formationofpsa}
+
+  cost = 7.25
+  x = 12
+  y = 12
+
+  available = {
+    controls_state = 975
+  }
+
+  completion_reward = {
+      create_wargoal = {
+          type = puppet_wargoal_focus
+          target = AZA
+        }
+    }
+}
 
 #After Formation Of PSA
 
