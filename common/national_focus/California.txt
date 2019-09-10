@@ -524,7 +524,87 @@ focus = {
     }
     }
     add_autonomy_score = {
+    value = -50
+    localization = AST_adopt_westminster
+    }
+  }
+}
+
+focus = {
+  id = CAC_buildhawaii4
+  icon = GFX_focus_generic_air_defense
+  prerequisite = { focus = CAC_buildhawaii2}
+
+  cost = 10
+  x = 13
+  y = 9
+  available = {
+  any_country = {
+      original_tag = HIH
+      is_in_faction_with = ROOT
+  }
+  }
+
+  completion_reward = {
+    892 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = anti_air_building
+    level = 2
+    instant_build = yes
+    }
+    }
+
+    894 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = anti_air_building
+    level = 2
+    instant_build = yes
+    }
+    }
+    add_autonomy_score = {
     value = -25
+    localization = AST_adopt_westminster
+    }
+  }
+}
+
+focus = {
+  id = CAC_buildhawaii3
+  icon = GFX_goal_generic_construct_civ_factory
+  prerequisite = { focus = CAC_buildhawaii}
+
+  cost = 10
+  x = 7
+  y = 9
+  available = {
+  any_country = {
+      original_tag = HIH
+      is_in_faction_with = ROOT
+    }
+  }
+
+  completion_reward = {
+    892 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+    }
+    }
+
+    892 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+    type = infrastructure
+    level = 2
+    instant_build = yes
+    }
+    }
+    add_autonomy_score = {
+    value = -50
     localization = AST_adopt_westminster
     }
   }
