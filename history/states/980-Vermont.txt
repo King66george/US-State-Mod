@@ -1,7 +1,7 @@
 state={
 	id=980
 	name="Montpelier"
-	manpower=8404713
+	manpower=804713
 	state_category=metropolis
 	resources={
 		steel=12.000

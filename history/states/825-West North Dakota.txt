@@ -1,7 +1,7 @@
 state={
 	id=825
 	name="West North Dakota"
-	manpower=1680844
+	manpower=680844
 	state_category= town
 	resources={
 		steel=17.000

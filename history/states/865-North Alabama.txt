@@ -1,7 +1,7 @@
 state={
 	id=865
 	name="North Alabama"
-	manpower=2646247
+	manpower=646247
 	state_category=city
 	history={
 		owner = ALA

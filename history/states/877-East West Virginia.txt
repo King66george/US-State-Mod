@@ -1,7 +1,7 @@
 state={
 	id=877
 	name="East West Virginia"
-	manpower=3251054
+	manpower=1251054
 	state_category=large_city
 	history={
 		owner = WVW

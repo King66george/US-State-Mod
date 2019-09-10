@@ -1,7 +1,7 @@
 state={
 	id=979
 	name="Concord"
-	manpower=7404713
+	manpower=804713
 	state_category=metropolis
 	resources={
 		steel=12.000

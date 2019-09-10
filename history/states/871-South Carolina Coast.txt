@@ -1,7 +1,7 @@
 state={
 	id=871
 	name="South Carolina Coast"
-	manpower=1738764
+	manpower=1438764
 	state_category=city
 	history={
 		owner = SCS
