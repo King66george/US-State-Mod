@@ -3,7 +3,7 @@ state={
 	name="STATE_686"
 	manpower = 1543913
 	
-	state_category = rural
+	state_category = city
 
 	history={ 
 		add_core_of = PRP
@@ -12,8 +12,9 @@ state={
 			1440 1 
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
 			air_base = 4
 			1440 = {
 				naval_base = 3

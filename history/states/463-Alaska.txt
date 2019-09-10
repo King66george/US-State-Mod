@@ -10,7 +10,9 @@ state={
 	history={
 		owner = AKA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 1
 
 		}

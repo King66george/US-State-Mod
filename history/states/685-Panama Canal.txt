@@ -1,9 +1,9 @@
 state={
 	id=685
 	name="STATE_685"
-	manpower = 39467
+	manpower = 939467
 
-	state_category = enclave
+	state_category = city
 
 	history = {
 		owner = PCP
@@ -11,7 +11,9 @@ state={
 			7617 5
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 6
 			7617 = {
 				naval_base = 3
