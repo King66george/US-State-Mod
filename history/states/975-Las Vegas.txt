@@ -4,8 +4,8 @@ state={
 	history={
 		owner = NVN
 		buildings = {
-			infrastructure = 7
-			industrial_complex = 2
+			infrastructure = 8
+			industrial_complex = 3
 			air_base = 3
 		}
 		add_core_of = NVN

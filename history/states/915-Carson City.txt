@@ -4,11 +4,13 @@ state={
 
 	history={
 		owner = NVN
-		victory_points = { 
-			4607 30 
+		victory_points = {
+			4607 30
 		}
 		buildings = {
 			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
 		}
 		add_core_of = NVN
 
