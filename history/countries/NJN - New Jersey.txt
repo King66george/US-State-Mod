@@ -153,7 +153,46 @@ create_country_leader = {
 	strict_austerity_adherent
 	}
 }
-
+create_field_marshal = {
+	name = "Cortlandt V.R. Schuyler"
+	picture = "Portrait_NJN_Cortlandt_V_R_Schuyler.dds"
+	traits = { organizer skilled_staffer expert_delegator }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Joseph May Swing"
+	picture = "Portrait_NJN_Joseph_M_Swing.dds"
+	traits = { commando paratroopers skirmisher}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "David Ayres Depue Ogden"
+	picture = "Portrait_NJN_David_A_D_Ogden.dds"
+	traits = { engineer invader amphibious}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "John Honeycutt Hinrichs"
+	picture = "Portrait_NJN_John_Honeycutt_Hinrichs.dds"
+	traits = { engineer organizer scavenger }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
 create_navy_leader = {
 	name = "William Halsey, Jr."
 		picture = "Portrait_NJN_William_Halsey.dds"
