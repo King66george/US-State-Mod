@@ -7,7 +7,7 @@ state={
 	history = {
 		owner = BAJ
 		buildings = {
-			infrastructure = 8
+			infrastructure = 5
 			air_base = 3
 			arms_factory = 1
 			industrial_complex = 2
@@ -15,14 +15,14 @@ state={
 		add_core_of = BAJ
 		add_core_of = MEX
 		victory_points = {
-			13215 13 
+			13215 13
 		}
 	}
 
 	provinces={
-		13215 
+		13215
 	}
-	manpower=2108841
+	manpower=530412
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=large_town
 }

@@ -3,10 +3,10 @@ state={
 	name="Alaskan Capital Region"
 	manpower=1067500
 	state_category=town
-	resources={ 
+	resources={
 		oil=30
 		steel=5
-		rubber=23
+		rubber=33
 	}
 	history={
 		owner = AKA

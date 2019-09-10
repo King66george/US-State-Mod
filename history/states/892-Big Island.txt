@@ -1,7 +1,11 @@
 state={
 	id=892
 	name="Honolulu"
-		manpower = 351792
+	manpower = 351792
+	resources = {
+		rubber = 3.000
+		steel = 2.000
+	}
 	state_category = large_city
 	history={
 		owner = HIH

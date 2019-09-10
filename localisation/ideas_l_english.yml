@@ -2710,6 +2710,8 @@
  CAC_combinedarmsproduction:0 "Combined Arms Production"
  CAC_advancedartillery:0 "Advanced Artillery Production"
  CAC_specialforcesenviromentaltraining:0 "Special Forces Enviromental Training"
+ CAC_ncrrevanchism:0 "NCR Revanchism"
+ CAC_recoveryfromwar:0 "Relieve Devastation From War"
  ########################################Political Advisors###########################################
  robert_bobbit:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"

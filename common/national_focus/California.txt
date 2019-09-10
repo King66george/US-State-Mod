@@ -388,6 +388,7 @@ focus = {
         add_ideas = CAC_local_security
         add_political_power = 120
   			set_rule = { can_create_factions = yes }
+        set_rule = { can_send_volunteers = yes }
   			create_faction = "california_democratic_faction"
 
       }
@@ -690,15 +691,49 @@ focus = {
   }
 }
 
+focus = {
+  id = CAC_expandncrstates
+  icon = GFX_focus_generic_the_giant_wakes
+  prerequisite = { focus = CAC_army2}
+
+  cost = 14.30
+  x = -2
+  y = 8
+
+  completion_reward = {
+    add_timed_idea = {
+    idea = CAC_ncrrevanchism
+    days = 500
+    }
+    add_ideas = limited_conscription
+    add_state_claim = 975
+    }
+}
+focus = {
+  id = CAC_nevadawar
+  icon = GFX_goal_generic_occupy_states_ongoing_war
+  prerequisite = { focus = CAC_expandncrstates}
+
+  cost = 7.25
+  x = -2
+  y = 9
+
+  completion_reward = {
+      create_wargoal = {
+          type = puppet_wargoal_focus
+          target = NVN
+        }
+    }
+}
 
 focus = {
   id = CAC_bajaexpedition
   icon = GFX_goal_generic_occupy_states_ongoing_war
-  prerequisite = { focus = CAC_formationofpsa}
+  prerequisite = { focus = CAC_nevadawar}
 
   cost = 7.25
-  x = 8
-  y = 12
+  x = -2
+  y = 10
 
   completion_reward = {
       create_wargoal = {
@@ -711,11 +746,11 @@ focus = {
 focus = {
   id = CAC_arizonawargoal
   icon = GFX_goal_generic_occupy_states_ongoing_war
-  prerequisite = { focus = CAC_formationofpsa}
+  prerequisite = { focus = CAC_bajaexpedition}
 
   cost = 7.25
-  x = 12
-  y = 12
+  x = -2
+  y = 11
 
   available = {
     controls_state = 975
@@ -727,6 +762,181 @@ focus = {
           target = AZA
         }
     }
+}
+
+focus = {
+  id = CAC_assimilatenewlands
+  icon = GFX_focus_generic_treaty
+  prerequisite = { focus = CAC_arizonawargoal}
+
+  cost = 10
+  x = -2
+  y = 12
+
+  available = {
+    controls_state = 975
+    controls_state = 379
+    controls_state = 915
+    controls_state = 805
+    controls_state = 804
+    controls_state = 917
+    controls_state = 484
+    controls_state = 916
+    controls_state = 918
+    controls_state = 796
+    controls_state = 794
+    controls_state = 795
+    controls_state = 912
+    controls_state = 377
+    controls_state = 913
+  }
+
+  completion_reward = {
+    add_stability = 0.05
+    add_state_core = 975
+    add_state_core = 379
+    add_state_core = 915
+    add_state_core = 805
+    add_state_core = 804
+    add_state_core = 917
+    add_state_core = 484
+    add_state_core = 916
+    add_state_core = 918
+    add_state_core = 796
+    add_state_core = 794
+    add_state_core = 795
+    add_state_core = 912
+    add_state_core = 377
+    add_state_core = 913
+  }
+}
+
+focus = {
+  id = CAC_recoveryfromwar
+  icon = GFX_goal_generic_intelligence_exchange
+  prerequisite = { focus = CAC_assimilatenewlands}
+
+  cost = 10
+  x = -2
+  y = 13
+
+  completion_reward = {
+    add_timed_idea = {
+      idea = CAC_recoveryfromwar
+      days = 300
+    }
+
+  }
+}
+
+focus = {
+  id = CAC_relievenevada
+  icon = GFX_goal_generic_construction
+  prerequisite = { focus = CAC_recoveryfromwar}
+
+  cost = 6.5
+  x = -3
+  y = 14
+
+  available = {
+    controls_state = 975
+    controls_state = 915
+  }
+
+  completion_reward = {
+    975 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+    915 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+  }
+}
+
+focus = {
+  id = CAC_relievebaja
+  icon = GFX_goal_generic_construction
+  prerequisite = { focus = CAC_recoveryfromwar}
+
+  cost = 6.5
+  x = -1
+  y = 14
+
+  available = {
+    controls_state = 484
+    controls_state = 918
+  }
+
+  completion_reward = {
+    484 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+    918 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+  }
+}
+
+focus = {
+  id = CAC_relievearizona
+  icon = GFX_goal_generic_construction
+  prerequisite = { focus = CAC_recoveryfromwar}
+
+  cost = 6.5
+  x = -2
+  y = 15
+
+  available = {
+    controls_state = 795
+    controls_state = 377
+  }
+
+  completion_reward = {
+    795 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+    377 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+    794 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 1
+      instant_build = yes
+      }
+    }
+  }
 }
 
 #After Formation Of PSA
