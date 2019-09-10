@@ -1679,5 +1679,13 @@ spriteTypes = {
 		name = "GFX_CAC_roar"
 		texturefile = "gfx/interface/goals/CAC_roar.dds"
 		}
+		spriteType = {
+		name = "GFX_CAC_lloyd"
+		texturefile = "gfx/interface/goals/CAC_lloyd.dds"
+		}
+		spriteType = {
+		name = "GFX_CAC_freedom"
+		texturefile = "gfx/interface/goals/CAC_freedom.dds"
+		}
 
 }

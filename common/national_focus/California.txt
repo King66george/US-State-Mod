@@ -711,7 +711,7 @@ focus = {
 }
 focus = {
   id = CAC_nevadawar
-  icon = GFX_goal_generic_occupy_states_ongoing_war
+  icon = GFX_CAC_freedom
   prerequisite = { focus = CAC_expandncrstates}
 
   cost = 7.25
@@ -1772,7 +1772,7 @@ focus = {
 
   focus = {
   id = CAC_armylloydsway1
-  icon = GFX_goal_generic_allies_build_infantry
+  icon = GFX_CAC_lloyd
   cost = 1
   prerequisite = { focus = CAC_army2}
 
