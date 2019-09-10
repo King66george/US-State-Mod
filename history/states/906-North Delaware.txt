@@ -16,6 +16,9 @@ state={
 
 		}
 		add_core_of = DED
+		victory_points = {
+			13273 5
+		}
 
 	}
 
