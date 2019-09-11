@@ -274,9 +274,9 @@ icon = GFX_goal_generic_improve_relations
 x = 9
 y = 4
 bypass = {
-			MDM = {
+			CTC = {
 				OR = {
-					NOT = { country_exists = MDM }
+					NOT = { country_exists = CTC }
 					has_capitulated = yes
 				}
 			}
