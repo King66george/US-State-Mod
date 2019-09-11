@@ -23,6 +23,10 @@ OHO_isolationism:0 "Isolationism"
 OHO_shiftextremeright:0 "Shift Towards the Extreme Right"
 ####Advisors#####
 OHO_ford:0 "Henry Ford"
+
+#Factions#
+christian_front:0 "The Christian Front"
+
 ##Events\/
 
 #Political Bellwether - Choose ideology drift

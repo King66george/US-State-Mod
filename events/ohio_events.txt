@@ -94,6 +94,8 @@ country_event = {
 
   picture = GFX_event_jesse_owens.dds
 
+  is_triggered_only = yes
+
   trigger = {
     OHO = {
       country_exists = OHO
