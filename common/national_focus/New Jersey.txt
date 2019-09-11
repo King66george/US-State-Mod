@@ -164,6 +164,14 @@ id = njdiplo4.1
 icon = GFX_goal_generic_national_unity
 x = 8
 y = 3
+bypass = {
+			DED = {
+				OR = {
+					NOT = { country_exists = DED }
+					has_capitulated = yes
+				}
+			}
+		}
 cost = 10
 prerequisite = {focus = njdiplo3.2}
 completion_reward = {
@@ -386,8 +394,6 @@ country_event = newjersey.3
 VTV = {
 country_event = newjersey.3
 }
-reverse_add_opinion_modifier = { target = PAP modifier = Threatened }
-reverse_add_opinion_modifier = { target = NYN modifier = Threatened }
 }
 }
 
