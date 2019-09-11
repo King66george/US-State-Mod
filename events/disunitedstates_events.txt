@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = disunitedstates.1.a
-		ai_chance = { factor = 40}
+		ai_chance = { factor = 65}
 		NCN = { annex_country= {
  target = ROOT
  transfer_troops = yes
@@ -18,7 +18,7 @@ country_event = {
 	}
 	option = {
 		name = disunitedstates.1.b
-		ai_chance = { factor = 60}
+		ai_chance = { factor = 35}
 		NCN = {
 		create_wargoal = {
 		type = annex_everything
