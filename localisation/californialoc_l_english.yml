@@ -1,9 +1,10 @@
 ﻿l_english:
 
-#Pattons Way Lloyds Way Focus
+##Custom Tooltips
 CAC_electedpresident:0 "Has elected a new president."
 lloydsway:0 "Has chosen Lloyd's army model."
-pattonsway:0 "Has chosen Patton's army model."
+pattonsway:0 "Has chosen Patton's army model."\
+california_training_tech_effect:0 "Tech - All Infantry:\nMountains and Desert:\n§GMovement §G+10%\nAttack §G+7.5%\nDefence §G+7.5%\n\n"
 
 #This file is meant for all California focus and description localization.
 
@@ -25,8 +26,8 @@ CAC_lesscorptax:0 "Less Corporation Tax"
 CAC_lesscorptax_desc:0 "Frank Merriam has proposed a new plan of giving California corporations less of a tax, this could help our economy."
 CAC_oilproduction:0 "Black Gold"
 CAC_oilproduction_desc:0 "California oil will be able to sell for a lot during this time and solidify our position, we should try and mine for more."
-CAC_increasetradepower:0 "Increase Trade Power"
-CAC_increasetradepower_desc:0 "California has a lot of resources that other states simply don't have, this can help our place in the global market."
+CAC_increasetradepower:0 "Fund Recruitment Centers"
+CAC_increasetradepower_desc:0 "California has a large population, this could easily be used for military campaigns to solidify our position and we of course will need men to defend the bastion of democracy."
 CAC_militaryrnd:0 "Military R&D"
 CAC_militaryrnd_desc:0 "We should allocate our resources to Military Research & Development, this can help our military with new superior weapons on the battlefield."
 CAC_defensiveprogram:0 "Military Defensive Program"
@@ -111,3 +112,8 @@ CAC_assimilatenewlands:0 "Official NCR States"
 CAC_relievebaja:0 "Relieve Baja"
 CAC_relievenevada:0 "Relieve Nevada"
 CAC_relievearizona:0 "Relieve Arizona"
+CAC_dockyards1_desc:0 "California still has the remnants of the Pacific fleet from the USA, we obviously need enough dockyards to support such a large fleet."
+CAC_buildhawaii_desc:0 "Aiding Hawaii with military aid could be helpful in the long run and support us in future military operations, we should invest in building factories for them."
+CAC_buildhawaii2_desc:0 "Hawaii has some of the remants of the Pacific fleet from the old United States, they will obviously need dockyards to support such a fleet."
+CAC_buildhawaii3_desc:0 "Civilian aid to Hawaii will be needed if they want to prosper under our flag, we should invest factories for them."
+CAC_buildhawaii4_desc:0 "Building anti-air in Hawaii would make it a complete fortress from any invasions, especially Japan.. The Californian flag over Hawaii shall never fall."

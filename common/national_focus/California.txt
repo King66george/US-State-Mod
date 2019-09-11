@@ -264,7 +264,7 @@ focus_tree = {
 
   focus = {
     id = CAC_increasetradepower
-    icon = GFX_focus_mex_privatisation
+    icon = GFX_focus_generic_little_entente
     prerequisite = { focus = CAC_dockyards1}
 
     cost = 10
@@ -272,51 +272,9 @@ focus_tree = {
     y = 5
 
     completion_reward = {
-        add_ideas = { CAC_tradepower}
-        ENG = {
-                    add_opinion_modifier = {
-                                target = CAC
-                                modifier = medium_increase
-                    }
-                }
-                FRA = {
-                    add_opinion_modifier = {
-                                target = CAC
-                                modifier = medium_increase
-                    }
-                }
-                NVN = {
-                    add_opinion_modifier = {
-                                target = CAC
-                                modifier = medium_increase
-                    }
-                }
-                TXT = {
-                    add_opinion_modifier = {
-                                target = CAC
-                                modifier = medium_increase
-                    }
-                }
-                MEX = {
-                    add_opinion_modifier = {
-                                target = CAC
-                                modifier = medium_increase
-                    }
-                }
-
-                AZA = {
-                    add_opinion_modifier = {
-                                target = CAC
-                                modifier = medium_increase
-                    }
-                }
-            }
-
+        add_ideas = { CAC_openrecruitmentcenters}
     }
-
-
-
-
+  }
 
 
   focus = {
@@ -703,7 +661,7 @@ focus = {
   completion_reward = {
     add_timed_idea = {
     idea = CAC_ncrrevanchism
-    days = 500
+    days = 750
     }
     add_ideas = limited_conscription
     add_state_claim = 975
@@ -1857,8 +1815,15 @@ focus = {
     y = 11
 
     completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CAC_armylloydsway5"
+			custom_effect_tooltip = california_training_tech_effect
+			hidden_effect = {
+				set_technology = {
+					california_training_tech = 1
+				}
+			}
       add_ideas = CAC_specialforcesenviromentaltraining
-    }
+		}
   }
 
   focus = {

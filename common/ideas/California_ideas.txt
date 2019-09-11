@@ -183,6 +183,7 @@ CAC_amilitarypowerhouse = {
     army_org = 5
     army_attack_factor = 0.02
     experience_gain_army_factor = 0.02
+    conscription = 0.030
   }
 }
 
@@ -313,11 +314,12 @@ CAC_specialforcesenviromentaltraining = {
   removal_cost = -1
 
   modifier = {
-    heat_attrition_factor = -0.15
-    acclimatization_hot_climate_gain_factor = 0.25
-    special_forces_attack_factor = 0.1
-    special_forces_defence_factor = 0.1
-    special_forces_cap = 0.02
+    heat_attrition_factor = -0.075
+    acclimatization_hot_climate_gain_factor = 0.1
+    special_forces_attack_factor = 0.05
+    special_forces_defence_factor = 0.05
+    special_forces_cap = 0.05
+    special_forces_min = 2
   }
 }
 
@@ -353,9 +355,9 @@ CAC_ncrrevanchism = {
   modifier = {
     war_support_weekly = 0.025
     mobilization_speed = 0.25
-    weekly_manpower = 750
+    weekly_manpower = 500
     conscription = 0.025
-    	training_time_factor = -0.025
+    training_time_factor = -0.025
   }
   }
 
@@ -375,6 +377,22 @@ CAC_ncrrevanchism = {
       industry_repair_factor = 0.35
       industry_free_repair_factor = 0.50
       production_speed_industrial_complex_factor = 0.15
+    }
+  }
+
+  CAC_openrecruitmentcenters = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    removal_cost = -1
+
+    modifier = {
+      conscription = 0.025
     }
   }
 

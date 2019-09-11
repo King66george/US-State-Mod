@@ -60,3 +60,8 @@
   california.16.d:0 "Placeholder"
   california.16.a:0 "Lloyd's army model will work better in California's situation!"
   california.16.b:0 "Patton's armor plan will pave the way for a new California!"
+  #Rename Las Vegas
+  california.17.t:0 "Sin City"
+  california.17.d:0 "Placeholder"
+  california.17.a:0 "Yes."
+  california.17.b:0 "No."
