@@ -249,6 +249,14 @@ id = njdiplo5.3
 icon = GFX_goal_generic_improve_relations
 x = 7
 y = 4
+bypass = {
+			MDM = {
+				OR = {
+					NOT = { country_exists = MDM }
+					has_capitulated = yes
+				}
+			}
+		}
 cost = 10
 prerequisite = {focus = njdiplo4.1}
 completion_reward = {
@@ -265,6 +273,14 @@ id = njdiplo5.4
 icon = GFX_goal_generic_improve_relations
 x = 9
 y = 4
+bypass = {
+			MDM = {
+				OR = {
+					NOT = { country_exists = MDM }
+					has_capitulated = yes
+				}
+			}
+		}
 cost = 10
 prerequisite = {focus = njdiplo4.1}
 completion_reward = {
