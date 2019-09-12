@@ -3,8 +3,6 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add= 5
-
 		}
 	}
 	default = yes
@@ -1458,7 +1456,7 @@ focus_tree = {
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 35
+					factor = 10
 				}
 			completion_reward = {
 					add_timed_idea = {
@@ -1495,22 +1493,6 @@ focus_tree = {
 					add_timed_idea = {
 							idea = nationalism
 							days = 720
-						}
-					set_politics = {
-							ruling_party = fascism
-							elections_allowed = yes
-						}
-					set_political_party = {
-							ideology = democratic
-							popularity = 1
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 0
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 99
 						}
 				}
 
@@ -1600,22 +1582,6 @@ focus_tree = {
 					add_timed_idea = {
 							idea = internationalism
 							days = 720
-						}
-					set_politics = {
-							ruling_party = communism
-							elections_allowed = yes
-						}
-					set_political_party = {
-							ideology = democratic
-							popularity = 1
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 98
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 1
 						}
 				}
 
@@ -1757,23 +1723,8 @@ focus_tree = {
 }
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 30
-					modifier = {
-							factor = 0.1
-							any_neighbor_country = {
-									is_major = yes
-									OR = {
-											has_government = communism
-											has_government = fascism
-										}
-								}
-							NOT = {
-									any_neighbor_country = {
-											is_major = yes
-											has_government = democratic
-										}
-								}
-						}
+					factor = 10
+					
 				}
 			completion_reward = {
 					add_ideas = liberty_ethos_focus
@@ -1883,21 +1834,10 @@ focus_tree = {
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 1
-					modifier = {
-							factor = 0
-							tag = AUS
-						}
+					factor = 10
 				}
 			completion_reward = {
-					if = {
-							limit = {
-									NOT = {
-											has_idea = neutrality_idea
-										}
-								}
-							add_ideas = neutrality_idea
-						}
+					add_ideas = neutrality_idea
 					add_political_power = 150
 				}
 
@@ -2590,64 +2530,5 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = Collective_goal
-		icon = GFX_focus_eng_special_air_service
-		cost = 10.00
-		prerequisite = {
-			focus = com_militarism
-			focus = prep_struggle
-		}
-		x = 21
-		y = 8
-			available_if_capitulated = no
-			completion_reward = {
-				random_neighbor_country = {
-					limit = {
-						not = {
-							is_guaranteed_by = ROOT
-							is_in_faction_with = ROOT
-							has_non_aggression_pact_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-					ROOT = { 
-						create_wargoal   = { 
-							target = PREV 
-							type = annex_everything
-						}
-					}
-				}
-			}
 
-	}
-	focus = {
-		id = Monarchy_Goal
-		icon = GFX_focus_eng_special_air_service
-		cost = 10.00
-		prerequisite = {
-			focus = king_and_country
-		}
-		x = 28
-		y = 5
-			available_if_capitulated = no
-			completion_reward = {
-				random_neighbor_country = {
-					limit = {
-						not = {
-							is_guaranteed_by = ROOT
-							is_in_faction_with = ROOT
-							has_non_aggression_pact_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-					ROOT = { 
-						create_wargoal  = { 
-							target = PREV 
-							type = annex_everything
-						}
-					}
-				}
-			}
-	}
 }

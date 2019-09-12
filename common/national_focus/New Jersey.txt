@@ -10,7 +10,7 @@ focus_tree = {
             tag = NJN
         }
     }
-
+	default = no
     ###Diplomacy Section###
 
     focus = {

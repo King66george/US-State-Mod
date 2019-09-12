@@ -31,8 +31,8 @@ ideologies = {
 			can_send_volunteers = no
 			can_puppet = yes
 			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
 		}
 
 		can_host_government_in_exile = yes
@@ -93,10 +93,15 @@ ideologies = {
 		ai_communist = yes # uses the commie AI behaviour
 
 		rules = {
-			can_force_government = no
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
 		}
+
 
 		modifiers = {
 			puppet_cost_factor = -0.3
@@ -139,9 +144,13 @@ ideologies = {
 		faction_impact_on_world_tension = 1.0
 
 		rules = {
-			can_force_government = no
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = no
 		}
 
 		modifiers = {
@@ -166,6 +175,9 @@ ideologies = {
 
 			centrism = {
 			}
+			
+			monarchism = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -183,10 +195,15 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 
 		rules = {
-			can_force_government = no
-			can_puppet = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
 			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
 		}
+
 
 		modifiers = {
 			#increased_influence_factor = 0.3 #30% easier to influence
@@ -202,6 +219,66 @@ ideologies = {
 		}
 
 		can_be_boosted = no
+		can_collaborate = yes
+
+		ai_neutral = yes #
+	}
+	monarchy = {
+
+		types = {
+
+			despotism  = {
+			}
+
+			constitutional  = {
+			}
+
+			fuedal = {
+			}
+
+			theocratic = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_MONARCHY_1"
+			"FACTION_NAME_MONARCHY_2"
+			"FACTION_NAME_MONARCHY_3"
+			"FACTION_NAME_MONARCHY_4"
+			"FACTION_NAME_MONARCHY_5"
+		}
+
+		color = { 178 0 255 }
+
+
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+
+
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			generate_wargoal_tension = 0.5
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3
+		}
+
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
 		can_collaborate = yes
 
 		ai_neutral = yes #

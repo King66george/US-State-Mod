@@ -156,6 +156,10 @@ set_popularities = {
 	fascism = 1
 }
 
+create_faction = Faction for American Unification
+add_to_faction = WDC
+add_to_faction = VAV
+
 create_country_leader = {
  		name = "Franklin D. Roosevelt"
 		#desc = ""
