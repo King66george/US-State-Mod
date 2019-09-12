@@ -607,9 +607,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_monarchy_group"
-		textureFile = "gfx/interface/monarchy_group.dds"
-		noOfFrames = 4
+		name = "GFX_ideology_monarchy_group"
+		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
 	}
 
 	frameAnimatedSpriteType = {

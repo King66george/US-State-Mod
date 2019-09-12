@@ -1687,5 +1687,9 @@ spriteTypes = {
 		name = "GFX_CAC_freedom"
 		texturefile = "gfx/interface/goals/CAC_freedom.dds"
 		}
+		spriteType = {
+		name = "Monarchy"
+		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
+	}
 
 }
