@@ -7,7 +7,7 @@ state={
 			infrastructure = 7
 		}
 		add_core_of = OHO
-
+		add_core_of = MIM
 	}
 
 	provinces={
