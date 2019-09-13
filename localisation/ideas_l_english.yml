@@ -2713,6 +2713,7 @@
  CAC_ncrrevanchism:0 "NCR Revanchism"
  CAC_recoveryfromwar:0 "Relieve Devastation From War"
  CAC_openrecruitmentcenters:0 "Funded Recruitment Centers"
+ USA_the_pentagon:0 "Federal Defence Infrastructure"
  ########################################Political Advisors###########################################
  robert_bobbit:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"

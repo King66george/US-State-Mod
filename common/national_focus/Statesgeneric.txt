@@ -3,330 +3,9 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
-			tag =ALA 
+			add = 10
+			tag = ALA
 		}
-		modifier = {
-			add = 20
-			tag =WDC 
-		}
-		modifier = {
-			add = 20
-			tag =AKA 
-		}
-		modifier = {
-			add = 20
-			tag =ARA 
-		}
-		modifier = {
-			add = 20
-			tag =COC
-		}
-		modifier = {
-			add = 20
-			tag =CTC
-		}
-		modifier = {
-			add = 20
-			tag =DED
-		}
-		modifier = {
-			add = 20
-			tag =GAG
-		}
-		modifier = {
-			add = 20
-			tag =HIH
-		}
-		modifier = {
-			add = 20
-			tag =IDI
-		}
-		modifier = {
-			add = 20
-			tag =ILI
-		}
-		modifier = {
-			add = 20
-			tag =INI
-		}
-		modifier = {
-			add = 20
-			tag =IAI
-		}
-		modifier = {
-			add = 20
-			tag =KYK
-		}
-		modifier = {
-			add = 20
-			tag =LAL
-		}
-		modifier = {
-			add = 20
-			tag =MEM
-		}
-		modifier = {
-			add = 20
-			tag =MDM
-		}
-		modifier = {
-			add = 20
-			tag =MAM
-		}
-		modifier = {
-			add = 20
-			tag =MIM
-		}
-		modifier = {
-			add = 20
-			tag =MNM
-		}
-		modifier = {
-			add = 20
-			tag =MSM
-		}
-		modifier = {
-			add = 20
-			tag =MOM
-		}
-		modifier = {
-			add = 20
-			tag =MTM
-		}
-		modifier = {
-			add = 20
-			tag =NEN
-		}
-		modifier = {
-			add = 20
-			tag =NVN
-		}
-		modifier = {
-			add = 20
-			tag =NHN
-		}
-		modifier = {
-			add = 20
-			tag =NMN
-		}
-		modifier = {
-			add = 20
-			tag =NYN
-		}
-		modifier = {
-			add = 20
-			tag =NDN
-		}
-		modifier = {
-			add = 20
-			tag =OHO
-		}
-		modifier = {
-			add = 20
-			tag =OKO
-		}
-		modifier = {
-			add = 20
-			tag =ORO
-		}
-		modifier = {
-			add = 20
-			tag =PAP
-		}
-		modifier = {
-			add = 20
-			tag =RIR
-		}
-		modifier = {
-			add = 20
-			tag =SCS
-		}
-		modifier = {
-			add = 20
-			tag =SDS
-		}
-		modifier = {
-			add = 20
-			tag =TNT
-		}
-		modifier = {
-			add = 20
-			tag =VTV
-		}
-		modifier = {
-			add = 20
-			tag =WAW
-		}
-		modifier = {
-			add = 20
-			tag =WVW
-		}
-		modifier = {
-			add = 20
-			tag =WIW
-		}
-		modifier = {
-			add = 20
-			tag =WYW
-		}
-		modifier = {
-			add = 20
-			tag =UTU
-		}
-		modifier = {
-			add = 20
-			tag =PRP
-		}
-		modifier = {
-			add = 20
-			tag =UVU
-		}
-		modifier = {
-			add = 20
-			tag =MWM
-		}
-		modifier = {
-			add = 20
-			tag =WKW
-		}
-		modifier = {
-			add = 20
-			tag =PIP
-		}
-		modifier = {
-			add = 20
-			tag =JAJ
-		}
-		modifier = {
-			add = 20
-			tag =PCP
-		}
-		modifier = {
-			add = 20
-			tag =LIL
-		}
-		modifier = {
-			add = 20
-			tag =GUG
-		}
-		modifier = {
-			add = 20
-			tag =ASA
-		}
-		modifier = {
-			add = 20
-			tag =ABA
-		}
-		modifier = {
-			add = 20
-			tag =BCB
-		}
-		modifier = {
-			add = 20
-			tag =MBM
-		}
-		modifier = {
-			add = 20
-			tag =NBN
-		}
-		modifier = {
-			add = 20
-			tag =NLN
-		}
-		modifier = {
-			add = 20
-			tag =NSN
-		}
-		modifier = {
-			add = 20
-			tag =NTN
-		}
-		modifier = {
-			add = 20
-			tag =NUN
-		}
-		modifier = {
-			add = 20
-			tag =ONO
-		}
-		modifier = {
-			add = 20
-			tag =PEP
-		}
-		modifier = {
-			add = 20
-			tag =QBC
-		}
-		modifier = {
-			add = 20
-			tag =SKS
-		}
-		modifier = {
-			add = 20
-			tag =YTY
-		}
-		modifier = {
-			add = 20
-			tag =LAB
-		}
-		modifier = {
-			add = 20
-			tag =GUE
-		}
-		modifier = {
-			add = 20
-			tag =COU
-		}
-		modifier = {
-			add = 20
-			tag =CIA
-		}
-		modifier = {
-			add = 20
-			tag =OAX
-		}
-		modifier = {
-			add = 20
-			tag =CHP
-		}
-		modifier = {
-			add = 20
-			tag =OME
-		}
-		modifier = {
-			add = 20
-			tag =YUC
-		}
-		modifier = {
-			add = 20
-			tag =BAJ
-		}
-		modifier = {
-			add = 20
-			tag =VEC
-		}
-		modifier = {
-			add = 20
-			tag =NAY
-		}
-		modifier = {
-			add = 20
-			tag =SON
-		}
-		modifier = {
-			add = 20
-			tag =TAU
-		}
-		modifier = {
-			add = 20
-			tag =SIN
-		}
-		
-		
-		
-		
-		
 	}
 	default = no
 	focus = {
@@ -351,7 +30,7 @@ focus_tree = {
 		id = Saviation_effort
 		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
-		x = 37
+		x = 35
 		y = 2
 			available_if_capitulated = yes
 			complete_tooltip = {
@@ -436,7 +115,7 @@ focus_tree = {
 		id = Snaval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
-		x = 37
+		x = 35
 		y = 0
 			available_if_capitulated = yes
 			available = {
@@ -571,7 +250,6 @@ focus_tree = {
 							factor = 0
 							date < 1939.1.1
 							OR = {
-									
 									num_of_controlled_states < 2
 								}
 						}
@@ -616,7 +294,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Sarmy_effort
 		}
-		x = 2
+		x = 3
 		y = 1
 			available_if_capitulated = yes
 			completion_reward = {
@@ -642,8 +320,8 @@ focus_tree = {
 		prerequisite = {
 			focus = Sequipment_effort
 		}
-		x = 2
-		y = 3
+		x = 3
+		y = 2
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -657,27 +335,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Sdoctrine_effort
-		icon = GFX_goal_generic_army_doctrines
-		cost = 5.00
-		prerequisite = {
-			focus = Sarmy_effort
-		}
-		x = 3
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					army_experience = 25
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 1.0
-							uses = 1
-							category = land_doctrine
-						}
-				}
-
-	}
-	focus = {
 		id = Sequipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10.00
@@ -685,7 +342,7 @@ focus_tree = {
 			focus = Sequipment_effort_2
 		}
 		x = 3
-		y = 4
+		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -699,13 +356,34 @@ focus_tree = {
 
 	}
 	focus = {
+		id = Sdoctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = Sequipment_effort_3
+		}
+		x = 3
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
 		id = Sprep_effort
 		icon = GFX_focus_chi_army_reform
 		cost = 5.00
 		prerequisite = {
 			focus = Sarmy_effort
 		}
-		x = 4
+		x = 5
 		y = 1
 			available_if_capitulated = yes
 			completion_reward = {
@@ -714,27 +392,6 @@ focus_tree = {
 							type = infantry_equipment_0
 							amount = 1000
 							producer = GER
-						}
-				}
-
-	}
-	focus = {
-		id = Sdoctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10.00
-		prerequisite = {
-			focus = Sdoctrine_effort
-		}
-		x = 4
-		y = 3
-			available_if_capitulated = yes
-			completion_reward = {
-					army_experience = 25
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 1.0
-							uses = 2
-							category = land_doctrine
 						}
 				}
 
@@ -766,6 +423,27 @@ focus_tree = {
 							uses = 1
 							category = infantry_weapons
 							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = Sdoctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = Sarm_ourselves
+		}
+		x = 5
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
 						}
 				}
 
@@ -816,7 +494,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Smotorization_effort
 		}
-		x = 6
+		x = 7
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -839,7 +517,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Sarmor_effort
 		}
-		x = 5
+		x = 6
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -944,7 +622,7 @@ focus_tree = {
 			focus = Sbegin_digging
 		}
 		mutually_exclusive = {
-			focus = alu_add
+			focus = Salu_add
 		}
 		x = 9
 		y = 3
@@ -1765,8 +1443,8 @@ focus_tree = {
 			focus = Spolitical_effort
 		}
 		mutually_exclusive = {
-			focus = liberty_ethos
-			focus = monarchy_ethos
+			focus = Sliberty_ethos
+			focus = Smonarchy_ethos
 		}
 		x = 22
 		y = 1
@@ -2164,7 +1842,7 @@ focus_tree = {
 			focus = Sforeign_expeditions
 		}
 		x = 24
-		y = 5
+		y = 6
 			available = {
 					OR = {
 							threat > 0.10
@@ -2205,8 +1883,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-							
-					add_ideas = neutrality_idea	
+					add_ideas = neutrality_idea
 					add_political_power = 150
 				}
 
@@ -2219,98 +1896,10 @@ focus_tree = {
 			focus = Sneutrality_focus
 		}
 		x = 26
-		y = 3
+		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = deterrence
-				}
-
-	}
-	focus = {
-		id = Smonarchy_ethos
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		cost = 5.00
-		prerequisite = {
-			focus = Spolitical_effort
-		}
-		mutually_exclusive = {
-			focus = Scollectivist_ethos
-			focus = Sliberty_ethos
-		}
-		x = 29
-		y = 1
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					set_politics = {
-							ruling_party = monarchy
-							elections_allowed = no
-						}
-					set_political_party = {
-							ideology = neutrality
-							popularity = 6
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 10
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 10
-						}
-					set_political_party = {
-							ideology = monarchy
-							popularity = 74
-						}
-				}
-
-	}
-	focus = {
-		id = Sempower_king
-		icon = GFX_focus_rom_royal_dictatorship
-		cost = 10.00
-		prerequisite = {
-			focus = Smonarchy_ethos
-		}
-		x = 29
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					add_popularity = {
-							ideology = neutrality
-							popularity = 0.15
-						}
-					add_stability = 0.05
-					add_political_power = 150
-				}
-
-	}
-	focus = {
-		id = Senforce_king
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = Sempower_king
-		}
-		x = 29
-		y = 3
-			available = {
-					OR = {
-							threat > 0.10
-						}
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_popularity = {
-							ideology = neutrality
-							popularity = 0.05
-						}
-					set_politics = {
-							ruling_party = neutrality
-							elections_allowed = no
-						}
 				}
 
 	}
@@ -2322,7 +1911,7 @@ focus_tree = {
 			focus = Sdeterrence
 		}
 		x = 26
-		y = 4
+		y = 6
 			available = {
 					OR = {
 							threat > 0.15
@@ -2345,8 +1934,8 @@ focus_tree = {
 			focus = Sdem_militarism
 			focus = Sneu_militarism
 		}
-		x = 26
-		y = 6
+		x = 25
+		y = 7
 			available = {
 					OR = {
 							threat > 0.25
@@ -2373,23 +1962,102 @@ focus_tree = {
 
 	}
 	focus = {
+		id = Smonarchy_ethos
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5.00
+		prerequisite = {
+			focus = Spolitical_effort
+		}
+		mutually_exclusive = {
+			focus = Sliberty_ethos
+			focus = Scollectivist_ethos
+		}
+		x = 28
+		y = 1
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					set_politics = {
+							ruling_party = monarchy
+							elections_allowed = no
+						}
+					set_political_party = {
+							ideology = neutrality
+							popularity = 26
+						}
+					set_political_party = {
+							ideology = communism
+							popularity = 5
+						}
+					set_political_party = {
+							ideology = fascism
+							popularity = 5
+						}
+					set_political_party = {
+							ideology = monarchy
+							popularity = 64
+						}
+				}
+
+	}
+	focus = {
+		id = Sempower_king
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = Smonarchy_ethos
+		}
+		x = 28
+		y = 2
+			available_if_capitulated = yes
+			completion_reward = {
+					add_popularity = {
+							ideology = monarchy
+							popularity = 0.15
+						}
+					add_stability = 0.05
+					add_political_power = 150
+				}
+
+	}
+	focus = {
+		id = Senforce_king
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = Sempower_king
+		}
+		x = 28
+		y = 3
+			available = {
+					OR = {
+							threat > 0.10
+						}
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_popularity = {
+							ideology = monarchy
+							popularity = 0.15
+						}
+					add_political_power = 150
+				}
+
+	}
+	focus = {
 		id = Sking_and_country
 		icon = GFX_focus_eng_god_save_the_king
 		cost = 10.00
 		prerequisite = {
 			focus = Senforce_king
 		}
-		x = 29
+		x = 28
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
 					add_war_support = 0.10
-					if = {
-							limit = {
-									has_idea = neutrality_idea
-								}
-							remove_ideas = neutrality_idea
-						}
 					add_ideas = militarism_focus
 					army_experience = 25
 					set_rule = {
@@ -2403,14 +2071,14 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		cost = 2.00
 		prerequisite = {
-			focus = Senforce_king
+			focus = Sking_and_country
 		}
-		x = 31
-		y = 4
+		x = 28
+		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = neutrality
+							ideology = monarchy
 							popularity = 0.10
 							add_war_support = 0.05
 							add_stability = 0.05
@@ -2425,11 +2093,11 @@ focus_tree = {
 		prerequisite = {
 			focus = Sgod_given_ruler
 		}
-		x = 31
-		y = 5
+		x = 28
+		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
-					add_political_power = 50
+					add_political_power = 150
 					add_ideas = generic_neu_wargoal
 				}
 
@@ -2439,16 +2107,43 @@ focus_tree = {
 		icon = GFX_focus_eng_the_kings_party
 		cost = 10.00
 		prerequisite = {
-			focus = Sking_and_country
-		}
-		prerequisite = {
 			focus = Sgod_father
 		}
-		x = 29
-		y = 6
+		x = 28
+		y = 7
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = CZE_war_college_idea
+				}
+
+	}
+	focus = {
+		id = Monarchy_Goal
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		prerequisite = {
+			focus = Sking_and_country
+		}
+		x = 30
+		y = 5
+			available_if_capitulated = no
+			completion_reward = {
+					random_neighbor_country = {
+							limit = {
+									not = {
+											is_guaranteed_by = ROOT
+											is_in_faction_with = ROOT
+											has_non_aggression_pact_with = ROOT
+											is_subject_of = ROOT
+										}
+								}
+							ROOT = {
+									create_wargoal = {
+											target = PREV
+											type = annex_everything
+										}
+								}
+						}
 				}
 
 	}
@@ -2462,7 +2157,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Slarge_navy
 		}
-		x = 35
+		x = 33
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2499,7 +2194,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Sflexible_navy
 		}
-		x = 34
+		x = 32
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2532,7 +2227,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Ssubmarine_effort
 		}
-		x = 34
+		x = 32
 		y = 3
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2565,7 +2260,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Saviation_effort
 		}
-		x = 36
+		x = 34
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2591,7 +2286,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Saviation_effort
 		}
-		x = 38
+		x = 36
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2615,7 +2310,7 @@ focus_tree = {
 			focus = Sbomber_focus
 			focus = Sfighter_focus
 		}
-		x = 36
+		x = 34
 		y = 4
 			available_if_capitulated = yes
 			complete_tooltip = {
@@ -2709,7 +2404,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Saviation_effort_2
 		}
-		x = 36
+		x = 34
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2730,7 +2425,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Sbomber_focus
 		}
-		x = 38
+		x = 36
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2754,7 +2449,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Sflexible_navy
 		}
-		x = 39
+		x = 37
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2787,7 +2482,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Slarge_navy
 		}
-		x = 40
+		x = 38
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2821,7 +2516,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Scruiser_effort
 		}
-		x = 40
+		x = 38
 		y = 3
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2885,7 +2580,7 @@ focus_tree = {
 			focus = Sideological_fanaticism
 			focus = Saristocrat_generals
 		}
-		x = 26
+		x = 25
 		y = 8
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2907,52 +2602,23 @@ focus_tree = {
 		y = 8
 			available_if_capitulated = no
 			completion_reward = {
-				random_neighbor_country = {
-					limit = {
-						not = {
-							is_guaranteed_by = ROOT
-							is_in_faction_with = ROOT
-							has_non_aggression_pact_with = ROOT
-							is_subject_of = ROOT
+					random_neighbor_country = {
+							limit = {
+									not = {
+											is_guaranteed_by = ROOT
+											is_in_faction_with = ROOT
+											has_non_aggression_pact_with = ROOT
+											is_subject_of = ROOT
+										}
+								}
+							ROOT = {
+									create_wargoal = {
+											target = PREV
+											type = annex_everything
+										}
+								}
 						}
-					}
-					ROOT = { 
-						create_wargoal   = { 
-							target = PREV 
-							type = annex_everything
-						}
-					}
 				}
-			}
 
-	}
-	focus = {
-		id = Monarchy_Goal
-		icon = GFX_focus_eng_special_air_service
-		cost = 10.00
-		prerequisite = {
-			focus = Sking_and_country
-		}
-		x = 28
-		y = 5
-			available_if_capitulated = no
-			completion_reward = {
-				random_neighbor_country = {
-					limit = {
-						not = {
-							is_guaranteed_by = ROOT
-							is_in_faction_with = ROOT
-							has_non_aggression_pact_with = ROOT
-							is_subject_of = ROOT
-						}
-					}
-					ROOT = { 
-						create_wargoal  = { 
-							target = PREV 
-							type = annex_everything
-						}
-					}
-				}
-			}
 	}
 }

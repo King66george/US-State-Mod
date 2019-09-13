@@ -52,7 +52,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.2
+				conscription_factor = 0.3
 			}
 
 		}
@@ -100,7 +100,16 @@ ideas = {
         communism_drift = 0.02
       }
     }
+    ALL_idea_monarchy = {
+      allowed = {
+        always = yes
+      }
+      removal_cost = -1
 
+      modifier = {
+        monarchy_drift = 0.02
+      }
+    }
 
 
 	}

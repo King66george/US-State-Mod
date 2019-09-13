@@ -753,9 +753,6 @@ focus_tree = {
 			focus = FLF_acallforsomethinggreater
 			focus = FLF_aunitedright
 			focus = FLF_asocialistnation
-			focus = FLF_acallforsomethinggreater
-			focus = FLF_aunitedright
-			focus = FLF_asocialistnation
 			focus = flmonarchy_ethos
 		}
 		x = 16
@@ -814,12 +811,9 @@ focus_tree = {
 			focus = FLF_anewgovernment
 		}
 		mutually_exclusive = {
+			focus = FLF_patrioticrestoration
 			focus = FLF_aunitedright
 			focus = FLF_acallforsomethinggreater
-			focus = FLF_patrioticrestoration
-			focus = FLF_acallforsomethinggreater
-			focus = FLF_aunitedright
-			focus = FLF_patrioticrestoration
 			focus = flmonarchy_ethos
 		}
 		x = 18
@@ -944,10 +938,10 @@ focus_tree = {
 			focus = FLF_anewgovernment
 		}
 		mutually_exclusive = {
+			focus = FLF_patrioticrestoration
+			focus = FLF_asocialistnation
 			focus = FLF_acallforsomethinggreater
 			focus = FLF_aunitedright
-			focus = FLF_asocialistnation
-			focus = FLF_patrioticrestoration
 		}
 		x = 22
 		y = 1
@@ -956,29 +950,25 @@ focus_tree = {
 					factor = 8
 				}
 			completion_reward = {
-					add_timed_idea = {
-							idea = neutrality_influence
-							days = 720
-						}
 					set_politics = {
-							ruling_party = neutrality
-							elections_allowed = yes
-						}
-					set_political_party = {
-							ideology = democratic
-							popularity = 6
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 10
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 10
+							ruling_party = monarchy
+							elections_allowed = no
 						}
 					set_political_party = {
 							ideology = neutrality
-							popularity = 74
+							popularity = 26
+						}
+					set_political_party = {
+							ideology = communism
+							popularity = 5
+						}
+					set_political_party = {
+							ideology = fascism
+							popularity = 5
+						}
+					set_political_party = {
+							ideology = monarchy
+							popularity = 64
 						}
 				}
 
@@ -999,7 +989,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = neutrality
+							ideology = monarchy
 							popularity = 0.15
 						}
 					add_stability = 0.05
@@ -1054,7 +1044,7 @@ focus_tree = {
 				}
 			available_if_capitulated = yes
 			completion_reward = {
-					add_stability = -0.05
+					add_stability = 0.05
 				}
 
 	}
@@ -1071,7 +1061,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = neutrality
+							ideology = monarchy
 							popularity = 0.10
 							add_war_support = 0.05
 							add_stability = 0.05
@@ -1121,12 +1111,10 @@ focus_tree = {
 			focus = FLF_anewgovernment
 		}
 		mutually_exclusive = {
-			focus = FLF_aunitedright
-			focus = FLF_asocialistnation
 			focus = FLF_patrioticrestoration
 			focus = FLF_asocialistnation
-			focus = FLF_patrioticrestoration
 			focus = flmonarchy_ethos
+			focus = FLF_aunitedright
 		}
 		x = 26
 		y = 1
@@ -1214,12 +1202,10 @@ focus_tree = {
 			focus = FLF_anewgovernment
 		}
 		mutually_exclusive = {
-			focus = FLF_acallforsomethinggreater
-			focus = FLF_asocialistnation
 			focus = FLF_patrioticrestoration
 			focus = FLF_asocialistnation
-			focus = FLF_patrioticrestoration
 			focus = flmonarchy_ethos
+			focus = FLF_acallforsomethinggreater
 		}
 		x = 28
 		y = 1

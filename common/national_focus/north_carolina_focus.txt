@@ -38,7 +38,7 @@ focus_tree = {
 		id = NCN_FOCUS_2
 		icon = GFX_focus_hol_abandon_the_gold_standard
 		cost = 10.00
-		x = 19
+		x = 15
 		y = 0
 			completion_reward = {
 					add_political_power = 200
@@ -46,21 +46,10 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NCN_FOCUS_4
-		icon = GFX_focus_generic_military_mission
-		cost = 10.00
-		x = 32
-		y = 0
-			completion_reward = {
-					add_manpower = 25000
-				}
-
-	}
-	focus = {
 		id = NCN_FOCUS_5
 		icon = GFX_goal_generic_build_airforce
 		cost = 10.00
-		x = 40
+		x = 43
 		y = 1
 			completion_reward = {
 					random_owned_controlled_state = {
@@ -77,7 +66,7 @@ focus_tree = {
 		id = NCN_FOCUS_3
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
-		x = 40
+		x = 43
 		y = 0
 			completion_reward = {
 					874 = {
@@ -95,13 +84,44 @@ focus_tree = {
 		text = "Bikes! -Tom Segura"
 		icon = GFX_goal_generic_build_tank
 		cost = 2.00
-		x = 9
-		y = 3
+		x = 7
+		y = 2
 			available_if_capitulated = yes
 			completion_reward = {
 					set_technology = {
 							bicycle_infantry = 1
 						}
+				}
+
+	}
+	focus = {
+		id = NCNpolmil1
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		x = 31
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					if = {
+							num_of_factories > 15
+						}
+				}
+			bypass = {
+
+}
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					add_ideas = USA_world_police
+					add_ideas = USA_war_department
 				}
 
 	}
@@ -349,7 +369,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCN_FOCUS_17
 		}
-		x = 15
+		x = 12
 		y = 1
 			completion_reward = {
 					add_ideas = { democratic_influence }
@@ -367,7 +387,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ncnneutrality_focus
 		}
-		x = 14
+		x = 11
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -395,7 +415,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncninterventionism_focus
 		}
-		x = 14
+		x = 11
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -411,7 +431,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncvolunteer_corps
 		}
-		x = 13
+		x = 10
 		y = 5
 			completion_reward = {
 					create_faction = vav_ncn_pact
@@ -420,22 +440,6 @@ focus_tree = {
 									days = 1
 									id = SOVcustomevent.69
 								}
-						}
-				}
-
-	}
-	focus = {
-		id = NCN_FOCUS_15
-		icon = GFX_focus_generic_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = NCN_FOCUS_14
-		}
-		x = 12
-		y = 6
-			completion_reward = {
-					GAG = {
-							country_event = disunitedstates.1
 						}
 				}
 
@@ -451,7 +455,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ncninterventionism_focus
 		}
-		x = 16
+		x = 13
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -482,7 +486,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncnneutrality_focus
 		}
-		x = 16
+		x = 13
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -499,7 +503,7 @@ focus_tree = {
 			focus = ncvolunteer_corps
 			focus = ncdeterrence
 		}
-		x = 15
+		x = 12
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -514,7 +518,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncdeterrence
 		}
-		x = 17
+		x = 14
 		y = 5
 			completion_reward = {
 					add_stability = .2
@@ -539,7 +543,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCN_FOCUS_11
 		}
-		x = 23
+		x = 18
 		y = 1
 			completion_reward = {
 					add_stability = -.2
@@ -557,7 +561,7 @@ focus_tree = {
 			focus = NCN_FOCUS_22
 			focus = ncmonarchy_ethos
 		}
-		x = 21
+		x = 16
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -595,6 +599,99 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ncmilitarism
+		text = "Militarism"
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_18
+		}
+		x = 16
+		y = 3
+			available = {
+
+}
+			available_if_capitulated = yes
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = neutrality_idea
+								}
+							remove_ideas = neutrality_idea
+						}
+					add_ideas = militarism_focus
+					army_experience = 25
+					set_rule = {
+							can_send_volunteers = yes
+						}
+				}
+
+	}
+	focus = {
+		id = ncmil_culture
+		text = "Cadets"
+		icon = GFX_focus_generic_military_mission
+		cost = 7.00
+		prerequisite = {
+			focus = ncmilitarism
+		}
+		x = 16
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_war_support = 0.15
+				}
+
+	}
+	focus = {
+		id = ncprep_struggle
+		text = "Struggle No More"
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = ncmil_culture
+		}
+		x = 16
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = FRA_army_of_aggression_focus
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_42
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = ncprep_struggle
+		}
+		x = 16
+		y = 6
+			completion_reward = {
+					TNT = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_19
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_42
+		}
+		x = 16
+		y = 7
+			completion_reward = {
+					SCS = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
 		id = NCN_FOCUS_22
 		icon = GFX_goal_support_communism
 		cost = 5.00
@@ -604,9 +701,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCN_FOCUS_18
 			focus = ncmonarchy_ethos
-			focus = ncmonarchy_ethos
 		}
-		x = 25
+		x = 20
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -644,115 +740,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ncmilitarism
-		text = "Militarism"
-		icon = GFX_goal_generic_political_pressure
-		cost = 10.00
-		prerequisite = {
-			focus = NCN_FOCUS_18
-		}
-		x = 21
-		y = 3
-			available = {
-
-}
-			available_if_capitulated = yes
-			completion_reward = {
-					if = {
-							limit = {
-									has_idea = neutrality_idea
-								}
-							remove_ideas = neutrality_idea
-						}
-					add_ideas = militarism_focus
-					army_experience = 25
-					set_rule = {
-							can_send_volunteers = yes
-						}
-				}
-
-	}
-	focus = {
-		id = ncmil_culture
-		text = "Cadets"
-		icon = GFX_focus_generic_military_mission
-		cost = 7.00
-		prerequisite = {
-			focus = ncmilitarism
-		}
-		x = 21
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					add_war_support = 0.15
-				}
-
-	}
-	focus = {
-		id = ncprep_struggle
-		text = "Struggle No More"
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 10.00
-		prerequisite = {
-			focus = ncmil_culture
-		}
-		x = 21
-		y = 5
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = FRA_army_of_aggression_focus
-				}
-
-	}
-	focus = {
-		id = NCN_FOCUS_39
-		icon = GFX_goal_generic_secret_weapon
-		cost = 10.00
-		prerequisite = {
-			focus = ncprep_struggle
-		}
-		x = 20
-		y = 6
-			completion_reward = {
-					ALA = {
-							country_event = disunitedstates.1
-						}
-				}
-
-	}
-	focus = {
-		id = NCN_FOCUS_42
-		icon = GFX_goal_generic_military_sphere
-		cost = 10.00
-		prerequisite = {
-			focus = ncprep_struggle
-		}
-		x = 22
-		y = 6
-			completion_reward = {
-					TNT = {
-							country_event = disunitedstates.1
-						}
-				}
-
-	}
-	focus = {
-		id = NCN_FOCUS_19
-		icon = GFX_goal_generic_military_sphere
-		cost = 10.00
-		prerequisite = {
-			focus = NCN_FOCUS_42
-		}
-		x = 22
-		y = 7
-			completion_reward = {
-					SCS = {
-							country_event = disunitedstates.1
-						}
-				}
-
-	}
-	focus = {
 		id = ncpolitical_correctness
 		text = "PC Culture"
 		icon = GFX_goal_generic_dangerous_deal
@@ -760,7 +747,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_22
 		}
-		x = 25
+		x = 20
 		y = 3
 			available = {
 
@@ -787,7 +774,7 @@ focus_tree = {
 			focus = ncpolitical_correctness
 			focus = ncmilitarism
 		}
-		x = 23
+		x = 18
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -804,7 +791,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncpolitical_correctness
 		}
-		x = 25
+		x = 20
 		y = 4
 			available = {
 
@@ -842,7 +829,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncpolitical_commissars
 		}
-		x = 25
+		x = 20
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
@@ -857,8 +844,8 @@ focus_tree = {
 		prerequisite = {
 			focus = nccom_militarism
 		}
-		x = 25
-		y = 6
+		x = 20
+		y = 7
 			completion_reward = {
 					TNT = {
 							country_event = disunitedstates.1
@@ -880,38 +867,33 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCN_FOCUS_18
 			focus = NCN_FOCUS_22
-			focus = NCN_FOCUS_22
 		}
-		x = 28
+		x = 23
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 8
 				}
 			completion_reward = {
-					add_timed_idea = {
-							idea = neutrality_influence
-							days = 720
-						}
 					set_politics = {
-							ruling_party = neutrality
-							elections_allowed = yes
-						}
-					set_political_party = {
-							ideology = democratic
-							popularity = 6
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 10
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 10
+							ruling_party = monarchy
+							elections_allowed = no
 						}
 					set_political_party = {
 							ideology = neutrality
-							popularity = 74
+							popularity = 26
+						}
+					set_political_party = {
+							ideology = communism
+							popularity = 5
+						}
+					set_political_party = {
+							ideology = fascism
+							popularity = 5
+						}
+					set_political_party = {
+							ideology = monarchy
+							popularity = 64
 						}
 				}
 
@@ -924,12 +906,12 @@ focus_tree = {
 		prerequisite = {
 			focus = ncmonarchy_ethos
 		}
-		x = 28
+		x = 23
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = neutrality
+							ideology = monarchy
 							popularity = 0.15
 						}
 					add_stability = 0.05
@@ -945,7 +927,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncempower_king
 		}
-		x = 28
+		x = 22
 		y = 4
 			available = {
 					OR = {
@@ -955,37 +937,34 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = neutrality
+							ideology = monarchy
 							popularity = 0.05
 						}
 					set_politics = {
-							ruling_party = neutrality
+							ruling_party = monarchy
 							elections_allowed = no
 						}
 				}
 
 	}
 	focus = {
-		id = ncneu_militarism
-		text = "King's Forces"
-		icon = GFX_goal_generic_military_sphere
-		cost = 10.00
+		id = ncgod_given_ruler
+		text = "Preserve The Bloodline"
+		icon = GFX_focus_generic_self_management
+		cost = 2.00
 		prerequisite = {
-			focus = ncenforce_king
+			focus = ncempower_king
 		}
-		x = 27
-		y = 5
-			available = {
-					OR = {
-							threat > 0.15
-						}
-				}
-			continue_if_invalid = yes
+		x = 24
+		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
-					add_stability = 0.10
-					add_ideas = militarism_focus
-					army_experience = 25
+					add_popularity = {
+							ideology = monarchy
+							popularity = 0.10
+							add_war_support = 0.05
+							add_stability = 0.05
+						}
 				}
 
 	}
@@ -995,9 +974,9 @@ focus_tree = {
 		icon = GFX_focus_eng_god_save_the_king
 		cost = 10.00
 		prerequisite = {
-			focus = ncenforce_king
+			focus = ncgod_given_ruler
 		}
-		x = 29
+		x = 24
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1017,40 +996,277 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ncgod_given_ruler
-		text = "Preserve The Bloodline"
-		icon = GFX_focus_generic_self_management
-		cost = 2.00
-		prerequisite = {
-			focus = ncenforce_king
-		}
-		x = 31
-		y = 5
-			available_if_capitulated = yes
-			completion_reward = {
-					add_popularity = {
-							ideology = neutrality
-							popularity = 0.10
-							add_war_support = 0.05
-							add_stability = 0.05
-						}
-				}
-
-	}
-	focus = {
 		id = ncgod_father
 		text = "God's Chosen Family"
 		icon = GFX_goal_generic_major_war
 		cost = 5.00
 		prerequisite = {
-			focus = ncgod_given_ruler
+			focus = ncking_and_country
 		}
-		x = 30
+		x = 24
 		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
 					add_political_power = 50
 					add_ideas = generic_neu_wargoal
+				}
+
+	}
+	focus = {
+		id = NCNpolmil2
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10.00
+		prerequisite = {
+			focus = NCNpolmil1
+		}
+		x = 27
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_ideas = USA_the_pentagon
+				}
+
+	}
+	focus = {
+		id = NCNdefensive1
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = NCNpolmil2
+		}
+		x = 26
+		y = 2
+			available = {
+					if = {
+							num_of_factories > 45
+						}
+				}
+			completion_reward = {
+					custom_effect_tooltip = USA_reinforce_monroe_doctrine_tt
+					unlock_decision_category_tooltip = USA_intervention_mandate
+					hidden_effect = {
+							CUB = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							HAI = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							DOM = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							GUA = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							ELS = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							HON = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							NIC = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							COS = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							CAN = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							MEX = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							COL = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							VEN = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							ECU = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							PRU = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							BRA = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							BOL = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							PAR = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							URG = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							ARG = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							CHL = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+							PCP = {
+									add_opinion_modifier = {
+											target = USA
+											modifier = monroe_doctrine_trade
+										}
+								}
+						}
+					give_guarantee = CUB
+					give_guarantee = HAI
+					give_guarantee = DOM
+					give_guarantee = GUA
+					give_guarantee = ELS
+					give_guarantee = HON
+					give_guarantee = NIC
+					give_guarantee = COS
+					give_guarantee = COL
+					give_guarantee = VEN
+					give_guarantee = ECU
+					give_guarantee = PRU
+					give_guarantee = BRA
+					give_guarantee = BOL
+					give_guarantee = PAR
+					give_guarantee = URG
+					give_guarantee = ARG
+					give_guarantee = CHL
+					give_guarantee = PRP
+					give_guarantee = PCP
+				}
+
+	}
+	focus = {
+		id = NCNdefensive2
+		icon = GFX_focus_generic_air_defense
+		cost = 10.00
+		prerequisite = {
+			focus = NCNpolmil2
+		}
+		x = 28
+		y = 2
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = USA_war_department
+							add_idea = USA_department_of_defense
+						}
+				}
+
+	}
+	focus = {
+		id = NCNdefensive3
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = NCNdefensive2
+		}
+		prerequisite = {
+			focus = NCNdefensive1
+		}
+		x = 27
+		y = 3
+			completion_reward = {
+					air_experience = 25
+					add_tech_bonus = {
+							name = USA_air_war_plans_division
+							bonus = 1.0
+							uses = 2
+							category = air_doctrine
+						}
+					add_ideas = air_war_plans_division_focus
+				}
+
+	}
+	focus = {
+		id = NCNdefensive4
+		icon = GFX_focus_generic_paratrooper
+		cost = 10.00
+		prerequisite = {
+			focus = NCNdefensive3
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 2000
+							producer = ROOT
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_4
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = NCNpolmil1
+		}
+		x = 31
+		y = 1
+			completion_reward = {
+					add_manpower = 25000
 				}
 
 	}
@@ -1061,8 +1277,8 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_4
 		}
-		x = 31
-		y = 1
+		x = 30
+		y = 2
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -1084,8 +1300,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCN_FOCUS_28
 		}
-		x = 31
-		y = 2
+		x = 30
+		y = 3
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -1094,6 +1310,11 @@ focus_tree = {
 							category = para_tech
 							category = recon_tech
 						}
+					set_technology = {
+							technology = paratroopers
+							technology = paratroopers2
+						}
+					add_ideas = USA_airborne_divisions
 				}
 
 	}
@@ -1104,8 +1325,8 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_25
 		}
-		x = 31
-		y = 3
+		x = 30
+		y = 4
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -1125,8 +1346,8 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_4
 		}
-		x = 33
-		y = 1
+		x = 32
+		y = 2
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -1147,8 +1368,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCN_FOCUS_25
 		}
-		x = 33
-		y = 2
+		x = 32
+		y = 3
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -1167,8 +1388,8 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_28
 		}
-		x = 33
-		y = 3
+		x = 32
+		y = 4
 			completion_reward = {
 					add_tech_bonus = {
 							name = assembly_bonus
@@ -1180,13 +1401,184 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NCNpolmil3
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = NCNpolmil1
+		}
+		x = 35
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_ideas = USA_army_of_the_united_states
+					add_ideas = USA_airborne_divisions
+					add_ideas = USA_womens_armed_service_integration_act
+				}
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 2000
+							producer = ROOT
+						}
+				}
+
+	}
+	focus = {
+		id = NCNagressive1
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = NCNpolmil3
+		}
+		x = 34
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					if = {
+							num_of_factories > 20
+						}
+				}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_gray
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+				}
+
+	}
+	focus = {
+		id = NCNagressive3
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = NCNagressive1
+		}
+		x = 34
+		y = 3
+			completion_reward = {
+					create_wargoal = {
+							target = PCP
+							type = puppet_wargoal_focus
+						}
+				}
+
+	}
+	focus = {
+		id = NCNagressive2
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = NCNpolmil3
+		}
+		x = 36
+		y = 2
+			completion_reward = {
+					add_ideas = USA_intervention_in_europe
+					GER = {
+							add_opinion_modifier = {
+									target = USA
+									modifier = war_plan_black
+								}
+						}
+					SOV = {
+							add_opinion_modifier = {
+									target = USA
+									modifier = war_plan_white
+								}
+						}
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_white
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_black
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_silver
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_gold
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+					unlock_decision_tooltip = {
+							decision = USA_execute_war_plan_red
+							show_effect_tooltip = yes
+							show_modifiers = yes
+						}
+				}
+
+	}
+	focus = {
+		id = NCNagressive4
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		cost = 10.00
+		prerequisite = {
+			focus = NCNagressive2
+		}
+		x = 36
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = NCNagressive5
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10.00
+		prerequisite = {
+			focus = NCNagressive3
+		}
+		prerequisite = {
+			focus = NCNagressive4
+		}
+		x = 35
+		y = 4
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
 		id = NCN_FOCUS_34
 		icon = GFX_goal_generic_navy_anti_submarine
 		cost = 10.00
 		prerequisite = {
 			focus = NCN_FOCUS_3
 		}
-		x = 37
+		x = 40
 		y = 1
 			completion_reward = {
 					add_tech_bonus = {
@@ -1205,7 +1597,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_34
 		}
-		x = 35
+		x = 38
 		y = 2
 			completion_reward = {
 					add_tech_bonus = {
@@ -1224,7 +1616,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_5
 		}
-		x = 38
+		x = 41
 		y = 2
 			completion_reward = {
 					add_tech_bonus = {
@@ -1243,7 +1635,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_5
 		}
-		x = 42
+		x = 45
 		y = 2
 			completion_reward = {
 					add_tech_bonus = {
@@ -1264,7 +1656,7 @@ focus_tree = {
 			focus = NCN_FOCUS_30
 			focus = NCN_FOCUS_31
 		}
-		x = 40
+		x = 43
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -1283,7 +1675,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_32
 		}
-		x = 40
+		x = 43
 		y = 4
 			completion_reward = {
 					add_tech_bonus = {
@@ -1303,7 +1695,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_3
 		}
-		x = 43
+		x = 46
 		y = 1
 			completion_reward = {
 					add_tech_bonus = {
@@ -1322,13 +1714,69 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NCN_FOCUS_12
-		icon = GFX_focus_generic_diplomatic_treaty
+		id = NCN_FOCUS_15
+		icon = GFX_focus_generic_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = NCN_FOCUS_14
 		}
-		x = 13
+		x = 10
+		y = 6
+			completion_reward = {
+					GAG = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_39
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = ncindoctrination_focus
+		}
+		x = 18
+		y = 5
+			completion_reward = {
+					ALA = {
+							country_event = disunitedstates.1
+						}
+				}
+
+	}
+	focus = {
+		id = ncneu_militarism
+		text = "King's Forces"
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = ncenforce_king
+		}
+		x = 22
+		y = 5
+			available = {
+					OR = {
+							threat > 0.15
+						}
+				}
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+					add_stability = 0.10
+					add_ideas = militarism_focus
+					army_experience = 25
+				}
+
+	}
+	focus = {
+		id = NCN_FOCUS_12
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = NCN_FOCUS_38
+		}
+		x = 10
 		y = 8
 			completion_reward = {
 					add_stability = .20
@@ -1342,7 +1790,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncdem_militarism
 		}
-		x = 15
+		x = 12
 		y = 6
 			completion_reward = {
 					SCS = {
@@ -1361,7 +1809,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_15
 		}
-		x = 12
+		x = 10
 		y = 7
 			completion_reward = {
 					ALA = {
@@ -1379,7 +1827,7 @@ focus_tree = {
 			focus = NCN_FOCUS_19
 			focus = NCN_FOCUS_21
 		}
-		x = 24
+		x = 19
 		y = 8
 			completion_reward = {
 					create_wargoal = {
@@ -1399,7 +1847,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncgod_father
 		}
-		x = 27
+		x = 23
 		y = 7
 			completion_reward = {
 					GAG = {
@@ -1437,7 +1885,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_40
 		}
-		x = 45
+		x = 48
 		y = 2
 			completion_reward = {
 					add_tech_bonus = {
@@ -1463,7 +1911,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncforeign_expeditions
 		}
-		x = 15
+		x = 12
 		y = 5
 			available = {
 					OR = {
@@ -1492,7 +1940,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_13
 		}
-		x = 15
+		x = 12
 		y = 9
 			available = {
 					OR = {
@@ -1527,7 +1975,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ncneu_militarism
 		}
-		x = 27
+		x = 22
 		y = 6
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1543,7 +1991,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCN_FOCUS_20
 		}
-		x = 24
+		x = 19
 		y = 9
 			available_if_capitulated = yes
 			completion_reward = {
@@ -1585,7 +2033,7 @@ focus_tree = {
 			focus = ncwhy_we_fight
 			focus = ncideological_fanaticism
 		}
-		x = 20
+		x = 15
 		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
