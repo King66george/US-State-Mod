@@ -392,4 +392,129 @@ ideas = {
 			traits = { war_industrialist }
 		}
 	}
+	high_command = {
+
+		USAgeneric_def2 = {
+
+			
+			allowed = {
+			
+			}
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		USAgeneric_inf2 = {
+
+			
+			
+			allowed = {
+			
+			}
+			
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		USAgeneric_log2 = {
+
+			
+			allowed = {
+			
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+				generic_army_art2 = {
+			
+			allowed = {
+				}
+			
+			traits = { army_artillery_1 }		
+		}
+		
+		generic_army_log2 = {
+
+			allowed = {
+				}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		generic_navy_fleet_log2 = {
+
+			allowed = {
+				}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer2 = {
+
+			allowed = {
+				}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+
+		generic_air_close_air_sup = {
+			
+			allowed = {
+				}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		generic_air_chief_all_weather = {
+			
+			allowed = {
+				}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	
+		generic_army_art = {
+			
+			allowed = {
+				}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		generic_army_log = {
+
+			allowed = {
+				}
+			
+			traits = { army_logistics_2 }			
+		}
+
+		generic_navy_fleet_log = {
+
+			allowed = {
+				}
+			
+			traits = { navy_fleet_logistics_1 }			
+		}
+
+		generic_air_air_combat_trainer = {
+
+			allowed = {
+				}
+			
+			traits = { air_air_combat_training_2 }			
+		}
+	}
+
 }

@@ -248,7 +248,7 @@ ideologies = {
 			"FACTION_NAME_MONARCHY_5"
 		}
 
-		color = { 178 0 255 }
+		color = { 210 0 255 }
 
 
 		war_impact_on_world_tension = 0.25		#no major danger

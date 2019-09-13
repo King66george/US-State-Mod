@@ -3,10 +3,325 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
-			tag = ALA
+			add = 20
+			tag =ALA 
 		}
-	}
+		modifier = {
+			add = 20
+			tag =WDC 
+		}
+		modifier = {
+			add = 20
+			tag =AKA 
+		}
+		modifier = {
+			add = 20
+			tag =ARA 
+		}
+		modifier = {
+			add = 20
+			tag =COC
+		}
+		modifier = {
+			add = 20
+			tag =CTC
+		}
+		modifier = {
+			add = 20
+			tag =DED
+		}
+		modifier = {
+			add = 20
+			tag =GAG
+		}
+		modifier = {
+			add = 20
+			tag =HIH
+		}
+		modifier = {
+			add = 20
+			tag =IDI
+		}
+		modifier = {
+			add = 20
+			tag =ILI
+		}
+		modifier = {
+			add = 20
+			tag =INI
+		}
+		modifier = {
+			add = 20
+			tag =IAI
+		}
+		modifier = {
+			add = 20
+			tag =KYK
+		}
+		modifier = {
+			add = 20
+			tag =LAL
+		}
+		modifier = {
+			add = 20
+			tag =MEM
+		}
+		modifier = {
+			add = 20
+			tag =MDM
+		}
+		modifier = {
+			add = 20
+			tag =MAM
+		}
+		modifier = {
+			add = 20
+			tag =MIM
+		}
+		modifier = {
+			add = 20
+			tag =MNM
+		}
+		modifier = {
+			add = 20
+			tag =MSM
+		}
+		modifier = {
+			add = 20
+			tag =MOM
+		}
+		modifier = {
+			add = 20
+			tag =MTM
+		}
+		modifier = {
+			add = 20
+			tag =NEN
+		}
+		modifier = {
+			add = 20
+			tag =NVN
+		}
+		modifier = {
+			add = 20
+			tag =NHN
+		}
+		modifier = {
+			add = 20
+			tag =NMN
+		}
+		modifier = {
+			add = 20
+			tag =NYN
+		}
+		modifier = {
+			add = 20
+			tag =NDN
+		}
+		modifier = {
+			add = 20
+			tag =OHO
+		}
+		modifier = {
+			add = 20
+			tag =OKO
+		}
+		modifier = {
+			add = 20
+			tag =ORO
+		}
+		modifier = {
+			add = 20
+			tag =PAP
+		}
+		modifier = {
+			add = 20
+			tag =RIR
+		}
+		modifier = {
+			add = 20
+			tag =SCS
+		}
+		modifier = {
+			add = 20
+			tag =SDS
+		}
+		modifier = {
+			add = 20
+			tag =TNT
+		}
+		modifier = {
+			add = 20
+			tag =VTV
+		}
+		modifier = {
+			add = 20
+			tag =WAW
+		}
+		modifier = {
+			add = 20
+			tag =WVW
+		}
+		modifier = {
+			add = 20
+			tag =WIW
+		}
+		modifier = {
+			add = 20
+			tag =WYW
+		}
+		modifier = {
+			add = 20
+			tag =UTU
+		}
+		modifier = {
+			add = 20
+			tag =PRP
+		}
+		modifier = {
+			add = 20
+			tag =UVU
+		}
+		modifier = {
+			add = 20
+			tag =MWM
+		}
+		modifier = {
+			add = 20
+			tag =WKW
+		}
+		modifier = {
+			add = 20
+			tag =PIP
+		}
+		modifier = {
+			add = 20
+			tag =JAJ
+		}
+		modifier = {
+			add = 20
+			tag =PCP
+		}
+		modifier = {
+			add = 20
+			tag =LIL
+		}
+		modifier = {
+			add = 20
+			tag =GUG
+		}
+		modifier = {
+			add = 20
+			tag =ASA
+		}
+		modifier = {
+			add = 20
+			tag =ABA
+		}
+		modifier = {
+			add = 20
+			tag =BCB
+		}
+		modifier = {
+			add = 20
+			tag =MBM
+		}
+		modifier = {
+			add = 20
+			tag =NBN
+		}
+		modifier = {
+			add = 20
+			tag =NLN
+		}
+		modifier = {
+			add = 20
+			tag =NSN
+		}
+		modifier = {
+			add = 20
+			tag =NTN
+		}
+		modifier = {
+			add = 20
+			tag =NUN
+		}
+		modifier = {
+			add = 20
+			tag =ONO
+		}
+		modifier = {
+			add = 20
+			tag =PEP
+		}
+		modifier = {
+			add = 20
+			tag =QBC
+		}
+		modifier = {
+			add = 20
+			tag =SKS
+		}
+		modifier = {
+			add = 20
+			tag =YTY
+		}
+		modifier = {
+			add = 20
+			tag =LAB
+		}
+		modifier = {
+			add = 20
+			tag =GUE
+		}
+		modifier = {
+			add = 20
+			tag =COU
+		}
+		modifier = {
+			add = 20
+			tag =CIA
+		}
+		modifier = {
+			add = 20
+			tag =OAX
+		}
+		modifier = {
+			add = 20
+			tag =CHP
+		}
+		modifier = {
+			add = 20
+			tag =OME
+		}
+		modifier = {
+			add = 20
+			tag =YUC
+		}
+		modifier = {
+			add = 20
+			tag =BAJ
+		}
+		modifier = {
+			add = 20
+			tag =VEC
+		}
+		modifier = {
+			add = 20
+			tag =NAY
+		}
+		modifier = {
+			add = 20
+			tag =SON
+		}
+		modifier = {
+			add = 20
+			tag =TAU
+		}
+		modifier = {
+			add = 20
+			tag =SIN
+		}
 	default = no
 	focus = {
 		id = Sarmy_effort
