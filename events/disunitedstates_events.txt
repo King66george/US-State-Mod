@@ -12,9 +12,11 @@ country_event = {
 		name = disunitedstates.1.a
 		ai_chance = { factor = 65}
 		NCN = { annex_country= {
- target = ROOT
- transfer_troops = yes
-} }
+			target = ROOT
+			transfer_troops = yes
+			}
+		}
+	
 	}
 	option = {
 		name = disunitedstates.1.b
@@ -26,7 +28,7 @@ country_event = {
 			}
 		}
 	}
-	}
+	
 	#############################################
 	######Invite to Texas Faction################
 	#############################################
@@ -270,36 +272,36 @@ country_event = {
 
 #AZ
 country_event = {
-	id = disunitedstates.9
-	title = disunitedstates.9.t
-	desc = disunitedstates.9.d
-	picture = GFX_report_event_pla_in_beijing
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		name = disunitedstates.9.a
-		ai_chance = {
-			factor = 45
+		id = disunitedstates.9
+		title = disunitedstates.9.t
+		desc = disunitedstates.9.d
+		picture = GFX_report_event_pla_in_beijing
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = disunitedstates.9.a
+			ai_chance = {
+				factor = 45
+			}
+			AZA = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
 		}
-		AZA = {
-			annex_country = {
- 				target = ROOT
- 				transfer_troops = yes
+		option = {
+			name = disunitedstates.9.b
+			ai_chance = { factor = 55}
+
+			AZA = {
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
 			}
 		}
 	}
-	option = {
-		name = disunitedstates.9.b
-		ai_chance = { factor = 55}
-
-		AZA = {
-			create_wargoal = {
-				type = annex_everything
-				target = ROOT
-			}
-		}
-	}
-}
-
 
 }
+
