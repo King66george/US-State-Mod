@@ -1606,127 +1606,127 @@ focus_tree = {
 					hidden_effect = {
 							CUB = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							HAI = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							DOM = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							GUA = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							ELS = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							HON = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							NIC = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							COS = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							CAN = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							MEX = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							COL = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							VEN = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							ECU = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							PRU = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							BRA = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							BOL = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							PAR = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							URG = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							ARG = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							CHL = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
 							PCP = {
 									add_opinion_modifier = {
-											target = USA
+											target = AZA
 											modifier = monroe_doctrine_trade
 										}
 								}
@@ -2044,13 +2044,13 @@ focus_tree = {
 					add_ideas = USA_intervention_in_europe
 					GER = {
 							add_opinion_modifier = {
-									target = USA
+									target = AZA
 									modifier = war_plan_black
 								}
 						}
 					SOV = {
 							add_opinion_modifier = {
-									target = USA
+									target = AZA
 									modifier = war_plan_white
 								}
 						}

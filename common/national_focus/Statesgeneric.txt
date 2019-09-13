@@ -322,6 +322,7 @@ focus_tree = {
 			add = 20
 			tag =SIN
 		}
+	}
 	default = no
 	focus = {
 		id = Sarmy_effort
