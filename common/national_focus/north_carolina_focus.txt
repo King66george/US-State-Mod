@@ -1311,8 +1311,8 @@ focus_tree = {
 							category = recon_tech
 						}
 					set_technology = {
-							technology = paratroopers
-							technology = paratroopers2
+							paratroopers = 1
+							paratroopers2 = 1
 						}
 					add_ideas = USA_airborne_divisions
 				}

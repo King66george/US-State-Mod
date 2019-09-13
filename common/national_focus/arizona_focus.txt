@@ -2252,15 +2252,14 @@ focus_tree = {
 							bonus = 1.0
 							uses = 2
 							technology = early_fighter
-							technology = fighter4
 							technology = fighter2
 							technology = fighter3
 							technology = heavy_fighter2
 							technology = heavy_fighter3
 						}
 					set_technology = {
-							technology = fighter1
-							technology = heavy_fighter1
+							fighter1 = 1
+							heavy_fighter1 = 1
 						}
 				}
 
@@ -2943,8 +2942,8 @@ focus_tree = {
 							category = recon_tech
 						}
 					set_technology = {
-							technology = paratroopers
-							technology = paratroopers2
+							paratroopers = 1
+							paratroopers2 = 1
 						}
 					add_ideas = USA_airborne_divisions
 				}
