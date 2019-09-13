@@ -495,7 +495,7 @@ focus_tree = {
 					}
 				}
 			}
-			
+
 			completion_reward = {
 						MOM = {
 								country_event = missouri.3
@@ -1710,51 +1710,28 @@ focus_tree = {
 					}
 		}
 		focus = {
-					id = KSK_air11
-					icon = GFX_focus_usa_escort_fighters
-					prerequisite = { focus = KSK_air1 }
+			id = KSK_air8
+			icon = GFX_focus_generic_paratrooper
+			prerequisite = { focus = KSK_air1 }
 
-					x = 0
-					y = 1
+			x = 0
+			y = 2
 
-					relative_position_id = KSK_air1
+			relative_position_id = KSK_air1
 
-					cost = 5
+			cost = 5
 
-					completion_reward = {
-								add_ace = {
-										name = "Amelia"
-										surname = "Earhart"
-										callsign = "Revenant"
-										type = fighter_genius
-										is_female = yes
-								}
-								set_rule = { can_generate_female_aces = yes }
-					}
+			completion_reward = {
+				add_tech_bonus = {
+					name = special_bonus
+					bonus = 1.0
+					uses = 1
+					technology = paratroopers
+					technology = paratroopers2
+				}
+			}
 		}
-		focus = {
-					id = KSK_air8
-					icon = GFX_goal_generic_air_doctrine
-					prerequisite = { focus = KSK_air11 }
-					prerequisite = { focus = KSK_air3 focus = KSK_air4 }
-					prerequisite = { focus = KSK_air6 focus = KSK_air7 }
 
-					x = 0
-					y = 3
-
-					relative_position_id = KSK_air1
-
-					cost = 5
-
-					completion_reward = {
-							add_tech_bonus = {
-									name = air_bonus
-									bonus = 1.0
-									uses = 3
-									category = air_doctrine
-							}
-					}
-		}
 
 		focus = {
 					id = KSK_air9
@@ -1789,6 +1766,54 @@ focus_tree = {
 
 					completion_reward = {
 							add_ideas = { KSK_fighterbonus2 }
+					}
+		}
+
+		focus = {
+			id = KSK_air11
+			icon = GFX_focus_usa_escort_fighters
+			prerequisite = { focus = KSK_air1 }
+
+			x = 0
+			y = 1
+
+			relative_position_id = KSK_air1
+
+			cost = 5
+
+			completion_reward = {
+				add_ace = {
+					name = "Amelia"
+					surname = "Earhart"
+					callsign = "Revenant"
+					type = fighter_genius
+					is_female = yes
+					}
+				set_rule = { can_generate_female_aces = yes }
+			}
+		}
+
+		focus = {
+					id = KSK_air12
+					icon = GFX_goal_generic_air_doctrine
+					prerequisite = { focus = KSK_air8 }
+					prerequisite = { focus = KSK_air3 focus = KSK_air4 }
+					prerequisite = { focus = KSK_air6 focus = KSK_air7 }
+
+					x = 0
+					y = 3
+
+					relative_position_id = KSK_air1
+
+					cost = 5
+
+					completion_reward = {
+							add_tech_bonus = {
+									name = air_bonus
+									bonus = 1.0
+									uses = 3
+									category = air_doctrine
+							}
 					}
 		}
 ################################################################################
@@ -2018,7 +2043,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			date > 1941.01.01
+			date > 1940.01.01
 			controls_state = 828
 			controls_state = 384
 			controls_state = 827
