@@ -149,6 +149,9 @@ id = njdiplo5.1
 icon = GFX_goal_generic_military_sphere
 x = 3
 y = 4
+bypass = {
+has_idea = extensive_conscription
+}
 cost = 5
 prerequisite = {focus = njdiplo3.1}
 completion_reward = {
@@ -595,6 +598,19 @@ id = njdiplo9.1
 icon = GFX_goal_generic_small_arms
 x = 3
 y = 8
+bypass = {
+        OR = {
+				PAP = { is_subject_of = NJN }
+        OR = {
+				NOT = {
+					any_country = {
+						original_tag = PAP
+						exists = yes
+					}
+				}
+          }
+    }
+    }
 cost = 5
 prerequisite = {focus = njdiplo8.1}
 completion_reward = {
@@ -610,6 +626,19 @@ id = njdiplo9.2
 icon = GFX_goal_generic_small_arms
 x = 5
 y = 8
+bypass = {
+				}
+        OR = {
+        NYN = { is_subject_of = NJN }
+        OR = {
+        NOT = {
+          any_country = {
+            original_tag = NYN
+            exists = yes
+          }
+        }
+    }
+    }
 cost = 5
 prerequisite = {focus = njdiplo8.1}
 completion_reward = {
@@ -705,6 +734,19 @@ id = njdiplo10.1
 icon = GFX_goal_generic_territory_or_war
 x = 3
 y = 9
+bypass = {
+        OR = {
+				PAP = { is_subject_of = NJN }
+        OR = {
+				NOT = {
+					any_country = {
+						original_tag = PAP
+						exists = yes
+					}
+				}
+          }
+        }
+    }
 cost = 5
 prerequisite =  {focus = njdiplo9.1}
 completion_reward = {
@@ -721,6 +763,19 @@ id = njdiplo10.2
 icon = GFX_goal_generic_territory_or_war
 x = 5
 y = 9
+bypass = {
+        OR = {
+        NYN = { is_subject_of = NJN }
+        OR = {
+        NOT = {
+          any_country = {
+            original_tag = NYN
+            exists = yes
+          }
+        }
+		}
+    }
+    }
 cost = 5
 prerequisite = {focus = njdiplo9.2}
 completion_reward = {
