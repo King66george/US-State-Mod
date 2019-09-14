@@ -14,7 +14,7 @@ focus_tree = {
 
 default = no
 
-continuous_focus_position = { x = 50 y = 1000 }
+continuous_focus_position = { x = 50 y = 2000 }
 
 #Air Force Tree
 focus = {
@@ -105,5 +105,99 @@ focus = {
   }
 }
 
+focus = {
+  id = WAW_CRDI
+  icon = GFX_goal_unknown
+  cost = 10
+  x = 2
+  y = 5
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+    create_faction = "WAW_cascadian_united_front"
+    set_rule = { can_create_factions = yes }
+    country_event = washington.1
+  }
+}
+
+focus = {
+  id = WAW_the_bear_stops_here
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_CRDI  }
+  relative_position_id = WAW_CRDI
+  cost = 10
+  x = -1
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_resist_the_bear
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_the_bear_stops_here  }
+  relative_position_id = WAW_the_bear_stops_here
+  cost = 10
+  x = 0
+  y = 1
+
+  available = {
+    has_war_with = CAC
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_unknown
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_CRDI }
+  relative_position_id = WAW_CRDI
+  cost = 10
+  x = 1
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_evergreen_forevermore
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_resist_the_bear }
+  prerequisite = { focus = WAW_unknown }
+  relative_position_id = WAW_CRDI
+  cost = 10
+  x = 0
+  y = 3
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
 
 }
