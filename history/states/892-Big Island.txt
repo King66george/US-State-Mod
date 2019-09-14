@@ -3,7 +3,7 @@ state={
 	name="Honolulu"
 	manpower = 351792
 	resources = {
-		rubber = 3.000
+		rubber = 9.000
 		steel = 2.000
 	}
 	state_category = large_city

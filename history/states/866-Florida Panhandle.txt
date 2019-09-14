@@ -14,6 +14,9 @@ state={
 		add_core_of = FLF
 
 	}
+	resources = {
+		steel = 17.000
+	}
 
 	provinces={
 		10352 10380 

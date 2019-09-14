@@ -21,6 +21,10 @@ state={
 	provinces={
 		12715 
 	}
+	resources = {
+		rubber = 11.000
+		steel = 2.000
+	}
 	manpower=2400289
 	buildings_max_level_factor=1.000
 	state_category= city

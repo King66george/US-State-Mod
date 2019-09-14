@@ -2,7 +2,7 @@ state={
 	id=974
 	name="Imperial"
 	resources={
-		chromium= 2.000
+		chromium= 9.000
 	}
 	history={
 		owner = CAC

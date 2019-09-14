@@ -1,12 +1,11 @@
 state={
 	id=812
 	name="Alaskan Capital Region"
-	manpower=1067500
+	manpower=303500
 	state_category=town
 	resources={
-		oil=30
+		oil=72
 		steel=5
-		rubber=33
 	}
 	history={
 		owner = AKA

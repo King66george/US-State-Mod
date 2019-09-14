@@ -2,6 +2,9 @@ state={
 	id=849
 	name="North Illinois"
 	manpower=630651
+	resources = {
+		steel = 29.000
+	}
 	state_category=metropolis
 	history={
 		owner = ILI

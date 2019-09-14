@@ -22,6 +22,11 @@ state={
 	provinces={
 		986 3840 6881 9637 
 	}
+	resources = {
+		oil = 90.000
+		tungsten = 7.000
+		aluminium = 17.000
+	}
 	manpower=677248
 	buildings_max_level_factor=1.000
 	state_category=city

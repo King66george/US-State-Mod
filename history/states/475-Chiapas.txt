@@ -5,6 +5,7 @@ state={
 	resources={
 		oil=25
 		tungsten=15
+		rubber = 11.000
 	}
 	history={
 		owner = CHP

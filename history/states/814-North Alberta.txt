@@ -26,6 +26,11 @@ state={
 	provinces={
 		1763 1804 2407 7348 7766 7830 7858 12166 12534 
 	}
+
+	resources={
+		oil=50.000
+		aluminium=12.000
+	}
 	manpower=1290800
 	buildings_max_level_factor=1.000
 	state_category=rural

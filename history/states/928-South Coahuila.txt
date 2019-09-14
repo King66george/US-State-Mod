@@ -4,7 +4,7 @@ state={
 
 	resources={
 		oil=8.000
-		rubber=8.000
+		rubber=20.000
 	}
 
 	history={
