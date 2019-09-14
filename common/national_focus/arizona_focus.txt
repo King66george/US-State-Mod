@@ -2260,6 +2260,7 @@ focus_tree = {
 					set_technology = {
 							fighter1 = 1
 							heavy_fighter1 = 1
+							strat_bomber2 = 1
 						}
 				}
 
