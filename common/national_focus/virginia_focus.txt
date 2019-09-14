@@ -1083,7 +1083,7 @@ focus_tree = {
 							popularity = 0.05
 						}
 					set_politics = {
-							ruling_party = neutrality
+							ruling_party = monarchy
 							elections_allowed = no
 						}
 				}
@@ -1126,7 +1126,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = neutrality
+							ideology = monarchy
 							popularity = 0.10
 							add_war_support = 0.05
 							add_stability = 0.05
