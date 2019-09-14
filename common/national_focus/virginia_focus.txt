@@ -92,20 +92,7 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = VAV_calltowar
-		icon = GFX_focus_generic_little_entente
-		cost = 10.00
-		x = 13
-		y = 27
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_war_support = 0.15
-				}
-
-	}
+	
 	focus = {
 		id = VAV_militarizethevirginiacompany
 		icon = GFX_goal_generic_navy_doctrines_tactics
