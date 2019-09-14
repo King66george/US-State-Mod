@@ -436,21 +436,14 @@ ideas = {
 				factor = 1
 			}
 		}
-				generic_army_art2 = {
+		generic_army_art2 = {
 			
 			allowed = {
 				}
 			
 			traits = { army_artillery_1 }		
 		}
-		
-		generic_army_log2 = {
 
-			allowed = {
-				}
-			
-			traits = { army_logistics_2 }			
-		}
 
 		generic_navy_fleet_log2 = {
 
@@ -492,13 +485,6 @@ ideas = {
 			traits = { army_artillery_1 }			
 		}
 		
-		generic_army_log = {
-
-			allowed = {
-				}
-			
-			traits = { army_logistics_2 }			
-		}
 
 		generic_navy_fleet_log = {
 
