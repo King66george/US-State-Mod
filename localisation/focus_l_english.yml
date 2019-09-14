@@ -3199,14 +3199,16 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  KSK_air6_desc:0 "Close Air Support can be the deciding factor in battle. Our infantry would certainly be grateful for air support, and it would allow us to make combined arms offensives."
  KSK_air7:0 "Strategic Bombers"
  KSK_air7_desc:0 "We can win wars without wasting a single infantryman. Bombs, not men, can cripple our enemies industry, destroying their ability to fight. We're going to bomb them back into the stone age!"
- KSK_air8:0 "Into the Wild Blue Yonder"
- KSK_air8_desc:0 "The war in the air has changed forever, and lest we be left behind, we must refine our doctrines. What we teach our pilots will decide the fate of our air force, and our ability to win this vital war in the skies."
+ KSK_air8:0 "Kansan Airborne"
+ KSK_air8_desc:0 "If the air is our sea, then paratroopers will be our marines. Let our enemies fear the might of our airborne soldiers."
  KSK_air9:0 "Increased Fighter Production"
  KSK_air9_desc:0 "While it's easy to have visions of grandeur about air superiority, the truth is our air force is only as good as the workers who build our planes. The more planes we have in the air, the better."
  KSK_air10:0 "Ramp Up Bomber Production"
  KSK_air10_desc:0 "Imagine, our enemies think they are safe, when out of the skies roars the rolling thunder of our bombs. Their factories, leveled, their people, scattered. In one fell swoop, we have halted the enemy war machine. The only way this is possible, however is to produce enough bombers to cover the skies. We must ramp up our production immediately!"
  KSK_air11:0 "Amelia Earhart"
  KSK_air11_desc:0 "Amelia Earhart is one of Kansas' finest pilots, and perhaps one of the best in the world. Before the collapse, she had aspirations of circumnavigating the globe. However, her plans were stopped by the collapse. Instead, she has decided to become a pilot for our country."
+ KSK_air12:0 "Into the Wild Blue Yonder"
+ KSK_air12_desc:0 "The war in the air has changed forever, and lest we be left behind, we must refine our doctrines. What we teach our pilots will decide the fate of our air force, and our ability to win this vital war in the skies."
  KSK_conquest1:0 "Aggressive Foreign Policy"
  KSK_conquest1_desc:0 "The time has come for us to expand our territory. Though our neighboring countries were once our fellow states, they are now unrecognizable masses of land ripe for the taking. We must be strong, be vigilant, if we are to fulfill our destiny."
  KSK_conquest2:0 "Fortify the Borders"
@@ -3508,7 +3510,7 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  Sair_innovation_2_desc:0 "Every advantage we can gain in the skies is precious. We should focus all of our efforts on developing our fighters."
  Snaval_air_effort:0 "Naval Air Effort"
  Snaval_air_effort_desc:0 "The efficacy of air strikes against naval targets was demonstrated by the Americans already back in 1921. We should not neglect this branch of the Air Force if we intend to wage war on a naval power."
- 
+
 
  #Generic Focus Rework Start Political#
 
@@ -3554,7 +3556,7 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  Sprep_effort_desc:0 "Do not fire until you see the whites of their eyes! -unknown possibly never said but quotes"
  Sarm_ourselves:0 "Check Old Stockpiles"
  Sarm_ourselves_desc:0 "if it aint broke, dont fix it - unknown"
- 
+
 
 #Generic Focus Rework Start Economic Tree#
 
