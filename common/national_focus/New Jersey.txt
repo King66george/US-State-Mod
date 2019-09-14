@@ -627,7 +627,6 @@ icon = GFX_goal_generic_small_arms
 x = 5
 y = 8
 bypass = {
-				}
         OR = {
         NYN = { is_subject_of = NJN }
         OR = {
@@ -637,6 +636,7 @@ bypass = {
             exists = yes
           }
         }
+		}
     }
     }
 cost = 5
