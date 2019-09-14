@@ -222,4 +222,41 @@ add_political_power = 800
 }
 }
 
-###I will fuck anyone who touches this violently###
+###Financial Sector Event###
+
+country_event = {
+id = newjersey.10
+title = newjersey.10.t
+desc = newjersey.10.d
+picture =
+is_triggered_only = yes
+
+option = {
+name = newjersey.10.a
+ai_chance = {factor = 30}
+swap_ideas = {
+     remove_idea = dept_eco_infra
+     add_idea = dept_eco_infra1
+}
+}
+
+option = {
+name = newjersey.10.b
+ai_chance = {factor = 30}
+swap_ideas = {
+     remove_idea = dept_eco_infra
+     add_idea = dept_eco_infra2
+}
+}
+
+option = {
+name = newjersey.10.c
+ai_chance = {factor = 30}
+swap_ideas = {
+     remove_idea = dept_eco_infra
+     add_idea = dept_eco_infra3
+}
+}
+
+}
+###I will fuck anyone who touches this with a stick, violently###
