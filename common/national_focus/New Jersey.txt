@@ -892,7 +892,7 @@ popularity = 0.2
 #Add all^
 focus = {
 id = njmid1.2
-icon = GFX_Goal_generic_support_democracy
+icon = GFX_Goal_support_democracy
 x = 32
 y = 0
 cost = 5
@@ -917,7 +917,7 @@ add_ideas = dept_eco_infra
 #Add all^
 focus = {
 id = njmid2.1
-icon = GFX_goal_generic_support_communism
+icon = GFX_goal_support_communism
 x = 18
 y = 1
 cost = 5
@@ -938,7 +938,7 @@ set_politics = {
 #Add all^
 focus = {
 id = njmid2.2
-icon = GFX_goal_generic_support_fascism
+icon = GFX_goal_support_fascism
 x = 25
 y = 1
 cost = 5
