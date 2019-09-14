@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 10
+    add = 25
     tag = WAW
     }
   }
@@ -111,6 +111,10 @@ focus = {
   cost = 10
   x = 2
   y = 5
+
+  available = {
+    CAC = { has_completed_focus = CAC_localsecurity }
+  }
 
   cancel_if_invalid = yes
   continue_if_invalid = no
