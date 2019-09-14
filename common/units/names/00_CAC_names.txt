@@ -1,8 +1,8 @@
 ﻿CAC = {
 	fleet_names_template = FLEET_NAME_USA
 	submarine = {
-		prefix = "CAC"
-		generic = { "Submarine" }
+		prefix = CAC
+		generic = { Submarine }
 		unique = {
 			#WIKI: Post S-boat, in order by hull designation, up to nuclear powered (excluding doubles)
 			"Barracuda" "Bass" "Bonita" "Argonaut" "Narwhal" "Nautilus" "Dolphin" "Cachalot" "Cuttlefish" "Porpoise" "Pike" "Shark" "Tarpon" "Perch" "Pickerel" "Permit" "Plunger" "Pollack" "Pompano" "Salmon" "Seal" 
@@ -24,9 +24,9 @@
 		}
 	}	
 	destroyer = {
-		prefix = "CAC"
+		prefix = CAC
 		generic = {
-			"Destroyer"
+			Destroyer
 		}
 		unique = {
 			# From wiki, Farragut class and beyond by flag number.  
@@ -62,8 +62,8 @@
 			}
 		}
 	light_cruiser = {
-		prefix = "CAC"
-		generic = { "Light Cruiser" }
+		prefix = CAC
+		generic = { Light Cruiser }
 		unique = {
 			# From Wiki (Built/Served/Fought) 
 			"Omaha" "Milwaukee" "Cincinnati" "Raleigh" "Detroit" "Richmond" "Concord" "Trenton" "Marblehead" "Memphis" "Brooklyn" "Philadelphia" "Savannah" "Nashville" "Phoenix" "Boise" "Honolulu" 
@@ -75,8 +75,8 @@
 			}
 	}
 	heavy_cruiser = {
-		prefix = "CAC"
-		generic = { "Heavy Cruiser" }
+		prefix = CAC
+		generic = { Heavy Cruiser" }
 		unique = {
 			"Pensacola" "Salt Lake City" "Northampton" "Chester" "Louisville" "Chicago" "Houston" "Augusta" 
 			"New Orleans" "Portland" "Astoria" "Indianapolis" "Minneapolis" "Tuscaloosa" "San Francisco" "Quincy" "Vincennes" "Wichita" 
@@ -87,8 +87,8 @@
 			}
 	}
 	battle_cruiser = {
-		prefix = "CAC"
-		generic = { "Battle Cruiser" }
+		prefix = CAC
+		generic = { Battle Cruiser }
 		unique = {
 			#wiki: Historic list of Alaska Class
 			"Alaska" "Guam" "Hawaii" "Philippines" "Puerto Rico" "Samoa" "Virgin Islands"  
@@ -97,8 +97,8 @@
 			}
 	}
 	battleship = {
-		prefix = "CAC"
-		generic = { "Battleship" }
+		prefix = CAC
+		generic = { Battleship }
 		unique = {
 			# From Wiki (Served)
 			"Arkansas" "New York" "Texas" "Nevada" "Oklahoma" "Pennsylvania" "Arizona" "New Mexico" "Mississippi" "Idaho" "Tennessee" "California" "Colorado" "Maryland" "West Virginia" 
@@ -112,8 +112,8 @@
 		}
 	}	
 	carrier = {
-		prefix = "CAC"
-		generic = { "Carrier" }
+		prefix = CAC
+		generic = { Carrier }
 		unique = {
 			"Lexington" "Saratoga" "Ranger" "Yorktown" "Enterprise" "Wasp" "Hornet" 
 			"Essex" "Intrepid" "Franklin" "Ticonderoga" "Randolph" "Bunker Hill" "Hancock" "Bennington" "Boxer" "Bon Homme Richard" "Shangri-la" "Lake Champlain" "Tarawa" "Antietam" 
