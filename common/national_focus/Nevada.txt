@@ -494,6 +494,35 @@ focus = {
       }
 
 }
+focus = {
+		id = NVN_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = NVN_extra_tech_slot_2 }
+    prerequisite = { focus = NVN_rocket_effort }
+    prerequisite = { focus = NVN_secret_weapons }
+		x = 2
+		y = 6
+		#relative_position_id = infrastructure_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
 ##############OIL FIELDS, CHROMIUM
 focus = {
   id = NVN_blackgold
@@ -508,7 +537,7 @@ focus = {
   completion_reward = {
     add_resource = {
       type = oil
-      amount = 8
+      amount = 7
       state = 975
     }
   }
@@ -526,7 +555,7 @@ focus = {
   completion_reward = {
     add_resource = {
       type = oil
-      amount = 8
+      amount = 7
       state = 975
     }
   }
@@ -544,7 +573,7 @@ focus = {
   completion_reward = {
     add_resource = {
       type = oil
-      amount = 8
+      amount = 7
       state = 975
     }
   }
@@ -562,7 +591,7 @@ focus = {
   completion_reward = {
     add_resource = {
       type = chromium
-      amount = 8
+      amount = 7
       state = 975
     }
   }
@@ -580,7 +609,7 @@ focus = {
   completion_reward = {
     add_resource = {
       type = chromium
-      amount = 8
+      amount = 7
       state = 975
     }
   }
@@ -598,7 +627,7 @@ focus = {
   completion_reward = {
     add_resource = {
       type = chromium
-      amount = 8
+      amount = 7
       state = 975
     }
   }

@@ -3579,3 +3579,10 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
  Sref_add_desc:0 "Oil is required to run our vehicles, tanks, planes, and ships"
  Sglobal_player:0 "Global Player"
  Sglobal_player_desc:0 "we have entered the global stage, where is wyoming?"
+
+
+ #NEVADA STUFF B))))))))))))
+
+
+ NVN_fortifyingLV:0 "Fortification of Las Vegas"
+ NVN_fortifyingLV_desc:0 "We have two big threats to us. The bear and the sunshine. Las Vegas is one of our most prized cities, and we can't let it fall. For the future of Nevada!"
