@@ -135,6 +135,33 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_country_leader = {
+	name = "Alfalfa Bill Murray"
+	desc = "POLITICS_ALFALFA_BILL_MURRAY_DESC"
+	picture = "Portrait_OKO_Alfalfa_Bill_Murray.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Oscar Ameringer"
+	desc = "POLITICS_OSCAR_AMERINGER_DESC"
+	picture = "Portrait_OKO_Oscar_Ameringer.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "E. W. Marland"
+	desc = "POLITICS_E_W_MARLAND_DESC"
+	picture = "Portrait_OKO_E_W_Marland.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 
