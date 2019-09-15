@@ -1690,6 +1690,10 @@ spriteTypes = {
 		spriteType = {
 		name = "Monarchy"
 		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
-	}
+	  }
+		spriteType = {
+		name = "GFX_WAW_CUF"
+		textureFile = "gfx/interface/goals/WAW_CUF.dds"
+	  }
 
 }

@@ -21,7 +21,7 @@ focus = {
   id = WAW_fund_the_boeing_company
   icon = GFX_WAW_fund_the_boeing_company
   cost = 10
-  x = 20
+  x = 22
   y = 0
 
   cancel_if_invalid = yes
@@ -38,7 +38,7 @@ focus = {
   id = WAW_political_rivalry
   icon = GFX_goal_unknown114
   cost = 3
-  x = 8
+  x = 12
   y = 0
 
   cancel_if_invalid = yes
@@ -106,11 +106,11 @@ focus = {
 }
 
 focus = {
-  id = WAW_CRDI
-  icon = GFX_goal_unknown
+  id = WAW_CUF
+  icon = GFX_WAW_CUF
   cost = 10
   x = 2
-  y = 5
+  y = 0
 
   available = {
     CAC = { has_completed_focus = CAC_localsecurity }
@@ -129,9 +129,9 @@ focus = {
 
 focus = {
   id = WAW_the_bear_stops_here
-  icon = GFX_goal_unknown
-  prerequisite = { focus = WAW_CRDI  }
-  relative_position_id = WAW_CRDI
+  icon = GFX_goal_generic_construct_military
+  prerequisite = { focus = WAW_CUF  }
+  relative_position_id = WAW_CUF
   cost = 10
   x = -1
   y = 1
@@ -147,7 +147,7 @@ focus = {
 
 focus = {
   id = WAW_resist_the_bear
-  icon = GFX_goal_unknown
+  icon = GFX_focus_eng_expose_the_belly_of_the_bear
   prerequisite = { focus = WAW_the_bear_stops_here  }
   relative_position_id = WAW_the_bear_stops_here
   cost = 10
@@ -170,8 +170,8 @@ focus = {
 focus = {
   id = WAW_unknown
   icon = GFX_goal_unknown
-  prerequisite = { focus = WAW_CRDI }
-  relative_position_id = WAW_CRDI
+  prerequisite = { focus = WAW_CUF }
+  relative_position_id = WAW_CUF
   cost = 10
   x = 1
   y = 1
@@ -190,7 +190,7 @@ focus = {
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_resist_the_bear }
   prerequisite = { focus = WAW_unknown }
-  relative_position_id = WAW_CRDI
+  relative_position_id = WAW_CUF
   cost = 10
   x = 0
   y = 3
