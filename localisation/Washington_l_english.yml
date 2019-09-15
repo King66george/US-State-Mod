@@ -1,4 +1,6 @@
 ﻿l_english:
+
+#Goals
  WAW_fund_the_boeing_company:0 "Fund Boeing"
  WAW_fund_the_boeing_company_desc:0 "Funding Boeing Could Give Us The Advantage In The Air."
  WAW_CUF:0 "Cascadian United Front"
@@ -9,3 +11,9 @@
  WAW_resist_the_bear_desc:0 "We cant fall without a fight!"
  WAW_evergreen_forevermore:0 "Evergreen Forevermore"
  WAW_evergreen_forevermore_desc:0 "After fierce fighting we have finally stoped the Bear!"
+
+#Ideas
+  WAW_resist_the_bear_idea:0 "Resist The Bear"
+  WAW_resist_the_bear_idea:0 "We Must Resist The Bear"
+
+#Events

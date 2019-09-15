@@ -1,1 +1,19 @@
-﻿
+add_namespace = washington
+
+  country_event = {
+    id = washington.1
+    title = washington.1.t
+    desc = washington.1.d
+    picture = GFX_WAW_meetings_with_washington_event
+    is_triggered_only = yes
+
+    option = {
+      name = washington.1.a
+      ai_chance = { factor = 60 }
+    }
+
+    option = {
+      name = washington.1.b
+      ai_chance { factor = 40 }
+    }
+  }
