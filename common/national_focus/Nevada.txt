@@ -1,4 +1,4 @@
-############DONT EDIT IF YOU'RE NOT LOOG
+############DONT EDIT IF YOU'RE NOT LOOG.
 
 focus_tree = {
     id = nevada_focus
@@ -15,7 +15,7 @@ focus_tree = {
 ###############CONSTRUCTION SHIT
 
   focus = {
-		id = _fortifyingLA
+		id = NVN_fortifyingLV
 		#text = "OHO_politicalbell"
 		icon = GFX_goal_unknown
 		cost = 2.00
@@ -39,7 +39,7 @@ focus_tree = {
 		id = NVN_milfactory1
 		#text = "OHO_politicalbell"
 		icon = GFX_goal_unknown
-    prerequisite = { focus = _fortifyingLA }
+    prerequisite = { focus = NVN_fortifyingLV }
 		cost = 5.00
 		x = 0
 		y = 1
@@ -80,7 +80,7 @@ focus_tree = {
   		id = NVN_milfactory2
   		#text = "OHO_politicalbell"
   		icon = GFX_goal_unknown
-      prerequisite = { focus = _milfactory1 }
+      prerequisite = { focus = NVN_milfactory1 }
   		cost = 5.00
   		x = 0
   		y = 2
@@ -121,7 +121,7 @@ focus_tree = {
     		id = NVN_milfactory3
     		#text = "OHO_politicalbell"
     		icon = GFX_goal_unknown
-        prerequisite = { focus = _milfactory2 }
+        prerequisite = { focus = NVN_milfactory2 }
     		cost = 10.00
     		x = 0
     		y = 3
@@ -162,7 +162,7 @@ focus_tree = {
       id = NVN_civfactory1
       #text = "OHO_politicalbell"
       icon = GFX_goal_unknown
-      prerequisite = { focus = _fortifyingLA }
+      prerequisite = { focus = NVN_fortifyingLV }
       cost = 5.00
       x = 2
       y = 1
@@ -203,7 +203,7 @@ focus_tree = {
     id = NVN_civfactory2
     #text = "OHO_politicalbell"
     icon = GFX_goal_unknown
-    prerequisite = { focus = _civfactory1 }
+    prerequisite = { focus = NVN_civfactory1 }
     cost = 5.00
     x = 2
     y = 2
@@ -244,7 +244,7 @@ focus = {
   id = NVN_civfactory3
   #text = "OHO_politicalbell"
   icon = GFX_goal_unknown
-  prerequisite = { focus = _civfactory2 }
+  prerequisite = { focus = NVN_civfactory2 }
   cost = 10.00
   x = 2
   y = 3
@@ -285,7 +285,7 @@ focus = {
   id = NVN_infrastructure1
   #text = "OHO_politicalbell"
   icon = GFX_goal_unknown
-  prerequisite = { focus = _fortifyingLA }
+  prerequisite = { focus = NVN_fortifyingLV }
   cost = 5.00
   x = 4
   y = 1
@@ -326,7 +326,7 @@ focus = {
   id = NVN_infrastructure2
   #text = "OHO_politicalbell"
   icon = GFX_goal_unknown
-  prerequisite = { focus = _infrastructure1 }
+  prerequisite = { focus = NVN_infrastructure1 }
   cost = 5.00
   x = 4
   y = 2
@@ -367,7 +367,7 @@ focus = {
   id = NVN_infrastructure3
   #text = "OHO_politicalbell"
   icon = GFX_goal_unknown
-  prerequisite = { focus = _infrastructure2 }
+  prerequisite = { focus = NVN_infrastructure2 }
   cost = 5.00
   x = 4
   y = 3
@@ -545,5 +545,17 @@ focus = {
       state = 975
     }
   }
+}
+#############POLITICAL SHIT
+focus = {
+  id = NVN_ideologypathbegin
+  icon = GFX_focus_usa_recruit_the_free_corps
+  cost = 2.00
+  x = 16
+  y = 0
+    completion_reward = {
+        add_political_power = 200
+      }
+
 }
 }
