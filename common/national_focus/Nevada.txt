@@ -950,6 +950,31 @@ focus = {
           }
       }
     }
+    focus = {
+  		id = NVN_political_correctness
+  		icon = GFX_goal_generic_dangerous_deal
+  		cost = 10.00
+  		prerequisite = {
+  			focus = NVN_communism
+  		}
+  		x = 13
+  		y = 2
+  			available = {
+
+  }
+  			available_if_capitulated = yes
+  			completion_reward = {
+  					if = {
+  							limit = {
+  									has_idea = neutrality_idea
+  								}
+  							remove_ideas = neutrality_idea
+  						}
+  					add_political_power = 200
+  					add_ideas = idea_political_correctness
+  				}
+
+  	}
 ########################MONARCHY
 focus = {
   id = NVN_monarchy
@@ -993,6 +1018,26 @@ focus = {
       }
 
 }
+focus = {
+  id = NVN_empower_the_king
+  icon = GFX_focus_rom_royal_dictatorship
+  cost = 7.00
+  prerequisite = {
+    focus = azmonarchy_ethos
+  }
+  x = 17
+  y = 2
+    available_if_capitulated = yes
+    completion_reward = {
+        add_popularity = {
+            ideology = monarchy
+            popularity = 0.15
+          }
+        add_stability = 0.05
+        add_political_power = 150
+      }
+
+}
 #############DEMOCRACY
 focus = {
   id = NVN_democracy
@@ -1033,6 +1078,36 @@ focus = {
       }
     completion_reward = {
         add_ideas = liberty_ethos_focus
+      }
+
+}
+focus = {
+  id = NVN_intervention
+  icon = GFX_goal_support_democracy
+  cost = 10.00
+  prerequisite = {
+    focus = NVN_democracy
+  }
+  #mutually_exclusive = {
+    #focus = Sneutrality_focus
+  #}
+  x = 15
+  y = 2
+    available_if_capitulated = yes
+    ai_will_do = {
+        factor = 1
+      }
+    completion_reward = {
+        if = {
+            limit = {
+                has_idea = neutrality_idea
+              }
+            remove_ideas = neutrality_idea
+          }
+        set_rule = {
+            can_send_volunteers = yes
+          }
+        add_political_power = 150
       }
 
 }
