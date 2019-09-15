@@ -16,7 +16,7 @@ country_event = {
 			transfer_troops = yes
 			}
 		}
-	
+
 	}
 	option = {
 		name = disunitedstates.1.b
@@ -28,7 +28,7 @@ country_event = {
 			}
 		}
 	}
-}	
+}
 	#############################################
 	######Invite to Texas Faction################
 	#############################################
@@ -302,6 +302,32 @@ country_event = {
 			}
 		}
 	}
+	#NEVADA ANSCHLUSS
+	country_event = {
+		id = disunitedstates.11
+		title = disunitedstates.11.title
+		desc = disunitedstates.11.desc
+		picture = GFX_report_event_pla_in_beijing
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = disunitedstates.11.a
+			ai_chance = { factor = 65}
+			NVN = { annex_country= {
+				target = ROOT
+				transfer_troops = yes
+				}
+			}
 
-
-
+		}
+		option = {
+			name = disunitedstates.11.b
+			ai_chance = { factor = 45}
+			NVN = {
+			create_wargoal = {
+			type = annex_everything
+			target = ROOT
+				}
+			}
+		}
+	}

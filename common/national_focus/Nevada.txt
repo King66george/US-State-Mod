@@ -437,6 +437,63 @@ focus = {
       }
 
 }
+focus = {
+  id = NVN_rocket_effort
+  icon = GFX_focus_rocketry
+  cost = 10.00
+  prerequisite = {
+    focus = NVN_extra_tech_slot
+  }
+  x = 0
+  y = 5
+    available_if_capitulated = yes
+    completion_reward = {
+        add_tech_bonus = {
+            name = jet_rocket_bonus
+            ahead_reduction = 2
+            uses = 2
+            category = rocketry
+            category = jet_technology
+          }
+      }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 0.25
+            always = yes
+          }
+      }
+
+}
+focus = {
+  id = NVN_secret_weapons
+  icon = GFX_goal_generic_secret_weapon
+  cost = 10.00
+  prerequisite = {
+    focus = NVN_extra_tech_slot
+  }
+  x = 4
+  y = 5
+    available_if_capitulated = yes
+    completion_reward = {
+        add_tech_bonus = {
+            name = secret_bonus
+            bonus = 1.0
+            uses = 4
+            category = electronics
+            category = nuclear
+            category = rocketry
+          }
+      }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 0.25
+            always = yes
+          }
+      }
+
+}
 ##############OIL FIELDS, CHROMIUM
 focus = {
   id = NVN_blackgold
@@ -546,6 +603,202 @@ focus = {
     }
   }
 }
+##################EQUIPMENT AND STUFF
+focus = {
+  id = NVN_equipment_effort
+  icon = GFX_goal_generic_small_arms
+  cost = 2.00
+  #prerequisite = {
+    focus = Sarmy_effort
+  #}
+  x = 11
+  y = 0
+    available_if_capitulated = yes
+    completion_reward = {
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 2000
+            producer = USA
+          }
+        add_tech_bonus = {
+            name = infantry_artillery_bonus
+            bonus = 1.0
+            uses = 1
+            category = infantry_weapons
+            category = artillery
+          }
+      }
+
+}
+focus = {
+  id = NVN_prep_for_the_war
+  icon = GFX_focus_chi_army_reform
+  cost = 5.00
+  prerequisite = {
+    focus = NVN_equipment_effort
+  }
+  x = 10
+  y = 1
+    available_if_capitulated = yes
+    completion_reward = {
+        add_ideas = paramilitarism_focus
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 1000
+            producer = USA
+          }
+      }
+
+}
+focus = {
+  id = NVN_equipment_effort_2
+  icon = GFX_goal_generic_army_artillery
+  cost = 5.00
+  prerequisite = {
+    focus = NVN_prep_for_the_war
+  }
+  x = 11
+  y = 2
+    available_if_capitulated = yes
+    completion_reward = {
+        add_tech_bonus = {
+            name = infantry_artillery_bonus
+            bonus = 1.0
+            uses = 1
+            category = infantry_weapons
+            category = artillery
+          }
+      }
+
+}
+focus = {
+  id = NVN_equipment_effort_3
+  icon = GFX_goal_generic_army_artillery2
+  cost = 10.00
+  prerequisite = {
+    focus = NVN_equipment_effort_2
+  }
+  x = 10
+  y = 3
+    available_if_capitulated = yes
+    completion_reward = {
+        add_tech_bonus = {
+            name = infantry_artillery_bonus
+            ahead_reduction = 2
+            uses = 1
+            category = infantry_weapons
+            category = artillery
+          }
+      }
+
+}
+focus = {
+  id = NVN_nevada_ready_for_war
+  icon = GFX_goal_generic_army_doctrines
+  cost = 10.00
+  prerequisite = {
+    focus = NVN_equipment_effort_3
+  }
+  x = 10
+  y = 4
+    available_if_capitulated = yes
+    completion_reward = {
+        army_experience = 25
+        add_tech_bonus = {
+            name = land_doc_bonus
+            bonus = 1.0
+            uses = 1
+            category = land_doctrine
+          }
+      }
+
+}
+###############AIRFORCE
+focus = {
+  id = NVN_aviation_effort
+  icon = GFX_goal_generic_build_airforce
+  cost = 2.00
+  x = 7
+  y = 3
+    available_if_capitulated = yes
+    complete_tooltip = {
+        air_experience = 25
+        if = {
+            limit = {
+                has_country_flag = aviation_effort_AB
+              }
+            add_building_construction = {
+                type = air_base
+                level = 2
+                instant_build = yes
+              }
+          }
+        add_tech_bonus = {
+            name = air_doc_bonus
+            bonus = 1.0
+            uses = 1
+            category = air_doctrine
+          }
+      }
+    completion_reward = {
+        air_experience = 25
+        if = {
+            limit = {
+                capital_scope = {
+                    NOT = {
+                        free_building_slots = {
+                            building = air_base
+                            size > 1
+                          }
+                      }
+                  }
+              }
+            random_owned_controlled_state = {
+                limit = {
+                    free_building_slots = {
+                        building = air_base
+                        size > 1
+                      }
+                  }
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                    instant_build = yes
+                  }
+                ROOT = {
+                    set_country_flag = aviation_effort_AB
+                  }
+              }
+          }
+        if = {
+            limit = {
+                capital_scope = {
+                    free_building_slots = {
+                        building = air_base
+                        size > 1
+                      }
+                  }
+              }
+            capital_scope = {
+                add_building_construction = {
+                    type = air_base
+                    level = 2
+                    instant_build = yes
+                  }
+                ROOT = {
+                    set_country_flag = aviation_effort_AB
+                  }
+              }
+          }
+        add_tech_bonus = {
+            name = air_doc_bonus
+            bonus = 1.0
+            uses = 1
+            category = air_doctrine
+          }
+      }
+
+}
 #############POLITICAL SHIT
 focus = {
   id = NVN_ideologypathbegin
@@ -558,4 +811,215 @@ focus = {
       }
 
 }
+#############FASCISM
+focus = {
+  id = NVN_fascism
+  icon = GFX_goal_unknown
+  cost = 5.00
+  prerequisite = {
+    focus = NVN_ideologypathbegin
+  }
+  mutually_exclusive = {
+    focus = NVN_communism
+    focus = NVN_democracy
+    focus = NVN_monarchy
+  }
+  x = 19
+  y = 1
+    available_if_capitulated = yes
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            any_neighbor_country = {
+                is_major = yes
+                has_government = fascism
+              }
+          }
+      }
+    completion_reward = {
+        add_timed_idea = {
+            idea = nationalism
+            days = 720
+          }
+        set_politics = {
+            ruling_party = fascism
+            elections_allowed = yes
+          }
+        set_political_party = {
+            ideology = democratic
+            popularity = 1
+          }
+        set_political_party = {
+            ideology = communism
+            popularity = 0
+          }
+        set_political_party = {
+            ideology = fascism
+            popularity = 99
+          }
+      }
+    }
+    focus = {
+  		id = NVN_anschluss_idaho
+  		icon = GFX_focus_generic_military_academy
+  		cost = 5.00
+  		prerequisite = {
+  			focus = NVN_fascism
+  		}
+  		x = 19
+  		y = 2
+  			ai_will_do = {
+  					factor = 10
+  				}
+  			available = {
+
+  }
+  			bypass = {
+
+  }
+  			completion_reward = {
+  					IDI = {
+  							country_event = disunitedstates.11
+  						}
+  				}
+
+  	}
+############COMMUNISM
+focus = {
+  id = NVN_communism
+  icon = GFX_goal_unknown
+  cost = 5.00
+  prerequisite = {
+    focus = NVN_ideologypathbegin
+  }
+  mutually_exclusive = {
+    focus = NVN_fascism
+    focus = NVN_democracy
+    focus = NVN_monarchy
+  }
+  x = 13
+  y = 1
+    available_if_capitulated = yes
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            any_neighbor_country = {
+                is_major = yes
+                has_government = fascism
+              }
+          }
+      }
+    completion_reward = {
+        add_timed_idea = {
+            idea = internationalism
+            days = 720
+          }
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+          }
+        set_political_party = {
+            ideology = democratic
+            popularity = 1
+          }
+        set_political_party = {
+            ideology = communism
+            popularity = 98
+          }
+        set_political_party = {
+            ideology = fascism
+            popularity = 1
+          }
+      }
+    }
+########################MONARCHY
+focus = {
+  id = NVN_monarchy
+  icon = GFX_goal_tfv_strengthen_commonwealth_ties
+  cost = 5.00
+  prerequisite = {
+    focus = NVN_ideologypathbegin
+  }
+  mutually_exclusive = {
+    focus = NVN_fascism
+    focus = NVN_democracy
+    focus = NVN_communism
+  }
+  x = 17
+  y = 1
+    available_if_capitulated = yes
+    ai_will_do = {
+        factor = 10
+      }
+    completion_reward = {
+        set_politics = {
+            ruling_party = monarchy
+            elections_allowed = no
+          }
+        set_political_party = {
+            ideology = neutrality
+            popularity = 26
+          }
+        set_political_party = {
+            ideology = communism
+            popularity = 5
+          }
+        set_political_party = {
+            ideology = fascism
+            popularity = 5
+          }
+        set_political_party = {
+            ideology = monarchy
+            popularity = 64
+          }
+      }
+
+}
+#############DEMOCRACY
+focus = {
+  id = NVN_democracy
+  icon = GFX_focus_generic_the_giant_wakes
+  cost = 5.00
+  prerequisite = {
+    focus = NVN_ideologypathbegin
+  }
+  mutually_exclusive = {
+    focus = NVN_fascism
+    focus = NVN_monarchy
+    focus = NVN_communism
+  }
+  x = 15
+  y = 1
+    available = {
+
+}
+    available_if_capitulated = yes
+    ai_will_do = {
+        factor = 30
+        modifier = {
+            factor = 0.1
+            any_neighbor_country = {
+                is_major = yes
+                OR = {
+                    has_government = communism
+                    has_government = fascism
+                  }
+              }
+            NOT = {
+                any_neighbor_country = {
+                    is_major = yes
+                    has_government = democratic
+                  }
+              }
+          }
+      }
+    completion_reward = {
+        add_ideas = liberty_ethos_focus
+      }
+
+}
+
+
 }
