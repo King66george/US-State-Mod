@@ -1,0 +1,25 @@
+focus_tree = {
+    id = nevada_focus
+    continuous_focus_position = { x = 20 y = 1700 }
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = NVN
+        }
+    }
+	default = no
+
+  focus = {
+		id = NVM_politicalstuff
+		#text = "OHO_politicalbell"
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 2.00
+		x = 13
+		y = 0
+			completion_reward = {
+					add_political_power = 150
+					#country_event = ohio.1
+				}
+
+	}

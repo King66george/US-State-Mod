@@ -4,19 +4,19 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 20
-			tag =ALA 
+			tag =ALA
 		}
 		modifier = {
 			add = 20
-			tag =WDC 
+			tag =WDC
 		}
 		modifier = {
 			add = 20
-			tag =AKA 
+			tag =AKA
 		}
 		modifier = {
 			add = 20
-			tag =ARA 
+			tag =ARA
 		}
 		modifier = {
 			add = 20
@@ -97,10 +97,6 @@ focus_tree = {
 		modifier = {
 			add = 20
 			tag =NEN
-		}
-		modifier = {
-			add = 20
-			tag =NVN
 		}
 		modifier = {
 			add = 20
