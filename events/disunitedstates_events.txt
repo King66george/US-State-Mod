@@ -302,7 +302,7 @@ country_event = {
 			}
 		}
 	}
-	#NEVADA ANSCHLUSS
+	#NEVADA ANSCHLUSS and NEVADA PUPPET
 	country_event = {
 		id = disunitedstates.11
 		title = disunitedstates.11.title
@@ -328,6 +328,43 @@ country_event = {
 			type = annex_everything
 			target = ROOT
 				}
+			}
+		}
+	}
+	country_event = {
+		id = disunitedstates.12
+		title = disunitedstates.12.title
+		desc = disunitedstates.12.desc
+		#picture =
+		is_triggered_only = yes
+
+		option = {
+			name = disunitedstates.12.a
+			ai_chance = {
+				factor = 40
+				modifier = {
+					factor = 40
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.4
+					}
+				}
+				modifier = {
+					factor = 70
+					has_government = democratic
+				}
+			}
+			NVN = {
+				country_event = nevada.1
+				puppet = IDI
+			}
+		}
+
+		option = {
+			name = disunitedstates.12.b
+			ai_chance = {factor = 60}
+			NVN = {
+				country_event = nevada.2
 			}
 		}
 	}

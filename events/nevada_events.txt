@@ -1,0 +1,28 @@
+add_namespace = nevada
+
+#puppet idaho
+country_event = {
+  id = nevada.1
+  title = nevada.1.t
+  desc = nevada.1.d
+  picture = GFX_report_event_usa_destroyers
+
+  is_triggered_only = yes
+
+  option = {
+    name = nevada.1.a
+  }
+}
+
+#idaho refuses
+country_event = {
+  id = nevada.2
+  title = nevada.2.t
+  desc = nevada.2.d
+  picture = GFX_report_event_usa_destroyers
+
+  is_triggered_only = yes
+
+  option = {
+    name = nevada.2.a
+  }
