@@ -1,3 +1,5 @@
+############DONT EDIT IF YOU'RE NOT LOOG
+
 focus_tree = {
     id = nevada_focus
     continuous_focus_position = { x = 20 y = 1700 }
@@ -13,7 +15,7 @@ focus_tree = {
 ###############CONSTRUCTION SHIT
 
   focus = {
-		id = NVM_fortifyingLA
+		id = _fortifyingLA
 		#text = "OHO_politicalbell"
 		icon = GFX_goal_unknown
 		cost = 2.00
@@ -34,10 +36,10 @@ focus_tree = {
 	}
 
   focus = {
-		id = NVM_milfactory1
+		id = NVN_milfactory1
 		#text = "OHO_politicalbell"
 		icon = GFX_goal_unknown
-    prerequisite = { focus = NVM_fortifyingLA }
+    prerequisite = { focus = _fortifyingLA }
 		cost = 5.00
 		x = 0
 		y = 1
@@ -75,10 +77,10 @@ focus_tree = {
     }
   }
     focus = {
-  		id = NVM_milfactory2
+  		id = NVN_milfactory2
   		#text = "OHO_politicalbell"
   		icon = GFX_goal_unknown
-      prerequisite = { focus = NVM_milfactory1 }
+      prerequisite = { focus = _milfactory1 }
   		cost = 5.00
   		x = 0
   		y = 2
@@ -116,10 +118,10 @@ focus_tree = {
       }
     }
       focus = {
-    		id = NVM_milfactory3
+    		id = NVN_milfactory3
     		#text = "OHO_politicalbell"
     		icon = GFX_goal_unknown
-        prerequisite = { focus = NVM_milfactory2 }
+        prerequisite = { focus = _milfactory2 }
     		cost = 10.00
     		x = 0
     		y = 3
@@ -157,10 +159,10 @@ focus_tree = {
         }
     }
     focus = {
-      id = NVM_civfactory1
+      id = NVN_civfactory1
       #text = "OHO_politicalbell"
       icon = GFX_goal_unknown
-      prerequisite = { focus = NVM_fortifyingLA }
+      prerequisite = { focus = _fortifyingLA }
       cost = 5.00
       x = 2
       y = 1
@@ -168,7 +170,7 @@ focus_tree = {
         random_owned_controlled_state = {
             limit = {
                 free_building_slots = {
-                    building = arms_factory
+                    building = industrial_complex
                     size > 0
                     include_locked = yes
                   }
@@ -178,7 +180,7 @@ focus_tree = {
                         owner = {
                             any_owned_state = {
                                 free_building_slots = {
-                                    building = arms_factory
+                                    building = industrial_complex
                                     size > 0
                                     include_locked = yes
                                   }
@@ -198,10 +200,10 @@ focus_tree = {
       }
   }
   focus = {
-    id = NVM_civfactory2
+    id = NVN_civfactory2
     #text = "OHO_politicalbell"
     icon = GFX_goal_unknown
-    prerequisite = { focus = NVM_civfactory1 }
+    prerequisite = { focus = _civfactory1 }
     cost = 5.00
     x = 2
     y = 2
@@ -209,7 +211,7 @@ focus_tree = {
       random_owned_controlled_state = {
           limit = {
               free_building_slots = {
-                  building = arms_factory
+                  building = industrial_complex
                   size > 0
                   include_locked = yes
                 }
@@ -219,7 +221,7 @@ focus_tree = {
                       owner = {
                           any_owned_state = {
                               free_building_slots = {
-                                  building = arms_factory
+                                  building = industrial_complex
                                   size > 0
                                   include_locked = yes
                                 }
@@ -239,10 +241,10 @@ focus_tree = {
     }
 }
 focus = {
-  id = NVM_civfactory3
+  id = NVN_civfactory3
   #text = "OHO_politicalbell"
   icon = GFX_goal_unknown
-  prerequisite = { focus = NVM_civfactory2 }
+  prerequisite = { focus = _civfactory2 }
   cost = 10.00
   x = 2
   y = 3
@@ -250,7 +252,7 @@ focus = {
     random_owned_controlled_state = {
         limit = {
             free_building_slots = {
-                building = arms_factory
+                building = industrial_complex
                 size > 0
                 include_locked = yes
               }
@@ -260,7 +262,7 @@ focus = {
                     owner = {
                         any_owned_state = {
                             free_building_slots = {
-                                building = arms_factory
+                                building = industrial_complex
                                 size > 0
                                 include_locked = yes
                               }
@@ -277,6 +279,271 @@ focus = {
             instant_build = yes
           }
       }
+  }
+}
+focus = {
+  id = NVN_infrastructure1
+  #text = "OHO_politicalbell"
+  icon = GFX_goal_unknown
+  prerequisite = { focus = _fortifyingLA }
+  cost = 5.00
+  x = 4
+  y = 1
+    completion_reward = {
+    random_owned_controlled_state = {
+        limit = {
+            free_building_slots = {
+                building = infrastructure
+                size > 0
+                include_locked = yes
+              }
+            OR = {
+                is_in_home_area = yes
+                NOT = {
+                    owner = {
+                        any_owned_state = {
+                            free_building_slots = {
+                                building = infrastructure
+                                size > 0
+                                include_locked = yes
+                              }
+                            is_in_home_area = yes
+                          }
+                      }
+                  }
+              }
+          }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+      }
+  }
+}
+focus = {
+  id = NVN_infrastructure2
+  #text = "OHO_politicalbell"
+  icon = GFX_goal_unknown
+  prerequisite = { focus = _infrastructure1 }
+  cost = 5.00
+  x = 4
+  y = 2
+    completion_reward = {
+    random_owned_controlled_state = {
+        limit = {
+            free_building_slots = {
+                building = infrastructure
+                size > 0
+                include_locked = yes
+              }
+            OR = {
+                is_in_home_area = yes
+                NOT = {
+                    owner = {
+                        any_owned_state = {
+                            free_building_slots = {
+                                building = infrastructure
+                                size > 0
+                                include_locked = yes
+                              }
+                            is_in_home_area = yes
+                          }
+                      }
+                  }
+              }
+          }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+      }
+  }
+}
+focus = {
+  id = NVN_infrastructure3
+  #text = "OHO_politicalbell"
+  icon = GFX_goal_unknown
+  prerequisite = { focus = _infrastructure2 }
+  cost = 5.00
+  x = 4
+  y = 3
+    completion_reward = {
+    random_owned_controlled_state = {
+        limit = {
+            free_building_slots = {
+                building = infrastructure
+                size > 0
+                include_locked = yes
+              }
+            OR = {
+                is_in_home_area = yes
+                NOT = {
+                    owner = {
+                        any_owned_state = {
+                            free_building_slots = {
+                                building = infrastructure
+                                size > 0
+                                include_locked = yes
+                              }
+                            is_in_home_area = yes
+                          }
+                      }
+                  }
+              }
+          }
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+            type = infrastructure
+            level = 1
+            instant_build = yes
+          }
+      }
+  }
+}
+focus = {
+  id = NVN_extra_tech_slot
+  icon = GFX_focus_research
+  cost = 10.00
+  prerequisite = { focus = NVN_civfactory3 }
+  x = 2
+  y = 4
+    available_if_capitulated = yes
+    completion_reward = {
+        add_research_slot = 1
+      }
+
+}
+focus = {
+  id = NVN_extra_tech_slot_2
+  icon = GFX_focus_research
+  cost = 10.00
+  prerequisite = {
+    focus = NVN_extra_tech_slot
+  }
+  x = 2
+  y = 5
+    available = {
+        num_of_factories > 50
+      }
+    cancel_if_invalid = no
+    continue_if_invalid = yes
+    available_if_capitulated = yes
+    completion_reward = {
+        add_research_slot = 1
+      }
+
+}
+##############OIL FIELDS, CHROMIUM
+focus = {
+  id = NVN_blackgold
+  icon = GFX_goal_unknown
+  #prerequisite = { focus = CAC_genericindustry1}
+
+  cost = 2
+
+  x = 6
+  y = 0
+
+  completion_reward = {
+    add_resource = {
+      type = oil
+      amount = 8
+      state = 975
+    }
+  }
+}
+focus = {
+  id = NVN_blackgold2
+  icon = GFX_goal_unknown
+  prerequisite = { focus = NVN_blackgold }
+
+  cost = 5
+
+  x = 6
+  y = 1
+
+  completion_reward = {
+    add_resource = {
+      type = oil
+      amount = 8
+      state = 975
+    }
+  }
+}
+focus = {
+  id = NVN_blackgold3
+  icon = GFX_goal_unknown
+  prerequisite = { focus = NVN_blackgold2 }
+
+  cost = 10
+
+  x = 6
+  y = 2
+
+  completion_reward = {
+    add_resource = {
+      type = oil
+      amount = 8
+      state = 975
+    }
+  }
+}
+focus = {
+  id = NVN_chromium
+  icon = GFX_goal_unknown
+  #prerequisite = { focus = NVN_blackgold2 }
+
+  cost = 2
+
+  x = 8
+  y = 0
+
+  completion_reward = {
+    add_resource = {
+      type = chromium
+      amount = 8
+      state = 975
+    }
+  }
+}
+focus = {
+  id = NVN_chromium2
+  icon = GFX_goal_unknown
+  prerequisite = { focus = NVN_chromium }
+
+  cost = 5
+
+  x = 8
+  y = 1
+
+  completion_reward = {
+    add_resource = {
+      type = chromium
+      amount = 8
+      state = 975
+    }
+  }
+}
+focus = {
+  id = NVN_chromium3
+  icon = GFX_goal_unknown
+  prerequisite = { focus = NVN_chromium2 }
+
+  cost = 10
+
+  x = 8
+  y = 2
+
+  completion_reward = {
+    add_resource = {
+      type = chromium
+      amount = 8
+      state = 975
+    }
   }
 }
 }
