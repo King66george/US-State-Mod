@@ -477,7 +477,6 @@ focus_tree = {
 
 			x = -3
 			y = 1
-			relative_position_id = KSK_democratic4
 
 			cost = 10
 
@@ -656,8 +655,6 @@ focus_tree = {
 			x = 11
 			y = 5
 
-			relative_position_id = { KSK_democratic6 }
-
 			cost = 10
 
 			completion_reward = {
@@ -678,7 +675,6 @@ focus_tree = {
 			x = 6
 			y = 2
 
-			relative_position_id = { KSK_democratic1}
 
 			cost = 10
 

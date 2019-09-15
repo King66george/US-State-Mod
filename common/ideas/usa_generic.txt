@@ -461,21 +461,8 @@ ideas = {
 			traits = { air_air_combat_training_2 }			
 		}
 
-		generic_air_close_air_sup = {
-			
-			allowed = {
-				}
-			
-			traits = { air_close_air_support_2 }
-		}
-	
-		generic_air_chief_all_weather = {
-			
-			allowed = {
-				}
-			
-			traits = { air_chief_all_weather_2 }			
-		}
+
+
 	
 		generic_army_art = {
 			

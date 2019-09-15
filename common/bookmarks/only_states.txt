@@ -43,7 +43,7 @@ bookmarks = {
 			focuses = {
 				VAV_war
 				VAV_industrialpowerhouse
-				VAV_calltowar
+				vavmonarchy_ethos
 			}
 		}
 

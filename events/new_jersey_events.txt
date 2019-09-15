@@ -1,4 +1,4 @@
-add_namespace = newjersey
+﻿add_namespace = newjersey
 
 ###Puppet Event###
 
@@ -228,7 +228,7 @@ country_event = {
 id = newjersey.10
 title = newjersey.10.t
 desc = newjersey.10.d
-picture =
+#picture =
 is_triggered_only = yes
 
 option = {
