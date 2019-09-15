@@ -168,10 +168,6 @@ focus_tree = {
 		}
 		modifier = {
 			add = 20
-			tag =WYW
-		}
-		modifier = {
-			add = 20
 			tag =UTU
 		}
 		modifier = {
