@@ -314,6 +314,10 @@ focus_tree = {
 			add = 20
 			tag =SIN
 		}
+		modifier = {
+			add = 20
+			tag =NVN
+		}
 	}
 	default = no
 	focus = {
