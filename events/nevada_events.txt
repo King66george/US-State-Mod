@@ -1,6 +1,6 @@
 add_namespace = nevada
 
-#puppet idaho
+#puppet utah
 country_event = {
   id = nevada.1
   title = nevada.1.t
@@ -14,7 +14,7 @@ country_event = {
   }
 }
 
-#idaho refuses
+#utah refuses
 country_event = {
   id = nevada.2
   title = nevada.2.t

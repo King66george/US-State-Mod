@@ -356,7 +356,7 @@ country_event = {
 			}
 			NVN = {
 				country_event = nevada.1
-				puppet = IDI
+				puppet = UTU
 			}
 		}
 

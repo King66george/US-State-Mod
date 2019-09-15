@@ -861,7 +861,7 @@ focus = {
       }
     }
     focus = {
-  		id = NVN_anschluss_idaho
+  		id = NVN_anschluss_utah
   		icon = GFX_focus_generic_military_academy
   		cost = 5.00
   		prerequisite = {
@@ -880,14 +880,14 @@ focus = {
 
   }
   			completion_reward = {
-  					IDI = {
+  					UTU = {
   							country_event = disunitedstates.11
   						}
   				}
 
   	}
     focus = {
-      id = NVN_puppet_idaho
+      id = NVN_puppet_utah
       icon = GFX_goal_unknown
       prerequisite = { focus = NVN_fascism }
       mutually_exclusive = { focus = NVN_anschluss_idaho }
@@ -896,7 +896,7 @@ focus = {
       y = 2
 
       completion_reward = {
-          IDI = {
+          UTU = {
               country_event = disunitedstates.12
             }
         }
