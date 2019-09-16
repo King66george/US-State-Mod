@@ -1052,7 +1052,7 @@ focus = {
   icon = GFX_focus_rom_royal_dictatorship
   cost = 7.00
   prerequisite = {
-    focus = azmonarchy_ethos
+    focus = NVN_monarchy
   }
   x = 17
   y = 2
