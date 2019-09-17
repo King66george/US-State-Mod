@@ -38,6 +38,7 @@ ideas = {
 
             modifier = {
                 war_support_factor = 0.10
+                communism_drift = -0.10
             }
           }
 

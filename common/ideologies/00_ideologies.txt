@@ -85,7 +85,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 255 0 0 }
+		color = { 153 0 0 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -281,15 +281,15 @@ ideologies = {
 		can_be_boosted = yes
 		can_collaborate = yes
 
-		ai_neutral = yes #
+		ai_fascist = yes #
 	}
 	socialism = {
-	
+
 		types = {
 			social_democrat = {
 			}
 		}
-		
+
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
 			"FACTION_NAME_DEMOCRATIC_2"
@@ -298,9 +298,9 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_5"
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
-		
+
 		color = { 255 35 35 }
-		
+
 		rules = {
 			can_declare_war_on_same_ideology = no
 			can_force_government = yes
@@ -310,10 +310,10 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
-		
+
 		war_impact_on_world_tension = -1.0
 		faction_impact_on_world_tension = -0.1
-		
+
 		modifiers = {
 			generate_wargoal_tension = 1.00
 			join_faction_tension = 0.80
@@ -323,18 +323,27 @@ ideologies = {
 			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
-		
+
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_communist = yes # uses the democratic AI behaviour
 	}
-	
+
 	theocratism = {
-	
+
 		types = {
+
+			totalitarianism  = {
+			}
+
+			pseudo_fascist  = {
+			}
+
+			theocratic = {
+			}
 		}
-		
+
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
 			"FACTION_NAME_DEMOCRATIC_2"
@@ -343,9 +352,9 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_5"
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
-		
-		color = { 0 0 0 }
-		
+
+		color = { 204 204 0 }
+
 		rules = {
 			can_declare_war_on_same_ideology = no
 			can_force_government = yes
@@ -355,10 +364,10 @@ ideologies = {
 			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
-		
+
 		war_impact_on_world_tension = -1.0
 		faction_impact_on_world_tension = -0.1
-		
+
 		modifiers = {
 			generate_wargoal_tension = 1.00
 			join_faction_tension = 0.80
@@ -368,10 +377,10 @@ ideologies = {
 			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
 		}
-		
+
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
 		}
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes # uses the democratic AI behaviour
 	}
 }

@@ -30,6 +30,10 @@ country_event = {
 
     add_ideas = { CAC_unstablepolitics }
 
+    add_popularity = {
+      ideology = fascism
+      popularity = 0.05
+      }
 
     }
 
@@ -41,7 +45,6 @@ country_event = {
 		add_stability = 0.05
 
 		add_ideas = { CAC_republican }
-
     }
 
 
@@ -58,6 +61,15 @@ country_event = {
 
     add_ideas = { CAC_unstablepolitics }
 
+    add_popularity = {
+      ideology = communism
+      popularity = 0.05
+      }
+    add_popularity = {
+      ideology = socialism
+      popularity = 0.05
+      }
+
 
 		create_country_leader = {
 			name = "Upton Sinclair"
@@ -68,9 +80,10 @@ country_event = {
 
 			traits = {
 			}
-		}
-	}
-}
+      }
+    }
+  }
+
 ############# END OF ELECTIONS EVENT ################
 
 #Fort focus for either arizona and mexico border or nevada and oregon
