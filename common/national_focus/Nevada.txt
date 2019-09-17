@@ -1,4 +1,4 @@
-############DONT EDIT IF YOU'RE NOT LOOG.
+﻿############DONT EDIT IF YOU'RE NOT LOOG.
 
 focus_tree = {
     id = nevada_focus
