@@ -1688,12 +1688,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/CAC_freedom.dds"
 		}
 		spriteType = {
-		name = "Monarchy"
-		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
+		name = "Monarchism"
+		textureFile = "gfx/interface/ideologies/monarchism_group.dds"
 	  }
 		spriteType = {
 		name = "GFX_WAW_CUF"
 		textureFile = "gfx/interface/goals/WAW_CUF.dds"
 	  }
+		SpriteType = {
+		name = "GFX_goal_ideology_theocratism"
+		texturefile = "gfx/interface/goals/goal_ideology_theocratism.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ideology_socialism"
+		texturefile = "gfx/interface/goals/goal_ideology_socialism.dds"
+	}
 
 }

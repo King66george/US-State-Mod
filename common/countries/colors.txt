@@ -881,3 +881,7 @@ NNN = {
 	color = rgb { 0 38 159 }
 	color_ui = rgb { 0 38 159 }
 }
+GRN = {
+	color = rgb { 10 59 55 }
+	color_ui = rgb { 10 59 55 }
+}

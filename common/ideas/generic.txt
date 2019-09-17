@@ -23,5 +23,83 @@ country = {
 	}
 
 
-}
+
+
+		baby_boom_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+	
+			modifier = {
+				monthly_population = 10
+			}
+		}
+		
+		QBC_militarism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.025
+				enemy_partisan_effect = -0.1
+			}
+		}
+		
+		QBC_war_bonds_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				war_support_factor = 0.3
+			}
+		}
+		
+		QBC_mobilization_act = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				conscription_factor = 0.1
+				stability_factor = 0.4
+				conscription = 0.02
+			}
+		}
+	}
+
 }

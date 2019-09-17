@@ -20,6 +20,7 @@ state={
 			}
 		}
 		add_core_of = PCP
+		add_core_of = PAN
 	}
 
 	provinces={ 7617 }

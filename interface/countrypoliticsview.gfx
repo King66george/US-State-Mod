@@ -1,5 +1,35 @@
 spriteTypes = {
+
+	#Autonomy Stuff
+
+
+
+	spriteType = {
+		name = "GFX_subject_overlay"
+		texturefile = "gfx/interface/autonomy/subject_overlay.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}		
+
+	progressbartype = {
+		name = "GFX_subject_progressbar_long"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/autonomy/subject_progress_bar_long.dds"
+		textureFile2 = "gfx/interface/autonomy/subject_progress_bar_long_bg.dds"
+		size = { x = 181 y = 16 }
+		effectFile = "gfx/FX/progress.lua"
+	}	
 	
+	progressbartype = {
+		name = "GFX_subject_progressbar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/autonomy/subject_progress_bar.dds"
+		textureFile2 = "gfx/interface/autonomy/subject_progress_bar_bg.dds"
+		size = { x = 93 y = 16 }
+		effectFile = "gfx/FX/progress.lua"
+	}	
+		
 	#Government in Exile
 
 	spriteType = {
@@ -50,34 +80,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 	}	
 
-	#Autonomy Stuff
-
-	spriteType = {
-		name = "GFX_subject_overlay"
-		texturefile = "gfx/interface/autonomy/subject_overlay.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
-	}
-
-	progressbartype = {
-		name = "GFX_subject_progressbar_long"
-		color = { 1.0 1.0 1.0 }
-		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/autonomy/subject_progress_bar_long.dds"
-		textureFile2 = "gfx/interface/autonomy/subject_progress_bar_long_bg.dds"
-		size = { x = 181 y = 16 }
-		effectFile = "gfx/FX/progress.lua"
-	}	
-	
-	progressbartype = {
-		name = "GFX_subject_progressbar"
-		color = { 1.0 1.0 1.0 }
-		colortwo = { 1.0 1.0 1.0 }
-		textureFile1 = "gfx/interface/autonomy/subject_progress_bar.dds"
-		textureFile2 = "gfx/interface/autonomy/subject_progress_bar_bg.dds"
-		size = { x = 93 y = 16 }
-		effectFile = "gfx/FX/progress.lua"
-	}	
-	
 	spriteType = {
 		name = "GFX_subject_button"
 		texturefile = "gfx/interface/autonomy/subject_button.dds"
@@ -127,41 +129,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_autonomy_level_button"
 		textureFile = "gfx/interface/autonomy/autonomy_level_button.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_reichskommissariat_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_reichskommissariat_icon.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_reichsprotectorate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_reichsprotectorate_icon.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_satellite_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_satellite.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_wtt_imperial_associate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_imperial_associate.dds"
-	}
-
-	spriteType = {
-		name = "GFX_autonomy_wtt_imperial_subject_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_imperial_associate.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_wtt_imperial_protectorate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_imperial_protectorate.dds"
-	}
-
-	spriteType = {
-		name = "GFX_autonomy_supervised_state_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
 	}
 	
 	#-------------
@@ -402,28 +369,98 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_icon_exiled_governments"
-		texturefile = "gfx/interface/icon_exiled_governments.dds"
-	}
-
-	spriteType = {
-		name = "GFX_icon_manage_subjects"
-		texturefile = "gfx/interface/icon_manage_subjects.dds"
-	}
-
-	spriteType = {
-		name = "GFX_icon_occupied_territories"
-		texturefile = "gfx/interface/icon_occupied_territories.dds"
-	}
-
-	spriteType = {
-		name = "GFX_ideology_neutrality_group"
-		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+		name = "GFX_ideology_stalinism_group"
+		texturefile = "gfx/interface/ideologies/stalinism_group.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_ideology_communism_group"
-		texturefile = "gfx/interface/ideologies/communism_group.dds"
+		name = "GFX_ideology_leninism_group"
+		texturefile = "gfx/interface/ideologies/leninism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_anarchism_group"
+		texturefile = "gfx/interface/ideologies/anarchism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_revisionism_group"
+		texturefile = "gfx/interface/ideologies/revisionism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_democratic_socialism_group"
+		texturefile = "gfx/interface/ideologies/democratic_socialism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_social_democracy_group"
+		texturefile = "gfx/interface/ideologies/social_democracy_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_progressive_group"
+		texturefile = "gfx/interface/ideologies/progressive_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_social_liberal_group"
+		texturefile = "gfx/interface/ideologies/social_liberal_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_market_liberal_group"
+		texturefile = "gfx/interface/ideologies/market_liberal_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_christian_democracy_group"
+		texturefile = "gfx/interface/ideologies/christian_democracy_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_conservative_group"
+		texturefile = "gfx/interface/ideologies/conservative_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_reactionary_group"
+		texturefile = "gfx/interface/ideologies/reactionary_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_democratic_nationalism_group"
+		texturefile = "gfx/interface/ideologies/democratic_nationalism_group.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ideology_authoritarian_democracy_group"
+		texturefile = "gfx/interface/ideologies/authoritarian_democracy_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_authoritarian_group"
+		texturefile = "gfx/interface/ideologies/authoritarian_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_absolute_monarchy_group"
+		texturefile = "gfx/interface/ideologies/absolute_monarchy_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_religious_group"
+		texturefile = "gfx/interface/ideologies/religious_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_militarism_group"
+		texturefile = "gfx/interface/ideologies/militarism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_nationalism_group"
+		texturefile = "gfx/interface/ideologies/nationalism_group.dds"
 	}
 	
 	spriteType = {
@@ -432,20 +469,24 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_democratic_group"
-		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+		name = "GFX_ideology_fascist_monarchy_group"
+		texturefile = "gfx/interface/ideologies/fascist_monarchy_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_national_socialism_group"
+		texturefile = "gfx/interface/ideologies/national_socialism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_neutral_group"
+		texturefile = "gfx/interface/ideologies/neutral_group.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no
-	}
-	
-	spriteType = {
-		name = "GFX_sub_goal_marker"
-		texturefile = "gfx\\interface\\sub_goal_marker.tga"
-		noOfFrames = 2
 	}
 
 	spriteType = {
@@ -499,11 +540,6 @@ spriteTypes = {
 		name = "GFX_pol_leader_frame"
 		textureFile = "gfx//interface//pol_leader_frame.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_event_leader_frame"
-		textureFile = "gfx//interface//event_leader_frame.dds"
-	}
 
 	spriteType = {
 		name = "GFX_pol_goal_bg"
@@ -536,12 +572,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_leader_unknown"
 		textureFile = "gfx/leaders/leader_unknown.dds"
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
-		name = "GFX_leader_marshal_unknown"
-		textureFile = "gfx/leaders/leader_marshal_unknown.dds"
 		legacy_lazy_load = no
 	}
 
@@ -605,11 +635,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/occupation_policy_icon_strip.dds"
 		noOfFrames = 4
 	}
-	
-	spriteType = {
-		name = "GFX_ideology_monarchy_group"
-		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
-	}
 
 	frameAnimatedSpriteType = {
 		name = "GFX_tutorial_politics_icon_glow"
@@ -622,5 +647,16 @@ spriteTypes = {
 		allwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
-	
+	spriteType = {
+		name = "GFX_ideology_monarchy_group"
+		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_theocratic_group"
+		textureFile = "gfx/interface/ideologies/theocratic_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_socialism_group"
+		textureFile = "gfx/interface/ideologies/socialism_group.dds"
+	}
 }

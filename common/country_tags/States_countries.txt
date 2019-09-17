@@ -80,7 +80,7 @@ OAX = "countries/Oaxaca.txt"
 CHP = "countries/Chiapas.txt"
 OME = "countries/Old Mexico.txt"
 YUC = "countries/Yucatan.txt"
-
+GRN = "countries/Greenland.txt"
 BAJ = "countries/Baja California.txt"
 VEC = "countries/Veracruz.txt"
 NAY = "countries/Nayarit.txt"

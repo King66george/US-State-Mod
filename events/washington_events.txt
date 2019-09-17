@@ -1,4 +1,4 @@
-add_namespace = washington
+﻿add_namespace = washington
 
   country_event = {
     id = washington.1

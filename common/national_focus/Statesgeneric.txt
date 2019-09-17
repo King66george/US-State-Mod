@@ -318,6 +318,22 @@ focus_tree = {
 			add = 20
 			tag =NVN
 		}
+		modifier = {
+			add = 20
+			tag =GRG
+		}
+		modifier = {
+			add = 20
+			tag =PAN
+		}
+		modifier = {
+			add = 20
+			tag =BAH
+		}
+		modifier = {
+			add = 20
+			tag =BAS
+		}
 	}
 	default = no
 	focus = {

@@ -9,7 +9,7 @@ state=
 	resources={
 		chromium=1 # was: 1
 	}
-	history={ 1936.1.3 = {owner = AAA controller = AAA  }
+	history={ 
 		owner = DOM
 		buildings = {
 			infrastructure = 4

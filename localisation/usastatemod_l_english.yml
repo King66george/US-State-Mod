@@ -1022,11 +1022,28 @@
  PCP_democratic_ADJ:0 "Panaman"
  PCP_monarchy_ADJ:0 "Panaman"
  PCP_communism_ADJ:0 "Panaman"
+ PCP_neutrality_ADJ:0 "Panaman"
+ PCP_neutrality:0 "Panaman"
+ PCP_neutrality_DEF:0 "Panaman"
+ GRN_neutrality:0 "Greenland"
+ GRN_democratic:0 "Republic of Greenland"
+ GRN_communism:0 "People's Republic of Greenland"
+ GRN_fascism:0 "Grænland"
+ GRN_monarchy:0 "Greenland"
+ GRN_neutrality_DEF:0 "Greenland"
+ GRN_communism_DEF:0 "Greenland"
+ GRN_monarchy_DEF:0 "Greenland"
+ GRN_democratic_DEF:0 "Greenland"
+ GRN_fascism_DEF:0 "Greenland"
+ GRN_fascism_ADJ:0 "Greenlanders"
+ GRN_democratic_ADJ:0 "Greenlanders"
+ GRN_monarchy_ADJ:0 "Greenlanders"
+ GRN_communism_ADJ:0 "Greenlanders"
+ GRN_neutrality_ADJ:0 "Greenlanders"
 
-#Monarchies
 
 
- 
+
  
 #cont secession
 
