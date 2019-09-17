@@ -1689,7 +1689,19 @@ spriteTypes = {
 		}
 		spriteType = {
 		name = "Monarchism"
-		textureFile = "gfx/interface/ideologies/monarchism_group.dds"
+		textureFile = "gfx/interface/ideologies/monarchy_group.dds"
+	  }
+		spriteType = {
+		name = "Theocratism"
+		textureFile = "gfx/interface/ideologies/theocratism_group.dds"
+	  }
+		spriteType = {
+		name = "Socialism"
+		textureFile = "gfx/interface/ideologies/socialism_group.dds"
+	  }
+		spriteType = {
+		name = "Democratic"
+		textureFile = "gfx/interface/ideologies/democratic_group.dds"
 	  }
 		spriteType = {
 		name = "GFX_WAW_CUF"

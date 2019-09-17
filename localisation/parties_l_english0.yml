@@ -52,8 +52,8 @@
  constitutional_desc:0 "Constitutional monarchy is a form of government in which a group of people rule with power under the king's influence."
  fuedal:1 "Fuedal"
  fuedal_desc:1 "Fuedal is an archaic form of government."
- theocratic:1 "Theocratic"
- theocratic_desc:1 "Theocratic is a form of government which wants the government to be led by the church"
+ theocratism:0 "Theocratic"
+ theocratism_desc:0 "Theocratic is a form of government which wants the government to be led by the church"
 
 
 
