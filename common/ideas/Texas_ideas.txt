@@ -121,8 +121,8 @@ ideas = {
 	}
 ##########Political Advisors###############
 	political_advisor = {
-		robert_bobbit = {
-			picture = idea_generic_political_advisor_europe_4
+		robert_bobbitt = {
+			picture = idea_robert_bobbitt
 			allowed = {
 				original_tag = TXT
 			}
