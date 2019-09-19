@@ -1,4 +1,4 @@
-﻿############DONT EDIT IF YOU'RE NOT LOOG.
+############DONT EDIT IF YOU'RE NOT LOOG.
 
 focus_tree = {
     id = nevada_focus
@@ -6,7 +6,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 10
+            add = 25
             tag = NVN
         }
     }
