@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Walter Harold Covert"
+	desc = "POLITICS_WALTER_COVERT_DESC"
+	picture = "Portrait_NSN_Walter_Harold_Covert.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

@@ -130,6 +130,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "William Johnston Tupper"
+	desc = "POLITICS_WILLIAM_JOHNSTON_TUPPER_DESC"
+	picture = "Portrait_MBM_William_Johnston_Tupper.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

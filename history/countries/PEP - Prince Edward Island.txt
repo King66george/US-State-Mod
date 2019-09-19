@@ -125,6 +125,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "George Des Brisay de Blois"
+	desc = "POLITICS_GEORGE_BRISAY_DESC"
+	picture = "Portrait_PEP_George_Brisay_DeBlois.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {

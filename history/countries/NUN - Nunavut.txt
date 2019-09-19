@@ -126,6 +126,15 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
+create_country_leader = {
+	name = "Stephen Angulalik"
+	desc = "POLITICS_STEPHEN_ANGULALIK_DESC"
+	picture = "Portrait_NUN_Stephen_Angulalik.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
 ### Ship Variants ###
 
 create_equipment_variant = {
