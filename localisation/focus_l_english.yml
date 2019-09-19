@@ -3586,3 +3586,9 @@ FLF_ExpansiveSpending_desc:0 "We Need to expand our Spending Initivies, natonall
 
  NVN_fortifyingLV:0 "Fortification of Las Vegas"
  NVN_fortifyingLV_desc:0 "We have two big threats to us. The bear and the sunshine. Las Vegas is one of our most prized cities, and we can't let it fall. For the future of Nevada!"
+ NVN_milfactory1:0 "Armament Effort I"
+ NVN_milfactory1_desc:0 "wip"
+ NVN_milfactory2:0 "Armament Effort II"
+ NVN_milfactory2_desc:0 "wip"
+ NVN_milfactory3:0 "Armament Effort III"
+ NVN_milfactory3_desc:0 "wip"
