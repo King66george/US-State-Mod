@@ -538,7 +538,7 @@ ideas = {
 				original_tag = KSK
 			}
 
-			traits = { silent_workhorse }
+			traits = { silent_workhorse2 }
 
 			ai_will_do = {
 				factor = 1
@@ -556,7 +556,7 @@ ideas = {
 				}
 			}
 
-			traits = { captain_of_industry }
+			traits = { captain_of_industry2 }
 
 			ai_will_do = {
 				factor = 1

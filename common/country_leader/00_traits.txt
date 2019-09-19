@@ -3430,4 +3430,22 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	silent_workhorse2 = {
+		random = no
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	captain_of_industry2 = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
