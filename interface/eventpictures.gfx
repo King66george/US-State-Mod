@@ -2125,15 +2125,15 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_jesse_owens.dds"
 	}
 	spritetype = {
-		name = "GFX_news_event_los_angeles.dds"
+		name = "GFX_news_event_los_angeles"
 		texturefile = "gfx/event_pictures/news_event_los_angeles.dds"
 	}
 	spritetype = {
-		name = "GFX_news_event_sacramento.dds"
+		name = "GFX_news_event_sacramento"
 		texturefile = "gfx/event_pictures/news_event_sacramento.dds"
 	}
 	spritetype = {
-		name = "GFX_news_event_san_francisco.dds"
+		name = "GFX_news_event_san_francisco"
 		texturefile = "gfx/event_pictures/news_event_san_francisco.dds"
 	}
 
