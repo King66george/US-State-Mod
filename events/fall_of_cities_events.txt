@@ -5,7 +5,7 @@ news_event = {
   id = news.500
   title = news.500.t
   desc = news.500.d
-  picture = GFX_news_event_kiev_ruins
+  picture = GFX_news_event_KC
 
   major = yes
 
