@@ -87,3 +87,135 @@ news_event = {
     trigger = { TAG = NVN}
   }
 }
+
+#Fall Of Los Angeles (Kansas takes over L.A.)
+news_event = {
+  id = news.502
+  title = news.502.t
+  desc = news.502.d
+  picture = GFX_news_event_los_angeles
+
+  major = yes
+
+  trigger = {
+    798 = { is_controlled_by = KSK}
+    798 = { is_owned_by = CAC }
+    KSK = { has_war_with = CAC}
+    NOT = { has_global_flag = fall_of_la_kansas }
+  }
+
+  immediate = {
+		set_global_flag = fall_of_la_kansas
+	}
+
+  mean_time_to_happen = {
+		days = 2
+	}
+
+
+  option = {
+    name = news.502.a
+    trigger = { TAG = KSK }
+  }
+  option = {
+    name = news.502.b
+    trigger = { TAG = CAC }
+  }
+  option = {
+    name = news.502.c
+    trigger = {
+      NOT = {
+        TAG = KSK
+        TAG = CAC
+      }
+    }
+  }
+}
+
+#Fall Of Sacramento (Kansas takes over Sacramento)
+news_event = {
+  id = news.503
+  title = news.503.t
+  desc = news.503.d
+  picture = GFX_news_event_sacramento
+
+  major = yes
+
+  trigger = {
+    967 = { is_controlled_by = KSK}
+    967 = { is_owned_by = CAC }
+    KSK = { has_war_with = CAC}
+    NOT = { has_global_flag = fall_of_sacramento_kansas }
+  }
+
+  immediate = {
+		set_global_flag = fall_of_sacramento_kansas
+	}
+
+  mean_time_to_happen = {
+		days = 2
+	}
+
+
+  option = {
+    name = news.503.a
+    trigger = { TAG = KSK }
+  }
+  option = {
+    name = news.503.b
+    trigger = { TAG = CAC }
+  }
+  option = {
+    name = news.503.c
+    trigger = {
+      NOT = {
+        TAG = KSK
+        TAG = CAC
+      }
+    }
+  }
+}
+
+#Fall Of Sacramento (Kansas takes over Sacramento)
+news_event = {
+  id = news.504
+  title = news.504.t
+  desc = news.504.d
+  picture = GFX_news_event_san_francisco
+
+  major = yes
+
+  trigger = {
+    968 = { is_controlled_by = KSK}
+    968 = { is_owned_by = CAC }
+    KSK = { has_war_with = CAC}
+    NOT = { has_global_flag = fall_of_San_Francisco_kansas }
+  }
+
+  immediate = {
+		set_global_flag = fall_of_San_Francisco_kansas
+	}
+
+  mean_time_to_happen = {
+		days = 2
+	}
+
+
+  option = {
+    name = news.504.a
+    trigger = { TAG = KSK }
+  }
+  option = {
+    name = news.504.b
+    trigger = { TAG = CAC }
+  }
+  option = {
+    name = news.504.c
+    trigger = {
+      NOT = {
+        TAG = KSK
+        TAG = CAC
+      }
+    }
+  }
+}
