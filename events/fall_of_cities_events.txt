@@ -93,7 +93,7 @@ news_event = {
   id = news.502
   title = news.502.t
   desc = news.502.d
-  picture = GFX_news_event_los_angeles
+  picture = GFX_news_event_LA
 
   major = yes
 
