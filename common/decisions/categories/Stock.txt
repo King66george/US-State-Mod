@@ -1,7 +1,0 @@
-stock = {
-
-	icon = GFX_decision_category_military_operation
-
-	allowed = {
-	}
-}
