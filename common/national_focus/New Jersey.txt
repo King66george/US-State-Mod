@@ -792,7 +792,7 @@ id = njdiplo10.3
 icon = GFX_goal_generic_dangerous_deal
 x = 10
 y = 9
-cost = 520
+cost = 35
 prerequisite = {focus = njdiplo9.3}
 completion_reward = {
 every_other_country = {
