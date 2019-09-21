@@ -49,4 +49,9 @@ Close = {
 value = 100
 decay = 1
 }
+#
+Aggressive = {
+value = -10
+decay = 2
+}
 }

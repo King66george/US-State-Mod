@@ -228,7 +228,7 @@ country_event = {
 id = newjersey.10
 title = newjersey.10.t
 desc = newjersey.10.d
-#picture =
+picture = GFX_report_event_airplane_factory
 is_triggered_only = yes
 
 option = {
@@ -259,4 +259,27 @@ swap_ideas = {
 }
 
 }
+
+###Preserving Liberty###
+
+country_event = {
+id = newjersey.11
+title = newjersey.11.t
+desc = newjersey.11.d
+picture = GFX_news_event_generic_army
+is_triggered_only = yes
+
+option = {
+name = newjersey.11.a
+ai_chance = {factor = 50}
+add_war_support = 0.1
+}
+
+option = {
+name = newjersey.11.b
+ai_chance = {factor = 50}
+add_stability = 0.1
+}
+}
+
 ###I will fuck anyone who touches this with a stick, violently###

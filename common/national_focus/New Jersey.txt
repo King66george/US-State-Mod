@@ -926,12 +926,12 @@ mutually_exclusive = { focus = njmid2.2 }
 completion_reward = {
 add_popularity = {
 ideology = communism
-popularity = 0.4
+popularity = 0.2
 }
-set_politics = {
-    ruling_party = communism
-    elections_allowed = no
-  }
+add_popularity = {
+ideology = socialism
+popularity = 0.2
+}
 }
 }
 
@@ -1044,7 +1044,14 @@ cost = 5
 prerequisite = { focus = njmid2.1 }
 mutually_exclusive = { focus = njmid3.2 }
 completion_reward = {
-
+add_popularity = {
+ideology = communism
+popularity = 0.4
+}
+set_politics = {
+    ruling_party = communism
+    elections_allowed = no
+  }
 }
 }
 
@@ -1059,7 +1066,14 @@ cost = 5
 prerequisite = { focus = njmid2.1 }
 mutually_exclusive = { focus = njmid3.1 }
 completion_reward = {
-
+add_popularity = {
+ideology = socialism
+popularity = 0.4
+}
+set_politics = {
+    ruling_party = socialism
+    elections_allowed = yes
+  }
 }
 }
 
@@ -1073,7 +1087,10 @@ y = 2
 cost = 5
 prerequisite = { focus = njmid2.2 }
 completion_reward = {
-
+add_ideas = aggro_diplo
+every_neighbor_country = {
+reverse_add_opinion_modifier = { target = ROOT modifier = Aggressive }
+}
 }
 }
 
@@ -1087,7 +1104,8 @@ y = 2
 cost = 5
 prerequisite = { focus = njmid2.3 }
 completion_reward = {
-
+add_war_support = 0.1
+add_stability = 0.1
 }
 }
 
@@ -1101,7 +1119,7 @@ y = 2
 cost = 5
 prerequisite = { focus = njmid2.4 }
 completion_reward = {
-
+country_event = newjersey.11
 }
 }
 
@@ -1115,7 +1133,21 @@ y = 2
 cost = 5
 prerequisite = { focus = njmid2.6 }
 completion_reward = {
-
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+        }
 }
 }
 
@@ -1129,7 +1161,21 @@ y = 2
 cost = 5
 prerequisite = { focus = njmid2.6 }
 completion_reward = {
-
+random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+        }
 }
 }
 
@@ -1143,7 +1189,27 @@ y = 2
 cost = 5
 prerequisite = { focus = njmid2.6 }
 completion_reward = {
-
+random_owned_controlled_state = {
+				add_building_construction = {
+					type = Infrastructure
+					level = 3
+					instant_build = yes
+				}
+        }
+        random_owned_controlled_state = {
+        				add_building_construction = {
+        					type = Infrastructure
+        					level = 3
+        					instant_build = yes
+        				}
+                }
+                random_owned_controlled_state = {
+                				add_building_construction = {
+                					type = Infrastructure
+                					level = 3
+                					instant_build = yes
+                				}
+                        }
 }
 }
 
