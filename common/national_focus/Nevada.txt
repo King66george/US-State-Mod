@@ -1,18 +1,18 @@
 ############DONT EDIT IF YOU'RE NOT LOOG.
 
 focus_tree = {
-    id = nevada_focus
-    continuous_focus_position = { x = 20 y = 1700 }
-    country = {
-        factor = 0
-        modifier = {
-            add = 25
-            tag = NVN
-        }
-    }
+  id = nevada_focus
+  continuous_focus_position = { x = 20 y = 1700 }
+  country = {
+    factor = 0
+      modifier = {
+        add = 10
+        tag = NVN
+      }
+  }
 	default = no
 
-###############CONSTRUCTION SHIT
+##CONSTRUCTION##
 
   focus = {
 		id = NVN_fortifyingLV
@@ -523,7 +523,7 @@ focus = {
 			}
 		}
 	}
-##############OIL FIELDS, CHROMIUM
+##Oil and Chromium
 focus = {
   id = NVN_blackgold
   icon = GFX_goal_unknown
@@ -632,7 +632,7 @@ focus = {
     }
   }
 }
-##################EQUIPMENT AND STUFF
+##Equipment and Stuff
 focus = {
   id = NVN_equipment_effort
   icon = GFX_goal_generic_small_arms
@@ -742,7 +742,7 @@ focus = {
       }
 
 }
-###############AIRFORCE
+##AIRFORCE
 focus = {
   id = NVN_aviation_effort
   icon = GFX_goal_generic_build_airforce
@@ -828,7 +828,7 @@ focus = {
       }
 
 }
-#############POLITICAL SHIT
+##POLITICAL
 focus = {
   id = NVN_ideologypathbegin
   icon = GFX_focus_usa_recruit_the_free_corps
@@ -840,7 +840,7 @@ focus = {
       }
 
 }
-#############FASCISM
+##FASCISM
 focus = {
   id = NVN_fascism
   icon = GFX_goal_unknown
@@ -930,7 +930,7 @@ focus = {
             }
         }
     }
-############COMMUNISM
+##COMMUNISM
 focus = {
   id = NVN_communism
   icon = GFX_goal_unknown
@@ -1004,7 +1004,7 @@ focus = {
   				}
 
   	}
-########################MONARCHY
+##MONARCHY
 focus = {
   id = NVN_monarchy
   icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -1067,7 +1067,7 @@ focus = {
       }
 
 }
-#############DEMOCRACY
+##DEMOCRACY
 focus = {
   id = NVN_democracy
   icon = GFX_focus_generic_the_giant_wakes
