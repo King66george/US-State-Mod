@@ -12,7 +12,7 @@ state={
 		owner = AKA
 		buildings = {
 			infrastructure = 5
-			air_base = 1	
+			air_base = 1
 			industrial_complex = 2
 			arms_factory = 1
 			13091 = {
@@ -22,15 +22,15 @@ state={
 
 		}
 		victory_points = {
-			13091 8 
+			13091 8
 		}
 
 	}
 
 	provinces={
-		4833 13091 13320 13326 13325 13321 13323 
+		4833 13091 13320 13326 13325 13321 13323
 	}
-	manpower=507500
+	manpower=1250000
 	buildings_max_level_factor=1.000
 	state_category=city
 }

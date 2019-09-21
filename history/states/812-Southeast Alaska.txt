@@ -1,7 +1,7 @@
 state={
 	id=812
 	name="Alaskan Capital Region"
-	manpower=303500
+	manpower=750000
 	state_category=town
 	resources={
 		oil=72
