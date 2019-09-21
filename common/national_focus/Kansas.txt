@@ -478,6 +478,8 @@ focus_tree = {
 			x = -3
 			y = 1
 
+			relative_position_id = KSK_democratic4
+
 			cost = 10
 
 			ai_will_do = {factor = 1}
@@ -1705,29 +1707,6 @@ focus_tree = {
 							}
 					}
 		}
-		focus = {
-			id = KSK_air8
-			icon = GFX_focus_generic_paratrooper
-			prerequisite = { focus = KSK_air1 }
-
-			x = 0
-			y = 2
-
-			relative_position_id = KSK_air1
-
-			cost = 5
-
-			completion_reward = {
-				add_tech_bonus = {
-					name = special_bonus
-					bonus = 1.0
-					uses = 1
-					technology = paratroopers
-					technology = paratroopers2
-				}
-			}
-		}
-
 
 		focus = {
 					id = KSK_air9
@@ -1786,6 +1765,28 @@ focus_tree = {
 					is_female = yes
 					}
 				set_rule = { can_generate_female_aces = yes }
+			}
+		}
+		focus = {
+			id = KSK_air8
+			icon = GFX_focus_generic_paratrooper
+			prerequisite = { focus = KSK_air11 }
+
+			x = 0
+			y = 2
+
+			relative_position_id = KSK_air1
+
+			cost = 5
+
+			completion_reward = {
+				add_tech_bonus = {
+					name = special_bonus
+					bonus = 1.0
+					uses = 1
+					technology = paratroopers
+					technology = paratroopers2
+				}
 			}
 		}
 
