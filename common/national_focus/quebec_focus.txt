@@ -69,7 +69,7 @@ focus_tree = {
 	focus = {
 		id = QBC_political_effort
 		icon = GFX_focus_generic_treaty
-		cost = 10.00
+		cost = 1.00
 		x = 42
 		y = 0
 			available_if_capitulated = yes
@@ -1877,7 +1877,7 @@ focus_tree = {
 	focus = {
 		id = QBC_Collective_goal
 		icon = GFX_focus_eng_special_air_service
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = QBC_deterrence2
 		}
@@ -2109,7 +2109,7 @@ focus_tree = {
 	focus = {
 		id = QBC_liberty_ethos
 		icon = GFX_goal_support_democracy
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = QBC_political_effort
 		}
@@ -3737,7 +3737,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 4.00
 		prerequisite = {
-			focus = QBC_halifax_shipyards
+			focus = QBC_quebecois_shipyards
 		}
 		x = 72
 		y = 1

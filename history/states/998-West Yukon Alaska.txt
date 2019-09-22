@@ -13,16 +13,11 @@ state={
 		buildings = {
 			infrastructure = 5
 			air_base = 1
-			industrial_complex = 2
-			arms_factory = 1
-			13091 = {
-				naval_base = 1
 
-			}
 
 		}
 		victory_points = {
-			13091 8
+			13069 1
 		}
 
 	}
@@ -31,5 +26,5 @@ state={
 	}
 	manpower=150000
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=rural
 }

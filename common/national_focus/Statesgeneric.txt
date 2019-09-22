@@ -338,6 +338,10 @@ focus_tree = {
 			add = 20
 			tag =GRN
 		}
+		modifier = {
+			add = 20
+			tag =WYW
+		}
 	}
 	default = no
 	focus = {
