@@ -32,12 +32,7 @@ focus_tree = {
 		}
 
 		available = {
-			divisions_in_border_state = {
-				type = infantry
-				size > 1
-				state = 902
-				border_state = 903
-			}
+			has_army_manpower = { size > 30000 }
 		}
 
 		bypass = {
