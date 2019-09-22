@@ -129,11 +129,30 @@ set_popularities = {
 	fascism = 1
 }
 create_country_leader = {
+	name = "Rawghlie Clement Stanford"
+	desc = ""
+	picture = "Portrait_AZA_RawghlieClementStanford.dds"
+	expire = "1949.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+create_country_leader = {
 	name = "Robert Taylor Jones"
 	desc = "POLITICS_ROBERT_JONES_DESC"
 	picture = "Portrait_AZA_Robert_Taylor_Jones.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Henry Chee Dodge"
+	desc = ""
+	picture = "Portrait_AZA_HenryCheeDodge.dds"
+	expire = "1965.1.1"
+	ideology = constitutional
 	traits = {
 	}
 }

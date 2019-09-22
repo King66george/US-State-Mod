@@ -176,8 +176,6 @@ ideologies = {
 			centrism = {
 			}
 
-			monarchism = {
-			}
 		}
 
 		dynamic_faction_names = {
@@ -236,8 +234,7 @@ ideologies = {
 			feudal = {
 			}
 
-			theocratic = {
-			}
+		
 		}
 
 		dynamic_faction_names = {

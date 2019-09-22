@@ -2,7 +2,7 @@
 
 oob = "QBC_1936"
 
-set_research_slots = 3
+set_research_slots = 4
 set_country_flag = monroe_doctrine
 
 # Starting tech
@@ -96,13 +96,10 @@ set_politics = {
 
 	ruling_party = democratic
 	last_election = "1935.10.14"
-	election_frequency = 60
+	election_frequency = 30
 	elections_allowed = yes
 }
-add_ideas = {
-		#laws
-		home_of_the_free
-	}
+
 set_popularities = {
 	democratic = 98
 	communism = 1
@@ -113,21 +110,76 @@ set_stability = 0.9
 
 1939.1.1 = {
 set_stability = 0.9
-	set_politics = {
 
-		ruling_party = democratic
-		last_election = "1935.10.14"
-		election_frequency = 60
-		elections_allowed = yes
-	}
 }
 create_country_leader = {
 	name = "Esioff Léon Patenaude"
 	desc = "POLITICS_ESSIOF_PAUTENAUDE_DESC"
 	picture = "Portrait_QBC_Esioff_Leon_Patenaude.dds"
 	expire = "1965.1.1"
+	ideology = constitutional
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Adelard Godbout"
+	picture = "gfx/leaders/QBC/Portrait_QBC_AdelardGodbout.dds"
+	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Adrien Arcand"
+	desc = ""
+	picture = "gfx/leaders/QBC/Portrait_QBC_AdrienArcand.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Michel Chartrand"
+	desc = ""
+	picture = "gfx/leaders/QBC/Portrait_QBC_michelchartrand.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+		workernation
+		socialistunion
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Duplessis"
+	picture = "gfx/leaders/QBC/Portrait_QBC_mauriceDuplessis.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Jean-Marie-Rodrigue Villeneuve"
+	picture = "gfx/leaders/QBC/Portrait_QBC_villeneuve.dds"
+	expire = "1965.1.1"
+	ideology = theocratic
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Annie Buller"
+	picture = "gfx/leaders/QBC/Portrait_QBC_anniebuller.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		workernation
+		socialistunion
 	}
 }
 create_corps_commander = {

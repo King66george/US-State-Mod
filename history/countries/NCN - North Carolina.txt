@@ -127,11 +127,38 @@ set_popularities = {
 	fascism = 1
 }
 create_country_leader = {
+	name = "John C.B. Ehringhaus"
+	desc = ""
+	picture = "Portrait_NCN_JohnCBEhringhaus.dds"
+	expire = "1939.1.7"
+	ideology = conservatism
+	traits = {
+	}
+}
+create_country_leader = {
 	name = "Clyde R. Hoey"
 	desc = "POLITICS_CLYDE_R_HOEY_DESC"
 	picture = "Portrait_NCN_Clyde_R_Hoey.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "William Dudley Pelley"
+	desc = ""
+	picture = "Portrait_NCN_WilliamDudleyPelley.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Norman Matoon Thomas"
+	desc = ""
+	picture = "Portrait_NCN_NormanMatoonThomas.dds"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 	}
 }

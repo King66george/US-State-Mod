@@ -17,8 +17,8 @@ adjacency_rule
 	{
 		army = no
 		navy = no
-		submarine = no
-		trade = no
+		submarine = yes
+		trade = yes
 	}
 	enemy =
 	{
@@ -145,8 +145,8 @@ adjacency_rule
 	{
 		army = no
 		navy = no
-		submarine = no
-		trade = no
+		submarine = yes
+		trade = yes
 	}
 	enemy =
 	{
@@ -164,9 +164,9 @@ adjacency_rule
 	}
 	neutral =
 	{
-		army = no
-		navy = no
-		submarine = no
+		army = yes
+		navy = yes
+		submarine = yes
 		trade = yes
 	}
 
@@ -273,8 +273,8 @@ adjacency_rule
 	{
 		army = no
 		navy = no
-		submarine = no
-		trade = no
+		submarine = yes
+		trade = yes
 	}
 	enemy =
 	{
@@ -314,8 +314,8 @@ adjacency_rule
 	{
 		army = no
 		navy = no
-		submarine = no
-		trade = no
+		submarine = yes
+		trade = yes
 	}
 	enemy =
 	{
@@ -355,8 +355,8 @@ adjacency_rule
 	{
 		army = no
 		navy = no
-		submarine = no
-		trade = no
+		submarine = yes
+		trade = yes
 	}
 	enemy =
 	{
@@ -395,10 +395,10 @@ adjacency_rule
 
 	contested =
 	{
-		army = no
+		army = yes
 		navy = no
-		submarine = no
-		trade = no
+		submarine = yes
+		trade = yes
 	}
 	enemy =
 	{
@@ -437,10 +437,10 @@ adjacency_rule
 
 	contested =
 	{
-		army = no
+		army = yes
 		navy = no
-		submarine = no
-		trade = no
+		submarine = yes
+		trade = yes
 	}
 	enemy =
 	{
@@ -458,9 +458,9 @@ adjacency_rule
 	}
 	neutral =
 	{
-		army = no
-		navy = no
-		submarine = no
+		army = yes
+		navy = yes
+		submarine = yes
 		trade = yes
 	}
 
