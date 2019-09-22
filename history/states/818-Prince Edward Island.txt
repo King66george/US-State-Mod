@@ -1,7 +1,7 @@
 state={
 	id=818
 	name="Prince Edward Island"
-		manpower=2092000
+		manpower=992000
 	state_category=large_town
 	history={
 		owner = PEP

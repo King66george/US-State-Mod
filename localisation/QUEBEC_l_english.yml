@@ -1,7 +1,8 @@
 ﻿l_english:
- 
- QBC_war_bonds:0 "War Bonds"
- QBC_war_bonds_desc:0 "We cannot finance the war effort based on our meagre tax base or resource exports. The patriotic Canadian people must invest in their country and support the war effort through War Bonds."
+ QBC_quebecois_shipyards:0 "Quebecois Naval Supremecy"
+ QBC_quebecois_shipyards_desc:0 "Quebecois Naval Supremecy"
+ QBC_war_bonds2:0 "War Bonds"
+ QBC_war_bonds2_desc:0 "We cannot finance the war effort based on our meagre tax base or resource exports. The patriotic Canadian people must invest in their country and support the war effort through War Bonds."
  QBC_wartime_prices_and_trade_board:0 "Wartime Prices and Trade Board"
  QBC_wartime_prices_and_trade_board_desc:0 "To prevent profiteering and hoarding, price controls have been introduced to make goods available to most Canadians."
  QBC_long_branch_arsenal:0 "Long Branch Arsenal"
@@ -182,8 +183,8 @@
  QBC_collectivist_ethos_desc:0 "Our enemies may divide and conquer lesser nations, but our people will stand united. All for one and one for all."
  QBC_liberty_ethos:0 "Democratic Concensus"
  QBC_liberty_ethos_desc:0 "In this time of ideological fanatics who seek to suffocate the human spirit, we will safeguard individual liberties and freedom."
- QBC_militarism:0 "For Quebec!"
- QBC_militarism_desc:0 "Those who view the military as a necessary evil are doomed to hesitate in the face of war. We will ingrain militarism into our culture to become a people of soldiers."
+ QBC_militarism2:0 "For Quebec!"
+ QBC_militarism2_desc:0 "Those who view the military as a necessary evil are doomed to hesitate in the face of war. We will ingrain militarism into our culture to become a people of soldiers."
  QBC_political_correctness:0 "Political Correctness"
  QBC_political_correctness_desc:0 "People holding mildly controversial or otherwise embarrassing opinions appear to be concerned that there is a wide-reaching conspiracy against them. This seems like an excellent idea."
  QBC_neutrality_focus:0 "Neutrality Focus"
@@ -413,8 +414,8 @@
  QBC_more_slots_desc:0 "another man sacred lands is a nations treasure -paraphrased"
  QBC_begin_digging:0 "Begin Digging"
  QBC_begin_digging_desc:0 "Its time we secured our own resources for our new nation"
- QBC_balanced_budget:0 "Move to Secure Foreign Investments"
- QBC_balanced_budget_desc:0 "mercantilism is the udder use of diplomacy and tariffs to drive all markets down except your own -Sergeant Murica"
+ QBC_balanced_budget2:0 "Move to Secure Foreign Investments"
+ QBC_balanced_budget2_desc:0 "mercantilism is the udder use of diplomacy and tariffs to drive all markets down except your own -Sergeant Murica"
  QBC_steel_add:0 "Expand our Steel Industry"
  QBC_steel_add_desc:0 "Steel is the second most important resource in the modern world, i went to war for the first"
  QBC_tung_add:0 "Dig for Tungsten"
@@ -559,7 +560,9 @@
  QBC_naval_air_effort_desc:0 "The efficacy of air strikes against naval targets was demonstrated by the Americans already back in 1921. We should not neglect this branch of the Air Force if we intend to wage war on a naval power."
  QBC_nationalism_focus_start:0 "Nationalism Focus"
  QBC_nationalism_focus_start_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
-
+ QBC_escort_fleet:0 "Small and Agile"
+ QBC_light_cruiser_effort:0 "Light Cruisers"
+ 
 
 
 

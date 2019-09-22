@@ -1,7 +1,7 @@
 state={
 	id=891
 	name="New Hampshire"
-	manpower=1104713
+	manpower=904713
 	state_category=rural
 	resources={
 		steel=12.000

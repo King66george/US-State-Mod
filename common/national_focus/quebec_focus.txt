@@ -11,7 +11,7 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = QBC_halifax_shipyards
+		id = QBC_quebecois_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		x = 72
@@ -1655,8 +1655,8 @@ focus_tree = {
 					has_government = communism
 				}
 			completion_reward = {
-					add_political_power = 120
-					add_manpower = 375000
+					add_political_power = 180
+					add_manpower = 37500
 				}
 
 	}

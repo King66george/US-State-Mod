@@ -2,7 +2,7 @@
 state={
 	id=366
 	name="Southern Florida"
-	manpower=1468210
+	manpower=1068210
 	state_category=city
 	history={
 		owner = FLF

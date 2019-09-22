@@ -37,7 +37,7 @@ country = {
 			picture = generic_infantry_bonus
 	
 			modifier = {
-				monthly_population = 10
+				monthly_population = 0.10
 			}
 		}
 		
@@ -53,7 +53,7 @@ country = {
 			picture = generic_manpower_bonus
 	
 			modifier = {
-				conscription = 0.025
+				conscription = 0.017
 				enemy_partisan_effect = -0.1
 			}
 		}
@@ -96,8 +96,8 @@ country = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				conscription_factor = 0.1
-				stability_factor = 0.4
-				conscription = 0.02
+				stability_factor = -0.4
+				conscription = 0.01
 			}
 		}
 	}

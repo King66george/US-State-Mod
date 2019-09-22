@@ -1,7 +1,7 @@
 state={
 	id=886
 	name="North New York"
-	manpower=1588061
+	manpower=588061
 	state_category= rural
 	resources={
 		steel=13.000

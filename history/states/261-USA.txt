@@ -7,7 +7,7 @@ state={
 		aluminium=3.000
 	}
 	
-	state_category = metropolis
+	state_category = large_city
 
 	history={
 		owner = OHO

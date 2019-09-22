@@ -2,7 +2,7 @@
 state={
 	id=367
 	name="West Alabama"
-	manpower=1646247
+	manpower=846247
 	state_category=city
 	resources={
 		steel=5

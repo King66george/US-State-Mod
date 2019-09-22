@@ -2,7 +2,7 @@
 state={
 	id=911
 	name="Pierre"
-	manpower=1435572
+	manpower=835572
 	buildings_max_level_factor=1.000
 	state_category=city
 	history={

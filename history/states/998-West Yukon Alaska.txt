@@ -1,7 +1,7 @@
-
 state={
-	id=991
-	name="Anchorage"
+	id=998
+	name="STATE_998"
+
 	resources={
 		oil=25.000
 		tungsten=15.000
@@ -26,11 +26,10 @@ state={
 		}
 
 	}
-
 	provinces={
-		4833 13091 13320 13326 13325 13321 13323
+		4848 13069
 	}
-	manpower=1050000
+	manpower=150000
 	buildings_max_level_factor=1.000
 	state_category=city
 }

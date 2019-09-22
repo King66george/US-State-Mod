@@ -1,7 +1,7 @@
 state={
 	id=877
 	name="Blue Ridge Mountains"
-	manpower=1251054
+	manpower=751054
 
 	resources={
 		oil=53.000

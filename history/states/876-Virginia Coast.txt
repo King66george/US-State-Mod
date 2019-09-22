@@ -1,7 +1,7 @@
 state={
 	id=876
 	name="Virginia Coast"
-	manpower=2551054
+	manpower=1551054
 	state_category=large_city
 	history={
 		owner = VAV

@@ -2,7 +2,7 @@
 state={
 	id=392
 	name="Central Iowa"
-	manpower=2470938
+	manpower=970938
 	state_category=city
 	history={
 		owner = IAI

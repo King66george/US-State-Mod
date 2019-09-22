@@ -1,8 +1,8 @@
 state={
 	id=810
 	name="Southeast Washington"
-	manpower=1063395
-	state_category=large_town
+	manpower=863395
+	state_category=rural
 	history={
 		owner = WAW
 		buildings = {

@@ -1,7 +1,7 @@
 state={
 	id=857
 	name="West Indiana"
-	manpower=1238501
+	manpower=938501
 	state_category=large_city
 	history={
 		owner = INI

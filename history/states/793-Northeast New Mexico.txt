@@ -1,7 +1,7 @@
 state={
 	id=793
 	name="Northeast New Mexico"
-			manpower = 823316
+			manpower = 623316
 
 	state_category = city
 

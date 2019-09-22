@@ -1,7 +1,7 @@
 state={
 	id=838
 	name="South Arkansas"
-	manpower=1854481
+	manpower=754481
 	state_category= city
 	resources={
 		aluminium=14.000

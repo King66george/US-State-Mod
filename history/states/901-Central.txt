@@ -1,7 +1,7 @@
 state={
 	id=901
 	name="Columbus"
-	manpower=1110471
+	manpower=1910471
 	resources={
 		steel=3.000
 	}

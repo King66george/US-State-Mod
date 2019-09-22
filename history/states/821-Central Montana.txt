@@ -1,7 +1,7 @@
 state={
 	id=821
 	name="Central Montana"
-	manpower=937605
+	manpower=537605
 	state_category= town
 	resources={
 		tungsten=11.000

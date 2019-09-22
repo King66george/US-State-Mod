@@ -2,8 +2,8 @@
 state={
 	id=395
 	name="Springfield"
-	manpower=7630651
-	state_category=megalopolis
+	manpower=1630651
+	state_category=city
 	history={
 		owner = ILI
 		buildings = {

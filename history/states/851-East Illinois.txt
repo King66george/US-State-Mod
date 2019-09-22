@@ -1,14 +1,14 @@
 state={
 	id=851
 	name="East Illinois"
-	manpower=830651
-	state_category=megalopolis
+	manpower=930651
+	state_category=large_city
 	history={
 		owner = ILI
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
-			industrial_complex = 5
+			industrial_complex = 3
 			air_base = 3
 
 		}

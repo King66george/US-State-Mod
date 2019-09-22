@@ -9,7 +9,7 @@ state={
 			infrastructure = 6
 			industrial_complex = 3
 			air_base = 3
-			arms_factory = 4
+			arms_factory = 2
 
 		}
 		add_core_of = TXT
@@ -25,7 +25,7 @@ state={
 	provinces={
 		805 2082 3960 4577 5001 6968 7628 9829 10778 12486 13226 13227 13229 13230 13231 13232 
 	}
-	manpower=221543
+	manpower=1221543
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=large_city
 }
