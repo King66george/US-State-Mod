@@ -5,7 +5,7 @@ state={
 		oil=20.000
 		aluminium=8.000
 		rubber=5.000
-		steel=12.000
+		steel=19.000
 	}
 
 	history={

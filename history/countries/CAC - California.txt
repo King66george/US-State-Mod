@@ -33,6 +33,7 @@ set_technology = {
 	transport = 1
 	superior_firepower = 1
 	base_strike = 1
+	fighter1 = 1
 }
 
 1939.1.1 = {
@@ -136,6 +137,26 @@ create_country_leader = {
 	picture = "Portrait_CAC_Frank_Merriam.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Upton Sinclair"
+	desc = "POLITICS_UPTON_SINCLAIR_DESC"
+	picture = "Portrait_CAC_Upton_Sinclair.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "James E. Davis"
+	desc = "POLITICS_JAMESE_DAVIS_DESC"
+	picture = "Portrait_CAC_James E Davis.dds"
+	expire = "1965.1.1"
+	ideology = rexism
 	traits = {
 	}
 }

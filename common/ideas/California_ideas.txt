@@ -39,6 +39,7 @@ ideas = {
             modifier = {
                 war_support_factor = 0.10
                 communism_drift = -0.10
+                democratic_drift = 0.15
             }
           }
 
@@ -315,8 +316,10 @@ CAC_specialforcesenviromentaltraining = {
   removal_cost = -1
 
   modifier = {
-    heat_attrition_factor = -0.075
+    heat_attrition_factor = -0.20
     acclimatization_hot_climate_gain_factor = 0.1
+    winter_attrition_factor = -0.20
+    acclimatization_cold_climate_gain_factor = 0.1
     special_forces_attack_factor = 0.05
     special_forces_defence_factor = 0.05
     special_forces_cap = 0.05
@@ -394,6 +397,42 @@ CAC_ncrrevanchism = {
 
     modifier = {
       conscription = 0.025
+    }
+  }
+
+  CAC_spyidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    removal_cost = -1
+
+    modifier = {
+      decryption_factor = 0.035
+      encryption_factor = 0.035
+      enemy_partisan_effect = -0.15
+    }
+  }
+
+  CAC_anewmp = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    removal_cost = -1
+
+    modifier = {
+      max_planning = 0.25
+      training_time_army_factor = -0.15
+      conscription = 0.02
     }
   }
 

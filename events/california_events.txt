@@ -107,23 +107,20 @@ country_event = {
 					all_provinces = yes
 					limit_to_border = yes
 				}
-            }
+      }
 		}
-
-
-
-        974 = {
-			add_building_construction = {
-				type = bunker
-                level = 3
-                instant_build = yes
-                province = {
-					all_provinces = yes
-                    limit_to_border = yes
-                }
-            }
-        }
+    974 = {
+		add_building_construction = {
+			type = bunker
+        level = 3
+        instant_build = yes
+          province = {
+				     all_provinces = yes
+             limit_to_border = yes
+           }
+      }
     }
+  }
 
     option = {
       name = california.2.b
@@ -454,6 +451,10 @@ country_event = {
     option = {
       name = california.14.a
       add_ideas = CAC_policeforceempowered
+      set_technology = {
+        motorised_infantry = 1
+      }
+      load_oob = "CAC_Police_Units"
     }
   }
 

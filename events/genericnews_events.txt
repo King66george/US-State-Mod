@@ -1,0 +1,38 @@
+add_namespace = genericfocusnews
+
+# REMINDER | This event file is used for focus trees that launch global news events.
+
+
+news_event = {
+  id = genericfocusnews.1
+  title = genericfocusnews.1.t
+  desc = genericfocusnews.1.d
+  picture = GFX_news_event_005
+  is_triggered_only = yes
+
+  major = yes
+
+  trigger = {
+    CAC = {
+      has_completed_focus = CAC_localsecurity
+    }
+  }
+
+  mean_time_to_happen = {
+		days = 7
+	}
+
+
+  option = {
+    name = genericfocusnews.1.a
+    trigger = {
+      NOT = {
+        TAG = CAC
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.1.b
+    trigger = { TAG = CAC }
+  }
+}

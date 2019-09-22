@@ -2713,6 +2713,8 @@
  CAC_ncrrevanchism:0 "NCR Revanchism"
  CAC_recoveryfromwar:0 "Relieve Devastation From War"
  CAC_openrecruitmentcenters:0 "Funded Recruitment Centers"
+ CAC_spyidea:0 "The California Espionage Defense Agency"
+ CAC_anewmp:0 "A New "Military" Police"
  USA_the_pentagon:0 "Federal Defence Infrastructure"
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"
