@@ -12,17 +12,6 @@ news_event = {
 
   major = yes
 
-  trigger = {
-    CAC = {
-      has_completed_focus = CAC_localsecurity
-    }
-  }
-
-  mean_time_to_happen = {
-		days = 7
-	}
-
-
   option = {
     name = genericfocusnews.1.a
     trigger = {

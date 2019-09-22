@@ -106,18 +106,9 @@ country_event = {
 
 			is_triggered_only = yes
 
-
-
-
 			option = {
 				name = kansas.4.a
-				add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 3000
-							producer = KSK
-							}
+				load_oob = KSK_Police_Units
 				add_ideas = { KSK_police }
-				add_manpower = 60000
-
 			}
 		}
