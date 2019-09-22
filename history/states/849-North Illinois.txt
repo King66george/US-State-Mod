@@ -1,7 +1,7 @@
 state={
 	id=849
 	name="North Illinois"
-	manpower=630651
+	manpower=830651
 	resources = {
 		steel = 29.000
 	}

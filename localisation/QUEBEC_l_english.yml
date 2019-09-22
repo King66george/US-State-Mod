@@ -193,8 +193,8 @@
  QBC_interventionism_focus_desc:0 "We value the freedom of all people, not only our own citizens. If preventing tyranny means war, then so be it."
  QBC_military_youth:0 "Military Youth"
  QBC_military_youth_desc:0 "Organizations to promote discipline and political education of young people in our nation will foster loyalty and self-sacrifice early."
- QBC_deterrence:0 "Deterrence"
- QBC_deterrence_desc:0 "Standing alone, we rarely benefit from war. Fortunately, we know that the best defense is one so well-known you never have to put it to use."
+ QBC_deterrence2:0 "Iron Wall Theory"
+ QBC_deterrence2_desc:0 "We know that the best defense is one so well-known you never have to put it to use."
  QBC_volunteer_corps:0 "Volunteer Corps"
  QBC_volunteer_corps_desc:0 "Forcing our people to die for ideals of freedom would be an exercise in irony, but establishing means for those who wish to aid people abroad is not."
  QBC_paramilitarism:0 "Integrate The Militias"
@@ -562,8 +562,8 @@
  QBC_nationalism_focus_start_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  QBC_escort_fleet:0 "Small and Agile"
  QBC_light_cruiser_effort:0 "Light Cruisers"
- 
-
+ QBC_fascist_fanaticism:0 "Further Fascist Ideas"
+ QBC_strength_populism:0 "Seeping Populism"
 
 
 

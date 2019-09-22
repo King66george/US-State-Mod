@@ -1,7 +1,7 @@
 state={
 	id=881
 	name="Waynesburg Hills"
-	manpower=831346
+	manpower=1031346
 	state_category=town
 	resources={
 		steel=44.000

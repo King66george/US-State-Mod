@@ -1,7 +1,7 @@
 state={
 	id=850
 	name="South Illinois"
-	manpower=630651
+	manpower=930651
 	state_category=large_city
 	history={
 		owner = ILI

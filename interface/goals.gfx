@@ -1701,7 +1701,11 @@ spriteTypes = {
 	  }
 		spriteType = {
 		name = "Democratic"
-		textureFile = "gfx/interface/ideologies/democratic_group.dds"
+		textureFile = "gfx/interface/goals/democratic.dds"
+	  }
+		spriteType = {
+		name = "communism"
+		textureFile = "gfx/interface/goals/communism.dds"
 	  }
 		spriteType = {
 		name = "GFX_WAW_CUF"

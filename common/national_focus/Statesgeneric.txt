@@ -334,6 +334,10 @@ focus_tree = {
 			add = 20
 			tag =BAS
 		}
+		modifier = {
+			add = 20
+			tag =GRN
+		}
 	}
 	default = no
 	focus = {
