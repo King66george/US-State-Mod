@@ -15,7 +15,7 @@ focus_tree = {
 ##CONSTRUCTION##
 
   focus = {
-		id = NVN_fortifyingLV
+		id = NVN_fortifyinglv
 		#text = "OHO_politicalbell"
 		icon = GFX_goal_unknown
 		cost = 2.00
@@ -39,7 +39,7 @@ focus_tree = {
 		id = NVN_milfactory1
 		#text = "OHO_politicalbell"
 		icon = GFX_goal_unknown
-    prerequisite = { focus = NVN_fortifyingLV }
+    prerequisite = { focus = NVN_fortifyinglv }
 		cost = 5.00
 		x = 0
 		y = 1
@@ -162,7 +162,7 @@ focus_tree = {
       id = NVN_civfactory1
       #text = "OHO_politicalbell"
       icon = GFX_goal_unknown
-      prerequisite = { focus = NVN_fortifyingLV }
+      prerequisite = { focus = NVN_fortifyinglv }
       cost = 5.00
       x = 2
       y = 1
@@ -285,7 +285,7 @@ focus = {
   id = NVN_infrastructure1
   #text = "OHO_politicalbell"
   icon = GFX_goal_unknown
-  prerequisite = { focus = NVN_fortifyingLV }
+  prerequisite = { focus = NVN_fortifyinglv }
   cost = 5.00
   x = 4
   y = 1
