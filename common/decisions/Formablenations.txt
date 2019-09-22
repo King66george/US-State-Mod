@@ -1470,12 +1470,18 @@ Great_Louisiana = {
 		available = {
 			is_subject = no
 			controls_state = 952
+			controls_state = 953
+			controls_state = 954
+			controls_state = 846
 			controls_state = 951
-			controls_state = 375
+			controls_state = 383
+			controls_state = 965
+			controls_state = 911
+			controls_state = 940
+			controls_state = 949
+			controls_state = 802
 
         }
-
-
 		cost = 100
 
 		fire_only_once = yes
@@ -1502,7 +1508,57 @@ Great_Louisiana = {
 				790 = { add_core_of = ROOT }
 				956 = { add_core_of = ROOT }
 				838 = { add_core_of = ROOT }
-
+				820 = { add_core_of = ROOT }
+				948 = { add_core_of = ROOT }
+				821 = { add_core_of = ROOT }
+				388 = { add_core_of = ROOT }
+				825 = { add_core_of = ROOT }
+				940 = { add_core_of = ROOT }
+				389 = { add_core_of = ROOT }
+				826 = { add_core_of = ROOT }
+				911 = { add_core_of = ROOT }
+				390 = { add_core_of = ROOT }
+				822 = { add_core_of = ROOT }
+				823 = { add_core_of = ROOT }
+				824 = { add_core_of = ROOT }
+				381 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
+				847 = { add_core_of = ROOT }
+				391 = { add_core_of = ROOT }
+				846 = { add_core_of = ROOT }
+				845 = { add_core_of = ROOT }
+				954 = { add_core_of = ROOT }
+				392 = { add_core_of = ROOT }
+				844 = { add_core_of = ROOT }
+				373 = { add_core_of = ROOT }
+				843 = { add_core_of = ROOT }
+				903 = { add_core_of = ROOT }
+				842 = { add_core_of = ROOT }
+				953 = { add_core_of = ROOT }
+				372 = { add_core_of = ROOT }
+				952 = { add_core_of = ROOT }
+				838 = { add_core_of = ROOT }
+				374 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				951 = { add_core_of = ROOT }
+				830 = { add_core_of = ROOT }
+				896 = { add_core_of = ROOT }
+				831 = { add_core_of = ROOT }
+				829 = { add_core_of = ROOT }
+				383 = { add_core_of = ROOT }
+				902 = { add_core_of = ROOT }
+				382 = { add_core_of = ROOT }
+				802 = { add_core_of = ROOT }
+				801 = { add_core_of = ROOT }
+				803 = { add_core_of = ROOT }
+				800 = { add_core_of = ROOT }
+				793 = { add_core_of = ROOT }
+				950 = { add_core_of = ROOT }
+				376 = { add_core_of = ROOT }
+				791 = { add_core_of = ROOT }
+				792 = { add_core_of = ROOT }
+				788 = { add_core_of = ROOT }
+				789 = { add_core_of = ROOT }
 				}
 			add_war_support = 0.1
 
@@ -2696,6 +2752,211 @@ The_Pact_of_the_Four = {
         				826 = { add_core_of = ROOT }
         				825 = { add_core_of = ROOT }
         				940 = { add_core_of = ROOT }
+        				add_war_support = 0.1
+        			}
+
+
+        		}
+            }
+        GreatFrenchQuebec = {
+
+            icon = generic_form_nation
+
+              allowed = {
+
+              }
+
+              cancel_if_not_visible = yes
+
+              visible = {
+        			or = {
+        				original_tag = QBC
+        			}
+        		}
+
+        		available = {
+        			is_subject = no
+        			controls_state = 990
+        			controls_state = 943
+        			controls_state = 332
+        			controls_state = 980
+        			controls_state = 979
+        			controls_state = 977
+                }
+
+
+        		cost = 100
+
+        		fire_only_once = yes
+
+        		ai_will_do = {
+        		  factor = 1
+        		}
+
+        		complete_effect = {
+        			set_cosmetic_tag = GFQ
+        			set_capital = 989
+        			add_stability = 0.10
+        			custom_effect_tooltip = core_land
+        			hidden_effect = {
+        				990 = { add_core_of = ROOT }
+        				943 = { add_core_of = ROOT }
+        				332 = { add_core_of = ROOT }
+        				980 = { add_core_of = ROOT }
+        				979 = { add_core_of = ROOT }
+        				977 = { add_core_of = ROOT }
+        				357 = { add_core_of = ROOT }
+        				978 = { add_core_of = ROOT }
+        				891 = { add_core_of = ROOT }
+        				890 = { add_core_of = ROOT }
+        				682 = { add_core_of = ROOT }
+        				815 = { add_core_of = ROOT }
+        				add_war_support = 0.1
+        			}
+
+
+        		}
+            }
+        NewFrance = {
+
+            icon = generic_form_nation
+
+              allowed = {
+
+              }
+
+              cancel_if_not_visible = yes
+
+              visible = {
+        			or = {
+        				original_tag = QBC
+        				original_tag = LAL
+        			}
+        		}
+
+        		available = {
+        			is_subject = no
+        			controls_state = 990
+        			controls_state = 943
+        			controls_state = 332
+        			controls_state = 980
+        			controls_state = 979
+        			controls_state = 977
+        			controls_state = 990
+        			controls_state = 943
+        			controls_state = 332
+        			controls_state = 980
+        			controls_state = 979
+        			controls_state = 977
+			controls_state = 952
+			controls_state = 953
+			controls_state = 954
+			controls_state = 846
+			controls_state = 951
+			controls_state = 383
+			controls_state = 965
+			controls_state = 911
+			controls_state = 940
+			controls_state = 949
+			controls_state = 802
+			controls_state = 318
+			controls_state = 319
+			controls_state = 694
+                }
+
+
+        		cost = 100
+
+        		fire_only_once = yes
+
+        		ai_will_do = {
+        		  factor = 1
+        		}
+
+        		complete_effect = {
+        			set_cosmetic_tag = NFR
+        			set_capital = 989
+        			add_stability = 0.10
+        			custom_effect_tooltip = core_land
+        			hidden_effect = {
+        				990 = { add_core_of = ROOT }
+        				943 = { add_core_of = ROOT }
+        				332 = { add_core_of = ROOT }
+        				980 = { add_core_of = ROOT }
+        				979 = { add_core_of = ROOT }
+        				977 = { add_core_of = ROOT }
+        				357 = { add_core_of = ROOT }
+        				978 = { add_core_of = ROOT }
+        				891 = { add_core_of = ROOT }
+        				890 = { add_core_of = ROOT }
+        				682 = { add_core_of = ROOT }
+        				815 = { add_core_of = ROOT }
+				951 = { add_core_of = ROOT }
+				952 = { add_core_of = ROOT }
+				375 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				898 = { add_core_of = ROOT }
+				374 = { add_core_of = ROOT }
+				371 = { add_core_of = ROOT }
+				835 = { add_core_of = ROOT }
+				834 = { add_core_of = ROOT }
+				790 = { add_core_of = ROOT }
+				956 = { add_core_of = ROOT }
+				838 = { add_core_of = ROOT }
+				820 = { add_core_of = ROOT }
+				948 = { add_core_of = ROOT }
+				821 = { add_core_of = ROOT }
+				388 = { add_core_of = ROOT }
+				825 = { add_core_of = ROOT }
+				940 = { add_core_of = ROOT }
+				389 = { add_core_of = ROOT }
+				826 = { add_core_of = ROOT }
+				911 = { add_core_of = ROOT }
+				390 = { add_core_of = ROOT }
+				822 = { add_core_of = ROOT }
+				823 = { add_core_of = ROOT }
+				824 = { add_core_of = ROOT }
+				381 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
+				847 = { add_core_of = ROOT }
+				391 = { add_core_of = ROOT }
+				846 = { add_core_of = ROOT }
+				845 = { add_core_of = ROOT }
+				954 = { add_core_of = ROOT }
+				392 = { add_core_of = ROOT }
+				844 = { add_core_of = ROOT }
+				373 = { add_core_of = ROOT }
+				843 = { add_core_of = ROOT }
+				903 = { add_core_of = ROOT }
+				842 = { add_core_of = ROOT }
+				953 = { add_core_of = ROOT }
+				372 = { add_core_of = ROOT }
+				952 = { add_core_of = ROOT }
+				838 = { add_core_of = ROOT }
+				374 = { add_core_of = ROOT }
+				833 = { add_core_of = ROOT }
+				951 = { add_core_of = ROOT }
+				830 = { add_core_of = ROOT }
+				896 = { add_core_of = ROOT }
+				831 = { add_core_of = ROOT }
+				829 = { add_core_of = ROOT }
+				383 = { add_core_of = ROOT }
+				902 = { add_core_of = ROOT }
+				382 = { add_core_of = ROOT }
+				802 = { add_core_of = ROOT }
+				801 = { add_core_of = ROOT }
+				803 = { add_core_of = ROOT }
+				800 = { add_core_of = ROOT }
+				793 = { add_core_of = ROOT }
+				950 = { add_core_of = ROOT }
+				376 = { add_core_of = ROOT }
+				791 = { add_core_of = ROOT }
+				792 = { add_core_of = ROOT }
+				788 = { add_core_of = ROOT }
+				789 = { add_core_of = ROOT }
+				318 = { add_core_of = ROOT }
+				694 = { add_core_of = ROOT }
+				319 = { add_core_of = ROOT }
         				add_war_support = 0.1
         			}
 

@@ -158,7 +158,7 @@ set_popularities = {
 
 create_faction = faction_for_american_unification
 add_to_faction = WDC
-add_to_faction = VAV
+add_to_faction = MDM
 
 create_country_leader = {
  		name = "Franklin D. Roosevelt"

@@ -565,17 +565,19 @@
  QBC_fascist_fanaticism:0 "Further Fascist Ideas"
  QBC_strengh_populism:0 "Seeping Populism"
 
+ QUBECOIS_research:0 "Quebecois Research League"
 
 
+ quebecois.1:0 "Quebec Aims Higher"
+ quebecois.1.t:0 "Quebec Aims Higher"
+ quebecois.1.d:0 "Quebec has revitalized its French roots even further and aims to regain its title as New France into the coming millenia, how say you?"
+ quebecois.1.a:0 "We pledge allegiance to Quebec!"
+ quebecois.1.b:0 "Come and take it populist scum!"
+ quebecois.1.c:0 "We will stop you from ever achieving this goal!"
+ quebecois.1.d:0 "We can assist but never will we be controlled"
 
 
-
-
-
-
-
-
-
+ unitedfrenchlegion:0 "United French Legions"
 
 
 

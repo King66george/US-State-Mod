@@ -1417,7 +1417,7 @@ focus_tree = {
 	focus = {
 		id = QBC_collectivist_ethos
 		icon = GFX_goal_generic_national_unity
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = QBC_political_effort
 		}
@@ -1456,9 +1456,12 @@ focus_tree = {
 	focus = {
 		id = QBC_internationalism_focus
 		icon = GFX_goal_support_communism
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = QBC_collectivist_ethos
+		}
+		mutually_exclusive = {
+			focus = QBC_socialist_ways
 		}
 		x = 25
 		y = 2
@@ -1511,67 +1514,34 @@ focus_tree = {
 		y = 3
 			dynamic = yes
 			completion_reward = {
-					PRU = {
+					MEM = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
+									popularity = 0.4
 								}
 						}
-					BOL = {
+					NHN = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
+									popularity = 0.3
 								}
 						}
-					ARG = {
+					VTV = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
+									popularity = 0.4
 								}
 						}
-					CHL = {
+					ONO = {
 							add_popularity = {
 									ideology = communism
 									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
 								}
 						}
-					URG = {
+					LAB = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
-								}
-						}
-					COL = {
-							add_popularity = {
-									ideology = communism
-									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
-								}
-						}
-					ECU = {
-							add_popularity = {
-									ideology = communism
-									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
+									popularity = 0.3
 								}
 						}
 					add_named_threat = {
@@ -1738,9 +1708,12 @@ focus_tree = {
 	focus = {
 		id = QBC_socialist_ways
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 14.00
+		cost = 7.00
 		prerequisite = {
 			focus = QBC_collectivist_ethos
+		}
+		mutually_exclusive = {
+			focus = QBC_internationalism_focus
 		}
 		x = 33
 		y = 2
@@ -2028,11 +2001,11 @@ focus_tree = {
 			completion_reward = {
 					VEN = {
 							add_popularity = {
-									ideology = communism
+									ideology = socialism
 									popularity = 0.6
 								}
 							set_politics = {
-									ruling_party = communism
+									ruling_party = socialism
 								}
 						}
 					add_to_faction = VEN
@@ -2083,10 +2056,6 @@ focus_tree = {
 			ai_will_do = {
 					factor = 35
 				}
-			available = {
-					is_in_faction_with = ENG
-					is_in_tech_sharing_group = commonwealth_research
-				}
 			bypass = {
 
 }
@@ -2097,12 +2066,13 @@ focus_tree = {
 
 }
 			completion_reward = {
-					CAN = {
+					QBC = {
 							modify_tech_sharing_bonus = {
-									id = commonwealth_research
+									id = QUBECOIS_research
 									bonus = 0.05
 								}
 						}
+					add_research_slot = 2
 				}
 
 	}
@@ -2681,7 +2651,7 @@ focus_tree = {
 
 }
 			completion_reward = {
-					USA = {
+					QBC = {
 							add_to_tech_sharing_group = us_research
 						}
 					add_to_tech_sharing_group = us_research
@@ -4831,7 +4801,7 @@ focus_tree = {
 	focus = {
 		id = QBC_team_up
 		icon = GFX_goal_support_communism
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = QBC_spread_communism
 		}
@@ -4839,15 +4809,39 @@ focus_tree = {
 		y = 4
 			dynamic = yes
 			completion_reward = {
-					add_to_faction = PRU
-					add_to_faction = BOL
-					add_to_faction = ARG
-					add_to_faction = CHL
-					add_to_faction = URG
-					add_to_faction = COL
-					add_to_faction = ECU
+				
+					ONO = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					MEM = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					NHN = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					VTV = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					LAB = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
 					add_named_threat = {
-							threat = 15
+							threat = 8
 							name = QBCFACTION
 						}
 				}
@@ -4864,49 +4858,34 @@ focus_tree = {
 		y = 5
 			dynamic = yes
 			completion_reward = {
-					GUA = {
+					HAI = {
 							add_popularity = {
 									ideology = communism
 									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
 								}
 						}
-					HON = {
+					DOM = {
 							add_popularity = {
 									ideology = communism
 									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
 								}
 						}
-					ELS = {
+					GDL = {
 							add_popularity = {
 									ideology = communism
 									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
 								}
 						}
-					NIC = {
+					PAN = {
 							add_popularity = {
 									ideology = communism
 									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
 								}
 						}
 					COS = {
 							add_popularity = {
 									ideology = communism
 									popularity = 0.6
-								}
-							set_politics = {
-									ruling_party = communism
 								}
 						}
 				}
@@ -4915,7 +4894,7 @@ focus_tree = {
 	focus = {
 		id = QBC_team_up2
 		icon = GFX_goal_support_communism
-		cost = 10.00
+		cost = 20.00
 		prerequisite = {
 			focus = QBC_spread_communism2
 		}
@@ -4923,12 +4902,36 @@ focus_tree = {
 		y = 6
 			dynamic = yes
 			completion_reward = {
-					add_to_faction = GUA
-					add_to_faction = HON
-					add_to_faction = ELS
-					add_to_faction = NIC
-					add_to_faction = COS
-					add_to_faction = PAN
+					HAI = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					DOM = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					GDL = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					PAN = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
+					COS = {
+							country_event = {
+									days = 1
+									id = quebecois.1
+								}
+						}
 					add_named_threat = {
 							threat = 10
 							name = QBCFACTION

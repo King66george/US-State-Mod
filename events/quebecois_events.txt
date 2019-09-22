@@ -1,0 +1,54 @@
+﻿add_namespace = quebecois
+
+country_event = {
+		id = quebecois.1
+		title = quebecois.1.t
+		desc = quebecois.1.d
+		picture = GFX_report_event_pla_in_beijing
+		is_triggered_only = yes
+		fire_only_once = yes
+		option = {
+			name = quebecois.1.a
+			ai_chance = {
+				factor = 65
+			}
+			QBC = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+		option = {
+			name = quebecois.1.b
+			ai_chance = { factor = 35}
+
+			QBC = {
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
+			}
+		}
+		option = {
+			name = quebecois.1.c
+			ai_chance = { factor = 0}
+
+			ROOT = {
+				create_wargoal = {
+					type = annex_everything
+					target = QBC
+				}
+			}
+		}
+		option = {
+			name = quebecois.1.d
+			ai_chance = { factor = 0}
+			trigger = {
+				NOT = { has_government = FROM }
+			}
+			ROOT = {
+				add_to_faction= unitedfrenchlegion
+			}
+		}
+	}
