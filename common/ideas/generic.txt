@@ -2,66 +2,10 @@ ideas = {
 
 country = {
 	
-	generic_neu_wargoal = {
-	
-		allowed = {
-			always = yes
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		removal_cost = -1
-
-		picture = idea_generic_war_preparation
+		generic_neu_wargoal = {
 		
-		modifier = {		
-			justify_war_goal_time = -0.10
-			generate_wargoal_tension = -0.4
-		}
-	}
-
-
-
-
-		baby_boom_focus = {
-			
-			
 			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = generic_infantry_bonus
-	
-			modifier = {
-				monthly_population = 0.10
-			}
-		}
-		
-		QBC_militarism_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-	
-			modifier = {
-				conscription = 0.017
-				enemy_partisan_effect = -0.1
-			}
-		}
-		
-		QBC_war_bonds_1 = {
-
-			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -70,36 +14,113 @@ country = {
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = idea_generic_war_preparation
 			
-			modifier = {
-				consumer_goods_factor = -0.10
-				war_support_factor = 0.3
+			modifier = {		
+				justify_war_goal_time = -0.10
+				generate_wargoal_tension = -0.4
 			}
 		}
+
+
+
+
+			baby_boom_focus = {
+				
+				
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
+
+				picture = generic_infantry_bonus
 		
-		QBC_mobilization_act = {
-
-			allowed = {
-				always = no
+				modifier = {
+					monthly_population = 0.10
+				}
 			}
+			
+			QBC_militarism_focus = {
+				
+				
+				allowed = {
+					always = no
+				}
+				
+				removal_cost = -1
 
-			allowed_civil_war = {
-				always = yes
+				picture = generic_manpower_bonus
+		
+				modifier = {
+					conscription = 0.017
+					enemy_partisan_effect = -0.1
+					mobilization_speed = 0.1
+				}
 			}
+			
+			QBC_war_bonds_1 = {
 
-			removal_cost = -1
+				allowed = {
+					always = no
+				}
 
-			picture = generic_production_bonus
+				allowed_civil_war = {
+					always = yes
+				}
 
-			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				conscription_factor = 0.1
-				stability_factor = -0.4
-				conscription = 0.01
+				removal_cost = -1
+
+				picture = generic_goods_red_bonus
+				
+				modifier = {
+					consumer_goods_factor = -0.10
+					war_support_factor = 0.3
+				}
 			}
-		}
+			
+			QBC_mobilization_act = {
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				picture = generic_production_bonus
+
+				modifier = {
+					industrial_capacity_factory = 0.1
+					industrial_capacity_dockyard = 0.1
+					conscription_factor = 0.1
+					stability_factor = -0.4
+					conscription = 0.01
+					mobilization_speed = 0.15
+				}
+			}
+			QUBECOIS_research = {
+			
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+
+				picture = generic_production_bonus
+
+				modifier = {
+					foreign_subversive_activites = -0.50
+					research_speed_factor = 0.07 
+				}
+			
 	}
 
 }

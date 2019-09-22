@@ -135,6 +135,15 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_country_leader = {
+	name = "James W. 'Jim' Ford"
+	desc = ""
+	picture = "Portrait_ALA_James_W_Ford.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.9
 

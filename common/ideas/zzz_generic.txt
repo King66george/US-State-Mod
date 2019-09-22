@@ -362,8 +362,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				neutrality_drift = 0.1
-				mobilization_speed = 0.15
+				mobilization_speed = 0.2
 			}
 		}
 		# Generic Focus Ideas

@@ -1773,6 +1773,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = YUG_idea_local_militias
+					add_ideas = military_parade
 				}
 
 	}
@@ -1786,10 +1787,6 @@ focus_tree = {
 		x = 29
 		y = 5
 			completion_reward = {
-					add_popularity = {
-							ideology = communism
-							popularity = 0.2
-						}
 					add_political_power = 120
 					add_manpower = 75000
 				}
@@ -2069,10 +2066,9 @@ focus_tree = {
 					QBC = {
 							modify_tech_sharing_bonus = {
 									id = QUBECOIS_research
-									bonus = 0.05
+									bonus = 0.10
 								}
 						}
-					add_research_slot = 2
 				}
 
 	}
@@ -4656,9 +4652,7 @@ focus_tree = {
 
 }
 			completion_reward = {
-					set_rule = {
-							can_create_factions = yes
-						}
+					add_political_power = 240
 				}
 
 	}
@@ -4719,18 +4713,8 @@ focus_tree = {
 			completion_reward = {
 					add_ideas = why_we_fight_focus
 					custom_effect_tooltip = why_we_fight_effect
-					hidden_effect = {
-							if = {
-									limit = {
-											NOT = {
-													has_idea = neutrality_idea
-												}
-										}
-									set_rule = {
-											can_create_factions = yes
-										}
-								}
-						}
+					add_political_power = 240
+				
 				}
 
 	}
@@ -5100,8 +5084,8 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
-							ideology = neutrality
-							popularity = 0.15
+							ideology = monarchy
+							popularity = 0.10
 						}
 					add_stability = 0.05
 					add_political_power = 150

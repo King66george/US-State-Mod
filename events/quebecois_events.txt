@@ -21,7 +21,7 @@ country_event = {
 		}
 		option = {
 			name = quebecois.1.b
-			ai_chance = { factor = 35}
+			ai_chance = { factor = 15}
 
 			QBC = {
 				create_wargoal = {
@@ -32,7 +32,7 @@ country_event = {
 		}
 		option = {
 			name = quebecois.1.c
-			ai_chance = { factor = 0}
+			ai_chance = { factor = 10}
 
 			ROOT = {
 				create_wargoal = {
@@ -43,7 +43,7 @@ country_event = {
 		}
 		option = {
 			name = quebecois.1.d
-			ai_chance = { factor = 0}
+			ai_chance = { factor = 10}
 			trigger = {
 				NOT = { has_government = FROM }
 			}
