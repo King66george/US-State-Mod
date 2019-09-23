@@ -21,7 +21,7 @@ bookmarks = {
 		}
 
 		"CAC" = {
-			history = "USA_GATHERING_STORM_DESC"
+			history = "CAC_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				#
