@@ -11,7 +11,8 @@ state={
 		owner = TXT
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 9
+			industrial_complex = 6
+			arms_factory = 2
 			air_base = 3
 
 		}
