@@ -1,0 +1,158 @@
+OHO_depression = {
+  OHO_dep_recovery = {
+
+    icon = decision_ger_mefo_bills
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_completed_focus = OHO_recovery
+    }
+
+    available = {
+      has_completed_focus = OHO_recovery
+      date > 6.1.1936
+    }
+
+    cost = 150
+
+    fire_only_once = yes
+
+    complete_effect = {
+      remove_ideas = worse_depression
+      add_ideas = OHO_depression_recovery
+    }
+  }
+  OHO_dep_recovery2 = {
+
+    icon = decision_generic_construction
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_decision = OHO_dep_recovery
+    }
+
+    available = {
+      has_decision = OHO_dep_recovery
+      or = {
+        has_idea = OHO_depression_recovery
+      }
+    }
+
+    cost = 150
+
+    fire_only_once = yes
+
+    complete_effect = {
+      901 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+  }
+  OHO_dep_recovery3 = {
+
+    icon = decision_generic_construction
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_decision = OHO_dep_recovery
+    }
+
+    available = {
+        has_idea = OHO_depression_recovery
+    }
+
+    cost = 150
+
+    fire_only_once = yes
+
+    complete_effect = {
+      882 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = arms_factory
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+  }
+  OHO_dep_recovery4 = {
+
+    icon = decision_generic_construction
+
+    allowed = {
+
+    }
+
+    cancel_if_not_visible = yes
+
+    visible = {
+      has_decision = OHO_dep_recovery
+    }
+
+    available = {
+        has_idea = OHO_depression_recovery
+    }
+
+    cost = 150
+
+    fire_only_once = yes
+
+    complete_effect = {
+      997 = {
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = dockyard
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+  }
+  OHO_dep_recovery5 = {
+
+    icon = decision_eng_puppet_usa
+
+    allowed = {
+
+    }
+
+    visible = {
+      has_idea = OHO_depression_recovery
+    }
+
+    available = {
+      date > 1.1.1937
+      has_idea = OHO_depression_recovery
+    }
+
+    cost = 150
+
+    fire_only_once = yes
+
+    complete_effect = {
+      remove_ideas = OHO_depression_recovery
+      add_ideas = OHO_strong_economy
+    }
+  }
+}

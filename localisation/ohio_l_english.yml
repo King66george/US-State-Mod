@@ -13,6 +13,7 @@ OHO_wagenknecht_desc:0 "Alfred Wagenknecht has suffered many political defeats. 
 
 ##Ideas##
 worse_depression:0 "§RHard Hitting Depression§!"
+OHO_depression_recovery:0 "§YDepression Recovery§!"
 agricultural__industry:0 "§GAgricultural Industry§!"
 rising_communism:0 "§YRising Communism§!"
 OHO_natsj:0 "National Union for Social Justice"
@@ -27,6 +28,13 @@ OHO_ford:0 "Henry Ford"
 #Factions#
 christian_front:0 "The Christian Front"
 
+##Decisions##
+OHO_depression:0 "Depression Recovery"
+OHO_dep_recovery:0 "Begin Depression Recovery"
+OHO_dep_recovery2:0 "Build up Civilian Industry in Columbus"
+OHO_dep_recovery3:0 "Build Up Military Industry in Cleveland"
+OHO_dep_recovery4:0 "Build Up Naval Industry in Toledo"
+OHO_dep_recovery5:0 "The Final Push"
 ##Events\/
 
 #Political Bellwether - Choose ideology drift

@@ -134,6 +134,44 @@ ideas = {
         justify_war_goal_time = 2
       }
     }
+    OHO_depression_recovery = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_gain = -0.30
+        political_advisor_cost_factor = 0.20
+        consumer_goods_factor = 0.10
+        production_speed_arms_factory_factor = -0.15
+        production_speed_industrial_complex_factor = -0.15
+      }
+      OHO_strong_economy = {
+        allowed = {
+        always = no
+        }
+
+        allowed_civil_war = {
+        always = yes
+        }
+
+        removal_cost = -1
+
+        modifier = {
+          political_power_gain = 0.15
+          political_advisor_cost_factor = -0.10
+          consumer_goods_factor = -0.5
+          production_speed_arms_factory_factor = 0.10
+          production_speed_industrial_complex_factor = 0.10
+        }
+      }
+    }
   }
   ####Advisors###
   political_advisor = {
