@@ -161,7 +161,7 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "George S. Patton"
 	picture = "Portrait_USA_George_S_Patton.dds"
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
@@ -176,13 +176,13 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lloyd Fredendall"
 	picture = "Portrait_USA_Lloyd_Fredendall.dds"
-	traits = { old_guard infantry_officer inflexible_strategist }
-	skill = 4
+	traits = { old_guard infantry_officer inflexible_strategist desert_fox trait_mountaineer }
+	skill = 5
 
-	attack_skill = 3
-	defense_skill = 2
+	attack_skill = 5
+	defense_skill = 5
 	planning_skill = 1
-	logistics_skill = 1
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -197,16 +197,16 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Lee Oliver"
 	picture = ""
-	traits = { trait_reckless }
-	skill = 2
+	traits = { trait_reckless desert_fox }
+	skill = 4
 
-	attack_skill = 2
-	defense_skill = 1
+	attack_skill = 5
+	defense_skill = 2
 	planning_skill = 2
-	logistics_skill = 1
+	logistics_skill = 3
 }
 
 create_navy_leader = {

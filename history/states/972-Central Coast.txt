@@ -11,6 +11,7 @@ state={
 
 		}
 		add_core_of = CAC
+		add_core_of = USA
 		victory_points = {
 			9637 1 
 		}
