@@ -107,6 +107,7 @@ ideas = {
           justify_war_goal_time = -0.30
           generate_wargoal_tension = -1
           ai_focus_aggressive_factor = 0.25
+          subversive_activites_upkeep = -0.25
         }
       }
 
@@ -238,6 +239,8 @@ CAC_fundrightwingnews = {
   always = yes
   }
 
+  picture = generic_fascism_drift_bonus
+
   removal_cost = -1
 
   modifier = {
@@ -253,6 +256,8 @@ CAC_policeforceempowered = {
   allowed_civil_war = {
   always = yes
   }
+
+  picture = SOV_scientist_defect
 
   removal_cost = -1
 
@@ -271,6 +276,8 @@ CAC_combinedarms = {
   always = yes
   }
 
+  picture = strategic_bombing_focus
+
   removal_cost = -1
 
   modifier = {
@@ -288,6 +295,8 @@ CAC_combinedarmsproduction = {
   allowed_civil_war = {
   always = yes
   }
+
+  picture = man_five_year_plan_tank
 
   removal_cost = -1
 
@@ -313,6 +322,8 @@ CAC_specialforcesenviromentaltraining = {
   always = yes
   }
 
+  picture = chi_army_corruption3
+
   removal_cost = -1
 
   modifier = {
@@ -336,6 +347,8 @@ CAC_advancedartillery = {
   always = yes
   }
 
+  picture = generic_artillery_regiments
+
   removal_cost = -1
 
   equipment_bonus = {
@@ -353,6 +366,8 @@ CAC_ncrrevanchism = {
   allowed_civil_war = {
   always = yes
   }
+
+  picture = tfv_can_conscription_crisis
 
   removal_cost = -1
 
@@ -375,6 +390,8 @@ CAC_ncrrevanchism = {
     always = yes
     }
 
+    picture = generic_foreign_capital
+
     removal_cost = -1
 
     modifier = {
@@ -393,6 +410,8 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
+    picture = usa_desegregation_1
+
     removal_cost = -1
 
     modifier = {
@@ -409,11 +428,13 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
+    picture = generic_spy_intel
+
     removal_cost = -1
 
     modifier = {
-      decryption_factor = 0.035
-      encryption_factor = 0.035
+      decryption_factor = 0.05
+      encryption_factor = 0.05
       enemy_partisan_effect = -0.15
     }
   }
@@ -426,6 +447,8 @@ CAC_ncrrevanchism = {
     allowed_civil_war = {
       always = yes
     }
+
+    picture = generic_army_war_college
 
     removal_cost = -1
 
