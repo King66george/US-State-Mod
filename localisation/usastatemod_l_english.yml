@@ -6,7 +6,7 @@
  ALA_monarchy:0 "Alabaman Duchy"
  ALA_monarchy_DEF:0 "Alabama"
  ALA_communism:0 "Alabama's Peoples Republic"
- ALA_communism_DEF:0 "Alabama's Peoples Republic" 
+ ALA_communism_DEF:0 "Alabama's Peoples Republic"
  ALA_theocratism:0 "Nickajack"
  ALA_theocratism_DEF:0 "Nickajack"
  ALA_socialism:0 "Alabaman Peoples Republic"
@@ -314,8 +314,8 @@
  IAI_democratic_ADJ:0 "Iowan"
  IAI_monarchy_ADJ:0 "Iowan"
  IAI_communism_ADJ:0 "Iowan"
- KSK_fascism:0 "Kansan Empire"
- KSK_fascism_DEF:0 "The Kansan Empire"
+ KSK_fascism:0 "Kansan Legion"
+ KSK_fascism_DEF:0 "The Kansan Legion"
  KSK_democratic:0 "State of Kansas"
  KSK_democratic_DEF:0 "The State of Kansas"
  KSK_monarchy:0 "Kansas"
@@ -1725,7 +1725,7 @@
 
 
 
- 
+
 #cont secession
 
  NNN_fascism:0 "Neglected Sectors of Nebraska"
