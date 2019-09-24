@@ -15,7 +15,7 @@
  QBC_baby_boom_desc:0 "With the support of the church, the people are encourage to have more babies to increase birth rate."
  QBC_baby_boom2:0 "Baby Boom"
  QBC_baby_boom2_desc:0 "With the support of the church, the people are encourage to have more babies to increase birth rate."
- QBC_facist_ways:0 "The Fascists Ways"
+ QBC_facist_ways:0 "The Monarchs"
  QBC_facist_ways_desc:0 "Build the nation under facist ideology"
  QBC_socialist_ways:0 "Pull Out The Roots of Facism"
  QBC_socialist_ways_desc:0 "Repress all facist tendencies. Teach them the life of socialism. They will learn of our peacefull ways, by force if nescessary. Some facists might move to Canada."
@@ -39,8 +39,8 @@
  QBC_facism_MIM_desc:0 "Try to turn the USA to the dark side of ruling."
  QBC_pope:0 "Influence Pope Election"
  QBC_pope_desc:0 "Use our political influence to get a pope from Quebec elected"
- QBC_papal_state:0 "Rise Of The Papal State"
- QBC_papal_state_desc:0 "Use popular disontent against Benito Mussolini and replace the acutal government with a Papal State"
+ QBC_papal_state:0 "The New Papal State"
+ QBC_papal_state_desc:0 "Use popular discontent against Benito Mussolini and replace the acutal government with a Papal State"
  QBC_war_ger:0 "War With Germany"
  QBC_war_ger_desc:0 "Hitler is a dangerous, vicious and treacherous person. The world will be better without him."
  QBC_takes_ontario:0 "Annex Ontario"
@@ -548,7 +548,7 @@
  QBC_political_commissars_desc:0 "To ensure that our policies are followed in military practice, we will introduce politically appointed officials into military ranks."
  QBC_internationalism_focus:0 "Internationalism Focus"
  QBC_internationalism_focus_desc:0 "Ideology knows no borders. Another nation may call itself sovereign, but our convictions are above such claims."
- QBC_nationalism_focus:0 "Nationalism Focus"
+ QBC_nationalism_focus:0 "Fury onto Thee!"
  QBC_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  QBC_ideological_fanaticism:0 "Ideological Fanaticism"
  QBC_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
@@ -558,7 +558,7 @@
  QBC_air_innovation_2_desc:0 "Every advantage we can gain in the skies is precious. We should focus all of our efforts on developing our fighters."
  QBC_naval_air_effort:0 "Naval Air Effort"
  QBC_naval_air_effort_desc:0 "The efficacy of air strikes against naval targets was demonstrated by the Americans already back in 1921. We should not neglect this branch of the Air Force if we intend to wage war on a naval power."
- QBC_nationalism_focus_start:0 "Nationalism Focus"
+ QBC_nationalism_focus_start:0 "Nationalism on the Rise"
  QBC_nationalism_focus_start_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."
  QBC_escort_fleet:0 "Small and Agile"
  QBC_light_cruiser_effort:0 "Light Cruisers"
@@ -578,7 +578,10 @@
 
 
  unitedfrenchlegion:0 "United French Legions"
+ Qeubecianmonarch:0 "The Realm of Québéc"
+ theocraticquebec:0 "The Order of the Knight's Templar"
 
 
+ QBC_focus_oob:0 "Quebec Legions"
 
  

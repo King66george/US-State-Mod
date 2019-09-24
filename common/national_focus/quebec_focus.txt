@@ -106,7 +106,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			complete_tooltip = {
 					air_experience = 25
-					if = {
+					if = {`
 							limit = {
 									has_country_flag = aviation_effort_AB
 								}
@@ -1852,6 +1852,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_deterrence2
 		}
+		will_lead_to_war_with = PREV
 		x = 29
 		y = 9
 			completion_reward = {
@@ -2403,18 +2404,6 @@ focus_tree = {
 							elections_allowed = yes
 						}
 					set_political_party = {
-							ideology = democratic
-							popularity = 6
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 10
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 10
-						}
-					set_political_party = {
 							ideology = monarchy
 							popularity = 74
 						}
@@ -2507,21 +2496,10 @@ focus_tree = {
 							elections_allowed = yes
 						}
 					set_political_party = {
-							ideology = democratic
-							popularity = 6
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 10
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 10
-						}
-					set_political_party = {
 							ideology = theocratism
 							popularity = 74
 						}
+					create_faction = theocraticquebec
 				}
 
 	}
@@ -2631,12 +2609,6 @@ focus_tree = {
 		y = 5
 			ai_will_do = {
 					factor = 35
-				}
-			available = {
-					is_in_faction_with = USA
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
-						}
 				}
 			bypass = {
 
@@ -2764,6 +2736,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+					set_nationality = FRA
 					add_ideas = collectivist_ethos_focus
 				}
 
@@ -2819,7 +2792,7 @@ focus_tree = {
 		y = 7
 			available_if_capitulated = yes
 			completion_reward = {
-					MIM = {
+					MEM = {
 							set_politics = {
 									ruling_party = fascism
 								}
@@ -2831,15 +2804,15 @@ focus_tree = {
 								}
 						}
 					QBC = {
-							puppet = MIM
+							puppet = MEM
 						}
-					add_to_faction = MIM
+					add_to_faction = MEM
 					hidden_effect = {
-							MIM = {
+							MEM = {
 									start_civil_war = {
 											ruling_party = fascism
 											ideology = democratic
-											size = 0.5
+											size = 0.35
 											only_own_territory = no
 										}
 								}
@@ -2918,6 +2891,8 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					army_experience = 20
+					create_faction = unitedfrenchlegion
+					add_ideas = deterrence
 					set_rule = {
 							can_send_volunteers = yes
 						}
@@ -3426,6 +3401,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_takes_GREENLAND
 		}
+		will_lead_to_war_with = PREV
 		x = 61
 		y = 9
 			completion_reward = {
@@ -5088,6 +5064,8 @@ focus_tree = {
 							ideology = monarchy
 							popularity = 0.10
 						}
+					army_experience = 20
+					create_faction = Qeubecianmonarch
 					add_stability = 0.05
 					add_political_power = 150
 				}
@@ -5128,6 +5106,7 @@ focus_tree = {
 			focus = QBC_rearmement_agreement
 			focus = QBC_long_branch_arsenal
 		}
+		will_lead_to_war_with = PREV
 		x = 49
 		y = 8
 			completion_reward = {

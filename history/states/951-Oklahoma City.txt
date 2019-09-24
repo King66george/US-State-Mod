@@ -1,6 +1,6 @@
 state={
 	id=951
-	name="Oklahama City"
+	name="Oklahoma City"
 	resources={
 		rubber=10.000
 	}
@@ -14,7 +14,7 @@ state={
 		}
 		add_core_of = OKO
 		victory_points = {
-			1806 1
+			10798 15
 		}
 
 	}

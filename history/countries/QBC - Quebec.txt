@@ -96,12 +96,11 @@ set_politics = {
 
 	ruling_party = democratic
 	last_election = "1935.10.14"
-	election_frequency = 30
+	election_frequency = 20
 	elections_allowed = yes
 }
 
-create_faction = unitedfrenchlegion
-add_to_faction = QBC
+
 
 set_popularities = {
 	democratic = 98

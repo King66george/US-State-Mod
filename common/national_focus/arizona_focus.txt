@@ -2021,6 +2021,7 @@ focus_tree = {
 		prerequisite = {
 			focus = AZagressive1
 		}
+		will_lead_to_war_with = CAC
 		x = 33
 		y = 3
 			completion_reward = {
@@ -2696,6 +2697,7 @@ focus_tree = {
 		prerequisite = {
 			focus = arm_our_borders
 		}
+		will_lead_to_war_with = NMN
 		x = 13
 		y = 6
 			ai_will_do = {
