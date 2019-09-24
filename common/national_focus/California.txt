@@ -19,9 +19,10 @@ focus_tree = {
 		cost = 1.00
 		x = 19
 		y = 0
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
+		factor = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
 			available = {
 					date > 1936.02.23
 				}
@@ -55,6 +56,7 @@ focus_tree = {
 		cost = 7.25
 		x = 5
 		y = 0
+		factor = 5
 			completion_reward = {
 					967 = {
 							add_extra_state_shared_building_slots = 2
@@ -412,6 +414,7 @@ focus_tree = {
 		id = CAC_nevadawar
 		icon = GFX_CAC_freedom
 		cost = 7.25
+		factor = 5
 		prerequisite = {
 			focus = CAC_expandncrstates
 		}
@@ -1079,6 +1082,7 @@ focus_tree = {
 		id = CAC_frankmerriamsplans
 		icon = GFX_CAC_frankmerriamsplans
 		cost = 1.50
+		factor = 5
 		prerequisite = {
 			focus = CAC_politicalstate
 		}
@@ -1977,6 +1981,37 @@ focus_tree = {
 	}
 	}
 
+
+	focus = {
+		id = CAC_assassinatecommunists
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_statecontrolledmedia
+		}
+		x = 11
+		y = 4
+			completion_reward = {
+					country_event = california.17
+					custom_effect_tooltip = california_james_assassinate
+				}
+
+	}
+
+	focus = {
+		id = CAC_extendpresidentalpowers
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_assassinatecommunists
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+
+				}
+
+	}
 
 	#ending focus tree bracket DO NOT put focuses past this line
 }

@@ -5,6 +5,7 @@ CAC_electedpresident:0 "Has elected a new president."
 lloydsway:0 "Has chosen Lloyd's army model."
 pattonsway:0 "Has chosen Patton's army model."\
 california_training_tech_effect:0 "Tech - All Infantry:\nMountains and Desert:\n§GMovement §G+10%\nAttack §G+7.5%\nDefence §G+7.5%\n\n"
+california_james_assassinate:0 "\n§RAn attempt to assassinate Upton Sinclair and multiple other communist politicans in California will be attempted to secure Davis's position! If failed.. Davis will be ruined!"
 
 #This file is meant for all California focus and description localization.
 
@@ -126,3 +127,5 @@ CAC_airbaseexpansion:0 "Expand Sierra Army Depot"
 CAC_militaryroads:0 "Roads For The Military"
 CAC_oilforfactories:0 "Outsource Oil For Arms Factories"
 CAC_oilforcivfactories:0 "Outsource Oil For Commerical Business"
+CAC_assassinatecommunists:0 "Assassinate Upton Sinclair"
+CAC_extendpresidentalpowers:0 "Extend Presidental Powers"
