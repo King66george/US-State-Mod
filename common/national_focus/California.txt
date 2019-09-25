@@ -447,7 +447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_bajaexpedition
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_Baja
 		cost = 7.25
 		prerequisite = {
 			focus = CAC_nevadawar
@@ -1984,7 +1984,7 @@ focus_tree = {
 
 	focus = {
 		id = CAC_assassinatecommunists
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_CAC_assassinatecommunists
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_statecontrolledmedia

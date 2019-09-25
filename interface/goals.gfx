@@ -1719,5 +1719,13 @@ spriteTypes = {
 		name = "GFX_goal_ideology_socialism"
 		texturefile = "gfx/interface/goals/goal_ideology_socialism.dds"
 	}
+	SpriteType = {
+		name = "GFX_CAC_assassinatecommunists"
+		texturefile = "gfx/interface/goals/CAC_assassinatecommunists.dds"
+	}
+	SpriteType = {
+		name = "GFX_Baja"
+		texturefile = "gfx/interface/goals/Baja.dds"
+	}
 
 }
