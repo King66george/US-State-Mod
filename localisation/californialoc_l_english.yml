@@ -6,6 +6,7 @@ lloydsway:0 "Has chosen Lloyd's army model."
 pattonsway:0 "Has chosen Patton's army model."\
 california_training_tech_effect:0 "Tech - All Infantry:\nMountains and Desert:\n§GMovement §G+10%\nAttack §G+7.5%\nDefence §G+7.5%\n\n"
 california_james_assassinate:0 "\n§RAn attempt to assassinate Upton Sinclair and multiple other communist politicans in California will be attempted to secure Davis's position! If failed.. Davis will be ruined!"
+CAC_assassinationsuccess:0 "Upton Sinclair has been assassinated."
 
 #This file is meant for all California focus and description localization.
 
@@ -100,7 +101,7 @@ CAC_aircraftproductioneffort:0 "Fighter Production Effort"
 CAC_newairforce:0 "The Airforce Of The Pacific States Of America"
 CAC_rapidmilitarization:0 "Rapid Militarization"
 CAC_givethepolicemorepower:0 "Give The Police More Power"
-CAC_statecontrolledmedia:0 "State-Controlled Media"
+CAC_statecontrolledmedia:0 "Use Hollywood For Propaganda"
 CAC_buildhawaii3:0 "Civilian Aid To Hawaii"
 CAC_buildhawaii4:0 "The Fortress Of Hawaii"
 CAC_bajaexpedition:0 "The Baja Expedition"

@@ -395,6 +395,11 @@ focus_tree = {
 		id = CAC_expandncrstates
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 14.30
+
+		available = {
+				has_completed_focus = CAC_localsecurity
+		}
+
 		prerequisite = {
 			focus = CAC_army2
 		}
@@ -2002,6 +2007,11 @@ focus_tree = {
 		id = CAC_extendpresidentalpowers
 		icon = GFX_focus_generic_treaty
 		cost = 10.00
+
+		available = {
+				has_country_flag = CAC_assassinationsuccess
+		}
+
 		prerequisite = {
 			focus = CAC_assassinatecommunists
 		}
