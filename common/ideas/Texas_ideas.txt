@@ -37,6 +37,7 @@ ideas = {
 			fascism_acceptance = 100
 			army_core_attack_factor = -0.25
 			army_core_defence_factor = 0.1
+			join_faction_tension = 1
 			}
 		}
 		TXT_idea_rangers = {
