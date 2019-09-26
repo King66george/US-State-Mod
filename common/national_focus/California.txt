@@ -1991,13 +1991,18 @@ focus_tree = {
 		id = CAC_assassinatecommunists
 		icon = GFX_CAC_assassinatecommunists
 		cost = 10.00
+
+		available = {
+			has_country_flag = CAC_sinclaircontestedelections
+		}
+
 		prerequisite = {
 			focus = CAC_statecontrolledmedia
 		}
 		x = 11
 		y = 4
 			completion_reward = {
-					country_event = california.17
+					country_event = california.20
 					custom_effect_tooltip = california_james_assassinate
 				}
 
