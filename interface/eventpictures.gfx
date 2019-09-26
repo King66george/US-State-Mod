@@ -2144,5 +2144,30 @@ spriteTypes = {
 		name = "GFX_news_event_LA"
 		texturefile = "gfx/event_pictures/news_event_LA.dds"
 	}
+	spritetype = {
+		name = "GFX_news_event_denver"
+		texturefile = "gfx/event_pictures/news_event_denver.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_dallas"
+		texturefile = "gfx/event_pictures/news_event_dallas.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_el_paso"
+		texturefile = "gfx/event_pictures/news_event_el_paso.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_texas"
+		texturefile = "gfx/event_pictures/news_event_texas.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_houston"
+		texturefile = "gfx/event_pictures/news_event_houston.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_austin"
+		texturefile = "gfx/event_pictures/news_event_austin.dds"
+	}
+
 
 }
