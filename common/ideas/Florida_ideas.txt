@@ -12,7 +12,7 @@ ideas = {
 				monthly_population = 0.25
 				stability_factor = -0.05
 			}
-		}		
+		}
 		## Democratic Section ###
 		FLF_Restoration_Projects = {
 			allowed = { always = no }
@@ -41,7 +41,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.10
 			}
-		}		
+		}
 		### Fascist Section ###
 		FLF_South_Pride = {
 			allowed = { always = no }
@@ -120,10 +120,10 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = -0.05	
+				consumer_goods_factor = -0.05
 				political_power_gain = 0.15
 			}
-		}		
+		}
 		### Military ###
 		FLF_Old_Tactics = {
 			allowed = { always = no }
@@ -176,7 +176,7 @@ ideas = {
 		#############################
 		#Industry UPDATE COMING SOON#
 		#############################
-		
+
 		FLF_IntegratedEconomyIdea = {
 			allowed = { always = no }
 			removal_cost = -1
@@ -191,9 +191,9 @@ ideas = {
 			removal_cost = -1
 			picture = new_deal
 			modifier = {
-				political_power_gain = -0.2	
+				political_power_gain = -0.2
 				production_speed_buildings_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.15	
+				production_factory_efficiency_gain_factor = 0.15
 				local_resources_factor = -0.15
 
 			}
@@ -203,7 +203,7 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			picture = idea_war_economy
-			modifier = {	
+			modifier = {
 				production_speed_buildings_factor = 0.05
 				local_resources_factor = 0.15
 				industrial_capacity_factory = 0.15
@@ -216,24 +216,33 @@ ideas = {
 			allowed = { always = no }
 			removal_cost = -1
 			picture = idea_generic_industrial_concern_1
-			modifier = {	
+			modifier = {
 				consumer_goods_factor = -0.05
 				local_resources_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.10
 			}
-		}		
+		}
 
 		FLF_MonopoliesBanned = {
 			allowed = { always = no }
 			removal_cost = -1
 			picture = GFX_FLF_MonopoliesBanned
-			modifier = {	
+			modifier = {
 				consumer_goods_factor = 0.05
 				local_resources_factor = 0.25
 				industrial_capacity_factory = 0.05
 
 
 			}
-		}				
+		}
+
+		FLF_alligatorbite = {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = GFX_idea_eng_preparing_the_second_front
+			modifier = {
+				amphibious_invasion = 0.25
+				justify_war_goal_time = -0.2
+			}
+		}
 	}
-	

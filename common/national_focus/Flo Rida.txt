@@ -85,10 +85,10 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FLF_expandthenavalports
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		id = FLF_coastalsecurity
+		icon = GFX_focus_generic_coastal_fort
 		cost = 10.00
-		x = 33
+		x = 36
 		y = 0
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -97,15 +97,50 @@ focus_tree = {
 			completion_reward = {
 					navy_experience = 25
 					366 = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = dockyard
-									level = 3
+									level = 2
 									instant_build = yes
-								}
+							}
 						}
-				}
-
+					961 = {
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_coastal = yes
+							}
+							level = 3
+							instant_build = yes
+						}
+					}
+					983 = {
+						add_building_construction = {
+							type = coastal_bunker
+							province = 1843
+							level = 3
+							instant_build = yes
+							}
+					}
+					366 = {
+						add_building_construction = {
+							type = coastal_bunker
+							province = 7388
+							level = 3
+							instant_build = yes
+							}
+					}
+					867 = {
+						add_building_construction = {
+							type = coastal_bunker
+							province = 12381
+							province = 1572
+							level = 3
+							instant_build = yes
+							}
+					}
+		}
 	}
 	focus = {
 		id = FLF_oldtactics
@@ -1336,12 +1371,12 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 10.00
 		prerequisite = {
-			focus = FLF_expandthenavalports
+			focus = FLF_coastalsecurity
 		}
 		mutually_exclusive = {
 			focus = FLF_largenavy
 		}
-		x = 32
+		x = 33
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1362,65 +1397,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FLF_largenavy
-		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
-		prerequisite = {
-			focus = FLF_expandthenavalports
-		}
-		mutually_exclusive = {
-			focus = FLF_flexiblenavy
-		}
-		x = 34
-		y = 1
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = fleet_in_being_bonus
-							bonus = 1.0
-							uses = 2
-							category = fleet_in_being_tree
-						}
-				}
-
-	}
-	focus = {
-		id = FLF_submarineeffort
-		icon = GFX_goal_generic_navy_submarine
-		cost = 10.00
-		prerequisite = {
-			focus = FLF_flexiblenavy
-			focus = FLF_largenavy
-		}
-		x = 32
-		y = 3
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = ss_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = ss_tech
-						}
-				}
-
-	}
-	focus = {
 		id = FLF_destroyereffort
 		icon = GFX_goal_generic_wolf_pack
 		cost = 10.00
 		prerequisite = {
-			focus = FLF_submarineeffort
+			focus = FLF_flexiblenavy
 		}
 		x = 32
-		y = 4
+		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 1
@@ -1437,13 +1421,37 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FLF_furtherexpansionoftheports
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		id = FLF_submarineeffort
+		icon = GFX_goal_generic_navy_submarine
 		cost = 10.00
 		prerequisite = {
-			focus = FLF_expandthenavalports
+			focus = FLF_flexiblenavy
 		}
-		x = 33
+		x = 34
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FLF_dockyardexpansion
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 20
+		prerequisite = {
+			focus = FLF_coastalsecurity
+		}
+		x = 36
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1452,20 +1460,71 @@ focus_tree = {
 			completion_reward = {
 					navy_experience = 50
 					867 = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = dockyard
-									level = 2
+									level = 3
 									instant_build = yes
 								}
 						}
 					866 = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = dockyard
-									level = 2
+									level = 3
 									instant_build = yes
 								}
+						}
+				}
+
+	}
+	focus = {
+		id = FLF_largenavy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_coastalsecurity
+		}
+		mutually_exclusive = {
+			focus = FLF_flexiblenavy
+		}
+		x = 39
+		y = 1
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 1.0
+							uses = 2
+							category = fleet_in_being_tree
+						}
+				}
+
+	}
+	focus = {
+		id = FLF_cruisereffort
+		icon = GFX_goal_continuous_naval_production
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_largenavy
+		}
+		x = 38
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cl_tech
+							category = ca_tech
 						}
 				}
 
@@ -1624,40 +1683,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FLF_cruisereffort
-		icon = GFX_goal_continuous_naval_production
-		cost = 10.00
-		prerequisite = {
-			focus = FLF_flexiblenavy
-			focus = FLF_largenavy
-		}
-		x = 34
-		y = 3
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = cr_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = cl_tech
-							category = ca_tech
-						}
-				}
-
-	}
-	focus = {
 		id = FLF_capitalshipeffort
 		icon = GFX_goal_generic_navy_battleship
 		cost = 10.00
 		prerequisite = {
-			focus = FLF_cruisereffort
+			focus = FLF_largenavy
 		}
-		x = 34
-		y = 4
+		x = 40
+		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 1
@@ -1675,5 +1708,104 @@ focus_tree = {
 						}
 				}
 
+	}
+	focus = {
+		id = FLF_alligatorbite
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_submarineeffort
+			focus = FLF_destroyereffort
+			focus = FLF_cruisereffort
+			focus = FLF_capitalshipeffort
+		}
+		prerequisite = {
+			focus = FLF_dockyardexpansion
+		}
+		x = 36
+		y = 3
+
+		completion_reward = {
+			add_ideas = FLF_alligatorbite
+			add_war_support = 0.2
+		}
+
+	}
+	focus = {
+		id = FLF_cubawar
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_alligatorbite
+		}
+		x = 36
+		y = 4
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CUB
+			}
+		}
+
+	}
+	focus = {
+		id = FLF_hispaniola
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_alligatorbite
+		}
+		x = 34
+		y = 4
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = DOM
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = HAI
+			}
+		}
+
+	}
+	focus = {
+		id = FLF_canal
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_alligatorbite
+		}
+		x = 38
+		y = 4
+
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PCP
+			}
+		}
+	}
+	focus = {
+		id = FLF_carribeandominance
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = FLF_cubawar
+		}
+		prerequisite = {
+			focus = FLF_canal
+		}
+		prerequisite = {
+			focus = FLF_hispaniola
+		}
+		x = 36
+		y = 5
+
+		completion_reward = {
+			add_stability = 0.25
+		}
 	}
 }
