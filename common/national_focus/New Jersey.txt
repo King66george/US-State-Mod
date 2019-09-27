@@ -1329,7 +1329,7 @@ focus = {
 id = njmid4.8
 icon = GFX_goal_generic_consumer_goods
 x = 39
-y = 3
+y = 2.5
 cost = 5
 prerequisite = { focus = njmid2.5 }
 prerequisite = { focus = njmid3.5 }
@@ -1347,8 +1347,8 @@ icon = GFX_focus_generic_treaty
 x = 41
 y = 3
 cost = 5
-prerequisite = { focus = njmid2.5 }
-mutually_exclusive = { focus = njmid4.8 }
+prerequisite = { focus = njmid4.8 }
+mutually_exclusive = { focus = njmid5.11 }
 completion_reward = {
 add_political_power = -100
 add_stability = 0.1
@@ -1521,9 +1521,10 @@ focus = {
 id = njmid5.11
 icon = GFX_goal_generic_intelligence_exchange
 x = 39
-y = 4
+y = 3
 cost = 5
 prerequisite = { focus = njmid4.8 }
+mutually_exclusive = {focus = njmid4.9}
 completion_reward = {
 
 }
