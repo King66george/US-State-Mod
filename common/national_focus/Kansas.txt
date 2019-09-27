@@ -759,7 +759,7 @@ focus_tree = {
 		}
 
 		focus = {
-				id = KSK_communist3
+				id = KSK_communist
 				icon = GFX_focus_generic_military_mission
 				prerequisite = { focus = KSK_communist2 }
 
@@ -778,12 +778,12 @@ focus_tree = {
 		focus = {
 				id = KSK_communist4
 				icon = GFX_goal_generic_fortify_city
-				prerequisite = { focus = KSK_communist3 }
+				prerequisite = { focus = KSK_communist }
 
 				x = 0
 				y = 1
 
-				relative_position_id = KSK_communist3
+				relative_position_id = KSK_communist
 
 				cost = 10
 
