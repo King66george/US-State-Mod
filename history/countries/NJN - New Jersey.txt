@@ -139,9 +139,10 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 90
+	communism = 0
+	fascism = 0
+	socialism = 10
 }
 create_country_leader = {
 	name = "A. Harry Moore"
@@ -267,7 +268,7 @@ create_equipment_variant = {
 1939.1.1 = {
 
 	create_equipment_variant = {
-		name = "Salmon Class"
+		name = "Jersey Class"
 		type = submarine_2
 		upgrades = {
 			ship_reliability_upgrade = 1

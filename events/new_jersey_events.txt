@@ -282,4 +282,40 @@ add_stability = 0.1
 }
 }
 
+###Russian Aid###
+
+country_event = {
+id = newjersey.12
+title = newjersey.12.t
+desc = newjersey.12.d
+picture = GFX_report_event_merchant_ship_01
+is_triggered_only = yes
+
+option = {
+name = newjersey.11.a
+ai_chance = {factor = 100}
+add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 producer = SOV}
+add_equipment_to_stockpile = { type = artillery_equipment amount = 3000 producer = SOV}
+add_equipment_to_stockpile = { type = support_equipment amount = 3000 producer = SOV}
+add_equipment_to_stockpile = { type = motorized_equipment amount = 1000 producer = SOV}
+}
+}
+
+###Trenton Trust###
+
+country_event = {
+id = newjersey.13
+title = newjersey.13.t
+desc = newjersey.13.d
+picture = GFX_report_event_canada_treaty
+is_triggered_only = yes
+
+option = {
+name = newjersey.12.a
+ai_chance = {factor = 100}
+add_stability = -0.1
+add_political_power = 100
+}
+}
+
 ###I will fuck anyone who touches this with a stick, violently###

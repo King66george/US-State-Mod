@@ -886,6 +886,7 @@ add_popularity = {
 ideology = fascism
 popularity = 0.2
 }
+add_stability = -0.3
 }
 }
 
@@ -1223,7 +1224,7 @@ y = 3
 cost = 5
 prerequisite = { focus = njmid3.1 }
 completion_reward = {
-
+country_event = newjersey.12
 }
 }
 
@@ -1237,7 +1238,7 @@ y = 3
 cost = 5
 prerequisite = { focus = njmid3.2 }
 completion_reward = {
-
+add_country_leader_trait = peoples_man
 }
 }
 
@@ -1251,7 +1252,12 @@ y = 3
 cost = 5
 prerequisite = { focus = njmid3.2 }
 completion_reward = {
-
+add_popularity = {
+ideology = socialism
+popularity = 0.7
+}
+add_stability = 0.1
+add_war_support = 0.15
 }
 }
 
@@ -1265,7 +1271,7 @@ y = 3
 cost = 5
 prerequisite = { focus = njmid3.3 }
 completion_reward = {
-
+add_ideas = state_first
 }
 }
 
@@ -1279,7 +1285,13 @@ y = 3
 cost = 5
 prerequisite = { focus = njmid3.3 }
 completion_reward = {
-
+army_experience = 20
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
 }
 }
 
@@ -1293,7 +1305,7 @@ y = 3
 cost = 5
 prerequisite = { focus = njmid3.4 focus = njmid3.5 }
 completion_reward = {
-
+add_ideas = def_in_deep
 }
 }
 
@@ -1307,7 +1319,7 @@ y = 3
 cost = 5
 prerequisite = { focus = njmid3.5 }
 completion_reward = {
-
+add_ideas = free_bond
 }
 }
 
@@ -1323,7 +1335,7 @@ prerequisite = { focus = njmid2.5 }
 prerequisite = { focus = njmid3.5 }
 mutually_exclusive = { focus = njmid4.9 }
 completion_reward = {
-
+country_event = newjersey.13
 }
 }
 
@@ -1338,7 +1350,8 @@ cost = 5
 prerequisite = { focus = njmid2.5 }
 mutually_exclusive = { focus = njmid4.8 }
 completion_reward = {
-
+add_political_power = -100
+add_stability = 0.1
 }
 }
 
@@ -1354,7 +1367,7 @@ prerequisite = { focus = njmid3.6 }
 prerequisite = { focus = njmid3.7 }
 prerequisite = { focus = njmid3.8 }
 completion_reward = {
-
+add_ideas = build_code
 }
 }
 

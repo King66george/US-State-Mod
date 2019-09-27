@@ -1,0 +1,57 @@
+Njdecisions = {
+freedom_bonds = {
+
+    	icon = generic_industry
+
+    	allowed = {
+            always = yes
+        }
+
+        available = {
+                    has_government = democratic
+has_completed_focus = njmid4.7
+}
+        fire_only_once = no
+
+		days_remove = 60
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 100
+				factor = 0
+			}
+		}
+
+    remove_effect = {
+    			if = {
+    				limit = { has_idea = free_bond }
+    				swap_ideas = {
+    					remove_idea = free_bond
+    					add_idea = free_bond_1
+    				}
+    			}
+    			else_if = {
+    				limit = { has_idea = free_bond_1 }
+    				swap_ideas = {
+    					remove_idea = free_bond_1
+    					add_idea = free_bond_2
+    				}
+    			}
+    			else_if = {
+    				limit = { has_idea = free_bond_2 }
+    				remove_ideas = free_bond_3
+    			}
+    		}
+
+		complete_effect = {
+
+		}
+    }
+}
