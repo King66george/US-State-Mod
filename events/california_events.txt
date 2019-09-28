@@ -486,8 +486,60 @@ country_event = {
 
 
 
+#Alaska PSA offer
+  country_event = {
+    id = california.19
+    title = california.19.t
+    desc = california.19.d
+    picture = GFX_report_event_molotov_ribentrop_handshake
 
+    is_triggered_only = yes
 
+    option = {
+      name = california.19.a
+      AKA = {
+        country_event = disunitedstates.13
+      }
+    }
+  }
+
+  #Alaska accepts!
+  country_event = {
+    id = california.20
+    title = california.20.t
+    desc = california.20.d
+    picture = GFX_report_event_molotov_ribentrop_handshake
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.20.a
+      add_political_power = 10
+    }
+  }
+
+  #Alaska declines!
+  country_event = {
+    id = california.21
+    title = california.21.t
+    desc = california.21.d
+    picture = GFX_report_event_molotov_ribentrop_handshake
+
+    is_triggered_only = yes
+
+    option = {
+      name = california.21.a
+      create_wargoal = {
+      type = annex_everything
+      target = AKA
+        }
+    }
+
+    option = {
+      name = california.21.b
+      add_political_power = -50
+    }
+  }
 
 #Sinclair Communist Riots Events
 #------------------------------

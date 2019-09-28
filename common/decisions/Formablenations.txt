@@ -750,6 +750,7 @@ hidden_effect = {
         original_tag = CAC
         original_tag = ORO
         original_tag = WAW
+        original_tag = AKA
         }
       }
 
@@ -773,6 +774,13 @@ hidden_effect = {
         controls_state = 809
         controls_state = 386
         controls_state = 810
+        controls_state = 985
+        controls_state = 812
+        controls_state = 998
+        controls_state = 991
+        controls_state = 463
+        controls_state = 813
+
 
       }
 
@@ -790,7 +798,6 @@ hidden_effect = {
     add_stability = 0.15
     custom_effect_tooltip = core_land
     hidden_effect = {
-
      974 = { add_core_of = ROOT }
      974 = { add_core_of = ROOT }
      973 = { add_core_of = ROOT }
@@ -810,6 +817,12 @@ hidden_effect = {
      809 = { add_core_of = ROOT }
      386 = { add_core_of = ROOT }
      810 = { add_core_of = ROOT }
+     985 = { add_core_of = ROOT }
+     812 = { add_core_of = ROOT }
+     998 = { add_core_of = ROOT }
+     991 = { add_core_of = ROOT }
+     463 = { add_core_of = ROOT }
+     813 = { add_core_of = ROOT }
     }
     }
     }

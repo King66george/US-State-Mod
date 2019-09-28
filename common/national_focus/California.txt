@@ -576,7 +576,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_relievebaja
-		icon = GFX_goal_generic_construction
+		icon = GFX_CAC_relieve_states
 		cost = 6.50
 		prerequisite = {
 			focus = CAC_recoveryfromwar
@@ -609,7 +609,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_relievearizona
-		icon = GFX_goal_generic_construction
+		icon = GFX_CAC_relieve_states
 		cost = 6.50
 		prerequisite = {
 			focus = CAC_recoveryfromwar
@@ -762,7 +762,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_relievenevada
-		icon = GFX_goal_generic_construction
+		icon = GFX_CAC_relieve_states
 		cost = 6.50
 		prerequisite = {
 			focus = CAC_recoveryfromwar
@@ -1809,6 +1809,22 @@ focus_tree = {
 				}
 
 	}
+
+	focus = {
+		id = CAC_alaskapsa
+		icon = GFX_CAC_deal_alaska
+		cost = 7.25
+		prerequisite = {
+			focus = CAC_beginningofpsa
+		}
+		x = 19
+		y = 9
+			completion_reward = {
+					country_event = california.19
+				}
+
+	}
+
 	focus = {
 		id = CAC_formationofpsa
 		icon = GFX_CAC_FPSA
@@ -1818,6 +1834,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CAC_oregonpsa
+		}
+		prerequisite = {
+			focus = CAC_alaskapsa
 		}
 		x = 19
 		y = 11
@@ -1831,6 +1850,12 @@ focus_tree = {
 					controls_state = 810
 					controls_state = 386
 					controls_state = 809
+					controls_state = 985
+					controls_state = 812
+					controls_state = 998
+					controls_state = 991
+					controls_state = 463
+					controls_state = 813
 				}
 			completion_reward = {
 					unlock_decision_tooltip = {

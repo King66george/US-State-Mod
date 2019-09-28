@@ -8,7 +8,7 @@ california_training_tech_effect:0 "Tech - All Infantry:\nMountains and Desert:\n
 california_james_assassinate:0 "\n\n§GA successful attempt on Sinclair will result in the communist party no longer causing trouble in California.\n\n§RA failed attempt to assassinate Upton Sinclair and multiple other communist politicans in California will be attempted to secure Davis's position! If failed.. Davis will be ruined!"
 CAC_assassinationsuccess:0 "Upton Sinclair has been assassinated."
 CAC_sinclaircontestedelections:0 "Upton Sinclair has contensted elections."
-
+core_land:0 "Will core all lands."
 #This file is meant for all California focus and description localization.
 
 CAC_politicalstate:0 "The 1936 Election"
@@ -131,3 +131,4 @@ CAC_oilforfactories:0 "Outsource Oil For Arms Factories"
 CAC_oilforcivfactories:0 "Outsource Oil For Commerical Business"
 CAC_assassinatecommunists:0 "Assassinate Upton Sinclair"
 CAC_extendpresidentalpowers:0 "Extend Presidental Powers"
+CAC_alaskapsa:0 "Meetings With Alaska"
