@@ -21,7 +21,7 @@ division_template = {
 division_template = {
 	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
 
-	regiments = {						
+	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
@@ -67,43 +67,88 @@ division_template = {
 		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   
+		engineer = { x = 0 y = 0 }
 	}
 	priority = 0
 }
 units = {
 	### 1st Florida's Army ###
 	# First Defense Corps #
-	division= {			
-		name = "1st Floridian National Guard"		
+	division= {
+		name = "1st Floridian National Guard"
 		location = 1843
 		division_template = "National Guard Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.6
 
 	}
-		division= {			
-		name = "Orlando Defense Force"		
+		division= {
+		name = "Orlando Defense Force"
 		location = 12439
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.8
 
 	}
-		division = {			
-		name = "Tallahasee Milita"		
+		division = {
+		name = "Tallahasee Milita"
 		location = 10407
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
 
 	}
-		division = {			
-		name = "Tampa Defense Force"		
+		division = {
+		name = "Tampa Defense Force"
 		location = 7388
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.45
 		start_equipment_factor = 0.29
 
+	}
+
+	navy = {
+		name = "Gulf Strike Force"
+		base = 1843
+		location = 1843 # Miami
+		ship = { name = "FSS Miami" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
+		ship = { name = "FSS Tallahasee" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
+		ship = { name = "FSS Jacksonville" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
+	}
+	navy = {
+		name = "Destroyer Flotilla  1"
+		base = 1843
+		location = 1843 # Miami
+		ship = { name = "USS Raleigh" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }
+		# 1st Destroyer Division
+		ship = { name = "USS Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS MacDonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		# 2nd Destroyer Division
+		ship = { name = "USS Farragut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS Dale" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		# 34th Destroyer Division
+		ship = { name = "USS Rathburne" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Talbot" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Waters" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Dent" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		# 35th Destroyer Division
+		ship = { name = "USS Ballard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Thornton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Litchfield" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Zane" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Wasmuth" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+	}
+	navy = {
+		name = "Gulf Cruiser Flotilla"
+		base = 1843
+		location = 1843 # Miami
+		ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+		ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+		ship = { name = "USS Minneapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+		ship = { name = "USS San Francisco" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
 	}
 	}
