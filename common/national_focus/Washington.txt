@@ -55,6 +55,10 @@ focus = {
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_political_rivalry  }
   relative_position_id = WAW_political_rivalry
+  mutually_exclusive = {
+   focus = WAW_wagen_plan
+   focus = WAW_fascist_path
+  }
   cost = 5
   x = 0
   y = 1
@@ -73,6 +77,10 @@ focus = {
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_political_rivalry  }
   relative_position_id = WAW_political_rivalry
+  mutually_exclusive = {
+   focus = WAW_wagen_plan
+   focus = WAW_follow_martin
+  }
   cost = 5
   x = -6
   y = 1
@@ -91,7 +99,10 @@ focus = {
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_political_rivalry  }
   relative_position_id = WAW_political_rivalry
-  mutually_exclusive = { focus = WAW_follow_martin }
+  mutually_exclusive = {
+  focus = WAW_follow_martin
+  focus = WAW_wagen_plan
+  }
   cost = 5
   x = 6
   y = 1
@@ -246,5 +257,17 @@ focus = {
 
   }
 }
+
+focus = {
+  id = WAW_fight_the_depression
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_follow_martin }
+  relative_position_id = WAW_follow_martin
+  cost = 10
+  x = 2
+  y = 1
+}
+
+
 
 }

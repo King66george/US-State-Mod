@@ -1727,5 +1727,13 @@ spriteTypes = {
 		name = "GFX_Baja"
 		texturefile = "gfx/interface/goals/Baja.dds"
 	}
+	SpriteType = {
+		name = "GFX_CAC_relieve_states"
+		texturefile = "gfx/interface/goals/CAC_relieve_states.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAC_deal_alaska"
+		texturefile = "gfx/interface/goals/CAC_deal_alaska.dds"
+	}
 
 }
