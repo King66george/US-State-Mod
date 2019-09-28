@@ -26,48 +26,57 @@ default_unit_production = {
 			}
 		}
 	}
-	
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mobile
+		value = 35
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = paratroopers
-		value = 2
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
 		value = 10
 	}
 
 	ai_strategy = {
 		type = role_ratio
+		id = mountaineers
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
 		id = marines
-		value = 2
+		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 5
+		value = 25
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 50
+		value = 20
 	}
 	
 	#Air unit factors
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
-		value = 80
+		value = 280
 	}
 	
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 80
+		value = 180
 	}
 	
 	ai_strategy = {
@@ -79,13 +88,13 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = strategic_bomber
-		value = 5
+		value = 50
 	}
 	
 	ai_strategy = {
 		type = unit_ratio
 		id = naval_bomber
-		value = 5
+		value = 50
 	}
 	
 	
@@ -133,37 +142,6 @@ default_unit_production = {
 	}
 }
 
-default_role_ratios = {
-	enable = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital
-		value = 100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_carrier
-		value = 100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_sub
-		value = 100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_screen
-		value = 100
-	}
-}
 
 default_role_ratios = {
 	enable = {
@@ -182,25 +160,25 @@ default_role_ratios = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb
-		value = -80
+		value = 80
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bc
-		value = -20
+		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = -70
+		value = 40
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_submarine
-		value = 100
+		value = 150
 	}
 
 	ai_strategy = {
@@ -218,7 +196,7 @@ default_role_ratios = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_light
-		value = 25
+		value = 250
 	}
 
 	ai_strategy = {
@@ -297,7 +275,7 @@ ill_show_you_mine = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_heavy
-		value = -20
+		value = 20
 	}
 
 	ai_strategy = {
@@ -309,7 +287,7 @@ ill_show_you_mine = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_mine_layer
-		value = -10
+		value = 10
 	}
 }
 
@@ -325,7 +303,7 @@ ill_show_you_mine_2 = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_light
-		value = -20
+		value = 20
 	}
 
 	ai_strategy = {
@@ -337,7 +315,7 @@ ill_show_you_mine_2 = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_mine_layer
-		value = -10
+		value = 10
 	}
 }
 
@@ -355,7 +333,7 @@ default_pp_spend_amount = {
 	ai_strategy = {
 		type = pp_spend_amount
 		id = decision
-		value = 200
+		value = 300
 	}
 }
 

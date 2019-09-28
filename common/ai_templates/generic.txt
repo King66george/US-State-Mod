@@ -106,7 +106,7 @@ armor_generic = {
 			}
 			
 			regiments = {
-				light_armor = 5
+				light_armor = 14
 				motorized = 4
 			}
 		}
@@ -190,7 +190,7 @@ armor_generic = {
 			
 			regiments = {
 				heavy_armor = 6
-				infantry = 3
+				infantry = 8
 			}
 		}
 		
@@ -283,8 +283,8 @@ armor_generic = {
 			}
 			
 			regiments = {
-				medium_armor = 6
-				motorized = 4
+				medium_armor = 12
+				motorized = 6
 			}
 		}
 
@@ -945,8 +945,8 @@ mountaineers_generic = {
 			}
 			
 			regiments = {
-				mountaineers = 8
-				artillery_brigade = 2
+				mountaineers = 14
+				artillery_brigade = 4
 			}
 		}
 		

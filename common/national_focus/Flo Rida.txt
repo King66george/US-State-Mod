@@ -855,22 +855,12 @@ focus_tree = {
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
-					factor = 6
-					modifier = {
-							factor = 2
-							any_neighbor_country = {
-									is_major = yes
-									has_government = communism
-								}
-						}
+					factor = 10
+					
 				}
 			completion_reward = {
-					add_timed_idea = {
-							idea = internationalism
-							days = 720
-						}
 					set_politics = {
-							ruling_party = communism
+							ruling_party = socialism
 							elections_allowed = yes
 						}
 					set_political_party = {
@@ -879,11 +869,11 @@ focus_tree = {
 						}
 					set_political_party = {
 							ideology = communism
-							popularity = 98
+							popularity = 20
 						}
 					set_political_party = {
-							ideology = fascism
-							popularity = 1
+							ideology = socialism
+							popularity = 79
 						}
 				}
 
@@ -939,7 +929,7 @@ focus_tree = {
 			completion_reward = {
 					add_stability = -0.05
 					add_popularity = {
-							ideology = communism
+							ideology = socialism
 							popularity = 0.1
 						}
 				}
