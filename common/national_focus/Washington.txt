@@ -330,8 +330,8 @@ focus = {
 }
 
 focus = {
-  id = WAW_appease_california2
-  icon = GFX_goal_unknown
+  id = WAW_california_oil_agreement
+  icon = GFX_WAW_oil_agreement
   prerequisite = { focus = WAW_appease_california }
   cost = 5
   x = 29
@@ -386,7 +386,7 @@ focus = {
 }
 
 focus = {
-  id = WAW_subsidy_the_industry
+  id = WAW_subsidize_the_industry
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_build_up_our_industry }
   cost = 5
@@ -401,4 +401,6 @@ focus = {
 
   }
 }
+
+
 }
