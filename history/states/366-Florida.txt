@@ -4,6 +4,9 @@ state={
 	name="Southern Florida"
 	manpower=1068210
 	state_category=city
+	resources={
+		oil=36.000
+	}
 	history={
 		owner = FLF
 		buildings = {

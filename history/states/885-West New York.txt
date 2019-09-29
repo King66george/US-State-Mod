@@ -5,6 +5,7 @@ state={
 	state_category=town
 	resources={
 		steel=13.000
+		oil=26.000
 	}
 
 	history={

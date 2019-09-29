@@ -5,7 +5,7 @@ state={
 		state_category = rural
 
 	resources={
-		oil=20 # was: 580
+		oil=15 # was: 580
 		aluminium=50 # was: 96
 	}
 
@@ -13,7 +13,7 @@ state={
 	history={
 		owner = TXT
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
 		}

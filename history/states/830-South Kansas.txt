@@ -4,7 +4,7 @@ state={
 	manpower=880998
 	state_category=city
 	resources={
-		oil=20.000
+		oil=27.000
 	}
 
 	history={

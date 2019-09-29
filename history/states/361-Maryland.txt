@@ -2,7 +2,10 @@
 state={
 	id=361
 	name="Maryland"
-
+	resources={
+		steel=22.000
+		oil=11.000
+	}
 	history={
 		owner = MDM
 		buildings = {
