@@ -14,7 +14,7 @@ focus_tree = {
 
 default = no
 
-continuous_focus_position = { x = 50 y = 2000 }
+continuous_focus_position = { x = -1200 y = 2000 }
 
 #Air Force Tree
 focus = {
@@ -280,7 +280,7 @@ focus = {
   id = WAW_represent_both_parties
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_follow_martin }
-  cost = 6
+  cost = 10
   x = 3
   y = 2
 
@@ -297,7 +297,7 @@ focus = {
   id = WAW_restructure_banking_laws
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_fight_the_depression }
-  cost = 6
+  cost = 10
   x = 7
   y = 3
 
@@ -350,9 +350,31 @@ focus = {
   id = WAW_expand_boeing_field
   icon = GFX_WAW_boeing_field
   prerequisite = { focus = WAW_fund_the_boeing_company }
-  cost = 5
+  cost = 10
   x = 19
   y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+    914 = {
+      add_building_construction = {
+          type = air_base
+          level = 6
+          instant_build = yes
+      }
+    }
+  }
+}
+
+focus = {
+  id = WAW_build_up_our_industry
+  icon = GFX_goal_unknown
+  cost = 5
+  x = -10
+  y = 0
 
   cancel_if_invalid = yes
   continue_if_invalid = no
@@ -363,4 +385,20 @@ focus = {
   }
 }
 
+focus = {
+  id = WAW_subsidy_the_industry
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_build_up_our_industry }
+  cost = 5
+  x = -12
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
 }
