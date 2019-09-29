@@ -5,7 +5,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Commen
 13154;13199;sea;749;-1;-1;-1;-1;LAKE_ERIE_CANAL;Lake-Erie-Canal
 13154;13157;sea;6710;-1;-1;-1;-1;LAKE_ONTARIO_CANAL;Lake-Ontario-Canal
 13155;13159;sea;5205;-1;-1;-1;-1;LAKE_SUPERIOR_CANAL;Lake-Superior-Canal
-9671;677;sea;5430;-1;-1;-1;-1;;Golden-Gate-Bridge
+13259;677;sea;5430;-1;-1;-1;-1;;Golden-Gate-Bridge
 865;3917;sea;8492;-1;-1;-1;-1;;Virginia-Crossing
 10233;5205;sea;13155;-1;-1;-1;-1;;Michigan-Crossing
 8518;13154;sea;11654;-1;-1;-1;-1;ERIE_CANAL;Erie-Canal
