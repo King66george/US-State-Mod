@@ -153,7 +153,7 @@ create_country_leader = {
 }
 create_corps_commander = {
 	name = "Joseph Stilwell"
-	picture = "Portrait_USA_Joseph_Stilwell.dds"
+	picture = "Portrait_FLF_Joseph_Stilwell.dds"
 	traits = { politically_connected infantry_officer career_officer harsh_leader }
 	skill = 1
 	id = 601
