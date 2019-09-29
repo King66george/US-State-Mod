@@ -21,7 +21,7 @@ focus = {
   id = WAW_fund_the_boeing_company
   icon = GFX_WAW_fund_the_boeing_company
   cost = 10
-  x = 22
+  x = 20
   y = 0
 
   cancel_if_invalid = yes
@@ -36,9 +36,9 @@ focus = {
 #Politics Tree
 focus = {
   id = WAW_political_rivalry
-  icon = GFX_goal_unknown114
+  icon = GFX_goal_unknown
   cost = 3
-  x = 12
+  x = 5
   y = 0
 
   cancel_if_invalid = yes
@@ -54,13 +54,12 @@ focus = {
   id = WAW_follow_martin
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_political_rivalry  }
-  relative_position_id = WAW_political_rivalry
   mutually_exclusive = {
    focus = WAW_wagen_plan
    focus = WAW_fascist_path
   }
   cost = 5
-  x = 0
+  x = 5
   y = 1
 
   cancel_if_invalid = yes
@@ -76,13 +75,12 @@ focus = {
   id = WAW_wagen_plan
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_political_rivalry  }
-  relative_position_id = WAW_political_rivalry
   mutually_exclusive = {
    focus = WAW_wagen_plan
    focus = WAW_follow_martin
   }
   cost = 5
-  x = -6
+  x = -5
   y = 1
 
   cancel_if_invalid = yes
@@ -98,13 +96,12 @@ focus = {
   id = WAW_fascist_path
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_political_rivalry  }
-  relative_position_id = WAW_political_rivalry
   mutually_exclusive = {
   focus = WAW_follow_martin
   focus = WAW_wagen_plan
   }
   cost = 5
-  x = 6
+  x = 15
   y = 1
 
   cancel_if_invalid = yes
@@ -119,8 +116,11 @@ focus = {
 focus = {
   id = WAW_CUF
   icon = GFX_WAW_CUF
+  mutually_exclusive = {
+   focus = WAW_appease_california
+  }
   cost = 10
-  x = 2
+  x = 26
   y = 0
 
   available = {
@@ -142,9 +142,8 @@ focus = {
   id = WAW_the_bear_stops_here
   icon = GFX_goal_generic_construct_military
   prerequisite = { focus = WAW_CUF  }
-  relative_position_id = WAW_CUF
   cost = 10
-  x = -1
+  x = 25
   y = 1
 
   available = {
@@ -203,10 +202,9 @@ focus = {
   id = WAW_resist_the_bear
   icon = GFX_focus_eng_expose_the_belly_of_the_bear
   prerequisite = { focus = WAW_the_bear_stops_here  }
-  relative_position_id = WAW_the_bear_stops_here
   cost = 10
-  x = 0
-  y = 1
+  x = 25
+  y = 2
 
   available = {
     has_war_with = CAC
@@ -222,20 +220,24 @@ focus = {
 }
 
 focus = {
-  id = WAW_unknown
+  id = WAW_call_the_local_militias
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_CUF }
-  relative_position_id = WAW_CUF
   cost = 10
-  x = 1
+  x = 27
   y = 1
+
+  available ={
+    has_war_with = CAC
+    surrender_progress > 0.20
+  }
 
   cancel_if_invalid = yes
   continue_if_invalid = no
   available_if_capitulated = no
 
   completion_reward = {
-
+    country_event = washington.2
   }
 }
 
@@ -243,10 +245,9 @@ focus = {
   id = WAW_evergreen_forevermore
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_resist_the_bear }
-  prerequisite = { focus = WAW_unknown }
-  relative_position_id = WAW_CUF
+  prerequisite = { focus = WAW_call_the_local_militias }
   cost = 10
-  x = 0
+  x = 26
   y = 3
 
   cancel_if_invalid = yes
@@ -262,12 +263,70 @@ focus = {
   id = WAW_fight_the_depression
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_follow_martin }
-  relative_position_id = WAW_follow_martin
   cost = 10
-  x = 2
-  y = 1
+  x = 7
+  y = 2
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
 }
 
+focus = {
+  id = WAW_represent_both_parties
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_follow_martin }
+  cost = 6
+  x = 3
+  y = 2
 
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_restructure_banking_laws
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_fight_the_depression }
+  cost = 6
+  x = 7
+  y = 3
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_appease_california
+  icon = GFX_goal_unknown
+  mutually_exclusive = {
+   focus = WAW_CUF
+  }
+  cost = 6
+  x = 31
+  y = 0
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
 
 }

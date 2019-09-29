@@ -17,3 +17,22 @@
       ai_chance { factor = 40 }
     }
   }
+
+  country_event = {
+    id = washington.2
+    title = washington.2.t
+    desc = washington.2.d
+    picture = GFX_WAW_meetings_with_washington_event
+    is_triggered_only = yes
+
+    option = {
+      name = washington.2.a
+      load_oob = WAW_lm
+      ai_chance = { factor = 50 }
+    }
+
+    option = {
+      name = washington.2.b
+      ai_chance = { factor = 50 }
+    }
+  }

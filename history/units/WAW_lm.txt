@@ -18,56 +18,56 @@ units = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
   divison = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
   divison = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
   divison = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
   divison = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
   divison = {
       name = Local Milita
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
   divison = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
   divison = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0
+      start_experience_factor = 0.1
       start_equipment factor = 1
   }
 }
