@@ -4312,4 +4312,8 @@ spriteTypes = {
 			name = "GFX_WAW_resist_the_bear_idea"
 			texturefile = "gfx/interface/ideas/OHO_isolationism.dds"
 		}
+		spriteType = {
+			name = "GFX_idea_CAC_walt_disney"
+			texturefile = "gfx/interface/ideas/idea_CAC_walt_disney.dds"
+		}
 	}
