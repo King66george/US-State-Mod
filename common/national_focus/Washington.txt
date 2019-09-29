@@ -316,9 +316,43 @@ focus = {
   mutually_exclusive = {
    focus = WAW_CUF
   }
-  cost = 6
-  x = 31
+  cost = 5
+  x = 30
   y = 0
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_appease_california2
+  icon = GFX_goal_unknown
+  prerequisite = { focus = WAW_appease_california }
+  cost = 5
+  x = 29
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_expand_boeing_field
+  icon = GFX_WAW_boeing_field
+  prerequisite = { focus = WAW_fund_the_boeing_company }
+  cost = 5
+  x = 19
+  y = 1
 
   cancel_if_invalid = yes
   continue_if_invalid = no

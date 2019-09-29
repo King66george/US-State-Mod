@@ -1735,5 +1735,9 @@ spriteTypes = {
 		name = "GFX_CAC_deal_alaska"
 		texturefile = "gfx/interface/goals/CAC_deal_alaska.dds"
 	}
+	SpriteType = {
+		name = "GFX_WAW_boeing_field"
+		texturefile = "gfx/interface/goals/WAW_boeing_field.dds"
+	}
 
 }
