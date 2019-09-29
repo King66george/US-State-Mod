@@ -2,7 +2,7 @@
 state={
 	id=473
 	name="South British Columbia"
-	manpower=1138165
+	manpower=438165
 	state_category=city
 	resources={
 		oil=1.000	

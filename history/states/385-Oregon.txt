@@ -2,7 +2,7 @@
 state={
 	id=385
 	name="East Oregon"
-	manpower=953785
+	manpower=323783
 	resources = {
 		tungsten = 9.000
 		steel = 11.000

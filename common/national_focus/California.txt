@@ -2027,7 +2027,7 @@ focus_tree = {
 		x = 11
 		y = 4
 			completion_reward = {
-					country_event = california.20
+					country_event = california.22
 					custom_effect_tooltip = california_james_assassinate
 				}
 
