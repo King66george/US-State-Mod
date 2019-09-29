@@ -8,7 +8,9 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 5
-
+		}
+		resources = {
+			oil = 10
 		}
 		add_core_of = INI
 		victory_points = {
@@ -16,8 +18,8 @@ state={
 		}
 	}
 	provinces={
-		1881 4527 10448 11621 11635 12437 
+		1881 4527 10448 11621 11635 12437
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

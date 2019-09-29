@@ -39,6 +39,7 @@ OHO_depression = {
 
     visible = {
       has_decision = OHO_dep_recovery
+      has_decision = OHO_dep_recovery2
     }
 
     available = {
@@ -75,6 +76,9 @@ OHO_depression = {
 
     visible = {
       has_decision = OHO_dep_recovery
+      NOT = {
+        has_decision = OHO_dep_recovery3
+      }
     }
 
     available = {
@@ -108,6 +112,9 @@ OHO_depression = {
 
     visible = {
       has_decision = OHO_dep_recovery
+      NOT = {
+        has_decision = OHO_dep_recovery4
+      }
     }
 
     available = {
@@ -139,6 +146,9 @@ OHO_depression = {
 
     visible = {
       has_idea = OHO_depression_recovery
+      NOT = {
+        has_idea = OHO_dep_recovery5
+      }
     }
 
     available = {

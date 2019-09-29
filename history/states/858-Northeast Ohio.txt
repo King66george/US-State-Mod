@@ -1,11 +1,10 @@
+
 state={
 	id=858
 	name="STATE_867"
-	manpower=1560722
-		resources = {
-		rubber = 12.000
+	resources={
+		rubber=12.000
 	}
-	state_category = metropolis
 
 	history={
 		owner = OHO
@@ -13,9 +12,12 @@ state={
 			infrastructure = 7
 			industrial_complex = 4
 			6890 = {
+
 			}
 			882 = {
+
 			}
+
 		}
 		add_core_of = OHO
 		victory_points = {
@@ -23,7 +25,11 @@ state={
 		}
 
 	}
+
 	provinces={
-		882 3853 4442 6874 6890 9808 
+		882 3853 4442 6874 6890 9808 9825 
 	}
+	manpower=1560722
+	buildings_max_level_factor=1.000
+	state_category=metropolis
 }
