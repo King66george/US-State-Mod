@@ -8,66 +8,65 @@ division_template = {
     infantry = { x = 1 y = 0 }
     infantry = { x = 1 y = 1 }
     infantry = { x = 1 y = 2 }
-    infantry = { x = 2 y = 0 }
-}
+    }
 }
 
 units = {
   #Local Civilian Milita Spawn 8
-  divison = {
+  division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
-  divison = {
+  division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
-  divison = {
+  division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
-  divison = {
+  division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
-  divison = {
+  division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
-  divison = {
+  division = {
       name = Local Milita
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
-  divison = {
+  division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
-  divison = {
+  division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
-      start_experience_factor = 0.1
+      start_experience_factor = 0.01
       start_equipment factor = 1
   }
 }
