@@ -4313,7 +4313,7 @@ spriteTypes = {
 			texturefile = "gfx/interface/ideas/OHO_isolationism.dds"
 		}
 		spriteType = {
-			name = "GFX_idea_CAC_walt_disney"
+			name = "GFX_idea_walt_disney"
 			texturefile = "gfx/interface/ideas/idea_CAC_walt_disney.dds"
 		}
 	}

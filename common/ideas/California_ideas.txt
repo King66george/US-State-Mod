@@ -464,7 +464,6 @@ CAC_ncrrevanchism = {
   ##########Political Advisors###############
   	political_advisor = {
   		walt_disney = {
-  			picture = idea_walt_disney
 
         allowed = {
   				original_tag = CAC
