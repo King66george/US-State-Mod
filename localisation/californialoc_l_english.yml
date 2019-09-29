@@ -9,6 +9,7 @@ california_james_assassinate:0 "\n\n§GA successful attempt on Sinclair will res
 CAC_assassinationsuccess:0 "Upton Sinclair has been assassinated."
 CAC_sinclaircontestedelections:0 "Upton Sinclair has contensted elections."
 core_land:0 "Will core all lands."
+walt_disney:0 "Walt Disney"
 #This file is meant for all California focus and description localization.
 
 CAC_politicalstate:0 "The 1936 Election"

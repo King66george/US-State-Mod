@@ -461,3 +461,25 @@ CAC_ncrrevanchism = {
   }
 
 }
+  ##########Political Advisors###############
+  	political_advisor = {
+  		walt_disney = {
+  			picture = idea_walt_disney
+
+        allowed = {
+  				original_tag = CAC
+  			}
+  			available = {
+
+  			}
+
+  			traits = { popular_figurehead }
+
+  			ai_will_do = {
+  			factor = 0
+      }
+    }
+  }
+
+
+}
