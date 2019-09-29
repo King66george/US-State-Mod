@@ -1,7 +1,7 @@
 state={
 	id=824
 	name="Southwest Wyoming"
-	manpower=825564
+	manpower=125564
 	state_category= town
 	resources={
 		chromium= 2.000

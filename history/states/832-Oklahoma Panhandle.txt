@@ -1,7 +1,7 @@
 state={
 	id=832
 	name="Oklahoma Panhandle"
-	manpower=896039
+	manpower=116039
 	state_category=city
 	resources={
 		oil=60.000
