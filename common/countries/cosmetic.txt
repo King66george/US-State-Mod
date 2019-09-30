@@ -157,3 +157,8 @@ ECU ={
   color = rgb { 18 29 227 }
   color_ui = rgb { 28 39 237 }
 }
+
+RRG = {
+  color = rgb { 207 44 39 }
+  color_ui = rgb { 207 44 39 }
+}

@@ -2459,7 +2459,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = Sking_and_country
-		}`
+		}
 		x = 30
 		y = 5
 			available_if_capitulated = no

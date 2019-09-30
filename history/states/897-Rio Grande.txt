@@ -18,7 +18,7 @@ state={
 		add_core_of = TXT
 		}
 	provinces={
-		2019 5061 12728
+		2019 5061 12728 6987 6785 12369
 	}
 	manpower=683577
 	buildings_max_level_factor=1.000
