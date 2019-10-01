@@ -2483,6 +2483,41 @@ focus_tree = {
 								}
 						}
 				}
+	}
+focus = {
+	id = Monarchy_Goal2
+	text = "Land for the Royal Family II"
+	icon = GFX_focus_eng_special_air_service
+	cost = 20.00
+	prerequisite = {
+		focus = Monarchy_Goal
+	}
+	available = {
+		has_war = no
+	}
+	x = 30
+	y = 6
+	available_if_capitulated = no
+	completion_reward = {
+		random_neighbor_country = {
+			limit = {
+				not = {
+					is_guaranteed_by = ROOT
+					is_in_faction_with = ROOT
+					has_non_aggression_pact_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			ROOT = {
+				will_lead_to_war_with = PREV
+				create_wargoal = {
+					will_lead_to_war_with = PREV
+					target = PREV
+					type = annex_everything
+				}
+			}
+	}
+}
 
 	}
 	focus = {
@@ -2961,4 +2996,42 @@ focus_tree = {
 				}
 
 	}
+
+	focus = {
+		id = Collective_goal2
+		text = "Our Next Weakest Neighbor"
+		icon = GFX_focus_eng_special_air_service
+		cost = 20.00
+		prerequisite = {
+			focus = Collective_goal
+		}
+		available = {
+			has_war = no
+		}
+		x = 21
+		y = 9
+			available_if_capitulated = no
+			completion_reward = {
+					random_neighbor_country = {
+							limit = {
+									not = {
+											is_guaranteed_by = ROOT
+											is_in_faction_with = ROOT
+											has_non_aggression_pact_with = ROOT
+											is_subject_of = ROOT
+										}
+								}
+							ROOT = {
+								will_lead_to_war_with = PREV
+									create_wargoal = {
+											will_lead_to_war_with = PREV
+											target = PREV
+											type = annex_everything
+										}
+								}
+						}
+				}
+
+	}
+
 }
