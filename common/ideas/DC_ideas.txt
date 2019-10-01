@@ -1,0 +1,171 @@
+ideas = {
+	country = {
+		DC_preambled = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = 0.10
+			}
+    }
+
+    DC_preamblec = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.10
+			}
+    }
+
+    DC_preamblef = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = 0.10
+			}
+    }
+
+    DC_firstc = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war  = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        industrial_capacity_factory = 0.05
+      }
+    }
+
+    DC_firstf = {
+
+      allowed = {
+        always = no
+        }
+
+      allowed_civil_war  = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        encryption_factor = 0.10
+      }
+    }
+
+    DC_secondd = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war  = {
+        always = no
+        }
+
+      removal_cost = -1
+
+      modifier = {
+        partisan_effect = 0.20
+      }
+    }
+
+    DC_secondc = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war  = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        conscription = 0.02
+      }
+    }
+
+    DC_secondf = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war  = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        army_org_factor = 0.08
+      }
+    }
+
+    DC_thirdc = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war  = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        army_morale_factor = 0.10
+      }
+    }
+
+    DC_thirdf = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war  = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        mobilization_speed = 0.15
+      }
+    }

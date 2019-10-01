@@ -1,0 +1,105 @@
+add_namespace = dc
+
+# Preamble
+country_event = {
+  id = dc.1
+  title = dc.1.t
+  desc = dc.1.d
+  picture = GFX_report_event_generic_read_write
+
+  is_triggered_only = yes
+
+  option = {
+    name = dc.1.a
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_preambled }
+  }
+  option = {
+    name = dc.1.b
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_preamblec }
+  }
+  option = {
+    name = dc.1.c
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_preamblef }
+  }
+}
+
+# 1st Amendment
+country_event = {
+  id = dc.2
+  title = dc.2.t
+  desc = dc.2.d
+  picture = GFX_report_event_generic_read_write
+
+  is_triggered_only = yes
+
+  option = {
+    name = dc.2.a
+    ai_chance = { factor = 33 }
+    add_stability = 0.1
+  }
+  option = {
+    name = dc.2.b
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_firstc }
+  }
+  option = {
+    name = dc.2.c
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_firstf }
+  }
+}
+
+# 2nd Amendment
+country_event = {
+  id = dc.3
+  title = dc.3.t
+  desc = dc.3.d
+  picture = GFX_report_event_generic_read_write
+
+  is_triggered_only = yes
+
+  option = {
+    name = dc.3.a
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_secondd }
+  }
+  option = {
+    name = dc.3.b
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_secondc }
+  }
+  option = {
+    name = dc.3.c
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_secondf }
+  }
+}
+
+# 3rd Amendment
+country_event = {
+  id = dc.4
+  title = dc.4.t
+  desc = dc.4.d
+  picture = GFX_report_event_generic_read_write
+
+  is_triggered_only = yes
+
+  option = {
+    name = dc.4.a
+    ai_chance = { factor = 33 }
+    add_stability = 0.05
+  }
+  option = {
+    name = dc.4.b
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_thirdc }
+  }
+  option = {
+    name = dc.4.c
+    ai_chance = { factor = 33 }
+    add_ideas = { DC_thirdf }
+  }
+}
