@@ -156,9 +156,11 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_ideas = fascist_influence
+					add_timed_idea = {
+						idea = fascist_influence
+						days = 150
 				}
-
+			}
 	}
 	focus = {
 		id = TXT_peacefullyintegrate
@@ -385,7 +387,10 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_ideas = democratic_influence
+			add_timed_idea = {
+				idea = democratic_influence
+				days = 150
+		}
 				}
 
 	}
@@ -708,7 +713,10 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_ideas = communist_influence
+				add_timed_idea = {
+					idea = communist_influence
+					days = 150
+				}
 				}
 
 	}

@@ -11,6 +11,9 @@ country_event = {
   option = {
   name = tex.0.a
   TXT = { transfer_state = 832 }
+  TXT = { transfer_state = 896 }
+  896 = { add_core_of = TXT }
+  832 = { add_core_of = TXT }
   }
 }
 country_event = {
@@ -39,6 +42,8 @@ country_event = {
   name = tex.0.a
   TXT = { transfer_state = 793 }
   TXT = { transfer_state = 792 }
+  793 = { add_core_of = TXT }
+  792 = { add_core_of = TXT }
   }
 }
 country_event = {
@@ -54,6 +59,9 @@ country_event = {
   TXT = { transfer_state = 801 }
   TXT = { transfer_state = 803 }
   TXT = { transfer_state = 381 }
+  801 = { add_core_of = TXT }
+  803 = { add_core_of = TXT }
+  381 = { add_core_of = TXT }
   }
 }
 country_event = {

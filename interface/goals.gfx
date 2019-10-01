@@ -1743,5 +1743,28 @@ spriteTypes = {
 		name = "GFX_WAW_oil_agreement"
 		texturefile = "gfx/interface/goals/WAW_oil_agreement.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_integrateindiana"
+		texturefile = "gfx/interface/goals/integrateindiana.dds"
+	}
+	SpriteType = {
+		name = "GFX_OHO_firststrike"
+		texturefile = "gfx/interface/goals/OHO_firststrike.dds"
+	}
+	SpriteType = {
+		name = "GFX_OHO_integrateini"
+		texturefile = "gfx/interface/goals/OHO_integrateini.dds"
+	}
+	SpriteType = {
+		name = "GFX_OHO_integratemim"
+		texturefile = "gfx/interface/goals/OHO_integratemim.dds"
+	}
+	SpriteType = {
+		name = "GFX_OHO_securethelakes"
+		texturefile = "gfx/interface/goals/OHO_securethelakes.dds"
+	}
+	SpriteType = {
+		name = "GFX_FLF_focus_Focus_On_The_Military"
+		texturefile = "gfx/interface/goals/FLF_focus_Focus_On_The_Military.dds"
+	}
 }

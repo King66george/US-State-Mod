@@ -152,6 +152,7 @@ ideas = {
         production_speed_arms_factory_factor = -0.15
         production_speed_industrial_complex_factor = -0.15
       }
+    }
       OHO_strong_economy = {
         allowed = {
         always = no
@@ -171,7 +172,6 @@ ideas = {
           production_speed_industrial_complex_factor = 0.10
         }
       }
-    }
   }
   ####Advisors###
   political_advisor = {
