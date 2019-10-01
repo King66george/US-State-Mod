@@ -2,7 +2,8 @@
 ##Ideas##
 worse_depression:0 "§RHard Hitting Depression§!"
 OHO_depression_recovery:0 "§YDepression Recovery§!"
-agricultural__industry:0 "§GAgricultural Industry§!"
+agricultural__industry:0 "§YAgricultural Industry§!"
+agricultural_industry:0 "§YAgricultural Industry§!"
 rising_communism:0 "§YRising Communism§!"
 OHO_natsj:0 "National Union for Social Justice"
 OHO_sympathizers:0 "Far Right Sympathizers"
@@ -10,12 +11,22 @@ OHO_coughlinbroadcasts:0 "Coughlin's Broadcasts"
 OHO_antisemeticviews:0 "Antisemetic Views"
 OHO_isolationism:0 "Isolationism"
 OHO_shiftextremeright:0 "Shift Towards the Extreme Right"
+OHO_agressivedemo:0 "Agressive Democracy"
+OHO_truedemo:0 "True Democracy"
 ####Advisors#####
 OHO_ford:0 "Henry Ford"
 
 #Factions#
 christian_front:0 "The Christian Front"
 
+##Custom Tooltips/Country Flags##
+demosup:0 "§GIncreases§! §Mdemocratic§! §Gsupport in neighboring countries§!"
+industrialize_start:0 "Modify §YAgricultural Industry§! by \n§YMilitary Factory§! construction speed §G+10%§! \n§YCivilian Factory§! construction speed §G+10%§!"
+emciv:0 "§GEmphasize the Civilian Economy§!"
+emmil:0 "§GEmphasize the Military Economy§!"
+senddiplomats:0 "§GSends diplomats to every§! §Mdemocratic§! §Gneighboring country§!"
+integratenindiana:0 "§GNorthern Indiana is now integrated into Ohio§! \n"
+integratesindiana:0 "§GSouth Indiana is now integrated into Ohio§! \n"
 ##Decisions##
 OHO_depression:0 "Depression Recovery"
 OHO_dep_recovery:0 "Begin Depression Recovery"
@@ -49,6 +60,20 @@ ohio.3.a:0 "A hero to all!"
 ohio.4.t:0 "Fascist Sympathizers Visit Ohio"
 ohio.4.d:0 "A few days ago, Father Charles Coughlin invited his symathizers from around the globe to Ohio. Not many made an appearance, but there were some notable figures. Among the most influencial were: Sir Oswald Mosley, Dennis Fahey, and Ezra Pound. Currently, it is not known what was discussed during the meeting, but hopefully some good will come out of it."
 ohio.4.a:0 "Was it to influence the people?"
+#Invite to the Christian Front
+ohio.5.t:0 "Invite to the Christian Front"
+ohio.5.d:0 "We have recieved a diplomatic envoy from the Buckeye Imperium asking us to join their faction. Their faction, The Christian Front, has it's bases on anti-semetism and spreading fascism. It could be of use if we ever get attacked by an aggressive nation. In the event that we do accept, we will join them in a military pact. In the event that we reject... I fear what will happen next."
+ohio.5.a:0 "The benefits cannot be ignored"
+ohio.5.b:0 "Our complete sovereignty is worth the risk."
+ohio.6.t:0 "[From.Owner.GetName] accepted our proposal!"
+ohio.6.d:0 "We have recieved a responce from [From.Owner.GetName] agreeing to the pact. In the coming days, it will be formalized and we will be abe to call eachother to arms. With more help from friendly regimes, we will be able to eliminate the democratic threat. This deal will benefit us greatly."
+ohio.6.a:0 "Wonderful!"
+ohio.7.t:0 "[From.Owner.GetName] has rejected our proposal!"
+ohio.7.d:0 "We have reciveved a response from [From.Owner.GetName] rejecting the military pact. In the coming days, we will make preparations to attack their ridiculous government. They have made their final mistake. They will not have time to reconcile until they're kneeling beneath our feet."
+ohio.7.a:0 "If only they had said yes..."
+#An offer to Roosevelt
+
+
 ##Focuses##
 OHO_politicalbell:0 "Political Bellwether"
 OHO_politicalbell_desc:0 "Ohio is regarded as the number one bellwether for determining the politics of the rest of the states. Out of every presidential election when the states were united, not a single time have we voted against the winner. Regardless of the future we decide, it is a safe bet than many follow the same way."
