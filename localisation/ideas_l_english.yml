@@ -2620,7 +2620,7 @@
  FLF_Open_Borders:0 "Open Border Policy"
  FLF_Working_Incentives:0 "Working Incentives"
  FLF_South_Pride:0 "Southern Pride"
- FLF_Slavery_Again:0 "Slavery Reinstated"
+ FLF_Slavery_Again:0 "Workcamps Reinstated"
  FLF_Offensive_Approach:0 "Offensive Training"
  FLF_Expanding_Influence:0 "Expanding Influence"
  FLF_Left_War_Plans:0 "Soviet Plans"
@@ -2717,6 +2717,7 @@
  CAC_spyidea:0 "The California Espionage Defense Agency"
  CAC_anewmp:0 "A New "Military" Police"
  USA_the_pentagon:0 "Federal Defence Infrastructure"
+ FLF_ReinforceTheStateIdea:0 "Reinforcing The State"
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"

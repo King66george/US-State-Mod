@@ -245,4 +245,13 @@ ideas = {
 				justify_war_goal_time = -0.2
 			}
 		}
+		FLF_ReinforceTheStateIdea= {
+			allowed = { always = no }
+			removal_cost = -1
+			picture = idea_usa_desegregation_1
+			modifier = {
+				justify_war_goal_time = -0.35
+				conscription_factor = 0.1
+			}
+		}
 	}

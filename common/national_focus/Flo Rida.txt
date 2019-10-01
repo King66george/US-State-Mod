@@ -720,7 +720,6 @@ focus_tree = {
 	}
 	focus = {
 		id = fltung_add
-		text = "Tungsten"
 		icon = GFX_focus_generic_tungsten
 		cost = 10.00
 		prerequisite = {
@@ -744,7 +743,6 @@ focus_tree = {
 	}
 	focus = {
 		id = flalu_add
-		text = "aluminum"
 		icon = GFX_focus_generic_industry_2
 		cost = 10.00
 		prerequisite = {
@@ -856,7 +854,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 10
-					
+
 				}
 			completion_reward = {
 					set_politics = {
@@ -1300,6 +1298,18 @@ focus_tree = {
 		y = 3
 			available_if_capitulated = yes
 
+		completion_reward = {
+				add_ideas = FLF_ReinforceTheStateIdea
+				create_wargoal = {
+						type = annex_everything
+						target = GAG
+					}
+				create_wargoal = {
+						type = annex_everything
+						target = ALA
+					}
+		}
+
 	}
 	focus = {
 		id = FLF_southernpride
@@ -1616,7 +1626,7 @@ focus_tree = {
 	focus = {
 		id = FLF_renouncedemocracy
 		icon = GFX_focus_generic_strike_at_democracy3
-		cost = 10.00
+		cost = 7.25
 		prerequisite = {
 			focus = FLF_reinforcethestate
 		}
