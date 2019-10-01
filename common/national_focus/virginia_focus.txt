@@ -92,7 +92,7 @@ focus_tree = {
 				}
 
 	}
-	
+
 	focus = {
 		id = VAV_militarizethevirginiacompany
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -408,7 +408,7 @@ focus_tree = {
 				}
 
 	}
-	
+
 	focus = {
 		id = VAV_war
 		icon = GFX_focus_generic_military_mission
@@ -547,10 +547,14 @@ focus_tree = {
 			completion_reward = {
 					add_political_power = 100
 					add_stability = .15
+					create_wargoal = {
+							target = WVW
+							type = annex_everything
+						}
 				}
 
 	}
-	
+
 
 	focus = {
 		id = VAV_commie
@@ -674,6 +678,14 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = extensive_conscription
+					create_wargoal = {
+							target = WVW
+							type = annex_everything
+						}
+						create_wargoal = {
+								target = MDM
+								type = annex_everything
+							}
 				}
 
 	}

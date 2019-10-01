@@ -55,7 +55,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_genericindustry1
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Generic_Industrialization
 		cost = 7.25
 		x = 5
 		y = 0
@@ -401,7 +401,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_expandncrstates
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_Generic_Liberty_Calling
 		cost = 14.30
 
 		available = {
@@ -920,7 +920,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_rapidmilitarization
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_Generic_Industry_Tanks
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_JamesEDavis
@@ -1170,7 +1170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_oilproduction
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_Generic_Oil_Production
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_lesscorptax
@@ -1387,7 +1387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_dockyards1
-		icon = GFX_goal_generic_radar
+		icon = GFX_Generic_Espionage
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_militarymodernization
@@ -1413,9 +1413,10 @@ focus_tree = {
 				}
 
 	}
+
 	focus = {
 		id = CAC_localsecurity
-		icon = GFX_focus_eng_global_defense
+		icon = GFX_Generic_Blue_Democracy
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_oilproduction
@@ -1933,7 +1934,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_armylloydsway6
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_Generic_Artillery_Barrel
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_armylloydsway4

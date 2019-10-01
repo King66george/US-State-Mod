@@ -1911,7 +1911,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZfocus_28
-		icon = GFX_focus_cze_military_aeronautical_institute
+		icon = GFX_focus_CZE_military_aeronautical_institute
 		cost = 10.00
 		prerequisite = {
 			focus = AZfocus_25
@@ -2692,7 +2692,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AZfocus_17
-		icon = GFX_FLF_focus_Focus_On_The_Unions
+		icon = GFX_Generic_Invasion
 		cost = 10.00
 		prerequisite = {
 			focus = arm_our_borders
