@@ -103,7 +103,7 @@ focus_tree = {
 
 	focus = {
 			id = KSK_democratic2
-			icon = GFX_goal_generic_demand_territory
+			icon = GFX_Generic_Shady_Deal
 			prerequisite = {focus = KSK_democratic1}
 
 			x = 0
@@ -605,7 +605,7 @@ focus_tree = {
 
 		focus = {
 			id = KSK_democratic6
-			icon = GFX_focus_research
+			icon = GFX_Generic_Refugees
 			prerequisite = { focus = KSK_democratic4 }
 
 			x = 3
@@ -684,7 +684,7 @@ focus_tree = {
 		}
 		focus = {
 			id = KSK_democratic10
-			icon = GFX_goal_generic_construct_civilian
+			icon = GFX_Generic_Farming
 			prerequisite = { focus = KSK_democratic1 }
 
 			x = 10
@@ -1132,7 +1132,7 @@ focus_tree = {
 
 		focus = {
 					id = KSK_fascist10
-					icon = GFX_focus_generic_support_the_left_right
+					icon = GFX_Generic_Christian_Trade_Unions
 					prerequisite = { focus = KSK_fascist9 }
 
 					x = 0
@@ -1171,7 +1171,7 @@ focus_tree = {
 
 		focus = {
 					id = KSK_eisenhower1
-					icon = GFX_focus_generic_little_entente
+					icon = GFX_focus_KSK_Eisenhower
 					mutually_exclusive = { focus = KSK_chaffee1 }
 
 					x = 28
@@ -1317,7 +1317,7 @@ focus_tree = {
 
 		focus = {
 					id = KSK_chaffee1
-					icon = GFX_focus_generic_license_production
+					icon = GFX_focus_KSK_Chaffee
 					mutually_exclusive = { focus = KSK_eisenhower1 }
 
 					x = 30
@@ -1529,7 +1529,7 @@ focus_tree = {
 ################################### AIR ########################################
 		focus = {
 					id = KSK_air1
-					icon = GFX_goal_generic_air_production
+					icon = GFX_Generic_Industry_Planes
 
 
 					x = 38
@@ -1741,7 +1741,7 @@ focus_tree = {
 
 		focus = {
 			id = KSK_air11
-			icon = GFX_focus_usa_escort_fighters
+			icon = GFX_Generic_Female_Pilots
 			prerequisite = { focus = KSK_air1 }
 
 			x = 0

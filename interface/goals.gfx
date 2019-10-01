@@ -2233,4 +2233,12 @@ spriteTypes = {
 		name = "GFX_Red_Tearing_Paper"
 		texturefile = "gfx/interface/goals/Red_Tearing_Paper.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_KSK_Chaffee"
+		texturefile = "gfx/interface/goals/focus_KSK_Chaffee.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KSK_Eisenhower"
+		texturefile = "gfx/interface/goals/focus_KSK_Eisenhower.dds"
+	}
 }
