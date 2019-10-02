@@ -106,7 +106,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			complete_tooltip = {
 					air_experience = 25
-					if = {`
+					if = {
 							limit = {
 									has_country_flag = aviation_effort_AB
 								}

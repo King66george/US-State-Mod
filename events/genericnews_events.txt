@@ -1,4 +1,4 @@
-add_namespace = genericfocusnews
+﻿add_namespace = genericfocusnews
 
 # REMINDER | This event file is used for focus trees that launch global news events.
 
