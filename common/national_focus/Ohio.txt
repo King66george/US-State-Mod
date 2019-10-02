@@ -457,7 +457,10 @@ focus_tree = {
 			target = INI
 		}
 		will_lead_to_war_with = INI
-		threat = 5
+		add_named_threat = {
+				threat = 5
+				name = OHO_expansion
+		}
 	}
 
 	}
@@ -539,7 +542,10 @@ focus_tree = {
 							target = MIM
 						}
 					will_lead_to_war_with = MIM
-					threat = 5
+					add_named_threat = {
+							threat = 5
+							name = OHO_expansion
+					}
 				}
 
 	}
@@ -703,7 +709,10 @@ focus_tree = {
 					add_state_claim = 849
 					add_state_claim = 851
 					add_state_claim = 850
-					threat = 3
+					add_named_threat = {
+							threat = 3
+							name = OHO_claims
+					}
 				}
 
 	}
@@ -1279,7 +1288,10 @@ focus_tree = {
 					add_state_claim = 982
 					add_state_claim = 848
 					add_state_claim = 394
-					threat = 5
+					add_named_threat = {
+							threat = 3
+							name = OHO_claims
+					}
 				}
 
 	}
@@ -1313,14 +1325,17 @@ focus_tree = {
 									num_provinces = 1
 									on_win = ohio.12
 									on_lose = ohio.13
-								}
+							}
 							defender = {
 									state = 955
 									num_provinces = 1
-								}
-						}
-					threat = 5
-				}
+							}
+					}
+					add_named_threat = {
+						threat = 5
+						name = OHO_borderwar
+					}
+			}
 
 	}
 }
