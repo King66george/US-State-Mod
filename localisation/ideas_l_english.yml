@@ -2728,6 +2728,9 @@
  DC_secondf:0 "Military Might"
  DC_thirdc:0 "Frontline Quartering"
  DC_thirdf:0 "Mandatory Quartering"
+ CAC_publicworksprogramidea:0 "Public Works Program"
+ CAC_guaranteedpensionsidea:0 "Guaranteed Pensions"
+ CAC_sweepingtaxreformsidea:0 "Sweeping Tax Reforms"
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"

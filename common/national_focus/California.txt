@@ -1743,6 +1743,63 @@ focus_tree = {
 				}
 
 	}
+
+	focus = {
+		id = CAC_endpovertyincaliforniaplans
+		icon = GFX_Generic_Communist_Propaganda
+		cost = 10
+		prerequisite = {
+			focus = CAC_uptonsinclairsplan
+		}
+		x = 27
+		y = 3
+			completion_reward = {
+				add_political_power = 100
+				add_popularity = {
+    			ideology = communism
+    			popularity = 0.10
+				}
+			}
+	}
+	focus = {
+		id = CAC_publicworksprogram
+		icon = GFX_Generic_State_Socialism
+		cost = 10
+		prerequisite = {
+			focus = CAC_endpovertyincaliforniaplans
+		}
+		x = 25
+		y = 4
+			completion_reward = {
+				add_ideas = CAC_publicworksprogramidea
+			}
+	}
+	focus = {
+		id = CAC_sweepingtaxreforms
+		icon = GFX_Generic_Liberatian_Socialism
+		cost = 10
+		prerequisite = {
+			focus = CAC_endpovertyincaliforniaplans
+		}
+		x = 27
+		y = 4
+			completion_reward = {
+				add_ideas = CAC_sweepingtaxreformsidea
+			}
+	}
+	focus = {
+		id = CAC_guaranteedpensions
+		icon = GFX_Focus_SOV_To_Get_Rich
+		cost = 10
+		prerequisite = {
+			focus = CAC_endpovertyincaliforniaplans
+		}
+		x = 29
+		y = 4
+			completion_reward = {
+				add_ideas = CAC_guaranteedpensionsidea
+			}
+	}
 	focus = {
 		id = CAC_buildhawaii3
 		icon = GFX_goal_generic_construct_civ_factory

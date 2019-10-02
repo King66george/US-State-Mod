@@ -13,9 +13,12 @@ ideas = {
 
             removal_cost = -1
 
+            picture = FRA_matignon_agreements
+
             modifier = {
-              surrender_limit = -0.3
-              political_power_gain = -0.40
+              surrender_limit = -0.5
+              political_power_gain = -0.25
+              consumer_goods_factor = 0.1
             }
           }
 
@@ -67,7 +70,7 @@ ideas = {
 
 
 
-        CAC_tradepower = {
+      CAC_tradepower = {
 
 			allowed = {
 				always = no
@@ -457,6 +460,64 @@ CAC_ncrrevanchism = {
       max_planning = 0.25
       training_time_army_factor = -0.15
       conscription = 0.02
+    }
+  }
+
+  CAC_publicworksprogramidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = generic_build_infrastructure
+
+    removal_cost = -1
+
+    modifier = {
+      production_speed_buildings_factor = 0.1
+      production_speed_infrastructure_factor = 0.15
+    }
+  }
+
+  CAC_guaranteedpensionsidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      consumer_goods_factor = -0.05
+      MONTHLY_POPULATION = 0.05
+    }
+  }
+
+  CAC_sweepingtaxreformsidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_for_the_good_of_the_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      stability_factor = 0.10
+      communism_drift = 0.10
+      economy_cost_factor = -0.25
     }
   }
 
