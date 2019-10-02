@@ -275,7 +275,7 @@ focus_tree = {
 	focus = {
 		id = TXT_assimilate3
 		text = TXT_assimilate3
-		icon = GFX_TXT_assimilate_colorado
+		icon = GFX_TXT_Assimilate_Colorado
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_assimilation
@@ -1637,7 +1637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TXT_northernneighbor
-		icon = GFX_TXT_assimilate_colorado
+		icon = GFX_TXT_Assimilate_Colorado
 		cost = 10.00
 		prerequisite = {
 			focus = TXT_westernneighbor

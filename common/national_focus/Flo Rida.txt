@@ -1332,7 +1332,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FLF_reintroduceslavery
-		icon = GFX_FLF_ReintroduceSlavery
+		icon = GFX_FLF_focus_ReintroduceSlavery
 		cost = 10.00
 		prerequisite = {
 			focus = FLF_southernpride

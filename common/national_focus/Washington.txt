@@ -331,7 +331,7 @@ focus = {
 
 focus = {
   id = WAW_california_oil_agreement
-  icon = GFX_WAW_oil_agreement
+  icon = GFX_goal_unknown
   prerequisite = { focus = WAW_appease_california }
   cost = 5
   x = 29

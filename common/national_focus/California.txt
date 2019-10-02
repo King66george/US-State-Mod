@@ -460,7 +460,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_bajaexpedition
-		icon = GFX_Baja
+		icon = GFX_CAC_Baja
 		cost = 7.25
 		prerequisite = {
 			focus = CAC_nevadawar
@@ -1801,7 +1801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_oregonpsa
-		icon = GFX_CAC_deal_oregon
+		icon = GFX_CAC_washington
 		cost = 7.25
 		prerequisite = {
 			focus = CAC_beginningofpsa
@@ -1815,7 +1815,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_washingtonpsa
-		icon = GFX_CAC_deal_washington
+		icon = GFX_CAC_washington
 		cost = 7.25
 		prerequisite = {
 			focus = CAC_beginningofpsa
