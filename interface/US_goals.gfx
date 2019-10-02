@@ -494,6 +494,322 @@ SpriteType = {
 
 
 #Icon Pack 2
+SpriteType = {
+  name = "GFX_Focus_Commie_Cowboys"
+  texturefile = "gfx/interface/goals/Focus_Commie_Cowboys.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Communist_Chinese_Soldier"
+  texturefile = "gfx/interface/goals/Focus_Communist_Chinese_Soldier.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Communist_Spy"
+  texturefile = "gfx/interface/goals/Focus_Communist_Spy.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Communist_Spy02"
+  texturefile = "gfx/interface/goals/Focus_Communist_Spy02.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Congress_of_Soviets"
+  texturefile = "gfx/interface/goals/Focus_Congress_of_Soviets.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Congress_of_Soviets"
+  texturefile = "gfx/interface/goals/Focus_Congress_of_Soviets.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Dvend_Evropa"
+  texturefile = "gfx/interface/goals/Focus_Dvend_Evropa.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Greek_Fascism"
+  texturefile = "gfx/interface/goals/Focus_Greek_Fascism.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_NATO"
+  texturefile = "gfx/interface/goals/Focus_NATO.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Smash_Fasc"
+  texturefile = "gfx/interface/goals/Focus_Smash_Fasc.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_SOV_To_Get_Rich"
+  texturefile = "gfx/interface/goals/Focus_SOV_To_Get_Rich.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Stalin"
+  texturefile = "gfx/interface/goals/Focus_Stalin.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Television"
+  texturefile = "gfx/interface/goals/Focus_Television.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Arrests"
+  texturefile = "gfx/interface/goals/Generic_Arrests.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Barricade"
+  texturefile = "gfx/interface/goals/Generic_Barricade.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Black_Market"
+  texturefile = "gfx/interface/goals/Generic_Black_Market.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Break_Free"
+  texturefile = "gfx/interface/goals/Generic_Break_Free.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Canada"
+  texturefile = "gfx/interface/goals/Generic_Canada.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Castle"
+  texturefile = "gfx/interface/goals/Generic_Castle.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Central_America"
+  texturefile = "gfx/interface/goals/Generic_Central_America.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Chemical_Warfare"
+  texturefile = "gfx/interface/goals/Generic_Chemical_Warfare.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Chinese_Soldiers"
+  texturefile = "gfx/interface/goals/Generic_Chinese_Soldiers.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Christian_Socialism"
+  texturefile = "gfx/interface/goals/Generic_Christian_Socialism.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Command_Power"
+  texturefile = "gfx/interface/goals/Generic_Command_Power.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Communist_Propaganda"
+  texturefile = "gfx/interface/goals/Generic_Communist_Propaganda.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Communist_Propaganda02"
+  texturefile = "gfx/interface/goals/Generic_Communist_Propaganda02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Coup02"
+  texturefile = "gfx/interface/goals/Generic_Coup02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Crouched_Soldier"
+  texturefile = "gfx/interface/goals/Generic_Crouched_Soldier.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Crouched_Soldier_German"
+  texturefile = "gfx/interface/goals/Generic_Crouched_Soldier_German.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Cult_of_Reason"
+  texturefile = "gfx/interface/goals/Generic_Cult_of_Reason.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Cult_of_the_Supreme_Being"
+  texturefile = "gfx/interface/goals/Generic_Cult_of_the_Supreme_Being.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Disguise"
+  texturefile = "gfx/interface/goals/Generic_Disguise.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Divine_Right"
+  texturefile = "gfx/interface/goals/Generic_Divine_Right.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Draw_Up_Plans"
+  texturefile = "gfx/interface/goals/Generic_Draw_Up_Plans.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Enough"
+  texturefile = "gfx/interface/goals/Generic_Enough.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Espionage02"
+  texturefile = "gfx/interface/goals/Generic_Espionage02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Executions"
+  texturefile = "gfx/interface/goals/Generic_Executions.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Female_Partisans"
+  texturefile = "gfx/interface/goals/Generic_Female_Partisans.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Female_Soldier03"
+  texturefile = "gfx/interface/goals/Generic_Female_Soldier03.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Film_Industry"
+  texturefile = "gfx/interface/goals/Generic_Film_Industry.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_German_Soldier"
+  texturefile = "gfx/interface/goals/Generic_German_Soldier.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_German_Soldier02"
+  texturefile = "gfx/interface/goals/Generic_German_Soldier02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_German_Soldiers"
+  texturefile = "gfx/interface/goals/Generic_German_Soldiers.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_German_Soldiers2"
+  texturefile = "gfx/interface/goals/Generic_German_Soldiers2.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Hospital"
+  texturefile = "gfx/interface/goals/Generic_Hospital.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Infantry_Training"
+  texturefile = "gfx/interface/goals/Generic_Infantry_Training.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Islam"
+  texturefile = "gfx/interface/goals/Generic_Islam.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Judaism"
+  texturefile = "gfx/interface/goals/Generic_Judaism.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Jungle_Insurgency_02"
+  texturefile = "gfx/interface/goals/Generic_Jungle_Insurgency_02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Loadsamoney"
+  texturefile = "gfx/interface/goals/Generic_Loadsamoney.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Machine_Gun02"
+  texturefile = "gfx/interface/goals/Generic_Machine_Gun02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Manifest_Destiny"
+  texturefile = "gfx/interface/goals/Generic_Manifest_Destiny.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Maoism"
+  texturefile = "gfx/interface/goals/Generic_Maoism.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Maritime"
+  texturefile = "gfx/interface/goals/Generic_Maritime.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Mexican_Empire"
+  texturefile = "gfx/interface/goals/Generic_Mexican_Empire.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Molotov_Cocktail"
+  texturefile = "gfx/interface/goals/Generic_Molotov_Cocktail.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Mutual_Cooperation"
+  texturefile = "gfx/interface/goals/Generic_Mutual_Cooperation.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Outside_Aid"
+  texturefile = "gfx/interface/goals/Generic_Outside_Aid.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Parliament_Box"
+  texturefile = "gfx/interface/goals/Generic_Parliament_Box.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Partisan"
+  texturefile = "gfx/interface/goals/Generic_Partisan.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Pilots"
+  texturefile = "gfx/interface/goals/Generic_Pilots.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Protectionism"
+  texturefile = "gfx/interface/goals/Generic_Protectionism.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Radio_Operator"
+  texturefile = "gfx/interface/goals/Generic_Radio_Operator.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Revanchism02"
+  texturefile = "gfx/interface/goals/Generic_Revanchism02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Russian_Soldier"
+  texturefile = "gfx/interface/goals/Generic_Russian_Soldier.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Socialist_Man"
+  texturefile = "gfx/interface/goals/Generic_Socialist_Man.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Soldiers_Defense"
+  texturefile = "gfx/interface/goals/Generic_Soldiers_Defense.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Spy_Communist"
+  texturefile = "gfx/interface/goals/Generic_Spy_Communist.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Tank_through_Wall"
+  texturefile = "gfx/interface/goals/Generic_Tank_through_Wall.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Ultranationalist_Monarchy"
+  texturefile = "gfx/interface/goals/Generic_Ultranationalist_Monarchy.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Veggies"
+  texturefile = "gfx/interface/goals/Generic_Veggies.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Violent_Coup"
+  texturefile = "gfx/interface/goals/Generic_Violent_Coup.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_Volunteer_Corps"
+  texturefile = "gfx/interface/goals/Generic_Volunteer_Corps.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_War_Propaganda02"
+  texturefile = "gfx/interface/goals/Generic_War_Propaganda02.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_War_Propaganda03"
+  texturefile = "gfx/interface/goals/Generic_War_Propaganda03.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_War_Propaganda04"
+  texturefile = "gfx/interface/goals/Generic_War_Propaganda04.dds"
+}
+SpriteType = {
+  name = "GFX_Generic_War_Propaganda05"
+  texturefile = "gfx/interface/goals/Generic_War_Propaganda05.dds"
+}
+SpriteType = {
+  name = "GFX_PB_ENG_It_Happened_Here"
+  texturefile = "gfx/interface/goals/PB_ENG_It_Happened_Here.dds"
+}
+SpriteType = {
+  name = "GFX_TotSoc_Focus"
+  texturefile = "gfx/interface/goals/TotSoc_Focus.dds"
+}
 ###########################################################################################################################
 
 
