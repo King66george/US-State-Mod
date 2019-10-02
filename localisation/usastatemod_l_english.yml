@@ -89,8 +89,8 @@
  CAC_democratic_DEF:0 "The New California Republic"
  CAC_monarchy:0 "Gran California"
  CAC_monarchy_DEF:0 "The Gran California"
- CAC_communism:0 "Socialist Republic of California"
- CAC_communism_DEF:0 "The Socialist Republic of California"
+ CAC_communism:0 "California Worker's Republic
+ CAC_communism_DEF:0 "The California Worker's Republic"
  QBC_theocratism:0 "Quebec"
  QBC_theocratism_DEF:0 "Quebec"
  QBC_socialism:0 "La Belle Province"
