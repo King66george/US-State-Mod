@@ -1801,7 +1801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_oregonpsa
-		icon = GFX_CAC_washington
+		icon = GFX_CAC_oregon
 		cost = 7.25
 		prerequisite = {
 			focus = CAC_beginningofpsa
