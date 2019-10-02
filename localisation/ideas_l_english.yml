@@ -2731,6 +2731,10 @@
  CAC_publicworksprogramidea:0 "Public Works Program"
  CAC_guaranteedpensionsidea:0 "Guaranteed Pensions"
  CAC_sweepingtaxreformsidea:0 "Sweeping Tax Reforms"
+ CAC_collectivizefarmlandidea:0 "Collectivized Farmland"
+ CAC_agreatsocietyidea:0 "A Great Society"
+ CAC_citizenshipbyserviceidea:0 "The Soldiers of the Internationale"
+ CAC_aworkersarmyidea:0 "The Worker's Army"
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"

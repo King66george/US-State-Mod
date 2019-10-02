@@ -1510,8 +1510,8 @@ focus_tree = {
 			completion_reward = {
 					country_event = california.4
 				}
-
 	}
+
 	focus = {
 		id = CAC_buildhawaii2
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1761,6 +1761,7 @@ focus_tree = {
 				}
 			}
 	}
+
 	focus = {
 		id = CAC_publicworksprogram
 		icon = GFX_Generic_State_Socialism
@@ -1771,9 +1772,11 @@ focus_tree = {
 		x = 25
 		y = 4
 			completion_reward = {
+				add_political_power = -50
 				add_ideas = CAC_publicworksprogramidea
 			}
 	}
+
 	focus = {
 		id = CAC_sweepingtaxreforms
 		icon = GFX_Generic_Liberatian_Socialism
@@ -1784,9 +1787,11 @@ focus_tree = {
 		x = 27
 		y = 4
 			completion_reward = {
+				add_political_power = -50
 				add_ideas = CAC_sweepingtaxreformsidea
 			}
 	}
+
 	focus = {
 		id = CAC_guaranteedpensions
 		icon = GFX_Focus_SOV_To_Get_Rich
@@ -1797,9 +1802,151 @@ focus_tree = {
 		x = 29
 		y = 4
 			completion_reward = {
+				add_political_power = -50
 				add_ideas = CAC_guaranteedpensionsidea
 			}
 	}
+
+	focus = {
+		id = CAC_seizeidlefactories
+		icon = GFX_Generic_Industry02
+		cost = 10
+		prerequisite = {
+			focus = CAC_guaranteedpensions
+		}
+		prerequisite = {
+			focus = CAC_sweepingtaxreforms
+		}
+		prerequisite = {
+			focus = CAC_publicworksprogram
+		}
+		x = 26
+		y = 5
+			completion_reward = {
+				799 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+					}
+				967 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+					}
+			}
+	}
+
+	focus = {
+		id = CAC_collectivizefarmland
+		icon = GFX_Generic_Farming
+		cost = 10
+		prerequisite = {
+			focus = CAC_guaranteedpensions
+		}
+		prerequisite = {
+			focus = CAC_sweepingtaxreforms
+		}
+		prerequisite = {
+			focus = CAC_publicworksprogram
+		}
+		x = 28
+		y = 5
+			completion_reward = {
+				add_ideas = CAC_collectivizefarmlandidea
+			}
+	}
+
+	focus = {
+		id = CAC_finishtheplan
+		icon = GFX_Generic_Socialist_Man
+		cost = 10
+		prerequisite = {
+			focus = CAC_seizeidlefactories
+		}
+		prerequisite = {
+			focus = CAC_collectivizefarmland
+		}
+		x = 27
+		y = 6
+
+		completion_reward = {
+				add_ideas = CAC_agreatsocietyidea
+				remove_ideas = CAC_unstablepolitics
+		}
+
+	}
+
+	#CAC_citizenshipbyservice
+
+	focus = {
+		id = CAC_establishthepeoplesarmy
+		icon = GFX_Generic_Socialist_Soldier
+		cost = 10
+		prerequisite = {
+			focus = CAC_finishtheplan
+		}
+		x = 25
+		y = 7
+
+		completion_reward = {
+				country_event = california.18
+		}
+	}
+
+	focus = {
+		id = CAC_citizenshipbyservicearmy
+		icon = GFX_Generic_Socialist_Volunteers
+		cost = 10
+
+		available = {
+			has_country_flag = CAC_citizenshipbyservice
+		}
+
+		mutually_exclusive = {
+			focus = CAC_aworkersarmy
+		}
+
+		prerequisite = {
+			focus = CAC_establishthepeoplesarmy
+		}
+		x = 24
+		y = 8
+
+		completion_reward = {
+			add_ideas = CAC_citizenshipbyserviceidea
+		}
+	}
+
+	focus = {
+		id = CAC_aworkersarmy
+		icon = GFX_Generic_Army_Focus_Red02
+		cost = 10
+
+		available = {
+			has_country_flag = CAC_aworkersarmytooltip
+		}
+
+		mutually_exclusive = {
+			focus = CAC_citizenshipbyservicearmy
+		}
+
+		prerequisite = {
+			focus = CAC_establishthepeoplesarmy
+		}
+		x = 26
+		y = 8
+
+		completion_reward = {
+			add_ideas = CAC_aworkersarmyidea
+		}
+	}
+
 	focus = {
 		id = CAC_buildhawaii3
 		icon = GFX_goal_generic_construct_civ_factory
@@ -2083,7 +2230,7 @@ focus_tree = {
 						instant_build = yes
 					}
 			}
-	}
+		}
 	}
 
 

@@ -496,8 +496,9 @@ CAC_ncrrevanchism = {
     removal_cost = -1
 
     modifier = {
-      consumer_goods_factor = -0.05
+
       MONTHLY_POPULATION = 0.05
+      stability_factor = 0.10
     }
   }
 
@@ -515,9 +516,90 @@ CAC_ncrrevanchism = {
     removal_cost = -1
 
     modifier = {
-      stability_factor = 0.10
       communism_drift = 0.10
-      economy_cost_factor = -0.25
+      consumer_goods_factor = -0.05
+      political_power_gain = 0.10
+    }
+  }
+
+  CAC_collectivizefarmlandidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      MONTHLY_POPULATION = 0.05
+      local_resources_factor = 0.15
+    }
+  }
+
+  CAC_agreatsocietyidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      production_factory_max_efficiency_factor = 0.1
+      army_morale_factor = 0.10
+      drift_defence_factor = 0.15
+    }
+  }
+
+  CAC_citizenshipbyserviceidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      non_core_manpower = 0.05
+      conscription_factor = 0.15
+      conscription = 0.02
+      no_supply_grace = 48
+    }
+  }
+
+  CAC_aworkersarmyidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      partisan_effect = 0.1
+      conscription = 0.01
+      industrial_capacity_factory = 0.10
+      production_speed_arms_factory_factor = 0.1
     }
   }
 
