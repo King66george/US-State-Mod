@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 10
+    add = 30
     tag = WAW
     }
   }
@@ -34,6 +34,7 @@ focus = {
         type = air_base
         level = 2
         instant_build = yes
+      }
     }
   }
 }
@@ -41,7 +42,7 @@ focus = {
 #Politics Tree
 focus = {
   id = WAW_political_rivalry
-  icon = GFX_goal_unknown
+  icon = GFX_Generic_Democracy
   cost = 3
   x = 5
   y = 0
@@ -399,7 +400,7 @@ focus = {
   icon = GFX_FLF_focus_Focus_On_The_Unions
   prerequisite = { focus = WAW_build_up_our_industry }
   cost = 5
-  x = -12
+  x = -13
   y = 1
 
   cancel_if_invalid = yes
@@ -426,6 +427,23 @@ focus = {
   completion_reward = {
     add_ideas = WAW_female_pilots
     set_rule = { can_generate_female_aces = yes }
+  }
+}
+
+focus = {
+  id = WAW_construction_effort
+  icon = GFX_Generic_Factory_Planning
+  prerequisite = { focus = WAW_build_up_our_industry }
+  cost = 10
+  x = -10
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
   }
 }
 

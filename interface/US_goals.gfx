@@ -639,6 +639,10 @@ SpriteType = {
   texturefile = "gfx/interface/goals/Generic_Espionage02.dds"
 }
 SpriteType = {
+  name = "GFX_Generic_Democracy"
+  texturefile = "gfx/interface/goals/Generic_Democracy.dds"
+}
+SpriteType = {
   name = "GFX_Generic_Executions"
   texturefile = "gfx/interface/goals/Generic_Executions.dds"
 }
