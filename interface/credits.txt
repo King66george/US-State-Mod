@@ -1,7 +1,7 @@
 ﻿#USA States Mod Developer Team
 
-#Lead Developer
-FascistThanos - Original Creator of Mod / Texas Focus Tree
+#Project LEAD
+FascistThanos - Original Creator of Mod / Texas Focus Tree / Ohio Focus Tree
 
 #Mod Developers
 Lifey - California Focus Tree
