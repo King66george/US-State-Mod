@@ -21,7 +21,7 @@ bookmarks = {
 		}
 
 		"CAC" = {
-			history = "USA_GATHERING_STORM_DESC"
+			history = "CAC_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				#
@@ -48,7 +48,7 @@ bookmarks = {
 		}
 
 		"KSK"={
-			history = "USA_GATHERING_STORM_DESC"
+			history = "KSK_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 				home_of_the_free

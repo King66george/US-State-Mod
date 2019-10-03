@@ -48,7 +48,7 @@ bookmarks = {
 		}
 
 		"KSK"={
-			history = "USA_GATHERING_STORM_DESC"
+			history = "KSK_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 			}

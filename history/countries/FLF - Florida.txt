@@ -2,6 +2,14 @@
 
 oob = "FLF_1936"
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "FLF_naval_mtg"
+	else = {
+		set_naval_oob = "FLF_naval_legacy"
+	}
+}
+
 set_research_slots = 4
 
 # Starting tech

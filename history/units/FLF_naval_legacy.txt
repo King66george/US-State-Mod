@@ -1,0 +1,52 @@
+units = {
+  fleet = {
+    name = "Gulf Strike Force"
+    naval_base = 1843
+    task_force = {
+      location = 1843 # Miami
+      ship = { name = "FSS Miami" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
+      ship = { name = "FSS Tallahasee" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
+      ship = { name = "FSS Jacksonville" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }
+    }
+  }
+  fleet = {
+    name = "Destroyer Flotilla  1"
+    naval_base = 1843
+    task_force = {
+      location = 1843 # Miami
+      ship = { name = "USS Raleigh" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }
+      # 1st Destroyer Division
+      ship = { name = "USS Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      ship = { name = "USS Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      ship = { name = "USS MacDonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      ship = { name = "USS Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      # 2nd Destroyer Division
+      ship = { name = "USS Farragut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      ship = { name = "USS Dale" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      ship = { name = "USS Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      ship = { name = "USS Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+      # 34th Destroyer Division
+      ship = { name = "USS Rathburne" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      ship = { name = "USS Talbot" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      ship = { name = "USS Waters" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      ship = { name = "USS Dent" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      # 35th Destroyer Division
+      ship = { name = "USS Ballard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      ship = { name = "USS Thornton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      ship = { name = "USS Litchfield" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      ship = { name = "USS Zane" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+      ship = { name = "USS Wasmuth" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+    }
+  }
+  fleet = {
+    name = "Gulf Cruiser Flotilla"
+    base = 1843
+    task_force = {
+      location = 1843 # Miami
+      ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+      ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+      ship = { name = "USS Minneapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+      ship = { name = "USS San Francisco" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+    }
+  }
+}
