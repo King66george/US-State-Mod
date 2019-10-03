@@ -427,7 +427,6 @@ focus_tree = {
 		id = CAC_nevadawar
 		icon = GFX_CAC_freedom
 		cost = 7.25
-		factor = 5
 		prerequisite = {
 			focus = CAC_expandncrstates
 		}
@@ -1095,7 +1094,6 @@ focus_tree = {
 		id = CAC_frankmerriamsplans
 		icon = GFX_CAC_frankmerriamsplans
 		cost = 1.50
-		factor = 5
 		prerequisite = {
 			focus = CAC_politicalstate
 		}
