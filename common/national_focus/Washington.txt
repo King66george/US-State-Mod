@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 10
+    add = 30
     tag = WAW
     }
   }
@@ -391,7 +391,7 @@ focus = {
 
 focus = {
   id = WAW_subsidize_the_industry
-  icon = GFX_Generic_Industrial_Complexes
+  icon = GFX_FLF_focus_Focus_On_The_Unions
   prerequisite = { focus = WAW_build_up_our_industry }
   cost = 5
   x = -12
