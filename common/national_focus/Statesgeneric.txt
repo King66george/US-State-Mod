@@ -2460,6 +2460,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Sking_and_country
 		}
+
 		x = 30
 		y = 5
 			available_if_capitulated = no
@@ -2474,15 +2475,14 @@ focus_tree = {
 										}
 								}
 							ROOT = {
-								will_lead_to_war_with = PREV
 									create_wargoal = {
-											will_lead_to_war_with = PREV
 											target = PREV
 											type = annex_everything
 										}
 								}
 						}
 				}
+			will_lead_to_war_with = PREV
 	}
 focus = {
 	id = Monarchy_Goal2
@@ -2509,16 +2509,14 @@ focus = {
 				}
 			}
 			ROOT = {
-				will_lead_to_war_with = PREV
 				create_wargoal = {
-					will_lead_to_war_with = PREV
 					target = PREV
 					type = annex_everything
 				}
 			}
 	}
 }
-
+	will_lead_to_war_with = PREV
 	}
 	focus = {
 		id = Sflexible_navy
@@ -2985,16 +2983,14 @@ focus = {
 										}
 								}
 							ROOT = {
-								will_lead_to_war_with = PREV
 									create_wargoal = {
-											will_lead_to_war_with = PREV
 											target = PREV
 											type = annex_everything
 										}
 								}
 						}
 				}
-
+	will_lead_to_war_with = PREV
 	}
 
 	focus = {
@@ -3022,16 +3018,14 @@ focus = {
 										}
 								}
 							ROOT = {
-								will_lead_to_war_with = PREV
 									create_wargoal = {
-											will_lead_to_war_with = PREV
 											target = PREV
 											type = annex_everything
 										}
 								}
 						}
 				}
-
+			will_lead_to_war_with = PREV
 	}
 
 }
