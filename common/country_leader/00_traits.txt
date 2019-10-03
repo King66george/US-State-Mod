@@ -478,7 +478,7 @@ leader_traits = {
 	peoples_man = {
 		random = no
 		political_power_factor = 0.1
-		add_stability = 0.1
+		stability_factor = 0.1
 		conversion_cost_civ_to_mil_factor = -0.2
 
 		ai_will_do = {
