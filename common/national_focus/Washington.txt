@@ -29,7 +29,12 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+  914 = {
+    add_building_construction = {
+        type = air_base
+        level = 2
+        instant_build = yes
+    }
   }
 }
 
@@ -294,7 +299,7 @@ focus = {
 }
 
 focus = {
-  id = WAW_restructure_banking_laws
+  id = WAW_unknown1
   icon = GFX_goal_unknown
   prerequisite = { focus = WAW_fight_the_depression }
   cost = 10
@@ -366,7 +371,7 @@ focus = {
     914 = {
       add_building_construction = {
           type = air_base
-          level = 6
+          level = 4
           instant_build = yes
       }
     }
@@ -390,7 +395,7 @@ focus = {
 }
 
 focus = {
-  id = WAW_subsidize_the_industry
+  id = WAW_unknown2
   icon = GFX_FLF_focus_Focus_On_The_Unions
   prerequisite = { focus = WAW_build_up_our_industry }
   cost = 5
