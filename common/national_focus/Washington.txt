@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 30
+    add = 10
     tag = WAW
     }
   }
@@ -221,7 +221,7 @@ focus = {
 
 focus = {
   id = WAW_call_the_local_militias
-  icon = GFX_goal_unknown
+  icon = GFX_Generic_Low_Morale
   prerequisite = { focus = WAW_CUF }
   cost = 10
   x = 27
@@ -243,7 +243,7 @@ focus = {
 
 focus = {
   id = WAW_evergreen_forevermore
-  icon = GFX_goal_unknown
+  icon = GFX_Generic_Bell_Tolls
   prerequisite = { focus = WAW_resist_the_bear }
   prerequisite = { focus = WAW_call_the_local_militias }
   cost = 10
@@ -312,13 +312,17 @@ focus = {
 
 focus = {
   id = WAW_appease_california
-  icon = GFX_goal_unknown
+  icon = GFX_Generic_Mutual_Cooperation
   mutually_exclusive = {
    focus = WAW_CUF
   }
   cost = 5
   x = 30
   y = 0
+
+  available = {
+    CAC = { has_completed_focus = CAC_localsecurity }
+  }
 
   cancel_if_invalid = yes
   continue_if_invalid = no
@@ -331,7 +335,7 @@ focus = {
 
 focus = {
   id = WAW_california_oil_agreement
-  icon = GFX_goal_unknown
+  icon = GFX_Generic_Oil_Concern
   prerequisite = { focus = WAW_appease_california }
   cost = 5
   x = 29
