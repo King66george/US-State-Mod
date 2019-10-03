@@ -1882,8 +1882,6 @@ focus_tree = {
 
 	}
 
-	#CAC_citizenshipbyservice
-
 	focus = {
 		id = CAC_establishthepeoplesarmy
 		icon = GFX_Generic_Socialist_Soldier
@@ -1944,6 +1942,30 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CAC_aworkersarmyidea
+		}
+	}
+
+	focus = {
+		id = CAC_anewcaliforniaarmy
+		icon = GFX_Generic_War_Propaganda05
+		cost = 10
+
+
+		prerequisite = {
+			focus = CAC_aworkersarmy
+		}
+
+		prerequisite = {
+			focus = CAC_citizenshipbyservicearmy
+		}
+		x = 25
+		y = 9
+
+		completion_reward = {
+			add_ideas = CAC_anewcaliforniaarmyidea
+			army_experience = 35
+			air_experience = 15
+			navy_experience = 15
 		}
 	}
 

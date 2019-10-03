@@ -603,6 +603,26 @@ CAC_ncrrevanchism = {
     }
   }
 
+  CAC_anewcaliforniaarmyidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      justify_war_goal_time = -25
+      planning_speed = 0.10
+      high_command_cost_factor = -0.15
+    }
+  }
+
 }
   ##########Political Advisors###############
   	political_advisor = {
