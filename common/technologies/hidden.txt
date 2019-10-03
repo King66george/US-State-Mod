@@ -17,7 +17,7 @@ technologies = {
 			desert = {
 				attack = 0.075
 				defence = 0.075
-				movement = 0.01
+				movement = 0.1
 			}
 			mountain = {
 				attack = 0.075
@@ -26,4 +26,3 @@ technologies = {
 			}
 		}
 	}
-	
