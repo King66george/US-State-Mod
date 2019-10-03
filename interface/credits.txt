@@ -5,8 +5,8 @@ FascistThanos - Original Creator of Mod / Texas Focus Tree
 
 #Mod Developers
 Lifey - California Focus Tree
-JRyan - Kentucky Focus Tree / Map Editor / Lead GFX
 cfc324 - Kansas Focus Tree / Lead GFX
+JRyan - Kentucky Focus Tree / Map Editor / Lead GFX
 SergeantMurica - Lead Map Editor / Multiple Focus Trees
 Crusadey Boi- New Jersey Focus Tree
 
