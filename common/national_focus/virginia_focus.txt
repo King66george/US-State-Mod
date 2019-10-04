@@ -158,11 +158,18 @@ focus_tree = {
 		}
 		x = 4
 		y = 1
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-
+		ai_will_do = {
+				factor = 1
+			}
+		completion_reward = {
+				876 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+								type = dockyard
+								level = 2
+								instant_build = yes
+							}
+					}
 }
 
 	}
@@ -208,6 +215,18 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+
+		completion_reward = {
+			navy_experience = 50
+			876 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+					}
+				}
+		}
 
 	}
 	focus = {
@@ -317,6 +336,16 @@ focus_tree = {
 					factor = 1
 				}
 
+				completion_reward = {
+						add_tech_bonus = {
+								name = air_bonus
+								bonus = 1.0
+								uses = 1
+								category = light_fighter
+								category = cat_heavy_fighter
+						}
+				}
+
 	}
 	focus = {
 		id = VAV_airres2
@@ -330,6 +359,16 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+				completion_reward = {
+						add_tech_bonus = {
+								name = air_bonus
+								bonus = 2.0
+								uses = 1
+								category = light_fighter
+								category = cat_heavy_fighter
+						}
+				}
+
 
 	}
 	focus = {
@@ -349,7 +388,7 @@ focus_tree = {
 					add_tech_bonus = {
 							name = air_doc_bonus
 							bonus = 1.0
-							uses = 1
+							uses = 3
 							category = air_doctrine
 						}
 				}
@@ -368,6 +407,16 @@ focus_tree = {
 					factor = 1
 				}
 
+		completion_reward = {
+			add_tech_bonus = {
+					name = infantry_artillery_bonus
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}
+		}
+
 	}
 	focus = {
 		id = VAV_army2
@@ -380,6 +429,17 @@ focus_tree = {
 		y = 2
 			ai_will_do = {
 					factor = 1
+				}
+
+
+				completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 2
+							category = infantry_weapons
+							category = artillery
+						}
 				}
 
 	}
@@ -1811,30 +1871,6 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = VAV_industrialpowerhouse
-		icon = GFX_focus_generic_industry_3
-		cost = 15.00
-		prerequisite = {
-			focus = VAV_developed
-			focus = VAV_navalpowerhouse
-			focus = VAV_economicboom
-		}
-		x = 33
-		y = 6
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					remove_ideas = VAV_idea_navy_discount
-					remove_ideas = VAV_idea_fully_developed_roads
-					remove_ideas = VAV_idea_eboom
-					remove_ideas = VAV_idea_brokenecon
-					add_ideas = VAV_idea_industrial_powerhouse
-				}
-
-	}
-
 
 	focus = {
 		id = VAV_researchslot3
