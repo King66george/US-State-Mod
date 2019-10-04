@@ -243,6 +243,18 @@ spriteTypes = {
 
 #Ohio
 	spriteType = {
+		name = "GFX_idea_worse_depression"
+		texturefile = "gfx/interface/ideas/worse_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_agricultural_industry"
+		texturefile = "gfx/interface/ideas/largeagriculture.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_agricultural__industry"
+		texturefile = "gfx/interface/ideas/largeagriculture.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_OHO_ford"
 		texturefile = "gfx/interface/ideas/henry_ford.dds"
 	}
@@ -300,14 +312,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_arthur_capper"
 		texturefile = "gfx/interface/ideas/idea_arthur_capper.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_worse_depression"
-		texturefile = "gfx/interface/ideas/worse_depression.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_agricultural__industry"
-		texturefile = "gfx/interface/ideas/largeagriculture.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ALL_idea_fascist"
