@@ -152,8 +152,6 @@ set_politics = {
 }
 add_ideas = {
 	limited_exports
-	disarmed_nation
-	VAV_idea_brokenecon
 
 }
 set_popularities = {
@@ -172,18 +170,6 @@ create_country_leader = {
 	traits = {
 		economic_reformer
 		champion_of_peace_1
-	}
-}
-
-create_country_leader = {
-	name = "Charlie Dailey"
-	#desc = "POLITICS_KING_ZOG_DESC"
-	picture = "portrait_charlie_dailey_result.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		permanent_revolutionary
-		dictator
 	}
 }
 

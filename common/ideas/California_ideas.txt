@@ -21,7 +21,6 @@ ideas = {
               consumer_goods_factor = 0.15
               stability_factor = -0.25
               justify_war_goal_time = 1
-              economy_cost_factor = 0.25
             }
           }
 
