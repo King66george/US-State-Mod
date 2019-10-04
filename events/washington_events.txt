@@ -33,6 +33,7 @@
 
     option = {
       name = washington.2.b
+      load_oob = WAW_lmt
       ai_chance = { factor = 50 }
     }
   }
