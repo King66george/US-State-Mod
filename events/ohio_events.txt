@@ -222,17 +222,93 @@ country_event = {
 	
 	is_triggered_only = yes
   option = {
-	 every_neighbor_country = {
-	  if = {
-		 limit = {
-		   NOT = {
-			  has_government = democratic
-			 }
-		 }
-		 add_ideas = truedemo
-		}
-	 }
-	}
+   name = ohio.9.a
+   every_neighbor_country = {
+    if = {
+     limit = {
+       NOT = {
+	has_government = democratic
+       }
+     }
+      add_ideas = truedemo
+     }
+    }
+   }
  }
+ country_event = { #VOTE TO BE ANNEXED BY OHIO
+  id = ohio.10
+  title = ohio.10.t
+  desc = ohio.10.d
+  picture = GFX_report_event_molotov_ribentrop_handshake
+  
+  is_triggered_only = yes
+  
+  option = { #COUNTRY ACCEPTS
+   name = ohio.10.a
+   OHO = {
+    annex_country = {
+     target = ROOT
+     transfer_troops = yes
+    }
+   }
+  }
+  option = { #COUNTRY REFUSES
+   name = ohio.10.b
+   OHO = {
+    country_event = ohio.11
+   }
+ }
+ country_event = {
+  id = ohio.11
+  title = ohio.11.t
+  desc = ohio.11.d
+  picture = GFX_report_event_finnish_letter
+
+  is_triggered_only = yes
+
+   option = {
+    name = ohio.11.a
+    create_wargoal = {
+      type = annex_everything
+      target = FROM
+    }
+   }
+ }
+country_event = {
+ id = ohio.12
+ title = ohio.12.t
+ desc = ohio.12.d
+ picture = GFX_report_event_finnish_letter
+ 
+ is_triggered_only = yes
+ 
+ option = {
+  name = ohio.12.a
+  OHO = {
+   transfer_state = 955
+   transfer_state = 391
+  }
+ }
+}
+country_event = {
+ id = ohio.12
+ title = ohio.12.t
+ desc = ohio.12.d
+ picture = GFX_report_event_finnish_letter
+ 
+ is_triggered_only = yes
+ 
+ option = {
+  name = ohio.12.a
+  OHO = {
+   add_state_claim = 955
+   add_state_claim = 391
+  }
+ }
+}
+
+
+
+
 }
 
