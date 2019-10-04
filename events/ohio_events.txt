@@ -187,3 +187,52 @@ country_event = {
     }
   }
 }
+country_event = {
+  id = ohio.8
+  title = ohio.8.t
+  desc = ohio.8.d
+  picture = GFX_report_event_molotov_ribentrop_handshake
+
+  is_triggered_only = yes
+
+  option = {
+    name = ohio.8.a
+    add_opinion_modifier = {
+		  target = FROM
+			modifier = huge_increase
+		}
+  }
+	news_event = {
+   id = ohio.9
+   title = ohio.9.t
+   desc = ohio.9.d
+   picture = GFX_report_event_molotov_ribentrop_handshake
+
+   is_triggered_only = yes
+
+   option = {
+    name = ohio.9.a
+  }
+}
+ country_event = {
+  id = ohio.10
+	title = ohio.10.t
+	desc = ohio.9.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+  option = {
+	 every_neighbor_country = {
+	  if = {
+		 limit = {
+		   NOT = {
+			  has_government = democratic
+			 }
+		 }
+		 add_ideas = truedemo
+		}
+	 }
+	}
+ }
+}
+
