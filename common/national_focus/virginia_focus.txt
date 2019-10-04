@@ -1742,6 +1742,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = { VAV_idea_eboom }
+					remove_ideas = VAV_idea_brokenecon
 				}
 
 	}
