@@ -18,7 +18,10 @@ ideas = {
             modifier = {
               surrender_limit = -0.5
               political_power_gain = -0.25
-              consumer_goods_factor = 0.1
+              consumer_goods_factor = 0.15
+              stability_factor = -0.25
+              justify_war_goal_time = 1
+              economy_cost_factor = 0.25
             }
           }
 
@@ -438,8 +441,8 @@ CAC_ncrrevanchism = {
     modifier = {
       decryption_factor = 0.05
       encryption_factor = 0.05
-      subversive_activites_upkeep = -0.35
-      enemy_partisan_effect = -0.15
+      subversive_activites_upkeep = -0.25
+      enemy_partisan_effect = -0.10
     }
   }
 
@@ -603,7 +606,8 @@ CAC_ncrrevanchism = {
     }
   }
 
-  CAC_anewcaliforniaarmyidea = {
+
+  CAC_thecaliforniacommunistspyidea = {
     allowed = {
       always = no
       }
@@ -617,9 +621,30 @@ CAC_ncrrevanchism = {
     removal_cost = -1
 
     modifier = {
-      justify_war_goal_time = -25
-      planning_speed = 0.10
-      high_command_cost_factor = -0.15
+      decryption_factor = 0.04
+      encryption_factor = 0.04
+      enemy_partisan_effect = -0.15
+      recon_factor = 0.1
+    }
+  }
+
+  CAC_themilitapartisansidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      decryption_factor = 0.05
+      partisan_effect = 0.20
+      subversive_activites_upkeep = -0.50
     }
   }
 

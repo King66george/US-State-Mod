@@ -1944,26 +1944,70 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAC_anewcaliforniaarmy
-		icon = GFX_Generic_War_Propaganda05
+		id = CAC_establishaespionageforce
+		icon = GFX_Focus_Communist_Spy02
 		cost = 10
 
 
 		prerequisite = {
-			focus = CAC_aworkersarmy
+			focus = CAC_finishtheplan
+		}
+
+		x = 29
+		y = 7
+
+		completion_reward = {
+			country_event = california.22
+		}
+	}
+
+	focus = {
+		id = CAC_themilitapartisans
+		icon = GFX_Generic_Spy_Communist
+		cost = 10
+
+		available = {
+			has_country_flag = CAC_militapartisans
 		}
 
 		prerequisite = {
-			focus = CAC_citizenshipbyservicearmy
+			focus = CAC_establishaespionageforce
 		}
-		x = 25
-		y = 9
+
+		mutually_exclusive = {
+			focus = CAC_thecaliforniacommunistspy
+		}
+
+		x = 28
+		y = 8
 
 		completion_reward = {
-			add_ideas = CAC_anewcaliforniaarmyidea
-			army_experience = 35
-			air_experience = 15
-			navy_experience = 15
+			add_ideas = CAC_themilitapartisansidea
+		}
+	}
+
+	focus = {
+		id = CAC_thecaliforniacommunistspy
+		icon = GFX_Focus_Communist_Spy
+		cost = 10
+
+		available = {
+			has_country_flag = CAC_communistspys
+		}
+
+		prerequisite = {
+			focus = CAC_establishaespionageforce
+		}
+
+		mutually_exclusive = {
+			focus = CAC_themilitapartisans
+		}
+
+		x = 30
+		y = 8
+
+		completion_reward = {
+			add_ideas = CAC_thecaliforniacommunistspyidea
 		}
 	}
 

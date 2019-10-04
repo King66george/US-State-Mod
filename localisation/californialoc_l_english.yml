@@ -12,6 +12,9 @@ core_land:0 "Will core all lands."
 walt_disney:0 "Walt Disney"
 CAC_aworkersarmytooltip:0 "Chose a Worker's Army"
 CAC_citizenshipbyservice:0 "Chose Soldier's of the Internationale"
+CAC_militapartisans:0 "Chose Milita Partisans"
+CAC_communistspys:0 "Chose The California Civil Special Investigations Agency"
+
 #This file is meant for all California focus and description localization.
 
 CAC_politicalstate:0 "The 1936 Election"
@@ -146,4 +149,6 @@ CAC_establishthepeoplesarmy:0 "Establish The People's Army"
 CAC_citizenshipbyservicearmy:0 "Soldiers of the Internationale"
 CAC_citizenshipbyservicearmy_desc:0 "As we expand our borders, we must remember the many people who will be under our rule. While some will remain loyal to their former state, others are simply proletarians who suffered under their bourgeoisie masters. These masses may be persuaded to join our cause and spread the revolution from coast to coast! Yesterday, they were merely workers under the boot of misguided ideology. Tomorrow, they will be our soldiers bringing glory to the Great Red Bear!"
 CAC_aworkersarmy:0 "A Worker's Army"
-CAC_anewcaliforniaarmy:0 "A New California Army"
+CAC_establishaespionageforce:0 "Establish The Espionage Force"
+CAC_themilitapartisans:0 "The Milita Partisans"
+CAC_thecaliforniacommunistspy:0 "The California Civil Special Investigations Agency"
