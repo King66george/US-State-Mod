@@ -24,10 +24,20 @@
 
 
 #Ideas
-  WAW_resist_the_bear_idea:0 "Resist The Bear"
-  WAW_resist_the_bear_idea:0 "We Must Resist The Bear"
+ WAW_resist_the_bear_idea:0 "Resist The Bear"
+ WAW_resist_the_bear_idea:0 "We Must Resist The Bear"
 
 #Events
+ #Cascadian United Front
+ washington.1.t:0 ""
+ washington.1.d:0 ""
+ washington.1.a:0 ""
+ washington.1.b:0 ""
+ #Call The Local Militias
+ washington.2.t:0 "Call The Local Militias"
+ washington.2.d:0 "The California scum have disrespected our sovreignty and declared war upon us! These warlord bears might defeat our army but if played right not our will to be free!"
+ washington.2.a:0 "Raise the militias now!"
+ washington.2.b:0 "Train the militants! We can hold the California Bear longer!"
 
 
 #Custom Tooltips
