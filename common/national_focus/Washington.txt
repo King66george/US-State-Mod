@@ -501,6 +501,7 @@ focus = {
 focus = {
   id = WAW_jet_fighter_focus
   icon = GFX_Generic_Jet_Fighters
+  prerequisite = { focus = WAW_streamline_fighter_production focus = WAW_recruit_female_aviators }
   prerequisite = { focus = WAW_streamline_fighter_production }
   prerequisite = { focus = WAW_streamline_bomber_production }
   cost = 10
