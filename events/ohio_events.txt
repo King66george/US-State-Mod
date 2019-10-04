@@ -197,10 +197,12 @@ country_event = {
 
   option = {
     name = ohio.8.a
-    add_opinion_modifier = {
-		  target = FROM
-			modifier = huge_increase
-		}
+    OHO = {
+     add_opinion_modifier = {
+      target = ROOT
+	  modifier = huge_increase
+     }
+	}
   }
 	news_event = {
    id = ohio.9
@@ -213,28 +215,7 @@ country_event = {
    option = {
     name = ohio.9.a
   }
-}
- country_event = {
-  id = ohio.10
-	title = ohio.10.t
-	desc = ohio.9.d
-	picture = GFX_report_event_molotov_ribentrop_handshake
-	
-	is_triggered_only = yes
-  option = {
-   name = ohio.9.a
-   every_neighbor_country = {
-    if = {
-     limit = {
-       NOT = {
-	has_government = democratic
-       }
-     }
-      add_ideas = truedemo
-     }
-    }
-   }
- }
+} 
  country_event = { #VOTE TO BE ANNEXED BY OHIO
   id = ohio.10
   title = ohio.10.t
@@ -258,7 +239,7 @@ country_event = {
     country_event = ohio.11
    }
  }
- country_event = {
+ country_event = { #COUNTRY DENIED OHIO
   id = ohio.11
   title = ohio.11.t
   desc = ohio.11.d
@@ -274,7 +255,7 @@ country_event = {
     }
    }
  }
-country_event = {
+country_event = { #OHIO WINS BORDER WAR AGAINST MINNESOTA
  id = ohio.12
  title = ohio.12.t
  desc = ohio.12.d
@@ -290,7 +271,7 @@ country_event = {
   }
  }
 }
-country_event = {
+country_event = { #OHIO LOSES BORDER WAR AGAINST MINNESOTA
  id = ohio.12
  title = ohio.12.t
  desc = ohio.12.d
@@ -306,8 +287,100 @@ country_event = {
   }
  }
 }
-
-
+ country_event = { #OHIO DEMOCRATIC INFLUENCE
+  id = ohio.13
+	title = ohio.13.t
+	desc = ohio.13.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+  option = {
+   name = ohio.13.a
+   every_neighbor_country = {
+    if = {
+     limit = {
+       NOT = {
+	has_government = democratic
+       }
+     }
+      add_ideas = truedemo
+     }
+    }
+   }
+ }
+ country_event = {
+  id = ohio.14
+  title = ohio.14.t
+  desc = ohio.14.d
+  picture =
+  
+  is_triggered_only = yes
+  
+  option = {
+   name = ohio.14.a
+   ai_chance = {
+    factor = 30
+    modifier = {
+     factor = 40
+     strength_ratio > .5
+    }
+   }
+   diplomatic_relation = {
+     country = WDC
+     relation = non_aggression_pact
+    }
+    OHO = {
+     country_event = ohio.15
+    }
+  }
+  option = {
+   name = ohio.14.b
+   OHO = { 
+    country_event = ohio.16
+   }
+  }
+ }
+ country_event = {
+  id = ohio.15
+  title = ohio.15.t
+  desc = ohio.15.d
+  picture =
+  
+  is_triggered_only = yes
+  
+  option = {
+   name = ohio.15.a
+  }
+ }
+country_event = {
+ id = ohio.16
+ title = ohio.16.t
+ desc = ohio.16.d
+ picture = 
+ 
+ is_triggered_only = yes
+ 
+ option = {
+  ohio.16.a
+ }
+}
+country_event = { #CHOOSE WHAT INDUSTRY TO PRIORITIZE
+ id = ohio.17
+ title = ohio.17.t
+ desc = ohio.17.d
+ picture = 
+ 
+ is_triggered_only = yes
+ 
+ option = { #EMPHASIZE CIVILIAN ECONOMY
+  name = ohio.17.a
+  set_country_flag = emciv
+ }
+ option = { #EMPHASIZE MILITARY ECONOMY
+  name = ohio.17.b
+  set_country_flag = emmil
+ }
+}
 
 
 }
