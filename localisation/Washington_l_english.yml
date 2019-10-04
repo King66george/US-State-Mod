@@ -21,6 +21,14 @@
  WAW_expand_boeing_field_desc:0 "WIP"
  WAW_call_the_local_militias:0 "Call The Local Militias"
  WAW_call_the_local_militias_desc:0 "WIP"
+ WAW_streamline_fighter_production:0 "Streamline Fighter Production"
+ WAW_streamline_fighter_production_desc:0 "WIP"
+ WAW_streamline_bomber_production:0 "Streamline Bomber Production"
+ WAW_streamline_bomber_production_desc:0 "WIP"
+ WAW_jet_fighter_focus:0 "Jet Fighter Focus"
+ WAW_jet_fighter_focus_desc:0 "WIP"
+ WAW_jet_bomber_focus:0 "Jet Bomber Focus"
+ WAW_jet_bomber_focus_desc:0 "WIP"
 
 
 #Ideas
@@ -29,10 +37,10 @@
 
 #Events
  #Cascadian United Front
- washington.1.t:0 ""
- washington.1.d:0 ""
- washington.1.a:0 ""
- washington.1.b:0 ""
+ washington.1.t:0 "WIP"
+ washington.1.d:0 "WIP"
+ washington.1.a:0 "WIP"
+ washington.1.b:0 "WIP"
  #Call The Local Militias
  washington.2.t:0 "Call The Local Militias"
  washington.2.d:0 "The California scum have disrespected our sovreignty and declared war upon us! These warlord bears might defeat our army but if played right not our will to be free!"
