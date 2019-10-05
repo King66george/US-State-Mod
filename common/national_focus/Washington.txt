@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 10
+    add = 30
     tag = WAW
     }
   }
@@ -526,7 +526,7 @@ focus = {
   y = 4
 
   available = {
-
+    date < 1944.01.01
   }
 
   cancel_if_invalid = yes
@@ -534,7 +534,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-    date < 1944.01.01
+
   }
 }
 
