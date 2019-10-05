@@ -30,6 +30,10 @@ SpriteType = {
   texturefile = "gfx/interface/goals/Generic_Blue_Democracy.dds"
 }
 SpriteType = {
+  name = "GFX_Generic_Construction"
+  texturefile = "gfx/interface/goals/Generic_Construction.dds"
+}
+SpriteType = {
   name = "GFX_Generic_Bombs"
   texturefile = "gfx/interface/goals/Generic_Bombs.dds"
 }
