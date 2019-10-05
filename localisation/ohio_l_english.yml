@@ -71,7 +71,24 @@ ohio.6.a:0 "Wonderful!"
 ohio.7.t:0 "[From.Owner.GetName] has rejected our proposal!"
 ohio.7.d:0 "We have reciveved a response from [From.Owner.GetName] rejecting the military pact. In the coming days, we will make preparations to attack their ridiculous government. They have made their final mistake. They will not have time to reconcile until they're kneeling beneath our feet."
 ohio.7.a:0 "If only they had said yes..."
-#An offer to Roosevelt
+#Improve Relations Event
+ohio.8.t:0 "Diplomatic Envoy from [From.Owner.GetName]"
+ohio.8.d:0 "The [From.Owner.GetName] has send a diplomatic envoy. At 6:15 AM this morning, we recieved a diplomatic envoy from [From.Owner.GetName]. It contains a proposal of diplomatic relations. We should see where this relationship develops."
+ohio.8.a:0 "Diplomatic relations wouldn't be so bad."
+#Formation of the Northwest Territories
+ohio.9.t:0 "Ohio Plans to Reform the Northwest Territories!"
+ohio.9.d:0 "We've recieved word that the government of Ohio has made strides in forming the Northwest Territories. If this situation develops, we could have another beacon of democracy in North America. The balkinization of North America may have left democracy stronger than before. If these major countries can form in the shell of the United States, we can keep democracy strong forever."
+ohio.9.a:0 "Perhaps democracy hasn't been abandoned"
+#Vote to be annexed by Ohio
+ohio.10.t:0 "Ohio Votes to Annex Us"
+ohio.10.d:0 "Ohio has send us a request to be integrated into their country. If we were to accept, we would no longer be an independent nation. On the other hand, we would also be under the flag of a stronger nation. We should consider the dangers of remaining a sovereign nation. The people shall have a referendum."
+ohio.10.a:0 "The People Say Yes"
+ohio.10.b:0 "The People Vote No"
+#Country Denies Ohio Annexation
+ohio.11.t:0 "[From.Owner.GetName] has denied us!"
+ohio.11.d:0 "We tried to be reasonable. We attempted to diplomatically annex them. They continue to refuse us. Our vision will not be impeded by a single nation. "
+ohio.11.a:0 "It seems that the only action we can take... is lethal"
+#
 
 
 ##Focuses##
