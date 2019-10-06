@@ -1277,7 +1277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_collectivist_ethos
-		icon = GFX_Generic_Revolutionary_Government
+		icon = GFX_Generic_Break_Free
 		cost = 5.00
 		prerequisite = {
 			focus = QBC_political_effort
@@ -2659,7 +2659,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_nationalism_focus_start
-		icon = GFX_Generic_Ultranationalist_Government
+		icon = GFX_Generic_Imperial_Eagle
 		cost = 5.00
 		prerequisite = {
 			focus = QBC_political_effort
