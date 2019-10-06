@@ -494,6 +494,10 @@ SpriteType = {
   texturefile = "gfx/interface/goals/Red_Tearing_Paper.dds"
 }
 SpriteType = {
+  name = "GFX_Generic_Imperial_Eagle"
+  texturefile = "gfx/interface/goals/Generic_Imperial_Eagle.dds"
+}
+SpriteType = {
   name = "GFX_shine_mask"
   texturefile = "gfx/interface/goals/shine_mask.dds"
 }
