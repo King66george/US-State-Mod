@@ -150,6 +150,7 @@ ideas = {
       removal_cost = -1
 
       modifier = {
+        enemy_justify_war_goal_time = 2
         justify_war_goal_time = 2
       }
     }
@@ -225,6 +226,105 @@ ideas = {
         democratic_drift = 0.01
         stability_factor = 0.10
         army_core_defence_factor = 0.1
+      }
+    }
+    OHO_general_rearm = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        conscription = 0.05
+        production_speed_arms_factory_factor = 0.1
+        consumer_goods_factor = 0.05
+
+      }
+    }
+    OHO_expansionism = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        justify_war_goal_time = -0.50
+        mobilization_laws_cost_factor = -0.10
+        foreign_subversive_activites = -0.25
+      }
+    }
+    OHO_internal_affairs = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = -0.05
+        production_speed_industrial_complex_factor = 0.10
+        production_speed_infrastructure_factor = 0.10
+      }
+    }
+    OHO__nationalism = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        war_support_factor = 0.15
+        conscription = 0.045
+        non_core_manpower = 0.02
+      }
+    }
+    military_academies = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        training_time_factor = -0.25
+      }
+    }
+    prohibition_usury = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = -0.05
       }
     }
   }
