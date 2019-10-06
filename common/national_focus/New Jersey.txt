@@ -1318,6 +1318,7 @@ x = 36
 y = 3
 cost = 5
 prerequisite = { focus = njmid3.5 }
+prerequisite = { focus = njmid4.8 }
 completion_reward = {
 add_ideas = free_bond
 }
@@ -1331,7 +1332,6 @@ icon = GFX_goal_generic_consumer_goods
 x = 39
 y = 2.5
 cost = 5
-prerequisite = { focus = njmid2.5 }
 prerequisite = { focus = njmid3.5 }
 mutually_exclusive = { focus = njmid4.9 }
 completion_reward = {
