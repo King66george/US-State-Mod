@@ -130,21 +130,20 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
-			completion_reward = {
-					add_opinion_modifier = {
-							target = WDC
-							modifier = large_decrease
-						}
-					add_opinion_modifier = {
-							target = WDC
-							modifier = large_decrease
-						}
-					add_opinion_modifier = {
-							target = WDC
-							modifier = large_decrease
-						}
-				}
-
+		completion_reward = {
+			add_opinion_modifier = {
+				target = WDC
+				modifier = large_decrease
+			}
+			add_opinion_modifier = {
+				target = WDC
+				modifier = large_decrease
+			}
+			add_opinion_modifier = {
+				target = WDC
+				modifier = large_decrease
+			}
+		}
 	}
 	focus = {
 		id = OHO_offertofdr
@@ -157,9 +156,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 3
-	        completion_reward = {
-			WDC = { 
-			        country_event = ohio.15
+		completion_reward = {
+			WDC = {
+				country_event = ohio.15
 			}
 		}
 
@@ -173,20 +172,20 @@ focus_tree = {
 			focus = OHO_offertofdr
 		}
 		available = {
-		        WDC = { 
-			        has_government = demorcratic
+			WDC = { 
+				has_government = demorcratic
 			}
 		}
-				        
+
 		x = 3
 		y = 4
-			completion_reward = {
-					add_opinion_modifier = {
-							target = WDC
-							modifier = large_decrease
-						}
-					add_ideas = OHO_natsj
-				}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = WDC
+				modifier = large_decrease
+			}
+			add_ideas = OHO_natsj
+		}
 
 	}
 	focus = {
@@ -362,12 +361,12 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
-			completion_reward = {
-					add_opinion_modifier = {
-							target = WDC
-							modifier = large_increase
-						}
-				}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = WDC
+				modifier = large_increase
+			}
+		}
 
 	}
 	focus = {
@@ -379,15 +378,14 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-			completion_reward = {
-					add_political_power = 50
-					add_stability = 0.03
-					add_opinion_modifier = {
-							target = WDC
-							modifier = small_increase
-						}
-				}
-
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+			add_opinion_modifier = {
+				target = WDC
+				modifier = small_increase
+			}
+		}
 	}
 	focus = {
 		id = OHO_ourownpath

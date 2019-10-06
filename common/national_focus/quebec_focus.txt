@@ -6,7 +6,7 @@ focus_tree = {
 			add = 30
 			tag = QBC
 			has_dlc = "Together for Victory"
-
+			
 		}
 	}
 	default = no
@@ -14,7 +14,7 @@ focus_tree = {
 		id = QBC_quebecois_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
-		x = 72
+		x = 66
 		y = 0
 			ai_will_do = {
 					factor = 9
@@ -51,9 +51,9 @@ focus_tree = {
 							limit = {
 									is_coastal = yes
 									free_building_slots = {
-										building = 													dockyard
+											building = dockyard
 											size > 2
-											include_locked 												= yes
+											include_locked = yes
 										}
 								}
 							add_extra_state_shared_building_slots = 3
@@ -68,7 +68,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_political_effort
-		icon = GFX_focus_generic_treaty
+		icon = GFX_Generic_Canada
 		cost = 1.00
 		x = 42
 		y = 0
@@ -79,30 +79,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_army_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 5.00
-		x = 8
-		y = 0
-			available_if_capitulated = yes
-			completion_reward = {
-					army_experience = 25
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 3.0
-							uses = 1
-							category = land_doctrine
-						}
-					load_oob = QBC_focus_oob
-				}
-
-	}
-	focus = {
 		id = QBC_aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
-		x = 66
-		y = 1
+		x = 6
+		y = 0
 			available_if_capitulated = yes
 			complete_tooltip = {
 					air_experience = 25
@@ -186,7 +167,7 @@ focus_tree = {
 		id = QBC_industrial_effort
 		icon = GFX_goal_generic_production
 		cost = 5.00
-		x = 19
+		x = 14
 		y = 0
 			available_if_capitulated = yes
 			completion_reward = {
@@ -199,495 +180,138 @@ focus_tree = {
 				}
 			ai_will_do = {
 					factor = 3
-
 				}
 
 	}
 	focus = {
-		id = QBC_economic_effort
-		icon = GFX_goal_generic_consumer_goods
-		cost = 5.00
-		x = 14
-		y = 0
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							bonus = 1.0
-							uses = 1
-							category = electronics
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_equipment_effort
-		icon = GFX_goal_generic_small_arms
+		id = QBC_fighter_focus
+		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
 		prerequisite = {
-			focus = QBC_army_effort
+			focus = QBC_aviation_effort
 		}
-		x = 6
+		x = 4
 		y = 1
 			available_if_capitulated = yes
 			completion_reward = {
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 1000
-							producer = ENG
-						}
 					add_tech_bonus = {
-							name = infantry_artillery_bonus
-							bonus = 1.0
-							uses = 1
-							category = infantry_weapons
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_doctrine_effort
-		icon = GFX_goal_generic_army_doctrines
-		cost = 7.00
-		prerequisite = {
-			focus = QBC_equipment_effort
-		}
-		x = 6
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					army_experience = 25
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 1.0
-							uses = 1
-							category = land_doctrine
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		cost = 7.00
-		prerequisite = {
-			focus = QBC_doctrine_effort
-		}
-		x = 6
-		y = 3
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_artillery_bonus
-							bonus = 1.0
-							uses = 1
-							category = infantry_weapons
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_equipment_effort_3
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_equipment_effort_2
-		}
-		x = 6
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_artillery_bonus
-							ahead_reduction = 2
-							uses = 1
-							category = infantry_weapons
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_prep_effort
-		icon = GFX_focus_chi_army_reform
-		cost = 7.00
-		prerequisite = {
-			focus = QBC_army_effort
-		}
-		x = 8
-		y = 1
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = paramilitarism_focus
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 500
-							producer = GER
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_arm_ourselves
-		icon = GFX_goal_generic_construct_military
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_prep_effort
-		}
-		x = 8
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 2000
-							producer = ITA
-						}
-					add_equipment_to_stockpile = {
-							type = support_equipment_1
-							amount = 250
-							producer = FRA
-						}
-					add_tech_bonus = {
-							name = infantry_artillery_bonus
-							bonus = 1.0
-							uses = 1
-							category = infantry_weapons
-							category = artillery
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_doctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_arm_ourselves
-		}
-		x = 8
-		y = 3
-			available_if_capitulated = yes
-			completion_reward = {
-					army_experience = 25
-					add_tech_bonus = {
-							name = land_doc_bonus
+							name = fighter_bonus
 							bonus = 1.0
 							uses = 2
-							category = land_doctrine
+							technology = early_fighter
+							technology = fighter1
+							technology = fighter2
+							technology = fighter3
+							technology = heavy_fighter1
+							technology = heavy_fighter2
+							technology = heavy_fighter3
 						}
 				}
 
 	}
 	focus = {
-		id = QBC_bike_effort
-		icon = GFX_goal_generic_build_tank
-		cost = 2.00
+		id = QBC_aviation_effort_2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
 		prerequisite = {
-			focus = QBC_army_effort
+			focus = QBC_aviation_effort
 		}
-		x = 10
+		x = 6
 		y = 1
 			available_if_capitulated = yes
-			completion_reward = {
-					set_technology = {
-							bicycle_infantry = 1
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_motorization_effort
-		icon = GFX_goal_generic_army_motorized
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_bike_effort
-		}
-		x = 10
-		y = 2
-			bypass = {
-					has_tech = motorised_infantry
-				}
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = motorized_bonus
-							bonus = 3.0
-							technology = motorised_infantry
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_armor_effort
-		icon = GFX_goal_generic_army_tanks
-		cost = 7.00
-		prerequisite = {
-			focus = QBC_motorization_effort
-		}
-		x = 10
-		y = 3
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1.5
-							uses = 2
-							category = armor
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_special_forces
-		icon = GFX_goal_generic_special_forces
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_armor_effort
-		}
-		prerequisite = {
-			focus = QBC_doctrine_effort_2
-		}
-		x = 9
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = special_forces
-					add_tech_bonus = {
-							name = special_forces_bonus
-							bonus = 1.0
-							uses = 1
-							technology = paratroopers
-							technology = paratroopers2
-							technology = marines
-							technology = marines2
-							technology = tech_mountaineers
-							technology = tech_mountaineers2
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_more_slots
-		icon = GFX_goal_generic_construction
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_economic_effort
-		}
-		x = 14
-		y = 1
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 2
-				}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 1
-											include_locked = yes
-										}
+			complete_tooltip = {
+					air_experience = 25
+					if = {
+							limit = {
+									has_country_flag = aviation_effort_2_AB
+								}
+							add_building_construction = {
+									type = air_base
+									level = 2
+									instant_build = yes
 								}
 						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = air_doctrine
+						}
 				}
 			completion_reward = {
-					random_owned_controlled_state = {
+					air_experience = 25
+					if = {
 							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
+									capital_scope = {
+											OR = {
+													NOT = {
+															is_controlled_by = ROOT
+														}
+													NOT = {
+															free_building_slots = {
+																	building = air_base
+																	size > 1
 																}
 														}
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_begin_digging
-		icon = GFX_goal_generic_construction2
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_more_slots
-		}
-		x = 13
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							bonus = 3.0
-							uses = 1
-							category = synth_resources
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_tung_add
-		icon = GFX_focus_generic_tungsten
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_begin_digging
-		}
-		mutually_exclusive = {
-			focus = QBC_alu_add
-		}
-		x = 13
-		y = 3
-			available_if_capitulated = yes
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_resource = {
-									type = tungsten
-									amount = 8
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_steel_add
-		icon = GFX_focus_generic_steel
-		cost = 15.00
-		prerequisite = {
-			focus = QBC_more_slots
-		}
-		x = 15
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_resource = {
-									type = steel
-									amount = 12
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_alu_add
-		icon = GFX_focus_generic_industry_2
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_steel_add
-		}
-		mutually_exclusive = {
-			focus = QBC_tung_add
-		}
-		x = 15
-		y = 3
-			available_if_capitulated = no
-			completion_reward = {
-					random_owned_controlled_state = {
-							prioritize = { 43 }
-							limit = {
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
 									ROOT = {
-											has_full_control_of_state = PREV
-										}
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
+											set_country_flag = aviation_effort_2_AB
 										}
 								}
-							add_resource = {
-									type = chromium
-									amount = 8
+						}
+					if = {
+							limit = {
+									capital_scope = {
+											is_controlled_by = ROOT
+											free_building_slots = {
+													building = air_base
+													size > 1
+												}
+										}
 								}
+							capital_scope = {
+									add_building_construction = {
+											type = air_base
+											level = 2
+											instant_build = yes
+										}
+									ROOT = {
+											set_country_flag = aviation_effort_2_AB
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = air_doctrine
 						}
 				}
 
 	}
 	focus = {
-		id = QBC_ref_add
-		icon = GFX_goal_generic_oil_refinery
+		id = QBC_the_sabre_project
+		icon = GFX_focus_rocketry
 		cost = 10.00
 		prerequisite = {
-			focus = QBC_tung_add
-			focus = QBC_alu_add
+			focus = QBC_aviation_effort_2
 		}
-		x = 13
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = synthetic_refinery
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_global_player
-		icon = GFX_goal_generic_positive_trade_relations
-		cost = 2.00
-		prerequisite = {
-			focus = QBC_alu_add
-			focus = QBC_tung_add
-		}
-		x = 15
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					add_political_power = 100
-					add_stability = 0.05
-				}
-
-	}
-	focus = {
-		id = QBC_balanced_budget
-		icon = GFX_focus_mex_privatisation
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_global_player
-			focus = QBC_ref_add
-		}
-		x = 14
-		y = 5
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = YUG_idea_foreign_capital
-				}
-
-	}
-	focus = {
-		id = QBC_war_fueled_economy
-		icon = GFX_goal_generic_trade
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_balanced_budget
-		}
-		x = 15
-		y = 6
+		x = 5
+		y = 2
 			ai_will_do = {
 					factor = 25
 				}
@@ -701,234 +325,83 @@ focus_tree = {
 			continue_if_invalid = no
 			available_if_capitulated = yes
 			complete_tooltip = {
-					remove_ideas = CAN_great_depression_2
-					random_state = {
-							limit = {
-									has_state_flag = CAN_war_fueled_economy_AF1
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_state = {
-							limit = {
-									has_state_flag = CAN_war_fueled_economy_AF2
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_state = {
-							limit = {
-									has_state_flag = CAN_war_fueled_economy_AF3
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
+
+}
 			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									is_in_home_area = yes
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 4
-									instant_build = yes
-								}
+					add_tech_bonus = {
+							name = CAN_the_sabre_project
+							ahead_reduction = 2
+							uses = 2
+							category = rocketry
+							category = jet_technology
 						}
 				}
 
 	}
 	focus = {
-		id = QBC_construction_effort
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_industrial_effort
-		}
-		x = 17
-		y = 1
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 2
-				}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_construction_effort_2
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 7.00
-		prerequisite = {
-			focus = QBC_construction_effort
-		}
-		x = 17
-		y = 2
-			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 2
-				}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 0
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 0
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_construction_effort_3
-		icon = GFX_goal_generic_construct_civ_factory
+		id = QBC_NAV_effort
+		icon = GFX_focus_usa_escort_fighters
 		cost = 10.00
 		prerequisite = {
-			focus = QBC_construction_effort_2
+			focus = QBC_aviation_effort_2
 		}
-		x = 17
-		y = 3
+		x = 7
+		y = 2
 			available_if_capitulated = yes
-			ai_will_do = {
-					factor = 2
-				}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = construction_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = industrial_complex
-											size < 2
-											include_locked = yes
-										}
-								}
+			completion_reward = {
+					add_tech_bonus = {
+							name = nav_bomber_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = naval_bomber
 						}
 				}
+
+	}
+	focus = {
+		id = QBC_CAS_effort
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_NAV_effort
+		}
+		prerequisite = {
+			focus = QBC_the_sabre_project
+		}
+		x = 6
+		y = 3
+			available_if_capitulated = yes
 			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = industrial_complex
-																			size > 1
-																			include_locked = yes
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 4
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
+					add_tech_bonus = {
+							name = CAS_bonus
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_aviation_effort
+		}
+		x = 8
+		y = 1
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 1.0
+							uses = 2
+							technology = strategic_bomber1
+							technology = strategic_bomber2
+							technology = strategic_bomber3
+							category = tactical_bomber
 						}
 				}
 
@@ -940,168 +413,8 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_industrial_effort
 		}
-		x = 19
+		x = 12
 		y = 1
-			available_if_capitulated = yes
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = infrastructure_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = infrastructure
-											size < 1
-										}
-								}
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 0
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 1
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 1
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_infrastructure_effort_2
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_infrastructure_effort
-		}
-		x = 19
-		y = 2
-			available_if_capitulated = yes
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = infrastructure_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = infrastructure
-											size < 1
-										}
-								}
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 0
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 0
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_controlled_state = {
-							limit = {
-									free_building_slots = {
-											building = infrastructure
-											size > 1
-										}
-									OR = {
-											is_in_home_area = yes
-											NOT = {
-													owner = {
-															any_owned_state = {
-																	free_building_slots = {
-																			building = infrastructure
-																			size > 1
-																		}
-																	is_in_home_area = yes
-																}
-														}
-												}
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_infrastructure_effort_3
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_infrastructure_effort_2
-		}
-		x = 19
-		y = 3
 			available_if_capitulated = yes
 			bypass = {
 					custom_trigger_tooltip = {
@@ -1178,10 +491,13 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
 		prerequisite = {
-			focus = QBC_industrial_effort
+			focus = QBC_infrastructure_effort
 		}
-		x = 21
-		y = 1
+		prerequisite = {
+			focus = QBC_infrastructure_effort
+		}
+		x = 11
+		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 2
@@ -1233,13 +549,478 @@ focus_tree = {
 
 	}
 	focus = {
+		id = QBC_army_effort
+		icon = GFX_Generic_Volunteer_Corps
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_production_effort
+		}
+		x = 9
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 3.0
+							uses = 1
+							category = land_doctrine
+						}
+					load_oob = QBC_focus_oob
+				}
+
+	}
+	focus = {
+		id = QBC_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_army_effort
+		}
+		x = 8
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 1000
+							producer = ENG
+						}
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_bike_effort
+		icon = GFX_goal_generic_build_tank
+		cost = 2.00
+		prerequisite = {
+			focus = QBC_army_effort
+		}
+		x = 10
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					set_technology = {
+							bicycle_infantry = 1
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_infrastructure_effort_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_industrial_effort
+		}
+		x = 14
+		y = 1
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_infrastructure_effort
+			focus = QBC_infrastructure_effort_2
+		}
+		x = 13
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_production_effort_3
+			focus = QBC_production_effort
+		}
+		x = 12
+		y = 3
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 2
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_infrastructure_effort_3
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_industrial_effort
+		}
+		x = 16
+		y = 1
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = infrastructure_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = infrastructure
+											size < 1
+										}
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_production_effort_4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_infrastructure_effort_2
+			focus = QBC_infrastructure_effort_3
+		}
+		x = 15
+		y = 2
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 7.00
+		prerequisite = {
+			focus = QBC_production_effort_3
+			focus = QBC_production_effort_4
+		}
+		x = 14
+		y = 3
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
 		id = QBC_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 7.00
 		prerequisite = {
-			focus = QBC_production_effort
+			focus = QBC_infrastructure_effort_3
 		}
-		x = 21
+		x = 17
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1292,13 +1073,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_production_effort_3
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		id = QBC_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
 		prerequisite = {
+			focus = QBC_production_effort_4
 			focus = QBC_production_effort_2
 		}
-		x = 21
+		x = 16
 		y = 3
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -1306,10 +1088,10 @@ focus_tree = {
 				}
 			bypass = {
 					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
+							tooltip = construction_effort_tt
 							all_owned_state = {
 									free_building_slots = {
-											building = arms_factory
+											building = industrial_complex
 											size < 1
 											include_locked = yes
 										}
@@ -1320,7 +1102,7 @@ focus_tree = {
 					random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
-											building = arms_factory
+											building = industrial_complex
 											size > 0
 											include_locked = yes
 										}
@@ -1330,7 +1112,7 @@ focus_tree = {
 													owner = {
 															any_owned_state = {
 																	free_building_slots = {
-																			building = arms_factory
+																			building = industrial_complex
 																			size > 0
 																			include_locked = yes
 																		}
@@ -1340,10 +1122,10 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
-									type = arms_factory
-									level = 3
+									type = industrial_complex
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -1351,73 +1133,151 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_extra_tech_slot
-		icon = GFX_focus_research
-		cost = 10.00
+		id = QBC_prep_effort
+		icon = GFX_focus_chi_army_reform
+		cost = 7.00
 		prerequisite = {
-			focus = QBC_infrastructure_effort_3
-			focus = QBC_production_effort_3
-			focus = QBC_construction_effort_3
+			focus = QBC_production_effort_2
 		}
 		x = 19
-		y = 4
+		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
-					add_research_slot = 1
+					add_ideas = paramilitarism_focus
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 500
+							producer = GER
+						}
 				}
 
 	}
 	focus = {
-		id = QBC_rocket_effort
-		icon = GFX_focus_rocketry
+		id = QBC_arm_ourselves
+		icon = GFX_goal_generic_construct_military
 		cost = 10.00
 		prerequisite = {
-			focus = QBC_extra_tech_slot
+			focus = QBC_prep_effort
+		}
+		x = 18
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 2000
+							producer = ITA
+						}
+					add_equipment_to_stockpile = {
+							type = support_equipment_1
+							amount = 250
+							producer = FRA
+						}
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_doctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_arm_ourselves
 		}
 		x = 18
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
+					army_experience = 25
 					add_tech_bonus = {
-							name = jet_rocket_bonus
-							ahead_reduction = 2
+							name = land_doc_bonus
+							bonus = 1.0
 							uses = 2
-							category = rocketry
-							category = jet_technology
-						}
-				}
-			ai_will_do = {
-					factor = 1
-					modifier = {
-							factor = 0.25
-							always = yes
+							category = land_doctrine
 						}
 				}
 
 	}
 	focus = {
-		id = QBC_extra_tech_slot_2
-		icon = GFX_focus_research
-		cost = 10.00
+		id = QBC_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
 		prerequisite = {
-			focus = QBC_extra_tech_slot
+			focus = QBC_prep_effort
+		}
+		x = 20
+		y = 4
+			bypass = {
+					has_tech = motorised_infantry
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 3.0
+							technology = motorised_infantry
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		cost = 7.00
+		prerequisite = {
+			focus = QBC_motorization_effort
 		}
 		x = 20
 		y = 5
-			available = {
-					num_of_factories > 50
-				}
-			cancel_if_invalid = no
-			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-					add_research_slot = 1
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.5
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_special_forces
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_armor_effort
+		}
+		prerequisite = {
+			focus = QBC_doctrine_effort_2
+		}
+		x = 19
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = special_forces
+					add_tech_bonus = {
+							name = special_forces_bonus
+							bonus = 1.0
+							uses = 1
+							technology = paratroopers
+							technology = paratroopers2
+							technology = marines
+							technology = marines2
+							technology = tech_mountaineers
+							technology = tech_mountaineers2
+						}
 				}
 
 	}
 	focus = {
 		id = QBC_collectivist_ethos
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Generic_Revolutionary_Government
 		cost = 5.00
 		prerequisite = {
 			focus = QBC_political_effort
@@ -1431,7 +1291,7 @@ focus_tree = {
 		y = 1
 			available = {
 
-				}
+}
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 5
@@ -1503,7 +1363,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_spread_communism
-		icon = GFX_goal_support_communism
+		icon = GFX_Generic_Communist_Propaganda
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_internationalism_focus
@@ -1554,7 +1414,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_join_comintern
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_Focus_Stalin
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_internationalism_focus
@@ -1612,7 +1472,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_russian_mp
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_Generic_Socialist_Volunteers
 		cost = 4.00
 		prerequisite = {
 			focus = QBC_join_comintern
@@ -1747,7 +1607,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_indoctrination_focus
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_Focus_Commie_Cowboys
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_socialist_ways
@@ -1780,7 +1640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_strengh_populism
-		icon = GFX_goal_support_communism
+		icon = GFX_Generic_Arrests
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_com_militarism
@@ -1852,9 +1712,9 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_deterrence2
 		}
-		will_lead_to_war_with = PREV
 		x = 29
 		y = 9
+			will_lead_to_war_with = PREV
 			completion_reward = {
 					random_neighbor_country = {
 							limit = {
@@ -2065,18 +1925,14 @@ focus_tree = {
 
 }
 			completion_reward = {
-					QBC = {
-							modify_tech_sharing_bonus = {
-									id = QUBECOIS_research
-									bonus = 0.10
-								}
-						}
+					add_research_slot = 1
+					add_ideas = QUBECOIS_research
 				}
 
 	}
 	focus = {
 		id = QBC_liberty_ethos
-		icon = GFX_goal_support_democracy
+		icon = GFX_Generic_Parliament_Box
 		cost = 5.00
 		prerequisite = {
 			focus = QBC_political_effort
@@ -2084,7 +1940,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = QBC_collectivist_ethos
 			focus = QBC_monarchy_ethos
-			focus = QBC_nationalism_focus_start
 			focus = QBC_nationalism_focus_start
 		}
 		x = 38
@@ -2122,7 +1977,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_rise_of_pq
-		icon = GFX_goal_support_democracy
+		icon = GFX_FLF_focus_Focus_On_The_Unions
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_liberty_ethos
@@ -2137,13 +1992,6 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 120
-					create_country_leader = {
-							name = "ReneLevesque"
-							desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
-							picture = "gfx/leaders/QUE/renelevesque.dds"
-							expire = "1965.1.1"
-							ideology = liberalism
-						}
 					set_party_name = {
 							ideology = democratic
 							long_name = QBC_quebecois
@@ -2154,7 +2002,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_Generic_Liberalism
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_rise_of_pq
@@ -2179,8 +2027,23 @@ focus_tree = {
 
 	}
 	focus = {
+		id = QBC_deterrence
+		icon = GFX_Generic_Barricade
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_neutrality_focus
+		}
+		x = 36
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = deterrence
+				}
+
+	}
+	focus = {
 		id = QBC_interventionism_focus
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_Generic_Internationalism
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_rise_of_pq
@@ -2199,12 +2062,6 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					if = {
-							limit = {
-									has_idea = neutrality_idea
-								}
-							remove_ideas = neutrality_idea
-						}
 					set_rule = {
 							can_send_volunteers = yes
 						}
@@ -2213,13 +2070,110 @@ focus_tree = {
 
 	}
 	focus = {
+		id = QBC_north_american_alliance
+		icon = GFX_Focus_NATO
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_neutrality_focus
+			focus = QBC_interventionism_focus
+		}
+		x = 38
+		y = 4
+			ai_will_do = {
+					factor = 25
+				}
+			available = {
+					is_subject = no
+					NOT = {
+							has_country_flag = britain_enforced_our_loyalty
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					create_faction = unitedfrenchlegion
+				}
+
+	}
+	focus = {
+		id = QBC_retool_angus_shops
+		icon = GFX_Generic_Factory_Planning
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_north_american_alliance
+		}
+		prerequisite = {
+			focus = QBC_deterrence
+		}
+		x = 37
+		y = 5
+			ai_will_do = {
+					factor = 75
+				}
+			available = {
+
+}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+			complete_tooltip = {
+					random_state = {
+							limit = {
+									has_state_flag = CAN_retool_angus_shops_AF
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 285  517 }
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = CAN_retool_angus_shops_AF
+						}
+				}
+
+	}
+	focus = {
 		id = QBC_foreign_expeditions
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_Generic_Army_Focus_Red02
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_interventionism_focus
 		}
-		x = 39
+		x = 40
 		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2228,13 +2182,69 @@ focus_tree = {
 
 	}
 	focus = {
+		id = QBC_baby_boom
+		icon = GFX_Generic_Family
+		cost = 4.00
+		prerequisite = {
+			focus = QBC_north_american_alliance
+			focus = QBC_foreign_expeditions
+		}
+		x = 39
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_manpower = 50000
+					add_ideas = baby_boom_focus
+				}
+
+	}
+	focus = {
+		id = QBC_canada_wheat_board
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_retool_angus_shops
+		}
+		prerequisite = {
+			focus = QBC_baby_boom
+		}
+		x = 38
+		y = 6
+			ai_will_do = {
+					factor = 25
+					modifier = {
+							factor = 2
+							has_completed_focus = CAN_mine_the_shield
+						}
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+			complete_tooltip = {
+
+}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = CAN_great_depression_1
+							add_idea = CAN_great_depression_2
+						}
+				}
+
+	}
+	focus = {
 		id = QBC_dedicated_nation
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_Generic_Nuclear_Family
 		cost = 4.00
 		prerequisite = {
 			focus = QBC_foreign_expeditions
 		}
-		x = 39
+		x = 41
 		y = 5
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2261,30 +2271,17 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_baby_boom
-		icon = GFX_goal_generic_allies_build_infantry
-		cost = 4.00
-		prerequisite = {
-			focus = QBC_dedicated_nation
-		}
-		x = 39
-		y = 6
-			available_if_capitulated = yes
-			completion_reward = {
-					add_manpower = 50000
-					add_ideas = baby_boom_focus
-				}
-
-	}
-	focus = {
 		id = QBC_war_bonds
 		icon = GFX_goal_generic_consumer_goods
 		cost = 5.00
 		prerequisite = {
+			focus = QBC_dedicated_nation
+		}
+		prerequisite = {
 			focus = QBC_baby_boom
 		}
-		x = 39
-		y = 7
+		x = 40
+		y = 6
 			ai_will_do = {
 					factor = 80
 				}
@@ -2301,19 +2298,20 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_ideas = CAN_war_bonds_1
+					add_ideas = QBC_war_bonds_1
 				}
 
 	}
 	focus = {
 		id = QBC_war_ger
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_Generic_Coalition_Army
 		cost = 4.00
 		prerequisite = {
 			focus = QBC_war_bonds
+			focus = QBC_canada_wheat_board
 		}
 		x = 39
-		y = 8
+		y = 7
 			available_if_capitulated = yes
 			completion_reward = {
 					QBC = {
@@ -2330,15 +2328,16 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
-			focus = QBC_war_ger
+			focus = QBC_war_bonds
 		}
-		x = 39
-		y = 9
+		x = 41
+		y = 7
 			ai_will_do = {
 					factor = 25
 				}
 			available = {
-				}
+
+}
 			bypass = {
 
 }
@@ -2350,7 +2349,6 @@ focus_tree = {
 }
 			completion_reward = {
 					every_owned_state = {
-
 							add_building_construction = {
 									type = bunker
 									province = {
@@ -2392,7 +2390,7 @@ focus_tree = {
 			focus = QBC_liberty_ethos
 			focus = QBC_nationalism_focus_start
 		}
-		x = 49
+		x = 50
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -2417,7 +2415,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_monarchy_ethos
 		}
-		x = 49
+		x = 50
 		y = 2
 			ai_will_do = {
 					factor = 50
@@ -2439,7 +2437,7 @@ focus_tree = {
 			focus = QBC_facist_ways
 			focus = QBC_rise_of_pq
 		}
-		x = 43
+		x = 44
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2449,7 +2447,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_enforce_king
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_Generic_Divine_Right
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_facist_ways
@@ -2478,101 +2476,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_papal_state
-		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 14.00
-		prerequisite = {
-			focus = QBC_facist_ways
-		}
-		mutually_exclusive = {
-			focus = QBC_enforce_king
-		}
-		x = 49
-		y = 3
-			available_if_capitulated = yes
-			completion_reward = {
-					set_politics = {
-							ruling_party = theocratism
-							elections_allowed = yes
-						}
-					set_political_party = {
-							ideology = theocratism
-							popularity = 74
-						}
-					create_faction = theocraticquebec
-				}
-
-	}
-	focus = {
-		id = QBC_pope
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_papal_state
-		}
-		x = 49
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					custom_effect_tooltip = "Get Cardinal Jean-Marie-Rodrigue Villeneuve elected as Pope Boniface X"
-					ITA = {
-							create_country_leader = {
-									name = "Boniface X"
-									desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
-									picture = "gfx/leaders/QUE/mgrvilleneuve.dds"
-									expire = "1965.1.1"
-									ideology = centrism
-									traits = {
-
-}
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_god_father
-		icon = GFX_goal_generic_major_war
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_pope
-		}
-		x = 49
-		y = 5
-			available_if_capitulated = yes
-			completion_reward = {
-					add_political_power = 50
-					add_ideas = generic_neu_wargoal
-				}
-
-	}
-	focus = {
-		id = QBC_rearmement_agreement
-		icon = GFX_goal_tfv_can_compromise_with_quebec
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_god_father
-		}
-		x = 49
-		y = 6
-			available_if_capitulated = yes
-			allow_branch = {
-					tag = QBC
-				}
-			completion_reward = {
-					add_war_support = 0.10
-				}
-
-	}
-	focus = {
 		id = QBC_god_given_ruler
 		icon = GFX_focus_generic_self_management
 		cost = 2.00
 		prerequisite = {
 			focus = QBC_facist_ways
 		}
-		x = 51
-		y = 3
+		x = 49
+		y = 4
 			available_if_capitulated = yes
 			completion_reward = {
 					add_popularity = {
@@ -2588,7 +2499,7 @@ focus_tree = {
 		icon = GFX_focus_eng_the_kings_party
 		cost = 10.00
 		prerequisite = {
-			focus = QBC_god_given_ruler
+			focus = QBC_facist_ways
 		}
 		x = 51
 		y = 4
@@ -2605,7 +2516,10 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_aristocrat_generals
 		}
-		x = 51
+		prerequisite = {
+			focus = QBC_god_given_ruler
+		}
+		x = 50
 		y = 5
 			ai_will_do = {
 					factor = 35
@@ -2621,9 +2535,9 @@ focus_tree = {
 }
 			completion_reward = {
 					QBC = {
-							add_to_tech_sharing_group = us_research
+							add_to_tech_sharing_group = Quebec_research
 						}
-					add_to_tech_sharing_group = us_research
+					add_to_tech_sharing_group = Quebec_research
 				}
 
 	}
@@ -2634,7 +2548,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_refuge_for_scientists
 		}
-		x = 51
+		x = 50
 		y = 6
 			ai_will_do = {
 					factor = 75
@@ -2657,17 +2571,103 @@ focus_tree = {
 
 	}
 	focus = {
+		id = QBC_papal_state
+		icon = GFX_Generic_Cult_of_the_Supreme_Being
+		cost = 14.00
+		prerequisite = {
+			focus = QBC_facist_ways
+		}
+		mutually_exclusive = {
+			focus = QBC_enforce_king
+		}
+		x = 53
+		y = 3
+			available_if_capitulated = yes
+			completion_reward = {
+					set_politics = {
+							ruling_party = theocratism
+							elections_allowed = yes
+						}
+					set_political_party = {
+							ideology = theocratism
+							popularity = 74
+						}
+					create_faction = theocraticquebec
+				}
+
+	}
+	focus = {
+		id = QBC_pope
+		icon = GFX_Generic_Christian_Socialism
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_papal_state
+		}
+		x = 53
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					custom_effect_tooltip = "Get Cardinal Jean-Marie-Rodrigue Villeneuve elected as Pope Boniface X"
+					ITA = {
+							create_country_leader = {
+									name = "Boniface X"
+									desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+									picture = "gfx/leaders/QUE/mgrvilleneuve.dds"
+									expire = "1965.1.1"
+									ideology = centrism
+									traits = {
+
+}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_god_father
+		icon = GFX_Generic_Christianity
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_pope
+		}
+		x = 53
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 50
+					add_ideas = generic_neu_wargoal
+				}
+
+	}
+	focus = {
+		id = QBC_rearmement_agreement
+		icon = GFX_Generic_Christian_Trade_Unions
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_god_father
+		}
+		x = 53
+		y = 6
+			available_if_capitulated = yes
+			allow_branch = {
+					tag = QBC
+				}
+			completion_reward = {
+					add_war_support = 0.10
+				}
+
+	}
+	focus = {
 		id = QBC_nationalism_focus_start
-		icon = GFX_goal_support_fascism
+		icon = GFX_Generic_Ultranationalist_Government
 		cost = 5.00
 		prerequisite = {
 			focus = QBC_political_effort
 		}
 		mutually_exclusive = {
-			focus = QBC_monarchy_ethos
 			focus = QBC_collectivist_ethos
 			focus = QBC_liberty_ethos
-			focus = QBC_liberty_ethos
+			focus = QBC_monarchy_ethos
 		}
 		x = 58
 		y = 1
@@ -2768,7 +2768,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_mil_culture
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_Generic_Ultranationalist_Volunteers
 		cost = 7.00
 		prerequisite = {
 			focus = QBC_militarism
@@ -2783,7 +2783,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_facism_MIM
-		icon = GFX_goal_support_fascism
+		icon = GFX_Generic_Corporatism
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_mil_culture
@@ -2901,7 +2901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_paramilitarism
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_Generic_Protectionism
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_militarism2
@@ -2972,7 +2972,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_commit_to_the_war
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_Generic_Volunteer_Corps
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_paramilitarism
@@ -3039,11 +3039,11 @@ focus_tree = {
 					add_state_core = 464
 					add_state_core = 465
 					QBC = {
-						create_wargoal = {
-								target = NSN
-								type = annex_everything
+							create_wargoal = {
+									target = NSN
+									type = annex_everything
+								}
 						}
-					}
 					add_named_threat = {
 							threat = 1
 							name = QBC__takes_novascotia
@@ -3083,11 +3083,11 @@ focus_tree = {
 					add_state_core = 357
 					add_state_core = 358
 					QBC = {
-						create_wargoal = {
-								target = NYN
-								type = annex_everything
+							create_wargoal = {
+									target = NYN
+									type = annex_everything
+								}
 						}
-					}
 					add_named_threat = {
 							threat = 2
 							name = QUE_takes_newyork
@@ -3111,7 +3111,6 @@ focus_tree = {
 					has_army_manpower = {
 							size > 170000
 						}
-
 					is_subject = no
 				}
 			bypass = {
@@ -3128,11 +3127,11 @@ focus_tree = {
 					add_state_core = 276
 					add_state_core = 682
 					QBC = {
-						create_wargoal = {
-								target = ONO
-								type = annex_everything
+							create_wargoal = {
+									target = ONO
+									type = annex_everything
+								}
 						}
-					}
 					add_named_threat = {
 							threat = 3
 							name = QUE_takes_ontario
@@ -3247,7 +3246,6 @@ focus_tree = {
 					has_army_manpower = {
 							size > 80000
 						}
-
 					is_subject = no
 				}
 			bypass = {
@@ -3265,11 +3263,11 @@ focus_tree = {
 					add_state_core = 331
 					add_state_core = 730
 					QBC = {
-						create_wargoal = {
-								target = NLN
-								type = annex_everything
+							create_wargoal = {
+									target = NLN
+									type = annex_everything
+								}
 						}
-					}
 					add_named_threat = {
 							threat = 1
 							name = QUE_takes_newfoundland
@@ -3279,7 +3277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_fight_communism
-		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		icon = GFX_Generic_Violent_Coup
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_ultra_nationalism_focus
@@ -3287,7 +3285,6 @@ focus_tree = {
 		x = 61
 		y = 3
 			completion_reward = {
-
 					QBC = {
 							start_civil_war = {
 									ruling_party = fascism
@@ -3350,7 +3347,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_takes_GREENLAND
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_Generic_Soldiers_Defense
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_join_germany
@@ -3374,11 +3371,11 @@ focus_tree = {
 			completion_reward = {
 					add_state_core = 101
 					QBC = {
-						create_wargoal = {
-								target = GRN
-								type = annex_everything
+							create_wargoal = {
+									target = GRN
+									type = annex_everything
+								}
 						}
-					}
 					add_named_threat = {
 							threat = 10
 							name = QBC_takes_canada
@@ -3401,9 +3398,9 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_takes_GREENLAND
 		}
-		will_lead_to_war_with = PREV
 		x = 61
 		y = 9
+			will_lead_to_war_with = PREV
 			completion_reward = {
 					random_neighbor_country = {
 							limit = {
@@ -3433,7 +3430,7 @@ focus_tree = {
 			focus = QBC_prep_struggle
 		}
 		x = 58
-		y = 10
+		y = 11
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = ideological_fanaticism_focus
@@ -3450,239 +3447,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_aviation_effort
-		}
-		x = 65
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = fighter_bonus
-							bonus = 1.0
-							uses = 2
-							technology = early_fighter
-							technology = fighter1
-							technology = fighter2
-							technology = fighter3
-							technology = heavy_fighter1
-							technology = heavy_fighter2
-							technology = heavy_fighter3
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_bomber_focus
-		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_aviation_effort
-		}
-		x = 67
-		y = 2
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = bomber_bonus
-							bonus = 1.0
-							uses = 2
-							technology = strategic_bomber1
-							technology = strategic_bomber2
-							technology = strategic_bomber3
-							category = tactical_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_bomber_focus
-		}
-		prerequisite = {
-			focus = QBC_fighter_focus
-		}
-		x = 66
-		y = 3
-			available_if_capitulated = yes
-			complete_tooltip = {
-					air_experience = 25
-					if = {
-							limit = {
-									has_country_flag = aviation_effort_2_AB
-								}
-							add_building_construction = {
-									type = air_base
-									level = 2
-									instant_build = yes
-								}
-						}
-					add_tech_bonus = {
-							name = air_doc_bonus
-							bonus = 1.0
-							uses = 1
-							category = air_doctrine
-						}
-				}
-			completion_reward = {
-					air_experience = 25
-					if = {
-							limit = {
-									capital_scope = {
-											OR = {
-													NOT = {
-															is_controlled_by = ROOT
-														}
-													NOT = {
-															free_building_slots = {
-																	building = air_base
-																	size > 1
-																}
-														}
-												}
-										}
-								}
-							random_owned_controlled_state = {
-									limit = {
-											free_building_slots = {
-													building = air_base
-													size > 1
-												}
-										}
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}
-						}
-					if = {
-							limit = {
-									capital_scope = {
-											is_controlled_by = ROOT
-											free_building_slots = {
-													building = air_base
-													size > 1
-												}
-										}
-								}
-							capital_scope = {
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_2_AB
-										}
-								}
-						}
-					add_tech_bonus = {
-							name = air_doc_bonus
-							bonus = 1.0
-							uses = 1
-							category = air_doctrine
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_the_sabre_project
-		icon = GFX_focus_rocketry
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_aviation_effort_2
-		}
-		x = 65
-		y = 4
-			ai_will_do = {
-					factor = 25
-				}
-			available = {
-
-}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-			complete_tooltip = {
-
-}
-			completion_reward = {
-					add_tech_bonus = {
-							name = CAN_the_sabre_project
-							ahead_reduction = 2
-							uses = 2
-							category = rocketry
-							category = jet_technology
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_effort
-		icon = GFX_focus_usa_escort_fighters
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_aviation_effort_2
-		}
-		x = 67
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = nav_bomber_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = naval_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_CAS_effort
-		icon = GFX_goal_generic_CAS
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_effort
-		}
-		prerequisite = {
-			focus = QBC_the_sabre_project
-		}
-		x = 66
-		y = 5
-			available_if_capitulated = yes
-			completion_reward = {
-					add_tech_bonus = {
-							name = CAS_bonus
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							category = cas_bomber
-						}
-				}
-
-	}
-	focus = {
 		id = QBC_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 4.00
 		prerequisite = {
 			focus = QBC_quebecois_shipyards
 		}
-		x = 72
+		x = 66
 		y = 1
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -3718,7 +3489,7 @@ focus_tree = {
 			focus = QBC_submarine_effort
 			focus = QBC_fleet_in_being
 		}
-		x = 70
+		x = 64
 		y = 2
 			ai_will_do = {
 					factor = 25
@@ -3757,7 +3528,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_escort_fleet
 		}
-		x = 70
+		x = 64
 		y = 3
 			ai_will_do = {
 					factor = 25
@@ -3792,7 +3563,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_light_cruiser_effort
 		}
-		x = 70
+		x = 64
 		y = 4
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -3830,7 +3601,7 @@ focus_tree = {
 			focus = QBC_escort_fleet
 			focus = QBC_fleet_in_being
 		}
-		x = 72
+		x = 66
 		y = 2
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -3866,7 +3637,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_submarine_effort
 		}
-		x = 72
+		x = 66
 		y = 3
 			ai_will_do = {
 					factor = 25
@@ -3916,7 +3687,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_degauss_ship_hulls
 		}
-		x = 72
+		x = 66
 		y = 4
 			ai_will_do = {
 					factor = 25
@@ -3945,13 +3716,455 @@ focus_tree = {
 
 	}
 	focus = {
+		id = QBC_economic_effort
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_construction_effort_3
+			focus = QBC_construction_effort_2
+			focus = QBC_construction_effort
+		}
+		x = 14
+		y = 4
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1.0
+							uses = 1
+							category = electronics
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		cost = 7.00
+		prerequisite = {
+			focus = QBC_equipment_effort
+		}
+		x = 8
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					army_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		cost = 7.00
+		prerequisite = {
+			focus = QBC_equipment_effort_3
+			focus = QBC_doctrine_effort
+		}
+		x = 9
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							bonus = 1.0
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_bike_effort
+		}
+		x = 10
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_artillery_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = infantry_weapons
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_more_slots
+		icon = GFX_goal_generic_construction
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_alu_add
+			focus = QBC_steel_add
+			focus = QBC_tung_add
+		}
+		x = 14
+		y = 7
+			available_if_capitulated = yes
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_begin_digging
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_economic_effort
+		}
+		x = 14
+		y = 5
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 3.0
+							uses = 1
+							category = synth_resources
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_tung_add
+		icon = GFX_focus_generic_tungsten
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_begin_digging
+		}
+		mutually_exclusive = {
+			focus = QBC_steel_add
+			focus = QBC_alu_add
+		}
+		x = 12
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_resource = {
+									type = tungsten
+									amount = 8
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_steel_add
+		icon = GFX_focus_generic_steel
+		cost = 15.00
+		prerequisite = {
+			focus = QBC_begin_digging
+		}
+		mutually_exclusive = {
+			focus = QBC_tung_add
+			focus = QBC_alu_add
+		}
+		x = 14
+		y = 6
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_resource = {
+									type = steel
+									amount = 12
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_alu_add
+		icon = GFX_focus_generic_industry_2
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_begin_digging
+		}
+		mutually_exclusive = {
+			focus = QBC_tung_add
+			focus = QBC_steel_add
+		}
+		x = 16
+		y = 6
+			available_if_capitulated = no
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 43 }
+							limit = {
+									ROOT = {
+											has_full_control_of_state = PREV
+										}
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_resource = {
+									type = chromium
+									amount = 8
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_ref_add
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_nuclear_effort
+		}
+		x = 13
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_global_player
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 2.00
+		prerequisite = {
+			focus = QBC_secret_weapons
+		}
+		x = 15
+		y = 11
+			available_if_capitulated = yes
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = QBC_balanced_budget
+		icon = GFX_focus_mex_privatisation
+		cost = 5.00
+		prerequisite = {
+			focus = QBC_global_player
+			focus = QBC_ref_add
+		}
+		x = 14
+		y = 12
+			available_if_capitulated = yes
+			completion_reward = {
+					add_ideas = YUG_idea_foreign_capital
+				}
+
+	}
+	focus = {
+		id = QBC_war_fueled_economy
+		icon = GFX_goal_generic_trade
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_balanced_budget
+		}
+		x = 15
+		y = 13
+			ai_will_do = {
+					factor = 25
+				}
+			available = {
+
+}
+			bypass = {
+
+}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = yes
+			complete_tooltip = {
+					remove_ideas = CAN_great_depression_2
+					random_state = {
+							limit = {
+									has_state_flag = CAN_war_fueled_economy_AF1
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_state = {
+							limit = {
+									has_state_flag = CAN_war_fueled_economy_AF2
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_state = {
+							limit = {
+									has_state_flag = CAN_war_fueled_economy_AF3
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									is_in_home_area = yes
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 4
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_extra_tech_slot
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_more_slots
+		}
+		x = 14
+		y = 8
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = QBC_rocket_effort
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_extra_tech_slot
+		}
+		x = 12
+		y = 9
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 2
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0.25
+							always = yes
+						}
+				}
+
+	}
+	focus = {
+		id = QBC_extra_tech_slot_2
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = QBC_extra_tech_slot
+		}
+		x = 16
+		y = 9
+			available = {
+					num_of_factories > 50
+				}
+			cancel_if_invalid = no
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
 		id = QBC_neu_militarism
 		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_balanced_budget2
 		}
-		x = 42
+		x = 43
 		y = 5
 			available = {
 					OR = {
@@ -3969,12 +4182,12 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_join_allies
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_Generic_War_Propaganda03
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_neu_militarism
 		}
-		x = 42
+		x = 43
 		y = 6
 			ai_will_do = {
 					factor = 60
@@ -4001,7 +4214,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_join_allies
 		}
-		x = 42
+		x = 43
 		y = 7
 			ai_will_do = {
 					factor = 25
@@ -4067,7 +4280,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_balanced_budget2
 		}
-		x = 44
+		x = 45
 		y = 5
 			ai_will_do = {
 					factor = 25
@@ -4096,22 +4309,20 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_mobilization_act
 		}
-		x = 44
+		x = 45
 		y = 6
 			ai_will_do = {
 					factor = 25
 				}
 			available = {
-					FRA = {
-							has_war_with = GER
-						}
-				}
+
+}
 			completion_reward = {
 					hidden_effect = {
 							load_oob = "QUE_Civil_War"
 							load_oob = "QUE_Civil_War"
 						}
-					custom_effect_tooltip = "Deploy new volonteer divisions"
+					custom_effect_tooltip = "Deploynewvolonteerdivisions"
 				}
 
 	}
@@ -4122,7 +4333,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_help_france
 		}
-		x = 44
+		x = 45
 		y = 7
 			ai_will_do = {
 					factor = 50
@@ -4140,7 +4351,7 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_ideas = CAN_wartime_prices_and_trade_board
+					add_ideas = QBC_wartime_prices_and_trade_board
 				}
 
 	}
@@ -4181,11 +4392,11 @@ focus_tree = {
 			completion_reward = {
 					add_state_core = 332
 					QBC = {
-						create_wargoal = {
-								target = LAB
-								type = annex_everything
+							create_wargoal = {
+									target = LAB
+									type = annex_everything
+								}
 						}
-					}
 					add_named_threat = {
 							threat = 1
 							name = QUE_takes_labrador
@@ -4200,8 +4411,11 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_extra_tech_slot_2
 		}
-		x = 20
-		y = 6
+		prerequisite = {
+			focus = QBC_defence_scheme_no_1
+		}
+		x = 15
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -4227,10 +4441,10 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_start_war
 		cost = 10.00
 		prerequisite = {
-			focus = QBC_special_forces
+			focus = QBC_extra_tech_slot
 		}
-		x = 9
-		y = 5
+		x = 14
+		y = 9
 			ai_will_do = {
 					factor = 25
 				}
@@ -4265,7 +4479,7 @@ focus_tree = {
 			focus = QBC_balanced_budget
 		}
 		x = 13
-		y = 6
+		y = 13
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 2
@@ -4289,7 +4503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_long_branch_arsenal
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_Generic_Machine_Gun
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_king_and_country
@@ -4324,13 +4538,13 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_dollar_a_year_men
-		icon = GFX_goal_generic_construction
+		icon = GFX_Generic_Colonial_Soldiers
 		cost = 5.00
 		prerequisite = {
 			focus = QBC_retool_angus_shops
 		}
-		x = 37
-		y = 7
+		x = 36
+		y = 6
 			ai_will_do = {
 					factor = 75
 				}
@@ -4357,121 +4571,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_retool_angus_shops
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_north_american_alliance
-		}
-		x = 37
-		y = 6
-			ai_will_do = {
-					factor = 75
-				}
-			available = {
-
-}
-			bypass = {
-					custom_trigger_tooltip = {
-							tooltip = production_effort_tt
-							all_owned_state = {
-									free_building_slots = {
-											building = arms_factory
-											size < 1
-											include_locked = yes
-										}
-								}
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-			complete_tooltip = {
-					random_state = {
-							limit = {
-									has_state_flag = CAN_retool_angus_shops_AF
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							prioritize = { 285  517 }
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-							set_state_flag = CAN_retool_angus_shops_AF
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_canada_wheat_board
-		icon = GFX_goal_generic_construction2
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_dollar_a_year_men
-		}
-		x = 37
-		y = 8
-			ai_will_do = {
-					factor = 25
-					modifier = {
-							factor = 2
-							has_completed_focus = CAN_mine_the_shield
-						}
-				}
-			available = {
-
-}
-			bypass = {
-
-}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-			complete_tooltip = {
-
-}
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = CAN_great_depression_1
-							add_idea = CAN_great_depression_2
-						}
-				}
-
-	}
-	focus = {
-		id = QBC_deterrence
-		icon = GFX_goal_generic_defence
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_neutrality_focus
-		}
-		x = 37
-		y = 4
-			available_if_capitulated = yes
-			completion_reward = {
-					add_ideas = deterrence
-				}
-
-	}
-	focus = {
 		id = QBC_defense_research_grants
 		icon = GFX_focus_research
 		cost = 10.00
@@ -4481,7 +4580,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_mine_the_shield
 		}
-		x = 43
+		x = 44
 		y = 8
 			ai_will_do = {
 					factor = 25
@@ -4505,45 +4604,17 @@ focus_tree = {
 
 	}
 	focus = {
-		id = QBC_north_american_alliance
-		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
-		prerequisite = {
-			focus = QBC_deterrence
-		}
-		x = 37
-		y = 5
-			ai_will_do = {
-					factor = 25
-				}
-			available = {
-					is_subject = no
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			complete_tooltip = {
-
-}
-			completion_reward = {
-					set_rule = {
-							can_create_factions = yes
-						}
-				}
-
-	}
-	focus = {
 		id = QBC_pinion_the_eagle
 		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_canada_wheat_board
 		}
+		prerequisite = {
+			focus = QBC_dollar_a_year_men
+		}
 		x = 37
-		y = 9
+		y = 7
 			ai_will_do = {
 					factor = 25
 				}
@@ -4609,7 +4680,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_political_end
 		}
-		x = 43
+		x = 44
 		y = 13
 			ai_will_do = {
 					factor = 25
@@ -4635,7 +4706,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_support_the_world_revolution
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_Focus_Bolshevik_Skull
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_communist_labor_total_war_committee
@@ -4663,10 +4734,7 @@ focus_tree = {
 
 }
 			completion_reward = {
-					swap_ideas = {
-							remove_idea = CAN_communist_ideals_2
-							add_idea = CAN_communist_ideals_3
-						}
+					add_ideas = QBC_communist_ideals
 				}
 
 	}
@@ -4677,7 +4745,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_defense_research_grants
 		}
-		x = 43
+		x = 44
 		y = 10
 			available = {
 					OR = {
@@ -4691,7 +4759,6 @@ focus_tree = {
 					add_ideas = why_we_fight_focus
 					custom_effect_tooltip = why_we_fight_effect
 					add_political_power = 240
-
 				}
 
 	}
@@ -4702,7 +4769,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_volunteer_corps
 		}
-		x = 43
+		x = 44
 		y = 4
 			ai_will_do = {
 					factor = 50
@@ -4761,7 +4828,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_team_up
-		icon = GFX_goal_support_communism
+		icon = GFX_TotSoc_Focus
 		cost = 5.00
 		prerequisite = {
 			focus = QBC_spread_communism
@@ -4770,7 +4837,6 @@ focus_tree = {
 		y = 4
 			dynamic = yes
 			completion_reward = {
-
 					ONO = {
 							country_event = {
 									days = 1
@@ -4810,7 +4876,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_spread_communism2
-		icon = GFX_goal_support_communism
+		icon = GFX_Focus_Communist_Spy02
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_team_up
@@ -4854,7 +4920,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_team_up2
-		icon = GFX_goal_support_communism
+		icon = GFX_Generic_Volunteer_Corps
 		cost = 20.00
 		prerequisite = {
 			focus = QBC_spread_communism2
@@ -4911,7 +4977,7 @@ focus_tree = {
 			focus = QBC_escort_fleet
 			focus = QBC_submarine_effort
 		}
-		x = 74
+		x = 68
 		y = 2
 			ai_will_do = {
 					factor = 25
@@ -4946,7 +5012,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_fleet_in_being
 		}
-		x = 74
+		x = 68
 		y = 3
 			available_if_capitulated = yes
 			ai_will_do = {
@@ -4989,7 +5055,7 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_capital_ships_effort
 		}
-		x = 74
+		x = 68
 		y = 4
 			ai_will_do = {
 					factor = 25
@@ -5027,7 +5093,7 @@ focus_tree = {
 			focus = QBC_destroyer_effort
 			focus = QBC_habakkuk_carrier
 		}
-		x = 72
+		x = 66
 		y = 5
 			ai_will_do = {
 					factor = 25
@@ -5051,7 +5117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_empower_king
-		icon = GFX_focus_rom_royal_dictatorship
+		icon = GFX_goal_Generic_Executions
 		cost = 7.00
 		prerequisite = {
 			focus = QBC_enforce_king
@@ -5106,9 +5172,9 @@ focus_tree = {
 			focus = QBC_rearmement_agreement
 			focus = QBC_long_branch_arsenal
 		}
-		will_lead_to_war_with = PREV
-		x = 49
-		y = 8
+		x = 50
+		y = 7
+			will_lead_to_war_with = PREV
 			completion_reward = {
 					random_neighbor_country = {
 							limit = {
@@ -5136,8 +5202,11 @@ focus_tree = {
 		prerequisite = {
 			focus = QBC_rocket_effort
 		}
-		x = 18
-		y = 6
+		prerequisite = {
+			focus = QBC_defence_scheme_no_1
+		}
+		x = 13
+		y = 10
 			available_if_capitulated = yes
 			completion_reward = {
 					add_tech_bonus = {
@@ -5164,7 +5233,7 @@ focus_tree = {
 			focus = QBC_fascist_fanaticism
 			focus = QBC_ideological_fanaticism
 		}
-		x = 43
+		x = 44
 		y = 12
 			available_if_capitulated = yes
 			completion_reward = {
