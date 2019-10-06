@@ -1,0 +1,8 @@
+Njdecisions = {
+
+  icon = generic_formable_nations
+
+  available = {
+    original_tag = NJN
+  }
+}
