@@ -571,6 +571,7 @@
  CAC_theocratism_party:0 "The Church Of California"
  CAC_theocratism_party_long:0 "The Catholic Roman Church Of California"
  socialism:0 "Socialism"
+ socialism_noun:0 "Socialism"
  socialism_desc:0 "Socialism is a range of economic and social systems characterised by social ownership and democratic control of the means of production as well as the political theories and movements associated with them. Social ownership may refer to forms of public, collective or cooperative ownership, or to citizen ownership of equity."
  feudal_desc:0 "A monarchy is a form of government in which a legal person, the monarch, holds sovereign authority until death or abdication. The governing power of the monarch may vary from purely symbolic, to partial and restricted, to fully autocratic."
  feudal_noun:0 "Monarchy"

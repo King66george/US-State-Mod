@@ -275,8 +275,8 @@ PAR = {
 	color_ui = rgb { 74 147 255 }
 }
 CUB = {
-	color = rgb { 140 65 166 }
-	color_ui = rgb { 140 65 166 }
+	color = rgb { 110 145 16 }
+	color_ui = rgb { 110 65 16 }
 }
 DOM = {
 	color = rgb { 152 130 191 }
