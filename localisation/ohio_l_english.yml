@@ -88,9 +88,36 @@ ohio.10.b:0 "The People Vote No"
 ohio.11.t:0 "[From.Owner.GetName] has denied us!"
 ohio.11.d:0 "We tried to be reasonable. We attempted to diplomatically annex them. They continue to refuse us. Our vision will not be impeded by a single nation. "
 ohio.11.a:0 "It seems that the only action we can take... is lethal"
-#
-
-
+#Ohio Wins Minnesota Border War
+ohio.12.t:0 "Our Troops Return Victorious!"
+ohio.12.d:0 "A few weeks ago, our troops were involved in a border skirmish against the Minnesotans. They've returned victorious! We've sent our demands and soon we will see if we get what we want. The offer includes the secession of Northeastern Minnesota and Saint Paul. The area is rich with resources, and while there aren't many people there, we can move people to use them for resource extraction."
+ohio.12.a:0 "We will recieve what we want."
+#Increase Democratic Support in Neighboring Countries
+ohio.13.t:0 "Democratic Influence in Neighboring Countries"
+ohio.13.d:0 "We're in the process of increasing democratic influence in neighboring countries. We've got diplomats ready to embark on their journey to states that are no longer following democracy. We hope that in the future, the tedious endevor that we ebark on today will lead us to prosperity and collaboratiuion between our nations. We can only hope for now, but maybe they can help defend democracy in the Americas."
+ohio.13.a:0 "Send them out!"
+#Enact Non-Aggression with WDC
+ohio.14.t:0 "An Offer From Charles Coughlin"
+ohio.14.d:0 "We've recently received a diplomatic request from the chancellor of Ohio. Charles Coughlin wants to enact a Non-Interference pact between our two nations. While there is risk in saying no, democracy must stand strong and we may be able to reclaim our former glory as a beacon of democracy. We cannot consider our options lightly. It's our safety and reputaion on the line. Working with the fascists may be just as bad as losing our sovereignty."
+ohio.14.a:0 "Enact Non-Interference"
+ohio.14.b:0 "We will NEVER work with the fascists!"
+#WDC Accepts Non-Aggression
+ohio.15.t:0 "Franklin Delano Roosevelt has Accepted!"
+ohio.15.d:0 "We've recieved word from our chancellor about the state of the diplomatic relations. We've reached a deal of non-interference between our nations. We will not disturb them, and in return, we will not be disturbed. We can now safely carry out the will of our great nation."
+ohio.15.a:0 "We'll see how long this lasts."
+#WDC Denies Non-Aggression
+ohio.16.t:0 "Franklin Delano Roosevelt has Denied Us!"
+ohio.16.d:0 "We've recieved word from our chancellor sent to negotiate with what's left of the federal government. They have decided that their nation will not, in any way, hold their agression back. They've clearly stated their dismay with our recent actions. We'll have to keep an eye out for them, if they ever want to rear their ugly heads."
+ohio.16.a:0 "We've been cursed with a ghost breathing down our neck."
+#Choose what industry to prioritize
+ohio.17.t:0 "The Industrial Question"
+ohio.17.d:0 "With our country emerging from the ground up, we need to prioritize one industry over another. Military industry does offer it's perks with quick and rapid militarisation to swiftly gain victory. On the other hand, civilian economy will exponentially grow, and we will be able to simultaniously build up our military."
+ohio.17.a:0 "Our economic strength lies with the civilian economy."
+ohio.17.b:0 "Our Military strength relies on the military economy."
+#Ohio Loses Border War Against Minnesota
+ohio.18.t:0 "Our Troops Return in Defeat!"
+ohio.18.d:0 "A few weeks ago, our troops were involved in a border skirmish against the Minnestans. While we will not admit that it was sparked by us, our self interests did rely on the outcome of the skirmish. While we cannot instigate another incedent, we can justify a war over the land left untaken."
+ohio.18.a:0 "A shame that we'd have to go to war."
 ##Focuses##
 OHO_politicalbell:0 "Political Bellwether"
 OHO_politicalbell_desc:0 "Ohio is regarded as the number one bellwether for determining the politics of the rest of the states. Out of every presidential election when the states were united, not a single time have we voted against the winner. Regardless of the future we decide, it is a safe bet than many follow the same way."
