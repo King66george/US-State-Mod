@@ -924,6 +924,14 @@ SpriteType = {
   name = "GFX_OHO_isolationism"
   texturefile = "gfx/interface/goals/OHO_isolationism.dds"
 }
+SpriteType = {
+  name = "GFX_OHO_natsj"
+  texturefile = "gfx/interface/goals/OHO_natsj.dds"
+}
+SpriteType = {
+  name = "GFX_OHO_expansionism"
+  texturefile = "gfx/interface/goals/OHO_expansionism.dds"
+}
 ###########################################################################################################################
 
 
