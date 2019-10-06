@@ -11,18 +11,13 @@
       name = washington.1.a
       ai_chance = { factor = 60 }
     }
-
-    option = {
-      name = washington.1.b
-      ai_chance { factor = 40 }
-    }
   }
 
   country_event = {
     id = washington.2
     title = washington.2.t
     desc = washington.2.d
-    picture = GFX_WAW_meetings_with_washington_event
+    picture = GFX_WAW_local_militias
     is_triggered_only = yes
 
     option = {

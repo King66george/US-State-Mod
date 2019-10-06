@@ -937,6 +937,10 @@ SpriteType = {
   name = "GFX_WAW_fund_the_boeing_company"
   texturefile = "gfx/interface/goals/WAW_fund_the_boeing_company.dds"
 }
+SpriteType = {
+  name = "GFX_WAW_jet_engine"
+  texturefile = "gfx/interface/goals/WAW_jet_engine.dds"
+}
 ###########################################################################################################################
 
 
