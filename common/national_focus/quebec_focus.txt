@@ -6,7 +6,7 @@ focus_tree = {
 			add = 30
 			tag = QBC
 			has_dlc = "Together for Victory"
-			
+
 		}
 	}
 	default = no
@@ -1994,8 +1994,8 @@ focus_tree = {
 					add_political_power = 120
 					set_party_name = {
 							ideology = democratic
-							long_name = QBC_quebecois
-							name = QBC_quebecois
+							long_name = "Parti Québécois"
+							name = "Parti Québécois"
 						}
 				}
 
@@ -5117,7 +5117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_empower_king
-		icon = GFX_goal_Generic_Executions
+		icon = GFX_Generic_Executions
 		cost = 7.00
 		prerequisite = {
 			focus = QBC_enforce_king
