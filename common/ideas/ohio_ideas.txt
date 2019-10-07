@@ -344,7 +344,7 @@ ideas = {
       modifier = {
         production_speed_infrastructure_factor = 0.25
         production_speed_industrial_complex_factor = 0.10
-        communist_drift = 0.05
+        communism_drift = 0.05
         political_power_gain = 0.5
       }
     }
@@ -360,7 +360,7 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        add_stability = -0.15
+        stability_factor = -0.15
         political_power_gain = -0.5
       }
     }
@@ -393,24 +393,66 @@ ideas = {
       removal_cost = -1
 
       modifier = {
-        communist_drift = 0.05
+        communism_drift = 0.05
         research_speed_factor = -0.03
+      }
+    }
+    OHO_sympathizers = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.10
       }
     }
   }
   ####Advisors###
   political_advisor = {
-		OHO_ford = {
-			allowed = {
-				original_tag = OHO
-			}
+  	OHO_ford = {
+  		allowed = {
+  			original_tag = OHO
+  		}
 
-			traits = { henry_ford }
+  		traits = { henry_ford }
 
-			ai_will_do = {
-			factor = 0
-			}
+  		ai_will_do = {
+  		  factor = 0
+  		}
+  	}
+    OHO_fpbolton = {
+      allowed = {
+        original_tag = OHO
+      }
 
-		}
-	}
+      traits = { education_advocate healthcare_advocate }
+    }
+    OHO_haroldburton = {
+      allowed = {
+        original_tag = OHO
+      }
+
+      traits = { healthcare_advocate }
+    }
+    OHO_jamescox = {
+      allowed = {
+        original_tag = OHO
+      }
+
+      traits = { silent_workhorse }
+    }
+    OHO_roberttaft = {
+      allowed = {
+        original_tag = OHO
+      }
+
+      traits = { democratic_reformer }
+    }
+  }
 }

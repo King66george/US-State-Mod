@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.43
 
 set_politics = {
 
@@ -151,8 +151,36 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_country_leader = {
+	name = "Charles Coughlin"
+	desc = "POLITICS_CHARLES_COUGHLIN_DESC"
+	picture = "Portrait_OHO_Charles_Coughlin.dds"
+	expire = "1979.10.27"
+	ideology = falangism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Alfred Wagenknecht"
+	desc = "POLITICS_ALFRED_WAGENKNECHT_DESC"
+	picture = "Portrait_OHO_Alfred_Wagenknecht.dds"
+	expire = "1979.10.27"
+	ideology = marxism
+	traits = {
+	}
+}
+create_corps_commander = {
+	name = "Robert S. Beightler"
+	picture = "Portrait_OHO_Robert_Beightler.dds"
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.43
 
 	set_politics = {
 

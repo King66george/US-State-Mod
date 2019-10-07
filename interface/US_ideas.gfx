@@ -278,7 +278,22 @@ spriteTypes = {
 		name = "GFX_idea_OHO_isolationism"
 		texturefile = "gfx/interface/ideas/OHO_isolationism.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_OHO_fpbolton"
+		texturefile = "gfx/interface/ideas/OHO_fpbolton.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OHO_haroldburton"
+		texturefile = "gfx/interface/ideas/OHO_haroldburton.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OHO_jamescox"
+		texturefile = "gfx/interface/ideas/OHO_jamescox.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OHO_roberttaft"
+		texturefile = "gfx/interface/ideas/OHO_roberttaft.dds"
+	}
 
 #Washington
 	spriteType = {

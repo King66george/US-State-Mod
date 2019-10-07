@@ -8,8 +8,9 @@ freedom_bonds = {
         }
 
         available = {
-                    has_government = democratic
-has_completed_focus = njmid4.7
+          has_government = democratic
+          has_completed_focus = njmid4.7
+
 }
         fire_only_once = no
 

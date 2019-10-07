@@ -326,7 +326,7 @@ country_event = { #OHIO DEMOCRATIC INFLUENCE
 	         has_government = democratic
           }
         }
-        add_ideas = truedemo
+        add_ideas = OHO_truedemo
       }
     }
   }

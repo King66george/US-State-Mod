@@ -25,6 +25,10 @@ OHO_permrev:0 "Permanent Revolution"
 OHO_sovschooling:0 "Soviet Schooling"
 ####Advisors#####
 OHO_ford:0 "Henry Ford"
+OHO_fpbolton:0 "Francis Payne Bolton"
+OHO_haroldburton:0 "Harold Burton"
+OHO_roberttaft:0 "Robert A. Taft"
+OHO_jamescox:0 "James M. Cox"
 
 #Factions#
 christian_front:0 "The Christian Front"
@@ -48,6 +52,7 @@ OHO_dep_recovery2:0 "Build up Civilian Industry in Columbus"
 OHO_dep_recovery3:0 "Build Up Military Industry in Cleveland"
 OHO_dep_recovery4:0 "Build Up Naval Industry in Toledo"
 OHO_dep_recovery5:0 "The Final Push"
+
 ##Events\/
 
 #Political Bellwether - Choose ideology drift

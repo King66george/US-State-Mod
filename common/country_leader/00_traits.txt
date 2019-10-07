@@ -3432,6 +3432,11 @@ leader_traits = {
 			factor = 2
 		}
 	}
+
+
+
+	####################################################################
+	####OHIO#############
 	henry_ford = {
 		random = no
 		production_speed_infrastructure_factor = 0.25
@@ -3441,6 +3446,18 @@ leader_traits = {
 			factor = 2
 		}
 	}
+	education_advocate = {
+		random = no
+		research_speed_factor = 0.05
+	}
+	healthcare_advocate = {
+		random = no
+		monthly_population = 0.025
+	}
+
+
+
+
 	silent_workhorse2 = {
 		random = no
 		political_power_factor = 0.15
