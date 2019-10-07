@@ -811,6 +811,7 @@ country_event = {
     create_wargoal = {
       type = puppet_wargoal_focus
       target = ORO
+      }
     }
+
   }
-}
