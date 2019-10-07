@@ -953,6 +953,10 @@ SpriteType = {
   name = "GFX_WAW_jet_engine"
   texturefile = "gfx/interface/goals/WAW_jet_engine.dds"
 }
+SpriteType = {
+  name = "GFX_WAW_cal_int"
+  texturefile = "gfx/interface/goals/WAW_cal_int.dds"
+}
 ###########################################################################################################################
 
 
