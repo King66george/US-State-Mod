@@ -826,6 +826,14 @@ SpriteType = {
   name = "GFX_TotSoc_Focus"
   texturefile = "gfx/interface/goals/TotSoc_Focus.dds"
 }
+SpriteType = {
+  name = "GFX_Focus_Down_in_Flames"
+  texturefile = "gfx/interface/goals/Focus_Down_in_Flames.dds"
+}
+SpriteType = {
+  name = "GFX_Focus_Down_in_Flames"
+  texturefile = "gfx/interface/goals/Focus_Down_in_Flames.dds"
+}
 ###########################################################################################################################
 
 
@@ -931,6 +939,14 @@ SpriteType = {
 SpriteType = {
   name = "GFX_OHO_expansionism"
   texturefile = "gfx/interface/goals/OHO_expansionism.dds"
+}
+SpriteType = {
+  name = "GFX_OHO_inviteny"
+  texturefile = "gfx/interface/goals/OHO_inviteny.dds"
+}
+SpriteType = {
+  name = "GFX_OHO_attackmichigan"
+  texturefile = "gfx/interface/goals/OHO_attackmichigan.dds"
 }
 ###########################################################################################################################
 

@@ -1,6 +1,6 @@
 focus_tree = {
 	id = ohio_tree
-	continuous_focus_position = { x = 20 y = 2000 }
+	continuous_focus_position = { x = 20 y = 1200 }
 	country = {
 		factor = 0
 		modifier = {
@@ -19,7 +19,6 @@ focus_tree = {
 			add_political_power = 150
 			country_event = ohio.1
 		}
-
 	}
 	focus = {
 		id = OHO_industrialize
@@ -39,8 +38,8 @@ focus_tree = {
 		id = OHO_rearmament
 		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
-		x = 27
-		y = 0
+		x = 26
+		y = 1
 		available = {
 			if = {
 				limit = {
@@ -57,42 +56,40 @@ focus_tree = {
 		id = OHO_nationalunitygov
 		icon = GFX_goal_support_democracy
 		cost = 10.00
-		available = {
-			has_country_flag = ohiodemocracy
-		}
 		prerequisite = {
 			focus = OHO_politicalbell
 		}
 		x = 0
 		y = 1
 		relative_position_id = OHO_politicalbell
+		available = {
+			has_country_flag = ohiodemocracy
+		}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = .15
 		}
-
 	}
 	focus = {
 		id = OHO_coughlin
 		icon = GFX_goal_support_fascism
 		cost = 10.00
-		available = {
-			has_country_flag = ohiofascism
-		}
 		prerequisite = {
 			focus = OHO_politicalbell
 		}
 		x = -10
 		y = 1
 		relative_position_id = OHO_politicalbell
+		available = {
+			has_country_flag = ohiofascism
+		}
 		completion_reward = {
 			country_event = ohio.2
 		}
-
 	}
 	focus = {
 		id = OHO_restore_prohibition
-		icon = GFX_goal_unknown
+		icon = GFX_Focus_SOV_To_Get_Rich
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_coughlin
@@ -102,7 +99,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = prohibition_usury
 		}
-
 	}
 	focus = {
 		id = OHO_second_crusade
@@ -114,19 +110,21 @@ focus_tree = {
 		x = 3
 		y = 2
 		completion_reward = {
-		        add_popularity = {
-		                ideology = communism
+			add_popularity = {
+				ideology = communism
 				popularity = -0.10
 			}
 		}
-
 	}
 	focus = {
 		id = OHO_renounce_roosevelt
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_attack_allies
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_second_crusade
+		}
+		mutually_exclusive = {
+			focus = OHO_offertofdr
 		}
 		x = 2
 		y = 3
@@ -169,25 +167,30 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_second_crusade
 		}
-		bypass = {
+		mutually_exclusive = {
+			focus = OHO_renounce_roosevelt
 		}
 		x = 4
 		y = 3
+		bypass = {
+
+		}
 		completion_reward = {
 			WDC = {
 				country_event = ohio.14
 			}
 		}
-
 	}
 	focus = {
 		id = OHO_nusj
-		icon = GFX_goal_unknown
+		icon = GFX_OHO_natsj
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_renounce_roosevelt
 			focus = OHO_offertofdr
 		}
+		x = 3
+		y = 4
 		available = {
 			if = {
 				limit = {
@@ -197,9 +200,6 @@ focus_tree = {
 				}
 			}
 		}
-
-		x = 3
-		y = 4
 		completion_reward = {
 			add_opinion_modifier = {
 				target = WDC
@@ -207,11 +207,10 @@ focus_tree = {
 			}
 			add_ideas = OHO_natsj
 		}
-
 	}
 	focus = {
 		id = OHO_strengthenties
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_renounce_roosevelt
@@ -220,7 +219,7 @@ focus_tree = {
 		x = 1
 		y = 4
 		completion_reward = {
-		custom_effect_tooltip = ohiofascistties
+			custom_effect_tooltip = ohiofascistties
 			hidden_effect = {
 				every_neighbor_country = {
 					if = {
@@ -251,7 +250,7 @@ focus_tree = {
 	}
 	focus = {
 		id = OHO_christian_front
-		icon = GFX_goal_unknown
+		icon = GFX_Generic_Christianity
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_nusj
@@ -278,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = OHO_expansionism
-		icon = GFX_goal_unknown
+		icon = GFX_OHO_expansionism
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_isolationism
@@ -294,46 +293,43 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = OHO_expansionism
 		}
-
 	}
 	focus = {
 		id = OHO_focusinternally
-		icon = GFX_goal_unknown
+		icon = GFX_Generic_Shady_Deal
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_isolationism
 		}
 		x = 1
 		y = 6
-			completion_reward = {
-					add_ideas = OHO_internal_affairs
-				}
-
+		completion_reward = {
+			add_ideas = OHO_internal_affairs
+		}
 	}
 	focus = {
 		id = OHO_inviteny
-		icon = GFX_goal_unknown
+		icon = GFX_OHO_inviteny
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_christian_front
 		}
 		x = 5
 		y = 6
-			bypass = {
-					NOT = {
-							country_exists = NYN
-						}
-				}
-			completion_reward = {
-					NYN = {
-							country_event = ohio.5
-						}
-				}
-
+		bypass = {
+			NOT = {
+				country_exists = NYN
+			}
+		}
+		completion_reward = {
+			NYN = {
+				country_event = ohio.5
+			}
+		}
 	}
 	focus = {
 		id = OHO_securetoledo
-		icon = GFX_goal_unknown
+		icon = GFX_Generic_Castle
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_focusinternally
@@ -341,76 +337,61 @@ focus_tree = {
 		}
 		x = 3
 		y = 7
-			completion_reward = {
-					997 = {
-							add_building_construction = {
-									type = bunker
-									province = 13288
-									level = 3
-									instant_build = yes
-								}
-							add_building_construction = {
-									type = bunker
-									province = 13287
-									level = 3
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			997 = {
+				add_building_construction = {
+					type = bunker
+					province = 13288
+					level = 3
+					instant_build = yes
 				}
-
+				add_building_construction = {
+					type = bunker
+					province = 13287
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = OHO_attackmichigan
+		icon = GFX_OHO_attackmichigan
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_securetoledo
+		}
+		x = 3
+		y = 8
+		will_lead_to_war_with = MIM
+		bypass = {
+			NOT = {
+				country_exists = MIM
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = MIM
+				type = annex_everything
+			}
+		}
 	}
 	focus = {
 		id = OHO_wagenknecht
-		icon = GFX_goal_support_communism
+		icon = GFX_Generic_Marxism
 		cost = 10.00
-		available = {
-			has_country_flag = ohiocommunism
-		}
 		prerequisite = {
 			focus = OHO_politicalbell
 		}
 		x = 9
 		y = 1
 		relative_position_id = OHO_politicalbell
-			completion_reward = {
-					add_stability = -0.15
-					add_ideas = rising_communism
-				}
-
-	}
-	focus = {
-		id = OHO_hour
-		icon = GFX_focus_chi_mission_to_the_us
-		cost = 10.00
-		prerequisite = {
-			focus = OHO_nationalunitygov
+		available = {
+			has_country_flag = ohiocommunism
 		}
-		x = 9
-		y = 2
 		completion_reward = {
-			add_opinion_modifier = {
-				target = WDC
-				modifier = large_increase
-			}
-		}
-
-	}
-	focus = {
-		id = OHO_newdeal
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = OHO_hour
-		}
-		x = 9
-		y = 3
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-			add_opinion_modifier = {
-				target = WDC
-				modifier = small_increase
-			}
+			add_stability = -0.15
+			add_ideas = rising_communism
 		}
 	}
 	focus = {
@@ -420,11 +401,11 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_nationalunitygov
 		}
-		x = 15
+		x = 13
 		y = 2
-			completion_reward = {
-				news_event = ohio.9
-			}
+		completion_reward = {
+			news_event = ohio.9
+		}
 	}
 	focus = {
 		id = OHO_agressivedemo
@@ -436,12 +417,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OHO_diploform
 		}
-		x = 13
+		x = 11
 		y = 3
-			completion_reward = {
-					add_ideas = OHO_agressivedemo
-				}
-
+		completion_reward = {
+			add_ideas = OHO_agressivedemo
+		}
 	}
 	focus = {
 		id = OHO_firststrike
@@ -450,23 +430,22 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_agressivedemo
 		}
-		will_lead_to_war_with = INI
-		x = 13
+		x = 11
 		y = 4
+		will_lead_to_war_with = INI
 		available = {
 			has_idea = agressivedemo
 		}
-	completion_reward = {
-		create_wargoal = {
-			type = annex_everything
-			target = INI
-		}
-		add_named_threat = {
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = INI
+			}
+			add_named_threat = {
 				threat = 5
 				name = OHO_expansion
+			}
 		}
-	}
-
 	}
 	focus = {
 		id = OHO_integratenindiana
@@ -475,12 +454,12 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_firststrike
 		}
-		x = 12
+		x = 10
 		y = 5
 		available = {
 			NOT = {
 				has_war = yes
-				country_exists = INI
+					country_exists = INI
 			}
 		}
 		completion_reward = {
@@ -496,9 +475,8 @@ focus_tree = {
 				856 = {
 					add_core_of = OHO
 				}
+			}
 		}
-	}
-
 	}
 	focus = {
 		id = OHO_integratesindiana
@@ -507,14 +485,14 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_firststrike
 		}
-		x = 14
+		x = 12
 		y = 5
-			available = {
-					NOT = {
-							country_exists = INI
-							has_war = yes
-						}
-				}
+		available = {
+			NOT = {
+				country_exists = INI
+				has_war = yes
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = integratesindiana
 			hidden_effect = {
@@ -535,9 +513,9 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_integratenindiana
 		}
-		will_lead_to_war_with = MIM
-		x = 13
+		x = 11
 		y = 6
+		will_lead_to_war_with = MIM
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -548,7 +526,6 @@ focus_tree = {
 				name = OHO_expansion
 			}
 		}
-
 	}
 	focus = {
 		id = OHO_diploform
@@ -560,7 +537,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = OHO_agressivedemo
 		}
-		x = 17
+		x = 15
 		y = 3
 		completion_reward = {
 			add_ideas = OHO_truedemo
@@ -582,11 +559,11 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_diploform
 		}
+		x = 15
+		y = 4
 		available = {
 			has_idea = truedemo
 		}
-		x = 17
-		y = 4
 		completion_reward = {
 			custom_effect_tooltip = senddiplomats
 			hidden_effect = {
@@ -611,7 +588,7 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_senddiplomats
 		}
-		x = 17
+		x = 15
 		y = 5
 		completion_reward = {
 			custom_effect_tooltip = demosup
@@ -634,8 +611,8 @@ focus_tree = {
 							}
 						}
 					}
-					add_ideas = democratic_influence
-				}
+						add_ideas = democratic_influence
+					}
 				ILI = {
 					if = {
 						limit = {
@@ -644,7 +621,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_ideas = democratic_influence
+						add_ideas = democratic_influence
 				}
 				WIW = {
 					if = {
@@ -654,7 +631,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_ideas = democratic_influence
+						add_ideas = democratic_influence
 				}
 				MNM = {
 					if = {
@@ -664,7 +641,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_ideas = democratic_influence
+						add_ideas = democratic_influence
 				}
 			}
 		}
@@ -676,7 +653,7 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_increasedemosup
 		}
-		x = 16
+		x = 14
 		y = 6
 		completion_reward = {
 			INI = {
@@ -691,7 +668,7 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_increasedemosup
 		}
-		x = 18
+		x = 16
 		y = 6
 		completion_reward = {
 			MIM = {
@@ -708,33 +685,292 @@ focus_tree = {
 			focus = OHO_diploini
 			focus = OHO_securethelakes
 		}
-		x = 15
+		x = 13
 		y = 7
-			completion_reward = {
-					add_state_claim = 395
-					add_state_claim = 849
-					add_state_claim = 851
-					add_state_claim = 850
-					add_named_threat = {
-							threat = 3
-							name = OHO_claims
-					}
-				}
-
+		completion_reward = {
+			add_state_claim = 395
+			add_state_claim = 849
+			add_state_claim = 851
+			add_state_claim = 850
+			add_named_threat = {
+				threat = 3
+				name = OHO_claims
+			}
+		}
 	}
 	focus = {
-		id = OHO_manifesto
-		icon = GFX_goal_unknown
+		id = OHO_claimWIW
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_claimILI
+		}
+		x = 11
+		y = 8
+		available = {
+			NOT = {
+				country_exists = ILI
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			add_state_claim = 982
+			add_state_claim = 848
+			add_state_claim = 394
+			add_named_threat = {
+				threat = 3
+				name = OHO_claims
+			}
+		}
+	}
+	focus = {
+		id = OHO_stpaul
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_claimILI
+		}
+		x = 15
+		y = 8
+		available = {
+			divisions_in_border_state = {
+				type = infantry
+				size > 0
+				state = 394
+				border_state = 955
+			}
+		}
+		bypass = {
+			controls_state = 955
+			controls_state = 391
+		}
+		completion_reward = {
+			start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 394
+				num_provinces = 1
+				on_win = ohio.12
+				on_lose = ohio.18
+			}
+			defender = {
+				state = 955
+				num_provinces = 1
+			}
+		}
+			add_named_threat = {
+				threat = 5
+				name = OHO_borderwar
+			}
+		}
+	}
+	focus = {
+		id = OHO_proletrev
+		text = OHO_proletrev
+		icon = GFX_Focus_Down_in_Flames
 		cost = 10.00
 		prerequisite = {
 			focus = OHO_wagenknecht
 		}
 		x = 22
 		y = 2
-			completion_reward = {
-					add_ideas = OHO_communistman
+		completion_reward = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.5
+				states = { 858 859 }
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = OHO_aidfrommoscow
+		text = OHO_aidfrommoscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 3.00
+		prerequisite = {
+			focus = OHO_proletrev
+		}
+		x = 20
+		y = 3
+		completion_reward = {
+			load_oob = OHO_sovietsupport
+		}
+	}
+	focus = {
+		id = OHO_victory
+		text = OHO_victory
+		icon = GFX_Generic_Coup02
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_proletrev
+		}
+		x = 22
+		y = 3
+		available = {
+			has_civil_war = no
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = OHO_rebirth
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = OHO_puppetwar
+		text = OHO_puppetwar
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_victory
+		}
+		mutually_exclusive = {
+			focus = OHO_permrevolution
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_in_faction_with = ROOT
+						has_non_aggression_pact_with = ROOT
+						is_subject_of = ROOT
+					}
 				}
-
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = OHO_permrevolution
+		text = OHO_permrevolution
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_victory
+		}
+		mutually_exclusive = {
+			focus = OHO_puppetwar
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			add_timed_idea = {
+				idea = OHO_permrev
+				days = 600
+			}
+		}
+	}
+	focus = {
+		id = OHO_party_line
+		text = OHO_party_line
+		icon = GFX_Generic_Chinese_Soldiers
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_permrevolution
+			focus = OHO_puppetwar
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			add_ideas = { OHO_party_line }
+		}
+	}
+	focus = {
+		id = OHO_stalinism
+		text = OHO_stalinism
+		icon = GFX_Focus_Stalin
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_party_line
+		}
+		mutually_exclusive = {
+			focus = OHO_standup
+		}
+		x = 20
+		y = 6
+		completion_reward = {
+			add_stability = 0.05
+			add_opinion_modifier = {
+				target = SOV
+				modifier = huge_increase
+			}
+		}
+	}
+	focus = {
+		id = OHO_standup
+		text = OHO_standup
+		icon = GFX_focus_attack_soviet
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_party_line
+		}
+		mutually_exclusive = {
+			focus = OHO_stalinism
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = large_decrease
+			}
+			add_stability = -0.10
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Mekhanizirovaniy Korpus"
+				}
+			}
+		}
+	}
+	focus = {
+		id = OHO_rehabilitate_old_order
+		text = OHO_rehabilitate_old_order
+		icon = GFX_Generic_Corporatism
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_standup
+		}
+		x = 24
+		y = 7
+		completion_reward = {
+			add_party_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			add_stability = -0.10
+		}
+	}
+	focus = {
+		id = OHO_commie_isolation
+		text = OHO_commie_isolation
+		icon = GFX_OHO_isolationism
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_rehabilitate_old_order
+		}
+		mutually_exclusive = {
+			focus = OHO_isolationism
+			focus = OHO_international
+		}
+		x = 23
+		y = 8
+		completion_reward = {
+			add_ideas = OHO_isolationism
+			add_ideas = disarmed_nation
+			add_ideas = civilian_economy
+		}
 	}
 	focus = {
 		id = OHO_nationalism
@@ -743,13 +979,31 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_rearmament
 		}
-		x = 26
-		y = 1
-			completion_reward = {
-					add_ideas = OHO__nationalism
-					add_war_support = 0.05
-				}
-
+		x = 25
+		y = 2
+		completion_reward = {
+			add_ideas = OHO__nationalism
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = OHO_international
+		text = OHO_international
+		icon = GFX_focus_ger_great_red_menace
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_rehabilitate_old_order
+		}
+		mutually_exclusive = {
+			focus = OHO_commie_isolation
+		}
+		x = 25
+		y = 8
+		completion_reward = {
+			every_neighbor_country = {
+				add_ideas = ALL_idea_communist
+			}
+		}
 	}
 	focus = {
 		id = OHO_increaseconscripts
@@ -758,12 +1012,11 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_rearmament
 		}
-		x = 28
-		y = 1
+		x = 27
+		y = 2
 		completion_reward = {
 			add_ideas = limited_conscription
 		}
-
 	}
 	focus = {
 		id = OHO_military_youth
@@ -775,12 +1028,11 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_nationalism
 		}
-		x = 27
-		y = 2
+		x = 26
+		y = 3
 		completion_reward = {
 			add_ideas = military_academies
 		}
-
 	}
 	focus = {
 		id = OHO_civilian1
@@ -802,31 +1054,29 @@ focus_tree = {
 				}
 			}
 		}
-
 	}
 	focus = {
 		id = OHO_emphasize_civilian
 		icon = GFX_focus_generic_industry_2
 		cost = 10.00
-		available = {
-			has_country_flag = emciv
-		}
 		prerequisite = {
 			focus = OHO_civilian1
 		}
 		x = 31
 		y = 2
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-							add_extra_state_shared_building_slots = 1
-						}
+		available = {
+			has_country_flag = emciv
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
-
+				add_extra_state_shared_building_slots = 1
+			}
+		}
 	}
 	focus = {
 		id = OHO_civilian
@@ -877,17 +1127,16 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = OHO_chromium_factories
@@ -916,17 +1165,16 @@ focus_tree = {
 		}
 		x = 30
 		y = 5
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+						level = 1
+						instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = OHO_infrastructure2
@@ -937,17 +1185,16 @@ focus_tree = {
 		}
 		x = 33
 		y = 4
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = OHO_infrastructure3
@@ -958,17 +1205,16 @@ focus_tree = {
 		}
 		x = 32
 		y = 5
-			completion_reward = {
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = OHO_civilian4
@@ -1005,20 +1251,19 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = OHO_depression
 		}
-
 	}
 	focus = {
 		id = OHO_emphasize_military
 		icon = GFX_goal_generic_small_arms
 		cost = 10.00
-		available = {
-			has_country_flag = emmil
-		}
 		prerequisite = {
 			focus = OHO_civilian1
 		}
 		x = 37
 		y = 2
+		available = {
+			has_country_flag = emmil
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 1
@@ -1051,7 +1296,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = OHO_military2
+	 	id = OHO_military2
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
@@ -1168,22 +1413,22 @@ focus_tree = {
 		}
 		x = 38
 		y = 5
-			completion_reward = {
-				random_owned_controlled_state = {
-					if = {
-						limit = {
-							is_coastal = yes
-						}
+		completion_reward = {
+			random_owned_controlled_state = {
+				if = {
+					limit = {
+						is_coastal = yes
 					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
+	}
 	focus = {
 		id = OHO_military4
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1222,92 +1467,96 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = OHO_attackmichigan
-		icon = GFX_goal_unknown
+		id = OHO_comintern
+		text = OHO_comintern
+		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
 		prerequisite = {
-			focus = OHO_securetoledo
+			focus = OHO_stalinism
 		}
-		will_lead_to_war_with = MIM
-		x = 3
-		y = 8
-		bypass = {
-			NOT = {
-				country_exists = MIM
-			}
-		}
+		x = 20
+		y = 7
 		completion_reward = {
-			declare_war_on = {
-				target = MIM
-				type = annex_everything
-			}
-		}
-
-	}
-	focus = {
-		id = OHO_claimWIW
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
-		prerequisite = {
-			focus = OHO_claimILI
-		}
-		x = 13
-		y = 8
-		available = {
-			NOT = {
-				country_exists = ILI
-				has_war = yes
-			}
-		}
-		completion_reward = {
-			add_state_claim = 982
-			add_state_claim = 848
-			add_state_claim = 394
-			add_named_threat = {
-				threat = 3
-				name = OHO_claims
+			SOV = {
+				country_event = generic.2
 			}
 		}
 	}
 	focus = {
-		id = OHO_stpaul
-		icon = GFX_goal_generic_forceful_treaty
+		id = OHO_soviet_schooling
+		text = OHO_soviet_schooling
+		icon = GFX_Generic_Autonomy
 		cost = 10.00
 		prerequisite = {
-			focus = OHO_claimILI
+			focus = OHO_comintern
 		}
-		x = 17
+		x = 19
 		y = 8
-		available = {
-			divisions_in_border_state = {
-				type = infantry
-				size > 0
-				state = 394
-				border_state = 955
-			}
-		}
-		bypass = {
-			controls_state = 955
-			controls_state = 391
-		}
 		completion_reward = {
-			start_border_war = {
-				change_state_after_war = no
-				attacker = {
-					state = 394
-					num_provinces = 1
-					on_win = ohio.12
-					on_lose = ohio.18
+			add_research_slot = 1
+			add_ideas = OHO_sovschooling
+		}
+	}
+	focus = {
+		id = OHO_redarmy
+		text = OHO_redarmy
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_comintern
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = OHO_pushrevolution
+		text = OHO_pushrevolution
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_redarmy
+		}
+		prerequisite = {
+			focus = OHO_soviet_schooling
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+			random_neighbor_country = {
+				limit = {
+					not = {
+						is_guaranteed_by = ROOT
+						is_in_faction_with = ROOT
+						has_non_aggression_pact_with = ROOT
+						is_subject_of = ROOT
+						has_government = communism
+					}
 				}
-				defender = {
-					state = 955
-					num_provinces = 1
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = puppet_wargoal_focus
+					}
 				}
 			}
-			add_named_threat = {
-				threat = 5
-				name = OHO_borderwar
-			}
+		}
+	}
+	focus = {
+		id = OHO_redrepublics
+		text = OHO_redrepublics
+		icon = GFX_goal_support_fourth_int
+		cost = 10.00
+		prerequisite = {
+			focus = OHO_international
+			focus = OHO_commie_isolation
+		}
+		x = 24
+		y = 9
+		completion_reward = {
+			create_faction = utopian_entente
 		}
 	}
 }

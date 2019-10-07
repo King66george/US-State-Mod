@@ -2199,6 +2199,88 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAC_invitenevada
+		icon = GFX_Generic_Militant_Socialism
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_ideologyturmoil
+		}
+
+		available = {
+			if = {
+				limit = {
+					NVN = {
+						has_government = communism
+					}
+				}
+			}
+		}
+
+		x = 23
+		y = 12
+
+		completion_reward = {
+			NVN = {
+				country_event = california.26
+			}
+		}
+	}
+
+	focus = {
+		id = CAC_invitearizona
+		icon = GFX_Generic_Militant_Socialism
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_ideologyturmoil
+		}
+		available = {
+			if = {
+				limit = {
+					AZA = {
+						has_government = communism
+					}
+				}
+			}
+		}
+		x = 25
+		y = 12
+
+		completion_reward = {
+			AZA = {
+				country_event = california.23
+			}
+		}
+	}
+	focus = {
+		id = CAC_inviteoregon
+		icon = GFX_Generic_Militant_Socialism
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_ideologyturmoil
+		}
+		available = {
+			if = {
+				limit = {
+					ORO = {
+						has_government = communism
+					}
+				}
+			}
+		}
+		x = 27
+		y = 12
+
+		completion_reward = {
+			ORO = {
+				country_event = california.29
+			}
+		}
+	}
+
+	focus = {
 		id = CAC_buildhawaii3
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00

@@ -150,8 +150,11 @@ ideas = {
       removal_cost = -1
 
       modifier = {
+        production_speed_infrastructure_factor = 0.25
+        production_speed_industrial_complex_factor = 0.25
         enemy_justify_war_goal_time = 2
         justify_war_goal_time = 2
+        research_speed_factor = -0.02
       }
     }
     OHO_depression_recovery = {
@@ -325,6 +328,73 @@ ideas = {
 
       modifier = {
         consumer_goods_factor = -0.05
+      }
+    }
+    OHO_rebirth = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_infrastructure_factor = 0.25
+        production_speed_industrial_complex_factor = 0.10
+        communist_drift = 0.05
+        political_power_gain = 0.5
+      }
+    }
+    OHO_party_line = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        add_stability = -0.15
+        political_power_gain = -0.5
+      }
+    }
+    OHO_permrev = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        subversive_activites_upkeep = -0.25
+        send_volunteer_divisions_required = -0.25
+        send_volunteer_size = 2
+      }
+    }
+    OHO_sovschooling = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        communist_drift = 0.05
+        research_speed_factor = -0.03
       }
     }
   }
