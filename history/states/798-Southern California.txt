@@ -22,7 +22,7 @@ state={
 		}
 		add_core_of = CAC
 		victory_points = {
-			9814 20 
+			9814 35
 		}
 
 	}

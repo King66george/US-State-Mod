@@ -18,10 +18,10 @@ state={
 		}
 		add_core_of = CAC
 		victory_points = {
-			941 15 
+			941 10
 		}
 		victory_points = {
-			11763 10
+			11763 5
 		}
 		1939.1.1 = {
 			buildings = {
