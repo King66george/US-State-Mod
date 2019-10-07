@@ -2012,6 +2012,193 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAC_foreignaffairs
+		icon = GFX_Generic_Legislation
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_finishtheplan
+		}
+
+		x = 27
+		y = 9
+
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = CAC_agreatcalifornia
+		icon = GFX_Generic_Liberation
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_foreignaffairs
+		}
+
+		mutually_exclusive = {
+			focus = CAC_regionaldefense
+		}
+
+		x = 29
+		y = 10
+
+		completion_reward = {
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = CAC_prepareexpansion
+		icon = GFX_Generic_Infantry_Training
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_foreignaffairs
+		}
+
+		mutually_exclusive = {
+			focus = CAC_regionaldefense
+		}
+
+		x = 29
+		y = 11
+
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = CAC_prepareexpansionidea
+		}
+	}
+
+	focus = {
+		id = CAC_nevadawargoalcommunism
+		icon = GFX_Generic_Socialist_Volunteers
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_prepareexpansion
+		}
+
+		x = 29
+		y = 12
+
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = NVN
+				}
+		}
+	}
+
+	focus = {
+		id = CAC_arizonawargoalcommunism
+		icon = GFX_Generic_Socialist_Volunteers
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_nevadawargoalcommunism
+		}
+
+		x = 28
+		y = 13
+
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = AZA
+				}
+		}
+	}
+
+	focus = {
+		id = CAC_utahwargoalcommunism
+		icon = GFX_Generic_Socialist_Volunteers
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_nevadawargoalcommunism
+		}
+
+		x = 30
+		y = 13
+
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = UTU
+				}
+		}
+	}
+
+	focus = {
+		id = CAC_mexicanpush
+		icon = GFX_Generic_Socialist_Volunteers
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_utahwargoalcommunism
+		}
+
+		prerequisite = {
+			 focus = CAC_arizonawargoalcommunism
+		}
+
+		x = 29
+		y = 14
+
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = BAJ
+				}
+			create_wargoal = {
+					type = annex_everything
+					target = SON
+			}
+		}
+	}
+
+	focus = {
+		id = CAC_regionaldefense
+		icon = GFX_Generic_Soldiers_Defense
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_foreignaffairs
+		}
+
+		mutually_exclusive = {
+			focus = CAC_agreatcalifornia
+		}
+
+		x = 25
+		y = 10
+
+		completion_reward = {
+			create_faction = CAC_communistfaction
+		}
+	}
+
+	focus = {
+		id = CAC_ideologyturmoil
+		icon = GFX_Generic_Militant_Socialism
+		cost = 10
+
+		prerequisite = {
+			focus = CAC_regionaldefense
+		}
+
+		x = 25
+		y = 11
+
+		completion_reward = {
+			add_ideas = CAC_ideologyturmoilidea
+		}
+	}
+
+	focus = {
 		id = CAC_buildhawaii3
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00

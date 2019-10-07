@@ -286,7 +286,7 @@ CAC_combinedarms = {
   removal_cost = -1
 
   modifier = {
-    air_close_air_support_attack_factor = 0.035
+    air_close_air_support_attack_factor = 0.05
     army_armor_attack_factor = 0.05
     army_armor_speed_factor = 0.085
   }
@@ -644,6 +644,45 @@ CAC_ncrrevanchism = {
       decryption_factor = 0.05
       partisan_effect = 0.20
       subversive_activites_upkeep = -0.50
+    }
+  }
+
+  CAC_prepareexpansionidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      training_time_army_factor = -0.15
+    }
+  }
+
+  CAC_ideologyturmoilidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture = eng_spirit_of_the_industrial_revolution
+
+    removal_cost = -1
+
+    modifier = {
+      subversive_activites_upkeep = -0.5
+      send_volunteer_divisions_required = -0.25
+      send_volunteer_size = 3
+      send_volunteers_tension = -0.20
     }
   }
 

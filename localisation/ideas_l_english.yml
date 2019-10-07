@@ -2737,6 +2737,8 @@
  CAC_aworkersarmyidea:0 "The Worker's Army"
  CAC_themilitapartisansidea:0 "The Milita Partisans"
  CAC_thecaliforniacommunistspyidea:0 "The California Civil Special Investigations Agency"
+ CAC_prepareexpansionidea:0 "Preparing For Expansion"
+ CAC_ideologyturmoilidea:0 "Regional Ideological Turmoil"
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"
