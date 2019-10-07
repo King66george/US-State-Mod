@@ -28,7 +28,75 @@
 
     option = {
       name = washington.2.b
-      load_oob = WAW_lmt
+      set_country_flag = trainthem
       ai_chance = { factor = 50 }
+    }
+  }
+
+  country_event = {
+    id = washington.3
+    title = washington.3.t
+    desc = washington.3.d
+    picture = GFX_WAW_local_militias
+    fire_only_once = yes
+
+    trigger = {
+      has_country_flag = trainthem
+    }
+
+    mean_time_to_happen = {
+      days = 30
+    }
+
+    option = {
+      name = washington.3.a
+      load_oob = WAW_lmt
+    }
+  }
+
+  country_event = {
+    id = washington.4
+    title = washington.4.t
+    desc = washington.4.d
+    picture = GFX_WAW_meetings_with_washington_event
+    fire_only_once = yes
+
+    option = {
+      name = washington.4.a
+      ai_chance = { factor = 95 }
+      WAW = { country_event = washington.5 }
+      add_to_faction = WAW
+    }
+
+    option = {
+      name = washington.4.b
+      ai_chance = { factor = 5 }
+      WAW = { country_event = washington.6 }
+    }
+  }
+
+  country_event = {
+    id = washington.5
+    title = washington.5.t
+    desc = washington.5.d
+    picture = GFX_WAW_meetings_with_washington_event
+    fire_only_once = yes
+
+    option = {
+      name = washington.5.a
+      ai_chance = { factor = 90 }
+    }
+  }
+
+  country_event = {
+    id = washington.6
+    title = washington.6.t
+    desc = washington.6.d
+    picture = GFX_WAW_meetings_with_washington_event
+    fire_only_once = yes
+
+    option = {
+      name = washington.6.a
+      ai_chance = { factor = 90 }
     }
   }

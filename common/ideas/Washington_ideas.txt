@@ -16,13 +16,49 @@ ideas = {
 	WAW_female_pilots = {
 
 	allowed = {
-		always = no
+		always = yes
 	}
 
 	removal_cost = -1
 
 	modifier = {
-		
+
+	}
+}
+
+	WAW_california_research_pact = {
+
+	allowed = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+
+	}
+}
+
+	WAW_idea_local_security = {
+
+	allowed = {
+		always = yes
+	}
+
+	allowed_civil_war = {
+    always = yes
+  }
+
+	removal_cost = -1
+
+	modifier = {
+		max_command_power = 15
+		guarantee_cost = -0.25
+		enemy_justify_war_goal_time = 0.10
+		justify_war_goal_time = -0.15
+		generate_wargoal_tension = -1
+		ai_focus_aggressive_factor = 0.25
+		subversive_activites_upkeep = -0.25
 	}
 }
 }

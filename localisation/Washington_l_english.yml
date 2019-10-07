@@ -35,22 +35,56 @@
  WAW_experimental_jet_engines_desc:0 "WIP"
  WAW_let_the_people_decide:0 "Let The People Decide"
  WAW_let_the_people_decide_desc:0 "WIP"
-
+ WAW_support_local_security:0 "Support Local Security"
+ WAW_support_local_security_desc:0 "WIP"
+ WAW_california_research_pact:0 "California Research Pact"
+ WAW_california_research_pact_desc:0 "WIP"
+ WAW_officially_join_the_pdf:0 "Officially Join The Pacific Defence Federation"
+ WAW_officially_join_the_pdf_desc:0 "WIP"
+ WAW_integrate_with_the_psa:0 "Integrate With The Pacific States Of America"
+ WAW_integrate_with_the_psa_desc:0 "WIP"
+ WAW_follow_martin:0 "Follow Martin"
+ WAW_follow_martin_desc:0 "WIP"
+ WAW_washington_california_joint_military_training:0 "Washington California Joint Military Training"
+ WAW_washington_california_joint_military_training_desc:0 "WIP"
 
 #Ideas
  WAW_resist_the_bear_idea:0 "Resist The Bear"
  WAW_resist_the_bear_idea:0 "We Must Resist The Bear"
+ WAW_female_pilots:0 "Female Aviators"
+ WAW_female_pilots_desc:0 "WIP"
+ WAW_idea_local_security:0 "Local Security"
+ WAW_idea_local_security_desc:0 "WIP"
 
 #Events
  #Cascadian United Front
- washington.1.t:0 "Dawn of The Cascadian United Front"
- washington.1.d:0 "WIP"
- washington.1.a:0 "The country of Oregon would prove a valuable ally if they choose to accept."
+  washington.1.t:0 "Dawn of The Cascadian United Front"
+  washington.1.d:0 "WIP"
+  washington.1.a:0 "The country of Oregon would prove a valuable ally if they choose to accept."
  #Call The Local Militias
- washington.2.t:0 "Call The Local Militias"
- washington.2.d:0 "The California scum have disrespected our sovreignty and declared war upon us! These warlord bears might defeat our army, but if played right, not our will to be free!"
- washington.2.a:0 "Raise the militias now!"
- washington.2.b:0 "Train the militants! We can hold the California Bear longer!"
-
+  washington.2.t:0 "Call The Local Militias"
+  washington.2.d:0 "The California scum have disrespected our sovreignty and declared war upon us! These warlord bears might defeat our army, but if played right, not our will to be free!"
+  washington.2.a:0 "Raise the militias now!"
+  washington.2.b:0 "Train the militants! We can hold the California Bear longer!"
+ #Local Militias Trained
+  washington.3.t:0 "Local Militias Trained"
+  washington.3.d:0 "The local militias have been trained and tested rigorously. They are ready for combat and will be deployed the following hour."
+  washington.3.a:0 "Outstanding!"
+ #Washington Request Entry To The Pacific Defense Federation
+  washington.4.t:0 "Washington Request Entry To The Pacific Defense Federation"
+  washington.4.d:0 "[WAW.GetNameDef] requests entry to the Pacific Defense Federation."
+  washington.4.a:0 "Grant them entry, and this will bring us closer to our goals."
+  washington.4.b:0 "Deny them entry, they will only slow us down."
+ #Washingtin Granted Entry To Pacific Defense Federation
+   washington.5.t:0 "Granted Entry To Pacific Defense Federation"
+   washington.5.d:0 ""
+   washington.5.a:0 ""
+ #Washington Denied Entry To Pacific Defense Federation
+   washington.6.t:0 "Denied Entry To Pacific Defense Federation"
+   washington.6.d:0 ""
+   washington.6.a:0 ""
 
 #Custom Tooltips
+ #Appease California
+  WAW_appease_california_tt:0 "§RAppeasing California could lead to the loss of our sovereignty.§!\n*"
+  WAW_integration_tt:0 "§RWill become puppet of California.§!\n"

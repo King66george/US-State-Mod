@@ -208,8 +208,9 @@ focus = {
   id = WAW_resist_the_bear
   icon = GFX_focus_eng_expose_the_belly_of_the_bear
   prerequisite = { focus = WAW_the_bear_stops_here  }
+  prerequisite = { focus = WAW_call_the_local_militias  }
   cost = 10
-  x = 27
+  x = 28
   y = 2
 
   available = {
@@ -229,7 +230,7 @@ focus = {
   id = WAW_call_the_local_militias
   icon = GFX_Generic_Low_Morale
   prerequisite = { focus = WAW_CUF }
-  cost = 10
+  cost = 3
   x = 29
   y = 1
 
@@ -251,7 +252,6 @@ focus = {
   id = WAW_evergreen_forevermore
   icon = GFX_Generic_Bell_Tolls
   prerequisite = { focus = WAW_resist_the_bear }
-  prerequisite = { focus = WAW_call_the_local_militias }
   cost = 10
   x = 28
   y = 3
@@ -327,7 +327,10 @@ focus = {
   y = 0
 
   available = {
-    CAC = { has_completed_focus = CAC_localsecurity }
+    WAW = { has_completed_focus = WAW_follow_martin }
+    WAW = { has_government = democratic }
+    CAC = { has_completed_focus = CAC_frankmerriamsplans }
+    CAC = { has_government = democratic }
   }
 
   cancel_if_invalid = yes
@@ -335,17 +338,29 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    custom_effect_tooltip = WAW_appease_california_tt
+    WAW = {
+      add_opinion_modifier = {
+        target = CAC
+        modifier = huge_increase
+      }
+    }
+    CAC = {
+      add_opinion_modifier = {
+        target = WAW
+        modifier = massive_increase
+      }
+    }
   }
 }
 
 focus = {
   id = WAW_california_oil_agreement
   icon = GFX_Generic_Oil_Concern
-  prerequisite = { focus = WAW_appease_california }
+  prerequisite = { focus = WAW_officially_join_the_pdf }
   cost = 5
   x = 31
-  y = 1
+  y = 2
 
   cancel_if_invalid = yes
   continue_if_invalid = no
@@ -449,19 +464,21 @@ focus = {
 }
 
 focus = {
-  id = WAW_officially_join_the_psa
-  icon = GFX_Generic_Factory_Planning
-  prerequisite = { focus = WAW_california_oil_agreement }
+  id = WAW_officially_join_the_pdf
+  icon = GFX_Generic_Legislation
+  prerequisite = { focus = WAW_appease_california }
   cost = 10
   x = 32
-  y = 3
+  y = 1
 
   cancel_if_invalid = yes
   continue_if_invalid = no
   available_if_capitulated = no
 
   completion_reward = {
-
+    CAC = {
+      country_event = washington.4
+    }
   }
 }
 
@@ -598,12 +615,67 @@ focus = {
 }
 
 focus = {
-  id = WAW_california_reseach_pact
+  id = WAW_california_research_pact
   icon = GFX_goal_continuous_research
-  prerequisite = { focus = WAW_appease_california }
+  prerequisite = { focus = WAW_california_oil_agreement }
+  cost = 10
+  x = 30
+  y = 3
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_support_local_security
+  icon = GFX_Generic_Volunteer_Corps
+  prerequisite = { focus = WAW_officially_join_the_pdf }
   cost = 10
   x = 33
-  y = 1
+  y = 2
+
+  available = {
+    CAC = { has_completed_focus = CAC_localsecurity }
+  }
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+    add_ideas = WAW_idea_local_security
+  }
+}
+
+focus = {
+  id = WAW_integrate_with_the_psa
+  icon = GFX_WAW_cal_int
+  prerequisite = { focus = WAW_officially_join_the_pdf }
+  cost = 10
+  x = 32
+  y = 3
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+    custom_effect_tooltip = WAW_integration_tt
+  }
+}
+
+focus = {
+  id = WAW_washington_california_joint_military_training
+  icon = GFX_Generic_Machine_Gun02
+  prerequisite = { focus = WAW_support_local_security }
+  cost = 10
+  x = 34
+  y = 3
 
   cancel_if_invalid = yes
   continue_if_invalid = no
