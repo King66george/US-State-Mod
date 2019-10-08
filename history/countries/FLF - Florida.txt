@@ -160,15 +160,39 @@ create_country_leader = {
 	}
 }
 create_corps_commander = {
+	name = "Eugene M. Landrum"
+	picture = "Portrait_FLF_Eugene_M_Landrum.dds"
+	traits = { infantry_officer winter_specialist }
+	skill = 2
+	id = 601
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
 	name = "Joseph Stilwell"
 	picture = "Portrait_FLF_Joseph_Stilwell.dds"
 	traits = { politically_connected infantry_officer career_officer harsh_leader }
-	skill = 1
+	skill = 3
 	id = 601
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "James Van Fleet"
+	picture = "Portrait_FLF_James_Van_Fleet.dds"
+	traits = { infantry_officer organizer }
+	skill = 2
+	id = 601
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }
 1939.1.1 = {
 	set_stability = 0.9
