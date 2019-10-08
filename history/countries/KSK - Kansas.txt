@@ -184,6 +184,17 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+create_corps_commander = {
+	name = "Charles W. Ryder"
+	picture = "Portrait_KSK_Charles_Ryder.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
 1939.1.1 = {
 	set_stability = 0.9
 
