@@ -55,6 +55,8 @@
  WAW_female_pilots_desc:0 "WIP"
  WAW_idea_local_security:0 "Local Security"
  WAW_idea_local_security_desc:0 "WIP"
+ WAW_ideas_california_research_pact:0 "California Research Pact"
+ WAW_ideas_california_research_pact_desc:0 "WIP"
 
 #Events
  #Cascadian United Front
@@ -83,6 +85,10 @@
    washington.6.t:0 "Denied Entry To Pacific Defense Federation"
    washington.6.d:0 ""
    washington.6.a:0 ""
+ #Washington Integration
+  washington.7.t:0 "Washington Integrates With Pacific States Of America"
+  washington.7.d:0 ""
+  washington.7.a:0 ""
 
 #Custom Tooltips
  #Appease California

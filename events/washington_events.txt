@@ -59,7 +59,7 @@
     title = washington.4.t
     desc = washington.4.d
     picture = GFX_WAW_meetings_with_washington_event
-    fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
       name = washington.4.a
@@ -80,11 +80,10 @@
     title = washington.5.t
     desc = washington.5.d
     picture = GFX_WAW_meetings_with_washington_event
-    fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
       name = washington.5.a
-      ai_chance = { factor = 90 }
     }
   }
 
@@ -93,10 +92,24 @@
     title = washington.6.t
     desc = washington.6.d
     picture = GFX_WAW_meetings_with_washington_event
-    fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
       name = washington.6.a
-      ai_chance = { factor = 90 }
+    }
+  }
+
+  country_event = {
+    id = washington.7
+    title = washington.7.t
+    desc = washington.7.d
+    picture = GFX_WAW_meetings_with_washington_event
+    is_triggered_only = yes
+
+    option = {
+      name = washington.7.a
+      CAC = {
+        puppet = WAW
+      }
     }
   }

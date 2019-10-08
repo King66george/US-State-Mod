@@ -358,7 +358,7 @@ focus = {
   id = WAW_california_oil_agreement
   icon = GFX_Generic_Oil_Concern
   prerequisite = { focus = WAW_officially_join_the_pdf }
-  cost = 5
+  cost = 10
   x = 31
   y = 2
 
@@ -627,7 +627,8 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    add_research_slot = 1
+    add_ideas = WAW_ideas_california_research_pact
   }
 }
 
@@ -656,7 +657,7 @@ focus = {
   id = WAW_integrate_with_the_psa
   icon = GFX_WAW_cal_int
   prerequisite = { focus = WAW_officially_join_the_pdf }
-  cost = 10
+  cost = 14.3
   x = 32
   y = 3
 
@@ -673,7 +674,7 @@ focus = {
   id = WAW_washington_california_joint_military_training
   icon = GFX_Generic_Machine_Gun02
   prerequisite = { focus = WAW_support_local_security }
-  cost = 10
+  cost = 5
   x = 34
   y = 3
 
@@ -682,7 +683,9 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    army_experience = 25
+    air_experience = 25
+    navy_experience = 25
   }
 }
 

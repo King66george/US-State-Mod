@@ -39,6 +39,19 @@ ideas = {
 	}
 }
 
+	WAW_ideas_california_research_pact = {
+
+	allowed = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		research_speed_factor = 0.075
+	}
+}
+
 	WAW_idea_local_security = {
 
 	allowed = {

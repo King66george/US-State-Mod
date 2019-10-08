@@ -113,6 +113,20 @@ bookmarks = {
 			}
 		}
 
+		"NJN" = {
+			minor = yes
+			history = "NJN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+			}
+			focuses = {
+				njdiplo3.2
+				njdiplo1
+				njdiplo12
+			}
+		}
+
 		"---"={
 			history = "OTHER_ONLY_STATES_DESC"
 		}
