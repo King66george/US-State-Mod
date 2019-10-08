@@ -698,7 +698,9 @@ focus_tree = {
 					factor = 10
 				}
 			available = {
-
+				NVN = {
+					has_war = no
+				}
 }
 			bypass = {
 
