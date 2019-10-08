@@ -92,7 +92,7 @@
  QBC_fleet_in_being_desc:0 "By building a large naval force, its mere existence can be a threat to our enemies even if we never deploy it. The very thought of our ships sailing forth and striking at their sea lanes forces them to be cautious."
  QBC_trade_fleet:0 "Trade Fleet"
  QBC_trade_fleet_desc:0 "Canada is a trading nation. Build more freighters and convoys."
- QBC_army_effort:0 "Reorganize the Quebec Regiments"
+ QBC_army_effort:0 " Armée de terre"
  QBC_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  QBC_equipment_effort:0 "Modernize The Equipment"
  QBC_equipment_effort_desc:0 "The limits for what equipment can be carried by infantry are constantly being pushed. We will focus on giving our troops the best tools available."
@@ -431,8 +431,6 @@
 
 
 
- QBC_army_effort:0 "Army Effort"
- QBC_army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  QBC_equipment_effort:0 "Equipment Effort"
  QBC_equipment_effort_desc:0 "The limits for what equipment can be carried by infantry are constantly being pushed. We will focus on giving our troops the best tools available."
  QBC_motorization_effort:0 "Motorization Effort"
