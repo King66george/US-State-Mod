@@ -423,3 +423,78 @@ country_event = { #OHIO LOSES BORDER WAR AGAINST MINNESOTA
     }
   }
 }
+    
+    mean_time_to_happen = {
+    	days = 50
+    }
+    
+    option = { #Root Out Corrupt Advisors
+        name = ohio.19.a
+        add_ideas = corrupt_advisors
+    }
+    option = { #Ignore Corruption (leads to civil war)
+        name = ohio.19.b
+        hidden_effect = {
+            set_country_flag = ignoredcorruption
+    }
+}
+country_event = { #Defecting Generals
+    id = ohio.20
+    title = ohio.20.t
+    desc = ohio.20.d
+	picture = GFX_report_event_finnish_letter
+    
+    is_triggered_only = yes
+    
+    mean_time_to_happen = {
+    	days = 70
+    }
+    
+    option = {
+    	name = ohio.20.a
+        add_ideas = unwilling_generals
+        add_popularity = {
+        	ideology = fascism
+            popularity = 0.10
+        }
+    }
+    option = {
+    	name = ohio.20.b
+        remove_unit_leader = 501
+        remove_unit_leader = 501
+        hidden_effect = {
+        	set_country_flag = generals_left
+     }
+}
+country_event = {
+	id = ohio.21
+    title = ohio.21.t
+    desc = ohio.21.d
+    picture = GFX_report_event_finnish_letter
+    
+    is_triggered_only = yes
+    
+    mean_time_to_happen = {
+    	days = 70
+    }
+    
+    option = {
+    	name = ohio.21.a
+        add_timed_idea = {
+        	idea = repairing_sabatage
+            days = 62
+        }
+        hidden_effect = {
+        	damage_building = {
+            	state = 859
+                level = 2
+            }
+     	}
+    }
+    option = {
+    	name = ohio.21.b
+        hidden_effect = {
+        	set_country_flag = ignored_sabatage
+        }
+    }
+}
