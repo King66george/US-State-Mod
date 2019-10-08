@@ -178,6 +178,29 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 1
+    id = 501
+}
+create_corps_commander = {
+	name = "John W. Leonard"
+	picture = "Portrait_OHO_John_Leonard.dds"
+	traits = { infantry_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+    id = 502
+}
+create_corps_commander = {
+	name = "George E. Stratemeyer"
+	picture = "Portrait_OHO_Robert_Beightler.dds"
+	traits = { infantry_leader #add more later }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+    id = 503
 }
 1939.1.1 = {
 	set_stability = 0.43
