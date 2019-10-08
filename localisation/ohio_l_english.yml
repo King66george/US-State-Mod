@@ -23,6 +23,9 @@ OHO_rebirth:0 "A Reborn Nation"
 OHO_party_line:0 "The Party Divide"
 OHO_permrev:0 "Permanent Revolution"
 OHO_sovschooling:0 "Soviet Schooling"
+OHO_strong_economy:0 "Strengthened Economy"
+OHO__isolationism:0 "Isolationism"
+OHO_revolution:0 "World Revolution"
 ####Advisors#####
 OHO_ford:0 "Henry Ford"
 OHO_fpbolton:0 "Francis Payne Bolton"
@@ -33,6 +36,9 @@ OHO_jamescox:0 "James M. Cox"
 #Factions#
 christian_front:0 "The Christian Front"
 utopian_entente:0 "The Utopian Entente"
+
+#Order Of Battle Files
+OHO_sovietsupport:0 "Soviet Volunteers"
 
 ##Custom Tooltips/Country Flags##
 demosup:0 "§GIncreases§! §Mdemocratic§! §Gsupport in non-democratic American Northwestern Territories§!"

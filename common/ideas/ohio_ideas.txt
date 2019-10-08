@@ -157,6 +157,27 @@ ideas = {
         research_speed_factor = -0.02
       }
     }
+    OHO__isolationism = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_infrastructure_factor = 0.50
+        production_speed_industrial_complex_factor = 0.50
+        enemy_justify_war_goal_time = 2
+        justify_war_goal_time = 2
+        research_speed_factor = -0.02
+        trade_opinion_factor = -1.25
+        local_resources_factor = 0.25
+      }
+    }
     OHO_depression_recovery = {
       allowed = {
       always = no
@@ -296,7 +317,7 @@ ideas = {
 
       modifier = {
         war_support_factor = 0.15
-        conscription = 0.045
+        conscription = 0.025
         non_core_manpower = 0.02
       }
     }
@@ -343,7 +364,8 @@ ideas = {
 
       modifier = {
         production_speed_infrastructure_factor = 0.25
-        production_speed_industrial_complex_factor = 0.10
+        production_speed_industrial_complex_factor = 0.25
+        production_speed_arms_factory_factor = 0.25
         communism_drift = 0.05
         political_power_gain = 0.5
       }
@@ -410,6 +432,21 @@ ideas = {
 
       modifier = {
         fascism_drift = 0.10
+      }
+    }
+    OHO_revolution = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        subversive_activites_upkeep = -0.50
       }
     }
   }

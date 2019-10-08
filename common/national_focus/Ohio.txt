@@ -226,8 +226,8 @@ focus_tree = {
 						limit = {
 							has_government = fascism
 						}
+						country_event = ohio.8
 					}
-					country_event = ohio.8
 				}
 			}
 		}
@@ -269,8 +269,8 @@ focus_tree = {
 						limit = {
 							has_government = fascism
 						}
+						country_event = ohio.5
 					}
-					country_event = ohio.5
 				}
 			}
 		}
@@ -967,9 +967,10 @@ focus_tree = {
 		x = 23
 		y = 8
 		completion_reward = {
-			add_ideas = OHO_isolationism
+			add_ideas = OHO__isolationism
 			add_ideas = disarmed_nation
 			add_ideas = civilian_economy
+			add_ideas = closed_economy
 		}
 	}
 	focus = {
@@ -1003,6 +1004,7 @@ focus_tree = {
 			every_neighbor_country = {
 				add_ideas = ALL_idea_communist
 			}
+			add_ideas = OHO_revolution
 		}
 	}
 	focus = {

@@ -279,6 +279,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/OHO_isolationism.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_OHO__isolationism"
+		texturefile = "gfx/interface/ideas/OHO_isolationism.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_OHO_fpbolton"
 		texturefile = "gfx/interface/ideas/OHO_fpbolton.dds"
 	}
