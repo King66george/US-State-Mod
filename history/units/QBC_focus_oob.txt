@@ -137,14 +137,7 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "5e Régiment Support Bn 132"
-		location = 4345 # Montreal
-		division_template = "Support Brigade" 
-		start_experience_factor = 1.0
-		start_equipment_factor = 0.7
-
-	}
+	
 	division= {	
 		name = "3rd Battalion, Royal 22e Régiment"
 		location = 4345 # Montreal
@@ -153,23 +146,7 @@ units = {
 		start_equipment_factor = 0.2
 
 	}
-	## 5th Miltary District ##
-	division= {	
-		name = "Les Fusiliers de Sherbrooke Support Bn 975"
-		location = 12149 # Quebec City
-		division_template = "Support Brigade" 
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.3
-
-	}
-	division= {	
-		name = "12e Régiment blindé du Canada Engineers Brigade"
-		location = 12149 # Quebec City
-		division_template = "Support Brigade" 
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.3
-
-	}
+	
 }
 units = {
 

@@ -17,8 +17,8 @@
  QBC_baby_boom2_desc:0 "With the support of the church, the people are encourage to have more babies to increase birth rate."
  QBC_facist_ways:0 "The Monarchs"
  QBC_facist_ways_desc:0 "Build the nation under facist ideology"
- QBC_socialist_ways:0 "Pull Out The Roots of Facism"
- QBC_socialist_ways_desc:0 "Repress all facist tendencies. Teach them the life of socialism. They will learn of our peacefull ways, by force if nescessary. Some facists might move to Canada."
+ QBC_socialist_ways:0 "Follow Michel Chartrand"
+ QBC_socialist_ways_desc:0 "Repress all facist tendencies. Teach them the life of socialism. They will learn of our peacefull ways, by force if nescessary."
  QBC_takes_labrador:0 "Annex Labrador"
  QBC_takes_labrador_desc:0 "Labrador should be part of Quebec territories. Claim it back!"
  QBC_takes_newfoundland:0 "Annex Newfoundland & Greenland"
@@ -391,12 +391,12 @@
  QBC_prep_struggle_desc:0 "We must condition our people for the wars of agression we will soon wage over this earth."
  QBC_political_end:0 "One Nation, United and Ready"
  QBC_political_end_desc:0 "The full extent of our political ambitions have been realized. May God have mercy on our enemies, because we won't."
- QBC_Monarchy_Goal:0 "Land for the Royal Family"
+ QBC_Monarchy_Goal:0 "The Church Demands land"
  QBC_Monarchy_Goal_desc:0 "We need to take The land from our less fortunate Neighbors"
- QBC_Collective_goal:0 "Our Weakest Neighbor"
+ QBC_Collective_goal:0 "The Temtation of Foreign Lands"
  QBC_Collective_goal_desc:0 "While they look to build lets remove them from the equation"
- QBC_facist_goal:0 "Our Weakest Neighbor"
- QBC_facist_goal_desc:0 "While they look to build lets remove them from the equation"
+ QBC_facist_goal:0 "Our Weakness is in Our Growing Populace"
+ QBC_facist_goal_desc:0 "While neighbors look to build lets remove them from the equation"
 
 
  #Generic Focus Rework Start Army Focuses#
@@ -405,8 +405,8 @@
 
  QBC_bike_effort:0 "Bicycle Effort"
  QBC_bike_effort_desc:0 "Bikes! - Tom Segura"
- QBC_prep_effort:0 "Prepare our Men"
- QBC_prep_effort_desc:0 "Do not fire until you see the whites of their eyes! -unknown possibly never said but quotes"
+ QBC_prep_effort:0 "Légion étrangère"
+ QBC_prep_effort_desc:0 "Let us mimic our colonizers foreign legionaires"
  QBC_arm_ourselves:0 "Check Old Stockpiles"
  QBC_arm_ourselves_desc:0 "if it aint broke, dont fix it - unknown"
  #Generic Focus Rework Start Economic Tree#
@@ -546,7 +546,7 @@
  QBC_why_we_fight_desc:0 "The world is growing increasingly unsafe. Our people need to see the atrocities being committed by those who crave power. It is time we rally the people to our cause and ensure everyone is ready to fight for our freedom."
  QBC_political_commissars:0 "Political Commissars"
  QBC_political_commissars_desc:0 "To ensure that our policies are followed in military practice, we will introduce politically appointed officials into military ranks."
- QBC_internationalism_focus:0 "Internationalism Focus"
+ QBC_internationalism_focus:0 "We Shall Support Madame Buller"
  QBC_internationalism_focus_desc:0 "Ideology knows no borders. Another nation may call itself sovereign, but our convictions are above such claims."
  QBC_nationalism_focus:0 "Fury onto Thee!"
  QBC_nationalism_focus_desc:0 "Our nation is unique, and our political achievements could only have happened here. We must fight for it at any cost."

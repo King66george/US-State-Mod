@@ -1134,7 +1134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_prep_effort
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_Generic_Crouched_Soldier
 		cost = 7.00
 		prerequisite = {
 			focus = QBC_production_effort_2
@@ -1144,11 +1144,14 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_ideas = paramilitarism_focus
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 500
-							producer = GER
+					army_experience = 25
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 3.0
+							uses = 1
+							category = land_doctrine
 						}
+					load_oob = QBC_foreignlegion_oob
 				}
 
 	}
@@ -1347,16 +1350,8 @@ focus_tree = {
 							elections_allowed = yes
 						}
 					set_political_party = {
-							ideology = democratic
-							popularity = 1
-						}
-					set_political_party = {
 							ideology = communism
-							popularity = 98
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 1
+							popularity = 75
 						}
 				}
 
@@ -1508,9 +1503,6 @@ focus_tree = {
 						}
 				}
 			available = {
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
-						}
 				}
 			bypass = {
 
@@ -1584,19 +1576,11 @@ focus_tree = {
 			completion_reward = {
 					set_politics = {
 							ruling_party = socialism
-							elections_allowed = no
-						}
-					set_political_party = {
-							ideology = neutrality
-							popularity = 6
+							elections_allowed = yes
 						}
 					set_political_party = {
 							ideology = communism
 							popularity = 25
-						}
-					set_political_party = {
-							ideology = fascism
-							popularity = 5
 						}
 					set_political_party = {
 							ideology = socialism
@@ -2534,10 +2518,8 @@ focus_tree = {
 
 }
 			completion_reward = {
-					QBC = {
-							add_to_tech_sharing_group = Quebec_research
-						}
-					add_to_tech_sharing_group = Quebec_research
+					add_ideas = QUBECOIS_research
+				
 				}
 
 	}
@@ -4888,31 +4870,31 @@ focus_tree = {
 					HAI = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
+									popularity = 0.1
 								}
 						}
 					DOM = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
+									popularity = 0.2
 								}
 						}
 					GDL = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
+									popularity = 0.15
 								}
 						}
 					PAN = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
+									popularity = 0.1
 								}
 						}
 					COS = {
 							add_popularity = {
 									ideology = communism
-									popularity = 0.6
+									popularity = 0.25
 								}
 						}
 				}
