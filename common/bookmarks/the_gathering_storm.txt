@@ -111,6 +111,20 @@ bookmarks = {
 				njdiplo12
 			}
 		}
+		######################<--Inserted For Testing Purposes
+		#"WAW" = {
+		#	minor = yes
+		#	history = "USA_GATHERING_STORM_DESC"
+		#	ideology = democratic
+		#	ideas = {
+		#		home_of_the_free
+		#	}
+		#	focuses = {
+		#		WAW_fund_the_boeing_company
+		#		WAW_CUF
+		#		WAW_let_the_people_decide
+		#	}
+		#}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
