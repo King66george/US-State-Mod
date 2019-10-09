@@ -367,7 +367,9 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    CAC = {
+      country_event = washington.8
+    }
   }
 }
 

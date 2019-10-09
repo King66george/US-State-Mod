@@ -89,6 +89,19 @@
   washington.7.t:0 "Washington Integrates With Pacific States Of America"
   washington.7.d:0 ""
   washington.7.a:0 ""
+ #California Washington Oil Agreement
+  washington.8.t:0 "Washington Request Oil For Chromium"
+  washington.8.d:0 ""
+  washington.8.a:0 ""
+  washington.8.b:0 ""
+ #California Washington Oil Agreement (California Accepts)
+  washington.9.t:0 "Washington Request Oil For Chromium"
+  washington.9.d:0 ""
+  washington.9.a:0 ""
+ #California Washington Oil Agreement (California Denies)
+  washington.10.t:0 "Washington Request Oil For Chromium"
+  washington.10.d:0 ""
+  washington.10.a:0 ""
 
 #Custom Tooltips
  #Appease California

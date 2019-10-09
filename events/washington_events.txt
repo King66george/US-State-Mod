@@ -113,3 +113,47 @@
       }
     }
   }
+
+  country_event = {
+    id = washington.8
+    title = washington.8.t
+    desc = washington.8.d
+    picture = GFX_WAW_meetings_with_washington_event
+    is_triggered_only = yes
+
+    option = {
+      name = washington.8.a
+      ai_chance = { factor = 100 }
+      country_event = washington.9
+      WAW = {
+        add_resource = {
+          type = oil
+          amount = 12
+          state = 808
+        }
+        add_resource = {
+          type = chromium
+          amount = -12
+          state = 808
+        }
+      }
+      CAC = {
+        add_resource = {
+          type = oil
+          amount = -12
+          state = 798
+        }
+        add_resource = {
+          type = chromium
+          amount = 12
+          state = 798
+        }
+      }
+    }
+
+    option = {
+      name = washington.8.b
+      ai_chance = { factor = 0 }
+      country_event = washington.10
+    }
+  }
