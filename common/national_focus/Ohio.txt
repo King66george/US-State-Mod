@@ -866,10 +866,7 @@ focus_tree = {
 		x = 24
 		y = 4
 		completion_reward = {
-			add_timed_idea = {
-				idea = OHO_permrev
-				days = 600
-			}
+			idea = OHO_permrev
 		}
 	}
 	focus = {
