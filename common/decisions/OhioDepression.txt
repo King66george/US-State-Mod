@@ -138,7 +138,7 @@ OHO_depression = {
     }
 
     visible = {
-      has_decision = OHO_dep_recovery4
+      has_idea = OHO_depression_recovery
     }
 
     available = {

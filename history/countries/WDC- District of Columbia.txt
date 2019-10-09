@@ -35,35 +35,6 @@ set_technology = {
 	base_strike = 1
 }
 
-1936.1.26 = {
-create_faction = Union
-add_to_faction = MEM
-add_to_faction = NHN
-add_to_faction = MAM
-add_to_faction = RIR
-add_to_faction = VTV
-add_to_faction = CTC
-add_to_faction = NYN
-add_to_faction = NJN
-add_to_faction = PAP
-add_to_faction = DED
-add_to_faction = MDM
-add_to_faction = WVW
-add_to_faction = OHO
-add_to_faction = MIM
-add_to_faction = INI
-add_to_faction = KYK
-add_to_faction = ILI
-add_to_faction = WIW
-add_to_faction = MNM
-add_to_faction = IAI
-add_to_faction = MOM
-add_to_faction = KSK
-add_to_faction = NVN
-add_to_faction = ORO
-add_to_faction = CAC
-}
-
 1939.1.1 = {
 
 	add_political_power = 1199
@@ -155,10 +126,6 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
-
-create_faction = faction_for_american_unification
-add_to_faction = WDC
-add_to_faction = MDM
 
 create_country_leader = {
  		name = "Franklin D. Roosevelt"
