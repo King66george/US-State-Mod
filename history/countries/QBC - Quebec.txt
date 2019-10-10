@@ -36,7 +36,6 @@ set_technology = {
 	basic_carrier = 1
 	transport = 1
 	mobile_warfare = 1
-	mobile_warfare1 = 1
 	base_strike = 1
 	fleet_in_being = 1
 }

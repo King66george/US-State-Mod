@@ -566,7 +566,9 @@ focus_tree = {
 							uses = 1
 							category = land_doctrine
 						}
+					hidden_effect = {
 					load_oob = QBC_focus_oob
+					}
 				}
 
 	}
@@ -1151,7 +1153,9 @@ focus_tree = {
 							uses = 1
 							category = land_doctrine
 						}
+					hidden_effect = {
 					load_oob = QBC_foreignlegion_oob
+					}
 				}
 
 	}
@@ -1345,14 +1349,19 @@ focus_tree = {
 							idea = internationalism
 							days = 720
 						}
+				hidden_effect = {
 					set_politics = {
 							ruling_party = communism
-							elections_allowed = yes
+							elections_allowed = no
 						}
 					set_political_party = {
 							ideology = communism
-							popularity = 75
+							popularity = 74
 						}
+					}
+
+					custom_effect_tooltip = "Instant Ideology Change"
+				
 				}
 
 	}
@@ -1573,19 +1582,20 @@ focus_tree = {
 			ai_will_do = {
 					factor = 50
 				}
+
 			completion_reward = {
+				hidden_effect = {
 					set_politics = {
 							ruling_party = socialism
 							elections_allowed = yes
 						}
 					set_political_party = {
-							ideology = communism
-							popularity = 25
-						}
-					set_political_party = {
 							ideology = socialism
-							popularity = 64
+							popularity = 74
 						}
+					}
+
+					custom_effect_tooltip = "Instant Ideology Change"
 				}
 
 	}
@@ -2381,14 +2391,18 @@ focus_tree = {
 					factor = 8
 				}
 			completion_reward = {
+				hidden_effect = {
 					set_politics = {
 							ruling_party = monarchy
 							elections_allowed = yes
 						}
 					set_political_party = {
 							ideology = monarchy
-							popularity = 74
+							popularity = 64
 						}
+					}
+
+					custom_effect_tooltip = "Instant Ideology Change"
 				}
 
 	}
@@ -2403,9 +2417,6 @@ focus_tree = {
 		y = 2
 			ai_will_do = {
 					factor = 50
-				}
-			available = {
-					has_government = monarchy
 				}
 			completion_reward = {
 					add_political_power = 120
@@ -2442,9 +2453,6 @@ focus_tree = {
 		x = 47
 		y = 3
 			available = {
-					OR = {
-							threat > 0.10
-						}
 				}
 			available_if_capitulated = yes
 			completion_reward = {
@@ -2566,6 +2574,7 @@ focus_tree = {
 		y = 3
 			available_if_capitulated = yes
 			completion_reward = {
+				hidden_effect = {
 					set_politics = {
 							ruling_party = theocratism
 							elections_allowed = yes
@@ -2575,7 +2584,10 @@ focus_tree = {
 							popularity = 74
 						}
 					create_faction = theocraticquebec
-				}
+					}
+				custom_effect_tooltip = "Instant Ideology Change and Faction"
+			
+			}
 
 	}
 	focus = {
@@ -2665,26 +2677,18 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					add_timed_idea = {
-							idea = nationalism
-							days = 720
-						}
+				hidden_effect = {
 					set_politics = {
 							ruling_party = fascism
 							elections_allowed = no
 						}
 					set_political_party = {
-							ideology = democratic
-							popularity = 1
-						}
-					set_political_party = {
-							ideology = communism
-							popularity = 20
-						}
-					set_political_party = {
 							ideology = fascism
-							popularity = 79
+							popularity = 74
 						}
+					}
+
+					custom_effect_tooltip = "Instant Ideology Change"
 				}
 
 	}
@@ -3304,9 +3308,6 @@ focus_tree = {
 							has_war_with = GER
 							is_justifying_wargoal_against = GER
 							has_wargoal_against = GER
-						}
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
 						}
 				}
 			bypass = {
@@ -4301,10 +4302,10 @@ focus_tree = {
 }
 			completion_reward = {
 					hidden_effect = {
-							load_oob = "QUE_Civil_War"
-							load_oob = "QUE_Civil_War"
+							load_oob = "QBC_Civil_War"
+							load_oob = "QBC_Civil_War"
 						}
-					custom_effect_tooltip = "Deploynewvolonteerdivisions"
+					custom_effect_tooltip = "Deploy new volonteer divisions, ready to aid against Germany"
 				}
 
 	}
@@ -4601,9 +4602,7 @@ focus_tree = {
 					factor = 25
 				}
 			available = {
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
-						}
+					
 				}
 			bypass = {
 
@@ -4668,9 +4667,6 @@ focus_tree = {
 					factor = 25
 				}
 			available = {
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
-						}
 				}
 			bypass = {
 
@@ -4702,9 +4698,6 @@ focus_tree = {
 					factor = 25
 				}
 			available = {
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
-						}
 				}
 			bypass = {
 
@@ -5043,9 +5036,6 @@ focus_tree = {
 					factor = 25
 				}
 			available = {
-					NOT = {
-							has_country_flag = britain_enforced_our_loyalty
-						}
 				}
 			bypass = {
 
