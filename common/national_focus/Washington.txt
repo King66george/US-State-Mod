@@ -29,6 +29,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
+  add_ideas = WAW_ideas_fund_boeing
   914 = {
     add_building_construction = {
         type = air_base
@@ -443,7 +444,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-    add_ideas = WAW_female_pilots
+    add_ideas = WAW_idea_female_pilots
     set_rule = { can_generate_female_aces = yes }
   }
 }
@@ -669,6 +670,7 @@ focus = {
 
   completion_reward = {
     custom_effect_tooltip = WAW_integration_tt
+    country_event = washington.7
   }
 }
 

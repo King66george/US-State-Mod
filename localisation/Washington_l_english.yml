@@ -51,12 +51,14 @@
 #Ideas
  WAW_resist_the_bear_idea:0 "Resist The Bear"
  WAW_resist_the_bear_idea:0 "We Must Resist The Bear"
- WAW_female_pilots:0 "Female Aviators"
- WAW_female_pilots_desc:0 "WIP"
+ WAW_idea_female_pilots:0 "Female Aviators"
+ WAW_idea_female_pilots_desc:0 "WIP"
  WAW_idea_local_security:0 "Local Security"
  WAW_idea_local_security_desc:0 "WIP"
  WAW_ideas_california_research_pact:0 "California Research Pact"
  WAW_ideas_california_research_pact_desc:0 "WIP"
+ WAW_ideas_fund_boeing:0 "Funding Boeing"
+ WAW_ideas_fund_boeing_desc:0 "WIP"
 
 #Events
  #Cascadian United Front

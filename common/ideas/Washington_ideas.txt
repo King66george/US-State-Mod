@@ -13,65 +13,104 @@ ideas = {
 		}
 	}
 
-	WAW_female_pilots = {
+		WAW_idea_female_pilots = {
 
-	allowed = {
-		always = yes
+		allowed = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			conscription_factor = 0.1
+		}
 	}
 
-	removal_cost = -1
+		WAW_california_research_pact = {
 
-	modifier = {
+			allowed = {
+				always = yes
+			}
 
-	}
-}
+			removal_cost = -1
 
-	WAW_california_research_pact = {
+			modifier = {
 
-	allowed = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	modifier = {
-
-	}
-}
-
-	WAW_ideas_california_research_pact = {
-
-	allowed = {
-		always = yes
+		}
 	}
 
-	removal_cost = -1
+		WAW_ideas_california_research_pact = {
 
-	modifier = {
-		research_speed_factor = 0.075
+		allowed = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			research_speed_factor = 0.075
+		}
 	}
-}
 
-	WAW_idea_local_security = {
+		WAW_idea_local_security = {
 
-	allowed = {
-		always = yes
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+    	always = yes
+  	}
+
+		removal_cost = -1
+
+		modifier = {
+			max_command_power = 15
+			guarantee_cost = -0.25
+			enemy_justify_war_goal_time = 0.10
+			justify_war_goal_time = -0.15
+			generate_wargoal_tension = -1
+			ai_focus_aggressive_factor = 0.25
+			subversive_activites_upkeep = -0.25
+		}
 	}
 
-	allowed_civil_war = {
-    always = yes
-  }
+		WAW_ideas_fighter_production = {
 
-	removal_cost = -1
+		allowed = {
+			always = yes
+		}
 
-	modifier = {
-		max_command_power = 15
-		guarantee_cost = -0.25
-		enemy_justify_war_goal_time = 0.10
-		justify_war_goal_time = -0.15
-		generate_wargoal_tension = -1
-		ai_focus_aggressive_factor = 0.25
-		subversive_activites_upkeep = -0.25
+		removal_cost = -1
+
+		modifier = {
+
+		}
 	}
-}
+
+		WAW_ideas_bomber_prodection = {
+
+		allowed = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+
+		}
+	}
+
+		WAW_ideas_fund_boeing = {
+
+		allowed = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			production_speed_air_base_factor = 0.15
+		}
+	}
 }
