@@ -143,6 +143,22 @@ ohio.17.b:0 "Our Military strength relies on the military economy."
 ohio.18.t:0 "Our Troops Return in Defeat!"
 ohio.18.d:0 "A few weeks ago, our troops were involved in a border skirmish against the Minnestans. While we will not admit that it was sparked by us, our self interests did rely on the outcome of the skirmish. While we cannot instigate another incedent, we can justify a war over the land left untaken."
 ohio.18.a:0 "A shame that we'd have to go to war."
+#Corrupt Advisors
+ohio.19.t:0 "Corrupt Officials Discovered!"
+ohio.19.d:0 "There's been a recent story about the corrupt government officials! They seem to be puppets in a larger scheme. Their marionette is still unknown, but the government is doing their best to uncover the perpetrator. The only thing left to do is either keep it to ourselves and deal with them later, or uncover their corruption to the public. The former will be the easiest way, but also ill advised. There is bound to be backlash, but if we tell the public, their powers will be limited.
+ohio.19.a:0 "Inform the public; their powers must be limited."
+ohio.19.b:0 "We should keep this information to ourselves."
+#Defecting Generals
+ohio.30.t:0 "Generals Defect!"
+ohio.20.d:0 "Today, we've recived 3 letters of resignation. Robert S. Beightler, John W. Leonard, and George E. Stratemeyer all resigned in protest. If we were to collaborate with them, there is sure to be some influence on the public, but they would probably stay. They are some of the finest generals we have, but if we let them stay, there are bound to be consequences."
+ohio.20.a:0 "Negotiate with them, they're crucial to our military"
+ohio.20.b:0 "Let them leave! We would rather be conquered than make a deal with fascists!"
+#Industrial Sabotage
+ohio.21.t:0 "Industrial Sabotage!"
+ohio.21.d:0 "We've recieved word of a recent movement of rebellion. This time, they've sabatoged our industry. With our small industry and attempt to industrialize, this could really hurt our economy. We cannot affor for things like this to happen. If we ignore the issue, there will be noticable issues in the future."
+ohio.21.a:0 "We need to repair the factories"
+ohio.21.b:0 "We have larger problems to deal with"
+
 ##Focuses##
 OHO_politicalbell:0 "Political Bellwether"
 OHO_politicalbell_desc:0 "Ohio is regarded as the number one bellwether for determining the politics of the rest of the states. Out of every presidential election when the states were united, not a single time have we voted against the winner. Regardless of the future we decide, it is a safe bet than many follow the same way."
