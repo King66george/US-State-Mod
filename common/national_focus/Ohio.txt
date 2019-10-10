@@ -84,7 +84,11 @@ focus_tree = {
 			has_country_flag = ohiofascism
 		}
 		completion_reward = {
-			country_event = ohio.2
+			add_popularity = {
+            	          ideology = fascism
+                          popularity = 0.15
+        	        }
+                        set_ruling_party = fascism
 		}
 	}
 	focus = {
