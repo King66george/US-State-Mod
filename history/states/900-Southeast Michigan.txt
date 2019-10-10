@@ -7,9 +7,12 @@ state={
 		owner = MIM
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 5
-			arms_factory = 4
-
+			industrial_complex = 4
+			arms_factory = 3
+			dockyard = 2
+			13289 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = MIM
 		victory_points = {
