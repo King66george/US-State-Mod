@@ -184,6 +184,18 @@ create_country_leader = {
 		warmonger
 	}
 }
+create_country_leader = {
+	name = "Dr. George Bolling Lee"
+	#desc = "POLITICS_KING_ZOG_DESC"
+	picture = "portrait_DR_George_Bolling_Lee.dds"
+	expire = "1948.1.1"
+	ideology = constitutional
+	traits = {
+		compassionate_gentleman
+		economic_reformer
+		champion_of_peace_1
+	}
+}
 create_field_marshal = {
     name = "Leonard T. Gerow"
     picture = "Portrait_VAV_Leonard_Gerow.dds"
