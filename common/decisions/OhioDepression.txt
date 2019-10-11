@@ -38,7 +38,7 @@ OHO_depression = {
     cancel_if_not_visible = yes
 
     visible = {
-      has_decision = OHO_dep_recovery
+      has_idea = OHO_depression_recovery
     }
 
     available = {
@@ -74,7 +74,7 @@ OHO_depression = {
     cancel_if_not_visible = yes
 
     visible = {
-      has_decision = OHO_dep_recovery2
+      has_idea = OHO_depression_recovery
     }
 
     available = {
@@ -108,13 +108,14 @@ OHO_depression = {
 
     visible = {
       has_decision = OHO_dep_recovery3
+      has_idea = OHO_depression_recovery
     }
 
     available = {
       has_idea = OHO_depression_recovery
     }
 
-    cost = 150
+    cost = 100
 
     fire_only_once = yes
 

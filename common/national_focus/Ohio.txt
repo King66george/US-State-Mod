@@ -1,6 +1,6 @@
 focus_tree = {
 	id = ohio_tree
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = { x = 20 y = 2500 }
 	country = {
 		factor = 0
 		modifier = {
@@ -438,7 +438,7 @@ focus_tree = {
 		y = 4
 		will_lead_to_war_with = INI
 		available = {
-			has_idea = agressivedemo
+			
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -566,7 +566,7 @@ focus_tree = {
 		x = 15
 		y = 4
 		available = {
-			has_idea = truedemo
+
 		}
 		completion_reward = {
 			custom_effect_tooltip = senddiplomats
