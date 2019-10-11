@@ -1507,8 +1507,8 @@ continuous_focus_palette = {
 		id = population_growth1
 		
 		icon = GFX_goal_generic_wolf_pack
-		
 		available = {
+			num_of_factories > 50
 		}
 		
 		modifier = {
@@ -1532,7 +1532,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_wolf_pack
 		
 		available = {
-			num_of_factories > 25
+			num_of_factories > 75
 		}
 		modifier = {
 			MONTHLY_POPULATION = 1
@@ -1555,7 +1555,9 @@ continuous_focus_palette = {
 		id = army_modernisation1
 		
 		icon = GFX_goal_generic_army_doctrines
-		
+		available = {
+			num_of_factories > 10
+		}
 		modifier = {
 			experience_gain_army = 0.10
 			leader_experience_scale = 0.1
@@ -1578,6 +1580,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_army_doctrines
 
 		available = {
+			num_of_factories > 30
 		}
 		
 		modifier = {
@@ -1602,6 +1605,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_army_doctrines
 
 		available = {
+			num_of_factories > 100
 		}
 		
 		modifier = {
@@ -1626,6 +1630,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_air_doctrine
 
 		available = {
+			num_of_factories > 10
 		}
 		
 		modifier = {
@@ -1652,6 +1657,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_air_doctrine
 
 		available = {
+			num_of_factories > 30
 		}
 		
 		modifier = {
@@ -1677,6 +1683,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_air_doctrine
 
 		available = {
+			num_of_factories > 100
 		}
 		
 		modifier = {
@@ -1702,6 +1709,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 
 		available = {
+			num_of_factories > 30
 		}
 		
 		modifier = {
@@ -1727,6 +1735,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 
 		available = {
+			num_of_factories > 50
 		}
 		
 		modifier = {
@@ -1752,6 +1761,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 
 		available = {
+			num_of_factories > 100
 		}
 		
 		modifier = {
