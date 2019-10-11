@@ -168,6 +168,15 @@ create_country_leader = {
 	strict_austerity_adherent
 	}
 }
+create_country_leader = {
+	name = "John Spain"
+	desc = "POLITICS_A_HARRY_MOORE_DESC"
+	picture = "Portrait_NJN_A_Harry_Moore.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+	}
+}
 create_field_marshal = {
 	name = "Cortlandt V.R. Schuyler"
 	picture = "Portrait_NJN_Cortlandt_V_R_Schuyler.dds"
@@ -221,20 +230,7 @@ create_navy_leader = {
 ### Ship Variants ###
 
 create_equipment_variant = {
-	name = "Barracuda Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-
-
-create_equipment_variant = {
-	name = "Portland Class"
+	name = "Princeton Class"
 	type = heavy_cruiser_1
 	upgrades = {
 		ship_reliability_upgrade = 2
@@ -257,7 +253,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "New Mexico Class"
+	name = "New York Class"
 	type = battleship_1
 	upgrades = {
 		ship_reliability_upgrade = 2
@@ -268,7 +264,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Yorktown Class"
+	name = "Trenton Class"
 	type = carrier_2
 	upgrades = {
 		ship_deckspace_upgrade = 1
@@ -293,7 +289,7 @@ create_equipment_variant = {
 	}
 
 	create_equipment_variant = {
-		name = "Benson & Gleaves Class"
+		name = "Moore Class"
 		type = destroyer_2
 		upgrades = {
 			ship_torpedo_upgrade = 3
@@ -304,7 +300,7 @@ create_equipment_variant = {
 	}
 
 	create_equipment_variant = {
-		name = "Wasp Class"
+		name = "Seagull Class"
 		type = carrier_2
 		upgrades = {
 			ship_deckspace_upgrade = 2
@@ -316,7 +312,7 @@ create_equipment_variant = {
 
 	# 1941
 	#create_equipment_variant = {
-	#	name = "South Dakota Class"
+	#	name = "Cape Class"
 	#	type = battleship_2
 	#	upgrades = {
 	#		ship_reliability_upgrade = 3

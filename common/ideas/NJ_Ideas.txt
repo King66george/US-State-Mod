@@ -378,5 +378,270 @@ production_speed_buildings_factor = 0.2
 }
 }
 
+
+###Export the Revolution###
+
+export_revolution = {
+
+allowed = {
+always = no
+}
+
+allowed_civil_war = {
+always = no
+}
+removal_cost = -1
+
+modifier = {
+justify_war_goal_time = -0.15
 }
 }
+
+###Decreasing Unemployment###
+
+decrease_unemploy = {
+
+allowed = {
+always = no
+}
+
+allowed_civil_war = {
+always = no
+}
+removal_cost = -1
+
+modifier = {
+production_factory_efficiency_gain_factor = 0.05
+}
+}
+
+################
+################
+################
+
+
+
+political_advisor = {
+		mary_roebling = {
+
+
+			allowed = {
+				original_tag = NJN
+			}
+			available = {
+				has_completed_focus = njmid5.12
+			}
+
+			traits = { financial_expert }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		}
+
+
+	tank_manufacturer = {
+
+		designer = yes
+
+		test = {
+
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
+
+		}
+		}
+
+
+	naval_manufacturer = {
+
+		designer = yes
+
+		Camden Yards = {
+
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			equipment_bonus = {
+
+			}
+
+			traits = { atlantic_fleet_naval_manufacturer }
+
+		}
+}
+
+	aircraft_manufacturer = {
+
+		designer = yes
+
+		gm = {
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { light_aircraft_manufacturer }
+
+			equipment_bonus = {
+
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+	industrial_concern = {
+
+		trenton = {
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+
+			traits = { refinery_concern }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		}
+
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		urmum = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			research_bonus = {
+				artillery = 0.15
+			}
+
+			traits = { artillery_manufacturer }
+
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		}
+
+	theorist = {
+	schuyler = {
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			research_bonus = {
+				rocketry = 0.15
+			}
+
+			traits = { rocket_scientist }
+		}
+}
+
+	# MILITARY
+	army_chief = {
+
+		schuyler = {
+
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			traits = { army_chief_organizational_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+	air_chief = {
+
+		gey = {
+
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			traits = { air_chief_ground_support_2 }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+}
+
+	navy_chief = {
+
+		halsey = {
+
+
+			allowed = {
+				original_tag = NJN
+			}
+
+			traits = { navy_chief_decisive_battle_2 }
+
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+
+}
+
+	high_command = {
+
+	g = {
+
+
+			allowed = {
+				original_tag = GER
+			}
+
+			traits = { army_infantry_2 }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+			}
+		}
+	}

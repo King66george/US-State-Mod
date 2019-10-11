@@ -971,6 +971,10 @@ add_popularity = {
 ideology = monarchy
 popularity = 0.6
 }
+set_politics = {
+    ruling_party = monarchy
+    elections_allowed = no
+  }
 }
 }
 
@@ -1332,7 +1336,7 @@ icon = GFX_goal_generic_consumer_goods
 x = 39
 y = 2.5
 cost = 5
-prerequisite = { focus = njmid3.5 }
+prerequisite = { focus = njmid2.5 }
 mutually_exclusive = { focus = njmid4.9 }
 completion_reward = {
 country_event = newjersey.13
@@ -1381,7 +1385,8 @@ y = 4
 cost = 5
 prerequisite = { focus = njmid4.1 }
 completion_reward = {
-
+add_ideas = export_revolution
+every_neighbor_country = {add_ideas = communist_influence}
 }
 }
 
@@ -1395,7 +1400,10 @@ y = 4
 cost = 5
 prerequisite = { focus = njmid4.1 focus = njmid4.2 }
 completion_reward = {
-
+add_political_power = -100
+add_stability = 0.1
+consumer_goods_factor = 0.05
+add_ideas = decrease_unemploy
 }
 }
 
@@ -1524,9 +1532,10 @@ x = 39
 y = 3
 cost = 5
 prerequisite = { focus = njmid4.8 }
+prerequisite = { focus = njmid3.5 }
 mutually_exclusive = {focus = njmid4.9}
 completion_reward = {
-
+available_political_advisor = mary_roebling
 }
 }
 
