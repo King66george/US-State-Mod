@@ -83,12 +83,12 @@ country_event = {
   	original_tag = OHO
   	OHO = {
     	has_government = democratic
-        has_idea = general_rearm
+      has_idea = general_rearm
     }
     date > 1937.1.1
   }
 	fire_only_once = yes
-    
+
   option = {
     name = ohio.2.a
     add_stability = -0.03
@@ -434,84 +434,105 @@ country_event = { #OHIO LOSES BORDER WAR AGAINST MINNESOTA
     }
   }
 }
-    
-    mean_time_to_happen = {
-    	days = 50
+country_event = {
+  id = ohio.19
+  title = ohio.19.t
+  desc = ohio.19.d
+
+  mean_time_to_happen = {
+    days = 50
+  }
+
+  option = { #Root Out Corrupt Advisors
+    name = ohio.19.a
+    add_ideas = corrupt_advisors
+  }
+
+  option = { #Ignore Corruption (leads to civil war)
+    name = ohio.19.b
+    hidden_effect = {
+      set_country_flag = ignoredcorruption
     }
-    
-    option = { #Root Out Corrupt Advisors
-        name = ohio.19.a
-        add_ideas = corrupt_advisors
-    }
-    option = { #Ignore Corruption (leads to civil war)
-        name = ohio.19.b
-        hidden_effect = {
-            set_country_flag = ignoredcorruption
-    }
+  }
 }
 country_event = { #Defecting Generals
-    id = ohio.20
-    title = ohio.20.t
-    desc = ohio.20.d
+  id = ohio.20
+  title = ohio.20.t
+  desc = ohio.20.d
 	picture = GFX_report_event_finnish_letter
-    
-    is_triggered_only = yes
-    
-    mean_time_to_happen = {
-    	days = 70
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = ignoredcorruption
+    OR = {
+      has_idea = corrupt_advisors
     }
-    
-    option = {
-    	name = ohio.20.a
-        add_ideas = unwilling_generals
-        add_popularity = {
-        	ideology = fascism
-            popularity = 0.10
-        }
+  }
+
+  mean_time_to_happen = {
+    days = 70
+  }
+
+  option = {
+    name = ohio.20.a
+    add_ideas = unwilling_generals
+    add_popularity = {
+      ideology = fascism
+      popularity = 0.10
     }
-    option = {
-    	name = ohio.20.b
-        remove_unit_leader = 501
-        remove_unit_leader = 501
-        hidden_effect = {
-        	set_country_flag = generals_left
-     }
+  }
+  option = {
+    name = ohio.20.b
+    remove_unit_leader = 501
+    remove_unit_leader = 501
+    hidden_effect = {
+      set_country_flag = generals_left
+    }
+  }
 }
 country_event = { #Industrial Sabotage
 	id = ohio.21
-    title = ohio.21.t
-    desc = ohio.21.d
-    picture = GFX_report_event_finnish_letter
-    
-    is_triggered_only = yes
-    
-    mean_time_to_happen = {
-    	days = 70
+  title = ohio.21.t
+  desc = ohio.21.d
+  picture = GFX_report_event_finnish_letter
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = generals_left
+    OR = {
+      has_idea = unwilling_generals
     }
-    
-    option = { #Deal with the issue
-    	name = ohio.21.a
-        add_timed_idea = {
-        	idea = repairing_sabotage
-            days = 62
-        }
-        hidden_effect = {
-        	damage_building = {
-            	type = industrial_complex
-                damage = 0.6
-            }
-            damage_building = {
-            	type = arms_factory
-                damage = 0.85
-            }
-            country_event = ohio.22
-     	}
+  }
+
+  mean_time_to_happen = {
+    days = 70
+  }
+
+  option = { #Deal with the issue
+    name = ohio.21.a
+    add_timed_idea = {
+      idea = repairing_sabotage
+      days = 62
     }
-    option = { #Ignore the Problem
-    	name = ohio.21.b
-        hidden_effect = {
-        	set_country_flag = ignored_sabatage
-            country_event = ohio.22
-        }
+    hidden_effect = {
+      damage_building = {
+        type = industrial_complex
+        damage = 0.6
+      }
+      damage_building = {
+        type = arms_factory
+        damage = 0.85
+      }
+      country_event = ohio.22
     }
+  }
+  option = { #Ignore the Problem
+    name = ohio.21.b
+    hidden_effect = {
+      set_country_flag = ignored_sabatage
+      country_event = ohio.22
+    }
+  }
 }

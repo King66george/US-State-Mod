@@ -127,6 +127,11 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_second_crusade
 		}
+		bypass = {
+			NOT = {
+				country_exists = WDC
+			}
+		}
 		mutually_exclusive = {
 			focus = OHO_offertofdr
 		}
@@ -134,6 +139,10 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			custom_effect_tooltip = denounceroosevelt
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
 			hidden_effect = {
 				add_opinion_modifier = {
 					target = WDC
@@ -177,7 +186,9 @@ focus_tree = {
 		x = 4
 		y = 3
 		bypass = {
-
+			NOT = {
+				country_exists = WDC
+			}
 		}
 		completion_reward = {
 			WDC = {
@@ -208,6 +219,10 @@ focus_tree = {
 			add_opinion_modifier = {
 				target = WDC
 				modifier = large_decrease
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
 			}
 			add_ideas = OHO_natsj
 		}
@@ -438,7 +453,7 @@ focus_tree = {
 		y = 4
 		will_lead_to_war_with = INI
 		available = {
-			
+
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -458,12 +473,17 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_firststrike
 		}
+		bypass = {
+			NOT = {
+				country_exists = INI
+			}
+		}
 		x = 10
 		y = 5
 		available = {
 			NOT = {
 				has_war = yes
-					country_exists = INI
+				country_exists = INI
 			}
 		}
 		completion_reward = {
@@ -672,6 +692,11 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_increasedemosup
 		}
+		bypass = {
+			NOT = {
+				country_exists = MIM
+			}
+		}
 		x = 16
 		y = 6
 		completion_reward = {
@@ -870,7 +895,7 @@ focus_tree = {
 		x = 24
 		y = 4
 		completion_reward = {
-			idea = OHO_permrev
+			add_ideas = OHO_permrev
 		}
 	}
 	focus = {

@@ -25,6 +25,9 @@ OHO_depression = {
     complete_effect = {
       remove_ideas = worse_depression
       add_ideas = OHO_depression_recovery
+      hidden_effect = {
+        set_country_flag = deprecov
+      }
     }
   }
   OHO_dep_recovery2 = {
@@ -32,7 +35,7 @@ OHO_depression = {
     icon = decision_generic_construction
 
     allowed = {
-
+      has_country_flag = deprecov
     }
 
     cancel_if_not_visible = yes
@@ -42,10 +45,7 @@ OHO_depression = {
     }
 
     available = {
-      has_decision = OHO_dep_recovery
-      or = {
-        has_idea = OHO_depression_recovery
-      }
+      has_idea = OHO_depression_recovery
     }
 
     cost = 100
@@ -60,6 +60,9 @@ OHO_depression = {
           level = 1
           instant_build = yes
         }
+      }
+      hidden_effect = {
+        set_country_flag = deprecov2
       }
     }
   }
@@ -78,7 +81,7 @@ OHO_depression = {
     }
 
     available = {
-      has_idea = OHO_depression_recovery
+      has_country_flag = deprecov2
     }
 
     cost = 100
@@ -86,6 +89,9 @@ OHO_depression = {
     fire_only_once = yes
 
     complete_effect = {
+      hidden_effect = {
+        set_country_flag = deprecov3
+      }
       882 = {
         add_extra_state_shared_building_slots = 1
         add_building_construction = {
@@ -112,7 +118,7 @@ OHO_depression = {
     }
 
     available = {
-      has_idea = OHO_depression_recovery
+      has_country_flag = deprecov3
     }
 
     cost = 100
@@ -120,6 +126,9 @@ OHO_depression = {
     fire_only_once = yes
 
     complete_effect = {
+      hidden_effect = {
+        set_country_flag = deprecov4
+      }
       997 = {
         add_extra_state_shared_building_slots = 1
         add_building_construction = {
@@ -135,11 +144,11 @@ OHO_depression = {
     icon = decision_eng_puppet_usa
 
     allowed = {
-
+      has_country_flag = deprecov4
     }
 
     visible = {
-      has_idea = OHO_depression_recovery
+      has_country_flag = deprecov4
     }
 
     available = {
