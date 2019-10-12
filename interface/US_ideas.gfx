@@ -232,12 +232,52 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CAC_tradepower.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_CAC_newlyformedairforce"
-		texturefile = "gfx/interface/ideas/CAC_newlyformedairforce.dds"
+		name = "GFX_idea_CAC_publicworksprogramidea"
+		texturefile = "gfx/interface/ideas/CAC_publicworksprogramidea.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_CAC_newnavy"
-		texturefile = "gfx/interface/ideas/CAC_newnavy.dds"
+		name = "GFX_idea_CAC_guaranteedpensionsidea"
+		texturefile = "gfx/interface/ideas/CAC_guaranteedpensionsidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_sweepingtaxreformsidea"
+		texturefile = "gfx/interface/ideas/CAC_sweepingtaxreformsidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_collectivizefarmlandidea"
+		texturefile = "gfx/interface/ideas/CAC_collectivizefarmlandidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_agreatsocietyidea"
+		texturefile = "gfx/interface/ideas/CAC_agreatsocietyidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_citizenshipbyserviceidea"
+		texturefile = "gfx/interface/ideas/CAC_citizenshipbyserviceidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_aworkersarmyidea"
+		texturefile = "gfx/interface/ideas/CAC_aworkersarmyidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_thecaliforniacommunistspyidea"
+		texturefile = "gfx/interface/ideas/CAC_thecaliforniacommunistspyidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_themilitapartisansidea"
+		texturefile = "gfx/interface/ideas/CAC_themilitapartisansidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_prepareexpansionidea"
+		texturefile = "gfx/interface/ideas/CAC_prepareexpansionidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_ideologyturmoilidea"
+		texturefile = "gfx/interface/ideas/CAC_ideologyturmoilidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eng_for_the_good_of_the_revolution"
+		texturefile = "gfx/interface/ideas/eng_for_the_good_of_the_revolution.dds"
 	}
 
 
