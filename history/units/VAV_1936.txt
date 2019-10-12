@@ -119,25 +119,14 @@ units = {
 				ship = { name = "USS Breckinridge" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VAV version_name = "Portland Class" } } }
 				ship = { name = "USS Barney" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VAV version_name = "Portland Class" } } }
 				ship = { name = "USS Blakley" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VAV version_name = "Portland Class" } } }
-				ship = { name = "USS Tombstone" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VAV  } } }
-				ship = { name = "USS Blakhart" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Adams" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Omega" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Punisher" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Noir" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Norfolk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Dailey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Jackson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Thomas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS James" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Virginia" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Johnson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Goblin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Hancock" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
-				ship = { name = "USS Washington" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = VAV } } }
 				ship = { name = "USS Franklin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VAV } } }
 				ship = { name = "USS Deane" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VAV } } }
-
+				ship = { name = "USS Borie" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = VAV version_name = "New Mexico Class" } } }
+				ship = { name = "USS Breckinridge" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VAV version_name = "Portland Class" } } }
+				ship = { name = "USS Barney" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VAV version_name = "Portland Class" } } }
+				ship = { name = "USS Blakley" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = VAV version_name = "Portland Class" } } }
+				ship = { name = "USS Franklin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VAV } } }
+				ship = { name = "USS Deane" definition = submarine equipment = { submarine_1 = { amount = 1 owner = VAV } } }
 				}
 			}
 

@@ -33,17 +33,18 @@ bookmarks = {
 			}
 		}
 
-		"VAV"= {
+	
+		"QBC"= {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				VAV_idea_brokenecon
-				FRA_disjointed_government
+				QBC_purgedcommidants
+				QBC_newcommidants
 			}
 			focuses = {
-				VAV_war
-				VAV_industrialpowerhouse
-				vavmonarchy_ethos
+				QBC_communist_watching
+				QBC_national_arsenal
+				QBC_baby_boom
 			}
 		}
 
@@ -96,6 +97,21 @@ bookmarks = {
 				NCN_FOCUS_17
 				ncking_and_country
 				NCN_FOCUS_11
+			}
+		}
+
+		"VAV"= {
+			minor = yes
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				VAV_idea_brokenecon
+				FRA_disjointed_government
+			}
+			focuses = {
+				VAV_war
+				VAV_industrialpowerhouse
+				vavmonarchy_ethos
 			}
 		}
 
