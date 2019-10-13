@@ -38,10 +38,10 @@ quality_focus = {
 	removal_cost = -1
 
 	modifier = {
-		army_attack_factor = 0.1
-		army_defence_factor = 0.1
+		army_attack_factor = 0.08
+		army_defence_factor = 0.05
 		experience_gain_air_factor = 0.1
-		experience_gain_navy_factor = 0.1
+		experience_gain_navy_factor = 0.05
 	}
 }
 
@@ -49,23 +49,23 @@ quality_focus = {
 
 committee_on_war = {
 
-allowed = {
-always = no
-}
-allowed_civil_war = {
-always = no
+		allowed = {
+			always = no
+		}
+		allowed_civil_war = {
+			always = no
 
-}
-removal_cost = -1
+		}
+		removal_cost = -1
 
-modifier = {
-army_defence_factor = 0.1
-amphibious_invasion = 0.5
-command_power_gain = 0.4
-experience_gain_army = 0.05
-planning_speed = 0.2
-army_leader_start_planning_level = 1
-}
+		modifier = {
+			army_defence_factor = 0.08
+			amphibious_invasion = 0.3
+			command_power_gain = 0.25
+			experience_gain_army = 0.025
+			planning_speed = 0.1
+			army_leader_start_planning_level = 2
+		}
 }
 
 ###prep1###
@@ -84,7 +84,7 @@ ny_prep = {
 
 	modifier = {
 		army_attack_factor = 0.05
-		army_defence_factor = 0.05
+		army_defence_factor = 0.025
 		experience_gain_army_factor = 0.1
 	}
 }
@@ -106,7 +106,7 @@ p_prep = {
 
 	modifier = {
 		army_attack_factor = 0.05
-		army_defence_factor = 0.05
+		army_defence_factor = 0.025
 		experience_gain_army_factor = 0.1
 	}
 }
@@ -126,7 +126,7 @@ always = no
 removal_cost = -1
 
 modifier = {
-consumer_goods_factor = -0.1
+consumer_goods_factor = -0.15
 production_factory_start_efficiency_factor = 0.2
 }
 }
@@ -145,7 +145,7 @@ always = no
 removal_cost = -1
 
 modifier = {
-consumer_goods_factor = -0.1
+consumer_goods_factor = -0.15
 production_speed_buildings_factor = 0.1
 }
 }
@@ -300,6 +300,8 @@ always = no
 removal_cost = -1
 
 modifier = {
+production_factory_max_efficiency_factor = 0.02
+consumer_goods_factor = -0.02
 }
 }
 
