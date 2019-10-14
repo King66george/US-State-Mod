@@ -10,7 +10,7 @@ ideologies = {
 			liberalism = {
 			}
 
-			socialism = {
+			centrist = {
 			}
 		}
 

@@ -109,11 +109,21 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "José Agripino Barnet"
+	name = "Aurelio Mario Gabriel Francisco García Menocal"
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
-	picture = "portrait_cub_jose_barnet.dds"
+	picture = "Portrait_CUB_AurelioMarioGabrielFranciscoGarcíaMenocal.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Miguel Mariano Gómez y Arias"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "Portrait_CUB_MiguelMarianoGómezyArias.dds"
+	expire = "1965.1.1"
+	ideology = conservatism 
 	traits = {
 		#
 	}
@@ -122,7 +132,7 @@ create_country_leader = {
 	name = "Eduardo Chibas"
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
 	picture = "Portrait_CUB_Eduardo_Chibas.dds"
-	expire = "1965.1.1"
+	expire = "1955.1.1"
 	ideology = Marxism
 	traits = {
 		#
@@ -139,15 +149,45 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
-	create_country_leader = {
+create_country_leader = {
 		name = "Federico Laredo Brú"
 		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+		picture = "Portrait_CUB_Federico_Laredo_Brú.dds"
 		expire = "1965.1.1"
-		ideology = socialism
+		ideology = liberalism
 		traits = {
 			#
 		}
-	}
+}
+create_country_leader = {
+		name = "Dr. Ramón Grau San Martín"
+		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
+		picture = "Portrait_CUB_Ramón_Grau_San_Martín.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology 
+		traits = {
+			#
+		}
+}
+create_country_leader = {
+		name = "The Pentarchy"
+		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
+		picture = "Portrait_CUB_ThePentarchy.dds"
+		expire = "1965.1.1"
+		ideology = oligarchism
+		traits = {
+			#
+		}
+}
+
+
+create_country_leader = {
+		name = "Fidel Alejandro Castro Ruz"
+		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
+		picture = "Portrait_CUB_FidelAlejandroCastroRuz.dds"
+		expire = "1965.1.1"
+		ideology = Marxism
+		traits = {
+			#
+		}
 }
