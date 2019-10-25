@@ -1745,7 +1745,7 @@ focus_tree = {
 	focus = {
 		id = CAC_endpovertyincaliforniaplans
 		icon = GFX_Generic_Communist_Propaganda
-		cost = 10
+		cost = 3
 		prerequisite = {
 			focus = CAC_uptonsinclairsplan
 		}
@@ -1763,7 +1763,7 @@ focus_tree = {
 	focus = {
 		id = CAC_publicworksprogram
 		icon = GFX_Generic_State_Socialism
-		cost = 10
+		cost = 7.25
 		prerequisite = {
 			focus = CAC_endpovertyincaliforniaplans
 		}
@@ -1778,7 +1778,7 @@ focus_tree = {
 	focus = {
 		id = CAC_sweepingtaxreforms
 		icon = GFX_Generic_Liberatian_Socialism
-		cost = 10
+		cost = 7.25
 		prerequisite = {
 			focus = CAC_endpovertyincaliforniaplans
 		}
@@ -1793,7 +1793,7 @@ focus_tree = {
 	focus = {
 		id = CAC_guaranteedpensions
 		icon = GFX_Focus_SOV_To_Get_Rich
-		cost = 10
+		cost = 7.25
 		prerequisite = {
 			focus = CAC_endpovertyincaliforniaplans
 		}
@@ -2056,7 +2056,7 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = {
-			focus = CAC_foreignaffairs
+			focus = CAC_agreatcalifornia
 		}
 
 		mutually_exclusive = {
@@ -2564,43 +2564,17 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
-		id = CAC_assassinatecommunists
-		icon = GFX_CAC_assassinatecommunists
+		id = CAC_noopposition
+		icon = GFX_Generic_Ripping_Papers
 		cost = 10.00
-
-		available = {
-			has_country_flag = CAC_sinclaircontestedelections
-		}
-
 		prerequisite = {
 			focus = CAC_statecontrolledmedia
 		}
 		x = 11
 		y = 4
 			completion_reward = {
-					custom_effect_tooltip = california_james_assassinate
-				}
-
-	}
-
-	focus = {
-		id = CAC_extendpresidentalpowers
-		icon = GFX_focus_generic_treaty
-		cost = 10.00
-
-		available = {
-				has_country_flag = CAC_assassinationsuccess
-		}
-
-		prerequisite = {
-			focus = CAC_assassinatecommunists
-		}
-		x = 11
-		y = 5
-			completion_reward = {
-
+					remove_ideas = CAC_unstablepolitics
 				}
 
 	}

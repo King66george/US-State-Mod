@@ -474,7 +474,7 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = generic_build_infrastructure
+    picture = idea_generic_industrial_concern_1
 
     removal_cost = -1
 
@@ -493,7 +493,7 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = eng_spirit_of_the_industrial_revolution
+    picture = idea_trotskyite_plot
 
     removal_cost = -1
 
@@ -513,7 +513,7 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = eng_for_the_good_of_the_revolution
+    picture = idea_generic_foreign_capital
 
     removal_cost = -1
 
@@ -533,7 +533,7 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = CAC_collectivizefarmlandidea
+    picture = idea_hol_haven_of_tolerance
 
     removal_cost = -1
 
@@ -601,7 +601,7 @@ CAC_ncrrevanchism = {
       partisan_effect = 0.1
       conscription = 0.01
       industrial_capacity_factory = 0.10
-      production_speed_arms_factory_factor = 0.1
+      production_speed_arms_factory_factor = 0.25
     }
   }
 
@@ -643,7 +643,7 @@ CAC_ncrrevanchism = {
     modifier = {
       decryption_factor = 0.05
       partisan_effect = 0.20
-      subversive_activites_upkeep = -0.50
+      subversive_activites_upkeep = -0.25
     }
   }
 
