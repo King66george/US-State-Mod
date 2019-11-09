@@ -2741,6 +2741,12 @@
  CAC_ideologyturmoilidea:0 "Regional Ideological Turmoil"
  CAC_allignthearmyidea:0 "Alligned The Army"
  CAC_internationalrecognitionidea:0 "International Recognition"
+ CAC_adailywellnesscheckidea:0 "A Daily Wellness Check"
+ CAC_policecorruption:0 "Police Corruption"
+ CAC_policecorruption_desc:0 "The Police of California are insanely corrupted with constant unjustified arrests of ethnic minorities, theft of citizens, and bribes are only some of the common things the Police do in California."
+ CAC_encouragedpolicecorruption:0 "Encouraged Police Corruption"
+ CAC_encouragedpolicecorruption_desc:0 "The Police of California are encouraged to do whatever they want with there power, with constant unjustified arrests of ethnic minorities, theft of citizens, and bribes are only some of the common things the Police do in California.""
+
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"
