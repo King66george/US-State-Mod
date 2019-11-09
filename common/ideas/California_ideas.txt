@@ -686,6 +686,46 @@ CAC_ncrrevanchism = {
     }
   }
 
+  CAC_allignthearmyidea = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture =
+
+    removal_cost = -1
+
+    modifier = {
+       fascism_drift = 0.05
+       drift_defence_factor = 0.15
+       surrender_limit = 0.25
+        war_support_weekly = 0.025
+    }
+  }
+
+  CAC_internationalrecognitionidea= {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    picture =
+
+    removal_cost = -1
+
+    modifier = {
+       political_power_gain = 0.25
+       trade_opinion_factor = 0.25
+    }
+  }
+
 }
   ##########Political Advisors###############
   	political_advisor = {

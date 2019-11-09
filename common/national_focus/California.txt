@@ -982,7 +982,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_statecontrolledmedia
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_Generic_Film_Industry
 		cost = 10.00
 		prerequisite = {
 			focus = CAC_JamesEDavis
@@ -2575,6 +2575,186 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					remove_ideas = CAC_unstablepolitics
+				}
+
+	}
+
+	focus = {
+		id = CAC_DavissMarch
+		icon = GFX_Generic_Revanchism02
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_noopposition
+		}
+		x = 13
+		y = 5
+			completion_reward = {
+				create_wargoal = {
+						type = annex_everything
+						target = NVN
+					}
+				}
+
+	}
+
+	focus = {
+		id = CAC_DavissMarch2
+		icon = GFX_Generic_Revanchism02
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_DavissMarch
+		}
+		x = 8
+		y = 6
+			completion_reward = {
+				create_wargoal = {
+						type = annex_everything
+						target = UTU
+					}
+				}
+	}
+
+	focus = {
+		id = CAC_DavissMarch3
+		icon = GFX_Generic_Revanchism02
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_DavissMarch
+		}
+		x = 10
+		y = 6
+			completion_reward = {
+				create_wargoal = {
+						type = annex_everything
+						target = WYW
+					}
+				}
+	}
+
+	focus = {
+		id = CAC_DavissMarch4
+		icon = GFX_Generic_Revanchism02
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_DavissMarch
+		}
+		x = 12
+		y = 6
+			completion_reward = {
+				create_wargoal = {
+						type = annex_everything
+						target = COC
+					}
+				}
+	}
+
+	focus = {
+		id = CAC_DavissMarch5
+		icon = GFX_Generic_Revanchism02
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_DavissMarch
+		}
+		x = 14
+		y = 6
+			completion_reward = {
+				create_wargoal = {
+						type = annex_everything
+						target = AZA
+					}
+				}
+	}
+
+	focus = {
+		id = CAC_DavissMarch6
+		icon = GFX_Generic_Revanchism02
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_DavissMarch4
+		}
+		prerequisite = {
+			focus = CAC_DavissMarch5
+		}
+		x = 13
+		y = 7
+			completion_reward = {
+				create_wargoal = {
+						type = annex_everything
+						target = NMN
+					}
+				}
+	}
+
+	focus = {
+		id = CAC_thetruesuccessortotheunitedstates
+		icon = GFX_Generic_Ultranationalist_Government
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_DavissMarch3
+		}
+		prerequisite = {
+			focus = CAC_DavissMarch2
+		}
+		prerequisite = {
+			focus = CAC_DavissMarch6
+		}
+		x = 11
+		y = 8
+			completion_reward = {
+				add_ideas = CAC_internationalrecognitionidea
+				}
+	}
+
+	focus = {
+		id = CAC_cooperationwithgermany
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 15.00
+		prerequisite = {
+			focus = CAC_thetruesuccessortotheunitedstates
+		}
+		mutually_exclusive = {
+			focus = CAC_cooperationwithjapan
+		}
+		x = 10
+		y = 9
+			completion_reward = {
+				GER = {
+						add_to_faction = CAC
+				}
+			}
+	}
+
+	focus = {
+		id = CAC_cooperationwithjapan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 15.00
+		prerequisite = {
+			focus = CAC_thetruesuccessortotheunitedstates
+		}
+		mutually_exclusive = {
+			focus = CAC_cooperationwithgermany
+		}
+		x = 12
+		y = 9
+			completion_reward = {
+					create_faction = CAC_japanalliancefaction
+					add_to_faction = JAP
+					}
+				}
+	}
+
+
+	focus = {
+		id = CAC_allignthearmy
+		icon = GFX_Generic_Coalition_Army
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_noopposition
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					add_ideas = CAC_allignthearmyidea
 				}
 
 	}
