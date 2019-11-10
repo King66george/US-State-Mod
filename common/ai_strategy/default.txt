@@ -45,7 +45,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = mountaineers
-		value = 25
+		value = 55
 	}
 
 	ai_strategy = {
@@ -57,13 +57,13 @@ default_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 25
+		value = 45
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 20
+		value = 10
 	}
 	
 	#Air unit factors
@@ -76,7 +76,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 180
+		value = 380
 	}
 	
 	ai_strategy = {
@@ -88,7 +88,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = strategic_bomber
-		value = 50
+		value = 500
 	}
 	
 	ai_strategy = {
@@ -364,12 +364,10 @@ default_garrison_production = {
 			original_tag = JAP
 			original_tag = ENG
 		}
-		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
-		is_major = yes
+		ai_wants_divisions >  12
 	}
 	abort = {
-		ai_wants_divisions < 13 #Massively decreasing the amount of garrison and suppression the AI wants
-		is_major = no
+		ai_wants_divisions < 25
 	}
 
 	ai_strategy = {
@@ -404,10 +402,10 @@ default_mountaineers_production = {
 default_marines_production = {
 	enable = {
 		NOT = { original_tag = GER }
-		ai_wants_divisions > 49
+		ai_wants_divisions > 9
 	}
 	abort = {
-		ai_wants_divisions < 50
+		ai_wants_divisions < 30
 	}
 
 	ai_strategy = {
@@ -426,11 +424,11 @@ default_marines_production = {
 default_mobile_production = {
 	enable = {
 		NOT = { original_tag = GER }
-		ai_wants_divisions > 11
+		ai_wants_divisions > 20
 		has_tech = motorised_infantry
 	}
 	abort = {
-		ai_wants_divisions < 20
+		ai_wants_divisions < 35
 	}
 
 	ai_strategy = {
