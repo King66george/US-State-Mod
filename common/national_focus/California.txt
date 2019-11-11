@@ -2652,6 +2652,16 @@ focus_tree = {
 		}
 		x = 13
 		y = 5
+		bypass = {
+				NVN = {
+						OR = {
+								exists = no
+								AND = {
+										is_in_faction_with = ROOT
+									}
+							}
+					}
+			}
 			completion_reward = {
 				create_wargoal = {
 						type = annex_everything
@@ -2670,6 +2680,16 @@ focus_tree = {
 		}
 		x = 8
 		y = 6
+		bypass = {
+				UTU = {
+						OR = {
+								exists = no
+								AND = {
+										is_in_faction_with = ROOT
+									}
+							}
+					}
+			}
 			completion_reward = {
 				create_wargoal = {
 						type = annex_everything
@@ -2687,6 +2707,16 @@ focus_tree = {
 		}
 		x = 10
 		y = 6
+		bypass = {
+				WYW = {
+						OR = {
+								exists = no
+								AND = {
+										is_in_faction_with = ROOT
+									}
+							}
+					}
+			}
 			completion_reward = {
 				create_wargoal = {
 						type = annex_everything
@@ -2704,6 +2734,16 @@ focus_tree = {
 		}
 		x = 12
 		y = 6
+		bypass = {
+				COC = {
+						OR = {
+								exists = no
+								AND = {
+										is_in_faction_with = ROOT
+									}
+							}
+					}
+			}
 			completion_reward = {
 				create_wargoal = {
 						type = annex_everything
@@ -2719,6 +2759,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CAC_DavissMarch
 		}
+		bypass = {
+				AZA = {
+						OR = {
+								exists = no
+								AND = {
+										is_in_faction_with = ROOT
+									}
+							}
+					}
+			}
 		x = 14
 		y = 6
 			completion_reward = {
@@ -2739,6 +2789,16 @@ focus_tree = {
 		prerequisite = {
 			focus = CAC_DavissMarch5
 		}
+		bypass = {
+				NMN = {
+						OR = {
+								exists = no
+								AND = {
+										is_in_faction_with = ROOT
+									}
+							}
+					}
+			}
 		x = 13
 		y = 7
 			completion_reward = {

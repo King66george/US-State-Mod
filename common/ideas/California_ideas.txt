@@ -332,10 +332,11 @@ CAC_specialforcesenviromentaltraining = {
   removal_cost = -1
 
   modifier = {
-    heat_attrition_factor = -0.20
+    heat_attrition_factor = -0.15
     acclimatization_hot_climate_gain_factor = 0.1
-    winter_attrition_factor = -0.20
+    winter_attrition_factor = -0.15
     acclimatization_cold_climate_gain_factor = 0.1
+    terrain_penalty_reduction = 0.20
     special_forces_attack_factor = 0.05
     special_forces_defence_factor = 0.05
     special_forces_cap = 0.05
@@ -679,6 +680,7 @@ CAC_ncrrevanchism = {
     modifier = {
        resistance_tick_auto = -2
        enemy_partisan_effect = -0.05
+       decryption_factor = 0.03
     }
   }
 
