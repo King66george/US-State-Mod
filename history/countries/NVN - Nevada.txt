@@ -124,25 +124,26 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.6
 
 set_politics = {
 
 	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
+	last_election = "1934.11.8"
+	election_frequency = 47
 	elections_allowed = yes
 }
 add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 73
+	communism = 5
+	fascism = 7
+	neutrality = 15
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.7
 
 	set_politics = {
 
@@ -153,12 +154,13 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 73
+	communism = 5
+	fascism = 7
+	neutrality = 15
 }
 create_country_leader = {
-	name = "Edward P. Carville"
+	name = "James G. Scrugham"
 	desc = "POLITICS_EDWARD_P_CARVILLE_DESC"
 	picture = "Portrait_NVN_Edward_P_Carville.dds"
 	expire = "1965.1.1"
@@ -169,9 +171,19 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Oscar Griswold"
 	picture = "Portrait_USA_Oscar_Griswold.dds"
-	traits = { infantry_officer  }
+	traits = { infantry_officer desert_fox }
 	skill = 2
-	attack_skill = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Robert House"
+	picture = ""
+	traits = { media_personality trickster }
+	skill = 1
+	attack_skill = 3
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 2

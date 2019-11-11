@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.62
 
 set_politics = {
 
@@ -137,12 +137,12 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 81
+	communism = 5
+	fascism = 14
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.62
 
 	set_politics = {
 
@@ -153,9 +153,9 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 81
+	communism = 5
+	fascism = 14
 }
 create_country_leader = {
 	name = "Henry H. Blood"

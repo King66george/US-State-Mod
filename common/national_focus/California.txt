@@ -2746,7 +2746,7 @@ focus_tree = {
 	focus = {
 		id = CAC_thetruesuccessortotheunitedstates
 		icon = GFX_Generic_Ultranationalist_Government
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = CAC_DavissMarch3
 		}

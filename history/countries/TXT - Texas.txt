@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.75
 
 set_politics = {
 
@@ -137,12 +137,12 @@ add_ideas = {
 
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 76
+	communism = 7
+	fascism = 17
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.75
 
 	set_politics = {
 
@@ -153,9 +153,9 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 76
+	communism = 7
+	fascism = 17
 }
 create_country_leader = {
 	name = "James Allred"

@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.81
 
 set_politics = {
 
@@ -137,9 +137,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 85
+	communism = 10
+	fascism = 5
 }
 create_country_leader = {
 	name = "Clarence D. Martin"
@@ -171,9 +171,9 @@ create_country_leader = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 85
+	communism = 10
+	fascism = 5
 }
 
 create_corps_commander = {

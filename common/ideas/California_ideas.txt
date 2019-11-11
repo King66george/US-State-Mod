@@ -774,6 +774,7 @@ CAC_ncrrevanchism = {
     modifier = {
        political_power_gain = 0.25
        trade_opinion_factor = 0.25
+       justify_war_goal_time = -0.50
     }
   }
 

@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.42
 
 set_politics = {
 
@@ -137,9 +137,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 80
+	communism = 10
+	fascism = 10
 }
 create_country_leader = {
 	name = "Nels H. Smith"
@@ -151,7 +151,7 @@ create_country_leader = {
 	}
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.42
 
 	set_politics = {
 
@@ -162,22 +162,11 @@ create_country_leader = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 80
+	communism = 10
+	fascism = 10
 }
 
-create_corps_commander = {
-	name = "Lloyd Fredendall"
-	picture = "Portrait_USA_Lloyd_Fredendall.dds"
-	traits = { old_guard infantry_officer inflexible_strategist }
-	skill = 2
-
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
 ### Ship Variants ###
 
 create_equipment_variant = {
