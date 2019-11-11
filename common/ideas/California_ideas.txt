@@ -378,8 +378,8 @@ CAC_ncrrevanchism = {
 
   modifier = {
     war_support_weekly = 0.025
-    mobilization_speed = 0.25
-    weekly_manpower = 500
+    mobilization_speed = 0.10
+    weekly_manpower = 250
     conscription = 0.025
     training_time_factor = -0.025
   }
