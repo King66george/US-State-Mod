@@ -2786,6 +2786,33 @@ FLF_canal:0 "Seize the Panama Canal"
 FLF_canal_desc:0 "The Panama Canal is objectively our most important objective. Controlling trade between the East and West coast would be immensely beneficial for us, economically and strategically."
 FLF_carribeandominance:0 "Realize Carribean Dominance"
 FLF_carribeandominance_desc:0 "We have toiled, and spilled blood in the name of prosperity. The sacrifices of our military will not be forgotten, for now our people reign supreme as the controllers of the Carribean!"
+#
+#ExpansionMarker - FLORIDA
+#
+flarmor_effort:0 "Armored Calvary"
+flarmor_effort_desc:0 "Armored Calvary time"
+flmotorization_effort:0 "Double Time"
+flmotorization_effort_desc:0 "Gotta Move that Gear up!"
+flmonarchy_ethos:0 "Return To Royalty"
+flmonarchy_ethos_desc:0 "Back to the way we go"
+flempower_king:0 "Peaceful Process"
+flempower_king_desc:0 "LOL XD Peaceful much?"
+flking_and_country:0 "The People's Support"
+flking_and_country_desc:0 "WE UNITE UNDER THE PEOPLE"
+flgod_given_ruler:0 "Divine Bloodline"
+flgod_given_ruler_desc:0 "We Must unite our people under our bloodline!"
+flgod_father:0 "God King"
+flgod_father_desc:0 "God King"
+flaristocrat_generals:0 "Generals of the Family"
+flaristocrat_generals_desc:0 "Generals of the Family"
+flequipment_effort:0 "Weapons Cache"
+flequipment_effort_desc:0 "Get us some weapons"
+flequipment_effort_2:0 "King of Battle"
+flfequipment_effort_3:0 "Follow Me!"
+flbike_effort:0 "New World Calvary"
+#
+#2nd Expansion Marker - FLORIDA
+#
 flalu_add:0 "Chromium Mines"
 fltung_add:0 "Tungsten Mines"
  PAP_industry_1:0 "Stop the Bootlegging"
