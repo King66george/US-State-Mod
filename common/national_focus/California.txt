@@ -494,7 +494,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_arizonawargoal
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_CAC_skewer_pheonix
 		cost = 7.25
 		prerequisite = {
 			focus = CAC_bajaexpedition
