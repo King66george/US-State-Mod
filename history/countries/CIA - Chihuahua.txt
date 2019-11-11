@@ -2,7 +2,7 @@
 
 oob = "CIA_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
@@ -87,7 +87,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.58
 
 set_politics = {
 
@@ -105,7 +105,7 @@ set_popularities = {
 	fascism = 1
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.58
 
 	set_politics = {
 

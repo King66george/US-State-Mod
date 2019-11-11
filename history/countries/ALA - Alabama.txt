@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.57
 
 set_politics = {
 
@@ -137,9 +137,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 78
+	communism = 11
+	fascism = 11
 }
 create_country_leader = {
 	name = "Bibb Graves"
@@ -160,7 +160,7 @@ create_country_leader = {
 	}
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.2
 
 	set_politics = {
 
@@ -172,9 +172,9 @@ create_country_leader = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 78
+	communism = 11
+	fascism = 11
 }
 ### Ship Variants ###
 

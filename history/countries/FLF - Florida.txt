@@ -132,7 +132,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.67
 
 set_politics = {
 
@@ -146,9 +146,9 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 87
+	communism = 3
+	fascism = 9
 }
 create_country_leader = {
 	name = "David Sholtz"
@@ -195,7 +195,7 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.67
 
 	set_politics = {
 

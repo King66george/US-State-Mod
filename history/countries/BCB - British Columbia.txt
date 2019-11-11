@@ -105,15 +105,15 @@ add_ideas = {
 		home_of_the_free
 	}
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 86
+	communism = 11
+	fascism = 3
 }
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.63
 
 1939.1.1 = {
-set_stability = 0.9
+set_stability = 0.63
 	set_politics = {
 
 		ruling_party = democratic
@@ -123,9 +123,9 @@ set_stability = 0.9
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 86
+	communism = 11
+	fascism = 3
 }
 create_country_leader = {
 	name = "Eric Hamber"

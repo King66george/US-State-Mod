@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.41
 
 set_politics = {
 
@@ -138,9 +138,10 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 61
+	communism = 3
+	fascism = 6
+	neutrality = 30
 }
 create_country_leader = {
 	name = "Joseph Poindexter"
@@ -152,7 +153,7 @@ create_country_leader = {
 	}
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.41
 
 	set_politics = {
 
@@ -164,9 +165,10 @@ create_country_leader = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 61
+	communism = 3
+	fascism = 6
+	neutrality = 30
 }
 ### Ship Variants ###
 

@@ -2,7 +2,7 @@
 
 oob = "CHP_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
@@ -87,7 +87,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.43
 
 set_politics = {
 
@@ -100,12 +100,12 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 56
+	communism = 23
+	fascism = 21
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.43
 
 	set_politics = {
 
@@ -116,9 +116,9 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 56
+	communism = 23
+	fascism = 21
 }
 create_country_leader = {
 	name = "Efraín A. Gutiérrez"

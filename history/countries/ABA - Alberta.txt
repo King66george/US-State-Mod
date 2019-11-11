@@ -2,7 +2,7 @@
 
 oob = "ABA_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 set_country_flag = monroe_doctrine
 
 # Starting tech
@@ -112,10 +112,10 @@ add_ideas = {
 		home_of_the_free
 	}
 
-set_stability = 0.9
+set_stability = 0.4
 
 1939.1.1 = {
-set_stability = 0.9
+set_stability = 0.6
 	set_politics = {
 
 
