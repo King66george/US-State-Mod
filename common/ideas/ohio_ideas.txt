@@ -449,6 +449,51 @@ ideas = {
         subversive_activites_upkeep = -0.50
       }
     }
+    OHO_corrupt_advisors = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_factor = -0.10
+      }
+    }
+    OHO_unwilling_generals = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_factor = -0.10
+      }
+    }
+    OHO_repairing_sabotage = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = 0.05
+      }
+    }
   }
   ####Advisors###
   political_advisor = {

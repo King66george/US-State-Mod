@@ -85,10 +85,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-            	          ideology = fascism
-                          popularity = 0.15
-        	        }
-                        set_ruling_party = fascism
+        ideology = fascism
+        popularity = 0.15
+      }
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 	}
 	focus = {

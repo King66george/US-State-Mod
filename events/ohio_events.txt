@@ -447,7 +447,7 @@ country_event = {
 
   option = { #Root Out Corrupt Advisors
     name = ohio.19.a
-    add_ideas = corrupt_advisors
+    add_ideas = OHO_corrupt_advisors
   }
 
   option = { #Ignore Corruption (leads to civil war)
@@ -478,7 +478,7 @@ country_event = { #Defecting Generals
 
   option = {
     name = ohio.20.a
-    add_ideas = unwilling_generals
+    add_ideas = OHO_unwilling_generals
     add_popularity = {
       ideology = fascism
       popularity = 0.10
@@ -515,17 +515,21 @@ country_event = { #Industrial Sabotage
   option = { #Deal with the issue
     name = ohio.21.a
     add_timed_idea = {
-      idea = repairing_sabotage
+      idea = OHO_repairing_sabotage
       days = 62
     }
     hidden_effect = {
-      damage_building = {
-        type = industrial_complex
-        damage = 0.6
+      random_owned_controlled_state = {
+        damage_building = {
+          type = industrial_complex
+          damage = 0.6
+        }
       }
-      damage_building = {
-        type = arms_factory
-        damage = 0.85
+      random_owned_controlled_state = {
+        damage_building = {
+          type = arms_factory
+          damage = 0.85
+        }
       }
       country_event = ohio.22
     }
