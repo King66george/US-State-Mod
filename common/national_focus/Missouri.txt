@@ -1,0 +1,134 @@
+focus_tree = {
+	id = missouri_tree
+	continuous_focus_position = { x = 20 y = 2500 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MOM
+		}
+	}
+  default = no
+
+  focus = {
+    id = MOM_thefuture
+    icon = GFX_goal_generic_neutrality_focus
+    cost = 3
+    x = 20
+    y = 0
+
+    completion_reward = {
+      add_political_power = 50
+    }
+  }
+
+  focus = {
+    id = MOM_gerbund
+    icon = GFX_goal_support_fascism
+		prerequisite = {
+			focus = MOM_thefuture
+		}
+    cost = 10
+    x = 30
+    y = 1
+
+    completion_reward = {
+      add_timed_idea = {
+				idea = missourian_bund
+				days = 600
+			}
+    }
+  }
+	focus = {
+		id = MOM_GMB_secures_hold
+		icon = GFX_goal_support_fascism
+		prerequisite = {
+			focus = MOM_gerbund
+		}
+		cost = 10
+		x = 30
+		y = 2
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = MOM_march_on_jefferson
+		icon = GFX_goal_support_fascism
+		prerequisite = {
+			focus = MOM_GMB_secures_hold
+		}
+		mutually_exclusive = {
+			focus = MOM_bide_our_time
+		}
+		cost = 10
+		x = 28
+		y = 3
+
+		completion_reward = {
+			add_ideas = march_on_jefferson
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = MOM_bide_our_time
+		icon = GFX_goal_support_fascism
+		prerequisite = {
+			focus = MOM_GMB_secures_hold
+		}
+		mutually_exclusive = {
+			focus = MOM_march_on_jefferson
+		}
+		cost = 5
+		x = 32
+		y = 3
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+	}
+	focus = {
+		id = MOM_increase_instability
+		icon = GFX_goal_support_fascism
+		prerequisite = {
+			focus = MOM_bide_our_time
+		}
+		cost = 10
+		x = 31
+		y = 4
+
+		completion_reward = {
+			add_stability = -0.15
+			add_party_popularity = {
+				ideology = fascism
+				popularity = 0.5
+			}
+		}
+	}
+	focus = {
+		id = MOM_fascist_pamphlets
+		icon = GFX_goal_support_fascism
+		prerequisite = {
+			focus = MOM_bide_our_time
+		}
+		cost = 10
+		x = 33
+		y = 4
+
+		completion_reward = {
+			add_party_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+}

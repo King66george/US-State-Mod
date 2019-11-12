@@ -1,0 +1,34 @@
+ideas = {
+  country = {
+    missourian_bund = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.03
+      }
+    }
+    march_on_jefferson = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        stability_factor = -0.10
+      }
+    }
+  }
+}

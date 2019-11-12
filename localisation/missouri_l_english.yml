@@ -1,4 +1,40 @@
 ﻿l_english:
+#Focuses Focuses Focuses Focuses Focuses Focuses Focuses Focuses
+ MOM_thefuture:0 "The Future of Missouri"
+ MOM_thefuture_desc:0 "Missourians see before them a new opportunity to set forth their destiny. The people in the state call for measures seen like in Germany, Socialist Radicals call for revolution in St.Louis and Kansas City, and yet more call for liberalization and a continuation on the path we have been on."
+ MOM_gerbund:0 "Rise of the German Missourian Bund"
+ MOM_gerbund_desc:0 "The German Missourian Bund is a popular enough organization which holds its support primarily from the Germanic communities in the country. The party primarily focuses on german cooperation and support. Without the support of the Germans, their grip on the country is much weaker."
+ MOM_GMB_secures_hold:0 "The German Missourian Bund Secures Their Hold"
+ MOM_GMB_secures_hold_desc:0 "Due to small numbers and unpopularity of socialists, and Tom Pendergast taking needed resources away for him and his cronies, the Bund is the only major organization providing relief for those that need it. With the relief they're providing, the people are slowly turning to them for guidance on what to do in these trying times."
+ MOM_march_on_jefferson:0 "March on Jefferson"
+ MOM_march_on_jefferson_desc:0 "With the growing power of the Missourian Bund and the weakened power of the government, we've decided that it would be best to take direct action in removing the current government. The instability will make the government slow to react and weaker. If we do this correctly, the government will be ours soon to rule. It's only a matter of time."
+ MOM_bide_our_time:0 "Bide our Time"
+ MOM_bide_our_time_desc:0 "Although the government is unstable, that does not mean we should have a violent takeover. Even with our nationalist socialist ideals, we cannot betray the people's trust by forcing a potentially dangerous march on Jefferson. The people trust us to bring Missouri out of it's instability and weakness and bring them to the forefront of the Americas."
+ MOM_increase_instability:0 "Increase Instability"
+ MOM_increase_instability_desc:0 "To make a peaceful takeover of government, the government needs to be weakened. We must try our best to create instability subversively. If the public lacks information, this will be all the easier. We must take precaution in making sure that this stays away from the press and the public eye."
+ MOM_fascist_pamphlets:0 "Distribute Fascist Pamphlets"
+ MOM_fascist_pamphlets_desc:0 "To convince the public towards fascism, we can go on a recruitment campaign. The pamphlets are supposed "
+
+
+
+
+
+
+
+
+
+
+
+
+####Ideas
+missourian_bund:0 "The Missourian Bund"
+march_on_jefferson:0 "The March on Jefferson"
+
+
+
+
+
+#Events Events Events Events Events Events Events Events Events Events
 missouri.1.t:0 "Missourian Victory!"
 missouri.1.d:0 "Earlier today, border conflicts along the Kansas-Missouri border culminated in an all out skirmish between the two states. After intense fighting in Kansas City, the Missouri national guard was victorious! Jubilant soldiers gathered in front of the Power and Light building to organize a small parade, much to the dismay of Kansan spectators."
 missouri.1.a:0 "That'll teach those Jayhawkers to mess with Missouri!"
