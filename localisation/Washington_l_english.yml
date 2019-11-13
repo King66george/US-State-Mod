@@ -47,6 +47,13 @@
  WAW_follow_martin_desc:0 "WIP"
  WAW_washington_california_joint_military_training:0 "Washington California Joint Military Training"
  WAW_washington_california_joint_military_training_desc:0 "WIP"
+ WAW_industry_reforms:0 "Industry Reforms"
+ WAW_industry_reforms_desc:0 "The Great Depression has hit us hard, but we have to start making advances to recover."
+ WAW_connect_the_people:0 "Connect The People"
+ WAW_connect_the_people_desc:0 "Diverting resources to roads can benefit our popularity."
+ WAW_power_the_factories:0 "Power The Factories"
+ WAW_power_the_factories_desc:0 "We can't power our nation off of our resources, but we can take advantage of our rivers."
+ WAW_expand_trade:0 "Expand Trade"
 
 #Ideas
  WAW_resist_the_bear_idea:0 "Resist The Bear"

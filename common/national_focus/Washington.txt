@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 30
+    add = 10
     tag = WAW
     }
   }
@@ -398,10 +398,10 @@ focus = {
 }
 
 focus = {
-  id = WAW_build_up_our_industry
-  icon = GFX_Generic_Factory_Complex
-  cost = 5
-  x = -10
+  id = WAW_industry_reforms
+  icon = GFX_Generic_Factory_Planning
+  cost = 7.2
+  x = -11
   y = 0
 
   cancel_if_invalid = yes
@@ -414,11 +414,45 @@ focus = {
 }
 
 focus = {
-  id = WAW_unknown2
-  icon = GFX_FLF_focus_Focus_On_The_Unions
-  prerequisite = { focus = WAW_build_up_our_industry }
-  cost = 5
+  id = WAW_connect_the_people
+  icon = GFX_goal_generic_construct_infrastructure
+  prerequisite = { focus = WAW_industry_reforms }
+  cost = 10
   x = -13
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_expand_trade
+  icon = GFX_Generic_Maritime
+  prerequisite = { focus = WAW_industry_reforms }
+  cost = 10
+  x = -7
+  y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_power_the_factories
+  icon = GFX_Generic_Public_Works
+  prerequisite = { focus = WAW_industry_reforms }
+  cost = 10
+  x = -10
   y = 1
 
   cancel_if_invalid = yes
@@ -446,23 +480,6 @@ focus = {
   completion_reward = {
     add_ideas = WAW_idea_female_pilots
     set_rule = { can_generate_female_aces = yes }
-  }
-}
-
-focus = {
-  id = WAW_construction_effort
-  icon = GFX_Generic_Construction
-  prerequisite = { focus = WAW_build_up_our_industry }
-  cost = 10
-  x = -10
-  y = 1
-
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-
-  completion_reward = {
-
   }
 }
 
@@ -551,23 +568,6 @@ focus = {
   available = {
     date > 1944.01.01
   }
-
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-
-  completion_reward = {
-
-  }
-}
-
-focus = {
-  id = WAW_military_industrialization
-  icon = GFX_FLF_focus_Focus_On_The_Military
-  prerequisite = { focus = WAW_build_up_our_industry }
-  cost = 10
-  x = -6
-  y = 1
 
   cancel_if_invalid = yes
   continue_if_invalid = no
@@ -693,4 +693,20 @@ focus = {
   }
 }
 
+focus = {
+  id = WAW_w
+  icon = GFX_Generic_Machine_Gun02
+  prerequisite = { focus = WAW_follow_martin }
+  cost = 5
+  x = 5
+  y = 2
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
 }
