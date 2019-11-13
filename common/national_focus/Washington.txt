@@ -409,7 +409,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    add_ideas = early_mobilization_law
   }
 }
 
@@ -433,9 +433,26 @@ focus = {
 focus = {
   id = WAW_expand_trade
   icon = GFX_Generic_Maritime
+  prerequisite = { focus = WAW_trade_reforms }
+  cost = 10
+  x = -8
+  y = 2
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_trade_reforms
+  icon = GFX_Generic_Protectionist_Economics
   prerequisite = { focus = WAW_industry_reforms }
   cost = 10
-  x = -7
+  x = -8
   y = 1
 
   cancel_if_invalid = yes
@@ -452,8 +469,51 @@ focus = {
   icon = GFX_Generic_Public_Works
   prerequisite = { focus = WAW_industry_reforms }
   cost = 10
-  x = -10
+  x = -11
   y = 1
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_military_production_effort
+  icon = GFX_Generic_Industry_Tanks
+  prerequisite = { focus = WAW_consumer_factories_effort }
+  cost = 10
+  x = -13
+  y = 3
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_construction_effort
+  icon = GFX_Generic_Construction
+  prerequisite = { focus = WAW_consumer_factories_effort focus = WAW_expand_trade}
+  cost = 10
+  x = -10
+  y = 3
+}
+
+focus = {
+  id = WAW_consumer_factories_effort
+  icon = GFX_Generic_Industry
+  prerequisite = { focus = WAW_power_the_factories focus = WAW_connect_the_people }
+  cost = 10
+  x = -12
+  y = 2
 
   cancel_if_invalid = yes
   continue_if_invalid = no

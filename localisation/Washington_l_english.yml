@@ -53,8 +53,16 @@
  WAW_connect_the_people_desc:0 "Diverting resources to roads can benefit our popularity."
  WAW_power_the_factories:0 "Power The Factories"
  WAW_power_the_factories_desc:0 "We can't power our nation off of our resources, but we can take advantage of our rivers."
- WAW_expand_trade:0 "Expand Trade"
-
+ WAW_expand_trade:0 "Export Focus"
+ WAW_expand_trade_desc:0 ""
+ WAW_trade_reforms:0 "Trade Reforms"
+ WAW_trade_reforms_desc:0 "We hold a major trade node and need to take advantage of it."
+ WAW_consumer_factories_effort:0 "Consumer Factories Effort"
+ WAW_consumer_factories_effort_desc:0 "WIP"
+ WAW_military_production_effort:0 "Expand Military Production"
+ WAW_military_production_effort_desc:0 "WIP"
+ WAW_construction_effort:0 "Construction Effort"
+ WAW_construction_effort_desc:0 "WIP"
 #Ideas
  WAW_resist_the_bear_idea:0 "Resist The Bear"
  WAW_resist_the_bear_idea:0 "We Must Resist The Bear"
