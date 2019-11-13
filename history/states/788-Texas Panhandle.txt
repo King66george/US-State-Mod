@@ -1,14 +1,11 @@
+
 state={
 	id=788
 	name="Texas Panhandle"
-
-		state_category = rural
-
 	resources={
-		oil=15 # was: 580
-		aluminium=50 # was: 96
+		oil=15.000
+		aluminium=50.000
 	}
-
 
 	history={
 		owner = TXT
@@ -16,15 +13,19 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
+
 		}
 		add_core_of = TXT
 		victory_points = {
 			3972 8 
 		}
+
 	}
+
 	provinces={
-		1915 2055 3875 3972 9773 9908 12301 12848 12893
+		1998 2055 3875 3972 9773 9908 12301 12848 12893 
 	}
 	manpower=824712
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

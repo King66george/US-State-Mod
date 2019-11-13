@@ -2168,7 +2168,10 @@ spriteTypes = {
 		name = "GFX_news_event_austin"
 		texturefile = "gfx/event_pictures/news_event_austin.dds"
 	}
-
+	spritetype = {
+		name = "GFX_news_event_capitol_stormed"
+		texturefile = "gfx/event_pictures/TXT_capitol_stormed.dds"
+	}
 	spritetype = {
 		name = "GFX_WAW_local_militias"
 		texturefile = "gfx/event_pictures/WAW_local_militias.dds"

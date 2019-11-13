@@ -997,3 +997,7 @@
  STATE_996:2 "Northwest Missouri"
  STATE_997:1 "Greater Atlantic City"
  STATE_998:2 "Southeast Michigan"
+ STATE_999:0 "Dallas-Fort Worth"
+ STATE_1000:0 "Houston"
+ STATE_1001:0 "East Texas"
+ STATE_1002:0 "Austin"

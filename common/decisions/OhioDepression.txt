@@ -28,6 +28,10 @@ OHO_depression = {
       remove_ideas = worse_depression
       add_ideas = OHO_depression_recovery
     }
+
+    ai_will_do = {
+      factor = 100
+    }
   }
   OHO_dep_recovery2 = {
 
@@ -64,6 +68,10 @@ OHO_depression = {
           instant_build = yes
         }
       }
+    }
+
+    ai_will_do = {
+      factor = 100
     }
   }
   OHO_dep_recovery3 = {
@@ -102,6 +110,9 @@ OHO_depression = {
         }
       }
     }
+    ai_will_do = {
+      factor = 100
+    }
   }
   OHO_dep_recovery4 = {
 
@@ -138,6 +149,9 @@ OHO_depression = {
         }
       }
     }
+    ai_will_do = {
+      factor = 100
+    }
   }
   OHO_dep_recovery5 = {
 
@@ -163,6 +177,9 @@ OHO_depression = {
     complete_effect = {
       remove_ideas = OHO_depression_recovery
       add_ideas = OHO_strong_economy
+    }
+    ai_will_do = {
+      factor = 100
     }
   }
 }

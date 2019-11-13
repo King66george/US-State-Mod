@@ -1,0 +1,28 @@
+state={
+	id=999
+	name="STATE_999"
+	history={
+		owner = TXT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 3
+			arms_factory = 2
+
+		}
+		add_core_of = TXT
+		victory_points = {
+			10778 25 
+		}
+		victory_points = {
+			3960 15 
+		}
+
+	}
+	provinces={
+		3960 10778 13226 13229 13231 13232 
+	}
+	state_category = megalopolis
+	manpower=3457890
+	buildings_max_level_factor=1.000
+}

@@ -14,25 +14,20 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 3
-			13218 = {
-				naval_base = 3
-
-			}
 			12410 = {
 				naval_base = 1
-
 			}
 
 		}
 		add_core_of = TXT
 		victory_points = {
-			10337 25
+			10337 25 
 		}
 
 	}
 
 	provinces={
-		1500 2042 4884 10337 12410 13218 13219 13220 13221 13222
+		2042 4884 12410 
 	}
 	manpower=1124712
 	buildings_max_level_factor=1.000

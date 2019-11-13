@@ -1,14 +1,11 @@
+
 state={
 	id=789
 	name="Big Bend"
-
-			state_category = rural
-
 	resources={
-		oil=97 # was: 580
-		aluminium=19 # was: 96
+		oil=97.000
+		aluminium=19.000
 	}
-
 
 	history={
 		owner = TXT
@@ -16,6 +13,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
+
 		}
 		add_core_of = TXT
 		victory_points = {
@@ -23,9 +21,11 @@ state={
 		}
 
 	}
+
 	provinces={
-		1954 1998 4955 5038 8064 10740 10894
+		1954 4955 5038 10740 10894 
 	}
 	manpower=524712
 	buildings_max_level_factor=1.000
+	state_category=rural
 }
