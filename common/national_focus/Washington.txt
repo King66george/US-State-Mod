@@ -482,7 +482,7 @@ focus = {
 }
 
 focus = {
-  id = WAW_military_production_effort
+  id = WAW_arms_factories_in_olympia
   icon = GFX_Generic_Industry_Tanks
   prerequisite = { focus = WAW_consumer_factories_effort }
   cost = 10
@@ -505,14 +505,40 @@ focus = {
   cost = 10
   x = -10
   y = 3
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
 }
 
 focus = {
   id = WAW_consumer_factories_effort
   icon = GFX_Generic_Industry
-  prerequisite = { focus = WAW_power_the_factories focus = WAW_connect_the_people }
+  prerequisite = { focus = WAW_power_the_factories }
+  prerequisite = { focus = WAW_connect_the_people }
   cost = 10
   x = -12
+  y = 2
+
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+
+  completion_reward = {
+
+  }
+}
+
+focus = {
+  id = WAW_military_production_effort
+  icon = GFX_Generic_Industry
+  prerequisite = { focus = WAW_power_the_factories }
+  cost = 10
+  x = -10
   y = 2
 
   cancel_if_invalid = yes

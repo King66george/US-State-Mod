@@ -54,7 +54,7 @@
  WAW_power_the_factories:0 "Power The Factories"
  WAW_power_the_factories_desc:0 "We can't power our nation off of our resources, but we can take advantage of our rivers."
  WAW_expand_trade:0 "Export Focus"
- WAW_expand_trade_desc:0 ""
+ WAW_expand_trade_desc:0 "WIP"
  WAW_trade_reforms:0 "Trade Reforms"
  WAW_trade_reforms_desc:0 "We hold a major trade node and need to take advantage of it."
  WAW_consumer_factories_effort:0 "Consumer Factories Effort"
@@ -63,6 +63,9 @@
  WAW_military_production_effort_desc:0 "WIP"
  WAW_construction_effort:0 "Construction Effort"
  WAW_construction_effort_desc:0 "WIP"
+ WAW_arms_factories_in_olympia:0 "Arms Factories In Olympia"
+ WAW_arms_factories_in_olympia_desc:0 "WIP"
+
 #Ideas
  WAW_resist_the_bear_idea:0 "Resist The Bear"
  WAW_resist_the_bear_idea:0 "We Must Resist The Bear"
@@ -95,13 +98,13 @@
   washington.4.a:0 "Grant them entry, and this will bring us closer to our goals."
   washington.4.b:0 "Deny them entry, they will only slow us down."
  #Washingtin Granted Entry To Pacific Defense Federation
-   washington.5.t:0 "Granted Entry To Pacific Defense Federation"
-   washington.5.d:0 ""
-   washington.5.a:0 ""
+  washington.5.t:0 "Granted Entry To Pacific Defense Federation"
+  washington.5.d:0 ""
+  washington.5.a:0 ""
  #Washington Denied Entry To Pacific Defense Federation
-   washington.6.t:0 "Denied Entry To Pacific Defense Federation"
-   washington.6.d:0 ""
-   washington.6.a:0 ""
+  washington.6.t:0 "Denied Entry To Pacific Defense Federation"
+  washington.6.d:0 ""
+  washington.6.a:0 ""
  #Washington Integration
   washington.7.t:0 "Washington Integrates With Pacific States Of America"
   washington.7.d:0 ""
