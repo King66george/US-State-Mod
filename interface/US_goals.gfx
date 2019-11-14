@@ -1016,7 +1016,7 @@ SpriteType = {
   texturefile = "gfx/interface/goals/TXT_focus_assimilate_utah.dds"
 }
 SpriteType = {
-  name = "GFX_TXT_assimilate_new_mexico"
+  name = "GFX_TXT_attack_new_mexico"
   texturefile = "gfx/interface/goals/TXT_assimilate_new_mexico.dds"
 }
 SpriteType = {

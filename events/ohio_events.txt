@@ -83,7 +83,7 @@ country_event = {
   	original_tag = OHO
   	OHO = {
     	has_government = democratic
-      has_idea = general_rearm
+      has_idea = OHO_general_rearm
     }
     date > 1937.1.1
   }
@@ -468,7 +468,7 @@ country_event = { #Defecting Generals
   trigger = {
     has_country_flag = ignoredcorruption
     OR = {
-      has_idea = corrupt_advisors
+      has_idea = OHO_corrupt_advisors
     }
   }
 
@@ -504,7 +504,7 @@ country_event = { #Industrial Sabotage
   trigger = {
     has_country_flag = generals_left
     OR = {
-      has_idea = unwilling_generals
+      has_idea = OHO_unwilling_generals
     }
   }
 

@@ -84,3 +84,14 @@ country_event = {
 		}
 	}
 }
+news_event = {
+  id = tex.5
+  title = tex.5.t
+  desc = tex.5.d
+  picture = GFX_news_event_capitol_stormed
+  is_triggered_only = yes
+
+  option = {
+    name = tex.5.a
+  }
+}
