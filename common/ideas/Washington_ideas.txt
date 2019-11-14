@@ -113,4 +113,46 @@ ideas = {
 			production_speed_air_base_factor = 0.15
 		}
 	}
+
+ WAW_ideas_industry_reforms = {
+
+	picture = FRA_matignon_agreements
+
+	allowed = {
+	 always = no
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+
+	}
+ }
+
+ WAW_crippled_economy = {
+
+	picture = FRA_matignon_agreements
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		war_support_factor = -0.3
+		consumer_goods_factor = 0.15
+		production_speed_buildings_factor = -0.1
+		local_resources_factor = -0.1
+		research_speed_factor = -0.025
+	}
+ }
 }

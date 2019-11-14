@@ -279,6 +279,26 @@ spriteTypes = {
 		name = "GFX_idea_eng_for_the_good_of_the_revolution"
 		texturefile = "gfx/interface/ideas/eng_for_the_good_of_the_revolution.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CAC_die_for_the_bear"
+		texturefile = "gfx/interface/ideas/CAC_die_for_the_bear.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_flag"
+		texturefile = "gfx/interface/ideas/CAC_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_Rev"
+		texturefile = "gfx/interface/ideas/CAC_Rev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_burning"
+		texturefile = "gfx/interface/ideas/CAC_burning.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAC_broken_gun"
+		texturefile = "gfx/interface/ideas/CAC_broken_gun.dds"
+	}
 
 
 #Ohio

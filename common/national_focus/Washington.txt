@@ -409,7 +409,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-    add_ideas = early_mobilization_law
+    add_ideas = WAW_ideas_industry_reforms
   }
 }
 
@@ -426,7 +426,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    add_ideas = WAW_crippled_economy
   }
 }
 
