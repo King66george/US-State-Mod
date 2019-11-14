@@ -1,7 +1,7 @@
 focus_tree = {
 	id = generic
 	country = {
-		factor = 10
+		factor = 0
 		modifier = {
 		}
 	}
@@ -1724,7 +1724,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			ai_will_do = {
 					factor = 10
-					
+
 				}
 			completion_reward = {
 					add_ideas = liberty_ethos_focus
