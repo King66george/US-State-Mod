@@ -467,6 +467,7 @@ CAC_ncrrevanchism = {
   }
 
   CAC_publicworksprogramidea = {
+
     allowed = {
       always = no
       }
@@ -474,8 +475,6 @@ CAC_ncrrevanchism = {
     allowed_civil_war = {
       always = yes
     }
-
-    picture = idea_generic_industrial_concern_1
 
     removal_cost = -1
 
@@ -486,6 +485,7 @@ CAC_ncrrevanchism = {
   }
 
   CAC_guaranteedpensionsidea = {
+
     allowed = {
       always = no
       }
@@ -494,12 +494,9 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = idea_trotskyite_plot
-
     removal_cost = -1
 
     modifier = {
-
       MONTHLY_POPULATION = 0.05
       stability_factor = 0.10
     }
@@ -513,8 +510,6 @@ CAC_ncrrevanchism = {
     allowed_civil_war = {
       always = yes
     }
-
-    picture = idea_generic_foreign_capital
 
     removal_cost = -1
 
@@ -534,8 +529,6 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = idea_hol_haven_of_tolerance
-
     removal_cost = -1
 
     modifier = {
@@ -552,8 +545,6 @@ CAC_ncrrevanchism = {
     allowed_civil_war = {
       always = yes
     }
-
-    picture = CAC_agreatsocietyidea
 
     removal_cost = -1
 
@@ -573,7 +564,6 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = CAC_citizenshipbyserviceidea
 
     removal_cost = -1
 
@@ -594,7 +584,6 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = CAC_aworkersarmyidea
 
     removal_cost = -1
 
@@ -616,7 +605,6 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = CAC_thecaliforniacommunistspyidea
 
     removal_cost = -1
 
@@ -637,7 +625,6 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = CAC_themilitapartisansidea
 
     removal_cost = -1
 
@@ -657,7 +644,6 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = CAC_prepareexpansionidea
 
     removal_cost = -1
 
@@ -731,7 +717,6 @@ CAC_ncrrevanchism = {
       always = yes
     }
 
-    picture = CAC_ideologyturmoilidea
 
     removal_cost = -1
 
@@ -777,6 +762,51 @@ CAC_ncrrevanchism = {
        political_power_gain = 0.25
        trade_opinion_factor = 0.25
        justify_war_goal_time = -0.50
+    }
+  }
+
+  CAC_aloyaldemocraticarmy = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    removal_cost = -1
+
+    picture = CAC_die_for_the_bear
+
+    modifier = {
+      surrender_limit = 0.25
+      military_leader_cost_factor = 0.15
+      high_command_cost_factor = -0.25
+      army_morale_factor = 0.1
+    }
+  }
+
+  CAC_unloyalarmy = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    removal_cost = -1
+
+    picture = CAC_broken_gun
+
+    modifier = {
+      neutrality_drift = 0.15
+      command_power_gain = -0.05
+      stability_factor = -0.15
+      justify_war_goal_time = 1
+      military_leader_cost_factor = 0.50
+      planning_speed = -0.50
+      war_support_factor = -0.50
     }
   }
 

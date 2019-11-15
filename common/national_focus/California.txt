@@ -171,6 +171,11 @@ focus_tree = {
 		prerequisite = {
 			focus = CAC_army1
 		}
+		available = {
+			NOT = {
+				has_idea = CAC_unloyalarmy
+			}
+		}
 		x = 5
 		y = 8
 			completion_reward = {
@@ -1957,7 +1962,7 @@ focus_tree = {
 	focus = {
 		id = CAC_establishthepeoplesarmy
 		icon = GFX_Generic_Socialist_Soldier
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = CAC_finishtheplan
 		}
@@ -1990,6 +1995,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CAC_citizenshipbyserviceidea
+			remove_ideas = CAC_unloyalarmy
 		}
 	}
 
@@ -2014,13 +2020,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CAC_aworkersarmyidea
+			remove_ideas = CAC_unloyalarmy
 		}
 	}
 
 	focus = {
 		id = CAC_establishaespionageforce
 		icon = GFX_Focus_Communist_Spy02
-		cost = 10
+		cost = 2
 
 
 		prerequisite = {
@@ -2891,6 +2898,7 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					add_ideas = CAC_allignthearmyidea
+					remove_ideas = CAC_unloyalarmy
 				}
 
 	}

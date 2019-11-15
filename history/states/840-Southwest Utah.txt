@@ -1,7 +1,7 @@
 state={
 	id=840
 	name="Southwest Utah"
-	manpower = 321961
+	manpower = 91961
 	resources={
 		tungsten=15
 	}

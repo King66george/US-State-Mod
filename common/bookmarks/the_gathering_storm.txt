@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = GFX_select_date_1936
-		default_country = "TXT"
+		default_country = "CAC"
 		default = yes
 
 		"TXT" = {
@@ -24,7 +24,7 @@ bookmarks = {
 			history = "CAC_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				#
+				CAC_aloyaldemocraticarmy
 			}
 			focuses= {
 				CAC_frankmerriamsplans
@@ -38,6 +38,7 @@ bookmarks = {
 			history = "KSK_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
+				#
 			}
 			focuses = {
 				KSK_conquest3
@@ -63,7 +64,7 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
+				#
 			}
 			focuses = {
 				FLF_anewgovernment
@@ -103,8 +104,7 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				VAV_idea_brokenecon
-				FRA_disjointed_government
+				#
 			}
 			focuses = {
 				VAV_war
@@ -113,19 +113,6 @@ bookmarks = {
 			}
 		}
 
-		"NJN" = {
-			minor = yes
-			history = "NJN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				home_of_the_free
-			}
-			focuses = {
-				njdiplo3.2
-				njdiplo1
-				njdiplo12
-			}
-		}
 		######################<--Inserted For Testing Purposes
 		#"WAW" = {
 		#	minor = yes

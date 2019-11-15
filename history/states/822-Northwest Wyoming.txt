@@ -1,7 +1,7 @@
 state={
 	id=822
 	name="Northwest Wyoming"
-	manpower=525564
+	manpower=45564
 	state_category=rural
 	resources={
 		chromium= 2.000

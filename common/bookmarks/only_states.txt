@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "OSS_DESC"
 		date = 1936.1.3.12
 		picture = GFX_select_date_1939
-		default_country = "TXT"
+		default_country = "CAC"
 		default = yes
 
 		"TXT" = {
@@ -24,7 +24,7 @@ bookmarks = {
 			history = "CAC_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				#
+				CAC_aloyaldemocraticarmy
 			}
 			focuses= {
 				CAC_frankmerriamsplans
@@ -33,7 +33,7 @@ bookmarks = {
 			}
 		}
 
-	
+
 		"QBC"= {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -52,7 +52,7 @@ bookmarks = {
 			history = "KSK_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
+				#
 			}
 			focuses = {
 				KSK_conquest3
@@ -65,7 +65,7 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
+				#
 			}
 			focuses = {
 				FLF_anewgovernment
@@ -91,7 +91,7 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
+				#
 			}
 			focuses = {
 				NCN_FOCUS_17
@@ -105,27 +105,12 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				VAV_idea_brokenecon
-				FRA_disjointed_government
+				#
 			}
 			focuses = {
 				VAV_war
 				VAV_industrialpowerhouse
 				vavmonarchy_ethos
-			}
-		}
-
-		"NJN" = {
-			minor = yes
-			history = "NJN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				home_of_the_free
-			}
-			focuses = {
-				njdiplo3.2
-				njdiplo1
-				njdiplo12
 			}
 		}
 		######################<--Inserted For Testing Purposes

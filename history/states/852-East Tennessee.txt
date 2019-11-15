@@ -1,7 +1,7 @@
 state={
 	id=852
 	name="West Tennessee"
-	manpower=1616555
+	manpower=216555
 	state_category=city
 	resources={
 		steel=60.000

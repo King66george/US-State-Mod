@@ -18,6 +18,6 @@ state={
 		10337 13218 13219 13220 13221 13222 
 	}
 	state_category = megalopolis
-	manpower=1156500
+	manpower=1756500
 	buildings_max_level_factor=1.000
 }

@@ -146,7 +146,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
-	#
+	CAC_aloyaldemocraticarmy
 }
 set_popularities = {
 	democratic = 71
@@ -180,6 +180,17 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = rexism
 	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "George S. Patton"
+	desc = "POLITICS_GEORGES_PATTON_DESC"
+	picture = "Portrait_USA_George_S_Patton.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		great_war_hero
 	}
 }
 
@@ -274,6 +285,9 @@ create_navy_leader = {
 		last_election = "1936.11.3"
 		election_frequency = 48
 		elections_allowed = no
+	}
+	add_ideas = {
+		CAC_aloyaldemocraticarmy
 	}
 }
 set_popularities = {

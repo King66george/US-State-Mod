@@ -1,4 +1,4 @@
-﻿capital = 375
+﻿capital = 1002
 
 oob = "TXT_1936"
 

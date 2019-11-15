@@ -29,6 +29,8 @@ country_event = {
         }
 
     add_ideas = { CAC_unstablepolitics }
+    add_ideas = { CAC_unloyalarmy}
+    remove_ideas = { CAC_aloyaldemocraticarmy}
 
     add_popularity = {
       ideology = fascism
@@ -61,6 +63,8 @@ country_event = {
 		}
 
     add_ideas = { CAC_unstablepolitics }
+    add_ideas = { CAC_unloyalarmy }
+    remove_ideas = { CAC_aloyaldemocraticarmy}
 
     add_popularity = {
       ideology = communism

@@ -2745,7 +2745,13 @@
  CAC_policecorruption:0 "Police Corruption"
  CAC_policecorruption_desc:0 "The Police of California are insanely corrupted with constant unjustified arrests of ethnic minorities, theft of citizens, and bribes are only some of the common things the Police do in California."
  CAC_encouragedpolicecorruption:0 "Encouraged Police Corruption"
- CAC_encouragedpolicecorruption_desc:0 "The Police of California are encouraged to do whatever they want with there power, with constant unjustified arrests of ethnic minorities, theft of citizens, and bribes are only some of the common things the Police do in California.""
+ CAC_encouragedpolicecorruption_desc:0 "The Police of California are encouraged to do whatever they want with there power, with constant unjustified arrests of ethnic minorities, theft of citizens, and bribes are only some of the common things the Police do in California."
+ CAC_aloyaldemocraticarmy:0 "A Loyal Democratic Army"
+ CAC_aloyaldemocraticarmy_desc:0 "The Army of California has stayed loyal to Frank Merriam during the aftermath of the collapse of America. Frank Merriam promises to not turn to the ideas of fascism and communism and the California Army agrees with him. The next election in California has made the army worry of a possible fascist or even worse communist president, if upset, The Army could rebel. As many soldiers say, they will die for the bear."
+ CAC_unloyalarmy:0 "Disjointed Army"
+ CAC_unloyalarmy_desc:0 "The Army of California swore an oath to Frank Merriam after the collapse of the United States, with the new undemocratic president in power the army refuses to serve this "new" California and rumors of a coup are by the military are common to hear."
+
+
 
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"

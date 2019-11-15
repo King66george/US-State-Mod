@@ -15,6 +15,7 @@ CAC_citizenshipbyservice:0 "Chose Soldier's of the Internationale"
 CAC_militapartisans:0 "Chose Milita Partisans"
 CAC_communistspys:0 "Chose The California Civil Special Investigations Agency"
 CAC_communistfaction:0 "The People's Coalition"
+POLITICS_FRANK_MERRIAM_DESC:0 "§GFrank Finley Merriam§! (December 22, 1865 – April 25, 1955) was an American politician who served as the 28th governor of California from June 2, 1934 until January 2, 1939. Assuming the governorship at the height of the Great Depression following the death of Governor James Rolph, Merriam famously defeated the 'muck-raking' author of The Jungle, former Socialist Party member, and Democratic candidate Upton Sinclair in the California gubernatorial election in 1934. Merriam also served as the State Auditor of Iowa from 1900 to 1903, and served in both the Iowa and California state legislatures. \n\nAfter the fall of the United States. California emerged as a regional superpower. Frank Merriam still in power during this time held a emergency election which he won in 1935, during this time he stabilized California and stated that another election shall take place in the February 1936 to reassure the people California would not turn to the ideas of communism and fascism."
 
 #This file is meant for all California focus and description localization.
 
@@ -197,3 +198,4 @@ CAC_alaskapsa_desc:0 "Alaska is a barren wasteland but it has a lot of value, es
 CAC_washingtonpsa_desc:0 "Washington is still in the recovery of the Great Depression. They pose no threat to us as of now and if put under the flag of the bear, economic aid could be given. We must incorporate Washington one way or another."
 CAC_oregonpsa_desc:0 "Oregon is full of valuable resources that could be utilized for the only true democracy left. We must meet with Oregon leaders and talk about incorporating them into California."
 CAC_formationofpsa_desc:0 "Frank Merriam, the president of California is proud to announce the formation of the Pacific States Of America. What was a dream to be a successor of the United States, is now a reality."
+CAC_army2_desc:0 "Lloyd and Patton have agreed to sit down with the president of California to discuss the California doctrine problem. This will decide the fate of the California armys tactics."
