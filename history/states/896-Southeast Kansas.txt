@@ -1,7 +1,7 @@
 state={
 	id=896
 	name="Southwest Kansas"
-	manpower=180000
+	manpower=60000
 	state_category=rural
 	resources={
 		oil=62.000
