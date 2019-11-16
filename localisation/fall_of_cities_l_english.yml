@@ -49,3 +49,8 @@ news.509.d:0 "War Correspondants have just revealed that Austin, Capital of [TXT
 news.509.a:0 "No longer will we be threatened by Texas!"
 news.509.b:0 "Remember Austin!"
 news.509.c:0 "The Lone Star State has been trampled."
+news.510.t:0 "The Fall Of Phoenix"
+news.510.d:0 "Phoenix, the capital of Arizona, has fallen to advancing Californian forces. Once regarded by some as a fortress, the city of Phoenix was unable to hold out against an onslaught of combined air and ground bombardment. While the eastern half of the city was engaged in a pitched battle, Californian Special Forces scaled the South Mountain to surprise and encircle the remaining defenders. A spokesman from [CAC.GetNameDef] said of the victory, "This was a demonstration of our military might. Let it be a lesson to all those who would oppose the Bear.""
+news.510.a:0 "Another Victory for the Bear!"
+news.510.b:0 "Though the Capitol has fallen, our resolve grows."
+news.510.c:0 "The Vallery of the Sun has been extinguished."

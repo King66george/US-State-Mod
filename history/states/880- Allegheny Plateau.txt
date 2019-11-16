@@ -1,7 +1,7 @@
 state={
 	id=880
 	name="Allegheny Plateau"
-	manpower=931346
+	manpower=1331346
 	state_category=city
 	resources={
 		steel=44.000
