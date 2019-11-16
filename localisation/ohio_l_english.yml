@@ -158,7 +158,10 @@ ohio.21.t:0 "Industrial Sabotage!"
 ohio.21.d:0 "We've recieved word of a recent movement of rebellion. This time, they've sabatoged our industry. With our small industry and attempt to industrialize, this could really hurt our economy. We cannot affor for things like this to happen. If we ignore the issue, there will be noticable issues in the future."
 ohio.21.a:0 "We need to repair the factories"
 ohio.21.b:0 "We have larger problems to deal with"
-
+#Soviet Support
+ ohio.22.t:0 "The Soviet Union Sends Help!"
+ ohio.22.d:0 "We have recieved a diplomatic envoy regarding a small force that is headed towards Ohio. They've told us not to worry and that the're here to support the revolution! We will forever be greatful to Stalin for helping us in our glorious revolution!"
+ ohio.22.a:0 "We will put them to work!"
 ##Focuses##
 OHO_politicalbell:0 "Political Bellwether"
 OHO_politicalbell_desc:0 "Ohio is regarded as the number one bellwether for determining the politics of the rest of the states. Out of every presidential election when the states were united, not a single time have we voted against the winner. Regardless of the future we decide, it is a safe bet than many follow the same way."

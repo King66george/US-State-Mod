@@ -310,7 +310,7 @@ focus_tree = {
 			every_neighbor_country = {
 				add_timed_idea = {
 					idea = fascist_influence
-					days = 120
+					days = 365
 				}
 			}
 		}
@@ -325,12 +325,7 @@ focus_tree = {
 			focus = TXT_storm_the_capitol
 		}
 		completion_reward = {
-			every_neighbor_country = {
-				add_timed_idea = {
-					idea = TXT_idea_texandiplo
-					days = 120
-				}
-			}
+			add_ideas = TXT_idea_texandiplo
 		}
 	}
 	focus = {
@@ -360,12 +355,9 @@ focus_tree = {
 		prerequisite = {
 			focus = TXT_naxis
 		}
-		mutually_exclusive = {
-			focus = TXT_stronger_neighbors
-		}
 		cost = 3
 
-		x = 8
+		x = 10
 		y = 9
 
 		completion_reward = {
@@ -389,7 +381,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 6
+		x = 8
 		y = 10
 
 		completion_reward = {
@@ -413,7 +405,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 5
+		x = 7
 		y = 11
 
 		completion_reward = {
@@ -447,7 +439,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 7
+		x = 9
 		y = 11
 
 		completion_reward = {
@@ -481,7 +473,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 6
+		x = 8
 		y = 12
 
 		completion_reward = {
@@ -552,7 +544,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 8
+		x = 10
 		y = 12
 
 		completion_reward = {
@@ -576,7 +568,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 7
+		x = 9
 		y = 13
 
 		completion_reward = {
@@ -610,7 +602,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 9
+		x = 11
 		y = 13
 
 		completion_reward = {
@@ -644,7 +636,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 8
+		x = 10
 		y = 14
 
 		completion_reward = {
@@ -701,7 +693,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 10
+		x = 12
 		y = 10
 
 		completion_reward = {
@@ -725,7 +717,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 9
+		x = 11
 		y = 11
 
 		completion_reward = {
@@ -759,7 +751,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 11
+		x = 13
 		y = 11
 
 		completion_reward = {
@@ -793,7 +785,7 @@ focus_tree = {
 
 		cost = 10
 
-		x = 10
+		x = 12
 		y = 12
 
 		completion_reward = {
@@ -838,24 +830,6 @@ focus_tree = {
 					localization = AST_adopt_westminster
 				}
 			}
-		}
-	}
-	focus = {
-		id = TXT_stronger_neighbors
-		icon = GFX_Generic_Mutual_Cooperation
-		prerequisite = {
-			focus = TXT_naxis
-		}
-		mutually_exclusive = {
-			focus = TXT_weaker_neighbors
-		}
-		cost = 3
-
-		x = 13
-		y = 9
-
-		completion_reward = {
-			custom_effect_tooltip = TXT_stronger_allies
 		}
 	}
 	focus = {

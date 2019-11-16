@@ -829,7 +829,7 @@ focus_tree = {
 		x = 20
 		y = 3
 		completion_reward = {
-			load_oob = OHO_sovietsupport
+			country_event = ohio.22
 		}
 	}
 	focus = {

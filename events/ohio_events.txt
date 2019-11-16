@@ -542,3 +542,19 @@ country_event = { #Industrial Sabotage
     }
   }
 }
+country_event = {
+  id = ohio.22
+  title = ohio.22.t
+  desc = ohio.22.d
+
+  picture = GFX_report_event_molotov_ribentrop_handshake
+
+  is_triggered_only = yes
+
+  option = {
+    name = ohio.22.a
+    hidden_effect = {
+      load_oob = OHO_sovietsupport
+    }
+  }
+}

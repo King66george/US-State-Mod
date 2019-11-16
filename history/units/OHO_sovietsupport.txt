@@ -16,16 +16,30 @@ division_template = {
 }
 units = {
 	division = {
-		name = "Mekhanizirovaniy Korpus"
+		name = "Soviet Volunteer"
 		location = 6855  # Columbus
-		division_template = "Soviet Voulunteer"
+		division_template = "Mekhanizirovaniy Korpus"
     start_experience_factor = 0.5
     start_equipment_factor = 1
 	}
   division = {
-		name = "Mekhanizirovaniy Korpus"
+		name = "Soviet Volunteer"
 		location = 3685  # Toledo
-		division_template = "Soviet Voulunteer"
+		division_template = "Mekhanizirovaniy Korpus"
+    start_experience_factor = 0.5
+    start_equipment_factor = 1
+	}
+	division = {
+		name = "Soviet Volunteer"
+		location = 3685  # Toledo
+		division_template = "Mekhanizirovaniy Korpus"
+    start_experience_factor = 0.5
+    start_equipment_factor = 1
+	}
+	division = {
+		name = "Soviet Volunteer"
+		location = 3685  # Toledo
+		division_template = "Mekhanizirovaniy Korpus"
     start_experience_factor = 0.5
     start_equipment_factor = 1
 	}
