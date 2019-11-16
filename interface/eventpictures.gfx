@@ -2176,7 +2176,12 @@ spriteTypes = {
 		name = "GFX_WAW_local_militias"
 		texturefile = "gfx/event_pictures/WAW_local_militias.dds"
 	}
-
-
-
+	spritetype = {
+		name = "GFX_news_event_topeka"
+		texturefile = "gfx/event_pictures/news_event_topeka.dds"
+	}
+	spritetype = {
+		name = "GFX_news_event_phoenix"
+		texturefile = "gfx/event_pictures/news_event_phoenix.dds"
+	}
 }
