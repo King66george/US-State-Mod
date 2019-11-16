@@ -285,6 +285,8 @@ ideologies = {
 		types = {
 			social_democrat = {
 			}
+			socialism = {
+			}
 		}
 
 		dynamic_faction_names = {

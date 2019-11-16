@@ -2401,11 +2401,11 @@ focus_tree = {
 			completion_reward = {
 					hidden_effect = {
 							set_politics = {
-									ruling_party = socialism
+									ruling_party = socialist
 									elections_allowed = yes
 								}
 							set_political_party = {
-									ideology = socialism
+									ideology = socialist
 									popularity = 74
 								}
 						}
@@ -2999,7 +2999,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CUB_communist_defence
-		icon = GFX_Generic_Militant_Socialism
+		icon = GFX_Generic_Militant_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = CUB_communist_socialtax
@@ -3287,7 +3287,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CUB_com_militarism
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_prc_agrarian_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = CUB_deterrence2
@@ -4028,7 +4028,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CUB_com_militarism_Copy
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_prc_agrarian_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = CUB_join_the_comintern_Copy
@@ -4097,7 +4097,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CUB_communist_defence_Copy
-		icon = GFX_Generic_Militant_Socialism
+		icon = GFX_Generic_Militant_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = CUB_communist_socialtax_Copy

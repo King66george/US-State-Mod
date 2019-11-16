@@ -2018,11 +2018,11 @@ focus_tree = {
 			completion_reward = {
 					hidden_effect = {
 							set_politics = {
-									ruling_party = socialism
+									ruling_party = socialist
 									elections_allowed = yes
 								}
 							set_political_party = {
-									ideology = socialism
+									ideology = socialist
 									popularity = 74
 								}
 						}
@@ -2049,7 +2049,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_com_militarism
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_prc_agrarian_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_indoctrination_focus
@@ -2352,7 +2352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_convert_venez
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_prc_agrarian_socialist
 		cost = 14.00
 		prerequisite = {
 			focus = QBC_national_arsenal
@@ -2366,11 +2366,11 @@ focus_tree = {
 			completion_reward = {
 					VEN = {
 							add_popularity = {
-									ideology = socialism
+									ideology = socialist
 									popularity = 0.6
 								}
 							set_politics = {
-									ruling_party = socialism
+									ruling_party = socialist
 								}
 						}
 					add_to_faction = VEN
@@ -2383,7 +2383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_national_workers
-		icon = GFX_Generic_Liberatian_Socialism
+		icon = GFX_Generic_Liberatian_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_national_propaganda
@@ -3111,7 +3111,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_pope
-		icon = GFX_Generic_Christian_Socialism
+		icon = GFX_Generic_Christian_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_papal_state
@@ -5354,7 +5354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_communist_defence
-		icon = GFX_Generic_Militant_Socialism
+		icon = GFX_Generic_Militant_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_communist_watching
