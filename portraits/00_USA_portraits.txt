@@ -78,7 +78,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		socialism = {
+		socialist = {
 			male = {
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
@@ -191,7 +191,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		socialism = {
+		socialist = {
 			male = {
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
@@ -311,7 +311,7 @@ continent = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 			}
 		}
-		socialism = {
+		socialist = {
 			male = {
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 			"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -410,7 +410,7 @@ continent = {
 				"gfx/leaders/generic/USA_portrait_fascist_2"
 			}
 		}
-		socialism = {
+		socialist = {
 			male = {
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_1.dds"
 				"gfx/leaders/generic/USA_portrait_generic_politician_europe_2.dds"
@@ -533,7 +533,7 @@ continent = {
 			"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
 			}
 		}
-		socialism = {
+		socialist = {
 			male = {
 					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
 					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
@@ -661,7 +661,7 @@ continent = {
 			"gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
 			}
 		}
-		socialism = {
+		socialist = {
 			male = {
 					"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 					"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
@@ -750,7 +750,7 @@ continent = {
 					"gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 			}
 		}
-		socialism = {
+		socialist = {
 			male = {
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
 			"gfx/leaders/SAU/Portrait_Arabia_Generic_land_2.dds"
@@ -838,7 +838,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -936,7 +936,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1034,7 +1034,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1132,7 +1132,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1230,7 +1230,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1328,7 +1328,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1426,7 +1426,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1524,7 +1524,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1622,7 +1622,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1720,7 +1720,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1818,7 +1818,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -1916,7 +1916,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -2014,7 +2014,7 @@ continent = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_2.dds" 
 				}
 			}
-			socialism = {
+			socialist = {
 				male = {
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
 				"gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"

@@ -280,7 +280,7 @@ ideologies = {
 
 		ai_fascist = yes #
 	}
-	socialism = {
+	socialist = {
 
 		types = {
 			social_democrat = {
