@@ -88,6 +88,13 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
+	division= {
+		name = "3rd Washingtonian National Guard"
+		location = 10693
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
 	navy = {
 		name = "Washington Coast Guard"
 		base = 7315
