@@ -16,6 +16,10 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 			air_base = 6
+			505 = {
+				naval_base = 2
+
+			}
 
 		}
 		add_core_of = ORO

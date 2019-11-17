@@ -18,17 +18,17 @@ state={
 			dockyard = 1
 			air_base = 5
 			7315 = {
-				naval_base = 3
+				naval_base = 5
 
 			}
 
 		}
 		add_core_of = WAW
 		victory_points = {
-			7442 3
+			7442 5
 		}
 		victory_points = {
-			7315 15
+			7315 20
 		}
 
 	}
