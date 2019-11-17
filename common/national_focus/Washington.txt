@@ -607,7 +607,7 @@ focus = {
 
 focus = {
   id = WAW_streamline_bomber_production
-  icon = GFX_Generic_Industry_Planes
+  icon = GFX_WAW_streamline_bomber_production
   prerequisite = { focus = WAW_boeing_r_and_d }
   cost = 10
   x = 22
