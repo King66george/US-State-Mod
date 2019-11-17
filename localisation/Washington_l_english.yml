@@ -79,8 +79,8 @@
  WAW_ideas_fund_boeing_desc:0 ""
  WAW_ideas_industry_reforms:0 "Industry Reforms"
  WAW_ideas_industry_reforms_desc:0 ""
- WAW_crippled_economy:0 "Crippled Economy"
- WAW_crippled_economy_desc:0 ""
+ idea_WAW_crippled_economy:0 "Crippled Economy"
+ idea_WAW_crippled_economy_desc:0 ""
 
 #Events
  #Cascadian United Front

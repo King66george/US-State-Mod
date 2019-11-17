@@ -316,6 +316,10 @@ spriteTypes = {
 		name = "GFX_WAW_idea_local_security"
 		texturefile = "gfx/interface/ideas/CAC_local_securitypsd.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_WAW_crippled_economy"
+		texturefile = "gfx/interface/ideas/WAW_idea_crippled_economy.dds"
+	}
 
 
 

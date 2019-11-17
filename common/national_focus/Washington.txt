@@ -426,7 +426,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-    add_ideas = WAW_crippled_economy
+    add_ideas = idea_WAW_crippled_economy
   }
 }
 

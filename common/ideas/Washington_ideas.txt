@@ -133,9 +133,9 @@ ideas = {
 	}
  }
 
- WAW_crippled_economy = {
+ idea_WAW_crippled_economy = {
 
-	picture = FRA_matignon_agreements
+	picture = WAW_crippled_economy
 
 	allowed = {
 		always = no
@@ -155,4 +155,5 @@ ideas = {
 		research_speed_factor = -0.025
 	}
  }
+}
 }
