@@ -6,7 +6,8 @@ state={
 	history={
 		owner = WAW
 		buildings = {
-			infrastructure = 8
+			infrastructure = 7
+			air_base = 6
 
 		}
 		add_core_of = WAW
@@ -17,16 +18,16 @@ state={
 			13302 10
 		}
 		victory_points = {
-			13303 3 
+			13303 3
 		}
 		victory_points = {
-			7386 1 
+			7386 1
 		}
 
 	}
 
 	provinces={
-		7386 13301 13302 13303 
+		7386 13301 13302 13303
 	}
 	manpower=1034786
 	buildings_max_level_factor=1.000

@@ -96,3 +96,20 @@ units = {
 		start_equipment_factor = 0.5
 	}
 }
+
+air_wings = {
+	914 = {
+		fighter_equipment_1 = {
+			owner = "WAW"
+			amount = 40
+		}
+		name = "Washington Fighter Squadron"
+	}
+	914 = {
+		tac_bomber_equipment_0 = {
+			owner = "WAW"
+			amount = 20
+		}
+		name = "Washington Bomber Squadron"
+  }
+}

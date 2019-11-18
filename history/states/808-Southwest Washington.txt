@@ -3,7 +3,7 @@ state={
 	id=808
 	name="Soutwest Washington"
 
-	
+
 	resources={
 		chromium=17.000
 	}
@@ -11,28 +11,27 @@ state={
 	history={
 		owner = WAW
 		buildings = {
-			infrastructure = 6
+			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 1
-			air_base = 5
-			4398 = {
-				naval_base = 4
+			10242 = {
+				naval_base = 5
 
 			}
 		}
 		add_core_of = WAW
 		victory_points = {
-			10242 1 
+			10242 1
 		}
 		victory_points = {
-			10271 1 
+			10271 1
 		}
 
 	}
 
 	provinces={
-		4296 4398 7255 10242 10271 12155 
+		4296 4398 7255 10242 10271 12155
 	}
 	manpower=413395
 	buildings_max_level_factor=1.000
