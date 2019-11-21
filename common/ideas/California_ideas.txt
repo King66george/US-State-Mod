@@ -781,8 +781,11 @@ CAC_ncrrevanchism = {
     modifier = {
       surrender_limit = 0.25
       military_leader_cost_factor = 0.15
-      high_command_cost_factor = -0.25
+      high_command_cost_factor = 0.25
       army_morale_factor = 0.1
+      democratic_acceptance = 85
+      communism_acceptance = -50
+      fascism_acceptance = -50
     }
   }
 
@@ -807,6 +810,25 @@ CAC_ncrrevanchism = {
       military_leader_cost_factor = 0.50
       planning_speed = -0.50
       war_support_factor = -0.50
+    }
+  }
+
+  CAC_dustbowlmigration = {
+    allowed = {
+      always = no
+      }
+
+    allowed_civil_war = {
+      always = yes
+    }
+
+    removal_cost = -1
+
+    picture = FRA_matignon_agreements
+
+    modifier = {
+      MONTHLY_POPULATION = 0.05
+      consumer_goods_factor = 0.05 
     }
   }
 

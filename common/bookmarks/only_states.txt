@@ -25,6 +25,7 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				CAC_aloyaldemocraticarmy
+				CAC_dustbowlmigration
 			}
 			focuses= {
 				CAC_frankmerriamsplans
