@@ -15,7 +15,7 @@ focus_tree = {
 		x = 16
 		y = 0
 			completion_reward = {
-					add_political_power = 200
+					add_political_power = 25
 				}
 
 	}
@@ -43,17 +43,9 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
 					add_resource = {
 							type = aluminium
-							amount = 25
+							amount = 7
 							state = 912
 						}
 				}
@@ -147,7 +139,7 @@ focus_tree = {
 	focus = {
 		id = aznaval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
+		cost = 10.00
 		x = 40
 		y = 0
 			available_if_capitulated = yes
@@ -414,10 +406,10 @@ focus_tree = {
 }
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -535,7 +527,7 @@ focus_tree = {
 					random_owned_controlled_state = {
 							add_building_construction = {
 									type = infrastructure
-									level = 3
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -567,8 +559,8 @@ focus_tree = {
 					add_ideas = ALL_idea_genderequality
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_0
-							amount = 2000
-							producer = ITA
+							amount = 1000
+							producer = USA
 						}
 				}
 
@@ -677,7 +669,7 @@ focus_tree = {
 					add_tech_bonus = {
 							name = assembly_bonus
 							bonus = 0.25
-							uses = 2
+							uses = 1
 							category = jet_technology
 							category = rocketry
 						}
@@ -742,10 +734,10 @@ focus_tree = {
 }
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -772,10 +764,10 @@ focus_tree = {
 }
 			completion_reward = {
 					random_owned_controlled_state = {
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -1184,7 +1176,7 @@ focus_tree = {
 					add_tech_bonus = {
 							name = armor_bonus
 							bonus = 1.0
-							uses = 3
+							uses = 1
 							category = armor
 						}
 				}
@@ -1193,7 +1185,7 @@ focus_tree = {
 	focus = {
 		id = azmil_culture
 		icon = GFX_focus_generic_military_mission
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = AZfocus_22
 		}
@@ -1333,7 +1325,7 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_political_power = 300
+					add_political_power = 100
 				}
 
 	}
@@ -1945,7 +1937,7 @@ focus_tree = {
 	focus = {
 		id = AZbike_effort
 		icon = GFX_goal_generic_build_tank
-		cost = 2.00
+		cost = 15.00
 		prerequisite = {
 			focus = AZfocus_28
 		}
@@ -2240,7 +2232,7 @@ focus_tree = {
 	focus = {
 		id = azfighter_focus
 		icon = GFX_goal_generic_air_fighter
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = azaviation_effort
 		}
@@ -2254,17 +2246,12 @@ focus_tree = {
 					add_tech_bonus = {
 							name = fighter_bonus
 							bonus = 1.0
-							uses = 2
+							uses = 1
 							technology = early_fighter
 							technology = fighter2
 							technology = fighter3
 							technology = heavy_fighter2
 							technology = heavy_fighter3
-						}
-					set_technology = {
-							fighter1 = 1
-							heavy_fighter1 = 1
-							strategic_bomber2 = 1
 						}
 				}
 
@@ -2387,7 +2374,7 @@ focus_tree = {
 	focus = {
 		id = azbomber_focus
 		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = azaviation_effort
 		}
@@ -2401,7 +2388,7 @@ focus_tree = {
 					add_tech_bonus = {
 							name = bomber_bonus
 							bonus = 1.0
-							uses = 2
+							uses = 1
 							technology = strategic_bomber1
 							technology = strategic_bomber2
 							technology = strategic_bomber3

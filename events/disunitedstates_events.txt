@@ -334,7 +334,7 @@ country_event = {
 		option = {
 			name = disunitedstates.9.a
 			ai_chance = {
-				factor = 45
+				factor = 30
 			}
 			AZA = {
 				annex_country = {
@@ -345,7 +345,7 @@ country_event = {
 		}
 		option = {
 			name = disunitedstates.9.b
-			ai_chance = { factor = 55}
+			ai_chance = { factor = 70}
 
 			AZA = {
 				create_wargoal = {
