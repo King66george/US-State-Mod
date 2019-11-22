@@ -452,7 +452,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_the_arizona_question
-		icon = GFX_goal_generic_secret_weapon
+		icon = GFX_UTU_arizona_question
 		x = -9
 		y = 3
 		cost = 4
