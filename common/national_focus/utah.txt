@@ -1,4 +1,4 @@
-
+####### Clenchman is the maker of this awesome tree #########
 focus_tree = {
 	id = utah_focus
 
@@ -13,329 +13,13 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 0 y = 0 }
-#### industry path ####
-	focus = {
-		id = UTU_industry_start
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 0
-		y = 0
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-            	839 = {
-            	add_extra_state_shared_building_slots = 3
-            	add_building_construction = {
-            		type = industrial_complex
-            		level = 1
-            		instant_build = yes
-            	}
-            	add_building_construction = {
-            		type = arms_factory
-            		level = 1
-            		instant_build = yes
-            	}
-            }
-        }
-    }
-#### millitary factories ####
-    focus = {
-    	id = UTU_industry_arm_salt_lake
-    	icon = GFX_goal_generic_army_tanks
-    	x = -2
-    	y = 1
-    	cost = 5
-    	prerequisite = {
-        	focus = UTU_industry_start
-        }
-    	available_if_capitulated = yes
-    	completion_reward = {
-            	839 = {
-            	add_extra_state_shared_building_slots = 1
-            	add_building_construction = {
-            		type = arms_factory
-            		level = 1
-            		instant_build = yes
-            	}
-            }
-        }
-    }
-
-    focus = {
-    	id = UTU_industry_arm_utah_valley
-    	icon = GFX_goal_generic_army_tanks
-    	x = -2
-    	y = 2
-    	cost = 5
-    	prerequisite = {
-        	focus = UTU_industry_arm_salt_lake
-        }
-    	available_if_capitulated = yes
-    	completion_reward = {
-            	839 = {
-            	add_extra_state_shared_building_slots = 2
-            	add_building_construction = {
-            		type = arms_factory
-            		level = 2
-            		instant_build = yes
-            	}
-            }
-        }
-    }
-
-    focus = {
-    	id = UTU_industry_weaponize_southwest
-    	icon = GFX_goal_generic_army_tanks
-    	x = -2
-    	y = 3
-    	cost = 5
-    	prerequisite = {
-        	focus = UTU_industry_arm_utah_valley
-        }
-    	available_if_capitulated = yes
-    	completion_reward = {
-            	840 = {
-            	add_extra_state_shared_building_slots = 3
-            	add_building_construction = {
-            		type = arms_factory
-            		level = 2
-            		instant_build = yes
-            	}
-            }
-        }
-    }
-
-    focus = {
-    	id = UTU_industry_weaponize_east
-    	icon = GFX_goal_generic_army_tanks
-    	x = -2
-    	y = 4
-    	cost = 5
-    	prerequisite = {
-        	focus = UTU_industry_weaponize_southwest
-        }
-    	available_if_capitulated = yes
-    	completion_reward = {
-            	841 = {
-            	add_extra_state_shared_building_slots = 3
-            	add_building_construction = {
-            		type = arms_factory
-            		level = 2
-            		instant_build = yes
-            	}
-            }
-        }
-    }
-#### civ factories ####
-	focus = {
-		id = UTU_industry_buildup_salt_lake
-		icon = GFX_focus_generic_industry_1
-		x = 2
-		y = 1
-		cost = 5
-		prerequisite = {
-        	focus = UTU_industry_start
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	839 = {
-        	add_extra_state_shared_building_slots = 1
-        	add_building_construction = {
-            		type = industrial_complex
-            		level = 1
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
-	focus = {
-		id = UTU_industry_buildup_west
-		icon = GFX_focus_generic_industry_2
-		x = 2
-		y = 2
-		cost = 5
-		prerequisite = {
-        	focus = UTU_industry_buildup_salt_lake
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	380 = {
-        	add_extra_state_shared_building_slots = 2
-        	add_building_construction = {
-            		type = industrial_complex
-            		level = 2
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
-	focus = {
-		id = UTU_industry_buildup_southwest
-		icon = GFX_focus_generic_industry_2
-		x = 2
-		y = 3
-		cost = 5
-		prerequisite = {
-        	focus = UTU_industry_buildup_west
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	840 = {
-        	add_extra_state_shared_building_slots = 2
-        	add_building_construction = {
-            		type = industrial_complex
-            		level = 2
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
-	focus = {
-		id = UTU_industry_buildup_east
-		icon = GFX_focus_generic_industry_3
-		x = 2
-		y = 4
-		cost = 5
-		prerequisite = {
-        	focus = UTU_industry_buildup_southwest
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	841 = {
-        	add_extra_state_shared_building_slots = 4
-        	add_building_construction = {
-            		type = industrial_complex
-            		level = 3
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
-#### infrastructure and more ####
-	focus = {
-		id = UTU_connect_salt_lake
-		icon = GFX_focus_generic_rubber
-		x = 0
-		y = 1
-		cost = 5
-		prerequisite = {
-        	focus = UTU_industry_start
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	839 = {
-        	add_extra_state_shared_building_slots = 2
-        	add_building_construction = {
-            		type = infrastructure
-            		level = 1
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
-	focus = {
-		id = UTU_connect_south_utah
-		icon = GFX_focus_generic_rubber
-		x = 0
-		y = 2
-		cost = 5
-		prerequisite = {
-        	focus = UTU_connect_salt_lake
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	840 = {
-        	add_extra_state_shared_building_slots = 2
-        	add_building_construction = {
-            		type = infrastructure
-            		level = 2
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
-	focus = {
-		id = UTU_connect_the_east
-		icon = GFX_focus_generic_rubber
-		x = 0
-		y = 3
-		cost = 5
-		prerequisite = {
-        	focus = UTU_connect_south_utah
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	841 = {
-        	add_extra_state_shared_building_slots = 2
-        	add_building_construction = {
-            		type = infrastructure
-            		level = 2
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
-	focus = {
-		id = UTU_interstate_connection
-		icon = GFX_focus_generic_rubber
-		x = 0
-		y = 4
-		cost = 6
-		prerequisite = {
-        	focus = UTU_connect_the_east
-        }
-        available_if_capitulated = yes
-        completion_reward {
-        	841 = {
-        	add_extra_state_shared_building_slots = 1
-        	add_building_construction = {
-            		type = infrastructure
-            		level = 1
-            		instant_build = yes
-            	}
-        	}
-        	380 = {
-        	add_extra_state_shared_building_slots = 1
-        	add_building_construction = {
-            		type = infrastructure
-            		level = 1
-            		instant_build = yes
-            	}
-        	}
-        	839 = {
-        	add_extra_state_shared_building_slots = 2
-        	add_building_construction = {
-            		type = infrastructure
-            		level = 1
-            		instant_build = yes
-            	}
-        	}
-        	840 = {
-        	add_extra_state_shared_building_slots = 1
-        	add_building_construction = {
-            		type = infrastructure
-            		level = 1
-            		instant_build = yes
-            	}
-        	}
-        }
-	}
-
 #### start of diplomacy focuses ####
 	focus = {
 		id = UTU_our_neighbors
 		icon = GFX_TXT_focus_assimilate_utah
 		x = -10
 		y = 0
-		cost = 2
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -349,7 +33,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = -11
 		y = 1
-		cost = 3
+		cost = 10
 		prerequisite = {
         	focus = UTU_our_neighbors
         }
@@ -371,10 +55,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_withdrawl_advisors_nevada
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_Generic_Enough
 		x = -9
 		y = 1
-		cost = 3
+		cost = 10
 		prerequisite = {
         	focus = UTU_our_neighbors
         }
@@ -398,7 +82,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = -9
 		y = 2
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_withdrawl_advisors_nevada
         }
@@ -437,10 +121,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_encourage_agression_nevada
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_Generic_Cottonmouth
 		x = -7
 		y = 3
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_fortify_western_border
         }
@@ -455,7 +139,7 @@ focus_tree = {
 		icon = GFX_UTU_arizona_question
 		x = -9
 		y = 3
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_fortify_western_border
         }
@@ -472,7 +156,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		x = -9
 		y = 4
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_the_arizona_question
         }
@@ -509,10 +193,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_friendly_with_california
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_CAC_mcga
 		x = -7
 		y = 4
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_encourage_agression_nevada
         }
@@ -545,10 +229,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_claim_nevada
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_CAC_freedom
 		x = -7
 		y = 5
-		cost = 5
+		cost = 10
 		prerequisite = {
         	focus = UTU_friendly_with_california
         }
@@ -567,10 +251,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_fortify_the_capital
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_Generic_Coup02
 		x = -9
 		y = 5
-		cost = 5
+		cost = 10
 		prerequisite = {
         	focus = UTU_protect_the_west
         }
@@ -589,10 +273,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_invade_nevada
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_TXT_assimilate_nevada
 		x = -8
 		y = 6
-		cost = 6
+		cost = 10
 		prerequisite = {
         	focus = UTU_fortify_the_capital
         }
@@ -611,10 +295,10 @@ focus_tree = {
 #### peaceful utah diplomacy ####
 	focus = {
 		id = UTU_offer_aid_nevada
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_Generic_Outside_Aid
 		x = -11
 		y = 2
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_establish_relations_nevada
         }
@@ -634,10 +318,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_defend_nevada
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_Generic_Barricade
 		x = -13
 		y = 3
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_offer_aid_nevada
         }
@@ -660,7 +344,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = -11
 		y = 3
-		cost = 5
+		cost = 10
 		prerequisite = {
         	focus = UTU_offer_aid_nevada
         }
@@ -677,7 +361,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		x = -11
 		y = 4
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_an_offer_to_wyoming
         }
@@ -701,7 +385,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		x = -13
 		y = 4
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_defend_nevada
         }
@@ -721,10 +405,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_coloradan_menance
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_Generic_Invasion
 		x = -11
 		y = 5
-		cost = 5
+		cost = 10
 		prerequisite = {
         	focus = UTU_trade_deal_with_IDI
         }
@@ -752,7 +436,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		x = -13
 		y = 5
-		cost = 5
+		cost = 10
 		prerequisite = {
         	focus = UTU_improve_relations_AZA
         }
@@ -788,10 +472,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_oversee_nevada
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_Generic_Liberation
 		x = -12
 		y = 6
-		cost = 5
+		cost = 10
 		prerequisite = {
         	focus = UTU_befriend_colorado
         	focus = UTU_coloradan_menance
@@ -808,7 +492,7 @@ focus_tree = {
 		icon = GFX_focus_eng_imperial_federation
 		x = -10
 		y = 7
-		cost = 6
+		cost = 10
 		prerequisite = {
         	focus = UTU_oversee_nevada
         	focus = UTU_invade_nevada
@@ -829,9 +513,9 @@ focus_tree = {
 	focus = {
 		id = UTU_millitary_buildup_start
 		icon = GFX_Generic_Break_Free
-		x = 20
+		x = 30
 		y = 0
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		completion_reward {
 			modifier = {
@@ -839,13 +523,13 @@ focus_tree = {
 			}
 		}
 	}
-#### start of utah political paths (beware, very long and possibly innacurate) ####
+#### start of utah political paths (beware, very long and possibly innaccurate) ####
 	focus = {
 		id = UTU_recover_efforts
 		icon = GFX_Generic_Bread_and_Peace
 		x = 10
 		y = -1
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		completion_reward {
 			add_stability = .08
@@ -857,7 +541,7 @@ focus_tree = {
 		icon = GFX_Generic_Mining
 		x = 10
 		y = 0
-		cost = 5
+		cost = 10
 		prerequisite = {
         	focus = UTU_recover_efforts
         }
@@ -875,7 +559,7 @@ focus_tree = {
 		icon = GFX_Generic_Christian_Socialism
 		x = 10
 		y = 1
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_employ_help
         }
@@ -901,9 +585,9 @@ focus_tree = {
 	focus = {
 		id = UTU_remember_the_union
 		icon = GFX_focus_chi_mission_to_the_us
-		x = 12
+		x = 15
 		y = 1
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_employ_help
         }
@@ -916,7 +600,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward {
 			add_popularity = {
-    			ideology = socialism
+    			ideology = socialist
     			popularity = 0.06
     		}
     		add_stability = .03
@@ -925,9 +609,9 @@ focus_tree = {
 	focus = {
 		id = UTU_drastic_measures
 		icon = GFX_Generic_Spy_Communist
-		x = 8
+		x = 5
 		y = 1
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_employ_help
         }
@@ -940,7 +624,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward {
 			add_popularity = {
-    			ideology = socialism
+    			ideology = socialist
     			popularity = 0.08
     		}
     		add_popularity = {
@@ -953,9 +637,9 @@ focus_tree = {
 	focus = {
 		id = UTU_millitary_takeover
 		icon = GFX_Generic_Violent_Coup
-		x = 6
+		x = 0
 		y = 1
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_employ_help
         }
@@ -977,9 +661,9 @@ focus_tree = {
 	focus = {
 		id = UTU_native_vengance
 		icon = GFX_Generic_Chinese_Soldiers
-		x = 14
+		x = 20
 		y = 1
-		cost = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_employ_help
         }
@@ -997,9 +681,9 @@ focus_tree = {
     		}
     		add_popularity = {
     			ideology = monarchy
-    			popularity = 0.18
+    			popularity = 0.10
     		}
-    		add_stability = -0.09
+    		add_stability = -0.35
 		}
 	}
 #########################
@@ -1009,32 +693,32 @@ focus_tree = {
 		id = UTU_increase_power_church
 		icon = GFX_Focus_Smash_Fasc
 		x = 10
-		y = 5
-		cost = 4
-		available = {
-        	has_completed_focus = UTU_turn_to_church
-		}
+		y = 2
+		cost = 10
+		prerequisite = {
+        	focus = UTU_turn_to_church
+    }
 		completion_reward {
 			add_popularity = {
     			ideology = theocratism
     			popularity = 0.08
     		}
-    		add_stability = 0.09
+    		add_stability = 0.04
 		}
 	}
 	focus = {
 		id = UTU_church_owns_farms
 		icon = GFX_Generic_Farming
 		x = 10
-		y = 6
-		cost = 4
+		y = 3
+		cost = 10
 		prerequisite = {
         	focus = UTU_increase_power_church
-        }
+    }
 		completion_reward {
 			add_popularity = {
     			ideology = theocratism
-    			popularity = 0.03
+    			popularity = 0.02
     		}
     		add_manpower = 1000
     		add_stability = 0.02
@@ -1044,17 +728,30 @@ focus_tree = {
 		id = UTU_enforce_church_teachings
 		icon = GFX_Generic_Meeting
 		x = 9
-		y = 7
-		cost = 5
+		y = 4
+		cost = 10
 		prerequisite = {
         	focus = UTU_church_owns_farms
         }
 		completion_reward {
 			add_popularity = {
     			ideology = theocratism
-    			popularity = 0.03
+    			popularity = 0.02
     		}
     		add_ideas = UTU_church_gaining_hold_idea
+		}
+	}
+	focus = {
+		id = UTU_mormon_schools
+		icon = GFX_Generic_Autonomy
+		x = 11
+		y = 4
+		cost = 10
+		prerequisite = {
+        	focus = UTU_church_owns_farms
+        }
+		completion_reward {
+    		add_ideas = UTU_mormon_schools
 		}
 	}
 }

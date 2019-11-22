@@ -2,7 +2,7 @@
 
 oob = "UTU_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
@@ -123,13 +123,13 @@ set_technology = {
 
 
 
-set_convoys = 100
-set_stability = 0.62
+set_convoys = 10
+set_stability = 0.50
 
 set_politics = {
 
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1933.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -137,31 +137,34 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 81
-	communism = 5
-	fascism = 14
+	democratic = 70
+	socialist = 10
+	theocratism = 10
+	communism = 2
+	monarchy = 8
 }
 1939.1.1 = {
-	set_stability = 0.62
+	set_stability = 0.50
 
 	set_politics = {
-
 		ruling_party = democratic
-		last_election = "1936.11.3"
+		last_election = "1937.11.3"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 }
 set_popularities = {
-	democratic = 81
-	communism = 5
-	fascism = 14
+	democratic = 70
+	socialist = 10
+	theocratism = 10
+	communism = 2
+	monarchy = 8
 }
 create_country_leader = {
 	name = "Henry H. Blood"
 	desc = "POLITICS_HENRY_H_BLOOD_DESC"
 	picture = "Portrait_UTU_Henry_H_Blood.dds"
-	expire = "1965.1.1"
+	expire = "1941.1.1"
 	ideology = liberalism
 	traits = {
 	}
