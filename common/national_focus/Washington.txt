@@ -7,7 +7,7 @@ focus_tree = {
     factor = 0
 
     modifier = {
-    add = 33
+    add = 10
     tag = WAW
     }
   }
@@ -426,7 +426,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-    add_ideas = idea_WAW_crippled_economy
+
   }
 }
 
@@ -443,7 +443,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    add_ideas = export_focus
   }
 }
 
@@ -460,7 +460,7 @@ focus = {
   available_if_capitulated = no
 
   completion_reward = {
-
+    add_ideas = WAW_ideas_trade_reforms
   }
 }
 

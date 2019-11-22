@@ -81,6 +81,8 @@
  WAW_ideas_industry_reforms_desc:0 ""
  idea_WAW_crippled_economy:0 "Crippled Economy"
  idea_WAW_crippled_economy_desc:0 ""
+ idea_WAW_emigrating_workforce:0 "Emigrating Workforce"
+ WAW_ideas_trade_reforms:0 "Trade Reforms"
 
 #Events
  #Cascadian United Front
@@ -131,3 +133,7 @@
  #Appease California
   WAW_appease_california_tt:0 "§RAppeasing California could lead to the loss of our sovereignty.§!\n*"
   WAW_integration_tt:0 "§RWill become puppet of California.§!\n"
+
+#Other
+  #Unfunded Military
+  WAW_unfunded_military:0 "Unfunded Military"

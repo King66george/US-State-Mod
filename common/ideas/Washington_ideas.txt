@@ -116,7 +116,26 @@ ideas = {
 
  WAW_ideas_industry_reforms = {
 
-	picture = FRA_matignon_agreements
+	picture = WAW_industrial_reforms
+
+	allowed = {
+	 always = no
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+
+	}
+ }
+
+ WAW_ideas_trade_reforms = {
+
+	picture = WAW_trade_reforms
 
 	allowed = {
 	 always = no
@@ -149,10 +168,33 @@ ideas = {
 
 	modifier = {
 		war_support_factor = -0.3
-		consumer_goods_factor = 0.15
-		production_speed_buildings_factor = -0.1
+		consumer_goods_factor = 0.20
+		production_speed_buildings_factor = -0.25
 		local_resources_factor = -0.1
-		research_speed_factor = -0.025
+		research_speed_factor = -0.05
+		weekly_manpower = -100
+		industry_repair_factor = -0.15
+	}
+ }
+
+ idea_WAW_emigrating_workforce = {
+
+	picture = WAW_emigrating_workforce
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		MONTHLY_POPULATION = -0.10
+		production_factory_efficiency_gain_factor = -0.10
+		production_factory_max_efficiency_factor = -0.10
 	}
  }
 }

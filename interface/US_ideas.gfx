@@ -247,7 +247,10 @@ spriteTypes = {
 		name = "GFX_idea_CAC_broken_gun"
 		texturefile = "gfx/interface/ideas/CAC_broken_gun.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_CAC_dust_bowl_migration"
+		texturefile = "gfx/interface/ideas/CAC_dust_bowl_migration.dds"
+	}
 
 #Ohio
 	spriteType = {
@@ -320,6 +323,23 @@ spriteTypes = {
 		name = "GFX_idea_WAW_crippled_economy"
 		texturefile = "gfx/interface/ideas/WAW_idea_crippled_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_WAW_emigrating_workforce"
+		texturefile = "gfx/interface/ideas/WAW_emigrating_workforce.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_WAW_industrial_reforms"
+		texturefile = "gfx/interface/ideas/WAW_industrial_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_WAW_trade_reforms"
+		texturefile = "gfx/interface/ideas/WAW_trade_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_WAW_unfunded_military"
+		texturefile = "gfx/interface/ideas/WAW_unfunded_military.dds"
+	}
+
 
 
 

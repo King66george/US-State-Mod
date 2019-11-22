@@ -824,11 +824,11 @@ CAC_ncrrevanchism = {
 
     removal_cost = -1
 
-    picture = FRA_matignon_agreements
+    picture = CAC_dust_bowl_migration
 
     modifier = {
       MONTHLY_POPULATION = 0.05
-      consumer_goods_factor = 0.05 
+      consumer_goods_factor = 0.05
     }
   }
 
