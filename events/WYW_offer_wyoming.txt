@@ -1,0 +1,36 @@
+add_namespace = wyoming
+
+country_event = {
+	id = wyoming.1
+	title = wyoming_decides.t
+	desc = wyoming_decides.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+		tag = WYW
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		wyoming_decides_1.a
+		ai_chance = { factor = 10 }
+		diplomatic_relation = {
+    		country = UTU
+    		relation = non_aggression_pact
+    		active = yes
+    	}
+	}
+
+	option = {
+		wyoming_decides_2.b
+		ai_chance = { factor = 90 }
+		add_political_power = 50
+		set_stability = -0.05
+		UTU = { 
+			country_event = {
+				id = utah.3
+			}
+		} 
+	}
+}

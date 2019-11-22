@@ -1,0 +1,14 @@
+add_namespace = utah
+
+news_event = {
+	id = utahpuppets.1.t
+	title = utahpuppets.1.t
+	desc = utahpuppets.1.d
+	picture = GFX_news_event_005
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		utahpuppetsoption.1.a
+	}
