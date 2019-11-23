@@ -21,6 +21,7 @@ ideas = {
         justify_war_goal_time = 1
       }
     }
+#####################################################
     UTU_greatdepression = {
       allowed = {
           always = no
@@ -52,13 +53,52 @@ ideas = {
           always = yes
       }
 
-      removal_cost = 1000
+      removal_cost = -1
 
       picture = GFX_idea_UTU_turntochurch
 
       modifier = {
         fascism_drift = 0.01
         theocratism_drift = 0.05
+      }
+    }
+##################################################
+    UTU_takeoverfarms = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_agricultural_industry
+
+      modifier = {
+        conscription = 0.05
+        industrial_capacity_factory = 0.08
+      }
+    }
+#############################################
+    UTU_churchschool = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_UTU_churchschool
+
+      modifier = {
+        theocratism_drift = 0.03
+        industrial_capacity_factory = 0.05
+        research_speed_factor = 0.1
       }
     }
   }

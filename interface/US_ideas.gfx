@@ -349,6 +349,10 @@ spriteTypes = {
 		name = "GFX_idea_UTU_turntochurch"
 		texturefile = "gfx/interface/ideas/UTU_turntochurch.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_UTU_churchschool"
+		texturefile = "gfx/interface/ideas/UTU_churchschool.dds"
+	}
 
 
 

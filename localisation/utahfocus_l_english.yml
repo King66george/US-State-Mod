@@ -6,6 +6,10 @@
  UTU_mormonchurch_desc:0 "The Mormon Church, or the LDS Church, has its headquarters located in Salt Lake City. Because of this, Utah has a large population of Mormons, impacting our politics."
  UTU_turntochurch:0 "Turn to the Church"
  UTU_turntochurch_desc:0 "Our government is weak, however the power of the Mormon Church is strong."
+ UTU_takeoverfarms:0 "Church Owned Farms"
+ UTU_takeoverfarms_desc:0 "Having the Church own the farms will boost the amount of people that can work in the factories."
+ UTU_churchschool:0 "Indoctrinate the Youth"
+ UTU_churchschool_desc:0 "In order to spread the one correct, true faith, we shall set up schools to teach the youth our beliefs."
 ###### FOCUS STUFF #####
  UTU_industry_start:0 "Kickstart Utahn Industry"
  UTU_industry_start_desc:0 "We must start our industry off strong, for a stable future."
@@ -90,4 +94,6 @@
  UTU_increase_power_church:0 "Increase Church Dominance"
  UTU_increase_power_church_desc:0 "The Church needs more power in order to create a better society for everyone."
  UTU_church_owns_farms:0 "Take Over Farmland"
- UTU_church_owns_farms:0 "The Church requires that more and more land be admitted to it. This is to feed those that are less fortunate."
+ UTU_church_owns_farms_desc:0 "The Church requires that more and more land be admitted to it. This is to feed those that are less fortunate."
+ UTU_mormon_schools:0 "Indoctrinate Our Youth"
+ UTU_mormon_schools_desc:0 "In order to spread the one correct, true faith, we shall set up schools to teach the youth our beliefs."

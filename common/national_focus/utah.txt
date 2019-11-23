@@ -723,6 +723,7 @@ focus_tree = {
     		}
     		add_manpower = 1000
     		add_stability = 0.02
+				add_ideas = UTU_takeoverfarms
 		}
 	}
 	focus = {
@@ -739,7 +740,6 @@ focus_tree = {
     			ideology = theocratism
     			popularity = 0.02
     		}
-    		add_ideas = UTU_church_gaining_hold_idea
 		}
 	}
 	focus = {
@@ -752,7 +752,7 @@ focus_tree = {
         	focus = UTU_church_owns_farms
         }
 		completion_reward {
-    		add_ideas = UTU_mormon_schools
+    		add_ideas = UTU_churchschool
 		}
 	}
 }
