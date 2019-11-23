@@ -83,27 +83,27 @@ units = {
 
 	}
 		division= {
-		name = "Orlando Defense Force"
+		name = "2nd Floridian National Guard"
 		location = 12439
-		division_template = "Garrison Brigade"
+		division_template = "National Guard Division"
 		start_experience_factor = 0.6
 		start_equipment_factor = 0.8
 
 	}
 		division = {
-		name = "Tallahasee Milita"
+		name = "3rd Floridian National Guard"
 		location = 10407
-		division_template = "Garrison Brigade"
+		division_template = "National Guard Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.6
 
 	}
 		division = {
-		name = "Tampa Defense Force"
+		name = "4th Floridian National Guard"
 		location = 7388
-		division_template = "Garrison Brigade"
+		division_template = "National Guard Division"
 		start_experience_factor = 0.45
-		start_equipment_factor = 0.29
+		start_equipment_factor = 0.6
 
 	}
 }
