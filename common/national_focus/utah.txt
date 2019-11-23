@@ -358,7 +358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_trade_deal_with_IDI
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_UTU_trade_idaho
 		x = -11
 		y = 4
 		cost = 10
@@ -405,7 +405,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_coloradan_menance
-		icon = GFX_Generic_Invasion
+		icon = GFX_UTU_invade_colorado
 		x = -11
 		y = 5
 		cost = 10
@@ -433,7 +433,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_befriend_colorado
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_UTU_friend_colorado
 		x = -13
 		y = 5
 		cost = 10

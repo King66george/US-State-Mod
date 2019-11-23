@@ -1064,6 +1064,18 @@ SpriteType = {
   name = "GFX_UTU_arizona_question"
   texturefile = "gfx/interface/goals/UTU_arizona_question.dds"
 }
+SpriteType = {
+  name = "GFX_UTU_invade_colorado"
+  texturefile = "gfx/interface/goals/UTU_invade_colorado.dds"
+}
+SpriteType = {
+  name = "GFX_UTU_trade_idaho"
+  texturefile = "gfx/interface/goals/UTU_trade_idaho.dds"
+}
+SpriteType = {
+  name = "GFX_UTU_friend_colorado"
+  texturefile = "gfx/interface/goals/UTU_friend_colorado.dds"
+}
 
 ############################################################################################################################
 }
