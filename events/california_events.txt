@@ -235,7 +235,7 @@ country_event = {
 
 			declare_war_on = {
 				target = NVN
-				type = puppet_wargoal_focus
+				type = annex_everything
 			}
 			add_war_support = 0.1
 		}
