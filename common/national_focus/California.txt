@@ -465,7 +465,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					create_wargoal = {
-							type = puppet_wargoal_focus
+							type = annex_everything
 							target = NVN
 						}
 				}
@@ -494,7 +494,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					create_wargoal = {
-							type = puppet_wargoal_focus
+							type = annex_everything
 							target = BAJ
 						}
 				}
@@ -526,7 +526,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					create_wargoal = {
-							type = puppet_wargoal_focus
+							type = annex_everything
 							target = AZA
 						}
 				}
