@@ -340,6 +340,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/WAW_unfunded_military.dds"
 	}
 
+	#Utah
+	spriteType = {
+		name = "GFX_UTU_mormonchurch"
+		texturefile = "gfx/interface/ideas/UTU_mormonchurch.dds"
+	}
+
 
 
 

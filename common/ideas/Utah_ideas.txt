@@ -1,0 +1,45 @@
+ideas = {
+  #like the utah place scoob
+	country = {
+    UTU_mormonchurch = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = UTU_mormonchurch
+
+      modifier = {
+        political_power_gain = -0.10
+        stability_factor = .1
+        justify_war_goal_time = 1
+      }
+    }
+    UTU_greatdepression = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = worse_depression
+
+      modifier = {
+        political_power_gain = -0.40
+        stability_factor = -0.18
+        consumer_goods_factor = 0.25
+        communism_drift = 0.005
+        socialist_drift = 0.02
+      }
+    }
+  }
+}

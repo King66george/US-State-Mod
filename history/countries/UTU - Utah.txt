@@ -124,7 +124,7 @@ set_technology = {
 
 
 set_convoys = 10
-set_stability = 0.50
+set_stability = 0.35
 
 set_politics = {
 
@@ -134,17 +134,18 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-	home_of_the_free
+	UTU_mormonchurch
+	UTU_greatdepression
 }
 set_popularities = {
 	democratic = 70
-	socialist = 10
-	theocratism = 10
+	socialist = 5
+	theocratism = 15
 	communism = 2
 	monarchy = 8
 }
 1939.1.1 = {
-	set_stability = 0.50
+	set_stability = 0.35
 
 	set_politics = {
 		ruling_party = democratic
@@ -155,8 +156,8 @@ set_popularities = {
 }
 set_popularities = {
 	democratic = 70
-	socialist = 10
-	theocratism = 10
+	socialist = 5
+	theocratism = 15
 	communism = 2
 	monarchy = 8
 }

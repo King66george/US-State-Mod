@@ -113,6 +113,19 @@ bookmarks = {
 				vavmonarchy_ethos
 			}
 		}
+		"UTU"= {
+			minor = yes
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				#
+			}
+			focuses = {
+				UTU_turn_to_church
+				UTU_trade_idaho
+				UTU_withdrawl_advisors_nevada
+			}
+		}
 
 		######################<--Inserted For Testing Purposes
 		#"WAW" = {
