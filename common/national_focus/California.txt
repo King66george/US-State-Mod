@@ -680,6 +680,7 @@ focus_tree = {
 		y = 1
 			completion_reward = {
 					378 = {
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = infrastructure
 									level = 1
@@ -687,6 +688,7 @@ focus_tree = {
 								}
 						}
 					797 = {
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = infrastructure
 									level = 1
@@ -694,6 +696,7 @@ focus_tree = {
 								}
 						}
 					967 = {
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = infrastructure
 									level = 2
@@ -701,6 +704,7 @@ focus_tree = {
 								}
 						}
 					799 = {
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = infrastructure
 									level = 1
@@ -708,9 +712,48 @@ focus_tree = {
 								}
 						}
 					798 = {
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = infrastructure
 									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+
+	focus = {
+		id = CAC_genericindustry12
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = CAC_genericindustry4
+		}
+		x = 8
+		y = 2
+			completion_reward = {
+					378 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+					797 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = dockyard
+									level = 1
+									instant_build = yes
+								}
+						}
+					967 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -2901,6 +2944,182 @@ focus_tree = {
 					remove_ideas = CAC_unloyalarmy
 				}
 
+	}
+
+	focus = {
+		id = CAC_navalindustry1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		x = 13
+		y = 10
+		available = {
+				has_country_flag = CAC_electedpresident
+			}
+		completion_reward = {
+			973 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+				}
+			798 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+				}
+			967 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+				}
+		}
+	}
+
+	focus = {
+		id = CAC_navalindustry2
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		x = 14
+		y = 11
+		prerequisite = {
+			focus = CAC_navalindustry1
+		}
+		mutually_exclusive = {
+			focus = CAC_navalindustry3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_carrier_primacy
+				bonus = 0.75
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = CAC_navalindustry3
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		x = 12
+		y = 11
+		prerequisite = {
+			focus = CAC_navalindustry1
+		}
+		mutually_exclusive = {
+			focus = CAC_navalindustry2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_battleship_primacy
+				bonus = 0.75
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = CAC_navalindustry4
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		x = 13
+		y = 12
+		prerequisite = {
+			focus = CAC_navalindustry2 focus = CAC_navalindustry3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_expand_the_USMC
+				bonus = 1.0
+				uses = 1
+				technology = marines2
+				technology = marines3
+			}
+		}
+	}
+	focus = {
+		id = CAC_navalindustry7
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		x = 13
+		y = 13
+		prerequisite = {
+			focus = CAC_navalindustry4
+		}
+		completion_reward = {
+			add_ideas = CAC_intensemarinetraining
+		}
+	}
+	focus = {
+		id = CAC_navalindustry6
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		x = 15
+		y = 12
+		prerequisite = {
+			focus = CAC_navalindustry2 focus = CAC_navalindustry3
+		}
+			completion_reward = {
+				378 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+						}
+					}
+					972 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+							}
+						}
+					968 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+							}
+						}
+				}
+	}
+	focus = {
+		id = CAC_navalindustry5
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		x = 11
+		y = 12
+		prerequisite = {
+			focus = CAC_navalindustry2 focus = CAC_navalindustry3
+		}
+		completion_reward = {
+						add_tech_bonus = {
+							name = USA_fleet_submarines
+							bonus = 0.50
+							uses = 2
+							category = ss_tech
+						}
+						add_ideas = CAC_submarinewarfare
+						if = {
+							limit = {
+								has_dlc = "Man the Guns"
+							}
+							set_technology = { cruiser_submarines = 1 }
+						}
+				}
+		}
 	}
 
 	#ending focus tree bracket DO NOT put focuses past this line

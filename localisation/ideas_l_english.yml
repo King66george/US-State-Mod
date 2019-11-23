@@ -2752,7 +2752,8 @@
  CAC_unloyalarmy_desc:0 "The Army of California swore an oath to Frank Merriam after the collapse of the United States, with the new undemocratic president in power the army refuses to serve this "new" California and rumors of a coup are by the military are common to hear."
  CAC_dustbowlmigration:0 "The Dust Bowl Migration"
  CAC_dustbowlmigration_desc:0 "California was not affected by the Dust Bowl directly, but it has been causing mass migrants from other states to come to California in hopes of a better life. This has caused some problems for the government and finding a job can be hard for normal citizens."
-
+ CAC_submarinewarfare:0 "Submarine Warfare"
+ CAC_intensemarinetraining:0 "Intensive Marine Training"
  ########################################Political Advisors###########################################
  robert_bobbitt:0 "Robert L. Bobbit"
  kenneth_spencer:0 "Kenneth A. Spencer"
