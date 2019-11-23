@@ -17,7 +17,7 @@ ideas = {
 
       modifier = {
         political_power_gain = -0.10
-        stability_factor = .10
+        stability_factor = 10
         justify_war_goal_time = 1
       }
     }

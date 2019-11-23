@@ -1,0 +1,103 @@
+add_namespace = utah
+
+country_event = {
+	id = utah.1
+	title = arizona_question.t
+	desc = arizona_question.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+		tag = UTU
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = arizona_question_option_1.a
+		ai_chance = { factor = 60 }
+		add_state_claim = 377
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.1
+		}
+		add_popularity = {
+    		ideology = monarchy
+    		popularity = 0.05
+		}
+	}
+	option = {
+		name = arizona_question_option_2.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.05
+		add_popularity = {
+    		ideology = fascism
+    		popularity = -0.05
+		}
+		give_guarantee = AZA
+		give_military_access = AZA
+		diplomatic_relation = {
+    		country = AZA
+    		relation = non_aggression_pact
+    		active = yes
+    	}
+	}
+}
+country_event = {
+    id = utah.2
+    title = offer_wyoming.t
+    desc = offer_wyoming.d
+    picture = GFX_report_event_election_vote
+
+    trigger = {
+      tag = UTU
+    }
+
+    is_triggered_only = yes
+
+    option = {
+      name = offer_wyoming_option_1.a
+      ai_chance = { factor = 70 }
+      WYW = {
+        country_event = {
+          id = wyoming.1
+        }
+      }
+      add_popularity = {
+          ideology = monarchy
+          popularity = 0.02
+      }
+
+    }
+    option = {
+      name = offer_wyoming_option_2.b
+      ai_chance = { factor = 30 }
+      give_guarantee = WYW
+      give_military_access = WYW
+      diplomatic_relation = {
+          country = WYW
+          relation = non_aggression_pact
+          active = yes
+        }
+    }
+}
+country_event = {
+  	id = utah.3
+  	title = wyoming_accepts.t
+  	desc = wyoming_accepts.d
+  	picture = GFX_report_event_election_vote
+
+  	trigger = {
+  		tag = UTU
+  	}
+
+  	is_triggered_only = yes
+
+  	option = {
+  		name = wyoming_accepts_option.a
+  		puppet = WYW
+  		add_political_power = -25
+  		country_event = {
+  			id = utahpuppets.1
+  		}
+   }
+}

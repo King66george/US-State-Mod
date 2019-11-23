@@ -30,7 +30,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_establish_relations_nevada
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_UTU_nevada_friend
 		x = -11
 		y = 1
 		cost = 10
@@ -341,7 +341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UTU_an_offer_to_wyoming
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_UTU_wyoming_deal
 		x = -11
 		y = 3
 		cost = 10

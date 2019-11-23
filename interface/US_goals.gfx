@@ -1076,6 +1076,14 @@ SpriteType = {
   name = "GFX_UTU_friend_colorado"
   texturefile = "gfx/interface/goals/UTU_friend_colorado.dds"
 }
+SpriteType = {
+  name = "GFX_UTU_nevada_friend"
+  texturefile = "gfx/interface/goals/UTU_nevada_friend.dds"
+}
+SpriteType = {
+  name = "GFX_UTU_wyoming_deal"
+  texturefile = "gfx/interface/goals/UTU_wyoming_deal.dds"
+}
 
 ############################################################################################################################
 }
