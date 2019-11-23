@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = QBC_quebecois_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
+		cost = 10.00
 		x = 4
 		y = 0
 			ai_will_do = {
@@ -35,10 +35,10 @@ focus_tree = {
 							limit = {
 									has_state_flag = CAN_halifax_shipyards_DY
 								}
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = dockyard
-									level = 3
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -67,19 +67,19 @@ focus_tree = {
 	focus = {
 		id = QBC_political_effort
 		icon = GFX_Generic_Canada
-		cost = 1.00
+		cost = 3
 		x = 50
 		y = 0
 			available_if_capitulated = yes
 			completion_reward = {
-					add_political_power = 120
+					add_political_power = 25
 				}
 
 	}
 	focus = {
 		id = QBC_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		cost = 5.00
+		cost = 10.00
 		x = 23
 		y = 0
 			available_if_capitulated = yes
@@ -88,11 +88,6 @@ focus_tree = {
 					if = {
 							limit = {
 									has_country_flag = aviation_effort_AB
-								}
-							add_building_construction = {
-									type = air_base
-									level = 2
-									instant_build = yes
 								}
 						}
 					add_tech_bonus = {
@@ -122,11 +117,6 @@ focus_tree = {
 													size > 1
 												}
 										}
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
 									ROOT = {
 											set_country_flag = aviation_effort_AB
 										}
@@ -141,20 +131,10 @@ focus_tree = {
 												}
 										}
 								}
-							capital_scope = {
-									add_building_construction = {
-											type = air_base
-											level = 2
-											instant_build = yes
-										}
-									ROOT = {
-											set_country_flag = aviation_effort_AB
-										}
-								}
 						}
 					add_tech_bonus = {
 							name = air_doc_bonus
-							bonus = 1.0
+							bonus = 0.50
 							uses = 1
 							category = air_doctrine
 						}
@@ -164,7 +144,7 @@ focus_tree = {
 	focus = {
 		id = QBC_industrial_effort
 		icon = GFX_goal_generic_production
-		cost = 5.00
+		cost = 10
 		x = 15
 		y = 0
 			available_if_capitulated = yes
@@ -172,7 +152,7 @@ focus_tree = {
 					add_tech_bonus = {
 							name = industrial_bonus
 							bonus = 1.0
-							uses = 2
+							uses = 1
 							category = industry
 						}
 				}
@@ -184,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = QBC_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 4.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_quebecois_shipyards
 		}
@@ -207,7 +187,7 @@ focus_tree = {
 					add_tech_bonus = {
 							name = fleet_in_being_bonus
 							bonus = 0.75
-							uses = 3
+							uses = 1
 							category = fleet_in_being_tree
 						}
 				}
@@ -246,11 +226,10 @@ focus_tree = {
 
 }
 			completion_reward = {
-					navy_experience = 25
 					add_tech_bonus = {
 							name = CAN_escort_fleet
-							bonus = 1
-							uses = 2
+							bonus = 0.50
+							uses = 1
 							category = convoy_defense_tree
 						}
 				}
@@ -283,8 +262,8 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = CAN_light_cruiser_effort
-							bonus = 1
-							ahead_reduction = 2
+							bonus = 0.50
+							ahead_reduction = 1
 							uses = 1
 							category = cl_tech
 						}
@@ -294,7 +273,7 @@ focus_tree = {
 	focus = {
 		id = QBC_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 4.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_light_cruiser_effort
 		}
@@ -328,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = QBC_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		cost = 4.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_large_navy
 		}
@@ -354,9 +333,9 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = ss_bonus
-							bonus = 0.75
-							ahead_reduction = 1
-							uses = 2
+							bonus = 0.50
+							ahead_reduction = 0.50
+							uses = 1
 							technology = early_submarine
 							technology = basic_submarine
 							technology = improved_submarine
@@ -442,8 +421,8 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = CAN_destroyer_effort
-							bonus = 1
-							ahead_reduction = 2
+							bonus = 0.75
+							ahead_reduction = 0.50
 							uses = 1
 							category = dd_tech
 						}
@@ -479,11 +458,10 @@ focus_tree = {
 
 }
 			completion_reward = {
-					navy_experience = 25
 					add_tech_bonus = {
 							name = CAN_fleet_in_being
 							bonus = 1
-							uses = 2
+							uses = 1
 							category = cat_fleet_in_being
 						}
 				}
@@ -512,22 +490,16 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					navy_experience = 25
 					add_tech_bonus = {
 							name = capital_ships_bonus
-							bonus = 0.75
+							bonus = 0.50
 							ahead_reduction = 1
-							uses = 3
+							uses = 1
 							technology = basic_battlecruiser
 							technology = basic_battleship
 							technology = improved_battleship
-							technology = advanced_battleship
-							technology = heavy_battleship
-							technology = heavy_battleship2
 							technology = early_carrier
 							technology = basic_carrier
-							technology = improved_carrier
-							technology = advanced_carrier
 						}
 				}
 
@@ -560,7 +532,7 @@ focus_tree = {
 					add_tech_bonus = {
 							name = CAN_habakkuk_carrier
 							bonus = 1
-							uses = 2
+							uses = 1
 							category = cv_tech
 						}
 				}
@@ -600,7 +572,7 @@ focus_tree = {
 	focus = {
 		id = QBC_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_industrial_effort
 		}
@@ -680,10 +652,7 @@ focus_tree = {
 	focus = {
 		id = QBC_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5.00
-		prerequisite = {
-			focus = QBC_infrastructure_effort
-		}
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_infrastructure_effort
 		}
@@ -742,7 +711,7 @@ focus_tree = {
 	focus = {
 		id = QBC_army_effort
 		icon = GFX_Generic_Volunteer_Corps
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_production_effort
 		}
@@ -753,12 +722,9 @@ focus_tree = {
 					army_experience = 25
 					add_tech_bonus = {
 							name = land_doc_bonus
-							bonus = 3.0
+							bonus = 1
 							uses = 1
 							category = land_doctrine
-						}
-					hidden_effect = {
-							load_oob = QBC_focus_oob
 						}
 				}
 
@@ -766,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = QBC_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_army_effort
 		}
@@ -781,7 +747,7 @@ focus_tree = {
 						}
 					add_tech_bonus = {
 							name = infantry_artillery_bonus
-							bonus = 1.0
+							bonus = 0.75
 							uses = 1
 							category = infantry_weapons
 							category = artillery
@@ -792,7 +758,7 @@ focus_tree = {
 	focus = {
 		id = QBC_bike_effort
 		icon = GFX_goal_generic_build_tank
-		cost = 2.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_army_effort
 		}
@@ -809,7 +775,7 @@ focus_tree = {
 	focus = {
 		id = QBC_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_industrial_effort
 		}
@@ -936,10 +902,10 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -996,10 +962,10 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 4
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -1009,7 +975,7 @@ focus_tree = {
 	focus = {
 		id = QBC_infrastructure_effort_3
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_industrial_effort
 		}
@@ -1136,10 +1102,10 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 3
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
-									level = 3
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -1149,7 +1115,7 @@ focus_tree = {
 	focus = {
 		id = QBC_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_production_effort_3
 			focus = QBC_production_effort_4
@@ -1209,7 +1175,7 @@ focus_tree = {
 	focus = {
 		id = QBC_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_infrastructure_effort_3
 		}
@@ -1255,10 +1221,10 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -1268,7 +1234,7 @@ focus_tree = {
 	focus = {
 		id = QBC_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_production_effort_4
 			focus = QBC_production_effort_2
@@ -1298,7 +1264,7 @@ focus_tree = {
 	focus = {
 		id = QBC_prep_effort
 		icon = GFX_Generic_Crouched_Soldier
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_production_effort_2
 		}
@@ -1308,15 +1274,6 @@ focus_tree = {
 			completion_reward = {
 					add_ideas = paramilitarism_focus
 					army_experience = 25
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 3.0
-							uses = 1
-							category = land_doctrine
-						}
-					hidden_effect = {
-							load_oob = QBC_foreignlegion_oob
-						}
 				}
 
 	}
@@ -1335,11 +1292,6 @@ focus_tree = {
 							type = infantry_equipment_0
 							amount = 2000
 							producer = ITA
-						}
-					add_equipment_to_stockpile = {
-							type = support_equipment_1
-							amount = 250
-							producer = FRA
 						}
 					add_tech_bonus = {
 							name = infantry_artillery_bonus
@@ -1365,8 +1317,8 @@ focus_tree = {
 					army_experience = 25
 					add_tech_bonus = {
 							name = land_doc_bonus
-							bonus = 1.0
-							uses = 2
+							bonus = 0.75
+							uses = 1
 							category = land_doctrine
 						}
 				}
@@ -1375,7 +1327,7 @@ focus_tree = {
 	focus = {
 		id = QBC_fighter_focus
 		icon = GFX_goal_generic_air_fighter
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_aviation_effort
 		}
@@ -1385,15 +1337,11 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = fighter_bonus
-							bonus = 1.0
-							uses = 2
+							bonus = 0.50
+							uses = 1
 							technology = early_fighter
 							technology = fighter1
-							technology = fighter2
-							technology = fighter3
 							technology = heavy_fighter1
-							technology = heavy_fighter2
-							technology = heavy_fighter3
 						}
 				}
 
@@ -1401,7 +1349,7 @@ focus_tree = {
 	focus = {
 		id = QBC_motorization_effort
 		icon = GFX_goal_generic_army_motorized
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_prep_effort
 		}
@@ -1414,7 +1362,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = motorized_bonus
-							bonus = 3.0
+							bonus = 2.5
 							technology = motorised_infantry
 						}
 				}
@@ -1423,7 +1371,7 @@ focus_tree = {
 	focus = {
 		id = QBC_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_motorization_effort
 		}
@@ -1433,8 +1381,8 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = armor_bonus
-							bonus = 1.5
-							uses = 2
+							bonus = 1
+							uses = 1
 							category = armor
 						}
 				}
@@ -1443,7 +1391,7 @@ focus_tree = {
 	focus = {
 		id = QBC_special_forces
 		icon = GFX_goal_generic_special_forces
-		cost = 5.00
+		cost = 15
 		prerequisite = {
 			focus = QBC_armor_effort
 		}
@@ -1460,11 +1408,8 @@ focus_tree = {
 							bonus = 1.0
 							uses = 1
 							technology = paratroopers
-							technology = paratroopers2
 							technology = marines
-							technology = marines2
 							technology = tech_mountaineers
-							technology = tech_mountaineers2
 						}
 				}
 
@@ -1590,8 +1535,8 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = CAN_the_sabre_project
-							ahead_reduction = 2
-							uses = 2
+							ahead_reduction = 1
+							uses = 1
 							category = rocketry
 							category = jet_technology
 						}
@@ -1635,8 +1580,8 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = CAS_bonus
-							bonus = 1.0
-							ahead_reduction = 2
+							bonus = 0.50
+							ahead_reduction = 1
 							uses = 1
 							category = cas_bomber
 						}
@@ -1656,11 +1601,9 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = bomber_bonus
-							bonus = 1.0
-							uses = 2
+							bonus = 0.50
+							uses = 1
 							technology = strategic_bomber1
-							technology = strategic_bomber2
-							technology = strategic_bomber3
 							category = tactical_bomber
 						}
 				}
@@ -2353,7 +2296,7 @@ focus_tree = {
 	focus = {
 		id = QBC_convert_venez
 		icon = GFX_focus_prc_agrarian_socialist
-		cost = 14.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_national_arsenal
 		}
@@ -2461,7 +2404,6 @@ focus_tree = {
 
 }
 			completion_reward = {
-					add_research_slot = 1
 					add_ideas = QUBECOIS_research
 				}
 
@@ -3385,7 +3327,7 @@ focus_tree = {
 	focus = {
 		id = QBC_militarism2
 		icon = GFX_goal_tfv_can_compromise_with_quebec
-		cost = 10.00
+		cost = 15.00
 		prerequisite = {
 			focus = QBC_ultra_nationalism_focus
 			focus = QBC_nationalism_focus
@@ -3395,7 +3337,6 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					army_experience = 20
-					create_faction = unitedfrenchlegion
 					add_ideas = deterrence
 					set_rule = {
 							can_send_volunteers = yes
@@ -3508,6 +3449,7 @@ focus_tree = {
 }
 			completion_reward = {
 					add_ideas = CAN_commit_to_the_war
+					create_faction = unitedfrenchlegion
 				}
 
 	}
@@ -3950,7 +3892,7 @@ focus_tree = {
 	focus = {
 		id = QBC_economic_effort
 		icon = GFX_goal_generic_consumer_goods
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_construction_effort_3
 			focus = QBC_construction_effort_2
@@ -3971,7 +3913,7 @@ focus_tree = {
 	focus = {
 		id = QBC_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_equipment_effort
 		}
@@ -3982,7 +3924,7 @@ focus_tree = {
 					army_experience = 25
 					add_tech_bonus = {
 							name = land_doc_bonus
-							bonus = 1.0
+							bonus = 0.75
 							uses = 1
 							category = land_doctrine
 						}
@@ -3992,7 +3934,7 @@ focus_tree = {
 	focus = {
 		id = QBC_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		cost = 7.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_equipment_effort_3
 			focus = QBC_doctrine_effort
@@ -4035,7 +3977,7 @@ focus_tree = {
 	focus = {
 		id = QBC_more_slots
 		icon = GFX_goal_generic_construction
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_alu_add
 			focus = QBC_steel_add
@@ -4083,7 +4025,7 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = industrial_complex
 									level = 1
@@ -4139,7 +4081,7 @@ focus_tree = {
 	focus = {
 		id = QBC_steel_add
 		icon = GFX_focus_generic_steel
-		cost = 15.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_begin_digging
 		}
@@ -4154,7 +4096,7 @@ focus_tree = {
 					random_owned_controlled_state = {
 							add_resource = {
 									type = steel
-									amount = 12
+									amount = 8
 								}
 						}
 				}
@@ -4220,7 +4162,7 @@ focus_tree = {
 	focus = {
 		id = QBC_global_player
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 2.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_secret_weapons
 		}
@@ -4228,7 +4170,7 @@ focus_tree = {
 		y = 11
 			available_if_capitulated = yes
 			completion_reward = {
-					add_political_power = 100
+					add_political_power = 75
 					add_stability = 0.05
 				}
 
@@ -4236,7 +4178,7 @@ focus_tree = {
 	focus = {
 		id = QBC_balanced_budget
 		icon = GFX_focus_mex_privatisation
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = QBC_global_player
 			focus = QBC_ref_add
@@ -4315,10 +4257,10 @@ focus_tree = {
 											include_locked = yes
 										}
 								}
-							add_extra_state_shared_building_slots = 1
+							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = arms_factory
-									level = 4
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -4370,21 +4312,23 @@ focus_tree = {
 	}
 	focus = {
 		id = QBC_extra_tech_slot_2
-		icon = GFX_focus_research
+		icon = GFX_focus_generic_steel
 		cost = 10.00
 		prerequisite = {
 			focus = QBC_extra_tech_slot
 		}
 		x = 17
 		y = 9
-			available = {
-					num_of_factories > 50
-				}
 			cancel_if_invalid = no
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			completion_reward = {
-					add_research_slot = 1
+					random_owned_controlled_state = {
+							add_resource = {
+									type = steel
+									amount = 8
+								}
+						}
 				}
 
 	}
@@ -4643,8 +4587,8 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = secret_bonus
-							bonus = 1.0
-							uses = 4
+							bonus = 0.50
+							uses = 2
 							category = electronics
 							category = nuclear
 							category = rocketry
@@ -5289,7 +5233,7 @@ focus_tree = {
 			completion_reward = {
 					add_tech_bonus = {
 							name = nuclear_bonus
-							ahead_reduction = 2
+							ahead_reduction = 1
 							category = nuclear
 						}
 				}
