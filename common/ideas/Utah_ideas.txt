@@ -101,5 +101,42 @@ ideas = {
         research_speed_factor = 0.1
       }
     }
+##############################################
+    UTU_educationreform = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_UTU_educationreform
+
+      modifier = {
+        research_speed_factor = 0.1
+      }
+    }
+###############################################
+    UTU_createjobs = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_WAW_industrial_reforms
+
+      modifier = {
+        production_speed_infrastructure_factor = 0.15
+        production_speed_industrial_complex_factor = 0.15
+      }
+    }
   }
 }

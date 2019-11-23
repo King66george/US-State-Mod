@@ -687,6 +687,52 @@ focus_tree = {
     		add_stability = -0.35
 		}
 	}
+#################################################
+###### DEMOCRATIC PATH ##########################
+#################################################
+	focus = {
+		id = UTU_education_reform
+		icon = GFX_Generic_Brain_Force_Plus
+		x = 15
+		y = 2
+		cost = 10
+		prerequisite = {
+        	focus = UTU_remember_the_union
+        }
+		available_if_capitulated = yes
+		completion_reward {
+    		add_stability = .03
+				add_ideas = UTU_educationreform
+		}
+	}
+	focus = {
+		id = UTU_create_jobs
+		icon = GFX_Generic_War_Propaganda02
+		x = 16
+		y = 3
+		cost = 10
+		prerequisite = {
+        	focus = UTU_education_reform
+        }
+		available_if_capitulated = yes
+		completion_reward {
+			add_ideas = UTU_createjobs
+		}
+	}
+	focus = {
+		id = UTU_mormon_issue
+		icon = GFX_Generic_Lookout
+		x = 13
+		y = 2
+		cost = 10
+		prerequisite = {
+        	focus = UTU_remember_the_union
+        }
+		available_if_capitulated = yes
+		completion_reward {
+			#some kind of event
+		}
+	}
 #########################
 #### theocratic path ####
 #########################
