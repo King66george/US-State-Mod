@@ -119,11 +119,12 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				#
+				UTU_mormonchurch
+				UTU_greatdepression
 			}
 			focuses = {
 				UTU_turn_to_church
-				UTU_trade_idaho
+				UTU_trade_deal_with_IDI
 				UTU_withdrawl_advisors_nevada
 			}
 		}

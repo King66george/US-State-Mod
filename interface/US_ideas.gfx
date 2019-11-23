@@ -342,8 +342,12 @@ spriteTypes = {
 
 	#Utah
 	spriteType = {
-		name = "GFX_UTU_mormonchurch"
+		name = "GFX_idea_UTU_mormonchurch"
 		texturefile = "gfx/interface/ideas/UTU_mormonchurch.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UTU_turntochurch"
+		texturefile = "gfx/interface/ideas/UTU_turntochurch.dds"
 	}
 
 

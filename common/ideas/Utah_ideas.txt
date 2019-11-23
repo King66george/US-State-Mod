@@ -1,6 +1,7 @@
+### Like, scoob, this file, was like, make by like, some dude named Clenchman, scoob! ######
 ideas = {
-  #like the utah place scoob
 	country = {
+###### STARTING SPIRITS #####
     UTU_mormonchurch = {
       allowed = {
           always = no
@@ -12,11 +13,11 @@ ideas = {
 
       removal_cost = -1
 
-      picture = UTU_mormonchurch
+      picture = GFX_idea_UTU_mormonchurch
 
       modifier = {
         political_power_gain = -0.10
-        stability_factor = .1
+        stability_factor = .10
         justify_war_goal_time = 1
       }
     }
@@ -39,6 +40,25 @@ ideas = {
         consumer_goods_factor = 0.25
         communism_drift = 0.005
         socialist_drift = 0.02
+      }
+    }
+###### Focus Additions #####
+    UTU_turntochurch = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = 1000
+
+      picture = GFX_idea_UTU_turntochurch
+
+      modifier = {
+        fascism_drift = 0.01
+        theocratism_drift = 0.05
       }
     }
   }

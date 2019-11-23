@@ -577,9 +577,10 @@ focus_tree = {
     		}
     		add_popularity = {
     			ideology = theocratism
-    			popularity = 0.21
+    			popularity = 0.1
     		}
-    		add_stability = .01
+    		add_stability = .02
+				add_ideas = UTU_turntochurch
 		}
 	}
 	focus = {
