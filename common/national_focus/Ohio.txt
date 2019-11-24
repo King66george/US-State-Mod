@@ -476,11 +476,6 @@ focus_tree = {
 		prerequisite = {
 			focus = OHO_firststrike
 		}
-		bypass = {
-			NOT = {
-				country_exists = INI
-			}
-		}
 		x = 10
 		y = 5
 		available = {

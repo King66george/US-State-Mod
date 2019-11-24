@@ -440,3 +440,6 @@ RRG_democratic_DEF:0 "the Republic of the Rio Grande"
 RRG_communism_DEF:0 "the People's Republic of the Rio Grande"
 RRG_fascism_DEF:0 "the Rio Grande Military Junta"
 ###########################################################
+OTR_democratic:0 "Old Texas Republic"
+OTR_democratic_ADJ:0 "Texan"
+OTR_democratic_DEF:0 "The Old Texas Republic"
