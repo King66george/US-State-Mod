@@ -22,7 +22,7 @@
 
     option = {
       name = washington.2.a
-      load_oob = WAW_lm
+      load_oob = WAW_militia_untrained
       ai_chance = { factor = 50 }
     }
 
@@ -155,5 +155,36 @@
       name = washington.8.b
       ai_chance = { factor = 0 }
       country_event = washington.10
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  country_event = {
+    id = washington.11
+    title = washington.11.t
+    desc = washington.11.d
+    picture = GFX_event_WAW_boeing
+    is_triggered_only = yes
+
+    option = {
+      name = washington.11.a
+      ai_chance = { factor = 100 }
     }
   }

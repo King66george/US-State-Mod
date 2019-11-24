@@ -130,7 +130,7 @@ set_technology = {
 
 
 
-set_convoys = 100
+set_convoys = 138
 set_stability = 0.51
 
 set_politics = {
@@ -147,9 +147,11 @@ add_ideas = {
 	WAW_unfunded_military
 }
 set_popularities = {
-	democratic = 85
+	democratic = 70
 	communism = 10
-	fascism = 5
+	fascism = 8
+	neutrality = 12
+
 }
 create_country_leader = {
 	name = "Clarence D. Martin"
@@ -170,7 +172,7 @@ create_country_leader = {
 	}
 }
 1939.1.1 = {
-	set_stability = 0.6
+	set_stability = 0.51
 
 	set_politics = {
 
@@ -181,9 +183,10 @@ create_country_leader = {
 	}
 }
 set_popularities = {
-	democratic = 85
+	democratic = 70
 	communism = 10
-	fascism = 5
+	fascism = 8
+	neutrality = 12
 }
 
 create_corps_commander = {

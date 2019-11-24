@@ -198,4 +198,31 @@ ideas = {
 	}
  }
 }
-}
+
+##############################MANUFACTURERS##########################################
+aircraft_manufacturer = {
+
+	designer = Yes
+
+		WAW_boeing = {
+
+		allowed = {
+			original_tag = WAW
+		}
+
+		available = {
+			has_completed_focus = WAW_fund_the_boeing_company
+		}
+
+		research_bonus = {
+			air_equipment = 0.15
+		}
+
+		traits = { heavy_aircraft_manufacturer }
+
+		modifier = {
+
+		}
+	 }
+  }
+ }

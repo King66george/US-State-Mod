@@ -83,6 +83,7 @@
  idea_WAW_crippled_economy_desc:0 ""
  idea_WAW_emigrating_workforce:0 "Emigrating Workforce"
  WAW_ideas_trade_reforms:0 "Trade Reforms"
+ WAW_boeing:0 "Boeing"
 
 #Events
  #Cascadian United Front
@@ -128,6 +129,10 @@
   washington.10.t:0 "Washington Request Oil For Chromium"
   washington.10.d:0 ""
   washington.10.a:0 ""
+ #Washington Hires Boeing
+  washington.11.t:0 "Washington Hires Boeing"
+  washington.11.d:0 "Following the Great Collapse, we reached out to several aircraft manufacturers to revitalize our Air Force. Boeing, staying true to their roots, was the company most interested in military cooperation. A partnership between Boeing and the air force would certainly be beneficial for our strategic air campaigns. We should reach out and finalize the deal."
+  washington.11.a:0 "Brilliant!"
 
 #Custom Tooltips
  #Appease California

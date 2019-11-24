@@ -339,6 +339,10 @@ spriteTypes = {
 		name = "GFX_idea_WAW_unfunded_military"
 		texturefile = "gfx/interface/ideas/WAW_unfunded_military.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_WAW_boeing"
+		texturefile = "gfx/interface/ideas/WAW_boeing.dds"
+	}
 
 	#Utah
 	spriteType = {

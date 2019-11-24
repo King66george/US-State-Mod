@@ -18,62 +18,62 @@ units = {
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = Local Milita
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
   division = {
       name = "Local Milita"
       location = 7315
       division_template = "Local Civilian Milita"
       start_experience_factor = 0.01
-      start_equipment factor = 1
+      start_equipment_factor = 1
   }
 }

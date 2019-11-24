@@ -1,19 +1,14 @@
 ideas = {
 	political_advisor = {
 		generic_communist_revolutionary2 = {
-			
+
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST} }
-				NOT = {
-					OR = {
-						has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
-					} 
-				}
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-	
-			
+
+
 			traits = { communist_revolutionary }
-	
+
 			do_effect = {
 
 					NOT = {
@@ -21,49 +16,46 @@ ideas = {
 					}
 
 			}
-	
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 		generic_democratic_reformer2 = {
-			
+
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC tag = AST tag = RAJ tag = CAN tag = SAF tag = WHY tag = MAN tag = BEL tag = TIB tag = BHU} }
-				NOT = {
-					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
-				}
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
-			
+
+
 			traits = { democratic_reformer }
-	
+
 			do_effect = {
-			
+
 					NOT = {
 						has_government = democratic
 					}
-				
+
 			}
-	
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 		generic_fascist_demagogue2 = {
-			
+
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = WHY tag = MAN tag = CZE tag = BHU tag = BEL tag = TIB tag = BHU tag = HOL} }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
 			}
-			
-			
+
+
 			traits = { fascist_demagogue }
-	
+
 			do_effect = {
 
 					NOT = {
@@ -71,17 +63,18 @@ ideas = {
 					}
 
 			}
-	
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		idea_communist_central_management = {
-		
-		
+
+
 			picture = communist_central_management
-		
+
 			allowed = {
+			NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				has_government = communism
 			}
 
@@ -98,13 +91,14 @@ ideas = {
 				naval_manufacturer_cost_factor = -0.50
 				materiel_manufacturer_cost_factor = -0.50
 			}
-		}		
-		
+		}
+
 		idea_state_security_ministry = {
-			
+
 			picture = generic_secret_police
-			
+
 			allowed = {
+			NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				has_government = communism
 			}
 
@@ -113,26 +107,26 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				enemy_partisan_effect = -0.1
 				foreign_subversive_activites = -0.4
 			}
 		}
-		
+
 		USAgeneric_silent_workhorse = {
-		
+
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
-	
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			available = {
 			}
-			
+
 			traits = { silent_workhorse }
-	
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -141,49 +135,49 @@ ideas = {
 		USAgeneric_cap = {
 
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
-		
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { captain_of_industry }
 		}
 
 		USAgeneric_pop = {
 
-			picture = generic_political_advisor_europe_1			
-			
+			picture = generic_political_advisor_europe_1
+
 			allowed = {
-		
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { popular_figurehead }
 		}
 
 		USAgeneric_qua = {
 
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
-	
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { quartermaster_general }
 		}
 	}
 
 	army_chief = {
-		
+
 		KMTgeneric_reg2 = {
 
-			
-			
+
+
 			allowed = {
-		
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { army_regrouping_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -191,132 +185,146 @@ ideas = {
 
 		USAgeneric_mora2 = {
 
-			
-			
+
+
 			allowed = {
-		
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			available = {
 			}
-			
+
 			traits = { army_chief_morale_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		generic_army_chief_off2 = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { army_chief_offensive_1 }
 		}
 
 		generic_army_chief_def2 = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { army_chief_defensive_1 }
 		}
 	}
 
 	air_chief = {
 		generic_air_close_air_sup2 = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { air_close_air_support_2 }
 		}
-	
+
 		generic_air_chief_all_weather2 = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
-			traits = { air_chief_all_weather_2 }			
+
+			traits = { air_chief_all_weather_2 }
 		}
 		USAgeneric_air_chief = {
-			
-			
-			
+
+
+
 			allowed = {
-			
-				
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
+
 			}
-			
+
 			available = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { air_chief_safety_1 }
-			
+
+						allowed = {
+							NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
+						}
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-	
+
 	navy_chief = {
 
 		USAgeneric_navy_chief = {
-			
-			
+
+
 
 			allowed = {
-			
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-					
+
 			traits = { navy_chief_reform_1 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		generic_navy_chief_decisive_bat2 = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { navy_chief_decisive_battle_2 }
 		}
 
 		generic_navy_anti_submarine2 = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { navy_anti_submarine_2 }
 		}
 	}
 
-	
+
 
 	political_advisor = {
 
 		generic_captain_of_industry2 = {
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { captain_of_industry }
 		}
-		
+
 		generic_fortification_engineer2 = {
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { fortification_engineer }
 		}
 
 		generic_war_industrialist2 = {
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
+
 			traits = { war_industrialist }
 		}
 	}
@@ -324,13 +332,13 @@ ideas = {
 
 		USAgeneric_def2 = {
 
-			
+
 			allowed = {
-			
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { army_entrenchment_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -338,14 +346,14 @@ ideas = {
 
 		USAgeneric_inf2 = {
 
-			
-			
+
+
 			allowed = {
-			
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { army_infantry_1 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -353,68 +361,74 @@ ideas = {
 
 		USAgeneric_log2 = {
 
-			
+
 			allowed = {
-			
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 			}
-			
+
 			traits = { army_logistics_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		generic_army_art2 = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
-			traits = { army_artillery_1 }		
+
+			traits = { army_artillery_1 }
 		}
 
 
 		generic_navy_fleet_log2 = {
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
-			traits = { navy_fleet_logistics_1 }			
+
+			traits = { navy_fleet_logistics_1 }
 		}
 
 		generic_air_air_combat_trainer2 = {
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
-			traits = { air_air_combat_training_2 }			
+
+			traits = { air_air_combat_training_2 }
 		}
 
 
 
-	
+
 		generic_army_art = {
-			
+
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
-			traits = { army_artillery_1 }			
+
+			traits = { army_artillery_1 }
 		}
-		
+
 
 		generic_navy_fleet_log = {
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
-			traits = { navy_fleet_logistics_1 }			
+
+			traits = { navy_fleet_logistics_1 }
 		}
 
 		generic_air_air_combat_trainer = {
 
 			allowed = {
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = CZE tag = WHY tag = MAN tag = TIB tag = BEL tag = TIB tag = BHU tag = SAF tag = AST tag = WAW} }
 				}
-			
-			traits = { air_air_combat_training_2 }			
+
+			traits = { air_air_combat_training_2 }
 		}
 	}
 
