@@ -54,8 +54,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				cavalry_attack_factor = 0.25
-				cavalry_defence_factor = 0.15
+				cavalry_attack_factor = 0.50
+				cavalry_defence_factor = 0.20
 			}
 		}
 		TXT_idea_permrev = {
@@ -86,8 +86,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-			opinion_gain_monthly_same_ideology_factor = 0.5
-			trade_opinion_factor = 0.15
+				opinion_gain_monthly_same_ideology_factor = 0.5
+				trade_opinion_factor = 0.15
 			}
 		}
 			TXT_idea_tradepower = {
@@ -152,6 +152,94 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.15
 			}
 		}
+		TXT_idea_high_command_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				high_command_cost_factor = -0.25
+			}
+		}
+		TXT_idea_army_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.1
+				defence = 0.1
+			}
+		}
+		TXT_idea_defend_democracy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.1
+				defence = 0.15
+				offence = 0.10
+				partisan_effect = 0.15
+			}
+		}
+		TXT_idea_general_rearm = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        conscription = 0.05
+        production_speed_arms_factory_factor = 0.1
+        consumer_goods_factor = 0.05
+      }
+    }
+		TXT_idea_democratic_nationalism = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        war_support_factor = 0.10
+        conscription = 0.025
+        non_core_manpower = 0.02
+				fascism_drift = 0.005
+      }
+    }
+
 	}
 ##########Political Advisors###############
 	political_advisor = {
