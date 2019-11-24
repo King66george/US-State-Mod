@@ -62,10 +62,6 @@ country_event = {
           id = wyoming.1
         }
       }
-      add_popularity = {
-          ideology = monarchy
-          popularity = 0.02
-      }
 
     }
     option = {
@@ -100,4 +96,35 @@ country_event = {
   			id = utahpuppets.1
   		}
    }
+}
+country_event = {
+  	id = utah.4
+  	title = mormon_issue.t
+  	desc = mormon_issue.d
+  	picture = GFX_report_event_election_vote
+
+  	trigger = {
+  		tag = UTU
+  	}
+
+  	is_triggered_only = yes
+
+  	option = {
+  		name = mormon_issue_option.a
+      add_stability = -0.02
+   }
+   option = {
+     name = mormon_issue_option.b
+     set_country_flag = republicans_win
+     add_stability = -0.02
+  }
+  option = {
+    name = mormon_issue_option.c
+    set_country_flag = socialists_win
+    add_stability = -0.08
+		add_popularity = {
+    		ideology = socialist
+    		popularity = 0.05
+		}
+  }
 }

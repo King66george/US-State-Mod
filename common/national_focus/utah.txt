@@ -373,11 +373,6 @@ focus_tree = {
     			amount = 20
     			exporter = IDI
 			}
-			diplomatic_relation = {
-   				country = IDI
-    			relation = military_access
-    			active = yes
-			}
 		}
 	}
 	focus = {
@@ -523,7 +518,9 @@ focus_tree = {
 			}
 		}
 	}
+	##################################################################################
 #### start of utah political paths (beware, very long and possibly innaccurate) ####
+####################################################################################
 	focus = {
 		id = UTU_recover_efforts
 		icon = GFX_Generic_Bread_and_Peace
@@ -730,7 +727,42 @@ focus_tree = {
         }
 		available_if_capitulated = yes
 		completion_reward {
-			#some kind of event
+			country_event = {
+				id = utah.4
+			}
+		}
+	}
+	focus = {
+		id = UTU_investigate_mormons
+		icon = GFX_Generic_Military_Women
+		x = 12
+		y = 3
+		cost = 10
+		prerequisite = {
+	  	focus = UTU_mormon_issue
+			focus = UTU_increase_power_church
+	  }
+		available_if_capitulated = yes
+		completion_reward {
+			add_war_support = 0.05
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = UTU_seperation_from_state
+		icon = GFX_Generic_Parliament_Box
+		x = 14
+		y = 3
+		cost = 10
+		prerequisite = {
+	  	focus = UTU_mormon_issue
+	  }
+		prerequisite = {
+	  	focus = UTU_education_reform
+	  }
+		available_if_capitulated = yes
+		completion_reward {
+			add_ideas = UTU_seperationstate
 		}
 	}
 #########################
@@ -802,3 +834,4 @@ focus_tree = {
 		}
 	}
 }
+######clenchman stinky - FascistThanos

@@ -14,3 +14,8 @@
  wyoming_accepts.t:0 "Wyoming Accepts Integration!"
  wyoming_accepts.d:0 "The goverment of Wyoming has accepted our offer. Wyoming is now under the government of Utah!"
  wyoming_accepts_option.a:0 "Welcome, Wyoming!"
+ mormon_issue.t:0 "The Mormon Issue"
+ mormon_issue.d:0 "The Mormons have had a stronghold on our politics from the very start. What should be done about them? We could allow their religious leaders to hold office, possibly allowing the Republicans to win. We could simply do nothing, however that could cause instability. Henry Blood, however, wants to bar religious leaders from government positions."
+ mormon_issue_option.a:0 "Bar religious leaders."
+ mormon_issue_option.b:0 "Mormon leaders can run."
+ mormon_issue_option.c:0 "Let's worry about this later."
