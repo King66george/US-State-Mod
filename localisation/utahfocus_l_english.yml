@@ -14,6 +14,10 @@
  UTU_educationreform_desc:0 "Utah's government has passed laws that improve the state of education everywhere."
  UTU_createjobs:0 "Government Jobs"
  UTU_createjobs_desc:0 "Utah's government has passed laws that improve the amount of jobs available by creating new projects, factories and roads."
+ UTU_seperationstate:0 "Seperation of Church from State"
+ UTU_seperationstate_desc:0 "Utah's government has passed laws that restrict the amount of power the Mormon Church has on it's politics, much to the appeal of socialist causes."
+ UTU_democratsinpower:0 "Democrats in Power"
+ UTU_democratsinpower_desc:0 "Henry H. Blood is the current leader of Utah, and he is a Democrat."
 ###### FOCUS STUFF #####
  UTU_industry_start:0 "Kickstart Utahn Industry"
  UTU_industry_start_desc:0 "We must start our industry off strong, for a stable future."
@@ -109,3 +113,5 @@
  UTU_mormon_issue_desc:0 "The LDS Church has had a stronghold on our politics from the very start. What should we do about the overwhelming amount of Mormon right-leaning voters?"
  UTU_enforce_church_teachings:0 "Enforce the 10 Commandments"
  UTU_enforce_church_teachings_desc:0 "The Mormon Church must crack down on those who are violating the 10 basic rules included in the Bible."
+ UTU_seperation_from_state:0 "Seperation of Church and State"
+ UTU_seperation_from_state_desc:0 "The Mormon Church has too much power on our government. We should pass laws restricting them before the 1937 election."

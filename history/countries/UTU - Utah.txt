@@ -136,6 +136,7 @@ set_politics = {
 add_ideas = {
 	UTU_mormonchurch
 	UTU_greatdepression
+	UTU_democratsinpower
 }
 set_popularities = {
 	democratic = 70

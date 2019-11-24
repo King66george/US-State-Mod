@@ -357,6 +357,14 @@ spriteTypes = {
 		name = "GFX_idea_UTU_educationreform"
 		texturefile = "gfx/interface/ideas/UTU_educationreform.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_UTU_antichurch"
+		texturefile = "gfx/interface/ideas/UTU_antichurch.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_democratdonkey"
+		texturefile = "gfx/interface/ideas/democratdonkey.dds"
+	}
 
 
 

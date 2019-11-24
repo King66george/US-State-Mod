@@ -43,6 +43,27 @@ ideas = {
         socialist_drift = 0.02
       }
     }
+####################################################
+		UTU_democratsinpower = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_democratdonkey
+
+      modifier = {
+        political_power_gain = 0.25
+        socialist_drift = 0.01
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = -0.5
+      }
+    }
 ###### Focus Additions #####
     UTU_turntochurch = {
       allowed = {
@@ -136,6 +157,27 @@ ideas = {
       modifier = {
         production_speed_infrastructure_factor = 0.15
         production_speed_industrial_complex_factor = 0.15
+      }
+    }
+######################################################
+		UTU_seperationstate = {
+      allowed = {
+          always = no
+      }
+
+      allowed_civil_war = {
+          always = yes
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_UTU_antichurch
+
+      modifier = {
+        communism_drift = 0.01
+				socialist_drift = 0.06
+				theocratism_drift = -0.03
+				political_power_gain = -0.05
       }
     }
   }
