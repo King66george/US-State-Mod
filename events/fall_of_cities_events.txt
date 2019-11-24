@@ -485,3 +485,135 @@ news_event = {
     }
   }
 }
+
+#Fall Of Phoneix (Cali takes Phoneix)
+news_event = {
+  id = news.510
+  title = news.510.t
+  desc = news.510.d
+  picture = GFX_news_event_phoenix
+
+  major = yes
+
+  trigger = {
+    795 = { is_controlled_by = CAC}
+    795 = { is_owned_by = AZA }
+    CAC = { has_war_with = AZA}
+    NOT = { has_global_flag = fall_of_Phoneix_california}
+  }
+
+  immediate = {
+		set_global_flag = fall_of_Phoneix_california
+	}
+
+  mean_time_to_happen = {
+		days = 2
+	}
+
+
+  option = {
+    name = news.510.a
+    trigger = { TAG = CAC }
+  }
+  option = {
+    name = news.510.b
+    trigger = { TAG = AZA }
+  }
+  option = {
+    name = news.510.c
+    trigger = {
+      NOT = {
+        TAG = CAC
+        TAG = AZA
+      }
+    }
+  }
+}
+
+#Fall Of Topeka (Cali Takes Topeka)
+news_event = {
+  id = news.511
+  title = news.511.t
+  desc = news.511.d
+  picture = GFX_news_event_topeka
+
+  major = yes
+
+  trigger = {
+    831 = { is_controlled_by = CAC}
+    831 = { is_owned_by = KSK }
+    CAC = { has_war_with = KSK}
+    NOT = { has_global_flag = fall_of_topeka_california}
+  }
+
+  immediate = {
+		set_global_flag = fall_of_topeka_california
+	}
+
+  mean_time_to_happen = {
+		days = 2
+	}
+
+
+  option = {
+    name = news.511.a
+    trigger = { TAG = CAC }
+  }
+  option = {
+    name = news.511.b
+    trigger = { TAG = KSK }
+  }
+  option = {
+    name = news.511.c
+    trigger = {
+      NOT = {
+        TAG = CAC
+        TAG = KSK
+      }
+    }
+  }
+}
+
+#Fall Of Austin (Cali takes austin)
+news_event = {
+  id = news.512
+  title = news.512.t
+  desc = news.512.d
+  picture = GFX_news_event_austin
+
+  major = yes
+
+  trigger = {
+    1002 = { is_controlled_by = CAC}
+    1002 = { is_owned_by = TXT }
+    CAC = { has_war_with = TXT }
+    NOT = { has_global_flag = fall_of_austin_california}
+  }
+
+  immediate = {
+		set_global_flag = fall_of_austin_california
+	}
+
+  mean_time_to_happen = {
+		days = 2
+	}
+
+
+  option = {
+    name = news.512.a
+    trigger = { TAG = CAC }
+  }
+  option = {
+    name = news.512.b
+    trigger = { TAG = TXT }
+  }
+  option = {
+    name = news.512.c
+    trigger = {
+      NOT = {
+        TAG = CAC
+        TAG = TXT
+      }
+    }
+  }
+}
