@@ -49,7 +49,7 @@ ideas = {
 			picture = GFX_FLF_Southern_Pride
 			modifier = {
 				conscription = 0.015
-				army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.02
 			}
 		}
 		FLF_Slavery_Again = {
@@ -69,7 +69,7 @@ ideas = {
 			picture = idea_hun_secret_rearmament
 			modifier = {
 				justify_war_goal_time = -0.25
-				conscription = 0.05
+				conscription = 0.025
 				army_attack_factor = 0.1
 			}
 		}
@@ -79,10 +79,10 @@ ideas = {
 			removal_cost = -1
 			picture = idea_generic_constitutional_guarantee
 			modifier = {
-				conscription = 0.05
-				army_morale_factor = 0.05
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.1
+				conscription = 0.025
+				army_morale_factor = 0.02
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.02
 			}
 		}
 		### Left-Auth Section ###
@@ -130,8 +130,8 @@ ideas = {
 			removal_cost = -1
 			picture = idea_hun_secret_rearmament
 			modifier = {
-				army_org_Factor = 0.10
-				army_morale_factor = 0.10
+				army_org_Factor = 0.02
+				army_morale_factor = 0.4
 			}
 		}
 		FLF_New_Tactics = {
@@ -141,7 +141,7 @@ ideas = {
 			modifier = {
 				army_org_Factor = -0.05
 				army_morale_factor = 0.02
-				army_speed_factor = 0.10
+				army_speed_factor = 0.03
 			}
 		}
 		FLF_Trench_Foot = {
@@ -150,7 +150,7 @@ ideas = {
 			picture = idea_ast_all_in
 			modifier = {
 				army_core_defence_factor = 0.05
-				army_morale_factor = 0.10
+				army_morale_factor = 0.03
 			}
 		}
 		FLF_Killing_Machines = {
@@ -158,7 +158,7 @@ ideas = {
 			removal_cost = -1
 			picture = idea_chi_army_corruption3
 			modifier = {
-				army_org_Factor = 0.10
+				army_org_Factor = 0.03
 				army_core_attack_factor = 0.05
 			}
 		}
@@ -167,10 +167,10 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_national_mobilization_focus
 			modifier = {
-				army_org_Factor = 0.10
-				army_morale_factor = 0.10
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
+				army_org_Factor = 0.04
+				army_morale_factor = 0.02
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.02
 			}
 		}
 		#############################
@@ -251,7 +251,7 @@ ideas = {
 			picture = idea_usa_desegregation_1
 			modifier = {
 				justify_war_goal_time = -0.35
-				conscription_factor = 0.1
+				conscription_factor = 0.-
 			}
 		}
 	}
